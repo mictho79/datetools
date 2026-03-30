@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dog Age Calculator – Convert Dog Years to Human Years | Date.tools</title>
+<meta name="description" content="How old is your dog in human years? Enter your dog's age and breed size for an accurate dog-to-human age conversion.">
+<link rel="canonical" href="https://date.tools/dog-age-calculator/">
+<link rel="alternate" hreflang="en" href="https://date.tools/dog-age-calculator/">
+<link rel="alternate" hreflang="fr" href="https://date.tools/fr/calculateur-age-chien/">
+<link rel="alternate" hreflang="es" href="https://date.tools/es/calculadora-edad-perro/">
+<link rel="alternate" hreflang="x-default" href="https://date.tools/dog-age-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dog Age Calculator – Convert Dog Years to Human Years | Date.tools">
+<meta property="og:description" content="How old is your dog in human years? Enter your dog's age and breed size for an accurate dog-to-human age conversion.">
+<meta property="og:url" content="https://date.tools/dog-age-calculator/">
+<meta property="og:site_name" content="Date.tools">
+<meta property="og:image" content="https://date.tools/og.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Dog Age Calculator – Convert Dog Years to Human Years | Date.tools">
+<meta name="twitter:description" content="How old is your dog in human years? Enter your dog's age and breed size for an accurate dog-to-human age conversion.">
+<meta name="twitter:image" content="https://date.tools/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Space+Mono:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How old is my dog in human years?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use the size-adjusted formula: year 1 = 15 human years, year 2 adds 9 (total 24), then each additional year adds 4 years for small breeds, 5 for medium, 6 for large, and 7 for giant breeds. Enter your dog's age and breed size above for an instant result."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the \"7 dog years = 1 human year\" rule a myth?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, it is an oversimplification. The ratio varies dramatically by age: a 1-year-old dog is more like a 15-year-old human, not a 7-year-old. The 1:7 rule is roughly accurate only around age 7 for medium dogs, which is why it became popular. For any other age or breed size, the adjusted formula in this calculator is far more accurate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How old is a 7-year-old dog in human years?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A 7-year-old medium dog (10–25 kg) is approximately 49 human years old. A large dog (25–45 kg) would be 51, and a small dog would be 47. The old \"times 7\" rule would give 49 for all, which is roughly correct at this age but inaccurate for young dogs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How old is a 1-year-old dog in human years?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A 1-year-old dog is roughly equivalent to a 15-year-old human. At this age, dogs are fully sexually mature and have reached about 90% of their adult size."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What age is considered senior for a dog?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on breed size. Small breeds (under 10 kg) are considered senior around 10–12 years. Medium breeds reach senior status at about 8–10 years, large breeds at 7–8 years, and giant breeds as early as 5–6 years. Senior dogs benefit from more frequent vet check-ups and age-appropriate nutrition."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long do dogs live on average?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Average dog lifespan ranges from about 8 years for giant breeds like Great Danes to 16 or more years for small breeds like Chihuahuas and Dachshunds. Mixed-breed dogs often live slightly longer than purebreds due to hybrid vigor. Diet, exercise, and veterinary care all significantly affect longevity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the dog age for a Labrador?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Labradors are a large breed (25–35 kg), so they age at roughly 6 human years per dog year after age 2. A 3-year-old Labrador is about 30 in human years, a 7-year-old is roughly 48, and a 10-year-old Labrador is about 66 in human years. Labs are considered senior at around 7–8 years."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the oldest dog ever recorded?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The oldest dog ever recorded was Bobi, a Rafeiro do Alentejo from Portugal, who lived to 31 years and 165 days, certified by Guinness World Records."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Dog Age Calculator",
+  "description": "How old is your dog in human years? Enter your dog's age and breed size for an accurate dog-to-human age conversion.",
+  "url": "https://date.tools/dog-age-calculator/",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Web",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+</head>
+<body>
+
+<div class="masthead">
+  <a href="/" class="masthead-brand">Date<span>.</span>tools</a>
+  <div class="masthead-meta" id="todayMeta"></div>
+</div>
+
+<div class="lang-strip">
+  <a href="/dog-age-calculator/" class="lang-btn active">EN</a>
+  <a href="/fr/calculateur-age-chien/" class="lang-btn">FR</a>
+  <a href="/es/calculadora-edad-perro/" class="lang-btn">ES</a>
+</div>
+
+<div class="page">
+
+  <div class="headline-block">
+    <div class="kicker">Dog Age Calculator</div>
+    <h1 class="headline">How old is <br>my <em>dog</em>?</h1>
+    <p class="subhead">Convert your dog's age to human years based on breed size.</p>
+  </div>
+
+  <div class="form-grid">
+    <div class="form-col">
+      <div class="field-label">Dog's age (years)</div>
+      <div class="date-row">
+        <input type="number" id="dogAge" placeholder="0" min="0" max="30" inputmode="numeric" oninput="clamp(this,0,30)" style="width:4ch">
+      </div>
+      <div class="field-label" style="margin-top:1.5rem">Breed size</div>
+      <div class="op-row" style="flex-direction:column;gap:.5rem;align-items:flex-start">
+        <label style="font-size:.85rem;color:var(--muted);cursor:pointer"><input type="radio" name="size" value="small" style="accent-color:var(--accent)"> Small (under 10 kg)</label>
+        <label style="font-size:.85rem;color:var(--muted);cursor:pointer"><input type="radio" name="size" value="medium" checked style="accent-color:var(--accent)"> Medium (10–25 kg)</label>
+        <label style="font-size:.85rem;color:var(--muted);cursor:pointer"><input type="radio" name="size" value="large" style="accent-color:var(--accent)"> Large (25–45 kg)</label>
+        <label style="font-size:.85rem;color:var(--muted);cursor:pointer"><input type="radio" name="size" value="giant" style="accent-color:var(--accent)"> Giant (over 45 kg)</label>
+      </div>
+      <div class="error-line" id="errorLine"></div>
+      <button class="calc-btn" onclick="calculate()">→ Convert</button>
+    </div>
+    <div class="form-col">
+      <p class="tip-text">"Dogs don't count years. They count belly rubs."</p>
+      <ul class="example-list">
+        <li onclick="fillExample(3,'medium')">Labrador, 3 years →</li>
+        <li onclick="fillExample(8,'small')">Chihuahua, 8 years →</li>
+        <li onclick="fillExample(5,'large')">German Shepherd, 5 years →</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="results-section" id="results">
+    <div class="results-header">Your dog's age</div>
+    <div class="age-display">
+      <span class="age-number" id="heroAge">—</span>
+      <span class="age-suffix">human years</span>
+    </div>
+    <div class="facts-row">
+      <div class="fact-item"><div class="fact-key">Dog years</div><div class="fact-val" id="ffDogYears">—</div></div>
+      <div class="fact-item"><div class="fact-key">Life stage</div><div class="fact-val" id="ffStage">—</div></div>
+      <div class="fact-item"><div class="fact-key">Breed size</div><div class="fact-val" id="ffSize">—</div></div>
+    </div>
+  </div>
+
+  <div class="tool-nav">
+    <div class="nav-group"><span class="nav-cat">Age</span><div class="nav-links"><a href="/age-calculator/">Age Calculator</a><span class="nav-sep">·</span><a href="/chronological-age-calculator/">Chronological Age</a><span class="nav-sep">·</span><a href="/baby-age-calculator/">Baby Age</a><span class="nav-sep">·</span><a href="/dog-age-calculator/" aria-current="page">Dog Age</a><span class="nav-sep">·</span><a href="/cat-age-calculator/">Cat Age</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Dates</span><div class="nav-links"><a href="/days-between-dates/">Days Between Dates</a><span class="nav-sep">·</span><a href="/date-calculator/">Date Calculator</a><span class="nav-sep">·</span><a href="/what-day-is-it-today/">What Day Is It</a><span class="nav-sep">·</span><a href="/week-number/">Week Number</a><span class="nav-sep">·</span><a href="/business-days-calculator/">Business Days</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Countdowns</span><div class="nav-links"><a href="/days-until-christmas/">Christmas</a><span class="nav-sep">·</span><a href="/days-until-new-year/">New Year</a><span class="nav-sep">·</span><a href="/days-until-halloween/">Halloween</a><span class="nav-sep">·</span><a href="/days-until-easter/">Easter</a><span class="nav-sep">·</span><a href="/countdown-timer/">Countdown Timer</a></div></div>
+    <div class="nav-group"><span class="nav-cat">World</span><div class="nav-links"><a href="/time-zone-converter/">Time Zone Converter</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Born In</span><div class="nav-links"><a href="/born-in-1990/">Born in 1990</a><span class="nav-sep">·</span><a href="/born-in-1980/">Born in 1980</a><span class="nav-sep">·</span><a href="/born-in-2000/">Born in 2000</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Calendars</span><div class="nav-links"><a href="/week-number/2025/">Week Numbers 2025</a><span class="nav-sep">·</span><a href="/week-number/2026/">Week Numbers 2026</a><span class="nav-sep">·</span><a href="/week-number/2027/">Week Numbers 2027</a></div></div>
+  </div>
+
+  <div class="seo-block">
+    <div><h2>How to convert dog years to human years</h2><p>The old "multiply by 7" rule is a myth rooted in the simple observation that humans live about 7 times longer than dogs on average. In reality, dogs age much faster in their early years and more slowly later on. Year 1 of a dog's life equals roughly 15 human years because puppies reach sexual maturity, grow their adult teeth, and develop full motor skills all within 12 months. Year 2 adds about 9 more years (bringing the total to 24), as dogs reach full social and emotional maturity. After that, each additional year adds 4–7 human years depending on breed size. A 3-year-old Labrador retriever is the equivalent of a 32-year-old human. A 10-year-old Chihuahua is about 56. This calculator uses the breed-size-adjusted formula endorsed by veterinarians and popularized by the American Kennel Club.</p></div>
+    <div><h2>Why do larger dogs age faster?</h2><p>Large and giant breeds have shorter average lifespans (8–10 years for giants like Great Danes) compared to small breeds (14–16 years for Chihuahuas and Toy Poodles). Scientists believe this is because larger dogs grow much faster in puppyhood, which accelerates oxidative stress and cellular aging processes. A study published in the American Naturalist found that every 4.4 lbs (2 kg) of extra body mass reduced life expectancy by about one month. Giant breeds like Saint Bernards and Irish Wolfhounds are considered senior at just 5–6 years, while a small terrier might not reach senior status until 10. Understanding your dog's life stage helps you schedule the right veterinary screenings — senior dogs benefit from biannual check-ups and bloodwork to catch age-related conditions early.</p></div>
+  </div>
+  <div class="faq-block">
+    <h2>Frequently asked questions</h2>
+    <div class="faq-item"><h3>How old is my dog in human years?</h3><p>Use the size-adjusted formula: year 1 = 15 human years, year 2 adds 9 (total 24), then each additional year adds 4 years for small breeds, 5 for medium, 6 for large, and 7 for giant breeds. Enter your dog's age and breed size above for an instant result.</p></div>
+    <div class="faq-item"><h3>Is the "7 dog years = 1 human year" rule a myth?</h3><p>Yes, it is an oversimplification. The ratio varies dramatically by age: a 1-year-old dog is more like a 15-year-old human, not a 7-year-old. The 1:7 rule is roughly accurate only around age 7 for medium dogs, which is why it became popular. For any other age or breed size, the adjusted formula in this calculator is far more accurate.</p></div>
+    <div class="faq-item"><h3>How old is a 7-year-old dog in human years?</h3><p>A 7-year-old medium dog (10–25 kg) is approximately 49 human years old. A large dog (25–45 kg) would be 51, and a small dog would be 47. The old "times 7" rule would give 49 for all, which is roughly correct at this age but inaccurate for young dogs.</p></div>
+    <div class="faq-item"><h3>How old is a 1-year-old dog in human years?</h3><p>A 1-year-old dog is roughly equivalent to a 15-year-old human. At this age, dogs are fully sexually mature and have reached about 90% of their adult size.</p></div>
+    <div class="faq-item"><h3>What age is considered senior for a dog?</h3><p>It depends on breed size. Small breeds (under 10 kg) are considered senior around 10–12 years. Medium breeds reach senior status at about 8–10 years, large breeds at 7–8 years, and giant breeds as early as 5–6 years. Senior dogs benefit from more frequent vet check-ups and age-appropriate nutrition.</p></div>
+    <div class="faq-item"><h3>How long do dogs live on average?</h3><p>Average dog lifespan ranges from about 8 years for giant breeds like Great Danes to 16 or more years for small breeds like Chihuahuas and Dachshunds. Mixed-breed dogs often live slightly longer than purebreds due to hybrid vigor. Diet, exercise, and veterinary care all significantly affect longevity.</p></div>
+    <div class="faq-item"><h3>What is the dog age for a Labrador?</h3><p>Labradors are a large breed (25–35 kg), so they age at roughly 6 human years per dog year after age 2. A 3-year-old Labrador is about 30 in human years, a 7-year-old is roughly 48, and a 10-year-old Labrador is about 66 in human years. Labs are considered senior at around 7–8 years.</p></div>
+    <div class="faq-item"><h3>What is the oldest dog ever recorded?</h3><p>The oldest dog ever recorded was Bobi, a Rafeiro do Alentejo from Portugal, who lived to 31 years and 165 days, certified by Guinness World Records.</p></div>
+  </div>
+
+  <div class="source-block">
+    <span class="source-lbl">Source</span>
+    <a href="https://www.akc.org/expert-advice/health/how-to-calculate-dog-years-to-human-years/" target="_blank" rel="noopener noreferrer">American Kennel Club – How to Calculate Dog Years</a>
+  </div>
+  <footer>© 2026 Date.tools — Free online date &amp; time calculators</footer>
+</div>
+
+<script>
+(function(){
+  var now = new Date();
+  var opts = {weekday:'long',year:'numeric',month:'long',day:'numeric'};
+  document.getElementById('todayMeta').innerHTML =
+    now.toLocaleDateString('en-US', opts) + '<br>Free date calculator';
+})();
+// Shared input guard: strip non-digits, truncate to max digit length, clamp to hi
+function clamp(el, lo, hi) {
+  var maxLen = String(hi).length;
+  var s = el.value.replace(/\D/g, '').slice(0, maxLen);
+  var n = parseInt(s, 10);
+  if (!isNaN(n) && n > hi) s = String(hi);
+  el.value = s;
+}
+</script>
+<script>
+
+var D = {"errInvalid":"→ Please enter a valid dog age (1–30).","stages":["Puppy","Young Adult","Adult","Mature","Senior","Geriatric"],"stageYears":[1,3,7,10,12,15],"sizeLabels":{"small":"Small (under 10 kg)","medium":"Medium (10–25 kg)","large":"Large (25–45 kg)","giant":"Giant (over 45 kg)"}};
+
+function dogToHuman(age, size) {
+  var perYear = { small:4, medium:5, large:6, giant:7 };
+  if (age <= 0) return 0;
+  if (age === 1) return 15;
+  if (age === 2) return 24;
+  return 24 + (age - 2) * perYear[size];
+}
+
+function getStage(age) {
+  var yrs = D.stageYears;
+  for (var i = yrs.length - 1; i >= 0; i--) if (age >= yrs[i]) return D.stages[i];
+  return D.stages[0];
+}
+
+function fillExample(age, size) {
+  document.getElementById('dogAge').value = age;
+  document.querySelectorAll('input[name="size"]').forEach(function(r){ r.checked = r.value === size; });
+  calculate();
+}
+
+function calculate() {
+  var age = parseInt(document.getElementById('dogAge').value);
+  var size = document.querySelector('input[name="size"]:checked').value;
+  var err = document.getElementById('errorLine');
+  var res = document.getElementById('results');
+  err.classList.remove('show'); res.classList.remove('show');
+
+  if (!age || age < 1 || age > 30) { err.textContent = D.errInvalid; err.classList.add('show'); return; }
+
+  var human = dogToHuman(age, size);
+  document.getElementById('heroAge').textContent = human;
+  document.getElementById('ffDogYears').textContent = age;
+  document.getElementById('ffStage').textContent = getStage(age);
+  document.getElementById('ffSize').textContent = D.sizeLabels[size];
+  res.classList.add('show');
+  res.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+document.addEventListener('keydown', function(e){ if(e.key==='Enter') calculate(); });
+
+</script>
+</body>
+</html>

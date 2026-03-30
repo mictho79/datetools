@@ -1,0 +1,259 @@
+// Countdown Timer
+
+const T = {
+  en: {
+    title: 'Countdown Timer – Count Down to Any Date | Date.tools',
+    metaDesc: 'Free online countdown timer. Enter any future date and get a live countdown in days, hours, minutes and seconds.',
+    kicker: 'Countdown Timer',
+    headline: 'Count<em>down</em><br>to any date',
+    subhead: 'Enter a target date — watch the live countdown tick in real time.',
+    targetLabel: 'Target date',
+    labelLabel: 'Event name (optional)',
+    calcBtn: '→ Start Countdown',
+    tipText: '"The anticipation is part of the joy."',
+    examples: ['New Year\'s Eve', 'Next birthday', 'Project deadline'],
+    resultsHeader: 'Countdown',
+    heroSuffix: 'days',
+    hoursLbl: 'hours', minsLbl: 'minutes', secsLbl: 'seconds',
+    weeksLbl: 'weeks', totalHoursLbl: 'total hours', totalMinsLbl: 'total minutes',
+    eventLbl: 'Event', dateLbl: 'Target date', dayLbl: 'Day of week',
+    errInvalid: '→ Invalid date. Please check your input.',
+    errPast: '→ Target date must be in the future.',
+    reachedMsg: '🎉 The date has been reached!',
+    seoH2a: 'How to use the countdown timer',
+    seoP1: 'Enter any future date and click "Start Countdown." The timer immediately shows you the exact number of days, hours, minutes, and seconds remaining until midnight on that date, and it updates live every second without any page refresh. You can also add an event name — like "My Wedding" or "Paris Trip" — to personalize your countdown display. The calculator supports any date up to December 31, 2099, giving you a maximum countdown horizon of over 70 years. Common uses include counting down to birthdays, holidays, vacations, exam dates, product launches, sporting events, and retirement. Research in psychology suggests that visualizing a concrete time-to-event reduces anxiety and improves preparation, which is one reason countdown timers have become a popular productivity and motivation tool.',
+    seoH2b: 'Common uses for countdown timers',
+    seoP2: 'Countdown timers serve dozens of real-world purposes. Personal milestones: how many days until my birthday, how many days until Christmas, countdown to my wedding day, days until summer vacation. Academic and professional: days until exam, project deadline countdown, days until graduation, contract expiry countdown. Travel and events: days until flight, countdown to sports championship, festival or concert countdown. The "days until" format is the most searched countdown query — followed by hours, then weeks. This calculator shows all four simultaneously so you always have the view you need. Knowing exactly how many days remain creates a concrete sense of urgency that vague "soon" or "next month" language simply cannot provide.',
+    faqTitle: 'Frequently asked questions',
+    source: { url: 'https://en.wikipedia.org/wiki/Countdown', label: 'Wikipedia – Countdown' },
+    faqs: [
+      { q: 'How do I use a free online countdown timer?', a: 'Enter your target date (day, month, year) in the fields above, optionally type an event name, and click "Start Countdown." The timer instantly shows the exact days, hours, minutes, and seconds remaining, updating every second. It works on any device — desktop, tablet, or mobile — with no app or account required.' },
+      { q: 'How many days until my birthday?', a: 'Enter your next birthday date above and click Start Countdown. The timer will show the exact number of days, hours, minutes, and seconds until midnight on your birthday. For the current year\'s birthday, use the current year if it hasn\'t passed yet, or next year if it has.' },
+      { q: 'How do I create a countdown to my wedding day?', a: 'Enter your wedding date in the target date fields, type "Our Wedding" or any custom name in the event name field, and click Start Countdown. The live timer shows days, hours, minutes, and seconds. Bookmark the page to return to your countdown anytime.' },
+      { q: 'How many days until my vacation?', a: 'Enter your vacation departure date as the target, give it a name like "Beach Trip," and start the countdown. The calculator shows both total days remaining and the breakdown in weeks, hours, and minutes — useful for planning packing, travel documents, and pre-trip tasks.' },
+      { q: 'How do I count days until graduation?', a: 'Enter your graduation ceremony date, label it "Graduation Day," and click Start Countdown. The live countdown will update second by second. You can also note the total hours or weeks remaining for a different perspective on how much time you have to prepare.' },
+      { q: 'How many days until [a specific date]?', a: 'Simply enter any future date in the calculator above and the timer immediately shows the exact number of days remaining. The result also includes total hours, total minutes, and total seconds for the most precise answer. Dates up to December 31, 2099 are supported.' },
+      { q: 'Does the countdown update in real time?', a: 'Yes. The seconds, minutes, and hours update every second automatically. No need to refresh the page.' },
+      { q: 'What is the maximum date I can count down to?', a: 'The calculator supports dates up to December 31, 2099 — giving you a maximum countdown of over 73 years.' },
+    ],
+    weekDays: ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],
+    months: ['January','February','March','April','May','June','July','August','September','October','November','December'],
+  },
+  fr: {
+    title: 'Compte à rebours – Décompter jusqu\'à n\'importe quelle date | Date.tools',
+    metaDesc: 'Compte à rebours en ligne gratuit. Entrez n\'importe quelle date future et obtenez un décompte en direct en jours, heures, minutes et secondes.',
+    kicker: 'Compte à rebours',
+    headline: 'Compte<em>-à-rebours</em><br>jusqu\'à une date',
+    subhead: 'Entrez une date cible — regardez le décompte en direct en temps réel.',
+    targetLabel: 'Date cible',
+    labelLabel: 'Nom de l\'événement (facultatif)',
+    calcBtn: '→ Lancer le compte à rebours',
+    tipText: '"L\'anticipation fait partie de la joie."',
+    examples: ['Saint-Sylvestre', 'Prochain anniversaire', 'Délai du projet'],
+    resultsHeader: 'Compte à rebours',
+    heroSuffix: 'jours',
+    hoursLbl: 'heures', minsLbl: 'minutes', secsLbl: 'secondes',
+    weeksLbl: 'semaines', totalHoursLbl: 'heures totales', totalMinsLbl: 'minutes totales',
+    eventLbl: 'Événement', dateLbl: 'Date cible', dayLbl: 'Jour de la semaine',
+    errInvalid: '→ Date invalide. Vérifiez votre saisie.',
+    errPast: '→ La date cible doit être dans le futur.',
+    reachedMsg: '🎉 La date est arrivée !',
+    seoH2a: 'Comment utiliser le compte à rebours',
+    seoP1: 'Entrez n\'importe quelle date future et cliquez sur "Lancer". Le minuteur affiche immédiatement le nombre exact de jours, heures, minutes et secondes restants jusqu\'à minuit à cette date, et se met à jour en direct chaque seconde sans rechargement de page. Vous pouvez ajouter un nom d\'événement — comme "Mon mariage" ou "Voyage à Paris" — pour personnaliser votre compte à rebours. Le calculateur prend en charge toutes les dates jusqu\'au 31 décembre 2099, offrant un horizon de compte à rebours maximum de plus de 70 ans. Les utilisations courantes incluent les comptes à rebours pour les anniversaires, les vacances, les examens, les lancements de produits et les événements sportifs.',
+    seoH2b: 'Utilisations courantes des comptes à rebours',
+    seoP2: 'Les comptes à rebours servent à de nombreuses fins pratiques. Jalons personnels : combien de jours avant mon anniversaire, combien de jours avant Noël, compte à rebours pour mon mariage, jours avant les vacances d\'été. Académique et professionnel : jours avant un examen, compte à rebours pour une date limite de projet, jours avant la remise des diplômes. Voyage et événements : jours avant un vol, compte à rebours pour un championnat sportif, festival ou concert. Le format "jours avant" est la requête de compte à rebours la plus recherchée. Cette calculatrice affiche simultanément jours, heures, minutes et secondes pour toujours avoir la vue dont vous avez besoin.',
+    faqTitle: 'Questions fréquentes',
+    source: { url: 'https://en.wikipedia.org/wiki/Countdown', label: 'Wikipédia – Compte à rebours' },
+    faqs: [
+      { q: 'Comment utiliser un compte à rebours en ligne gratuit ?', a: 'Entrez votre date cible (jour, mois, année) dans les champs ci-dessus, tapez optionnellement un nom d\'événement et cliquez sur "Lancer le compte à rebours". Le minuteur affiche instantanément les jours, heures, minutes et secondes exacts restants, se mettant à jour chaque seconde. Fonctionne sur tout appareil sans application ni compte requis.' },
+      { q: 'Combien de jours avant mon anniversaire ?', a: 'Entrez la date de votre prochain anniversaire ci-dessus et cliquez sur Lancer. Le minuteur affiche le nombre exact de jours, heures, minutes et secondes jusqu\'à minuit le jour de votre anniversaire. Utilisez l\'année en cours si l\'anniversaire n\'est pas encore passé, sinon l\'année prochaine.' },
+      { q: 'Comment créer un compte à rebours pour mon mariage ?', a: 'Entrez la date de votre mariage dans les champs de date cible, tapez "Notre mariage" ou un nom personnalisé dans le champ du nom d\'événement et cliquez sur Lancer. Le minuteur en direct affiche jours, heures, minutes et secondes. Mettez la page en signet pour y revenir à tout moment.' },
+      { q: 'Combien de jours avant mes vacances ?', a: 'Entrez la date de départ de vos vacances comme cible, donnez-lui un nom et lancez le compte à rebours. Le calculateur affiche à la fois le nombre total de jours restants et la décomposition en semaines, heures et minutes — utile pour planifier la valise, les documents de voyage et les tâches pré-voyage.' },
+      { q: 'Comment compter les jours avant la remise des diplômes ?', a: 'Entrez la date de la cérémonie de remise des diplômes, nommez-la "Remise des diplômes" et cliquez sur Lancer. Le compte à rebours en direct se met à jour seconde par seconde. Vous pouvez également noter le total d\'heures ou de semaines restantes pour une perspective différente.' },
+      { q: 'Combien de jours avant une date spécifique ?', a: 'Entrez simplement n\'importe quelle date future dans le calculateur ci-dessus et le minuteur affiche immédiatement le nombre exact de jours restants. Le résultat inclut également le total d\'heures, de minutes et de secondes. Les dates jusqu\'au 31 décembre 2099 sont prises en charge.' },
+      { q: 'Le compte à rebours se met-il à jour en temps réel ?', a: 'Oui. Les secondes, minutes et heures se mettent à jour automatiquement chaque seconde. Pas besoin de rafraîchir la page.' },
+      { q: 'Quelle est la date maximale prise en charge ?', a: 'Le calculateur prend en charge les dates jusqu\'au 31 décembre 2099, soit un compte à rebours maximum de plus de 73 ans.' },
+    ],
+    weekDays: ['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'],
+    months: ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'],
+  },
+  es: {
+    title: 'Cuenta regresiva – Cuenta atrás hasta cualquier fecha | Date.tools',
+    metaDesc: 'Temporizador de cuenta regresiva gratuito. Ingresa cualquier fecha futura y obtén una cuenta atrás en vivo en días, horas, minutos y segundos.',
+    kicker: 'Cuenta Regresiva',
+    headline: 'Cuenta<em>-regresiva</em><br>hasta cualquier fecha',
+    subhead: 'Ingresa una fecha objetivo — mira la cuenta regresiva en tiempo real.',
+    targetLabel: 'Fecha objetivo',
+    labelLabel: 'Nombre del evento (opcional)',
+    calcBtn: '→ Iniciar cuenta regresiva',
+    tipText: '"La anticipación es parte de la alegría."',
+    examples: ['Nochevieja', 'Próximo cumpleaños', 'Plazo del proyecto'],
+    resultsHeader: 'Cuenta regresiva',
+    heroSuffix: 'días',
+    hoursLbl: 'horas', minsLbl: 'minutos', secsLbl: 'segundos',
+    weeksLbl: 'semanas', totalHoursLbl: 'horas totales', totalMinsLbl: 'minutos totales',
+    eventLbl: 'Evento', dateLbl: 'Fecha objetivo', dayLbl: 'Día de la semana',
+    errInvalid: '→ Fecha no válida. Verifica tu entrada.',
+    errPast: '→ La fecha objetivo debe ser en el futuro.',
+    reachedMsg: '🎉 ¡La fecha ha llegado!',
+    seoH2a: 'Cómo usar el temporizador de cuenta regresiva',
+    seoP1: 'Ingresa cualquier fecha futura y haz clic en "Iniciar". El temporizador muestra inmediatamente el número exacto de días, horas, minutos y segundos restantes hasta la medianoche de esa fecha, y se actualiza en vivo cada segundo sin recargar la página. También puedes agregar un nombre de evento — como "Mi boda" o "Viaje a París" — para personalizar tu cuenta regresiva. La calculadora admite cualquier fecha hasta el 31 de diciembre de 2099, dando un horizonte máximo de más de 70 años. Los usos comunes incluyen contar los días hasta cumpleaños, vacaciones, exámenes, lanzamientos de productos y eventos deportivos.',
+    seoH2b: 'Usos comunes de los temporizadores de cuenta regresiva',
+    seoP2: 'Los temporizadores de cuenta regresiva sirven para docenas de propósitos prácticos. Hitos personales: cuántos días hasta mi cumpleaños, cuántos días hasta Navidad, cuenta regresiva para mi boda, días hasta las vacaciones de verano. Académico y profesional: días hasta el examen, cuenta regresiva para la fecha límite del proyecto, días hasta la graduación. Viajes y eventos: días hasta el vuelo, cuenta regresiva para un campeonato deportivo, festival o concierto. El formato "días hasta" es la consulta de cuenta regresiva más buscada. Esta calculadora muestra simultáneamente días, horas, minutos y segundos para tener siempre la vista que necesitas.',
+    faqTitle: 'Preguntas frecuentes',
+    source: { url: 'https://en.wikipedia.org/wiki/Countdown', label: 'Wikipedia – Cuenta regresiva' },
+    faqs: [
+      { q: '¿Cómo uso un temporizador de cuenta regresiva gratuito en línea?', a: 'Ingresa tu fecha objetivo (día, mes, año) en los campos de arriba, escribe opcionalmente un nombre de evento y haz clic en "Iniciar cuenta regresiva". El temporizador muestra instantáneamente los días, horas, minutos y segundos exactos restantes, actualizándose cada segundo. Funciona en cualquier dispositivo sin aplicación ni cuenta requerida.' },
+      { q: '¿Cuántos días hasta mi cumpleaños?', a: 'Ingresa la fecha de tu próximo cumpleaños arriba y haz clic en Iniciar. El temporizador mostrará el número exacto de días, horas, minutos y segundos hasta la medianoche de tu cumpleaños. Usa el año actual si el cumpleaños aún no ha pasado, o el próximo año si ya pasó.' },
+      { q: '¿Cómo creo una cuenta regresiva para el día de mi boda?', a: 'Ingresa la fecha de tu boda en los campos de fecha objetivo, escribe "Nuestra boda" o cualquier nombre personalizado en el campo del nombre del evento y haz clic en Iniciar. El temporizador en vivo muestra días, horas, minutos y segundos. Añade la página a favoritos para volver a tu cuenta regresiva cuando quieras.' },
+      { q: '¿Cuántos días hasta mis vacaciones?', a: 'Ingresa tu fecha de salida de vacaciones como objetivo, dale un nombre y comienza la cuenta regresiva. La calculadora muestra tanto el total de días restantes como el desglose en semanas, horas y minutos — útil para planificar el equipaje, documentos de viaje y tareas previas al viaje.' },
+      { q: '¿Cómo cuento los días hasta la graduación?', a: 'Ingresa la fecha de tu ceremonia de graduación, etiquétala "Día de graduación" y haz clic en Iniciar. La cuenta regresiva en vivo se actualiza segundo a segundo. También puedes anotar el total de horas o semanas restantes para una perspectiva diferente.' },
+      { q: '¿Cuántos días hasta una fecha específica?', a: 'Simplemente ingresa cualquier fecha futura en la calculadora de arriba y el temporizador muestra inmediatamente el número exacto de días restantes. El resultado también incluye el total de horas, minutos y segundos. Se admiten fechas hasta el 31 de diciembre de 2099.' },
+      { q: '¿La cuenta regresiva se actualiza en tiempo real?', a: 'Sí. Los segundos, minutos y horas se actualizan automáticamente cada segundo. No es necesario actualizar la página.' },
+      { q: '¿Cuál es la fecha máxima admitida?', a: 'La calculadora admite fechas hasta el 31 de diciembre de 2099, dando una cuenta regresiva máxima de más de 73 años.' },
+    ],
+    weekDays: ['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'],
+    months: ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'],
+  },
+};
+
+module.exports = {
+  pages: [
+    { id: 'countdown-timer', slugs: { en: 'countdown-timer', fr: 'fr/compte-a-rebours', es: 'es/cuenta-regresiva' } },
+  ],
+
+  render(pageId, lang) {
+    const t = T[lang];
+
+    const headlineBlock = `  <div class="headline-block">
+    <div class="kicker">${t.kicker}</div>
+    <h1 class="headline">${t.headline}</h1>
+    <p class="subhead">${t.subhead}</p>
+  </div>`;
+
+    const formGrid = `  <div class="form-grid">
+    <div class="form-col">
+      <div class="field-label">${t.targetLabel}</div>
+      <div class="date-row">
+        <input type="number" id="day" placeholder="DD" min="1" max="31" inputmode="numeric" oninput="clamp(this,1,31)">
+        <span>/</span>
+        <input type="number" id="month" placeholder="MM" min="1" max="12" inputmode="numeric" oninput="clamp(this,1,12)">
+        <span>/</span>
+        <input type="number" id="year" placeholder="YYYY" min="2024" max="2099" inputmode="numeric" oninput="clamp(this,2024,2099)">
+      </div>
+      <div class="field-label" style="margin-top:1.2rem">${t.labelLabel}</div>
+      <input type="text" id="eventLabel" placeholder="e.g. My Birthday" maxlength="40" style="background:none;border:none;border-bottom:2px solid var(--ink);font-family:'Inter',sans-serif;font-size:1rem;color:var(--ink);width:100%;padding:.2rem 0;outline:none;">
+      <div class="error-line" id="errorLine"></div>
+      <button class="calc-btn" onclick="calculate()">${t.calcBtn}</button>
+    </div>
+    <div class="form-col">
+      <p class="tip-text">${t.tipText}</p>
+      <ul class="example-list">
+        ${t.examples.map(ex => `<li>${ex}</li>`).join('\n        ')}
+      </ul>
+    </div>
+  </div>`;
+
+    const resultsSection = `  <div class="results-section" id="results">
+    <div class="results-header" id="resultsHeader">${t.resultsHeader}</div>
+    <div class="age-display">
+      <span class="age-number" id="heroDays">—</span>
+      <span class="age-suffix">${t.heroSuffix}</span>
+    </div>
+    <div class="precise-age" id="liveHMS"></div>
+    <div class="stats-strip">
+      <div class="stat-item"><div class="stat-num" id="statWeeks">—</div><div class="stat-lbl">${t.weeksLbl}</div></div>
+      <div class="stat-item"><div class="stat-num" id="statTotalH">—</div><div class="stat-lbl">${t.totalHoursLbl}</div></div>
+      <div class="stat-item"><div class="stat-num" id="statTotalM">—</div><div class="stat-lbl">${t.totalMinsLbl}</div></div>
+      <div class="stat-item"><div class="stat-num" id="statSecs">—</div><div class="stat-lbl">${t.secsLbl}</div></div>
+    </div>
+    <div class="facts-row">
+      <div class="fact-item"><div class="fact-key">${t.dateLbl}</div><div class="fact-val" id="ffDate">—</div></div>
+      <div class="fact-item"><div class="fact-key">${t.dayLbl}</div><div class="fact-val" id="ffDay">—</div></div>
+    </div>
+    <div class="bday-banner" id="doneBanner"></div>
+  </div>`;
+
+    const faqHTML = t.faqs.map(f =>
+      `    <div class="faq-item"><h3>${f.q}</h3><p>${f.a}</p></div>`
+    ).join('\n');
+
+    const seoBlock = `  <div class="seo-block">
+    <div><h2>${t.seoH2a}</h2><p>${t.seoP1}</p></div>
+    <div><h2>${t.seoH2b}</h2><p>${t.seoP2}</p></div>
+  </div>
+  <div class="faq-block">
+    <h2>${t.faqTitle}</h2>
+${faqHTML}
+  </div>`;
+
+    const data = JSON.stringify({
+      errInvalid: t.errInvalid, errPast: t.errPast, reachedMsg: t.reachedMsg,
+      weekDays: t.weekDays, months: t.months,
+    });
+
+    const script = `
+var D = ${data};
+var _target = null;
+var _timer = null;
+function fmt(n){return n.toLocaleString();}
+function pad2(n){return n<10?'0'+n:''+n;}
+
+function tick(){
+  if(!_target) return;
+  var now = new Date();
+  var diff = _target - now;
+  if(diff <= 0){
+    document.getElementById('heroDays').textContent = '0';
+    document.getElementById('liveHMS').textContent = '00h · 00min · 00s';
+    document.getElementById('statWeeks').textContent = '0';
+    document.getElementById('statTotalH').textContent = '0';
+    document.getElementById('statTotalM').textContent = '0';
+    document.getElementById('statSecs').textContent = '0';
+    document.getElementById('doneBanner').textContent = D.reachedMsg;
+    return;
+  }
+  var totalSec = Math.floor(diff/1000);
+  var s = totalSec%60, totalMin = Math.floor(totalSec/60);
+  var min = totalMin%60, totalH = Math.floor(totalMin/60);
+  var h = totalH%24, days = Math.floor(totalH/24);
+  document.getElementById('heroDays').textContent = fmt(days);
+  document.getElementById('liveHMS').textContent = pad2(h)+'h · '+pad2(min)+'min · '+pad2(s)+'s';
+  document.getElementById('statWeeks').textContent = fmt(Math.floor(days/7));
+  document.getElementById('statTotalH').textContent = fmt(totalH);
+  document.getElementById('statTotalM').textContent = fmt(totalMin);
+  document.getElementById('statSecs').textContent = fmt(totalSec);
+}
+
+function calculate(){
+  var d = parseInt(document.getElementById('day').value);
+  var m = parseInt(document.getElementById('month').value);
+  var y = parseInt(document.getElementById('year').value);
+  var label = document.getElementById('eventLabel').value.trim();
+  var err = document.getElementById('errorLine');
+  var res = document.getElementById('results');
+  err.classList.remove('show'); res.classList.remove('show');
+  if(_timer){clearInterval(_timer); _timer=null;}
+
+  if(!d||!m||!y||d<1||d>31||m<1||m>12||y<2024||y>2099){err.textContent=D.errInvalid; err.classList.add('show'); return;}
+  var target = new Date(y, m-1, d);
+  if(target.getDate()!==d){err.textContent=D.errInvalid; err.classList.add('show'); return;}
+  if(target <= new Date()){err.textContent=D.errPast; err.classList.add('show'); return;}
+
+  _target = target;
+  document.getElementById('resultsHeader').textContent = label || '${t.resultsHeader}';
+  document.getElementById('ffDate').textContent = target.getDate()+' '+D.months[target.getMonth()]+' '+target.getFullYear();
+  document.getElementById('ffDay').textContent = D.weekDays[target.getDay()];
+  document.getElementById('doneBanner').textContent = '';
+  res.classList.add('show');
+  res.scrollIntoView({behavior:'smooth',block:'start'});
+  tick();
+  _timer = setInterval(tick, 1000);
+}
+
+document.addEventListener('keydown', function(e){if(e.key==='Enter') calculate();});
+`;
+
+    return { title: t.title, metaDesc: t.metaDesc, headlineBlock, formGrid, resultsSection, seoBlock, script, faqs: t.faqs, source: t.source };
+  },
+};

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculateur de jours ouvrables – Compter les jours travaillés | Date.tools</title>
+<meta name="description" content="Calculez le nombre de jours ouvrables entre deux dates, ou ajoutez des jours ouvrables à une date. Exclut les week-ends.">
+<link rel="canonical" href="https://date.tools/fr/calculateur-jours-ouvrables/">
+<link rel="alternate" hreflang="en" href="https://date.tools/business-days-calculator/">
+<link rel="alternate" hreflang="fr" href="https://date.tools/fr/calculateur-jours-ouvrables/">
+<link rel="alternate" hreflang="es" href="https://date.tools/es/calculadora-dias-habiles/">
+<link rel="alternate" hreflang="x-default" href="https://date.tools/business-days-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Calculateur de jours ouvrables – Compter les jours travaillés | Date.tools">
+<meta property="og:description" content="Calculez le nombre de jours ouvrables entre deux dates, ou ajoutez des jours ouvrables à une date. Exclut les week-ends.">
+<meta property="og:url" content="https://date.tools/fr/calculateur-jours-ouvrables/">
+<meta property="og:site_name" content="Date.tools">
+<meta property="og:image" content="https://date.tools/og.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Calculateur de jours ouvrables – Compter les jours travaillés | Date.tools">
+<meta name="twitter:description" content="Calculez le nombre de jours ouvrables entre deux dates, ou ajoutez des jours ouvrables à une date. Exclut les week-ends.">
+<meta name="twitter:image" content="https://date.tools/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Space+Mono:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Qu'est-ce qu'un jour ouvrable ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Un jour ouvrable est tout jour qui n'est pas un samedi, dimanche ou jour férié. Dans la plupart des pays, cela signifie du lundi au vendredi. Les banques, tribunaux et agences gouvernementales opèrent généralement uniquement les jours ouvrables. Lorsque les contrats ou réglementations mentionnent des \"jours ouvrables\", ils excluent les week-ends et généralement aussi les jours fériés officiels."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Combien de jours ouvrables y a-t-il dans un mois ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Un mois typique compte 20 à 23 jours ouvrables, selon le mois et l'année. Février en année normale compte 20 jours ouvrables (4 semaines complètes). Les mois de 31 jours peuvent en avoir jusqu'à 23. Pour obtenir le décompte exact d'un mois spécifique, entrez le premier et le dernier jour de ce mois dans ce calculateur."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Comment ajouter 10 jours ouvrables à aujourd'hui ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sélectionnez \"Ajouter des jours ouvrables\", entrez la date d'aujourd'hui comme début, entrez 10 dans le champ des jours ouvrables et cliquez sur Calculer. Le résultat affiche la date exacte 10 jours ouvrables à partir de maintenant, en sautant tous les samedis et dimanches."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Comment calculer les jours ouvrables en excluant les jours fériés ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ce calculateur exclut automatiquement les week-ends. Pour exclure les jours fériés, obtenez d'abord le décompte des jours ouvrables, puis soustrayez le nombre de jours fériés officiels qui tombent dans votre plage de dates. La plupart des pays ont 8 à 13 jours fériés par an."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quelle est la date dans 5 jours ouvrables ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cinq jours ouvrables à partir d'un lundi correspondent au lundi suivant. D'un mardi, au mardi suivant — car 5 jours de semaine équivalent exactement à une semaine de travail. Utilisez le mode \"Ajouter des jours ouvrables\" et entrez 5 pour obtenir la date exacte."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Combien de jours calendaires font 30 jours ouvrables ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "30 jours ouvrables correspondent toujours à 6 semaines calendaires (42 jours) s'il n'y a pas de jours fériés, car 5 jours ouvrables × 6 semaines = 30. Cela peut représenter 43 à 46 jours calendaires selon les week-ends qui tombent en début ou fin de période. Utilisez le calculateur pour obtenir la date calendaire précise."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ce calculateur exclut-il les jours fériés ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Non — les jours fériés varient selon le pays, la région et l'année. Ce calculateur exclut uniquement les week-ends (samedi et dimanche). Soustrayez manuellement le nombre de jours fériés pertinents du résultat."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Comment exclure des jours fériés spécifiques ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Après avoir obtenu le résultat, soustrayez le nombre de jours fériés qui tombent dans la plage. La plupart des pays ont 8 à 12 jours fériés par an."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Calculateur de jours ouvrables",
+  "description": "Calculez le nombre de jours ouvrables entre deux dates, ou ajoutez des jours ouvrables à une date. Exclut les week-ends.",
+  "url": "https://date.tools/fr/calculateur-jours-ouvrables/",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Web",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+</head>
+<body>
+
+<div class="masthead">
+  <a href="/fr/calculateur-age/" class="masthead-brand">Date<span>.</span>tools</a>
+  <div class="masthead-meta" id="todayMeta"></div>
+</div>
+
+<div class="lang-strip">
+  <a href="/business-days-calculator/" class="lang-btn">EN</a>
+  <a href="/fr/calculateur-jours-ouvrables/" class="lang-btn active">FR</a>
+  <a href="/es/calculadora-dias-habiles/" class="lang-btn">ES</a>
+</div>
+
+<div class="page">
+
+  <div class="headline-block">
+    <div class="kicker">Calculateur de jours ouvrables</div>
+    <h1 class="headline">Compter <br>les jours <em>ouvrables</em></h1>
+    <p class="subhead">Calculez les jours ouvrables entre deux dates, ou trouvez une date X jours ouvrables à partir de maintenant.</p>
+  </div>
+
+  <div class="form-grid">
+    <div class="form-col">
+      <div class="mode-row" style="display:flex;gap:1.2rem;margin-bottom:1.4rem;flex-wrap:wrap;">
+        <label style="display:flex;align-items:center;gap:.4rem;cursor:pointer;font-size:.85rem;letter-spacing:.04em;text-transform:uppercase;">
+          <input type="radio" name="bdMode" id="mode1" value="1" checked onchange="switchMode(1)" style="accent-color:var(--accent);">
+          Compter entre deux dates
+        </label>
+        <label style="display:flex;align-items:center;gap:.4rem;cursor:pointer;font-size:.85rem;letter-spacing:.04em;text-transform:uppercase;">
+          <input type="radio" name="bdMode" id="mode2" value="2" onchange="switchMode(2)" style="accent-color:var(--accent);">
+          Ajouter des jours ouvrables à une date
+        </label>
+      </div>
+      <div class="field-label">Date de début <button type="button" onclick="setToday('start')" style="background:none;border:none;font-family:'Space Mono',monospace;font-size:.6rem;color:var(--accent);cursor:pointer;letter-spacing:.05em;text-transform:uppercase;padding:0 .4rem">Aujourd'hui</button></div>
+      <div class="date-row">
+        <input type="number" id="d1" placeholder="DD" min="1" max="31" inputmode="numeric" oninput="clamp(this,1,31)">
+        <span>/</span>
+        <input type="number" id="m1" placeholder="MM" min="1" max="12" inputmode="numeric" oninput="clamp(this,1,12)">
+        <span>/</span>
+        <input type="number" id="y1" placeholder="YYYY" min="1900" max="2100" inputmode="numeric" oninput="clamp(this,1900,2100)">
+      </div>
+      <div id="endDateBlock">
+        <div class="field-label" style="margin-top:1.5rem">Date de fin <button type="button" onclick="setToday('end')" style="background:none;border:none;font-family:'Space Mono',monospace;font-size:.6rem;color:var(--accent);cursor:pointer;letter-spacing:.05em;text-transform:uppercase;padding:0 .4rem">Aujourd'hui</button></div>
+        <div class="date-row">
+          <input type="number" id="d2" placeholder="DD" min="1" max="31" inputmode="numeric" oninput="clamp(this,1,31)">
+          <span>/</span>
+          <input type="number" id="m2" placeholder="MM" min="1" max="12" inputmode="numeric" oninput="clamp(this,1,12)">
+          <span>/</span>
+          <input type="number" id="y2" placeholder="YYYY" min="1900" max="2100" inputmode="numeric" oninput="clamp(this,1900,2100)">
+        </div>
+      </div>
+      <div id="addDaysBlock" style="display:none">
+        <div class="field-label" style="margin-top:1.5rem">Jours ouvrables à ajouter</div>
+        <div class="op-row">
+          <input type="number" id="addAmount" placeholder="0" min="1" max="9999" inputmode="numeric" style="width:5ch" oninput="clamp(this,1,9999)">
+        </div>
+      </div>
+      <div class="error-line" id="errorLine"></div>
+      <button class="calc-btn" onclick="calculate()">→ Calculer</button>
+    </div>
+    <div class="form-col">
+      <p class="tip-text">"Le temps c'est de l'argent. Comptez-le judicieusement."</p>
+      <ul class="example-list">
+        <li onclick="fillExample(0)">Jours ouvrables ce mois-ci →</li>
+        <li onclick="fillExample(1)">Ajouter 10 jours ouvrables à aujourd'hui →</li>
+        <li onclick="fillExample(2)">30 jours ouvrables à partir d'aujourd'hui →</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="results-section" id="results">
+    <div class="results-header" id="resultsHeader">Jours ouvrables</div>
+    <div id="heroMode1">
+      <div class="age-display">
+        <span class="age-number" id="heroBizDays">—</span>
+        <span class="age-suffix">jours ouvrables</span>
+      </div>
+      <div class="stats-strip cols-3">
+        <div class="stat-item"><div class="stat-num" id="statWeekends">—</div><div class="stat-lbl">week-ends</div></div>
+        <div class="stat-item"><div class="stat-num" id="statTotalDays">—</div><div class="stat-lbl">jours au total</div></div>
+        <div class="stat-item"><div class="stat-num" id="statWeeks">—</div><div class="stat-lbl">semaines</div></div>
+      </div>
+      <div class="facts-row">
+        <div class="fact-item"><div class="fact-key">Jour de début</div><div class="fact-val" id="ffStartDay">—</div></div>
+        <div class="fact-item"><div class="fact-key">Jour de fin</div><div class="fact-val" id="ffEndDay">—</div></div>
+      </div>
+    </div>
+    <div id="heroMode2" style="display:none">
+      <div class="result-date" id="resultDate">—</div>
+      <div class="result-date-sub" id="resultSub"></div>
+      <div class="facts-row">
+        <div class="fact-item"><div class="fact-key">Jour de la semaine</div><div class="fact-val" id="ffResultDay">—</div></div>
+        <div class="fact-item"><div class="fact-key">Jour de début</div><div class="fact-val" id="ffResultStart">—</div></div>
+        <div class="fact-item"><div class="fact-key">jours au total</div><div class="fact-val" id="ffResultTotal">—</div></div>
+        <div class="fact-item"><div class="fact-key">semaines</div><div class="fact-val" id="ffResultWeeks">—</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tool-nav">
+    <div class="nav-group"><span class="nav-cat">Âge</span><div class="nav-links"><a href="/fr/calculateur-age/">Calculateur d'âge</a><span class="nav-sep">·</span><a href="/fr/age-chronologique/">Âge chronologique</a><span class="nav-sep">·</span><a href="/fr/calculateur-age-bebe/">Âge bébé</a><span class="nav-sep">·</span><a href="/fr/calculateur-age-chien/">Âge du chien</a><span class="nav-sep">·</span><a href="/fr/calculateur-age-chat/">Âge du chat</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Dates</span><div class="nav-links"><a href="/fr/jours-entre-deux-dates/">Jours entre deux dates</a><span class="nav-sep">·</span><a href="/fr/calculateur-date/">Calculateur de date</a><span class="nav-sep">·</span><a href="/fr/quel-jour-sommes-nous/">Quel jour sommes-nous</a><span class="nav-sep">·</span><a href="/fr/numero-semaine/">Numéro de semaine</a><span class="nav-sep">·</span><a href="/fr/calculateur-jours-ouvrables/" aria-current="page">Jours ouvrables</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Comptes</span><div class="nav-links"><a href="/fr/jours-avant-noel/">Avant Noël</a><span class="nav-sep">·</span><a href="/fr/jours-avant-nouvel-an/">Avant Nouvel An</a><span class="nav-sep">·</span><a href="/fr/jours-avant-halloween/">Avant Halloween</a><span class="nav-sep">·</span><a href="/fr/jours-avant-paques/">Avant Pâques</a><span class="nav-sep">·</span><a href="/fr/compte-a-rebours/">Compte à rebours</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Monde</span><div class="nav-links"><a href="/fr/convertisseur-fuseaux-horaires/">Fuseaux horaires</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Né en</span><div class="nav-links"><a href="/fr/ne-en-1990/">Né en 1990</a><span class="nav-sep">·</span><a href="/fr/ne-en-1980/">Né en 1980</a><span class="nav-sep">·</span><a href="/fr/ne-en-2000/">Né en 2000</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Calendriers</span><div class="nav-links"><a href="/fr/numero-semaine/2025/">Semaines 2025</a><span class="nav-sep">·</span><a href="/fr/numero-semaine/2026/">Semaines 2026</a><span class="nav-sep">·</span><a href="/fr/numero-semaine/2027/">Semaines 2027</a></div></div>
+  </div>
+
+  <div class="seo-block">
+    <div><h2>Que sont les jours ouvrables ?</h2><p>Les jours ouvrables — aussi appelés jours travaillés ou jours de semaine — sont du lundi au vendredi, excluant le samedi et le dimanche. Ils constituent l'unité de temps standard utilisée dans le commerce, la banque, les procédures juridiques et l'administration gouvernementale. Lorsqu'un contrat stipule "paiement dans les 5 jours ouvrables", cela signifie 5 jours du lundi au vendredi, pas 5 jours calendaires. Les jours fériés ne sont pas automatiquement exclus par ce calculateur car ils varient selon le pays, la région et l'année. Pour un simple décompte lundi-vendredi sans jours fériés, ce calculateur est parfaitement précis. Pour exclure des jours fériés spécifiques, soustrayez-les manuellement du résultat.</p></div>
+    <div><h2>Comment calculer les jours ouvrables entre deux dates</h2><p>Pour compter les jours ouvrables entre deux dates : listez chaque date de la plage du début à la fin inclus, puis ne comptez que celles qui tombent du lundi au vendredi. Ce calculateur effectue ce décompte automatiquement et affiche également le total de jours calendaires et le nombre de jours de week-end. Le mode "Ajouter des jours ouvrables" fonctionne en sens inverse : à partir d'une date, il avance d'un jour ouvrable à la fois jusqu'à atteindre le nombre cible, en sautant automatiquement tous les samedis et dimanches.</p></div>
+  </div>
+  <div class="faq-block">
+    <h2>Questions fréquentes</h2>
+    <div class="faq-item"><h3>Qu'est-ce qu'un jour ouvrable ?</h3><p>Un jour ouvrable est tout jour qui n'est pas un samedi, dimanche ou jour férié. Dans la plupart des pays, cela signifie du lundi au vendredi. Les banques, tribunaux et agences gouvernementales opèrent généralement uniquement les jours ouvrables. Lorsque les contrats ou réglementations mentionnent des "jours ouvrables", ils excluent les week-ends et généralement aussi les jours fériés officiels.</p></div>
+    <div class="faq-item"><h3>Combien de jours ouvrables y a-t-il dans un mois ?</h3><p>Un mois typique compte 20 à 23 jours ouvrables, selon le mois et l'année. Février en année normale compte 20 jours ouvrables (4 semaines complètes). Les mois de 31 jours peuvent en avoir jusqu'à 23. Pour obtenir le décompte exact d'un mois spécifique, entrez le premier et le dernier jour de ce mois dans ce calculateur.</p></div>
+    <div class="faq-item"><h3>Comment ajouter 10 jours ouvrables à aujourd'hui ?</h3><p>Sélectionnez "Ajouter des jours ouvrables", entrez la date d'aujourd'hui comme début, entrez 10 dans le champ des jours ouvrables et cliquez sur Calculer. Le résultat affiche la date exacte 10 jours ouvrables à partir de maintenant, en sautant tous les samedis et dimanches.</p></div>
+    <div class="faq-item"><h3>Comment calculer les jours ouvrables en excluant les jours fériés ?</h3><p>Ce calculateur exclut automatiquement les week-ends. Pour exclure les jours fériés, obtenez d'abord le décompte des jours ouvrables, puis soustrayez le nombre de jours fériés officiels qui tombent dans votre plage de dates. La plupart des pays ont 8 à 13 jours fériés par an.</p></div>
+    <div class="faq-item"><h3>Quelle est la date dans 5 jours ouvrables ?</h3><p>Cinq jours ouvrables à partir d'un lundi correspondent au lundi suivant. D'un mardi, au mardi suivant — car 5 jours de semaine équivalent exactement à une semaine de travail. Utilisez le mode "Ajouter des jours ouvrables" et entrez 5 pour obtenir la date exacte.</p></div>
+    <div class="faq-item"><h3>Combien de jours calendaires font 30 jours ouvrables ?</h3><p>30 jours ouvrables correspondent toujours à 6 semaines calendaires (42 jours) s'il n'y a pas de jours fériés, car 5 jours ouvrables × 6 semaines = 30. Cela peut représenter 43 à 46 jours calendaires selon les week-ends qui tombent en début ou fin de période. Utilisez le calculateur pour obtenir la date calendaire précise.</p></div>
+    <div class="faq-item"><h3>Ce calculateur exclut-il les jours fériés ?</h3><p>Non — les jours fériés varient selon le pays, la région et l'année. Ce calculateur exclut uniquement les week-ends (samedi et dimanche). Soustrayez manuellement le nombre de jours fériés pertinents du résultat.</p></div>
+    <div class="faq-item"><h3>Comment exclure des jours fériés spécifiques ?</h3><p>Après avoir obtenu le résultat, soustrayez le nombre de jours fériés qui tombent dans la plage. La plupart des pays ont 8 à 12 jours fériés par an.</p></div>
+  </div>
+
+  <div class="source-block">
+    <span class="source-lbl">Source</span>
+    <a href="https://www.dol.gov/general/aboutdol/majorlaws" target="_blank" rel="noopener noreferrer">Département du Travail des États-Unis – Jours fériés fédéraux</a>
+  </div>
+  <footer>© 2026 Date.tools — Calculateurs de date et d'heure gratuits en ligne</footer>
+</div>
+
+<script>
+(function(){
+  var now = new Date();
+  var opts = {weekday:'long',year:'numeric',month:'long',day:'numeric'};
+  document.getElementById('todayMeta').innerHTML =
+    now.toLocaleDateString('fr-FR', opts) + '<br>Calculateur de dates gratuit';
+})();
+// Shared input guard: strip non-digits, truncate to max digit length, clamp to hi
+function clamp(el, lo, hi) {
+  var maxLen = String(hi).length;
+  var s = el.value.replace(/\D/g, '').slice(0, maxLen);
+  var n = parseInt(s, 10);
+  if (!isNaN(n) && n > hi) s = String(hi);
+  el.value = s;
+}
+</script>
+<script>
+
+var D = {"errInvalid":"→ Date invalide. Vérifiez votre saisie.","errOrder":"→ La date de fin doit être après la date de début.","errAmount":"→ Veuillez entrer un nombre de jours valide.","resultsHeader1":"Jours ouvrables","resultsHeader2":"Date résultante","weekDays":["Dimanche","Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi"],"months":["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"],"businessDaysLbl":"jours ouvrables"};
+var _currentMode = 1;
+function fmt(n){return n.toLocaleString();}
+
+function switchMode(mode){
+  _currentMode = mode;
+  document.getElementById('endDateBlock').style.display = mode===1?'':'none';
+  document.getElementById('addDaysBlock').style.display = mode===2?'':'none';
+  document.getElementById('results').classList.remove('show');
+}
+
+function setToday(which){
+  var now = new Date();
+  var suffix = which==='start'?'1':'2';
+  document.getElementById('d'+suffix).value = now.getDate();
+  document.getElementById('m'+suffix).value = now.getMonth()+1;
+  document.getElementById('y'+suffix).value = now.getFullYear();
+}
+
+function parseDate(d,m,y){
+  if(!d||!m||!y) return null;
+  var dt = new Date(y,m-1,d);
+  return (dt.getDate()===d)?dt:null;
+}
+
+function countBusiness(d1, d2){
+  var count = 0, cur = new Date(d1);
+  while(cur <= d2){
+    var day = cur.getDay();
+    if(day !== 0 && day !== 6) count++;
+    cur.setDate(cur.getDate()+1);
+  }
+  return count;
+}
+
+function addBusinessDays(date, n){
+  var result = new Date(date);
+  var added = 0;
+  while(added < n){
+    result.setDate(result.getDate()+1);
+    var day = result.getDay();
+    if(day !== 0 && day !== 6) added++;
+  }
+  return result;
+}
+
+function fillExample(idx){
+  var now = new Date();
+  if(idx===0){
+    // Count business days this month
+    document.getElementById('mode1').checked = true; switchMode(1);
+    document.getElementById('d1').value=1;
+    document.getElementById('m1').value=now.getMonth()+1;
+    document.getElementById('y1').value=now.getFullYear();
+    var lastDay = new Date(now.getFullYear(), now.getMonth()+1, 0);
+    document.getElementById('d2').value=lastDay.getDate();
+    document.getElementById('m2').value=now.getMonth()+1;
+    document.getElementById('y2').value=now.getFullYear();
+  } else if(idx===1){
+    // Add 10 business days to today
+    document.getElementById('mode2').checked = true; switchMode(2);
+    document.getElementById('d1').value=now.getDate();
+    document.getElementById('m1').value=now.getMonth()+1;
+    document.getElementById('y1').value=now.getFullYear();
+    document.getElementById('addAmount').value=10;
+  } else {
+    // 30 working days from today
+    document.getElementById('mode2').checked = true; switchMode(2);
+    document.getElementById('d1').value=now.getDate();
+    document.getElementById('m1').value=now.getMonth()+1;
+    document.getElementById('y1').value=now.getFullYear();
+    document.getElementById('addAmount').value=30;
+  }
+  calculate();
+}
+
+function calculate(){
+  var d1=parseInt(document.getElementById('d1').value);
+  var m1=parseInt(document.getElementById('m1').value);
+  var y1=parseInt(document.getElementById('y1').value);
+  var err=document.getElementById('errorLine');
+  var res=document.getElementById('results');
+  err.classList.remove('show'); res.classList.remove('show');
+
+  var date1=parseDate(d1,m1,y1);
+  if(!date1){err.textContent=D.errInvalid; err.classList.add('show'); return;}
+
+  if(_currentMode===1){
+    var d2=parseInt(document.getElementById('d2').value);
+    var m2=parseInt(document.getElementById('m2').value);
+    var y2=parseInt(document.getElementById('y2').value);
+    var date2=parseDate(d2,m2,y2);
+    if(!date2){err.textContent=D.errInvalid; err.classList.add('show'); return;}
+    if(date2<date1){err.textContent=D.errOrder; err.classList.add('show'); return;}
+
+    var bizDays=countBusiness(date1,date2);
+    var totalDays=Math.round((date2-date1)/86400000)+1;
+    var weekends=totalDays-bizDays;
+    var weeks=Math.floor(totalDays/7);
+
+    document.getElementById('resultsHeader').textContent=D.resultsHeader1;
+    document.getElementById('heroMode1').style.display='';
+    document.getElementById('heroMode2').style.display='none';
+    document.getElementById('heroBizDays').textContent=fmt(bizDays);
+    document.getElementById('statWeekends').textContent=fmt(weekends);
+    document.getElementById('statTotalDays').textContent=fmt(totalDays);
+    document.getElementById('statWeeks').textContent=fmt(weeks);
+    document.getElementById('ffStartDay').textContent=D.weekDays[date1.getDay()];
+    document.getElementById('ffEndDay').textContent=D.weekDays[date2.getDay()];
+  } else {
+    var amount=parseInt(document.getElementById('addAmount').value);
+    if(isNaN(amount)||amount<1){err.textContent=D.errAmount; err.classList.add('show'); return;}
+
+    var result=addBusinessDays(date1,amount);
+    var totalCalDays=Math.round((result-date1)/86400000);
+    var calWeeks=Math.floor(totalCalDays/7);
+    var dateStr=result.getDate()+' '+D.months[result.getMonth()]+' '+result.getFullYear();
+
+    document.getElementById('resultsHeader').textContent=D.resultsHeader2;
+    document.getElementById('heroMode1').style.display='none';
+    document.getElementById('heroMode2').style.display='';
+    document.getElementById('resultDate').textContent=dateStr;
+    document.getElementById('resultSub').textContent='+ '+amount+' '+D.businessDaysLbl;
+    document.getElementById('ffResultDay').textContent=D.weekDays[result.getDay()];
+    document.getElementById('ffResultStart').textContent=D.weekDays[date1.getDay()];
+    document.getElementById('ffResultTotal').textContent=fmt(totalCalDays);
+    document.getElementById('ffResultWeeks').textContent=fmt(calWeeks);
+  }
+
+  res.classList.add('show');
+  res.scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+// Pre-fill start with today
+(function(){
+  var now = new Date();
+  document.getElementById('d1').value=now.getDate();
+  document.getElementById('m1').value=now.getMonth()+1;
+  document.getElementById('y1').value=now.getFullYear();
+})();
+
+document.addEventListener('keydown',function(e){if(e.key==='Enter') calculate();});
+
+</script>
+</body>
+</html>

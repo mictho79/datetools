@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de fechas – Sumar o restar días | Date.tools</title>
+<meta name="description" content="Suma o resta días, semanas, meses o años a cualquier fecha. Descubre qué fecha será en X días. Calculadora de fechas gratuita.">
+<link rel="canonical" href="https://date.tools/es/calculadora-fechas/">
+<link rel="alternate" hreflang="en" href="https://date.tools/date-calculator/">
+<link rel="alternate" hreflang="fr" href="https://date.tools/fr/calculateur-date/">
+<link rel="alternate" hreflang="es" href="https://date.tools/es/calculadora-fechas/">
+<link rel="alternate" hreflang="x-default" href="https://date.tools/date-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Calculadora de fechas – Sumar o restar días | Date.tools">
+<meta property="og:description" content="Suma o resta días, semanas, meses o años a cualquier fecha. Descubre qué fecha será en X días. Calculadora de fechas gratuita.">
+<meta property="og:url" content="https://date.tools/es/calculadora-fechas/">
+<meta property="og:site_name" content="Date.tools">
+<meta property="og:image" content="https://date.tools/og.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Calculadora de fechas – Sumar o restar días | Date.tools">
+<meta name="twitter:description" content="Suma o resta días, semanas, meses o años a cualquier fecha. Descubre qué fecha será en X días. Calculadora de fechas gratuita.">
+<meta name="twitter:image" content="https://date.tools/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Space+Mono:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué fecha es en 30 días?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ingresa la fecha de hoy como inicio, elige \"Sumar\" y \"30 días\", luego haz clic en Calcular. El resultado será la fecha exacta en 30 días. Por ejemplo, 30 días después del 15 de marzo es el 14 de abril."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué fecha es en 90 días?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Usa el mismo método con 90 días. Este es un cálculo comercial común — muchos contratos y garantías tienen términos de 90 días. Como los meses varían en longitud, 90 días no equivale exactamente a 3 meses; la calculadora te da la fecha calendario precisa."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo sumo 30 días a una fecha específica?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ingresa tu fecha objetivo como fecha de inicio, selecciona \"Sumar\" e ingresa 30 en el campo de cantidad con \"días\" como unidad, luego haz clic en Calcular. La fecha resultante exacta se muestra inmediatamente junto con el día de la semana y el número de semana."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué fecha es 90 días después de una fecha dada?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ingresa tu fecha de inicio, selecciona \"Sumar\", ingresa 90 y elige \"días\". La calculadora maneja correctamente los límites de mes — 90 días desde el 1 de enero da el 1 de abril en un año no bisiesto."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo resto meses a una fecha?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Selecciona \"Restar\" en el menú desplegable de operaciones, ingresa el número de meses y elige \"meses\" como unidad. La calculadora maneja casos límite como restar 1 mes al 31 de marzo, lo que da correctamente el 28 de febrero (o 29 en año bisiesto)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo calculo una fecha límite de proyecto?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ingresa la fecha de inicio de tu proyecto, selecciona \"Sumar\", ingresa la duración del proyecto y elige la unidad apropiada (días, semanas o meses). El resultado muestra la fecha límite junto con el día de la semana — útil para detectar si un plazo cae en fin de semana."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué fecha es en 100 días?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Usa el mismo método con 100 días. Como los meses tienen diferentes longitudes, no puedes simplemente contar 3 meses. 100 días desde el 1 de enero da el 11 de abril en un año ordinario."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué fecha es en 6 meses?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ingresa hoy como inicio, elige \"Sumar\" y \"6 meses\". El resultado maneja correctamente los casos límite como sumar 6 meses al 31 de agosto (el resultado es el 28/29 de febrero del año siguiente)."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Calculadora de fechas",
+  "description": "Suma o resta días, semanas, meses o años a cualquier fecha. Descubre qué fecha será en X días. Calculadora de fechas gratuita.",
+  "url": "https://date.tools/es/calculadora-fechas/",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Web",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+</head>
+<body>
+
+<div class="masthead">
+  <a href="/es/calculadora-edad/" class="masthead-brand">Date<span>.</span>tools</a>
+  <div class="masthead-meta" id="todayMeta"></div>
+</div>
+
+<div class="lang-strip">
+  <a href="/date-calculator/" class="lang-btn">EN</a>
+  <a href="/fr/calculateur-date/" class="lang-btn">FR</a>
+  <a href="/es/calculadora-fechas/" class="lang-btn active">ES</a>
+</div>
+
+<div class="page">
+
+  <div class="headline-block">
+    <div class="kicker">Calculadora de fechas</div>
+    <h1 class="headline">¿Qué <em>fecha</em> <br>será?</h1>
+    <p class="subhead">Suma o resta días, semanas, meses o años a partir de cualquier fecha de inicio.</p>
+  </div>
+
+  <div class="form-grid">
+    <div class="form-col">
+      <div class="field-label">Fecha de inicio</div>
+      <div class="date-row">
+        <input type="number" id="day" placeholder="DD" min="1" max="31" inputmode="numeric" oninput="clamp(this,1,31)">
+        <span>/</span>
+        <input type="number" id="month" placeholder="MM" min="1" max="12" inputmode="numeric" oninput="clamp(this,1,12)">
+        <span>/</span>
+        <input type="number" id="year" placeholder="YYYY" min="1900" max="2100" inputmode="numeric" oninput="clamp(this,1900,2100)">
+      </div>
+      <div class="field-label" style="margin-top:1.5rem">Operación</div>
+      <div class="op-row">
+        <select id="opSign">
+          <option value="add">+ Sumar</option>
+          <option value="sub">− Restar</option>
+        </select>
+        <input type="number" id="opAmount" placeholder="0" min="0" max="9999" inputmode="numeric" style="width:4ch" oninput="clamp(this,0,9999)">
+        <select id="opUnit">
+          <option value="days">días</option>
+          <option value="weeks">semanas</option>
+          <option value="months">meses</option>
+          <option value="years">años</option>
+        </select>
+      </div>
+      <div class="error-line" id="errorLine"></div>
+      <button class="calc-btn" onclick="calculate()">→ Calcular</button>
+    </div>
+    <div class="form-col">
+      <p class="tip-text">"El tiempo fluye en una dirección, pero la curiosidad nos permite mirar hacia adelante y hacia atrás."</p>
+      <ul class="example-list">
+        <li onclick="fillExample(0)">Hoy + 100 días →</li>
+        <li onclick="fillExample(1)">Hoy − 90 días →</li>
+        <li onclick="fillExample(2)">Hoy + 1 año →</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="results-section" id="results">
+    <div class="results-header">Fecha resultante</div>
+    <div class="result-date" id="resultDate">—</div>
+    <div class="result-date-sub" id="resultSub"></div>
+    <div class="facts-row">
+      <div class="fact-item"><div class="fact-key">Día de la semana</div><div class="fact-val" id="ffWeekday">—</div></div>
+      <div class="fact-item"><div class="fact-key">Día del año</div><div class="fact-val" id="ffDoy">—</div></div>
+      <div class="fact-item"><div class="fact-key">Semana</div><div class="fact-val" id="ffWeek">—</div></div>
+      <div class="fact-item"><div class="fact-key">Año bisiesto</div><div class="fact-val" id="ffLeap">—</div></div>
+    </div>
+  </div>
+
+  <div class="tool-nav">
+    <div class="nav-group"><span class="nav-cat">Edad</span><div class="nav-links"><a href="/es/calculadora-edad/">Calculadora de edad</a><span class="nav-sep">·</span><a href="/es/edad-cronologica/">Edad cronológica</a><span class="nav-sep">·</span><a href="/es/calculadora-edad-bebe/">Edad del bebé</a><span class="nav-sep">·</span><a href="/es/calculadora-edad-perro/">Edad del perro</a><span class="nav-sep">·</span><a href="/es/calculadora-edad-gato/">Edad del gato</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Fechas</span><div class="nav-links"><a href="/es/dias-entre-fechas/">Días entre fechas</a><span class="nav-sep">·</span><a href="/es/calculadora-fechas/" aria-current="page">Calculadora de fechas</a><span class="nav-sep">·</span><a href="/es/que-dia-es-hoy/">¿Qué día es hoy?</a><span class="nav-sep">·</span><a href="/es/numero-semana/">Número de semana</a><span class="nav-sep">·</span><a href="/es/calculadora-dias-habiles/">Días hábiles</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Cuentas</span><div class="nav-links"><a href="/es/dias-para-navidad/">Navidad</a><span class="nav-sep">·</span><a href="/es/dias-para-ano-nuevo/">Año Nuevo</a><span class="nav-sep">·</span><a href="/es/dias-para-halloween/">Halloween</a><span class="nav-sep">·</span><a href="/es/dias-para-pascua/">Pascua</a><span class="nav-sep">·</span><a href="/es/cuenta-regresiva/">Cuenta regresiva</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Mundo</span><div class="nav-links"><a href="/es/conversor-zona-horaria/">Zona horaria</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Nacido en</span><div class="nav-links"><a href="/es/nacido-en-1990/">Nacido en 1990</a><span class="nav-sep">·</span><a href="/es/nacido-en-1980/">Nacido en 1980</a><span class="nav-sep">·</span><a href="/es/nacido-en-2000/">Nacido en 2000</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Calendarios</span><div class="nav-links"><a href="/es/numero-semana/2025/">Semanas 2025</a><span class="nav-sep">·</span><a href="/es/numero-semana/2026/">Semanas 2026</a><span class="nav-sep">·</span><a href="/es/numero-semana/2027/">Semanas 2027</a></div></div>
+  </div>
+
+  <div class="seo-block">
+    <div><h2>Cómo sumar días a una fecha</h2><p>Sumar días a una fecha parece sencillo — cuenta hacia adelante desde el inicio — pero los límites de mes lo complican. Si sumas 30 días al 15 de enero, llegas al 14 de febrero en un año ordinario. Suma 30 días al 31 de enero y llegas al 2 de marzo (o 1 de marzo en año bisiesto). Esta calculadora maneja automáticamente todos esos casos límite, incluidas las variaciones en la longitud de los meses, los cambios de año y el día extra de febrero en años bisiestos. Admite días, semanas, meses y años como unidades, y funciona igual de bien para sumar tiempo hacia adelante o restar tiempo hacia atrás desde cualquier fecha entre 1900 y 2100.</p></div>
+    <div><h2>Usos prácticos del cálculo de fechas</h2><p>El cálculo de fechas se usa constantemente en la vida profesional y personal. Las empresas calculan fechas de vencimiento de pagos (términos neto-30, neto-60), fechas de renovación de suscripciones, fechas de fin de períodos de prueba y vencimientos de garantías. Los profesionales de la salud rastrean calendarios de medicación, hitos prenatales y ventanas de citas de seguimiento. Los equipos legales calculan plazos estatutarios. Los gestores de proyectos encuentran fechas de hitos sumando duraciones de sprint a fechas de inicio. Esta calculadora hace las matemáticas por ti.</p></div>
+  </div>
+  <div class="faq-block">
+    <h2>Preguntas frecuentes</h2>
+    <div class="faq-item"><h3>¿Qué fecha es en 30 días?</h3><p>Ingresa la fecha de hoy como inicio, elige "Sumar" y "30 días", luego haz clic en Calcular. El resultado será la fecha exacta en 30 días. Por ejemplo, 30 días después del 15 de marzo es el 14 de abril.</p></div>
+    <div class="faq-item"><h3>¿Qué fecha es en 90 días?</h3><p>Usa el mismo método con 90 días. Este es un cálculo comercial común — muchos contratos y garantías tienen términos de 90 días. Como los meses varían en longitud, 90 días no equivale exactamente a 3 meses; la calculadora te da la fecha calendario precisa.</p></div>
+    <div class="faq-item"><h3>¿Cómo sumo 30 días a una fecha específica?</h3><p>Ingresa tu fecha objetivo como fecha de inicio, selecciona "Sumar" e ingresa 30 en el campo de cantidad con "días" como unidad, luego haz clic en Calcular. La fecha resultante exacta se muestra inmediatamente junto con el día de la semana y el número de semana.</p></div>
+    <div class="faq-item"><h3>¿Qué fecha es 90 días después de una fecha dada?</h3><p>Ingresa tu fecha de inicio, selecciona "Sumar", ingresa 90 y elige "días". La calculadora maneja correctamente los límites de mes — 90 días desde el 1 de enero da el 1 de abril en un año no bisiesto.</p></div>
+    <div class="faq-item"><h3>¿Cómo resto meses a una fecha?</h3><p>Selecciona "Restar" en el menú desplegable de operaciones, ingresa el número de meses y elige "meses" como unidad. La calculadora maneja casos límite como restar 1 mes al 31 de marzo, lo que da correctamente el 28 de febrero (o 29 en año bisiesto).</p></div>
+    <div class="faq-item"><h3>¿Cómo calculo una fecha límite de proyecto?</h3><p>Ingresa la fecha de inicio de tu proyecto, selecciona "Sumar", ingresa la duración del proyecto y elige la unidad apropiada (días, semanas o meses). El resultado muestra la fecha límite junto con el día de la semana — útil para detectar si un plazo cae en fin de semana.</p></div>
+    <div class="faq-item"><h3>¿Qué fecha es en 100 días?</h3><p>Usa el mismo método con 100 días. Como los meses tienen diferentes longitudes, no puedes simplemente contar 3 meses. 100 días desde el 1 de enero da el 11 de abril en un año ordinario.</p></div>
+    <div class="faq-item"><h3>¿Qué fecha es en 6 meses?</h3><p>Ingresa hoy como inicio, elige "Sumar" y "6 meses". El resultado maneja correctamente los casos límite como sumar 6 meses al 31 de agosto (el resultado es el 28/29 de febrero del año siguiente).</p></div>
+  </div>
+
+  <div class="source-block">
+    <span class="source-lbl">Source</span>
+    <a href="https://www.iso.org/iso-8601-date-and-time-format.html" target="_blank" rel="noopener noreferrer">ISO 8601 – Formato de fecha y hora</a>
+  </div>
+  <footer>© 2026 Date.tools — Calculadoras de fecha y hora gratuitas en línea</footer>
+</div>
+
+<script>
+(function(){
+  var now = new Date();
+  var opts = {weekday:'long',year:'numeric',month:'long',day:'numeric'};
+  document.getElementById('todayMeta').innerHTML =
+    now.toLocaleDateString('es-ES', opts) + '<br>Calculadora de fechas gratuita';
+})();
+// Shared input guard: strip non-digits, truncate to max digit length, clamp to hi
+function clamp(el, lo, hi) {
+  var maxLen = String(hi).length;
+  var s = el.value.replace(/\D/g, '').slice(0, maxLen);
+  var n = parseInt(s, 10);
+  if (!isNaN(n) && n > hi) s = String(hi);
+  el.value = s;
+}
+</script>
+<script>
+
+var D = {"errInvalid":"→ Fecha no válida. Verifica tu entrada.","errAmount":"→ Por favor ingresa una cantidad válida.","weekDays":["Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado"],"months":["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"],"yes":"Sí","no":"No"};
+function fmt(n){return n.toLocaleString();}
+
+function getWeekNum(d){
+  var date=new Date(Date.UTC(d.getFullYear(),d.getMonth(),d.getDate()));
+  var day=date.getUTCDay()||7;
+  date.setUTCDate(date.getUTCDate()+4-day);
+  var yearStart=new Date(Date.UTC(date.getUTCFullYear(),0,1));
+  return Math.ceil((((date-yearStart)/86400000)+1)/7);
+}
+
+function getDoy(d){
+  var start=new Date(d.getFullYear(),0,0);
+  return Math.floor((d-start)/86400000);
+}
+
+function isLeap(y){ return (y%4===0&&y%100!==0)||y%400===0; }
+
+function addToDate(date, amount, unit){
+  var r=new Date(date);
+  if(unit==='days') r.setDate(r.getDate()+amount);
+  else if(unit==='weeks') r.setDate(r.getDate()+amount*7);
+  else if(unit==='months'){
+    var m=r.getMonth()+amount;
+    var y=r.getFullYear()+Math.floor(m/12);
+    m=((m%12)+12)%12;
+    var lastDay=new Date(y,m+1,0).getDate();
+    r.setFullYear(y,m,Math.min(r.getDate(),lastDay));
+  } else {
+    r.setFullYear(r.getFullYear()+amount);
+  }
+  return r;
+}
+
+function fillExample(idx){
+  var now=new Date();
+  document.getElementById('day').value=now.getDate();
+  document.getElementById('month').value=now.getMonth()+1;
+  document.getElementById('year').value=now.getFullYear();
+  if(idx===0){ document.getElementById('opSign').value='add'; document.getElementById('opAmount').value=100; document.getElementById('opUnit').value='days'; }
+  else if(idx===1){ document.getElementById('opSign').value='sub'; document.getElementById('opAmount').value=90; document.getElementById('opUnit').value='days'; }
+  else { document.getElementById('opSign').value='add'; document.getElementById('opAmount').value=1; document.getElementById('opUnit').value='years'; }
+  calculate();
+}
+
+function calculate(){
+  var d=parseInt(document.getElementById('day').value);
+  var m=parseInt(document.getElementById('month').value);
+  var y=parseInt(document.getElementById('year').value);
+  var amount=parseInt(document.getElementById('opAmount').value);
+  var sign=document.getElementById('opSign').value;
+  var unit=document.getElementById('opUnit').value;
+  var err=document.getElementById('errorLine');
+  var res=document.getElementById('results');
+  err.classList.remove('show'); res.classList.remove('show');
+
+  if(!d||!m||!y||d<1||d>31||m<1||m>12){err.textContent=D.errInvalid; err.classList.add('show'); return;}
+  var start=new Date(y,m-1,d);
+  if(start.getDate()!==d){err.textContent=D.errInvalid; err.classList.add('show'); return;}
+  if(isNaN(amount)||amount<0){err.textContent=D.errAmount; err.classList.add('show'); return;}
+
+  var delta=sign==='add'?amount:-amount;
+  var result=addToDate(start,delta,unit);
+
+  var dateStr=result.getDate()+' '+D.months[result.getMonth()]+' '+result.getFullYear();
+  document.getElementById('resultDate').textContent=dateStr;
+  document.getElementById('resultSub').textContent=(sign==='add'?'+ ':'− ')+amount+' '+unit;
+  document.getElementById('ffWeekday').textContent=D.weekDays[result.getDay()];
+  document.getElementById('ffDoy').textContent=getDoy(result);
+  document.getElementById('ffWeek').textContent=getWeekNum(result);
+  document.getElementById('ffLeap').textContent=isLeap(result.getFullYear())?D.yes:D.no;
+  res.classList.add('show');
+  res.scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+// Pre-fill today
+(function(){
+  var now=new Date();
+  document.getElementById('day').value=now.getDate();
+  document.getElementById('month').value=now.getMonth()+1;
+  document.getElementById('year').value=now.getFullYear();
+})();
+
+document.addEventListener('keydown',function(e){if(e.key==='Enter') calculate();});
+
+</script>
+</body>
+</html>

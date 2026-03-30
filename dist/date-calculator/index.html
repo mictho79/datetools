@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Date Calculator – Add or Subtract Days from a Date | Date.tools</title>
+<meta name="description" content="Add or subtract days, weeks, months, or years from any date. Find out what date it will be in X days. Free online date calculator.">
+<link rel="canonical" href="https://date.tools/date-calculator/">
+<link rel="alternate" hreflang="en" href="https://date.tools/date-calculator/">
+<link rel="alternate" hreflang="fr" href="https://date.tools/fr/calculateur-date/">
+<link rel="alternate" hreflang="es" href="https://date.tools/es/calculadora-fechas/">
+<link rel="alternate" hreflang="x-default" href="https://date.tools/date-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Date Calculator – Add or Subtract Days from a Date | Date.tools">
+<meta property="og:description" content="Add or subtract days, weeks, months, or years from any date. Find out what date it will be in X days. Free online date calculator.">
+<meta property="og:url" content="https://date.tools/date-calculator/">
+<meta property="og:site_name" content="Date.tools">
+<meta property="og:image" content="https://date.tools/og.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Date Calculator – Add or Subtract Days from a Date | Date.tools">
+<meta name="twitter:description" content="Add or subtract days, weeks, months, or years from any date. Find out what date it will be in X days. Free online date calculator.">
+<meta name="twitter:image" content="https://date.tools/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Space+Mono:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What date is 30 days from today?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Enter today's date as start, choose \"Add\" and \"30 days\", then click Calculate. The result will be the exact date 30 days from now, accounting for varying month lengths. For example, 30 days from March 15 is April 14."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What date is 90 days from today?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use the same method with 90 days. This is a common business calculation — many contracts and warranties have 90-day terms. Because months vary in length, 90 days is not exactly 3 months; the calculator gives you the precise calendar date."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I add 30 days to a specific date?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Enter your target date as the start date, select \"Add\" and enter 30 in the amount field with \"days\" as the unit, then click Calculate. The exact result date is shown immediately along with its day of the week and week number."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What date is 90 days from a given date?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Enter your start date, select \"Add\", enter 90, and choose \"days\". The calculator correctly handles month boundaries — 90 days from January 1 is April 1 in a non-leap year and March 31 in a leap year."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I subtract months from a date?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Select \"Subtract\" from the operation dropdown, enter the number of months, and choose \"months\" as the unit. The calculator handles edge cases like subtracting 1 month from March 31, which correctly gives February 28 (or 29 in a leap year)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I calculate a project deadline?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Enter your project start date, select \"Add\", enter the project duration, and choose the appropriate unit (days, weeks, or months). The result shows the deadline date along with the day of the week — useful for spotting if a deadline falls on a weekend."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What date is 100 days from today?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use the same method with 100 days. Because months have different lengths, you cannot simply count 3 months — the calculator gives you the precise date. 100 days from January 1 lands on April 11 in a regular year."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What date is 6 months from now?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Enter today as start, choose \"Add\" and \"6 months\". The result correctly handles cases like adding 6 months to August 31 (the result is February 28/29 in the following year) and other end-of-month edge cases."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Date Calculator",
+  "description": "Add or subtract days, weeks, months, or years from any date. Find out what date it will be in X days. Free online date calculator.",
+  "url": "https://date.tools/date-calculator/",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Web",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+</head>
+<body>
+
+<div class="masthead">
+  <a href="/" class="masthead-brand">Date<span>.</span>tools</a>
+  <div class="masthead-meta" id="todayMeta"></div>
+</div>
+
+<div class="lang-strip">
+  <a href="/date-calculator/" class="lang-btn active">EN</a>
+  <a href="/fr/calculateur-date/" class="lang-btn">FR</a>
+  <a href="/es/calculadora-fechas/" class="lang-btn">ES</a>
+</div>
+
+<div class="page">
+
+  <div class="headline-block">
+    <div class="kicker">Date Calculator</div>
+    <h1 class="headline">What <em>date</em> <br>will it be?</h1>
+    <p class="subhead">Add or subtract days, weeks, months, or years from any start date.</p>
+  </div>
+
+  <div class="form-grid">
+    <div class="form-col">
+      <div class="field-label">Start date</div>
+      <div class="date-row">
+        <input type="number" id="day" placeholder="DD" min="1" max="31" inputmode="numeric" oninput="clamp(this,1,31)">
+        <span>/</span>
+        <input type="number" id="month" placeholder="MM" min="1" max="12" inputmode="numeric" oninput="clamp(this,1,12)">
+        <span>/</span>
+        <input type="number" id="year" placeholder="YYYY" min="1900" max="2100" inputmode="numeric" oninput="clamp(this,1900,2100)">
+      </div>
+      <div class="field-label" style="margin-top:1.5rem">Operation</div>
+      <div class="op-row">
+        <select id="opSign">
+          <option value="add">+ Add</option>
+          <option value="sub">− Subtract</option>
+        </select>
+        <input type="number" id="opAmount" placeholder="0" min="0" max="9999" inputmode="numeric" style="width:4ch" oninput="clamp(this,0,9999)">
+        <select id="opUnit">
+          <option value="days">days</option>
+          <option value="weeks">weeks</option>
+          <option value="months">months</option>
+          <option value="years">years</option>
+        </select>
+      </div>
+      <div class="error-line" id="errorLine"></div>
+      <button class="calc-btn" onclick="calculate()">→ Calculate</button>
+    </div>
+    <div class="form-col">
+      <p class="tip-text">"Time flows in one direction, but curiosity lets us look forward and back."</p>
+      <ul class="example-list">
+        <li onclick="fillExample(0)">Today + 100 days →</li>
+        <li onclick="fillExample(1)">Today − 90 days →</li>
+        <li onclick="fillExample(2)">Today + 1 year →</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="results-section" id="results">
+    <div class="results-header">Result date</div>
+    <div class="result-date" id="resultDate">—</div>
+    <div class="result-date-sub" id="resultSub"></div>
+    <div class="facts-row">
+      <div class="fact-item"><div class="fact-key">Day of week</div><div class="fact-val" id="ffWeekday">—</div></div>
+      <div class="fact-item"><div class="fact-key">Day of year</div><div class="fact-val" id="ffDoy">—</div></div>
+      <div class="fact-item"><div class="fact-key">Week number</div><div class="fact-val" id="ffWeek">—</div></div>
+      <div class="fact-item"><div class="fact-key">Leap year</div><div class="fact-val" id="ffLeap">—</div></div>
+    </div>
+  </div>
+
+  <div class="tool-nav">
+    <div class="nav-group"><span class="nav-cat">Age</span><div class="nav-links"><a href="/age-calculator/">Age Calculator</a><span class="nav-sep">·</span><a href="/chronological-age-calculator/">Chronological Age</a><span class="nav-sep">·</span><a href="/baby-age-calculator/">Baby Age</a><span class="nav-sep">·</span><a href="/dog-age-calculator/">Dog Age</a><span class="nav-sep">·</span><a href="/cat-age-calculator/">Cat Age</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Dates</span><div class="nav-links"><a href="/days-between-dates/">Days Between Dates</a><span class="nav-sep">·</span><a href="/date-calculator/" aria-current="page">Date Calculator</a><span class="nav-sep">·</span><a href="/what-day-is-it-today/">What Day Is It</a><span class="nav-sep">·</span><a href="/week-number/">Week Number</a><span class="nav-sep">·</span><a href="/business-days-calculator/">Business Days</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Countdowns</span><div class="nav-links"><a href="/days-until-christmas/">Christmas</a><span class="nav-sep">·</span><a href="/days-until-new-year/">New Year</a><span class="nav-sep">·</span><a href="/days-until-halloween/">Halloween</a><span class="nav-sep">·</span><a href="/days-until-easter/">Easter</a><span class="nav-sep">·</span><a href="/countdown-timer/">Countdown Timer</a></div></div>
+    <div class="nav-group"><span class="nav-cat">World</span><div class="nav-links"><a href="/time-zone-converter/">Time Zone Converter</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Born In</span><div class="nav-links"><a href="/born-in-1990/">Born in 1990</a><span class="nav-sep">·</span><a href="/born-in-1980/">Born in 1980</a><span class="nav-sep">·</span><a href="/born-in-2000/">Born in 2000</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Calendars</span><div class="nav-links"><a href="/week-number/2025/">Week Numbers 2025</a><span class="nav-sep">·</span><a href="/week-number/2026/">Week Numbers 2026</a><span class="nav-sep">·</span><a href="/week-number/2027/">Week Numbers 2027</a></div></div>
+  </div>
+
+  <div class="seo-block">
+    <div><h2>How to add days to a date</h2><p>Adding days to a date seems simple — count forward from the start — but month boundaries make it tricky. If you add 30 days to January 15, you land on February 14 in a regular year (and the same in a leap year). Add 30 days to January 31 and you land on March 2 (or March 1 in a leap year). This calculator handles all those edge cases automatically, including month-length variations, year rollovers, and the extra day in February during leap years. It supports days, weeks, months, and years as units, and works equally well for adding time forward or subtracting time backward from any date between 1900 and 2100.</p></div>
+    <div><h2>Practical uses for date arithmetic</h2><p>Date arithmetic is used constantly in professional and personal life. Businesses calculate payment due dates (net-30, net-60 terms), subscription renewal dates, trial period end dates, and warranty expirations. Healthcare providers track medication schedules, prenatal milestones, and follow-up appointment windows. Legal teams compute statutory deadlines and filing windows. Project managers find milestone dates by adding sprint lengths to start dates. Students work out when assignments are due. Anyone planning a trip counts forward to find departure and return dates. This calculator handles the math so you don't have to count on your fingers.</p></div>
+  </div>
+  <div class="faq-block">
+    <h2>Frequently asked questions</h2>
+    <div class="faq-item"><h3>What date is 30 days from today?</h3><p>Enter today's date as start, choose "Add" and "30 days", then click Calculate. The result will be the exact date 30 days from now, accounting for varying month lengths. For example, 30 days from March 15 is April 14.</p></div>
+    <div class="faq-item"><h3>What date is 90 days from today?</h3><p>Use the same method with 90 days. This is a common business calculation — many contracts and warranties have 90-day terms. Because months vary in length, 90 days is not exactly 3 months; the calculator gives you the precise calendar date.</p></div>
+    <div class="faq-item"><h3>How do I add 30 days to a specific date?</h3><p>Enter your target date as the start date, select "Add" and enter 30 in the amount field with "days" as the unit, then click Calculate. The exact result date is shown immediately along with its day of the week and week number.</p></div>
+    <div class="faq-item"><h3>What date is 90 days from a given date?</h3><p>Enter your start date, select "Add", enter 90, and choose "days". The calculator correctly handles month boundaries — 90 days from January 1 is April 1 in a non-leap year and March 31 in a leap year.</p></div>
+    <div class="faq-item"><h3>How do I subtract months from a date?</h3><p>Select "Subtract" from the operation dropdown, enter the number of months, and choose "months" as the unit. The calculator handles edge cases like subtracting 1 month from March 31, which correctly gives February 28 (or 29 in a leap year).</p></div>
+    <div class="faq-item"><h3>How do I calculate a project deadline?</h3><p>Enter your project start date, select "Add", enter the project duration, and choose the appropriate unit (days, weeks, or months). The result shows the deadline date along with the day of the week — useful for spotting if a deadline falls on a weekend.</p></div>
+    <div class="faq-item"><h3>What date is 100 days from today?</h3><p>Use the same method with 100 days. Because months have different lengths, you cannot simply count 3 months — the calculator gives you the precise date. 100 days from January 1 lands on April 11 in a regular year.</p></div>
+    <div class="faq-item"><h3>What date is 6 months from now?</h3><p>Enter today as start, choose "Add" and "6 months". The result correctly handles cases like adding 6 months to August 31 (the result is February 28/29 in the following year) and other end-of-month edge cases.</p></div>
+  </div>
+
+  <div class="source-block">
+    <span class="source-lbl">Source</span>
+    <a href="https://www.iso.org/iso-8601-date-and-time-format.html" target="_blank" rel="noopener noreferrer">ISO 8601 – Date and Time Format</a>
+  </div>
+  <footer>© 2026 Date.tools — Free online date &amp; time calculators</footer>
+</div>
+
+<script>
+(function(){
+  var now = new Date();
+  var opts = {weekday:'long',year:'numeric',month:'long',day:'numeric'};
+  document.getElementById('todayMeta').innerHTML =
+    now.toLocaleDateString('en-US', opts) + '<br>Free date calculator';
+})();
+// Shared input guard: strip non-digits, truncate to max digit length, clamp to hi
+function clamp(el, lo, hi) {
+  var maxLen = String(hi).length;
+  var s = el.value.replace(/\D/g, '').slice(0, maxLen);
+  var n = parseInt(s, 10);
+  if (!isNaN(n) && n > hi) s = String(hi);
+  el.value = s;
+}
+</script>
+<script>
+
+var D = {"errInvalid":"→ Invalid date. Please check your input.","errAmount":"→ Please enter a valid amount.","weekDays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"months":["January","February","March","April","May","June","July","August","September","October","November","December"],"yes":"Yes","no":"No"};
+function fmt(n){return n.toLocaleString();}
+
+function getWeekNum(d){
+  var date=new Date(Date.UTC(d.getFullYear(),d.getMonth(),d.getDate()));
+  var day=date.getUTCDay()||7;
+  date.setUTCDate(date.getUTCDate()+4-day);
+  var yearStart=new Date(Date.UTC(date.getUTCFullYear(),0,1));
+  return Math.ceil((((date-yearStart)/86400000)+1)/7);
+}
+
+function getDoy(d){
+  var start=new Date(d.getFullYear(),0,0);
+  return Math.floor((d-start)/86400000);
+}
+
+function isLeap(y){ return (y%4===0&&y%100!==0)||y%400===0; }
+
+function addToDate(date, amount, unit){
+  var r=new Date(date);
+  if(unit==='days') r.setDate(r.getDate()+amount);
+  else if(unit==='weeks') r.setDate(r.getDate()+amount*7);
+  else if(unit==='months'){
+    var m=r.getMonth()+amount;
+    var y=r.getFullYear()+Math.floor(m/12);
+    m=((m%12)+12)%12;
+    var lastDay=new Date(y,m+1,0).getDate();
+    r.setFullYear(y,m,Math.min(r.getDate(),lastDay));
+  } else {
+    r.setFullYear(r.getFullYear()+amount);
+  }
+  return r;
+}
+
+function fillExample(idx){
+  var now=new Date();
+  document.getElementById('day').value=now.getDate();
+  document.getElementById('month').value=now.getMonth()+1;
+  document.getElementById('year').value=now.getFullYear();
+  if(idx===0){ document.getElementById('opSign').value='add'; document.getElementById('opAmount').value=100; document.getElementById('opUnit').value='days'; }
+  else if(idx===1){ document.getElementById('opSign').value='sub'; document.getElementById('opAmount').value=90; document.getElementById('opUnit').value='days'; }
+  else { document.getElementById('opSign').value='add'; document.getElementById('opAmount').value=1; document.getElementById('opUnit').value='years'; }
+  calculate();
+}
+
+function calculate(){
+  var d=parseInt(document.getElementById('day').value);
+  var m=parseInt(document.getElementById('month').value);
+  var y=parseInt(document.getElementById('year').value);
+  var amount=parseInt(document.getElementById('opAmount').value);
+  var sign=document.getElementById('opSign').value;
+  var unit=document.getElementById('opUnit').value;
+  var err=document.getElementById('errorLine');
+  var res=document.getElementById('results');
+  err.classList.remove('show'); res.classList.remove('show');
+
+  if(!d||!m||!y||d<1||d>31||m<1||m>12){err.textContent=D.errInvalid; err.classList.add('show'); return;}
+  var start=new Date(y,m-1,d);
+  if(start.getDate()!==d){err.textContent=D.errInvalid; err.classList.add('show'); return;}
+  if(isNaN(amount)||amount<0){err.textContent=D.errAmount; err.classList.add('show'); return;}
+
+  var delta=sign==='add'?amount:-amount;
+  var result=addToDate(start,delta,unit);
+
+  var dateStr=result.getDate()+' '+D.months[result.getMonth()]+' '+result.getFullYear();
+  document.getElementById('resultDate').textContent=dateStr;
+  document.getElementById('resultSub').textContent=(sign==='add'?'+ ':'− ')+amount+' '+unit;
+  document.getElementById('ffWeekday').textContent=D.weekDays[result.getDay()];
+  document.getElementById('ffDoy').textContent=getDoy(result);
+  document.getElementById('ffWeek').textContent=getWeekNum(result);
+  document.getElementById('ffLeap').textContent=isLeap(result.getFullYear())?D.yes:D.no;
+  res.classList.add('show');
+  res.scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+// Pre-fill today
+(function(){
+  var now=new Date();
+  document.getElementById('day').value=now.getDate();
+  document.getElementById('month').value=now.getMonth()+1;
+  document.getElementById('year').value=now.getFullYear();
+})();
+
+document.addEventListener('keydown',function(e){if(e.key==='Enter') calculate();});
+
+</script>
+</body>
+</html>

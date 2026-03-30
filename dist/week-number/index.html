@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Week Number – What Week Is It? | Date.tools</title>
+<meta name="description" content="Find the ISO week number for today or any date. Shows the first and last day of the week, days left in the year, and more.">
+<link rel="canonical" href="https://date.tools/week-number/">
+<link rel="alternate" hreflang="en" href="https://date.tools/week-number/">
+<link rel="alternate" hreflang="fr" href="https://date.tools/fr/numero-semaine/">
+<link rel="alternate" hreflang="es" href="https://date.tools/es/numero-semana/">
+<link rel="alternate" hreflang="x-default" href="https://date.tools/week-number/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Week Number – What Week Is It? | Date.tools">
+<meta property="og:description" content="Find the ISO week number for today or any date. Shows the first and last day of the week, days left in the year, and more.">
+<meta property="og:url" content="https://date.tools/week-number/">
+<meta property="og:site_name" content="Date.tools">
+<meta property="og:image" content="https://date.tools/og.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Week Number – What Week Is It? | Date.tools">
+<meta name="twitter:description" content="Find the ISO week number for today or any date. Shows the first and last day of the week, days left in the year, and more.">
+<meta name="twitter:image" content="https://date.tools/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Space+Mono:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What week number is it this week?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The calculator shows the current ISO week number automatically when you open the page — no input needed. ISO weeks run Monday to Sunday and there are 52 or 53 per year. You can also enter any date to find its week number."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many weeks are in a year?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most years have 52 ISO weeks. Some years have 53 weeks — this happens when January 1 falls on a Thursday, or on a Wednesday in a leap year. The years 2026, 2032, and 2037 are upcoming 53-week years."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between ISO week numbering and US week numbering?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ISO 8601 weeks start on Monday, and week 1 contains the year's first Thursday. The US system starts weeks on Sunday, and week 1 is simply the week that contains January 1. This means the two systems can differ by up to a week, especially at the start and end of the year. Most international business and European countries use ISO week numbers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When does week 1 start in 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ISO week 1 of 2026 starts on Monday, December 29, 2025 and ends on Sunday, January 4, 2026. This is because January 1, 2026 falls on a Thursday, which is within that Monday-to-Sunday span."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does week 1 sometimes start in December?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ISO 8601 defines week 1 as containing the first Thursday of the year. If January 1 falls on a Friday, Saturday, or Sunday, those days belong to week 52 or 53 of the previous year, and week 1 of the new year starts on the preceding Monday in December."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does every year have 52 weeks?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most years have 52 ISO weeks. Years where January 1 falls on Thursday (or Wednesday in leap years) have 53 weeks. You can verify this by entering December 31 of any year into the calculator to see its week number."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What week number is it in week-based project planning?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In project management and manufacturing, week numbers are used to schedule deliveries, sprints, and milestones without specifying exact dates. ISO week numbers are the international standard for this. Enter any project date above to find its week number instantly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is week number 1 of 2025?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ISO week 1 of 2025 starts on Monday, December 30, 2024 and ends on Sunday, January 5, 2025. Enter 01/01/2025 in the calculator above to confirm — it will show week 1 of 2025."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Week Number",
+  "description": "Find the ISO week number for today or any date. Shows the first and last day of the week, days left in the year, and more.",
+  "url": "https://date.tools/week-number/",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Web",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+</head>
+<body>
+
+<div class="masthead">
+  <a href="/" class="masthead-brand">Date<span>.</span>tools</a>
+  <div class="masthead-meta" id="todayMeta"></div>
+</div>
+
+<div class="lang-strip">
+  <a href="/week-number/" class="lang-btn active">EN</a>
+  <a href="/fr/numero-semaine/" class="lang-btn">FR</a>
+  <a href="/es/numero-semana/" class="lang-btn">ES</a>
+</div>
+
+<div class="page">
+
+  <div class="headline-block">
+    <div class="kicker">Week Number</div>
+    <h1 class="headline">What <em>week</em> <br>is it?</h1>
+    <p class="subhead">Find the ISO week number for any date — or see today's week number instantly.</p>
+  </div>
+
+  <div class="form-grid">
+    <div class="form-col">
+      <div class="field-label">Date (leave blank for today)</div>
+      <div class="date-row">
+        <input type="number" id="day" placeholder="DD" min="1" max="31" inputmode="numeric" oninput="clamp(this,1,31)">
+        <span>/</span>
+        <input type="number" id="month" placeholder="MM" min="1" max="12" inputmode="numeric" oninput="clamp(this,1,12)">
+        <span>/</span>
+        <input type="number" id="year" placeholder="YYYY" min="1900" max="2100" inputmode="numeric" oninput="clamp(this,1900,2100)">
+      </div>
+      <div class="error-line" id="errorLine"></div>
+      <button class="calc-btn" onclick="calculate()">→ Get Week Number</button>
+    </div>
+    <div class="form-col auto-info">
+      <p class="tip-text">"A year has 52 or 53 weeks, yet most people cannot say which week they are in without looking it up."</p>
+    </div>
+  </div>
+
+  <div class="results-section auto-show" id="results">
+    <div class="results-header">Week number</div>
+    <div class="age-display">
+      <span class="age-number" id="heroWeek">—</span>
+      <span class="age-suffix" id="heroSuffix"></span>
+    </div>
+    <div class="facts-row">
+      <div class="fact-item"><div class="fact-key">Week starts</div><div class="fact-val" id="ffStart">—</div></div>
+      <div class="fact-item"><div class="fact-key">Week ends</div><div class="fact-val" id="ffEnd">—</div></div>
+      <div class="fact-item"><div class="fact-key">Day of year</div><div class="fact-val" id="ffDoy">—</div></div>
+      <div class="fact-item"><div class="fact-key">Days left in year</div><div class="fact-val" id="ffLeft">—</div></div>
+    </div>
+  </div>
+
+  <div class="tool-nav">
+    <div class="nav-group"><span class="nav-cat">Age</span><div class="nav-links"><a href="/age-calculator/">Age Calculator</a><span class="nav-sep">·</span><a href="/chronological-age-calculator/">Chronological Age</a><span class="nav-sep">·</span><a href="/baby-age-calculator/">Baby Age</a><span class="nav-sep">·</span><a href="/dog-age-calculator/">Dog Age</a><span class="nav-sep">·</span><a href="/cat-age-calculator/">Cat Age</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Dates</span><div class="nav-links"><a href="/days-between-dates/">Days Between Dates</a><span class="nav-sep">·</span><a href="/date-calculator/">Date Calculator</a><span class="nav-sep">·</span><a href="/what-day-is-it-today/">What Day Is It</a><span class="nav-sep">·</span><a href="/week-number/" aria-current="page">Week Number</a><span class="nav-sep">·</span><a href="/business-days-calculator/">Business Days</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Countdowns</span><div class="nav-links"><a href="/days-until-christmas/">Christmas</a><span class="nav-sep">·</span><a href="/days-until-new-year/">New Year</a><span class="nav-sep">·</span><a href="/days-until-halloween/">Halloween</a><span class="nav-sep">·</span><a href="/days-until-easter/">Easter</a><span class="nav-sep">·</span><a href="/countdown-timer/">Countdown Timer</a></div></div>
+    <div class="nav-group"><span class="nav-cat">World</span><div class="nav-links"><a href="/time-zone-converter/">Time Zone Converter</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Born In</span><div class="nav-links"><a href="/born-in-1990/">Born in 1990</a><span class="nav-sep">·</span><a href="/born-in-1980/">Born in 1980</a><span class="nav-sep">·</span><a href="/born-in-2000/">Born in 2000</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Calendars</span><div class="nav-links"><a href="/week-number/2025/">Week Numbers 2025</a><span class="nav-sep">·</span><a href="/week-number/2026/">Week Numbers 2026</a><span class="nav-sep">·</span><a href="/week-number/2027/">Week Numbers 2027</a></div></div>
+  </div>
+
+  <div class="seo-block">
+    <div><h2>What is an ISO week number?</h2><p>ISO 8601 defines a standardized system for numbering weeks within a year. Week 1 is the week containing the first Thursday of the year, and weeks always run Monday through Sunday. This rule means that week 1 of a new year can actually begin in late December of the previous year — and conversely, the final days of December may belong to week 1 of the following year. For example, December 28 is always in the last week of its ISO year, while January 1 might be in week 52 or 53 of the prior year. This system is widely used in European business, logistics, manufacturing, and project management to create unambiguous week references that span year boundaries without confusion.</p></div>
+    <div><h2>When does week 1 start?</h2><p>ISO week 1 starts on the Monday of the week that contains January 4th of the new year. A simpler way to remember it: week 1 is the first week of the year that has at least four days falling in January. Because of this rule, years can have either 52 or 53 ISO weeks. A year has 53 weeks when January 1 falls on a Thursday (or on a Wednesday in a leap year). The week numbering system used in the United States differs from ISO: the US system counts Sunday as the first day of the week and week 1 as the week containing January 1, regardless of which day of the week that falls on.</p></div>
+  </div>
+  <div class="faq-block">
+    <h2>Frequently asked questions</h2>
+    <div class="faq-item"><h3>What week number is it this week?</h3><p>The calculator shows the current ISO week number automatically when you open the page — no input needed. ISO weeks run Monday to Sunday and there are 52 or 53 per year. You can also enter any date to find its week number.</p></div>
+    <div class="faq-item"><h3>How many weeks are in a year?</h3><p>Most years have 52 ISO weeks. Some years have 53 weeks — this happens when January 1 falls on a Thursday, or on a Wednesday in a leap year. The years 2026, 2032, and 2037 are upcoming 53-week years.</p></div>
+    <div class="faq-item"><h3>What is the difference between ISO week numbering and US week numbering?</h3><p>ISO 8601 weeks start on Monday, and week 1 contains the year's first Thursday. The US system starts weeks on Sunday, and week 1 is simply the week that contains January 1. This means the two systems can differ by up to a week, especially at the start and end of the year. Most international business and European countries use ISO week numbers.</p></div>
+    <div class="faq-item"><h3>When does week 1 start in 2026?</h3><p>ISO week 1 of 2026 starts on Monday, December 29, 2025 and ends on Sunday, January 4, 2026. This is because January 1, 2026 falls on a Thursday, which is within that Monday-to-Sunday span.</p></div>
+    <div class="faq-item"><h3>Why does week 1 sometimes start in December?</h3><p>ISO 8601 defines week 1 as containing the first Thursday of the year. If January 1 falls on a Friday, Saturday, or Sunday, those days belong to week 52 or 53 of the previous year, and week 1 of the new year starts on the preceding Monday in December.</p></div>
+    <div class="faq-item"><h3>Does every year have 52 weeks?</h3><p>Most years have 52 ISO weeks. Years where January 1 falls on Thursday (or Wednesday in leap years) have 53 weeks. You can verify this by entering December 31 of any year into the calculator to see its week number.</p></div>
+    <div class="faq-item"><h3>What week number is it in week-based project planning?</h3><p>In project management and manufacturing, week numbers are used to schedule deliveries, sprints, and milestones without specifying exact dates. ISO week numbers are the international standard for this. Enter any project date above to find its week number instantly.</p></div>
+    <div class="faq-item"><h3>What is week number 1 of 2025?</h3><p>ISO week 1 of 2025 starts on Monday, December 30, 2024 and ends on Sunday, January 5, 2025. Enter 01/01/2025 in the calculator above to confirm — it will show week 1 of 2025.</p></div>
+  </div>
+
+  <div class="source-block">
+    <span class="source-lbl">Source</span>
+    <a href="https://www.iso.org/iso-8601-date-and-time-format.html" target="_blank" rel="noopener noreferrer">ISO 8601 – Week Numbering Standard</a>
+  </div>
+  <footer>© 2026 Date.tools — Free online date &amp; time calculators</footer>
+</div>
+
+<script>
+(function(){
+  var now = new Date();
+  var opts = {weekday:'long',year:'numeric',month:'long',day:'numeric'};
+  document.getElementById('todayMeta').innerHTML =
+    now.toLocaleDateString('en-US', opts) + '<br>Free date calculator';
+})();
+// Shared input guard: strip non-digits, truncate to max digit length, clamp to hi
+function clamp(el, lo, hi) {
+  var maxLen = String(hi).length;
+  var s = el.value.replace(/\D/g, '').slice(0, maxLen);
+  var n = parseInt(s, 10);
+  if (!isNaN(n) && n > hi) s = String(hi);
+  el.value = s;
+}
+</script>
+<script>
+
+var D = {"errInvalid":"→ Invalid date. Please check your input.","weekDays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"months":["January","February","March","April","May","June","July","August","September","October","November","December"],"heroSuffix":"of {year}"};
+function fmt(n){return n.toLocaleString();}
+
+function getWeekNum(d){
+  var date=new Date(Date.UTC(d.getFullYear(),d.getMonth(),d.getDate()));
+  var day=date.getUTCDay()||7;
+  date.setUTCDate(date.getUTCDate()+4-day);
+  var yearStart=new Date(Date.UTC(date.getUTCFullYear(),0,1));
+  return {week:Math.ceil((((date-yearStart)/86400000)+1)/7), isoYear:date.getUTCFullYear()};
+}
+
+function weeksInYear(y){
+  var d31dec=new Date(y,11,31);
+  return getWeekNum(d31dec).week;
+}
+
+function getDoy(d){
+  return Math.floor((d-new Date(d.getFullYear(),0,0))/86400000);
+}
+
+function daysInYear(y){ return ((y%4===0&&y%100!==0)||y%400===0)?366:365; }
+
+function fmtDate(d){
+  return d.getDate()+' '+D.months[d.getMonth()]+' '+d.getFullYear();
+}
+
+function calculate(){
+  var dv=parseInt(document.getElementById('day').value);
+  var mv=parseInt(document.getElementById('month').value);
+  var yv=parseInt(document.getElementById('year').value);
+  var err=document.getElementById('errorLine');
+  err.classList.remove('show');
+
+  var date;
+  if(!dv&&!mv&&!yv){
+    date=new Date(); date.setHours(0,0,0,0);
+  } else {
+    if(!dv||!mv||!yv||dv<1||dv>31||mv<1||mv>12){err.textContent=D.errInvalid; err.classList.add('show'); return;}
+    date=new Date(yv,mv-1,dv);
+    if(date.getDate()!==dv){err.textContent=D.errInvalid; err.classList.add('show'); return;}
+  }
+
+  var wn=getWeekNum(date);
+  var doy=getDoy(date);
+  var diy=daysInYear(date.getFullYear());
+  var left=diy-doy;
+
+  // Monday of this week
+  var dow=(date.getDay()+6)%7; // 0=Mon
+  var weekStart=new Date(date); weekStart.setDate(date.getDate()-dow);
+  var weekEnd=new Date(weekStart); weekEnd.setDate(weekStart.getDate()+6);
+
+  document.getElementById('heroWeek').textContent=wn.week;
+  document.getElementById('heroSuffix').textContent=D.heroSuffix.replace('{year}',wn.isoYear);
+  document.getElementById('ffStart').textContent=fmtDate(weekStart);
+  document.getElementById('ffEnd').textContent=fmtDate(weekEnd);
+  document.getElementById('ffDoy').textContent=doy;
+  document.getElementById('ffLeft').textContent=left;
+}
+
+calculate();
+document.addEventListener('keydown',function(e){if(e.key==='Enter') calculate();});
+
+</script>
+</body>
+</html>

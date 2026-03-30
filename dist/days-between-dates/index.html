@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Days Between Dates – Calculate the Difference | Date.tools</title>
+<meta name="description" content="Calculate the exact number of days between two dates. Also shows weeks, months, and years. Free online date difference calculator.">
+<link rel="canonical" href="https://date.tools/days-between-dates/">
+<link rel="alternate" hreflang="en" href="https://date.tools/days-between-dates/">
+<link rel="alternate" hreflang="fr" href="https://date.tools/fr/jours-entre-deux-dates/">
+<link rel="alternate" hreflang="es" href="https://date.tools/es/dias-entre-fechas/">
+<link rel="alternate" hreflang="x-default" href="https://date.tools/days-between-dates/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Days Between Dates – Calculate the Difference | Date.tools">
+<meta property="og:description" content="Calculate the exact number of days between two dates. Also shows weeks, months, and years. Free online date difference calculator.">
+<meta property="og:url" content="https://date.tools/days-between-dates/">
+<meta property="og:site_name" content="Date.tools">
+<meta property="og:image" content="https://date.tools/og.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Days Between Dates – Calculate the Difference | Date.tools">
+<meta name="twitter:description" content="Calculate the exact number of days between two dates. Also shows weeks, months, and years. Free online date difference calculator.">
+<meta name="twitter:image" content="https://date.tools/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Space+Mono:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How many days between two dates?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Enter your start date and end date in the fields above and click Calculate. The result shows the exact number of calendar days between the two dates, along with the equivalent in weeks, months, and years."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many days between birthdays?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Enter your most recent birthday as the start date and your next birthday as the end date. For a recurring count, just set the start to this year's birthday and the end to next year's — the answer will always be 365 (or 366 in a leap year)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between working days and calendar days?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Calendar days count every day including weekends and holidays. Working days (also called business days) count only Monday through Friday. This calculator shows both: the total calendar day count and the workday count, which excludes Saturdays and Sundays. For calculations that also exclude public holidays, you would need a dedicated business day calculator."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many days until my deadline?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Enter today's date as the start and your deadline date as the end, then click Calculate. The result tells you exactly how many days you have left — both in total calendar days and in working days, so you can plan your schedule accurately."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the calculator include or exclude the start/end date?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The calculator counts full 24-hour days between the two dates. January 1 to January 3 = 2 days. If you need to include both endpoints (inclusive count), add 1 to the result."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many days between two specific years?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Simply enter January 1 of the first year as start, and December 31 of the last year as end, then add 1 for an inclusive count. For example, January 1, 2000 to December 31, 2024 spans 9,131 days (inclusive)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the maximum date range supported?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This calculator supports any date from 1900 to 2100, giving you a range of up to 73,000+ days. That covers historical research, long-term planning, and virtually any real-world use case."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I count only business days?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The \"Workdays\" figure in the results excludes Saturdays and Sundays. For a calculator that also excludes public holidays, use our Business Days Calculator. Note that public holidays vary by country and region, so those are handled separately."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Days Between Dates",
+  "description": "Calculate the exact number of days between two dates. Also shows weeks, months, and years. Free online date difference calculator.",
+  "url": "https://date.tools/days-between-dates/",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Web",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+</head>
+<body>
+
+<div class="masthead">
+  <a href="/" class="masthead-brand">Date<span>.</span>tools</a>
+  <div class="masthead-meta" id="todayMeta"></div>
+</div>
+
+<div class="lang-strip">
+  <a href="/days-between-dates/" class="lang-btn active">EN</a>
+  <a href="/fr/jours-entre-deux-dates/" class="lang-btn">FR</a>
+  <a href="/es/dias-entre-fechas/" class="lang-btn">ES</a>
+</div>
+
+<div class="page">
+
+  <div class="headline-block">
+    <div class="kicker">Days Between Dates</div>
+    <h1 class="headline">Days <em>between</em> <br>two dates</h1>
+    <p class="subhead">Enter a start and end date — get the exact difference in days, weeks, months, and years.</p>
+  </div>
+
+  <div class="form-grid">
+    <div class="form-col">
+      <div class="field-label">Start date</div>
+      <div class="date-row">
+        <input type="number" id="d1" placeholder="DD" min="1" max="31" inputmode="numeric" oninput="clamp(this,1,31)">
+        <span>/</span>
+        <input type="number" id="m1" placeholder="MM" min="1" max="12" inputmode="numeric" oninput="clamp(this,1,12)">
+        <span>/</span>
+        <input type="number" id="y1" placeholder="YYYY" min="1900" max="2100" inputmode="numeric" oninput="clamp(this,1900,2100)">
+      </div>
+      <div class="field-label" style="margin-top:1.5rem">End date <button type="button" onclick="setToday()" style="background:none;border:none;font-family:'Space Mono',monospace;font-size:.6rem;color:var(--accent);cursor:pointer;letter-spacing:.05em;text-transform:uppercase;padding:0 .4rem">Use today</button></div>
+      <div class="date-row">
+        <input type="number" id="d2" placeholder="DD" min="1" max="31" inputmode="numeric" oninput="clamp(this,1,31)">
+        <span>/</span>
+        <input type="number" id="m2" placeholder="MM" min="1" max="12" inputmode="numeric" oninput="clamp(this,1,12)">
+        <span>/</span>
+        <input type="number" id="y2" placeholder="YYYY" min="1900" max="2100" inputmode="numeric" oninput="clamp(this,1900,2100)">
+      </div>
+      <div class="error-line" id="errorLine"></div>
+      <button class="calc-btn" onclick="calculate()">→ Calculate</button>
+    </div>
+    <div class="form-col">
+      <p class="tip-text">"Every day is a page in the book. How many pages have you written between two chapters?"</p>
+      <ul class="example-list">
+        <li onclick="fillExample(0)">Jan 1 2000 → Today →</li>
+        <li onclick="fillExample(1)">Your birthday → Today →</li>
+        <li onclick="fillExample(2)">Start of year → Today →</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="results-section" id="results">
+    <div class="results-header">Date difference</div>
+    <div class="age-display">
+      <span class="age-number" id="heroDays">—</span>
+      <span class="age-suffix">days</span>
+    </div>
+    <div class="stats-strip cols-3">
+      <div class="stat-item"><div class="stat-num" id="statWeeks">—</div><div class="stat-lbl">weeks</div></div>
+      <div class="stat-item"><div class="stat-num" id="statMonths">—</div><div class="stat-lbl">months</div></div>
+      <div class="stat-item"><div class="stat-num" id="statYears">—</div><div class="stat-lbl">years</div></div>
+    </div>
+    <div class="facts-row">
+      <div class="fact-item"><div class="fact-key">Start day</div><div class="fact-val" id="ffStart">—</div></div>
+      <div class="fact-item"><div class="fact-key">End day</div><div class="fact-val" id="ffEnd">—</div></div>
+      <div class="fact-item"><div class="fact-key">Weekends</div><div class="fact-val" id="ffWeekends">—</div></div>
+      <div class="fact-item"><div class="fact-key">Workdays</div><div class="fact-val" id="ffWorkdays">—</div></div>
+    </div>
+  </div>
+
+  <div class="tool-nav">
+    <div class="nav-group"><span class="nav-cat">Age</span><div class="nav-links"><a href="/age-calculator/">Age Calculator</a><span class="nav-sep">·</span><a href="/chronological-age-calculator/">Chronological Age</a><span class="nav-sep">·</span><a href="/baby-age-calculator/">Baby Age</a><span class="nav-sep">·</span><a href="/dog-age-calculator/">Dog Age</a><span class="nav-sep">·</span><a href="/cat-age-calculator/">Cat Age</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Dates</span><div class="nav-links"><a href="/days-between-dates/" aria-current="page">Days Between Dates</a><span class="nav-sep">·</span><a href="/date-calculator/">Date Calculator</a><span class="nav-sep">·</span><a href="/what-day-is-it-today/">What Day Is It</a><span class="nav-sep">·</span><a href="/week-number/">Week Number</a><span class="nav-sep">·</span><a href="/business-days-calculator/">Business Days</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Countdowns</span><div class="nav-links"><a href="/days-until-christmas/">Christmas</a><span class="nav-sep">·</span><a href="/days-until-new-year/">New Year</a><span class="nav-sep">·</span><a href="/days-until-halloween/">Halloween</a><span class="nav-sep">·</span><a href="/days-until-easter/">Easter</a><span class="nav-sep">·</span><a href="/countdown-timer/">Countdown Timer</a></div></div>
+    <div class="nav-group"><span class="nav-cat">World</span><div class="nav-links"><a href="/time-zone-converter/">Time Zone Converter</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Born In</span><div class="nav-links"><a href="/born-in-1990/">Born in 1990</a><span class="nav-sep">·</span><a href="/born-in-1980/">Born in 1980</a><span class="nav-sep">·</span><a href="/born-in-2000/">Born in 2000</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Calendars</span><div class="nav-links"><a href="/week-number/2025/">Week Numbers 2025</a><span class="nav-sep">·</span><a href="/week-number/2026/">Week Numbers 2026</a><span class="nav-sep">·</span><a href="/week-number/2027/">Week Numbers 2027</a></div></div>
+  </div>
+
+  <div class="seo-block">
+    <div><h2>How to count days between two dates</h2><p>To count days between two dates, subtract the earlier date from the later date — each full 24-hour period counts as one day. The math is straightforward for short spans, but quickly gets tricky once you cross month or year boundaries. February has 28 or 29 days, months range from 28 to 31 days, and leap years add an extra day every four years (with exceptions for century years). This calculator handles all that complexity automatically: enter your start and end dates and instantly get the exact day count along with the equivalent in weeks, months, and years. It also breaks the span down into weekdays versus weekend days, which is useful for project planning.</p></div>
+    <div><h2>Common uses for date difference calculation</h2><p>Counting days between dates is one of the most common date math tasks people face. Project managers use it to calculate durations and verify milestone gaps. HR teams count days of employment for benefit eligibility or notice periods. Students count days until exams or application deadlines. Lawyers and accountants track contractual deadlines and statute-of-limitations windows. Parents count how many days until a child's birthday. Travelers calculate how many days they will be abroad for visa or tax residency purposes. Whatever your reason, this calculator gives you the precise count in seconds.</p></div>
+  </div>
+  <div class="faq-block">
+    <h2>Frequently asked questions</h2>
+    <div class="faq-item"><h3>How many days between two dates?</h3><p>Enter your start date and end date in the fields above and click Calculate. The result shows the exact number of calendar days between the two dates, along with the equivalent in weeks, months, and years.</p></div>
+    <div class="faq-item"><h3>How many days between birthdays?</h3><p>Enter your most recent birthday as the start date and your next birthday as the end date. For a recurring count, just set the start to this year's birthday and the end to next year's — the answer will always be 365 (or 366 in a leap year).</p></div>
+    <div class="faq-item"><h3>What is the difference between working days and calendar days?</h3><p>Calendar days count every day including weekends and holidays. Working days (also called business days) count only Monday through Friday. This calculator shows both: the total calendar day count and the workday count, which excludes Saturdays and Sundays. For calculations that also exclude public holidays, you would need a dedicated business day calculator.</p></div>
+    <div class="faq-item"><h3>How many days until my deadline?</h3><p>Enter today's date as the start and your deadline date as the end, then click Calculate. The result tells you exactly how many days you have left — both in total calendar days and in working days, so you can plan your schedule accurately.</p></div>
+    <div class="faq-item"><h3>Does the calculator include or exclude the start/end date?</h3><p>The calculator counts full 24-hour days between the two dates. January 1 to January 3 = 2 days. If you need to include both endpoints (inclusive count), add 1 to the result.</p></div>
+    <div class="faq-item"><h3>How many days between two specific years?</h3><p>Simply enter January 1 of the first year as start, and December 31 of the last year as end, then add 1 for an inclusive count. For example, January 1, 2000 to December 31, 2024 spans 9,131 days (inclusive).</p></div>
+    <div class="faq-item"><h3>What is the maximum date range supported?</h3><p>This calculator supports any date from 1900 to 2100, giving you a range of up to 73,000+ days. That covers historical research, long-term planning, and virtually any real-world use case.</p></div>
+    <div class="faq-item"><h3>How do I count only business days?</h3><p>The "Workdays" figure in the results excludes Saturdays and Sundays. For a calculator that also excludes public holidays, use our Business Days Calculator. Note that public holidays vary by country and region, so those are handled separately.</p></div>
+  </div>
+
+  <div class="source-block">
+    <span class="source-lbl">Source</span>
+    <a href="https://www.timeanddate.com/date/duration.html" target="_blank" rel="noopener noreferrer">Time and Date – Date Duration Calculator</a>
+  </div>
+  <footer>© 2026 Date.tools — Free online date &amp; time calculators</footer>
+</div>
+
+<script>
+(function(){
+  var now = new Date();
+  var opts = {weekday:'long',year:'numeric',month:'long',day:'numeric'};
+  document.getElementById('todayMeta').innerHTML =
+    now.toLocaleDateString('en-US', opts) + '<br>Free date calculator';
+})();
+// Shared input guard: strip non-digits, truncate to max digit length, clamp to hi
+function clamp(el, lo, hi) {
+  var maxLen = String(hi).length;
+  var s = el.value.replace(/\D/g, '').slice(0, maxLen);
+  var n = parseInt(s, 10);
+  if (!isNaN(n) && n > hi) s = String(hi);
+  el.value = s;
+}
+</script>
+<script>
+
+var D = {"errInvalid":"→ Invalid date. Please check your input.","errOrder":"→ End date must be after start date.","weekDays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]};
+function fmt(n){return n.toLocaleString();}
+
+function setToday(){
+  var now=new Date();
+  document.getElementById('d2').value=now.getDate();
+  document.getElementById('m2').value=now.getMonth()+1;
+  document.getElementById('y2').value=now.getFullYear();
+}
+
+function fillExample(idx){
+  var now=new Date();
+  if(idx===0){
+    document.getElementById('d1').value=1; document.getElementById('m1').value=1; document.getElementById('y1').value=2000;
+  } else if(idx===1){
+    document.getElementById('d1').value=15; document.getElementById('m1').value=6; document.getElementById('y1').value=1990;
+  } else {
+    document.getElementById('d1').value=1; document.getElementById('m1').value=1; document.getElementById('y1').value=now.getFullYear();
+  }
+  setToday(); calculate();
+}
+
+function parseDate(d,m,y){
+  if(!d||!m||!y) return null;
+  var dt=new Date(y,m-1,d);
+  return (dt.getDate()===d)?dt:null;
+}
+
+function calculate(){
+  var d1=parseInt(document.getElementById('d1').value);
+  var m1=parseInt(document.getElementById('m1').value);
+  var y1=parseInt(document.getElementById('y1').value);
+  var d2=parseInt(document.getElementById('d2').value);
+  var m2=parseInt(document.getElementById('m2').value);
+  var y2=parseInt(document.getElementById('y2').value);
+  var err=document.getElementById('errorLine');
+  var res=document.getElementById('results');
+  err.classList.remove('show'); res.classList.remove('show');
+
+  var date1=parseDate(d1,m1,y1);
+  var date2=parseDate(d2,m2,y2);
+  if(!date1||!date2){err.textContent=D.errInvalid; err.classList.add('show'); return;}
+  if(date2<date1){err.textContent=D.errOrder; err.classList.add('show'); return;}
+
+  var totalDays=Math.round((date2-date1)/86400000);
+  var totalWeeks=Math.floor(totalDays/7);
+
+  // months diff
+  var mDiff=(date2.getFullYear()-date1.getFullYear())*12+(date2.getMonth()-date1.getMonth());
+  if(date2.getDate()<date1.getDate()) mDiff--;
+  var yDiff=Math.floor(mDiff/12);
+
+  // weekends & workdays
+  var weekends=0, workdays=0;
+  var cur=new Date(date1);
+  while(cur<=date2){
+    var day=cur.getDay();
+    if(day===0||day===6) weekends++; else workdays++;
+    cur.setDate(cur.getDate()+1);
+  }
+
+  document.getElementById('heroDays').textContent=fmt(totalDays);
+  document.getElementById('statWeeks').textContent=fmt(totalWeeks);
+  document.getElementById('statMonths').textContent=fmt(mDiff);
+  document.getElementById('statYears').textContent=fmt(yDiff);
+  document.getElementById('ffStart').textContent=D.weekDays[date1.getDay()];
+  document.getElementById('ffEnd').textContent=D.weekDays[date2.getDay()];
+  document.getElementById('ffWeekends').textContent=fmt(weekends);
+  document.getElementById('ffWorkdays').textContent=fmt(workdays);
+  res.classList.add('show');
+  res.scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+document.addEventListener('keydown',function(e){if(e.key==='Enter') calculate();});
+// Pre-fill end date with today
+setToday();
+
+</script>
+</body>
+</html>

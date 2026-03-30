@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculateur d'âge chronologique – Âge exact en années, mois et jours | Date.tools</title>
+<meta name="description" content="Calculez l'âge chronologique de la date de naissance à n'importe quelle date de référence. Utilisé en contexte médical, éducatif et développemental.">
+<link rel="canonical" href="https://date.tools/fr/age-chronologique/">
+<link rel="alternate" hreflang="en" href="https://date.tools/chronological-age-calculator/">
+<link rel="alternate" hreflang="fr" href="https://date.tools/fr/age-chronologique/">
+<link rel="alternate" hreflang="es" href="https://date.tools/es/edad-cronologica/">
+<link rel="alternate" hreflang="x-default" href="https://date.tools/chronological-age-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Calculateur d'âge chronologique – Âge exact en années, mois et jours | Date.tools">
+<meta property="og:description" content="Calculez l'âge chronologique de la date de naissance à n'importe quelle date de référence. Utilisé en contexte médical, éducatif et développemental.">
+<meta property="og:url" content="https://date.tools/fr/age-chronologique/">
+<meta property="og:site_name" content="Date.tools">
+<meta property="og:image" content="https://date.tools/og.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Calculateur d'âge chronologique – Âge exact en années, mois et jours | Date.tools">
+<meta name="twitter:description" content="Calculez l'âge chronologique de la date de naissance à n'importe quelle date de référence. Utilisé en contexte médical, éducatif et développemental.">
+<meta name="twitter:image" content="https://date.tools/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Space+Mono:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Qu'est-ce que l'âge chronologique en psychologie ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "En psychologie, l'âge chronologique (AC) est le temps réel écoulé depuis la naissance, utilisé comme référence pour comparer les mesures développementales, cognitives et comportementales. La formule classique du QI divise l'âge mental par l'âge chronologique et multiplie par 100. L'âge chronologique reste central dans les évaluations développementales et les décisions de placement éducatif."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quelle est la différence entre âge chronologique et âge mental ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "L'âge chronologique (AC) est le temps réel écoulé depuis la naissance — purement objectif. L'âge mental (AM) est une mesure des capacités cognitives par rapport à ce qui est typique pour un âge chronologique donné. Un enfant de 10 ans qui obtient les résultats d'un enfant de 13 ans a un âge mental de 13 ans mais un âge chronologique de 10 ans."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Comment calculer l'âge chronologique pour l'inscription scolaire ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La plupart des écoles calculent l'âge chronologique en comparant la date de naissance de l'enfant à une date limite (par exemple le 1er septembre). L'enfant doit avoir atteint l'âge requis à cette date. Entrez la date de naissance et la date limite dans ce calculateur pour obtenir l'âge exact à l'inscription."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quelle est la formule de l'âge chronologique ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La formule est : AC = Date de référence − Date de naissance, exprimé en années, mois et jours. Le calcul nécessite une gestion correcte des emprunts de fin de mois et des années bissextiles. Ce calculateur applique la formule correctement pour toutes les dates."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Comment l'âge chronologique est-il utilisé pour les assurances ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Les compagnies d'assurance utilisent l'âge chronologique pour déterminer les catégories de risque, fixer les taux de prime et définir l'éligibilité aux polices. Les primes d'assurance-vie augmentent généralement à chaque anniversaire. Les plans d'assurance maladie ont souvent des tranches de tarification par âge. L'âge exact en années et mois peut déterminer quelle tranche s'applique."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Comment l'âge chronologique est-il utilisé pour les tests standardisés ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La plupart des tests psychologiques et éducatifs standardisés sont normés par groupe d'âge. Le score brut est comparé aux scores d'autres personnes dans la même tranche d'âge chronologique (définie en années et mois) pour produire un score standard ou un rang percentile. Utiliser un âge chronologique incorrect peut déplacer un score dans un groupe normatif différent."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "À quoi sert l'âge chronologique ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "L'âge chronologique est utilisé dans les évaluations pédiatriques, l'éligibilité scolaire, le suivi des étapes développementales, les calculs d'assurance et l'interprétation des tests standardisés."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Puis-je calculer l'âge chronologique pour une date passée ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui. Entrez la date de naissance et toute date de référence — passée, présente ou future. Le calculateur calculera l'âge chronologique exact entre ces deux dates."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Calculateur d'âge chronologique",
+  "description": "Calculez l'âge chronologique de la date de naissance à n'importe quelle date de référence. Utilisé en contexte médical, éducatif et développemental.",
+  "url": "https://date.tools/fr/age-chronologique/",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Web",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+</head>
+<body>
+
+<div class="masthead">
+  <a href="/fr/calculateur-age/" class="masthead-brand">Date<span>.</span>tools</a>
+  <div class="masthead-meta" id="todayMeta"></div>
+</div>
+
+<div class="lang-strip">
+  <a href="/chronological-age-calculator/" class="lang-btn">EN</a>
+  <a href="/fr/age-chronologique/" class="lang-btn active">FR</a>
+  <a href="/es/edad-cronologica/" class="lang-btn">ES</a>
+</div>
+
+<div class="page">
+
+  <div class="headline-block">
+    <div class="kicker">Âge chronologique</div>
+    <h1 class="headline">Âge <br><em>chronologique</em></h1>
+    <p class="subhead">Calculez l'âge chronologique exact entre deux dates — années, mois, semaines et jours.</p>
+  </div>
+
+  <div class="form-grid">
+    <div class="form-col">
+      <div class="field-label">Date de naissance</div>
+      <div class="date-row">
+        <input type="number" id="day" placeholder="DD" min="1" max="31" inputmode="numeric" oninput="clamp(this,1,31)">
+        <span>/</span>
+        <input type="number" id="month" placeholder="MM" min="1" max="12" inputmode="numeric" oninput="clamp(this,1,12)">
+        <span>/</span>
+        <input type="number" id="year" placeholder="YYYY" min="1900" max="2025" inputmode="numeric" oninput="clamp(this,1900,2025)">
+      </div>
+      <div class="field-label" style="margin-top:1rem">Date de référence (laisser vide pour aujourd'hui)</div>
+      <div class="date-row">
+        <input type="number" id="rDay" placeholder="DD" min="1" max="31" inputmode="numeric" oninput="clamp(this,1,31)">
+        <span>/</span>
+        <input type="number" id="rMonth" placeholder="MM" min="1" max="12" inputmode="numeric" oninput="clamp(this,1,12)">
+        <span>/</span>
+        <input type="number" id="rYear" placeholder="YYYY" min="1900" max="2100" inputmode="numeric" oninput="clamp(this,1900,2100)">
+      </div>
+      <div class="error-line" id="errorLine"></div>
+      <button class="calc-btn" onclick="calculate()">→ Calculer</button>
+    </div>
+    <div class="form-col">
+      <p class="tip-text">"L'âge chronologique est le nombre d'années, de mois et de jours depuis la naissance — la mesure la plus précise du temps vécu."</p>
+    </div>
+  </div>
+
+  <div class="results-section" id="results">
+    <div class="results-header">Âge chronologique</div>
+    <div class="age-display">
+      <span class="age-number" id="heroAge">—</span>
+      <span class="age-suffix">ans</span>
+    </div>
+    <div class="precise-age" id="preciseAge"></div>
+    <div class="stats-strip">
+      <div class="stat-item"><div class="stat-num" id="statMonths">—</div><div class="stat-lbl">mois</div></div>
+      <div class="stat-item"><div class="stat-num" id="statWeeks">—</div><div class="stat-lbl">semaines</div></div>
+      <div class="stat-item"><div class="stat-num" id="statDays">—</div><div class="stat-lbl">jours</div></div>
+      <div class="stat-item"><div class="stat-num" id="statHours">—</div><div class="stat-lbl">heures</div></div>
+    </div>
+    <div class="facts-row">
+      <div class="fact-item"><div class="fact-key">Zodiaque</div><div class="fact-val" id="ffZodiac">—</div></div>
+      <div class="fact-item"><div class="fact-key">Génération</div><div class="fact-val" id="ffGen">—</div></div>
+      <div class="fact-item"><div class="fact-key">Jour de naissance</div><div class="fact-val" id="ffDay">—</div></div>
+      <div class="fact-item"><div class="fact-key">Années bissextiles vécues</div><div class="fact-val" id="ffLeap">—</div></div>
+    </div>
+    <div class="bday-banner" id="bdayBanner"></div>
+  </div>
+
+  <div class="tool-nav">
+    <div class="nav-group"><span class="nav-cat">Âge</span><div class="nav-links"><a href="/fr/calculateur-age/">Calculateur d'âge</a><span class="nav-sep">·</span><a href="/fr/age-chronologique/" aria-current="page">Âge chronologique</a><span class="nav-sep">·</span><a href="/fr/calculateur-age-bebe/">Âge bébé</a><span class="nav-sep">·</span><a href="/fr/calculateur-age-chien/">Âge du chien</a><span class="nav-sep">·</span><a href="/fr/calculateur-age-chat/">Âge du chat</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Dates</span><div class="nav-links"><a href="/fr/jours-entre-deux-dates/">Jours entre deux dates</a><span class="nav-sep">·</span><a href="/fr/calculateur-date/">Calculateur de date</a><span class="nav-sep">·</span><a href="/fr/quel-jour-sommes-nous/">Quel jour sommes-nous</a><span class="nav-sep">·</span><a href="/fr/numero-semaine/">Numéro de semaine</a><span class="nav-sep">·</span><a href="/fr/calculateur-jours-ouvrables/">Jours ouvrables</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Comptes</span><div class="nav-links"><a href="/fr/jours-avant-noel/">Avant Noël</a><span class="nav-sep">·</span><a href="/fr/jours-avant-nouvel-an/">Avant Nouvel An</a><span class="nav-sep">·</span><a href="/fr/jours-avant-halloween/">Avant Halloween</a><span class="nav-sep">·</span><a href="/fr/jours-avant-paques/">Avant Pâques</a><span class="nav-sep">·</span><a href="/fr/compte-a-rebours/">Compte à rebours</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Monde</span><div class="nav-links"><a href="/fr/convertisseur-fuseaux-horaires/">Fuseaux horaires</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Né en</span><div class="nav-links"><a href="/fr/ne-en-1990/">Né en 1990</a><span class="nav-sep">·</span><a href="/fr/ne-en-1980/">Né en 1980</a><span class="nav-sep">·</span><a href="/fr/ne-en-2000/">Né en 2000</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Calendriers</span><div class="nav-links"><a href="/fr/numero-semaine/2025/">Semaines 2025</a><span class="nav-sep">·</span><a href="/fr/numero-semaine/2026/">Semaines 2026</a><span class="nav-sep">·</span><a href="/fr/numero-semaine/2027/">Semaines 2027</a></div></div>
+  </div>
+
+  <div class="seo-block">
+    <div><h2>Qu'est-ce que l'âge chronologique ?</h2><p>L'âge chronologique est la mesure précise du temps écoulé depuis la naissance d'une personne, exprimé en années, mois et jours. C'est la mesure d'âge la plus objective car elle est basée uniquement sur le temps calendaire écoulé, sans inférence sur l'état physique, les capacités cognitives ou la maturité. L'âge chronologique est utilisé dans de nombreux contextes : les pédiatres l'utilisent pour comparer le développement d'un enfant aux tableaux de jalons standard ; les écoles l'utilisent pour déterminer l'éligibilité à l'inscription ; les psychologues l'utilisent pour calculer les ratios de QI ; les assureurs l'utilisent pour définir les catégories de risque et les taux de prime. Contrairement à l'âge biologique ou mental, l'âge chronologique est entièrement objectif.</p></div>
+    <div><h2>Comment calculer l'âge chronologique ?</h2><p>Pour calculer l'âge chronologique avec précision, soustrayez la date de naissance de la date de référence en trois étapes. D'abord, soustrayez le jour de naissance du jour de référence — si le résultat est négatif, empruntez des jours du mois précédent. Ensuite, soustrayez le mois de naissance — si négatif, empruntez 12 mois. Enfin, soustrayez l'année. Par exemple : enfant né le 15 mars 2018, évalué le 20 octobre 2025. Résultat : 7 ans, 7 mois, 5 jours. Ce calculateur gère automatiquement tous les cas particuliers.</p></div>
+  </div>
+  <div class="faq-block">
+    <h2>Questions fréquentes</h2>
+    <div class="faq-item"><h3>Qu'est-ce que l'âge chronologique en psychologie ?</h3><p>En psychologie, l'âge chronologique (AC) est le temps réel écoulé depuis la naissance, utilisé comme référence pour comparer les mesures développementales, cognitives et comportementales. La formule classique du QI divise l'âge mental par l'âge chronologique et multiplie par 100. L'âge chronologique reste central dans les évaluations développementales et les décisions de placement éducatif.</p></div>
+    <div class="faq-item"><h3>Quelle est la différence entre âge chronologique et âge mental ?</h3><p>L'âge chronologique (AC) est le temps réel écoulé depuis la naissance — purement objectif. L'âge mental (AM) est une mesure des capacités cognitives par rapport à ce qui est typique pour un âge chronologique donné. Un enfant de 10 ans qui obtient les résultats d'un enfant de 13 ans a un âge mental de 13 ans mais un âge chronologique de 10 ans.</p></div>
+    <div class="faq-item"><h3>Comment calculer l'âge chronologique pour l'inscription scolaire ?</h3><p>La plupart des écoles calculent l'âge chronologique en comparant la date de naissance de l'enfant à une date limite (par exemple le 1er septembre). L'enfant doit avoir atteint l'âge requis à cette date. Entrez la date de naissance et la date limite dans ce calculateur pour obtenir l'âge exact à l'inscription.</p></div>
+    <div class="faq-item"><h3>Quelle est la formule de l'âge chronologique ?</h3><p>La formule est : AC = Date de référence − Date de naissance, exprimé en années, mois et jours. Le calcul nécessite une gestion correcte des emprunts de fin de mois et des années bissextiles. Ce calculateur applique la formule correctement pour toutes les dates.</p></div>
+    <div class="faq-item"><h3>Comment l'âge chronologique est-il utilisé pour les assurances ?</h3><p>Les compagnies d'assurance utilisent l'âge chronologique pour déterminer les catégories de risque, fixer les taux de prime et définir l'éligibilité aux polices. Les primes d'assurance-vie augmentent généralement à chaque anniversaire. Les plans d'assurance maladie ont souvent des tranches de tarification par âge. L'âge exact en années et mois peut déterminer quelle tranche s'applique.</p></div>
+    <div class="faq-item"><h3>Comment l'âge chronologique est-il utilisé pour les tests standardisés ?</h3><p>La plupart des tests psychologiques et éducatifs standardisés sont normés par groupe d'âge. Le score brut est comparé aux scores d'autres personnes dans la même tranche d'âge chronologique (définie en années et mois) pour produire un score standard ou un rang percentile. Utiliser un âge chronologique incorrect peut déplacer un score dans un groupe normatif différent.</p></div>
+    <div class="faq-item"><h3>À quoi sert l'âge chronologique ?</h3><p>L'âge chronologique est utilisé dans les évaluations pédiatriques, l'éligibilité scolaire, le suivi des étapes développementales, les calculs d'assurance et l'interprétation des tests standardisés.</p></div>
+    <div class="faq-item"><h3>Puis-je calculer l'âge chronologique pour une date passée ?</h3><p>Oui. Entrez la date de naissance et toute date de référence — passée, présente ou future. Le calculateur calculera l'âge chronologique exact entre ces deux dates.</p></div>
+  </div>
+
+  <div class="source-block">
+    <span class="source-lbl">Source</span>
+    <a href="https://www.apa.org/topics/cognitive-development" target="_blank" rel="noopener noreferrer">American Psychological Association – Développement cognitif</a>
+  </div>
+  <footer>© 2026 Date.tools — Calculateurs de date et d'heure gratuits en ligne</footer>
+</div>
+
+<script>
+(function(){
+  var now = new Date();
+  var opts = {weekday:'long',year:'numeric',month:'long',day:'numeric'};
+  document.getElementById('todayMeta').innerHTML =
+    now.toLocaleDateString('fr-FR', opts) + '<br>Calculateur de dates gratuit';
+})();
+// Shared input guard: strip non-digits, truncate to max digit length, clamp to hi
+function clamp(el, lo, hi) {
+  var maxLen = String(hi).length;
+  var s = el.value.replace(/\D/g, '').slice(0, maxLen);
+  var n = parseInt(s, 10);
+  if (!isNaN(n) && n > hi) s = String(hi);
+  el.value = s;
+}
+</script>
+<script>
+
+var D = {"zodiacSigns":["Capricorne","Verseau","Poissons","Bélier","Taureau","Gémeaux","Cancer","Lion","Vierge","Balance","Scorpion","Sagittaire","Capricorne"],"weekDays":["Dimanche","Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi"],"gens":[{"y":1928,"n":"Génération Silencieuse"},{"y":1946,"n":"Baby Boomer"},{"y":1965,"n":"Génération X"},{"y":1981,"n":"Millénial"},{"y":1997,"n":"Génération Z"},{"y":2013,"n":"Génération Alpha"}],"errInvalid":"→ Date invalide. Vérifiez votre saisie.","errFuture":"→ La date de naissance ne peut pas être après la date de référence.","nextBdayIn":"Prochain anniversaire dans","nextBdayToday":"🎉 Joyeux anniversaire !","dayWord":["jour","jours"],"pY":"a","pM":"mo","pD":"j"};
+
+function fmt(n){return n.toLocaleString();}
+function pad2(n){return n<10?'0'+n:''+n;}
+
+function getZodiac(d,m){
+  var b=[20,19,20,20,21,21,22,22,22,22,21,21];
+  var idx=(m===1&&d<=b[0])||(m===12&&d>b[11])?0:d<=b[m-1]?m-1:m;
+  return D.zodiacSigns[idx];
+}
+
+function getGen(y){
+  var gs=D.gens;
+  for(var i=gs.length-1;i>=0;i--) if(y>=gs[i].y) return gs[i].n;
+  return gs[0].n;
+}
+
+function leapCount(from,to){
+  var c=0;
+  for(var y=from;y<=to;y++) if((y%4===0&&y%100!==0)||y%400===0) c++;
+  return c;
+}
+
+function calculate(){
+  var d=parseInt(document.getElementById('day').value);
+  var m=parseInt(document.getElementById('month').value);
+  var y=parseInt(document.getElementById('year').value);
+  var err=document.getElementById('errorLine');
+  var res=document.getElementById('results');
+  err.classList.remove('show');
+  res.classList.remove('show');
+  document.getElementById('preciseAge').textContent='';
+
+  if(!d||!m||!y||d<1||d>31||m<1||m>12||y<1900||y>2025){
+    err.textContent=D.errInvalid; err.classList.add('show'); return;
+  }
+  var bday=new Date(y,m-1,d);
+  if(isNaN(bday)||bday.getDate()!==d){
+    err.textContent=D.errInvalid; err.classList.add('show'); return;
+  }
+
+  var rd=parseInt(document.getElementById('rDay').value);
+  var rm=parseInt(document.getElementById('rMonth').value);
+  var ry=parseInt(document.getElementById('rYear').value);
+  var ref;
+  if(rd&&rm&&ry){
+    ref=new Date(ry,rm-1,rd);
+    if(isNaN(ref)||ref.getDate()!==rd){err.textContent=D.errInvalid; err.classList.add('show'); return;}
+  } else {
+    ref=new Date(); ref.setHours(0,0,0,0);
+  }
+
+  if(bday>ref){err.textContent=D.errFuture; err.classList.add('show'); return;}
+
+  var ageY=ref.getFullYear()-bday.getFullYear();
+  var ageM=ref.getMonth()-bday.getMonth();
+  var ageD2=ref.getDate()-bday.getDate();
+  if(ageD2<0){ageM--; ageD2+=new Date(ref.getFullYear(),ref.getMonth(),0).getDate();}
+  if(ageM<0){ageY--; ageM+=12;}
+
+  var totalDays=Math.floor((ref-bday)/86400000);
+  var totalWeeks=Math.floor(totalDays/7);
+  var totalMonths=ageY*12+ageM;
+  var totalHours=totalDays*24;
+  var leaps=leapCount(y, ref.getFullYear());
+
+  var next=new Date(ref.getFullYear(),m-1,d);
+  if(next<=ref) next.setFullYear(next.getFullYear()+1);
+  var daysNext=Math.ceil((next-ref)/86400000);
+
+  // Show precise breakdown
+  var parts=[];
+  if(ageY>0) parts.push(ageY+D.pY);
+  if(ageM>0) parts.push(ageM+D.pM);
+  if(ageD2>0) parts.push(ageD2+D.pD);
+  document.getElementById('preciseAge').textContent=parts.join(' · ');
+
+  document.getElementById('heroAge').textContent=ageY;
+  document.getElementById('statMonths').textContent=fmt(totalMonths);
+  document.getElementById('statWeeks').textContent=fmt(totalWeeks);
+  document.getElementById('statDays').textContent=fmt(totalDays);
+  document.getElementById('statHours').textContent=fmt(totalHours);
+  document.getElementById('ffZodiac').textContent=getZodiac(d,m);
+  document.getElementById('ffGen').textContent=getGen(y);
+  document.getElementById('ffDay').textContent=D.weekDays[bday.getDay()];
+  document.getElementById('ffLeap').textContent=leaps;
+
+  var banner=document.getElementById('bdayBanner');
+  if(daysNext===0){
+    banner.textContent=D.nextBdayToday;
+  } else {
+    var dw=daysNext===1?D.dayWord[0]:D.dayWord[1];
+    banner.textContent=D.nextBdayIn+' '+daysNext+' '+dw;
+  }
+
+  res.classList.add('show');
+  res.scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+document.addEventListener('keydown',function(e){if(e.key==='Enter') calculate();});
+
+</script>
+</body>
+</html>

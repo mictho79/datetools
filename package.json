@@ -1,0 +1,8 @@
+{
+  "name": "date-tools",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "node build.js",
+    "serve": "npx serve dist -p 3000"
+  }
+}

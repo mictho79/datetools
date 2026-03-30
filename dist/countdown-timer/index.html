@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Countdown Timer – Count Down to Any Date | Date.tools</title>
+<meta name="description" content="Free online countdown timer. Enter any future date and get a live countdown in days, hours, minutes and seconds.">
+<link rel="canonical" href="https://date.tools/countdown-timer/">
+<link rel="alternate" hreflang="en" href="https://date.tools/countdown-timer/">
+<link rel="alternate" hreflang="fr" href="https://date.tools/fr/compte-a-rebours/">
+<link rel="alternate" hreflang="es" href="https://date.tools/es/cuenta-regresiva/">
+<link rel="alternate" hreflang="x-default" href="https://date.tools/countdown-timer/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Countdown Timer – Count Down to Any Date | Date.tools">
+<meta property="og:description" content="Free online countdown timer. Enter any future date and get a live countdown in days, hours, minutes and seconds.">
+<meta property="og:url" content="https://date.tools/countdown-timer/">
+<meta property="og:site_name" content="Date.tools">
+<meta property="og:image" content="https://date.tools/og.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Countdown Timer – Count Down to Any Date | Date.tools">
+<meta name="twitter:description" content="Free online countdown timer. Enter any future date and get a live countdown in days, hours, minutes and seconds.">
+<meta name="twitter:image" content="https://date.tools/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Space+Mono:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I use a free online countdown timer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Enter your target date (day, month, year) in the fields above, optionally type an event name, and click \"Start Countdown.\" The timer instantly shows the exact days, hours, minutes, and seconds remaining, updating every second. It works on any device — desktop, tablet, or mobile — with no app or account required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many days until my birthday?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Enter your next birthday date above and click Start Countdown. The timer will show the exact number of days, hours, minutes, and seconds until midnight on your birthday. For the current year's birthday, use the current year if it hasn't passed yet, or next year if it has."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I create a countdown to my wedding day?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Enter your wedding date in the target date fields, type \"Our Wedding\" or any custom name in the event name field, and click Start Countdown. The live timer shows days, hours, minutes, and seconds. Bookmark the page to return to your countdown anytime."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many days until my vacation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Enter your vacation departure date as the target, give it a name like \"Beach Trip,\" and start the countdown. The calculator shows both total days remaining and the breakdown in weeks, hours, and minutes — useful for planning packing, travel documents, and pre-trip tasks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I count days until graduation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Enter your graduation ceremony date, label it \"Graduation Day,\" and click Start Countdown. The live countdown will update second by second. You can also note the total hours or weeks remaining for a different perspective on how much time you have to prepare."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many days until [a specific date]?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Simply enter any future date in the calculator above and the timer immediately shows the exact number of days remaining. The result also includes total hours, total minutes, and total seconds for the most precise answer. Dates up to December 31, 2099 are supported."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the countdown update in real time?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The seconds, minutes, and hours update every second automatically. No need to refresh the page."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the maximum date I can count down to?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The calculator supports dates up to December 31, 2099 — giving you a maximum countdown of over 73 years."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Countdown Timer",
+  "description": "Free online countdown timer. Enter any future date and get a live countdown in days, hours, minutes and seconds.",
+  "url": "https://date.tools/countdown-timer/",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Web",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+</head>
+<body>
+
+<div class="masthead">
+  <a href="/" class="masthead-brand">Date<span>.</span>tools</a>
+  <div class="masthead-meta" id="todayMeta"></div>
+</div>
+
+<div class="lang-strip">
+  <a href="/countdown-timer/" class="lang-btn active">EN</a>
+  <a href="/fr/compte-a-rebours/" class="lang-btn">FR</a>
+  <a href="/es/cuenta-regresiva/" class="lang-btn">ES</a>
+</div>
+
+<div class="page">
+
+  <div class="headline-block">
+    <div class="kicker">Countdown Timer</div>
+    <h1 class="headline">Count<em>down</em> <br>to any date</h1>
+    <p class="subhead">Enter a target date — watch the live countdown tick in real time.</p>
+  </div>
+
+  <div class="form-grid">
+    <div class="form-col">
+      <div class="field-label">Target date</div>
+      <div class="date-row">
+        <input type="number" id="day" placeholder="DD" min="1" max="31" inputmode="numeric" oninput="clamp(this,1,31)">
+        <span>/</span>
+        <input type="number" id="month" placeholder="MM" min="1" max="12" inputmode="numeric" oninput="clamp(this,1,12)">
+        <span>/</span>
+        <input type="number" id="year" placeholder="YYYY" min="2024" max="2099" inputmode="numeric" oninput="clamp(this,2024,2099)">
+      </div>
+      <div class="field-label" style="margin-top:1.2rem">Event name (optional)</div>
+      <input type="text" id="eventLabel" placeholder="e.g. My Birthday" maxlength="40" style="background:none;border:none;border-bottom:2px solid var(--ink);font-family:'Inter',sans-serif;font-size:1rem;color:var(--ink);width:100%;padding:.2rem 0;outline:none;">
+      <div class="error-line" id="errorLine"></div>
+      <button class="calc-btn" onclick="calculate()">→ Start Countdown</button>
+    </div>
+    <div class="form-col">
+      <p class="tip-text">"The anticipation is part of the joy."</p>
+      <ul class="example-list">
+        <li>New Year's Eve</li>
+        <li>Next birthday</li>
+        <li>Project deadline</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="results-section" id="results">
+    <div class="results-header" id="resultsHeader">Countdown</div>
+    <div class="age-display">
+      <span class="age-number" id="heroDays">—</span>
+      <span class="age-suffix">days</span>
+    </div>
+    <div class="precise-age" id="liveHMS"></div>
+    <div class="stats-strip">
+      <div class="stat-item"><div class="stat-num" id="statWeeks">—</div><div class="stat-lbl">weeks</div></div>
+      <div class="stat-item"><div class="stat-num" id="statTotalH">—</div><div class="stat-lbl">total hours</div></div>
+      <div class="stat-item"><div class="stat-num" id="statTotalM">—</div><div class="stat-lbl">total minutes</div></div>
+      <div class="stat-item"><div class="stat-num" id="statSecs">—</div><div class="stat-lbl">seconds</div></div>
+    </div>
+    <div class="facts-row">
+      <div class="fact-item"><div class="fact-key">Target date</div><div class="fact-val" id="ffDate">—</div></div>
+      <div class="fact-item"><div class="fact-key">Day of week</div><div class="fact-val" id="ffDay">—</div></div>
+    </div>
+    <div class="bday-banner" id="doneBanner"></div>
+  </div>
+
+  <div class="tool-nav">
+    <div class="nav-group"><span class="nav-cat">Age</span><div class="nav-links"><a href="/age-calculator/">Age Calculator</a><span class="nav-sep">·</span><a href="/chronological-age-calculator/">Chronological Age</a><span class="nav-sep">·</span><a href="/baby-age-calculator/">Baby Age</a><span class="nav-sep">·</span><a href="/dog-age-calculator/">Dog Age</a><span class="nav-sep">·</span><a href="/cat-age-calculator/">Cat Age</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Dates</span><div class="nav-links"><a href="/days-between-dates/">Days Between Dates</a><span class="nav-sep">·</span><a href="/date-calculator/">Date Calculator</a><span class="nav-sep">·</span><a href="/what-day-is-it-today/">What Day Is It</a><span class="nav-sep">·</span><a href="/week-number/">Week Number</a><span class="nav-sep">·</span><a href="/business-days-calculator/">Business Days</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Countdowns</span><div class="nav-links"><a href="/days-until-christmas/">Christmas</a><span class="nav-sep">·</span><a href="/days-until-new-year/">New Year</a><span class="nav-sep">·</span><a href="/days-until-halloween/">Halloween</a><span class="nav-sep">·</span><a href="/days-until-easter/">Easter</a><span class="nav-sep">·</span><a href="/countdown-timer/" aria-current="page">Countdown Timer</a></div></div>
+    <div class="nav-group"><span class="nav-cat">World</span><div class="nav-links"><a href="/time-zone-converter/">Time Zone Converter</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Born In</span><div class="nav-links"><a href="/born-in-1990/">Born in 1990</a><span class="nav-sep">·</span><a href="/born-in-1980/">Born in 1980</a><span class="nav-sep">·</span><a href="/born-in-2000/">Born in 2000</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Calendars</span><div class="nav-links"><a href="/week-number/2025/">Week Numbers 2025</a><span class="nav-sep">·</span><a href="/week-number/2026/">Week Numbers 2026</a><span class="nav-sep">·</span><a href="/week-number/2027/">Week Numbers 2027</a></div></div>
+  </div>
+
+  <div class="seo-block">
+    <div><h2>How to use the countdown timer</h2><p>Enter any future date and click "Start Countdown." The timer immediately shows you the exact number of days, hours, minutes, and seconds remaining until midnight on that date, and it updates live every second without any page refresh. You can also add an event name — like "My Wedding" or "Paris Trip" — to personalize your countdown display. The calculator supports any date up to December 31, 2099, giving you a maximum countdown horizon of over 70 years. Common uses include counting down to birthdays, holidays, vacations, exam dates, product launches, sporting events, and retirement. Research in psychology suggests that visualizing a concrete time-to-event reduces anxiety and improves preparation, which is one reason countdown timers have become a popular productivity and motivation tool.</p></div>
+    <div><h2>Common uses for countdown timers</h2><p>Countdown timers serve dozens of real-world purposes. Personal milestones: how many days until my birthday, how many days until Christmas, countdown to my wedding day, days until summer vacation. Academic and professional: days until exam, project deadline countdown, days until graduation, contract expiry countdown. Travel and events: days until flight, countdown to sports championship, festival or concert countdown. The "days until" format is the most searched countdown query — followed by hours, then weeks. This calculator shows all four simultaneously so you always have the view you need. Knowing exactly how many days remain creates a concrete sense of urgency that vague "soon" or "next month" language simply cannot provide.</p></div>
+  </div>
+  <div class="faq-block">
+    <h2>Frequently asked questions</h2>
+    <div class="faq-item"><h3>How do I use a free online countdown timer?</h3><p>Enter your target date (day, month, year) in the fields above, optionally type an event name, and click "Start Countdown." The timer instantly shows the exact days, hours, minutes, and seconds remaining, updating every second. It works on any device — desktop, tablet, or mobile — with no app or account required.</p></div>
+    <div class="faq-item"><h3>How many days until my birthday?</h3><p>Enter your next birthday date above and click Start Countdown. The timer will show the exact number of days, hours, minutes, and seconds until midnight on your birthday. For the current year's birthday, use the current year if it hasn't passed yet, or next year if it has.</p></div>
+    <div class="faq-item"><h3>How do I create a countdown to my wedding day?</h3><p>Enter your wedding date in the target date fields, type "Our Wedding" or any custom name in the event name field, and click Start Countdown. The live timer shows days, hours, minutes, and seconds. Bookmark the page to return to your countdown anytime.</p></div>
+    <div class="faq-item"><h3>How many days until my vacation?</h3><p>Enter your vacation departure date as the target, give it a name like "Beach Trip," and start the countdown. The calculator shows both total days remaining and the breakdown in weeks, hours, and minutes — useful for planning packing, travel documents, and pre-trip tasks.</p></div>
+    <div class="faq-item"><h3>How do I count days until graduation?</h3><p>Enter your graduation ceremony date, label it "Graduation Day," and click Start Countdown. The live countdown will update second by second. You can also note the total hours or weeks remaining for a different perspective on how much time you have to prepare.</p></div>
+    <div class="faq-item"><h3>How many days until [a specific date]?</h3><p>Simply enter any future date in the calculator above and the timer immediately shows the exact number of days remaining. The result also includes total hours, total minutes, and total seconds for the most precise answer. Dates up to December 31, 2099 are supported.</p></div>
+    <div class="faq-item"><h3>Does the countdown update in real time?</h3><p>Yes. The seconds, minutes, and hours update every second automatically. No need to refresh the page.</p></div>
+    <div class="faq-item"><h3>What is the maximum date I can count down to?</h3><p>The calculator supports dates up to December 31, 2099 — giving you a maximum countdown of over 73 years.</p></div>
+  </div>
+
+  <div class="source-block">
+    <span class="source-lbl">Source</span>
+    <a href="https://en.wikipedia.org/wiki/Countdown" target="_blank" rel="noopener noreferrer">Wikipedia – Countdown</a>
+  </div>
+  <footer>© 2026 Date.tools — Free online date &amp; time calculators</footer>
+</div>
+
+<script>
+(function(){
+  var now = new Date();
+  var opts = {weekday:'long',year:'numeric',month:'long',day:'numeric'};
+  document.getElementById('todayMeta').innerHTML =
+    now.toLocaleDateString('en-US', opts) + '<br>Free date calculator';
+})();
+// Shared input guard: strip non-digits, truncate to max digit length, clamp to hi
+function clamp(el, lo, hi) {
+  var maxLen = String(hi).length;
+  var s = el.value.replace(/\D/g, '').slice(0, maxLen);
+  var n = parseInt(s, 10);
+  if (!isNaN(n) && n > hi) s = String(hi);
+  el.value = s;
+}
+</script>
+<script>
+
+var D = {"errInvalid":"→ Invalid date. Please check your input.","errPast":"→ Target date must be in the future.","reachedMsg":"🎉 The date has been reached!","weekDays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"months":["January","February","March","April","May","June","July","August","September","October","November","December"]};
+var _target = null;
+var _timer = null;
+function fmt(n){return n.toLocaleString();}
+function pad2(n){return n<10?'0'+n:''+n;}
+
+function tick(){
+  if(!_target) return;
+  var now = new Date();
+  var diff = _target - now;
+  if(diff <= 0){
+    document.getElementById('heroDays').textContent = '0';
+    document.getElementById('liveHMS').textContent = '00h · 00min · 00s';
+    document.getElementById('statWeeks').textContent = '0';
+    document.getElementById('statTotalH').textContent = '0';
+    document.getElementById('statTotalM').textContent = '0';
+    document.getElementById('statSecs').textContent = '0';
+    document.getElementById('doneBanner').textContent = D.reachedMsg;
+    return;
+  }
+  var totalSec = Math.floor(diff/1000);
+  var s = totalSec%60, totalMin = Math.floor(totalSec/60);
+  var min = totalMin%60, totalH = Math.floor(totalMin/60);
+  var h = totalH%24, days = Math.floor(totalH/24);
+  document.getElementById('heroDays').textContent = fmt(days);
+  document.getElementById('liveHMS').textContent = pad2(h)+'h · '+pad2(min)+'min · '+pad2(s)+'s';
+  document.getElementById('statWeeks').textContent = fmt(Math.floor(days/7));
+  document.getElementById('statTotalH').textContent = fmt(totalH);
+  document.getElementById('statTotalM').textContent = fmt(totalMin);
+  document.getElementById('statSecs').textContent = fmt(totalSec);
+}
+
+function calculate(){
+  var d = parseInt(document.getElementById('day').value);
+  var m = parseInt(document.getElementById('month').value);
+  var y = parseInt(document.getElementById('year').value);
+  var label = document.getElementById('eventLabel').value.trim();
+  var err = document.getElementById('errorLine');
+  var res = document.getElementById('results');
+  err.classList.remove('show'); res.classList.remove('show');
+  if(_timer){clearInterval(_timer); _timer=null;}
+
+  if(!d||!m||!y||d<1||d>31||m<1||m>12||y<2024||y>2099){err.textContent=D.errInvalid; err.classList.add('show'); return;}
+  var target = new Date(y, m-1, d);
+  if(target.getDate()!==d){err.textContent=D.errInvalid; err.classList.add('show'); return;}
+  if(target <= new Date()){err.textContent=D.errPast; err.classList.add('show'); return;}
+
+  _target = target;
+  document.getElementById('resultsHeader').textContent = label || 'Countdown';
+  document.getElementById('ffDate').textContent = target.getDate()+' '+D.months[target.getMonth()]+' '+target.getFullYear();
+  document.getElementById('ffDay').textContent = D.weekDays[target.getDay()];
+  document.getElementById('doneBanner').textContent = '';
+  res.classList.add('show');
+  res.scrollIntoView({behavior:'smooth',block:'start'});
+  tick();
+  _timer = setInterval(tick, 1000);
+}
+
+document.addEventListener('keydown', function(e){if(e.key==='Enter') calculate();});
+
+</script>
+</body>
+</html>

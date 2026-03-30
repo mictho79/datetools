@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Business Days Calculator – Count Working Days | Date.tools</title>
+<meta name="description" content="Calculate the number of business days between two dates, or add business days to a date. Excludes weekends.">
+<link rel="canonical" href="https://date.tools/business-days-calculator/">
+<link rel="alternate" hreflang="en" href="https://date.tools/business-days-calculator/">
+<link rel="alternate" hreflang="fr" href="https://date.tools/fr/calculateur-jours-ouvrables/">
+<link rel="alternate" hreflang="es" href="https://date.tools/es/calculadora-dias-habiles/">
+<link rel="alternate" hreflang="x-default" href="https://date.tools/business-days-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Business Days Calculator – Count Working Days | Date.tools">
+<meta property="og:description" content="Calculate the number of business days between two dates, or add business days to a date. Excludes weekends.">
+<meta property="og:url" content="https://date.tools/business-days-calculator/">
+<meta property="og:site_name" content="Date.tools">
+<meta property="og:image" content="https://date.tools/og.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Business Days Calculator – Count Working Days | Date.tools">
+<meta name="twitter:description" content="Calculate the number of business days between two dates, or add business days to a date. Excludes weekends.">
+<meta name="twitter:image" content="https://date.tools/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Space+Mono:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a business day?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A business day is any day that is not a Saturday, Sunday, or public holiday. In most countries this means Monday through Friday. Banks, courts, and government agencies typically operate on business days only. When contracts, regulations, or deadlines refer to \"business days,\" they mean weekdays excluding weekends — and usually excluding official public holidays as well."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many business days are in a month?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A typical month contains 20–23 business days, depending on the month and year. February in a common year has 20 business days (4 full weeks). Months with 31 days can have up to 23. To get the exact count for any specific month, enter the first and last day of that month in this calculator."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I add 10 business days to today?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Select \"Add business days to a date,\" enter today's date as the start, enter 10 in the business days field, and click Calculate. The result shows the exact date 10 working days from now, skipping all Saturdays and Sundays. For example, starting on a Monday, 10 business days later is the Monday of the third week (2 calendar weeks later)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I calculate business days excluding holidays?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This calculator excludes weekends automatically. To exclude public holidays, first get the business day count, then subtract the number of official holidays that fall within your date range. Most countries have 8–13 public holidays per year. The U.S. has 11 federal holidays; check the Department of Labor website for the current list."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is 5 business days from today?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Five business days from any Monday is the following Monday. From a Tuesday, it is the following Tuesday, and so on — because 5 weekdays is exactly one working week. However, if the start date is mid-week, the end date will land one week later on the same day. Use the \"Add business days\" mode and enter 5 to get the exact date."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many calendar days are 30 business days?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "30 business days is always 6 calendar weeks (42 days) if there are no holidays, because 5 business days per week × 6 weeks = 30. However, it can be 43–46 calendar days if the start or end of the period falls mid-week and spans additional weekend days. Use the calculator to get the precise calendar date."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does this calculator exclude public holidays?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No — public holidays vary by country, region, and year. This calculator excludes only weekends (Saturday and Sunday). Subtract the number of relevant holidays from the result manually."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if I need to exclude specific holidays?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "After getting the result, subtract the number of public holidays that fall within the range. Most countries have 8–12 public holidays per year."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Business Days Calculator",
+  "description": "Calculate the number of business days between two dates, or add business days to a date. Excludes weekends.",
+  "url": "https://date.tools/business-days-calculator/",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Web",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+</head>
+<body>
+
+<div class="masthead">
+  <a href="/" class="masthead-brand">Date<span>.</span>tools</a>
+  <div class="masthead-meta" id="todayMeta"></div>
+</div>
+
+<div class="lang-strip">
+  <a href="/business-days-calculator/" class="lang-btn active">EN</a>
+  <a href="/fr/calculateur-jours-ouvrables/" class="lang-btn">FR</a>
+  <a href="/es/calculadora-dias-habiles/" class="lang-btn">ES</a>
+</div>
+
+<div class="page">
+
+  <div class="headline-block">
+    <div class="kicker">Business Days Calculator</div>
+    <h1 class="headline">Count <br><em>working</em> days</h1>
+    <p class="subhead">Calculate business days between dates, or find a date X working days from now.</p>
+  </div>
+
+  <div class="form-grid">
+    <div class="form-col">
+      <div class="mode-row" style="display:flex;gap:1.2rem;margin-bottom:1.4rem;flex-wrap:wrap;">
+        <label style="display:flex;align-items:center;gap:.4rem;cursor:pointer;font-size:.85rem;letter-spacing:.04em;text-transform:uppercase;">
+          <input type="radio" name="bdMode" id="mode1" value="1" checked onchange="switchMode(1)" style="accent-color:var(--accent);">
+          Count between two dates
+        </label>
+        <label style="display:flex;align-items:center;gap:.4rem;cursor:pointer;font-size:.85rem;letter-spacing:.04em;text-transform:uppercase;">
+          <input type="radio" name="bdMode" id="mode2" value="2" onchange="switchMode(2)" style="accent-color:var(--accent);">
+          Add business days to a date
+        </label>
+      </div>
+      <div class="field-label">Start date <button type="button" onclick="setToday('start')" style="background:none;border:none;font-family:'Space Mono',monospace;font-size:.6rem;color:var(--accent);cursor:pointer;letter-spacing:.05em;text-transform:uppercase;padding:0 .4rem">Today</button></div>
+      <div class="date-row">
+        <input type="number" id="d1" placeholder="DD" min="1" max="31" inputmode="numeric" oninput="clamp(this,1,31)">
+        <span>/</span>
+        <input type="number" id="m1" placeholder="MM" min="1" max="12" inputmode="numeric" oninput="clamp(this,1,12)">
+        <span>/</span>
+        <input type="number" id="y1" placeholder="YYYY" min="1900" max="2100" inputmode="numeric" oninput="clamp(this,1900,2100)">
+      </div>
+      <div id="endDateBlock">
+        <div class="field-label" style="margin-top:1.5rem">End date <button type="button" onclick="setToday('end')" style="background:none;border:none;font-family:'Space Mono',monospace;font-size:.6rem;color:var(--accent);cursor:pointer;letter-spacing:.05em;text-transform:uppercase;padding:0 .4rem">Today</button></div>
+        <div class="date-row">
+          <input type="number" id="d2" placeholder="DD" min="1" max="31" inputmode="numeric" oninput="clamp(this,1,31)">
+          <span>/</span>
+          <input type="number" id="m2" placeholder="MM" min="1" max="12" inputmode="numeric" oninput="clamp(this,1,12)">
+          <span>/</span>
+          <input type="number" id="y2" placeholder="YYYY" min="1900" max="2100" inputmode="numeric" oninput="clamp(this,1900,2100)">
+        </div>
+      </div>
+      <div id="addDaysBlock" style="display:none">
+        <div class="field-label" style="margin-top:1.5rem">Business days to add</div>
+        <div class="op-row">
+          <input type="number" id="addAmount" placeholder="0" min="1" max="9999" inputmode="numeric" style="width:5ch" oninput="clamp(this,1,9999)">
+        </div>
+      </div>
+      <div class="error-line" id="errorLine"></div>
+      <button class="calc-btn" onclick="calculate()">→ Calculate</button>
+    </div>
+    <div class="form-col">
+      <p class="tip-text">"Time is money. Count it wisely."</p>
+      <ul class="example-list">
+        <li onclick="fillExample(0)">Count business days this month →</li>
+        <li onclick="fillExample(1)">Add 10 business days to today →</li>
+        <li onclick="fillExample(2)">30 working days from today →</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="results-section" id="results">
+    <div class="results-header" id="resultsHeader">Business days</div>
+    <div id="heroMode1">
+      <div class="age-display">
+        <span class="age-number" id="heroBizDays">—</span>
+        <span class="age-suffix">business days</span>
+      </div>
+      <div class="stats-strip cols-3">
+        <div class="stat-item"><div class="stat-num" id="statWeekends">—</div><div class="stat-lbl">weekends</div></div>
+        <div class="stat-item"><div class="stat-num" id="statTotalDays">—</div><div class="stat-lbl">total days</div></div>
+        <div class="stat-item"><div class="stat-num" id="statWeeks">—</div><div class="stat-lbl">weeks</div></div>
+      </div>
+      <div class="facts-row">
+        <div class="fact-item"><div class="fact-key">Start day</div><div class="fact-val" id="ffStartDay">—</div></div>
+        <div class="fact-item"><div class="fact-key">End day</div><div class="fact-val" id="ffEndDay">—</div></div>
+      </div>
+    </div>
+    <div id="heroMode2" style="display:none">
+      <div class="result-date" id="resultDate">—</div>
+      <div class="result-date-sub" id="resultSub"></div>
+      <div class="facts-row">
+        <div class="fact-item"><div class="fact-key">Day of week</div><div class="fact-val" id="ffResultDay">—</div></div>
+        <div class="fact-item"><div class="fact-key">Start day</div><div class="fact-val" id="ffResultStart">—</div></div>
+        <div class="fact-item"><div class="fact-key">total days</div><div class="fact-val" id="ffResultTotal">—</div></div>
+        <div class="fact-item"><div class="fact-key">weeks</div><div class="fact-val" id="ffResultWeeks">—</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tool-nav">
+    <div class="nav-group"><span class="nav-cat">Age</span><div class="nav-links"><a href="/age-calculator/">Age Calculator</a><span class="nav-sep">·</span><a href="/chronological-age-calculator/">Chronological Age</a><span class="nav-sep">·</span><a href="/baby-age-calculator/">Baby Age</a><span class="nav-sep">·</span><a href="/dog-age-calculator/">Dog Age</a><span class="nav-sep">·</span><a href="/cat-age-calculator/">Cat Age</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Dates</span><div class="nav-links"><a href="/days-between-dates/">Days Between Dates</a><span class="nav-sep">·</span><a href="/date-calculator/">Date Calculator</a><span class="nav-sep">·</span><a href="/what-day-is-it-today/">What Day Is It</a><span class="nav-sep">·</span><a href="/week-number/">Week Number</a><span class="nav-sep">·</span><a href="/business-days-calculator/" aria-current="page">Business Days</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Countdowns</span><div class="nav-links"><a href="/days-until-christmas/">Christmas</a><span class="nav-sep">·</span><a href="/days-until-new-year/">New Year</a><span class="nav-sep">·</span><a href="/days-until-halloween/">Halloween</a><span class="nav-sep">·</span><a href="/days-until-easter/">Easter</a><span class="nav-sep">·</span><a href="/countdown-timer/">Countdown Timer</a></div></div>
+    <div class="nav-group"><span class="nav-cat">World</span><div class="nav-links"><a href="/time-zone-converter/">Time Zone Converter</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Born In</span><div class="nav-links"><a href="/born-in-1990/">Born in 1990</a><span class="nav-sep">·</span><a href="/born-in-1980/">Born in 1980</a><span class="nav-sep">·</span><a href="/born-in-2000/">Born in 2000</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Calendars</span><div class="nav-links"><a href="/week-number/2025/">Week Numbers 2025</a><span class="nav-sep">·</span><a href="/week-number/2026/">Week Numbers 2026</a><span class="nav-sep">·</span><a href="/week-number/2027/">Week Numbers 2027</a></div></div>
+  </div>
+
+  <div class="seo-block">
+    <div><h2>What are business days?</h2><p>Business days — also called working days or weekdays — are Monday through Friday, excluding Saturday and Sunday. They are the standard unit of time used in commerce, banking, legal proceedings, and government administration. When a contract says "payment within 5 business days," it means 5 Monday-through-Friday days, not 5 calendar days. Public and federal holidays are not automatically excluded by this calculator because they vary by country, region, state, and year. For example, the U.S. has 11 federal holidays, but individual states may observe additional ones. The U.S. Department of Labor maintains the official list of federal holidays. For a simple Monday-through-Friday count without holidays, this calculator is perfectly accurate. If you need to exclude specific holidays, subtract them manually from the result.</p></div>
+    <div><h2>How to calculate business days between two dates</h2><p>To count business days between two dates: list every date in the range from start to end inclusive, then count only those that fall on Monday through Friday. This calculator performs that count automatically and also shows the total calendar days and number of weekend days for context. The "Add business days" mode works in reverse: starting from a date, it advances one weekday at a time until the target count is reached, automatically skipping all Saturdays and Sundays. This is the correct method used in legal and financial contexts when a deadline is defined as "N business days from today."</p></div>
+  </div>
+  <div class="faq-block">
+    <h2>Frequently asked questions</h2>
+    <div class="faq-item"><h3>What is a business day?</h3><p>A business day is any day that is not a Saturday, Sunday, or public holiday. In most countries this means Monday through Friday. Banks, courts, and government agencies typically operate on business days only. When contracts, regulations, or deadlines refer to "business days," they mean weekdays excluding weekends — and usually excluding official public holidays as well.</p></div>
+    <div class="faq-item"><h3>How many business days are in a month?</h3><p>A typical month contains 20–23 business days, depending on the month and year. February in a common year has 20 business days (4 full weeks). Months with 31 days can have up to 23. To get the exact count for any specific month, enter the first and last day of that month in this calculator.</p></div>
+    <div class="faq-item"><h3>How do I add 10 business days to today?</h3><p>Select "Add business days to a date," enter today's date as the start, enter 10 in the business days field, and click Calculate. The result shows the exact date 10 working days from now, skipping all Saturdays and Sundays. For example, starting on a Monday, 10 business days later is the Monday of the third week (2 calendar weeks later).</p></div>
+    <div class="faq-item"><h3>How do I calculate business days excluding holidays?</h3><p>This calculator excludes weekends automatically. To exclude public holidays, first get the business day count, then subtract the number of official holidays that fall within your date range. Most countries have 8–13 public holidays per year. The U.S. has 11 federal holidays; check the Department of Labor website for the current list.</p></div>
+    <div class="faq-item"><h3>What is 5 business days from today?</h3><p>Five business days from any Monday is the following Monday. From a Tuesday, it is the following Tuesday, and so on — because 5 weekdays is exactly one working week. However, if the start date is mid-week, the end date will land one week later on the same day. Use the "Add business days" mode and enter 5 to get the exact date.</p></div>
+    <div class="faq-item"><h3>How many calendar days are 30 business days?</h3><p>30 business days is always 6 calendar weeks (42 days) if there are no holidays, because 5 business days per week × 6 weeks = 30. However, it can be 43–46 calendar days if the start or end of the period falls mid-week and spans additional weekend days. Use the calculator to get the precise calendar date.</p></div>
+    <div class="faq-item"><h3>Does this calculator exclude public holidays?</h3><p>No — public holidays vary by country, region, and year. This calculator excludes only weekends (Saturday and Sunday). Subtract the number of relevant holidays from the result manually.</p></div>
+    <div class="faq-item"><h3>What if I need to exclude specific holidays?</h3><p>After getting the result, subtract the number of public holidays that fall within the range. Most countries have 8–12 public holidays per year.</p></div>
+  </div>
+
+  <div class="source-block">
+    <span class="source-lbl">Source</span>
+    <a href="https://www.dol.gov/general/aboutdol/majorlaws" target="_blank" rel="noopener noreferrer">U.S. Department of Labor – Federal Holidays</a>
+  </div>
+  <footer>© 2026 Date.tools — Free online date &amp; time calculators</footer>
+</div>
+
+<script>
+(function(){
+  var now = new Date();
+  var opts = {weekday:'long',year:'numeric',month:'long',day:'numeric'};
+  document.getElementById('todayMeta').innerHTML =
+    now.toLocaleDateString('en-US', opts) + '<br>Free date calculator';
+})();
+// Shared input guard: strip non-digits, truncate to max digit length, clamp to hi
+function clamp(el, lo, hi) {
+  var maxLen = String(hi).length;
+  var s = el.value.replace(/\D/g, '').slice(0, maxLen);
+  var n = parseInt(s, 10);
+  if (!isNaN(n) && n > hi) s = String(hi);
+  el.value = s;
+}
+</script>
+<script>
+
+var D = {"errInvalid":"→ Invalid date. Please check your input.","errOrder":"→ End date must be after start date.","errAmount":"→ Please enter a valid number of days.","resultsHeader1":"Business days","resultsHeader2":"Result date","weekDays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"months":["January","February","March","April","May","June","July","August","September","October","November","December"],"businessDaysLbl":"business days"};
+var _currentMode = 1;
+function fmt(n){return n.toLocaleString();}
+
+function switchMode(mode){
+  _currentMode = mode;
+  document.getElementById('endDateBlock').style.display = mode===1?'':'none';
+  document.getElementById('addDaysBlock').style.display = mode===2?'':'none';
+  document.getElementById('results').classList.remove('show');
+}
+
+function setToday(which){
+  var now = new Date();
+  var suffix = which==='start'?'1':'2';
+  document.getElementById('d'+suffix).value = now.getDate();
+  document.getElementById('m'+suffix).value = now.getMonth()+1;
+  document.getElementById('y'+suffix).value = now.getFullYear();
+}
+
+function parseDate(d,m,y){
+  if(!d||!m||!y) return null;
+  var dt = new Date(y,m-1,d);
+  return (dt.getDate()===d)?dt:null;
+}
+
+function countBusiness(d1, d2){
+  var count = 0, cur = new Date(d1);
+  while(cur <= d2){
+    var day = cur.getDay();
+    if(day !== 0 && day !== 6) count++;
+    cur.setDate(cur.getDate()+1);
+  }
+  return count;
+}
+
+function addBusinessDays(date, n){
+  var result = new Date(date);
+  var added = 0;
+  while(added < n){
+    result.setDate(result.getDate()+1);
+    var day = result.getDay();
+    if(day !== 0 && day !== 6) added++;
+  }
+  return result;
+}
+
+function fillExample(idx){
+  var now = new Date();
+  if(idx===0){
+    // Count business days this month
+    document.getElementById('mode1').checked = true; switchMode(1);
+    document.getElementById('d1').value=1;
+    document.getElementById('m1').value=now.getMonth()+1;
+    document.getElementById('y1').value=now.getFullYear();
+    var lastDay = new Date(now.getFullYear(), now.getMonth()+1, 0);
+    document.getElementById('d2').value=lastDay.getDate();
+    document.getElementById('m2').value=now.getMonth()+1;
+    document.getElementById('y2').value=now.getFullYear();
+  } else if(idx===1){
+    // Add 10 business days to today
+    document.getElementById('mode2').checked = true; switchMode(2);
+    document.getElementById('d1').value=now.getDate();
+    document.getElementById('m1').value=now.getMonth()+1;
+    document.getElementById('y1').value=now.getFullYear();
+    document.getElementById('addAmount').value=10;
+  } else {
+    // 30 working days from today
+    document.getElementById('mode2').checked = true; switchMode(2);
+    document.getElementById('d1').value=now.getDate();
+    document.getElementById('m1').value=now.getMonth()+1;
+    document.getElementById('y1').value=now.getFullYear();
+    document.getElementById('addAmount').value=30;
+  }
+  calculate();
+}
+
+function calculate(){
+  var d1=parseInt(document.getElementById('d1').value);
+  var m1=parseInt(document.getElementById('m1').value);
+  var y1=parseInt(document.getElementById('y1').value);
+  var err=document.getElementById('errorLine');
+  var res=document.getElementById('results');
+  err.classList.remove('show'); res.classList.remove('show');
+
+  var date1=parseDate(d1,m1,y1);
+  if(!date1){err.textContent=D.errInvalid; err.classList.add('show'); return;}
+
+  if(_currentMode===1){
+    var d2=parseInt(document.getElementById('d2').value);
+    var m2=parseInt(document.getElementById('m2').value);
+    var y2=parseInt(document.getElementById('y2').value);
+    var date2=parseDate(d2,m2,y2);
+    if(!date2){err.textContent=D.errInvalid; err.classList.add('show'); return;}
+    if(date2<date1){err.textContent=D.errOrder; err.classList.add('show'); return;}
+
+    var bizDays=countBusiness(date1,date2);
+    var totalDays=Math.round((date2-date1)/86400000)+1;
+    var weekends=totalDays-bizDays;
+    var weeks=Math.floor(totalDays/7);
+
+    document.getElementById('resultsHeader').textContent=D.resultsHeader1;
+    document.getElementById('heroMode1').style.display='';
+    document.getElementById('heroMode2').style.display='none';
+    document.getElementById('heroBizDays').textContent=fmt(bizDays);
+    document.getElementById('statWeekends').textContent=fmt(weekends);
+    document.getElementById('statTotalDays').textContent=fmt(totalDays);
+    document.getElementById('statWeeks').textContent=fmt(weeks);
+    document.getElementById('ffStartDay').textContent=D.weekDays[date1.getDay()];
+    document.getElementById('ffEndDay').textContent=D.weekDays[date2.getDay()];
+  } else {
+    var amount=parseInt(document.getElementById('addAmount').value);
+    if(isNaN(amount)||amount<1){err.textContent=D.errAmount; err.classList.add('show'); return;}
+
+    var result=addBusinessDays(date1,amount);
+    var totalCalDays=Math.round((result-date1)/86400000);
+    var calWeeks=Math.floor(totalCalDays/7);
+    var dateStr=result.getDate()+' '+D.months[result.getMonth()]+' '+result.getFullYear();
+
+    document.getElementById('resultsHeader').textContent=D.resultsHeader2;
+    document.getElementById('heroMode1').style.display='none';
+    document.getElementById('heroMode2').style.display='';
+    document.getElementById('resultDate').textContent=dateStr;
+    document.getElementById('resultSub').textContent='+ '+amount+' '+D.businessDaysLbl;
+    document.getElementById('ffResultDay').textContent=D.weekDays[result.getDay()];
+    document.getElementById('ffResultStart').textContent=D.weekDays[date1.getDay()];
+    document.getElementById('ffResultTotal').textContent=fmt(totalCalDays);
+    document.getElementById('ffResultWeeks').textContent=fmt(calWeeks);
+  }
+
+  res.classList.add('show');
+  res.scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+// Pre-fill start with today
+(function(){
+  var now = new Date();
+  document.getElementById('d1').value=now.getDate();
+  document.getElementById('m1').value=now.getMonth()+1;
+  document.getElementById('y1').value=now.getFullYear();
+})();
+
+document.addEventListener('keydown',function(e){if(e.key==='Enter') calculate();});
+
+</script>
+</body>
+</html>

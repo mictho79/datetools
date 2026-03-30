@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de días hábiles – Contar días laborables | Date.tools</title>
+<meta name="description" content="Calcula el número de días hábiles entre dos fechas, o añade días hábiles a una fecha. Excluye los fines de semana.">
+<link rel="canonical" href="https://date.tools/es/calculadora-dias-habiles/">
+<link rel="alternate" hreflang="en" href="https://date.tools/business-days-calculator/">
+<link rel="alternate" hreflang="fr" href="https://date.tools/fr/calculateur-jours-ouvrables/">
+<link rel="alternate" hreflang="es" href="https://date.tools/es/calculadora-dias-habiles/">
+<link rel="alternate" hreflang="x-default" href="https://date.tools/business-days-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Calculadora de días hábiles – Contar días laborables | Date.tools">
+<meta property="og:description" content="Calcula el número de días hábiles entre dos fechas, o añade días hábiles a una fecha. Excluye los fines de semana.">
+<meta property="og:url" content="https://date.tools/es/calculadora-dias-habiles/">
+<meta property="og:site_name" content="Date.tools">
+<meta property="og:image" content="https://date.tools/og.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Calculadora de días hábiles – Contar días laborables | Date.tools">
+<meta name="twitter:description" content="Calcula el número de días hábiles entre dos fechas, o añade días hábiles a una fecha. Excluye los fines de semana.">
+<meta name="twitter:image" content="https://date.tools/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Space+Mono:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué es un día hábil?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Un día hábil es cualquier día que no sea sábado, domingo o día festivo. En la mayoría de los países esto significa de lunes a viernes. Los bancos, tribunales y agencias gubernamentales generalmente operan solo en días hábiles. Cuando los contratos o regulaciones mencionan \"días hábiles\", excluyen los fines de semana y generalmente también los días festivos oficiales."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuántos días hábiles hay en un mes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Un mes típico tiene 20–23 días hábiles, dependiendo del mes y el año. Febrero en año común tiene 20 días hábiles (4 semanas completas). Los meses de 31 días pueden tener hasta 23. Para obtener el conteo exacto de un mes específico, ingresa el primer y último día de ese mes en esta calculadora."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo añado 10 días hábiles a hoy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Selecciona \"Añadir días hábiles\", ingresa la fecha de hoy como inicio, ingresa 10 en el campo de días hábiles y haz clic en Calcular. El resultado muestra la fecha exacta 10 días laborables a partir de ahora, saltando todos los sábados y domingos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo calculo los días hábiles excluyendo días festivos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Esta calculadora excluye los fines de semana automáticamente. Para excluir festivos, primero obtén el conteo de días hábiles, luego resta el número de festivos oficiales que caen en tu rango de fechas. La mayoría de los países tienen 8–13 días festivos al año."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuál es la fecha en 5 días hábiles?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cinco días hábiles desde cualquier lunes corresponden al lunes siguiente. Desde un martes, al martes siguiente — porque 5 días laborables equivalen exactamente a una semana de trabajo. Usa el modo \"Añadir días hábiles\" e ingresa 5 para obtener la fecha exacta."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuántos días calendario son 30 días hábiles?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "30 días hábiles siempre son 6 semanas calendario (42 días) si no hay festivos, ya que 5 días hábiles × 6 semanas = 30. Puede ser 43–46 días calendario según los fines de semana que caigan al inicio o final del período. Usa la calculadora para obtener la fecha calendario precisa."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Esta calculadora excluye los días festivos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No — los días festivos varían por país, región y año. Esta calculadora excluye solo los fines de semana (sábado y domingo). Resta manualmente el número de días festivos relevantes del resultado."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué pasa si necesito excluir días festivos específicos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Después de obtener el resultado, resta el número de días festivos que caen dentro del rango. La mayoría de los países tienen 8–12 días festivos por año."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Calculadora de días hábiles",
+  "description": "Calcula el número de días hábiles entre dos fechas, o añade días hábiles a una fecha. Excluye los fines de semana.",
+  "url": "https://date.tools/es/calculadora-dias-habiles/",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Web",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+</head>
+<body>
+
+<div class="masthead">
+  <a href="/es/calculadora-edad/" class="masthead-brand">Date<span>.</span>tools</a>
+  <div class="masthead-meta" id="todayMeta"></div>
+</div>
+
+<div class="lang-strip">
+  <a href="/business-days-calculator/" class="lang-btn">EN</a>
+  <a href="/fr/calculateur-jours-ouvrables/" class="lang-btn">FR</a>
+  <a href="/es/calculadora-dias-habiles/" class="lang-btn active">ES</a>
+</div>
+
+<div class="page">
+
+  <div class="headline-block">
+    <div class="kicker">Calculadora de días hábiles</div>
+    <h1 class="headline">Contar <br>días <em>hábiles</em></h1>
+    <p class="subhead">Calcula los días hábiles entre fechas, o encuentra una fecha X días laborables a partir de ahora.</p>
+  </div>
+
+  <div class="form-grid">
+    <div class="form-col">
+      <div class="mode-row" style="display:flex;gap:1.2rem;margin-bottom:1.4rem;flex-wrap:wrap;">
+        <label style="display:flex;align-items:center;gap:.4rem;cursor:pointer;font-size:.85rem;letter-spacing:.04em;text-transform:uppercase;">
+          <input type="radio" name="bdMode" id="mode1" value="1" checked onchange="switchMode(1)" style="accent-color:var(--accent);">
+          Contar entre dos fechas
+        </label>
+        <label style="display:flex;align-items:center;gap:.4rem;cursor:pointer;font-size:.85rem;letter-spacing:.04em;text-transform:uppercase;">
+          <input type="radio" name="bdMode" id="mode2" value="2" onchange="switchMode(2)" style="accent-color:var(--accent);">
+          Añadir días hábiles a una fecha
+        </label>
+      </div>
+      <div class="field-label">Fecha de inicio <button type="button" onclick="setToday('start')" style="background:none;border:none;font-family:'Space Mono',monospace;font-size:.6rem;color:var(--accent);cursor:pointer;letter-spacing:.05em;text-transform:uppercase;padding:0 .4rem">Hoy</button></div>
+      <div class="date-row">
+        <input type="number" id="d1" placeholder="DD" min="1" max="31" inputmode="numeric" oninput="clamp(this,1,31)">
+        <span>/</span>
+        <input type="number" id="m1" placeholder="MM" min="1" max="12" inputmode="numeric" oninput="clamp(this,1,12)">
+        <span>/</span>
+        <input type="number" id="y1" placeholder="YYYY" min="1900" max="2100" inputmode="numeric" oninput="clamp(this,1900,2100)">
+      </div>
+      <div id="endDateBlock">
+        <div class="field-label" style="margin-top:1.5rem">Fecha de fin <button type="button" onclick="setToday('end')" style="background:none;border:none;font-family:'Space Mono',monospace;font-size:.6rem;color:var(--accent);cursor:pointer;letter-spacing:.05em;text-transform:uppercase;padding:0 .4rem">Hoy</button></div>
+        <div class="date-row">
+          <input type="number" id="d2" placeholder="DD" min="1" max="31" inputmode="numeric" oninput="clamp(this,1,31)">
+          <span>/</span>
+          <input type="number" id="m2" placeholder="MM" min="1" max="12" inputmode="numeric" oninput="clamp(this,1,12)">
+          <span>/</span>
+          <input type="number" id="y2" placeholder="YYYY" min="1900" max="2100" inputmode="numeric" oninput="clamp(this,1900,2100)">
+        </div>
+      </div>
+      <div id="addDaysBlock" style="display:none">
+        <div class="field-label" style="margin-top:1.5rem">Días hábiles a añadir</div>
+        <div class="op-row">
+          <input type="number" id="addAmount" placeholder="0" min="1" max="9999" inputmode="numeric" style="width:5ch" oninput="clamp(this,1,9999)">
+        </div>
+      </div>
+      <div class="error-line" id="errorLine"></div>
+      <button class="calc-btn" onclick="calculate()">→ Calcular</button>
+    </div>
+    <div class="form-col">
+      <p class="tip-text">"El tiempo es dinero. Cuéntalo sabiamente."</p>
+      <ul class="example-list">
+        <li onclick="fillExample(0)">Días hábiles este mes →</li>
+        <li onclick="fillExample(1)">Añadir 10 días hábiles a hoy →</li>
+        <li onclick="fillExample(2)">30 días laborables desde hoy →</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="results-section" id="results">
+    <div class="results-header" id="resultsHeader">Días hábiles</div>
+    <div id="heroMode1">
+      <div class="age-display">
+        <span class="age-number" id="heroBizDays">—</span>
+        <span class="age-suffix">días hábiles</span>
+      </div>
+      <div class="stats-strip cols-3">
+        <div class="stat-item"><div class="stat-num" id="statWeekends">—</div><div class="stat-lbl">fines de semana</div></div>
+        <div class="stat-item"><div class="stat-num" id="statTotalDays">—</div><div class="stat-lbl">días totales</div></div>
+        <div class="stat-item"><div class="stat-num" id="statWeeks">—</div><div class="stat-lbl">semanas</div></div>
+      </div>
+      <div class="facts-row">
+        <div class="fact-item"><div class="fact-key">Día de inicio</div><div class="fact-val" id="ffStartDay">—</div></div>
+        <div class="fact-item"><div class="fact-key">Día de fin</div><div class="fact-val" id="ffEndDay">—</div></div>
+      </div>
+    </div>
+    <div id="heroMode2" style="display:none">
+      <div class="result-date" id="resultDate">—</div>
+      <div class="result-date-sub" id="resultSub"></div>
+      <div class="facts-row">
+        <div class="fact-item"><div class="fact-key">Día de la semana</div><div class="fact-val" id="ffResultDay">—</div></div>
+        <div class="fact-item"><div class="fact-key">Día de inicio</div><div class="fact-val" id="ffResultStart">—</div></div>
+        <div class="fact-item"><div class="fact-key">días totales</div><div class="fact-val" id="ffResultTotal">—</div></div>
+        <div class="fact-item"><div class="fact-key">semanas</div><div class="fact-val" id="ffResultWeeks">—</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tool-nav">
+    <div class="nav-group"><span class="nav-cat">Edad</span><div class="nav-links"><a href="/es/calculadora-edad/">Calculadora de edad</a><span class="nav-sep">·</span><a href="/es/edad-cronologica/">Edad cronológica</a><span class="nav-sep">·</span><a href="/es/calculadora-edad-bebe/">Edad del bebé</a><span class="nav-sep">·</span><a href="/es/calculadora-edad-perro/">Edad del perro</a><span class="nav-sep">·</span><a href="/es/calculadora-edad-gato/">Edad del gato</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Fechas</span><div class="nav-links"><a href="/es/dias-entre-fechas/">Días entre fechas</a><span class="nav-sep">·</span><a href="/es/calculadora-fechas/">Calculadora de fechas</a><span class="nav-sep">·</span><a href="/es/que-dia-es-hoy/">¿Qué día es hoy?</a><span class="nav-sep">·</span><a href="/es/numero-semana/">Número de semana</a><span class="nav-sep">·</span><a href="/es/calculadora-dias-habiles/" aria-current="page">Días hábiles</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Cuentas</span><div class="nav-links"><a href="/es/dias-para-navidad/">Navidad</a><span class="nav-sep">·</span><a href="/es/dias-para-ano-nuevo/">Año Nuevo</a><span class="nav-sep">·</span><a href="/es/dias-para-halloween/">Halloween</a><span class="nav-sep">·</span><a href="/es/dias-para-pascua/">Pascua</a><span class="nav-sep">·</span><a href="/es/cuenta-regresiva/">Cuenta regresiva</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Mundo</span><div class="nav-links"><a href="/es/conversor-zona-horaria/">Zona horaria</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Nacido en</span><div class="nav-links"><a href="/es/nacido-en-1990/">Nacido en 1990</a><span class="nav-sep">·</span><a href="/es/nacido-en-1980/">Nacido en 1980</a><span class="nav-sep">·</span><a href="/es/nacido-en-2000/">Nacido en 2000</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Calendarios</span><div class="nav-links"><a href="/es/numero-semana/2025/">Semanas 2025</a><span class="nav-sep">·</span><a href="/es/numero-semana/2026/">Semanas 2026</a><span class="nav-sep">·</span><a href="/es/numero-semana/2027/">Semanas 2027</a></div></div>
+  </div>
+
+  <div class="seo-block">
+    <div><h2>¿Qué son los días hábiles?</h2><p>Los días hábiles — también llamados días laborables o días de semana — son de lunes a viernes, excluyendo el sábado y el domingo. Son la unidad de tiempo estándar utilizada en el comercio, la banca, los procedimientos legales y la administración gubernamental. Cuando un contrato dice "pago en 5 días hábiles", significa 5 días de lunes a viernes, no 5 días calendario. Los días festivos no son excluidos automáticamente por esta calculadora porque varían por país, región y año. Para un simple conteo de lunes a viernes sin festivos, esta calculadora es perfectamente precisa. Para excluir festivos específicos, réstalos manualmente del resultado.</p></div>
+    <div><h2>Cómo calcular los días hábiles entre dos fechas</h2><p>Para contar días hábiles entre dos fechas: lista cada fecha del rango desde el inicio hasta el fin inclusive, luego cuenta solo las que caen de lunes a viernes. Esta calculadora realiza ese conteo automáticamente y también muestra el total de días calendario y el número de días de fin de semana. El modo "Añadir días hábiles" funciona al revés: desde una fecha, avanza un día laborable a la vez hasta alcanzar el conteo objetivo, saltando automáticamente todos los sábados y domingos.</p></div>
+  </div>
+  <div class="faq-block">
+    <h2>Preguntas frecuentes</h2>
+    <div class="faq-item"><h3>¿Qué es un día hábil?</h3><p>Un día hábil es cualquier día que no sea sábado, domingo o día festivo. En la mayoría de los países esto significa de lunes a viernes. Los bancos, tribunales y agencias gubernamentales generalmente operan solo en días hábiles. Cuando los contratos o regulaciones mencionan "días hábiles", excluyen los fines de semana y generalmente también los días festivos oficiales.</p></div>
+    <div class="faq-item"><h3>¿Cuántos días hábiles hay en un mes?</h3><p>Un mes típico tiene 20–23 días hábiles, dependiendo del mes y el año. Febrero en año común tiene 20 días hábiles (4 semanas completas). Los meses de 31 días pueden tener hasta 23. Para obtener el conteo exacto de un mes específico, ingresa el primer y último día de ese mes en esta calculadora.</p></div>
+    <div class="faq-item"><h3>¿Cómo añado 10 días hábiles a hoy?</h3><p>Selecciona "Añadir días hábiles", ingresa la fecha de hoy como inicio, ingresa 10 en el campo de días hábiles y haz clic en Calcular. El resultado muestra la fecha exacta 10 días laborables a partir de ahora, saltando todos los sábados y domingos.</p></div>
+    <div class="faq-item"><h3>¿Cómo calculo los días hábiles excluyendo días festivos?</h3><p>Esta calculadora excluye los fines de semana automáticamente. Para excluir festivos, primero obtén el conteo de días hábiles, luego resta el número de festivos oficiales que caen en tu rango de fechas. La mayoría de los países tienen 8–13 días festivos al año.</p></div>
+    <div class="faq-item"><h3>¿Cuál es la fecha en 5 días hábiles?</h3><p>Cinco días hábiles desde cualquier lunes corresponden al lunes siguiente. Desde un martes, al martes siguiente — porque 5 días laborables equivalen exactamente a una semana de trabajo. Usa el modo "Añadir días hábiles" e ingresa 5 para obtener la fecha exacta.</p></div>
+    <div class="faq-item"><h3>¿Cuántos días calendario son 30 días hábiles?</h3><p>30 días hábiles siempre son 6 semanas calendario (42 días) si no hay festivos, ya que 5 días hábiles × 6 semanas = 30. Puede ser 43–46 días calendario según los fines de semana que caigan al inicio o final del período. Usa la calculadora para obtener la fecha calendario precisa.</p></div>
+    <div class="faq-item"><h3>¿Esta calculadora excluye los días festivos?</h3><p>No — los días festivos varían por país, región y año. Esta calculadora excluye solo los fines de semana (sábado y domingo). Resta manualmente el número de días festivos relevantes del resultado.</p></div>
+    <div class="faq-item"><h3>¿Qué pasa si necesito excluir días festivos específicos?</h3><p>Después de obtener el resultado, resta el número de días festivos que caen dentro del rango. La mayoría de los países tienen 8–12 días festivos por año.</p></div>
+  </div>
+
+  <div class="source-block">
+    <span class="source-lbl">Source</span>
+    <a href="https://www.dol.gov/general/aboutdol/majorlaws" target="_blank" rel="noopener noreferrer">Departamento de Trabajo de EE. UU. – Días festivos federales</a>
+  </div>
+  <footer>© 2026 Date.tools — Calculadoras de fecha y hora gratuitas en línea</footer>
+</div>
+
+<script>
+(function(){
+  var now = new Date();
+  var opts = {weekday:'long',year:'numeric',month:'long',day:'numeric'};
+  document.getElementById('todayMeta').innerHTML =
+    now.toLocaleDateString('es-ES', opts) + '<br>Calculadora de fechas gratuita';
+})();
+// Shared input guard: strip non-digits, truncate to max digit length, clamp to hi
+function clamp(el, lo, hi) {
+  var maxLen = String(hi).length;
+  var s = el.value.replace(/\D/g, '').slice(0, maxLen);
+  var n = parseInt(s, 10);
+  if (!isNaN(n) && n > hi) s = String(hi);
+  el.value = s;
+}
+</script>
+<script>
+
+var D = {"errInvalid":"→ Fecha no válida. Verifica tu entrada.","errOrder":"→ La fecha de fin debe ser posterior a la de inicio.","errAmount":"→ Por favor ingresa un número de días válido.","resultsHeader1":"Días hábiles","resultsHeader2":"Fecha resultado","weekDays":["Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado"],"months":["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"],"businessDaysLbl":"días hábiles"};
+var _currentMode = 1;
+function fmt(n){return n.toLocaleString();}
+
+function switchMode(mode){
+  _currentMode = mode;
+  document.getElementById('endDateBlock').style.display = mode===1?'':'none';
+  document.getElementById('addDaysBlock').style.display = mode===2?'':'none';
+  document.getElementById('results').classList.remove('show');
+}
+
+function setToday(which){
+  var now = new Date();
+  var suffix = which==='start'?'1':'2';
+  document.getElementById('d'+suffix).value = now.getDate();
+  document.getElementById('m'+suffix).value = now.getMonth()+1;
+  document.getElementById('y'+suffix).value = now.getFullYear();
+}
+
+function parseDate(d,m,y){
+  if(!d||!m||!y) return null;
+  var dt = new Date(y,m-1,d);
+  return (dt.getDate()===d)?dt:null;
+}
+
+function countBusiness(d1, d2){
+  var count = 0, cur = new Date(d1);
+  while(cur <= d2){
+    var day = cur.getDay();
+    if(day !== 0 && day !== 6) count++;
+    cur.setDate(cur.getDate()+1);
+  }
+  return count;
+}
+
+function addBusinessDays(date, n){
+  var result = new Date(date);
+  var added = 0;
+  while(added < n){
+    result.setDate(result.getDate()+1);
+    var day = result.getDay();
+    if(day !== 0 && day !== 6) added++;
+  }
+  return result;
+}
+
+function fillExample(idx){
+  var now = new Date();
+  if(idx===0){
+    // Count business days this month
+    document.getElementById('mode1').checked = true; switchMode(1);
+    document.getElementById('d1').value=1;
+    document.getElementById('m1').value=now.getMonth()+1;
+    document.getElementById('y1').value=now.getFullYear();
+    var lastDay = new Date(now.getFullYear(), now.getMonth()+1, 0);
+    document.getElementById('d2').value=lastDay.getDate();
+    document.getElementById('m2').value=now.getMonth()+1;
+    document.getElementById('y2').value=now.getFullYear();
+  } else if(idx===1){
+    // Add 10 business days to today
+    document.getElementById('mode2').checked = true; switchMode(2);
+    document.getElementById('d1').value=now.getDate();
+    document.getElementById('m1').value=now.getMonth()+1;
+    document.getElementById('y1').value=now.getFullYear();
+    document.getElementById('addAmount').value=10;
+  } else {
+    // 30 working days from today
+    document.getElementById('mode2').checked = true; switchMode(2);
+    document.getElementById('d1').value=now.getDate();
+    document.getElementById('m1').value=now.getMonth()+1;
+    document.getElementById('y1').value=now.getFullYear();
+    document.getElementById('addAmount').value=30;
+  }
+  calculate();
+}
+
+function calculate(){
+  var d1=parseInt(document.getElementById('d1').value);
+  var m1=parseInt(document.getElementById('m1').value);
+  var y1=parseInt(document.getElementById('y1').value);
+  var err=document.getElementById('errorLine');
+  var res=document.getElementById('results');
+  err.classList.remove('show'); res.classList.remove('show');
+
+  var date1=parseDate(d1,m1,y1);
+  if(!date1){err.textContent=D.errInvalid; err.classList.add('show'); return;}
+
+  if(_currentMode===1){
+    var d2=parseInt(document.getElementById('d2').value);
+    var m2=parseInt(document.getElementById('m2').value);
+    var y2=parseInt(document.getElementById('y2').value);
+    var date2=parseDate(d2,m2,y2);
+    if(!date2){err.textContent=D.errInvalid; err.classList.add('show'); return;}
+    if(date2<date1){err.textContent=D.errOrder; err.classList.add('show'); return;}
+
+    var bizDays=countBusiness(date1,date2);
+    var totalDays=Math.round((date2-date1)/86400000)+1;
+    var weekends=totalDays-bizDays;
+    var weeks=Math.floor(totalDays/7);
+
+    document.getElementById('resultsHeader').textContent=D.resultsHeader1;
+    document.getElementById('heroMode1').style.display='';
+    document.getElementById('heroMode2').style.display='none';
+    document.getElementById('heroBizDays').textContent=fmt(bizDays);
+    document.getElementById('statWeekends').textContent=fmt(weekends);
+    document.getElementById('statTotalDays').textContent=fmt(totalDays);
+    document.getElementById('statWeeks').textContent=fmt(weeks);
+    document.getElementById('ffStartDay').textContent=D.weekDays[date1.getDay()];
+    document.getElementById('ffEndDay').textContent=D.weekDays[date2.getDay()];
+  } else {
+    var amount=parseInt(document.getElementById('addAmount').value);
+    if(isNaN(amount)||amount<1){err.textContent=D.errAmount; err.classList.add('show'); return;}
+
+    var result=addBusinessDays(date1,amount);
+    var totalCalDays=Math.round((result-date1)/86400000);
+    var calWeeks=Math.floor(totalCalDays/7);
+    var dateStr=result.getDate()+' '+D.months[result.getMonth()]+' '+result.getFullYear();
+
+    document.getElementById('resultsHeader').textContent=D.resultsHeader2;
+    document.getElementById('heroMode1').style.display='none';
+    document.getElementById('heroMode2').style.display='';
+    document.getElementById('resultDate').textContent=dateStr;
+    document.getElementById('resultSub').textContent='+ '+amount+' '+D.businessDaysLbl;
+    document.getElementById('ffResultDay').textContent=D.weekDays[result.getDay()];
+    document.getElementById('ffResultStart').textContent=D.weekDays[date1.getDay()];
+    document.getElementById('ffResultTotal').textContent=fmt(totalCalDays);
+    document.getElementById('ffResultWeeks').textContent=fmt(calWeeks);
+  }
+
+  res.classList.add('show');
+  res.scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+// Pre-fill start with today
+(function(){
+  var now = new Date();
+  document.getElementById('d1').value=now.getDate();
+  document.getElementById('m1').value=now.getMonth()+1;
+  document.getElementById('y1').value=now.getFullYear();
+})();
+
+document.addEventListener('keydown',function(e){if(e.key==='Enter') calculate();});
+
+</script>
+</body>
+</html>

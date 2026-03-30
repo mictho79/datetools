@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Time Zone Converter – Convert Time Between Any Two Time Zones | Date.tools</title>
+<meta name="description" content="Convert time between any two time zones instantly. Supports 25+ zones including UTC. Shows local time, UTC offset, and time difference.">
+<link rel="canonical" href="https://date.tools/time-zone-converter/">
+<link rel="alternate" hreflang="en" href="https://date.tools/time-zone-converter/">
+<link rel="alternate" hreflang="fr" href="https://date.tools/fr/convertisseur-fuseaux-horaires/">
+<link rel="alternate" hreflang="es" href="https://date.tools/es/conversor-zona-horaria/">
+<link rel="alternate" hreflang="x-default" href="https://date.tools/time-zone-converter/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Time Zone Converter – Convert Time Between Any Two Time Zones | Date.tools">
+<meta property="og:description" content="Convert time between any two time zones instantly. Supports 25+ zones including UTC. Shows local time, UTC offset, and time difference.">
+<meta property="og:url" content="https://date.tools/time-zone-converter/">
+<meta property="og:site_name" content="Date.tools">
+<meta property="og:image" content="https://date.tools/og.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Time Zone Converter – Convert Time Between Any Two Time Zones | Date.tools">
+<meta name="twitter:description" content="Convert time between any two time zones instantly. Supports 25+ zones including UTC. Shows local time, UTC offset, and time difference.">
+<meta name="twitter:image" content="https://date.tools/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Space+Mono:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What time is it in New York right now?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "New York uses Eastern Time: UTC−5 in winter (EST, from the first Sunday in November to the second Sunday in March) and UTC−4 in summer (EDT). To see the current New York time, select \"New York (EST/EDT)\" as your target zone and convert from your local time. This converter uses DST-aware offsets so the result is always correct."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between UTC and GMT?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "UTC (Coordinated Universal Time) is the international time standard based on atomic clocks. GMT (Greenwich Mean Time) is a time zone centered on the Prime Meridian in London. In everyday use they are the same — both read UTC+0 — but technically UTC never adjusts for daylight saving time while the UK does observe BST in summer. For all practical conversion purposes, UTC and GMT are interchangeable."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many time zones are there in the world?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There are 24 standard time zones based on 15-degree longitude bands, but the actual number of civil time zones in use worldwide is around 38–40, because many countries use non-standard half-hour or quarter-hour offsets (India UTC+5:30, Nepal UTC+5:45, Iran UTC+3:30) and some territories straddle multiple zones."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does daylight saving time work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Daylight saving time (DST) is the practice of advancing clocks by one hour in spring so that evenings have more daylight. Most of the United States, Canada, and Europe observe DST, but dates differ: the U.S. starts DST on the second Sunday in March and ends on the first Sunday in November. The EU transitions on the last Sunday of March and October. Countries near the equator and in Asia and Africa generally do not observe DST."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I convert EST to CET?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Eastern Standard Time (EST) is UTC−5. Central European Time (CET) is UTC+1. The difference is 6 hours: when it is noon EST, it is 6 PM CET. In summer, EST becomes EDT (UTC−4) and CET becomes CEST (UTC+2), so the difference remains 6 hours. Use this converter — select New York as the source and Paris or Berlin as the target — to get the exact converted time including DST adjustments."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the time difference between cities?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common time differences (standard time, no DST): New York to London = 5 hours. New York to Paris = 6 hours. London to Tokyo = 9 hours. Los Angeles to New York = 3 hours. Los Angeles to London = 8 hours. These differences shift by 1 hour when one or both regions observes daylight saving time. Use this converter to get the exact difference for any specific date."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I convert time zones?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Enter the date and time in your source time zone, select both zones, and click Convert. The result shows the equivalent time in the target zone, accounting for daylight saving time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is UTC?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "UTC (Coordinated Universal Time) is the primary time standard by which the world regulates clocks. It does not observe daylight saving time and is used as the reference point for all other time zones."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Time Zone Converter",
+  "description": "Convert time between any two time zones instantly. Supports 25+ zones including UTC. Shows local time, UTC offset, and time difference.",
+  "url": "https://date.tools/time-zone-converter/",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Web",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+</head>
+<body>
+
+<div class="masthead">
+  <a href="/" class="masthead-brand">Date<span>.</span>tools</a>
+  <div class="masthead-meta" id="todayMeta"></div>
+</div>
+
+<div class="lang-strip">
+  <a href="/time-zone-converter/" class="lang-btn active">EN</a>
+  <a href="/fr/convertisseur-fuseaux-horaires/" class="lang-btn">FR</a>
+  <a href="/es/conversor-zona-horaria/" class="lang-btn">ES</a>
+</div>
+
+<div class="page">
+
+  <div class="headline-block">
+    <div class="kicker">Time Zone Converter</div>
+    <h1 class="headline">Convert <br><em>time zones</em></h1>
+    <p class="subhead">Convert any date and time between 25+ time zones instantly.</p>
+  </div>
+
+  <div class="form-grid">
+    <div class="form-col">
+      <div class="field-label">From time zone</div>
+      <select id="fromZone" class="calc-select">
+        <option value="Pacific/Honolulu">Honolulu (HST)</option>
+        <option value="America/Anchorage">Anchorage (AKST)</option>
+        <option value="America/Los_Angeles">Los Angeles (PST/PDT)</option>
+        <option value="America/Denver">Denver (MST/MDT)</option>
+        <option value="America/Chicago">Chicago (CST/CDT)</option>
+        <option value="America/New_York">New York (EST/EDT)</option>
+        <option value="America/Sao_Paulo">São Paulo (BRT)</option>
+        <option value="America/Argentina/Buenos_Aires">Buenos Aires (ART)</option>
+        <option value="Atlantic/Azores">Azores (AZOT)</option>
+        <option value="Europe/London">London (GMT/BST)</option>
+        <option value="Europe/Paris">Paris (CET/CEST)</option>
+        <option value="Europe/Berlin">Berlin (CET/CEST)</option>
+        <option value="Europe/Helsinki">Helsinki (EET/EEST)</option>
+        <option value="Europe/Istanbul">Istanbul (TRT)</option>
+        <option value="Asia/Dubai">Dubai (GST)</option>
+        <option value="Asia/Karachi">Karachi (PKT)</option>
+        <option value="Asia/Kolkata">India (IST)</option>
+        <option value="Asia/Dhaka">Dhaka (BST)</option>
+        <option value="Asia/Bangkok">Bangkok (ICT)</option>
+        <option value="Asia/Singapore">Singapore (SGT)</option>
+        <option value="Asia/Shanghai">Beijing/Shanghai (CST)</option>
+        <option value="Asia/Tokyo">Tokyo (JST)</option>
+        <option value="Australia/Adelaide">Adelaide (ACST)</option>
+        <option value="Australia/Sydney">Sydney (AEST/AEDT)</option>
+        <option value="Pacific/Auckland">Auckland (NZST/NZDT)</option>
+        <option value="UTC">UTC</option>
+      </select>
+      <div class="field-label" style="margin-top:1rem">To time zone</div>
+      <select id="toZone" class="calc-select">
+        <option value="Pacific/Honolulu">Honolulu (HST)</option>
+        <option value="America/Anchorage">Anchorage (AKST)</option>
+        <option value="America/Los_Angeles">Los Angeles (PST/PDT)</option>
+        <option value="America/Denver">Denver (MST/MDT)</option>
+        <option value="America/Chicago">Chicago (CST/CDT)</option>
+        <option value="America/New_York">New York (EST/EDT)</option>
+        <option value="America/Sao_Paulo">São Paulo (BRT)</option>
+        <option value="America/Argentina/Buenos_Aires">Buenos Aires (ART)</option>
+        <option value="Atlantic/Azores">Azores (AZOT)</option>
+        <option value="Europe/London">London (GMT/BST)</option>
+        <option value="Europe/Paris">Paris (CET/CEST)</option>
+        <option value="Europe/Berlin">Berlin (CET/CEST)</option>
+        <option value="Europe/Helsinki">Helsinki (EET/EEST)</option>
+        <option value="Europe/Istanbul">Istanbul (TRT)</option>
+        <option value="Asia/Dubai">Dubai (GST)</option>
+        <option value="Asia/Karachi">Karachi (PKT)</option>
+        <option value="Asia/Kolkata">India (IST)</option>
+        <option value="Asia/Dhaka">Dhaka (BST)</option>
+        <option value="Asia/Bangkok">Bangkok (ICT)</option>
+        <option value="Asia/Singapore">Singapore (SGT)</option>
+        <option value="Asia/Shanghai">Beijing/Shanghai (CST)</option>
+        <option value="Asia/Tokyo">Tokyo (JST)</option>
+        <option value="Australia/Adelaide">Adelaide (ACST)</option>
+        <option value="Australia/Sydney">Sydney (AEST/AEDT)</option>
+        <option value="Pacific/Auckland">Auckland (NZST/NZDT)</option>
+        <option value="UTC">UTC</option>
+      </select>
+      <button class="swap-btn" onclick="swapZones()" style="margin-top:.8rem;background:none;border:1px solid var(--accent);color:var(--accent);padding:.4rem 1rem;cursor:pointer;font-family:inherit;font-size:.9rem">⇄ Swap zones</button>
+      <div class="field-label" style="margin-top:1rem">Date</div>
+      <div class="date-row">
+        <input type="number" id="day" placeholder="DD" min="1" max="31" inputmode="numeric" oninput="clamp(this,1,31)">
+        <span>/</span>
+        <input type="number" id="month" placeholder="MM" min="1" max="12" inputmode="numeric" oninput="clamp(this,1,12)">
+        <span>/</span>
+        <input type="number" id="year" placeholder="YYYY" min="1900" max="2100" inputmode="numeric" oninput="clamp(this,1900,2100)">
+      </div>
+      <div class="field-label" style="margin-top:.8rem">Time</div>
+      <div class="date-row">
+        <input type="number" id="hour" placeholder="HH" min="0" max="23" inputmode="numeric" oninput="clamp(this,0,23)">
+        <span>:</span>
+        <input type="number" id="minute" placeholder="MM" min="0" max="59" inputmode="numeric" oninput="clamp(this,0,59)">
+      </div>
+      <div class="error-line" id="errorLine"></div>
+      <button class="calc-btn" onclick="calculate()">→ Convert</button>
+    </div>
+    <div class="form-col auto-info">
+      <p class="tip-text">"The world runs on 24 different clocks. This tool lets you read them all."</p>
+    </div>
+  </div>
+
+  <div class="results-section" id="results">
+    <div class="results-header">Converted time</div>
+    <div class="age-display">
+      <span class="age-number" id="heroTime" style="font-size:clamp(2rem,8vw,4rem)">—</span>
+    </div>
+    <div class="facts-row">
+      <div class="fact-item"><div class="fact-key">Original time</div><div class="fact-val" id="ffFrom">—</div></div>
+      <div class="fact-item"><div class="fact-key">Converted time</div><div class="fact-val" id="ffTo">—</div></div>
+      <div class="fact-item"><div class="fact-key">UTC offset (from)</div><div class="fact-val" id="ffFromOff">—</div></div>
+      <div class="fact-item"><div class="fact-key">UTC offset (to)</div><div class="fact-val" id="ffToOff">—</div></div>
+      <div class="fact-item"><div class="fact-key">Time difference</div><div class="fact-val" id="ffDiff">—</div></div>
+    </div>
+  </div>
+
+  <div class="tool-nav">
+    <div class="nav-group"><span class="nav-cat">Age</span><div class="nav-links"><a href="/age-calculator/">Age Calculator</a><span class="nav-sep">·</span><a href="/chronological-age-calculator/">Chronological Age</a><span class="nav-sep">·</span><a href="/baby-age-calculator/">Baby Age</a><span class="nav-sep">·</span><a href="/dog-age-calculator/">Dog Age</a><span class="nav-sep">·</span><a href="/cat-age-calculator/">Cat Age</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Dates</span><div class="nav-links"><a href="/days-between-dates/">Days Between Dates</a><span class="nav-sep">·</span><a href="/date-calculator/">Date Calculator</a><span class="nav-sep">·</span><a href="/what-day-is-it-today/">What Day Is It</a><span class="nav-sep">·</span><a href="/week-number/">Week Number</a><span class="nav-sep">·</span><a href="/business-days-calculator/">Business Days</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Countdowns</span><div class="nav-links"><a href="/days-until-christmas/">Christmas</a><span class="nav-sep">·</span><a href="/days-until-new-year/">New Year</a><span class="nav-sep">·</span><a href="/days-until-halloween/">Halloween</a><span class="nav-sep">·</span><a href="/days-until-easter/">Easter</a><span class="nav-sep">·</span><a href="/countdown-timer/">Countdown Timer</a></div></div>
+    <div class="nav-group"><span class="nav-cat">World</span><div class="nav-links"><a href="/time-zone-converter/" aria-current="page">Time Zone Converter</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Born In</span><div class="nav-links"><a href="/born-in-1990/">Born in 1990</a><span class="nav-sep">·</span><a href="/born-in-1980/">Born in 1980</a><span class="nav-sep">·</span><a href="/born-in-2000/">Born in 2000</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Calendars</span><div class="nav-links"><a href="/week-number/2025/">Week Numbers 2025</a><span class="nav-sep">·</span><a href="/week-number/2026/">Week Numbers 2026</a><span class="nav-sep">·</span><a href="/week-number/2027/">Week Numbers 2027</a></div></div>
+  </div>
+
+  <div class="seo-block">
+    <div><h2>How do time zones work?</h2><p>The world is divided into 24 primary time zones, each roughly 15 degrees of longitude apart — the angular distance the Earth rotates in one hour. Most zones are offset from Coordinated Universal Time (UTC) by a whole number of hours, but some countries use fractional offsets: India is UTC+5:30, Nepal is UTC+5:45, and Iran is UTC+3:30. The IANA Time Zone Database (also called the tz database or zoneinfo) is the authoritative global standard for time zone definitions, maintained by the Internet Assigned Numbers Authority. It covers every historical and current time zone rule change for every region on Earth. When you convert a time using this tool, the correct UTC offset for the specific date you enter is used — meaning daylight saving time transitions are handled automatically. DST shifts clocks forward by one hour in spring and back in autumn in over 70 countries, though the exact dates vary by region.</p></div>
+    <div><h2>What is UTC offset?</h2><p>UTC offset is the signed difference between a specific time zone and Coordinated Universal Time (UTC), the successor to Greenwich Mean Time (GMT). For example, New York in winter is UTC−5 (Eastern Standard Time), meaning clocks there read 5 hours behind UTC. During daylight saving time it becomes UTC−4 (Eastern Daylight Time). London in winter is UTC+0 (GMT) and UTC+1 in summer (BST). Paris is UTC+1 in winter (CET) and UTC+2 in summer (CEST). The key difference between UTC and GMT is that UTC is a time standard based on atomic clocks and is never adjusted for daylight saving, while GMT is technically a time zone. In everyday use, UTC and GMT are effectively identical. This converter always uses the DST-aware UTC offset for the exact date you enter.</p></div>
+  </div>
+  <div class="faq-block">
+    <h2>Frequently asked questions</h2>
+    <div class="faq-item"><h3>What time is it in New York right now?</h3><p>New York uses Eastern Time: UTC−5 in winter (EST, from the first Sunday in November to the second Sunday in March) and UTC−4 in summer (EDT). To see the current New York time, select "New York (EST/EDT)" as your target zone and convert from your local time. This converter uses DST-aware offsets so the result is always correct.</p></div>
+    <div class="faq-item"><h3>What is the difference between UTC and GMT?</h3><p>UTC (Coordinated Universal Time) is the international time standard based on atomic clocks. GMT (Greenwich Mean Time) is a time zone centered on the Prime Meridian in London. In everyday use they are the same — both read UTC+0 — but technically UTC never adjusts for daylight saving time while the UK does observe BST in summer. For all practical conversion purposes, UTC and GMT are interchangeable.</p></div>
+    <div class="faq-item"><h3>How many time zones are there in the world?</h3><p>There are 24 standard time zones based on 15-degree longitude bands, but the actual number of civil time zones in use worldwide is around 38–40, because many countries use non-standard half-hour or quarter-hour offsets (India UTC+5:30, Nepal UTC+5:45, Iran UTC+3:30) and some territories straddle multiple zones.</p></div>
+    <div class="faq-item"><h3>How does daylight saving time work?</h3><p>Daylight saving time (DST) is the practice of advancing clocks by one hour in spring so that evenings have more daylight. Most of the United States, Canada, and Europe observe DST, but dates differ: the U.S. starts DST on the second Sunday in March and ends on the first Sunday in November. The EU transitions on the last Sunday of March and October. Countries near the equator and in Asia and Africa generally do not observe DST.</p></div>
+    <div class="faq-item"><h3>How do I convert EST to CET?</h3><p>Eastern Standard Time (EST) is UTC−5. Central European Time (CET) is UTC+1. The difference is 6 hours: when it is noon EST, it is 6 PM CET. In summer, EST becomes EDT (UTC−4) and CET becomes CEST (UTC+2), so the difference remains 6 hours. Use this converter — select New York as the source and Paris or Berlin as the target — to get the exact converted time including DST adjustments.</p></div>
+    <div class="faq-item"><h3>What is the time difference between cities?</h3><p>Common time differences (standard time, no DST): New York to London = 5 hours. New York to Paris = 6 hours. London to Tokyo = 9 hours. Los Angeles to New York = 3 hours. Los Angeles to London = 8 hours. These differences shift by 1 hour when one or both regions observes daylight saving time. Use this converter to get the exact difference for any specific date.</p></div>
+    <div class="faq-item"><h3>How do I convert time zones?</h3><p>Enter the date and time in your source time zone, select both zones, and click Convert. The result shows the equivalent time in the target zone, accounting for daylight saving time.</p></div>
+    <div class="faq-item"><h3>What is UTC?</h3><p>UTC (Coordinated Universal Time) is the primary time standard by which the world regulates clocks. It does not observe daylight saving time and is used as the reference point for all other time zones.</p></div>
+  </div>
+
+  <div class="source-block">
+    <span class="source-lbl">Source</span>
+    <a href="https://www.iana.org/time-zones" target="_blank" rel="noopener noreferrer">IANA Time Zone Database</a>
+  </div>
+  <footer>© 2026 Date.tools — Free online date &amp; time calculators</footer>
+</div>
+
+<script>
+(function(){
+  var now = new Date();
+  var opts = {weekday:'long',year:'numeric',month:'long',day:'numeric'};
+  document.getElementById('todayMeta').innerHTML =
+    now.toLocaleDateString('en-US', opts) + '<br>Free date calculator';
+})();
+// Shared input guard: strip non-digits, truncate to max digit length, clamp to hi
+function clamp(el, lo, hi) {
+  var maxLen = String(hi).length;
+  var s = el.value.replace(/\D/g, '').slice(0, maxLen);
+  var n = parseInt(s, 10);
+  if (!isNaN(n) && n > hi) s = String(hi);
+  el.value = s;
+}
+</script>
+<script>
+
+var D = {"errInvalid":"→ Invalid date or time. Please check your input.","defaultFrom":"America/New_York","defaultTo":"Europe/London"};
+
+// Pre-select default zones
+document.getElementById('fromZone').value = D.defaultFrom;
+document.getElementById('toZone').value = D.defaultTo;
+
+// Pre-fill current date/time
+(function(){
+  var now = new Date();
+  document.getElementById('day').value = now.getDate();
+  document.getElementById('month').value = now.getMonth()+1;
+  document.getElementById('year').value = now.getFullYear();
+  document.getElementById('hour').value = now.getHours();
+  document.getElementById('minute').value = now.getMinutes();
+})();
+
+function swapZones(){
+  var f = document.getElementById('fromZone').value;
+  var t = document.getElementById('toZone').value;
+  document.getElementById('fromZone').value = t;
+  document.getElementById('toZone').value = f;
+}
+
+function getUtcOffset(tzId, date){
+  // Get UTC offset in minutes for tzId at given Date
+  var utcStr = date.toLocaleString('en-US', {timeZone:'UTC', hour12:false,
+    year:'numeric', month:'2-digit', day:'2-digit', hour:'2-digit', minute:'2-digit', second:'2-digit'});
+  var tzStr  = date.toLocaleString('en-US', {timeZone:tzId,  hour12:false,
+    year:'numeric', month:'2-digit', day:'2-digit', hour:'2-digit', minute:'2-digit', second:'2-digit'});
+  function parse(s){
+    var m=s.match(/(\d+)\/(\d+)\/(\d+),\s*(\d+):(\d+):(\d+)/);
+    if(!m) return NaN;
+    return Date.UTC(+m[3],+m[1]-1,+m[2],+m[4]===24?0:+m[4],+m[5],+m[6]);
+  }
+  return (parse(tzStr)-parse(utcStr))/60000;
+}
+
+function fmtOffset(mins){
+  var sign = mins>=0?'+':'-';
+  var abs=Math.abs(mins);
+  var h=Math.floor(abs/60);
+  var m=abs%60;
+  return 'UTC'+sign+pad2(h)+(m?':'+pad2(m):'');
+}
+
+function pad2(n){return n<10?'0'+n:''+n;}
+
+function fmtTimeInZone(date, tzId){
+  return date.toLocaleString('en-GB', {
+    timeZone: tzId,
+    year:'numeric', month:'short', day:'numeric',
+    hour:'2-digit', minute:'2-digit', hour12:false
+  });
+}
+
+function fmtDiff(diffMin){
+  var abs=Math.abs(diffMin);
+  var h=Math.floor(abs/60);
+  var m=abs%60;
+  var sign=diffMin>=0?'+':'-';
+  if(m) return sign+h+'h '+pad2(m)+'min';
+  return sign+h+'h';
+}
+
+function calculate(){
+  var dv=parseInt(document.getElementById('day').value);
+  var mv=parseInt(document.getElementById('month').value);
+  var yv=parseInt(document.getElementById('year').value);
+  var hv=parseInt(document.getElementById('hour').value);
+  var minv=parseInt(document.getElementById('minute').value||'0');
+  var fromZone=document.getElementById('fromZone').value;
+  var toZone=document.getElementById('toZone').value;
+  var err=document.getElementById('errorLine');
+  var res=document.getElementById('results');
+  err.classList.remove('show');
+  res.classList.remove('show');
+
+  if(!dv||!mv||!yv||isNaN(hv)||hv<0||hv>23||minv<0||minv>59){
+    err.textContent=D.errInvalid; err.classList.add('show'); return;
+  }
+
+  // Build a UTC timestamp for the given local time in fromZone
+  // Strategy: find the UTC time such that in fromZone it reads yv/mv/dv hv:minv
+  // Approximation: use offset at noon on that day
+  var approx=new Date(Date.UTC(yv,mv-1,dv,12,0,0));
+  var fromOff=getUtcOffset(fromZone, approx);
+  var utcMs=Date.UTC(yv,mv-1,dv,hv,minv,0) - fromOff*60000;
+  var utcDate=new Date(utcMs);
+
+  var fromOffFinal=getUtcOffset(fromZone, utcDate);
+  var toOffFinal=getUtcOffset(toZone, utcDate);
+  var diff=toOffFinal-fromOffFinal;
+
+  var toTimeStr=fmtTimeInZone(utcDate, toZone);
+  var fromTimeStr=fmtTimeInZone(utcDate, fromZone);
+
+  // Hero: just the time portion in target zone
+  var heroStr=utcDate.toLocaleString('en-GB',{timeZone:toZone,hour:'2-digit',minute:'2-digit',hour12:false});
+
+  document.getElementById('heroTime').textContent=heroStr;
+  document.getElementById('ffFrom').textContent=fromTimeStr;
+  document.getElementById('ffTo').textContent=toTimeStr;
+  document.getElementById('ffFromOff').textContent=fmtOffset(fromOffFinal);
+  document.getElementById('ffToOff').textContent=fmtOffset(toOffFinal);
+  document.getElementById('ffDiff').textContent=fmtDiff(diff);
+
+  res.classList.add('show');
+  res.scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+document.addEventListener('keydown',function(e){if(e.key==='Enter') calculate();});
+calculate();
+
+</script>
+</body>
+</html>

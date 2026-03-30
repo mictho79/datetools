@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Baby Age Calculator – Age in Weeks and Months | Date.tools</title>
+<meta name="description" content="Calculate your baby's age in weeks, days, and months from their birth date. Essential for tracking developmental milestones.">
+<link rel="canonical" href="https://date.tools/baby-age-calculator/">
+<link rel="alternate" hreflang="en" href="https://date.tools/baby-age-calculator/">
+<link rel="alternate" hreflang="fr" href="https://date.tools/fr/calculateur-age-bebe/">
+<link rel="alternate" hreflang="es" href="https://date.tools/es/calculadora-edad-bebe/">
+<link rel="alternate" hreflang="x-default" href="https://date.tools/baby-age-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Baby Age Calculator – Age in Weeks and Months | Date.tools">
+<meta property="og:description" content="Calculate your baby's age in weeks, days, and months from their birth date. Essential for tracking developmental milestones.">
+<meta property="og:url" content="https://date.tools/baby-age-calculator/">
+<meta property="og:site_name" content="Date.tools">
+<meta property="og:image" content="https://date.tools/og.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Baby Age Calculator – Age in Weeks and Months | Date.tools">
+<meta name="twitter:description" content="Calculate your baby's age in weeks, days, and months from their birth date. Essential for tracking developmental milestones.">
+<meta name="twitter:image" content="https://date.tools/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Space+Mono:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How old is my baby in weeks?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "To calculate your baby's age in weeks, count the total number of days since birth and divide by 7, rounding down. This calculator does it instantly — just enter your baby's birth date. For example, a baby born 56 days ago is exactly 8 weeks old."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I calculate my baby's age in months and days?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Divide the total days since birth by 30.44 (average days per month) for an approximate month count, or use the calendar month method: count full calendar months elapsed, then add the remaining days. This calculator shows both total months and the precise weeks-plus-days breakdown."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is corrected age for premature babies?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Corrected age subtracts the weeks of prematurity from the baby's current age. A baby born 6 weeks early who is now 20 weeks old has a corrected age of 14 weeks. Pediatricians use corrected age to assess developmental milestones until around 2 years, when most developmental gaps have closed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When does a baby become a toddler?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The transition from baby to toddler is typically defined as 12 months (1 year) of age, though many pediatricians extend the infant period to 18 months for developmental purposes. The word \"toddler\" itself refers to the unsteady walking gait of children roughly 12–36 months old."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What milestones happen at each week?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Key milestones: week 4 (lifts head), week 8 (social smile), week 12 (follows movement), week 16 (laughs), week 24 (sits with support), week 36 (crawls), week 52 (first steps)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many weeks is 3 months?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Three months is approximately 13 weeks. Because months vary in length (28–31 days), the exact number of weeks per month changes. This calculator always gives the precise week count."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I use a baby age calculator in weeks?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Enter your baby's birth day, month, and year above and click Calculate. The result shows your baby's age in total weeks, total days, approximate months, and the precise weeks-plus-days breakdown (e.g. \"11 weeks 4 days\"). This is the format most commonly used by pediatricians and milestone charts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When do I stop counting in weeks?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most parents switch from weeks to months at 3 months (12–13 weeks), and from months to years at 2 years. Pediatricians typically use weeks until 3 months, then months until 2 years."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Baby Age Calculator",
+  "description": "Calculate your baby's age in weeks, days, and months from their birth date. Essential for tracking developmental milestones.",
+  "url": "https://date.tools/baby-age-calculator/",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Web",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+</head>
+<body>
+
+<div class="masthead">
+  <a href="/" class="masthead-brand">Date<span>.</span>tools</a>
+  <div class="masthead-meta" id="todayMeta"></div>
+</div>
+
+<div class="lang-strip">
+  <a href="/baby-age-calculator/" class="lang-btn active">EN</a>
+  <a href="/fr/calculateur-age-bebe/" class="lang-btn">FR</a>
+  <a href="/es/calculadora-edad-bebe/" class="lang-btn">ES</a>
+</div>
+
+<div class="page">
+
+  <div class="headline-block">
+    <div class="kicker">Baby Age Calculator</div>
+    <h1 class="headline">How old is <br>my <em>baby</em>?</h1>
+    <p class="subhead">Enter your baby's birth date — get their exact age in weeks, days, and months.</p>
+  </div>
+
+  <div class="form-grid">
+    <div class="form-col">
+      <div class="field-label">Baby's date of birth</div>
+      <div class="date-row">
+        <input type="number" id="day" placeholder="DD" min="1" max="31" inputmode="numeric" oninput="clamp(this,1,31)">
+        <span>/</span>
+        <input type="number" id="month" placeholder="MM" min="1" max="12" inputmode="numeric" oninput="clamp(this,1,12)">
+        <span>/</span>
+        <input type="number" id="year" placeholder="YYYY" min="1900" max="2025" inputmode="numeric" oninput="clamp(this,1900,2025)">
+      </div>
+      <div class="error-line" id="errorLine"></div>
+      <button class="calc-btn" onclick="calculate()">→ Calculate</button>
+    </div>
+    <div class="form-col">
+      <p class="tip-text">"Every week is a milestone when you're counting from zero."</p>
+      <ul class="example-list">
+        <li onclick="fillExample(28,1,2026)">Born 2 months ago →</li>
+        <li onclick="fillExample(28,9,2025)">Born 6 months ago →</li>
+        <li onclick="fillExample(30,3,2025)">Born 1 year ago →</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="results-section" id="results">
+    <div class="results-header">Baby's age</div>
+    <div class="age-display">
+      <span class="age-number" id="heroAge">—</span>
+      <span class="age-suffix">weeks old</span>
+    </div>
+    <div class="stats-strip">
+      <div class="stat-item"><div class="stat-num" id="statDays">—</div><div class="stat-lbl">days old</div></div>
+      <div class="stat-item"><div class="stat-num" id="statMonths">—</div><div class="stat-lbl">months old</div></div>
+      <div class="stat-item"><div class="stat-num" id="statWeeksAndDays">—</div><div class="stat-lbl">weeks + days</div></div>
+    </div>
+  </div>
+
+  <div class="tool-nav">
+    <div class="nav-group"><span class="nav-cat">Age</span><div class="nav-links"><a href="/age-calculator/">Age Calculator</a><span class="nav-sep">·</span><a href="/chronological-age-calculator/">Chronological Age</a><span class="nav-sep">·</span><a href="/baby-age-calculator/" aria-current="page">Baby Age</a><span class="nav-sep">·</span><a href="/dog-age-calculator/">Dog Age</a><span class="nav-sep">·</span><a href="/cat-age-calculator/">Cat Age</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Dates</span><div class="nav-links"><a href="/days-between-dates/">Days Between Dates</a><span class="nav-sep">·</span><a href="/date-calculator/">Date Calculator</a><span class="nav-sep">·</span><a href="/what-day-is-it-today/">What Day Is It</a><span class="nav-sep">·</span><a href="/week-number/">Week Number</a><span class="nav-sep">·</span><a href="/business-days-calculator/">Business Days</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Countdowns</span><div class="nav-links"><a href="/days-until-christmas/">Christmas</a><span class="nav-sep">·</span><a href="/days-until-new-year/">New Year</a><span class="nav-sep">·</span><a href="/days-until-halloween/">Halloween</a><span class="nav-sep">·</span><a href="/days-until-easter/">Easter</a><span class="nav-sep">·</span><a href="/countdown-timer/">Countdown Timer</a></div></div>
+    <div class="nav-group"><span class="nav-cat">World</span><div class="nav-links"><a href="/time-zone-converter/">Time Zone Converter</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Born In</span><div class="nav-links"><a href="/born-in-1990/">Born in 1990</a><span class="nav-sep">·</span><a href="/born-in-1980/">Born in 1980</a><span class="nav-sep">·</span><a href="/born-in-2000/">Born in 2000</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Calendars</span><div class="nav-links"><a href="/week-number/2025/">Week Numbers 2025</a><span class="nav-sep">·</span><a href="/week-number/2026/">Week Numbers 2026</a><span class="nav-sep">·</span><a href="/week-number/2027/">Week Numbers 2027</a></div></div>
+  </div>
+
+  <div class="seo-block">
+    <div><h2>Why count baby age in weeks?</h2><p>Pediatricians and child development specialists count baby age in weeks for the first three months of life because infant development happens at a pace unlike any other period. In just the first twelve weeks, a baby's brain doubles in size, vision develops from near-blindness to tracking faces at 12 inches, and social behavior emerges. By 4 weeks, babies can briefly lift their head during tummy time. By 8 weeks, they produce their first genuine social smile. By 12 weeks, they follow moving objects with coordinated eye movements. By 16 weeks, they laugh aloud. These changes happen so quickly that tracking age in months would obscure important developmental windows. Week-based age tracking gives parents and pediatricians a precise reference point against the developmental milestone charts published by organizations like the American Academy of Pediatrics.</p></div>
+    <div><h2>What is corrected age for premature babies?</h2><p>Premature babies (born before 37 weeks of gestation) are commonly assessed using "corrected age" rather than chronological age. Corrected age — also called adjusted age — is calculated by subtracting the number of weeks a baby was born early from their current age. For example, a baby born 8 weeks premature who is now 20 weeks old has a corrected age of 12 weeks. This distinction matters because a premature baby's developmental milestones should be measured against their corrected age, not their birthday. A preemie sitting up "late" at 8 months chronological age may actually be perfectly on track if their corrected age is 6 months. Pediatricians typically use corrected age for developmental assessments until 2 years of age, after which most differences have evened out.</p></div>
+  </div>
+  <div class="faq-block">
+    <h2>Frequently asked questions</h2>
+    <div class="faq-item"><h3>How old is my baby in weeks?</h3><p>To calculate your baby's age in weeks, count the total number of days since birth and divide by 7, rounding down. This calculator does it instantly — just enter your baby's birth date. For example, a baby born 56 days ago is exactly 8 weeks old.</p></div>
+    <div class="faq-item"><h3>How do I calculate my baby's age in months and days?</h3><p>Divide the total days since birth by 30.44 (average days per month) for an approximate month count, or use the calendar month method: count full calendar months elapsed, then add the remaining days. This calculator shows both total months and the precise weeks-plus-days breakdown.</p></div>
+    <div class="faq-item"><h3>What is corrected age for premature babies?</h3><p>Corrected age subtracts the weeks of prematurity from the baby's current age. A baby born 6 weeks early who is now 20 weeks old has a corrected age of 14 weeks. Pediatricians use corrected age to assess developmental milestones until around 2 years, when most developmental gaps have closed.</p></div>
+    <div class="faq-item"><h3>When does a baby become a toddler?</h3><p>The transition from baby to toddler is typically defined as 12 months (1 year) of age, though many pediatricians extend the infant period to 18 months for developmental purposes. The word "toddler" itself refers to the unsteady walking gait of children roughly 12–36 months old.</p></div>
+    <div class="faq-item"><h3>What milestones happen at each week?</h3><p>Key milestones: week 4 (lifts head), week 8 (social smile), week 12 (follows movement), week 16 (laughs), week 24 (sits with support), week 36 (crawls), week 52 (first steps).</p></div>
+    <div class="faq-item"><h3>How many weeks is 3 months?</h3><p>Three months is approximately 13 weeks. Because months vary in length (28–31 days), the exact number of weeks per month changes. This calculator always gives the precise week count.</p></div>
+    <div class="faq-item"><h3>How do I use a baby age calculator in weeks?</h3><p>Enter your baby's birth day, month, and year above and click Calculate. The result shows your baby's age in total weeks, total days, approximate months, and the precise weeks-plus-days breakdown (e.g. "11 weeks 4 days"). This is the format most commonly used by pediatricians and milestone charts.</p></div>
+    <div class="faq-item"><h3>When do I stop counting in weeks?</h3><p>Most parents switch from weeks to months at 3 months (12–13 weeks), and from months to years at 2 years. Pediatricians typically use weeks until 3 months, then months until 2 years.</p></div>
+  </div>
+
+  <div class="source-block">
+    <span class="source-lbl">Source</span>
+    <a href="https://www.aap.org/en/patient-care/developmental-milestones/" target="_blank" rel="noopener noreferrer">American Academy of Pediatrics – Developmental Milestones</a>
+  </div>
+  <footer>© 2026 Date.tools — Free online date &amp; time calculators</footer>
+</div>
+
+<script>
+(function(){
+  var now = new Date();
+  var opts = {weekday:'long',year:'numeric',month:'long',day:'numeric'};
+  document.getElementById('todayMeta').innerHTML =
+    now.toLocaleDateString('en-US', opts) + '<br>Free date calculator';
+})();
+// Shared input guard: strip non-digits, truncate to max digit length, clamp to hi
+function clamp(el, lo, hi) {
+  var maxLen = String(hi).length;
+  var s = el.value.replace(/\D/g, '').slice(0, maxLen);
+  var n = parseInt(s, 10);
+  if (!isNaN(n) && n > hi) s = String(hi);
+  el.value = s;
+}
+</script>
+<script>
+
+var D = {"errInvalid":"→ Invalid date. Please check your input.","errFuture":"→ Birth date cannot be in the future."};
+
+function fmt(n){ return n.toLocaleString(); }
+
+function fillExample(d, m, y) {
+  document.getElementById('day').value = d;
+  document.getElementById('month').value = m;
+  document.getElementById('year').value = y;
+  calculate();
+}
+
+function calculate() {
+  var d = parseInt(document.getElementById('day').value);
+  var m = parseInt(document.getElementById('month').value);
+  var y = parseInt(document.getElementById('year').value);
+  var err = document.getElementById('errorLine');
+  var res = document.getElementById('results');
+  err.classList.remove('show'); res.classList.remove('show');
+
+  if (!d || !m || !y || d < 1 || d > 31 || m < 1 || m > 12 || y < 1900 || y > 2025) {
+    err.textContent = D.errInvalid; err.classList.add('show'); return;
+  }
+  var bday = new Date(y, m - 1, d);
+  if (isNaN(bday) || bday.getDate() !== d) {
+    err.textContent = D.errInvalid; err.classList.add('show'); return;
+  }
+  var today = new Date(); today.setHours(0, 0, 0, 0);
+  if (bday > today) { err.textContent = D.errFuture; err.classList.add('show'); return; }
+
+  var totalDays = Math.floor((today - bday) / 86400000);
+  var totalWeeks = Math.floor(totalDays / 7);
+  var remainDays = totalDays % 7;
+  var totalMonthsApprox = Math.floor((totalDays / 30.44) * 10) / 10;
+
+  document.getElementById('heroAge').textContent = totalWeeks;
+  document.getElementById('statDays').textContent = fmt(totalDays);
+  document.getElementById('statMonths').textContent = totalMonthsApprox;
+  document.getElementById('statWeeksAndDays').textContent = totalWeeks + 'w ' + remainDays + 'd';
+
+  res.classList.add('show');
+  res.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+document.addEventListener('keydown', function(e){ if(e.key==='Enter') calculate(); });
+
+</script>
+</body>
+</html>
