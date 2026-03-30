@@ -2,7 +2,7 @@
 
 const T = {
   en: {
-    title: 'Date Calculator – Add or Subtract Days from a Date | Date.tools',
+    title: 'Date Calculator – Add or Subtract Days from a Date | DateCalc.app',
     metaDesc: 'Add or subtract days, weeks, months, or years from any date. Find out what date it will be in X days. Free online date calculator.',
     kicker: 'Date Calculator',
     headline: 'What <em>date</em><br>will it be?',
@@ -38,7 +38,7 @@ const T = {
     weekDays: ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],
   },
   fr: {
-    title: 'Calculateur de date – Ajouter ou soustraire des jours | Date.tools',
+    title: 'Calculateur de date – Ajouter ou soustraire des jours | DateCalc.app',
     metaDesc: 'Ajoutez ou soustrayez des jours, semaines, mois ou années à n\'importe quelle date. Calculateur de date en ligne gratuit.',
     kicker: 'Calculateur de date',
     headline: 'Quelle <em>date</em><br>sera-ce ?',
@@ -74,7 +74,7 @@ const T = {
     weekDays: ['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'],
   },
   es: {
-    title: 'Calculadora de fechas – Sumar o restar días | Date.tools',
+    title: 'Calculadora de fechas – Sumar o restar días | DateCalc.app',
     metaDesc: 'Suma o resta días, semanas, meses o años a cualquier fecha. Descubre qué fecha será en X días. Calculadora de fechas gratuita.',
     kicker: 'Calculadora de fechas',
     headline: '¿Qué <em>fecha</em><br>será?',

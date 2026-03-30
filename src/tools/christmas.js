@@ -2,7 +2,7 @@
 
 const T = {
   en: {
-    title: 'Days Until Christmas 2026 – Christmas Countdown | Date.tools',
+    title: 'Days Until Christmas 2026 – Christmas Countdown | DateCalc.app',
     metaDesc: 'How many days until Christmas? See the live countdown to Christmas Day (December 25) in days, weeks, and hours.',
     kicker: 'Christmas Countdown',
     headline: 'Days until<br><em>Christmas</em>',
@@ -28,7 +28,7 @@ const T = {
     months: ['January','February','March','April','May','June','July','August','September','October','November','December'],
   },
   fr: {
-    title: 'Jours avant Noël 2026 – Compte à rebours de Noël | Date.tools',
+    title: 'Jours avant Noël 2026 – Compte à rebours de Noël | DateCalc.app',
     metaDesc: 'Combien de jours avant Noël ? Voyez le compte à rebours jusqu\'au 25 décembre en jours, semaines et heures.',
     kicker: 'Compte à rebours de Noël',
     headline: 'Jours avant<br><em>Noël</em>',
@@ -54,7 +54,7 @@ const T = {
     months: ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'],
   },
   es: {
-    title: 'Días para Navidad 2026 – Cuenta regresiva de Navidad | Date.tools',
+    title: 'Días para Navidad 2026 – Cuenta regresiva de Navidad | DateCalc.app',
     metaDesc: '¿Cuántos días faltan para Navidad? Ve la cuenta regresiva hasta el 25 de diciembre en días, semanas y horas.',
     kicker: 'Cuenta regresiva de Navidad',
     headline: 'Días para<br><em>Navidad</em>',

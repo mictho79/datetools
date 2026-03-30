@@ -2,7 +2,7 @@
 
 const T = {
   en: {
-    title: 'Chronological Age Calculator – Exact Age in Years, Months & Days | Date.tools',
+    title: 'Chronological Age Calculator – Exact Age in Years, Months & Days | DateCalc.app',
     metaDesc: 'Calculate chronological age from date of birth to any reference date. Get exact age in years, months, weeks, days and hours — used in medical, educational and developmental contexts.',
     kicker: 'Chronological Age Calculator',
     headline: 'Chronological<br><em>age</em>',
@@ -43,7 +43,7 @@ const T = {
     ],
   },
   fr: {
-    title: 'Calculateur d\'âge chronologique – Âge exact en années, mois et jours | Date.tools',
+    title: 'Calculateur d\'âge chronologique – Âge exact en années, mois et jours | DateCalc.app',
     metaDesc: 'Calculez l\'âge chronologique de la date de naissance à n\'importe quelle date de référence. Utilisé en contexte médical, éducatif et développemental.',
     kicker: 'Âge chronologique',
     headline: 'Âge<br><em>chronologique</em>',
@@ -84,7 +84,7 @@ const T = {
     ],
   },
   es: {
-    title: 'Calculadora de edad cronológica – Edad exacta en años, meses y días | Date.tools',
+    title: 'Calculadora de edad cronológica – Edad exacta en años, meses y días | DateCalc.app',
     metaDesc: 'Calcula la edad cronológica desde la fecha de nacimiento hasta cualquier fecha de referencia. Usado en contextos médicos, educativos y de desarrollo.',
     kicker: 'Edad cronológica',
     headline: 'Edad<br><em>cronológica</em>',

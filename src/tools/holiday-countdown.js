@@ -3,7 +3,7 @@
 const HOLIDAYS = {
   'new-year': {
     en: {
-      title: 'Days Until New Year 2027 – New Year Countdown | Date.tools',
+      title: 'Days Until New Year 2027 – New Year Countdown | DateCalc.app',
       metaDesc: 'How many days until New Year? Live countdown to January 1 in days, hours, minutes and seconds.',
       kicker: 'New Year Countdown',
       headline: 'Days until<br><em>New Year</em>',
@@ -27,7 +27,7 @@ const HOLIDAYS = {
       months: ['January','February','March','April','May','June','July','August','September','October','November','December'],
     },
     fr: {
-      title: 'Jours avant le Nouvel An 2027 – Compte à rebours | Date.tools',
+      title: 'Jours avant le Nouvel An 2027 – Compte à rebours | DateCalc.app',
       metaDesc: 'Combien de jours avant le Nouvel An ? Compte à rebours jusqu\'au 1er janvier en jours, heures, minutes et secondes.',
       kicker: 'Compte à rebours Nouvel An',
       headline: 'Jours avant<br><em>le Nouvel An</em>',
@@ -51,7 +51,7 @@ const HOLIDAYS = {
       months: ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'],
     },
     es: {
-      title: 'Días para Año Nuevo 2027 – Cuenta regresiva | Date.tools',
+      title: 'Días para Año Nuevo 2027 – Cuenta regresiva | DateCalc.app',
       metaDesc: '¿Cuántos días faltan para Año Nuevo? Cuenta regresiva hasta el 1 de enero en días, horas, minutos y segundos.',
       kicker: 'Cuenta regresiva Año Nuevo',
       headline: 'Días para<br><em>Año Nuevo</em>',
@@ -77,7 +77,7 @@ const HOLIDAYS = {
   },
   'halloween': {
     en: {
-      title: 'Days Until Halloween 2026 – Halloween Countdown | Date.tools',
+      title: 'Days Until Halloween 2026 – Halloween Countdown | DateCalc.app',
       metaDesc: 'How many days until Halloween? Live countdown to October 31 in days, hours, minutes and seconds.',
       kicker: 'Halloween Countdown',
       headline: 'Days until<br><em>Halloween</em>',
@@ -101,7 +101,7 @@ const HOLIDAYS = {
       months: ['January','February','March','April','May','June','July','August','September','October','November','December'],
     },
     fr: {
-      title: 'Jours avant Halloween 2026 – Compte à rebours | Date.tools',
+      title: 'Jours avant Halloween 2026 – Compte à rebours | DateCalc.app',
       metaDesc: 'Combien de jours avant Halloween ? Compte à rebours jusqu\'au 31 octobre en jours, heures, minutes et secondes.',
       kicker: 'Compte à rebours Halloween',
       headline: 'Jours avant<br><em>Halloween</em>',
@@ -125,7 +125,7 @@ const HOLIDAYS = {
       months: ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'],
     },
     es: {
-      title: 'Días para Halloween 2026 – Cuenta regresiva | Date.tools',
+      title: 'Días para Halloween 2026 – Cuenta regresiva | DateCalc.app',
       metaDesc: '¿Cuántos días faltan para Halloween? Cuenta regresiva hasta el 31 de octubre en días, horas, minutos y segundos.',
       kicker: 'Cuenta regresiva Halloween',
       headline: 'Días para<br><em>Halloween</em>',
@@ -151,7 +151,7 @@ const HOLIDAYS = {
   },
   'easter': {
     en: {
-      title: 'Days Until Easter 2026 – Easter Countdown | Date.tools',
+      title: 'Days Until Easter 2026 – Easter Countdown | DateCalc.app',
       metaDesc: 'How many days until Easter? Live countdown to Easter Sunday in days, hours, minutes and seconds. Easter date calculated automatically.',
       kicker: 'Easter Countdown',
       headline: 'Days until<br><em>Easter</em>',
@@ -175,7 +175,7 @@ const HOLIDAYS = {
       months: ['January','February','March','April','May','June','July','August','September','October','November','December'],
     },
     fr: {
-      title: 'Jours avant Pâques 2026 – Compte à rebours | Date.tools',
+      title: 'Jours avant Pâques 2026 – Compte à rebours | DateCalc.app',
       metaDesc: 'Combien de jours avant Pâques ? Compte à rebours jusqu\'au dimanche de Pâques en jours, heures, minutes et secondes.',
       kicker: 'Compte à rebours Pâques',
       headline: 'Jours avant<br><em>Pâques</em>',
@@ -199,7 +199,7 @@ const HOLIDAYS = {
       months: ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'],
     },
     es: {
-      title: 'Días para Pascua 2026 – Cuenta regresiva | Date.tools',
+      title: 'Días para Pascua 2026 – Cuenta regresiva | DateCalc.app',
       metaDesc: '¿Cuántos días faltan para Pascua? Cuenta regresiva hasta el Domingo de Pascua en días, horas, minutos y segundos.',
       kicker: 'Cuenta regresiva Pascua',
       headline: 'Días para<br><em>Pascua</em>',

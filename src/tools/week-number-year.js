@@ -4,7 +4,7 @@ const YEARS = [2023, 2024, 2025, 2026, 2027, 2028];
 
 const T = {
   en: {
-    titleTpl: 'Week Numbers {year} – Full ISO Week Calendar | Date.tools',
+    titleTpl: 'Week Numbers {year} – Full ISO Week Calendar | DateCalc.app',
     metaDescTpl: 'Complete list of ISO week numbers for {year}. See all {weeks} weeks with start and end dates. Week {w1start} to week {w1end}.',
     kicker: 'Week Calendar',
     headlineTpl: 'Week numbers<br><em>{year}</em>',
@@ -33,7 +33,7 @@ const T = {
     ],
   },
   fr: {
-    titleTpl: 'Numéros de semaine {year} – Calendrier ISO complet | Date.tools',
+    titleTpl: 'Numéros de semaine {year} – Calendrier ISO complet | DateCalc.app',
     metaDescTpl: 'Liste complète des numéros de semaine ISO pour {year}. Voir les {weeks} semaines avec dates de début et de fin. Semaine {w1start} à semaine {w1end}.',
     kicker: 'Calendrier des semaines',
     headlineTpl: 'Numéros de semaine<br><em>{year}</em>',
@@ -62,7 +62,7 @@ const T = {
     ],
   },
   es: {
-    titleTpl: 'Números de semana {year} – Calendario ISO completo | Date.tools',
+    titleTpl: 'Números de semana {year} – Calendario ISO completo | DateCalc.app',
     metaDescTpl: 'Lista completa de números de semana ISO para {year}. Ver las {weeks} semanas con fechas de inicio y fin. Semana {w1start} a semana {w1end}.',
     kicker: 'Calendario de semanas',
     headlineTpl: 'Números de semana<br><em>{year}</em>',

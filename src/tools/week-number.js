@@ -2,7 +2,7 @@
 
 const T = {
   en: {
-    title: 'Week Number – What Week Is It? | Date.tools',
+    title: 'Week Number – What Week Is It? | DateCalc.app',
     metaDesc: 'Find the ISO week number for today or any date. Shows the first and last day of the week, days left in the year, and more.',
     kicker: 'Week Number',
     headline: 'What <em>week</em><br>is it?',
@@ -36,7 +36,7 @@ const T = {
     months: ['January','February','March','April','May','June','July','August','September','October','November','December'],
   },
   fr: {
-    title: 'Numéro de semaine – Quelle semaine sommes-nous ? | Date.tools',
+    title: 'Numéro de semaine – Quelle semaine sommes-nous ? | DateCalc.app',
     metaDesc: 'Trouvez le numéro de semaine ISO pour aujourd\'hui ou n\'importe quelle date. Affiche le premier et le dernier jour de la semaine, les jours restants dans l\'année.',
     kicker: 'Numéro de semaine',
     headline: 'Quelle <em>semaine</em><br>sommes-nous ?',
@@ -70,7 +70,7 @@ const T = {
     months: ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'],
   },
   es: {
-    title: 'Número de semana – ¿En qué semana estamos? | Date.tools',
+    title: 'Número de semana – ¿En qué semana estamos? | DateCalc.app',
     metaDesc: 'Encuentra el número de semana ISO para hoy o cualquier fecha. Muestra el primer y último día de la semana, días restantes en el año y más.',
     kicker: 'Número de semana',
     headline: '¿Qué <em>semana</em><br>es esta?',

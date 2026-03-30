@@ -4,7 +4,7 @@ const EVENTS = require('../data/events.json');
 
 const T = {
   en: {
-    title: 'Age Calculator – Find Your Exact Age | Date.tools',
+    title: 'Age Calculator – Find Your Exact Age | DateCalc.app',
     metaDesc: 'Free age calculator. Enter your date of birth and instantly get your exact age in years, months, weeks, days, and hours — with a live second-by-second counter.',
     kicker: 'Age Calculator',
     headline: 'How <em>old</em><br>am I?',
@@ -49,7 +49,7 @@ const T = {
     ],
   },
   fr: {
-    title: 'Calculateur d\'âge – Trouvez votre âge exact | Date.tools',
+    title: 'Calculateur d\'âge – Trouvez votre âge exact | DateCalc.app',
     metaDesc: 'Calculateur d\'âge gratuit. Entrez votre date de naissance et obtenez votre âge exact en années, mois, semaines, jours et heures — avec un compteur en temps réel.',
     kicker: 'Calculateur d\'âge',
     headline: 'Quel <em>âge</em><br>ai-je ?',
@@ -94,7 +94,7 @@ const T = {
     ],
   },
   es: {
-    title: 'Calculadora de edad – Encuentra tu edad exacta | Date.tools',
+    title: 'Calculadora de edad – Encuentra tu edad exacta | DateCalc.app',
     metaDesc: 'Calculadora de edad gratuita. Ingresa tu fecha de nacimiento y obtén tu edad exacta en años, meses, semanas, días y horas — con contador en tiempo real.',
     kicker: 'Calculadora de edad',
     headline: '¿Cuántos <em>años</em><br>tengo?',

@@ -234,12 +234,14 @@ ${JSON.stringify({
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Space+Mono:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/style.css">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="shortcut icon" href="/favicon.svg">
 ${faqSchema}${appSchema}
 </head>
 <body>
 
 <div class="masthead">
-  <a href="${HOME_HREF[lang]}" class="masthead-brand">Date<span>.</span>tools</a>
+  <a href="${HOME_HREF[lang]}" class="masthead-brand">DateCalc<span>.</span>app</a>
   <div class="masthead-meta" id="todayMeta"></div>
 </div>
 
@@ -302,6 +304,7 @@ function writePage(relPath, html) {
 if (fs.existsSync(DIST)) fs.rmSync(DIST, { recursive: true });
 ensureDir(DIST);
 fs.copyFileSync(path.join(__dirname, 'src', 'style.css'), path.join(DIST, 'style.css'));
+fs.copyFileSync(path.join(__dirname, 'src', 'favicon.svg'), path.join(DIST, 'favicon.svg'));
 console.log('  ✓ /style.css');
 
 let count = 0;

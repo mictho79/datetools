@@ -2,7 +2,7 @@
 
 const T = {
   en: {
-    title: 'Cat Age Calculator – Convert Cat Years to Human Years | Date.tools',
+    title: 'Cat Age Calculator – Convert Cat Years to Human Years | DateCalc.app',
     metaDesc: 'How old is your cat in human years? Enter your cat\'s age for an accurate cat-to-human age conversion based on veterinary guidelines.',
     kicker: 'Cat Age Calculator',
     headline: 'How old is<br>my <em>cat</em>?',
@@ -36,7 +36,7 @@ const T = {
     ],
   },
   fr: {
-    title: 'Calculateur d\'âge du chat – Convertir les années chat | Date.tools',
+    title: 'Calculateur d\'âge du chat – Convertir les années chat | DateCalc.app',
     metaDesc: 'Quel âge a votre chat en années humaines ? Entrez l\'âge de votre chat pour une conversion précise basée sur les recommandations vétérinaires.',
     kicker: 'Calculateur d\'âge du chat',
     headline: 'Quel âge a<br>mon <em>chat</em> ?',
@@ -70,7 +70,7 @@ const T = {
     ],
   },
   es: {
-    title: 'Calculadora de edad del gato – Convertir años gato | Date.tools',
+    title: 'Calculadora de edad del gato – Convertir años gato | DateCalc.app',
     metaDesc: '¿Cuántos años tiene tu gato en años humanos? Ingresa la edad de tu gato para una conversión precisa basada en directrices veterinarias.',
     kicker: 'Calculadora de edad del gato',
     headline: '¿Cuántos años<br>tiene mi <em>gato</em>?',

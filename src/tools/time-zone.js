@@ -33,7 +33,7 @@ const zonesJson = JSON.stringify(ZONES);
 
 const T = {
   en: {
-    title: 'Time Zone Converter – Convert Time Between Any Two Time Zones | Date.tools',
+    title: 'Time Zone Converter – Convert Time Between Any Two Time Zones | DateCalc.app',
     metaDesc: 'Convert time between any two time zones instantly. Supports 25+ zones including UTC. Shows local time, UTC offset, and time difference.',
     kicker: 'Time Zone Converter',
     headline: 'Convert<br><em>time zones</em>',
@@ -68,7 +68,7 @@ const T = {
     ],
   },
   fr: {
-    title: 'Convertisseur de fuseaux horaires – Convertir l\'heure entre n\'importe quels fuseaux | Date.tools',
+    title: 'Convertisseur de fuseaux horaires – Convertir l\'heure entre n\'importe quels fuseaux | DateCalc.app',
     metaDesc: 'Convertissez l\'heure entre n\'importe quels fuseaux horaires instantanément. Prend en charge 25+ fuseaux dont UTC. Affiche l\'heure locale, le décalage UTC et la différence.',
     kicker: 'Convertisseur de fuseaux horaires',
     headline: 'Convertir les<br><em>fuseaux horaires</em>',
@@ -103,7 +103,7 @@ const T = {
     ],
   },
   es: {
-    title: 'Conversor de zona horaria – Convertir hora entre zonas horarias | Date.tools',
+    title: 'Conversor de zona horaria – Convertir hora entre zonas horarias | DateCalc.app',
     metaDesc: 'Convierte la hora entre cualquier zona horaria al instante. Compatible con 25+ zonas incluyendo UTC. Muestra hora local, desplazamiento UTC y diferencia horaria.',
     kicker: 'Conversor de zona horaria',
     headline: 'Convertir<br><em>zonas horarias</em>',

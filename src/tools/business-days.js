@@ -2,7 +2,7 @@
 
 const T = {
   en: {
-    title: 'Business Days Calculator – Count Working Days | Date.tools',
+    title: 'Business Days Calculator – Count Working Days | DateCalc.app',
     metaDesc: 'Calculate the number of business days between two dates, or add business days to a date. Excludes weekends.',
     kicker: 'Business Days Calculator',
     headline: 'Count<br><em>working</em> days',
@@ -48,7 +48,7 @@ const T = {
     months: ['January','February','March','April','May','June','July','August','September','October','November','December'],
   },
   fr: {
-    title: 'Calculateur de jours ouvrables – Compter les jours travaillés | Date.tools',
+    title: 'Calculateur de jours ouvrables – Compter les jours travaillés | DateCalc.app',
     metaDesc: 'Calculez le nombre de jours ouvrables entre deux dates, ou ajoutez des jours ouvrables à une date. Exclut les week-ends.',
     kicker: 'Calculateur de jours ouvrables',
     headline: 'Compter<br>les jours <em>ouvrables</em>',
@@ -94,7 +94,7 @@ const T = {
     months: ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'],
   },
   es: {
-    title: 'Calculadora de días hábiles – Contar días laborables | Date.tools',
+    title: 'Calculadora de días hábiles – Contar días laborables | DateCalc.app',
     metaDesc: 'Calcula el número de días hábiles entre dos fechas, o añade días hábiles a una fecha. Excluye los fines de semana.',
     kicker: 'Calculadora de días hábiles',
     headline: 'Contar<br>días <em>hábiles</em>',

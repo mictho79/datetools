@@ -2,7 +2,7 @@
 
 const T = {
   en: {
-    title: 'Dog Age Calculator – Convert Dog Years to Human Years | Date.tools',
+    title: 'Dog Age Calculator – Convert Dog Years to Human Years | DateCalc.app',
     metaDesc: 'How old is your dog in human years? Enter your dog\'s age and breed size for an accurate dog-to-human age conversion.',
     kicker: 'Dog Age Calculator',
     headline: 'How old is<br>my <em>dog</em>?',
@@ -37,7 +37,7 @@ const T = {
     ],
   },
   fr: {
-    title: 'Calculateur d\'âge du chien – Convertir les années chien en années humaines | Date.tools',
+    title: 'Calculateur d\'âge du chien – Convertir les années chien en années humaines | DateCalc.app',
     metaDesc: 'Quel âge a votre chien en années humaines ? Entrez l\'âge de votre chien et sa taille pour une conversion précise.',
     kicker: 'Calculateur d\'âge du chien',
     headline: 'Quel âge a<br>mon <em>chien</em> ?',
@@ -72,7 +72,7 @@ const T = {
     ],
   },
   es: {
-    title: 'Calculadora de edad del perro – Convertir años perro a años humanos | Date.tools',
+    title: 'Calculadora de edad del perro – Convertir años perro a años humanos | DateCalc.app',
     metaDesc: '¿Cuántos años tiene tu perro en años humanos? Ingresa la edad de tu perro y su tamaño para una conversión precisa.',
     kicker: 'Calculadora de edad del perro',
     headline: '¿Cuántos años<br>tiene mi <em>perro</em>?',

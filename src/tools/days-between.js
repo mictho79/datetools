@@ -2,7 +2,7 @@
 
 const T = {
   en: {
-    title: 'Days Between Dates – Calculate the Difference | Date.tools',
+    title: 'Days Between Dates – Calculate the Difference | DateCalc.app',
     metaDesc: 'Calculate the exact number of days between two dates. Also shows weeks, months, and years. Free online date difference calculator.',
     kicker: 'Days Between Dates',
     headline: 'Days <em>between</em><br>two dates',
@@ -38,7 +38,7 @@ const T = {
     weekDays: ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],
   },
   fr: {
-    title: 'Jours entre deux dates – Calculer la différence | Date.tools',
+    title: 'Jours entre deux dates – Calculer la différence | DateCalc.app',
     metaDesc: 'Calculez le nombre exact de jours entre deux dates. Affiche aussi les semaines, mois et années. Calculateur de différence de dates gratuit.',
     kicker: 'Jours entre deux dates',
     headline: 'Jours <em>entre</em><br>deux dates',
@@ -74,7 +74,7 @@ const T = {
     weekDays: ['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'],
   },
   es: {
-    title: 'Días entre fechas – Calcular la diferencia | Date.tools',
+    title: 'Días entre fechas – Calcular la diferencia | DateCalc.app',
     metaDesc: 'Calcula el número exacto de días entre dos fechas. También muestra semanas, meses y años. Calculadora de diferencia de fechas gratuita.',
     kicker: 'Días entre fechas',
     headline: 'Días <em>entre</em><br>dos fechas',

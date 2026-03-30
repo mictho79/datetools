@@ -10,7 +10,7 @@ const BUILD_YEAR = 2026; // current year at build time
 
 const T = {
   en: {
-    titleTpl: 'How Old Am I If I Was Born in {year}? Age in 2026 | Date.tools',
+    titleTpl: 'How Old Am I If I Was Born in {year}? Age in 2026 | DateCalc.app',
     metaDescTpl: 'Born in {year}? Find out how old you are in 2026. You are either {age} or {age1} years old depending on your birthday.',
     kicker: 'Age by Birth Year',
     headlineTpl: 'Born in<br><em>{year}</em>',
@@ -40,7 +40,7 @@ const T = {
     genRanges: [{y:1928,n:'Silent Generation'},{y:1946,n:'Baby Boomer'},{y:1965,n:'Generation X'},{y:1981,n:'Millennial'},{y:1997,n:'Generation Z'},{y:2013,n:'Generation Alpha'}],
   },
   fr: {
-    titleTpl: 'Quel âge ai-je si je suis né en {year} ? Âge en 2026 | Date.tools',
+    titleTpl: 'Quel âge ai-je si je suis né en {year} ? Âge en 2026 | DateCalc.app',
     metaDescTpl: 'Né en {year} ? Découvrez votre âge en 2026. Vous avez {age} ou {age1} ans selon la date de votre anniversaire.',
     kicker: 'Âge par année de naissance',
     headlineTpl: 'Né en<br><em>{year}</em>',
@@ -70,7 +70,7 @@ const T = {
     genRanges: [{y:1928,n:'Génération Silencieuse'},{y:1946,n:'Baby Boomer'},{y:1965,n:'Génération X'},{y:1981,n:'Millénial'},{y:1997,n:'Génération Z'},{y:2013,n:'Génération Alpha'}],
   },
   es: {
-    titleTpl: '¿Cuántos años tengo si nací en {year}? Edad en 2026 | Date.tools',
+    titleTpl: '¿Cuántos años tengo si nací en {year}? Edad en 2026 | DateCalc.app',
     metaDescTpl: '¿Naciste en {year}? Descubre tu edad en 2026. Tienes {age} o {age1} años según tu fecha de cumpleaños.',
     kicker: 'Edad por año de nacimiento',
     headlineTpl: 'Nacido en<br><em>{year}</em>',

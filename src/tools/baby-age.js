@@ -2,7 +2,7 @@
 
 const T = {
   en: {
-    title: 'Baby Age Calculator – Age in Weeks and Months | Date.tools',
+    title: 'Baby Age Calculator – Age in Weeks and Months | DateCalc.app',
     metaDesc: 'Calculate your baby\'s age in weeks, days, and months from their birth date. Essential for tracking developmental milestones.',
     kicker: 'Baby Age Calculator',
     headline: 'How old is<br>my <em>baby</em>?',
@@ -37,7 +37,7 @@ const T = {
     ],
   },
   fr: {
-    title: 'Calculateur d\'âge bébé – Âge en semaines et mois | Date.tools',
+    title: 'Calculateur d\'âge bébé – Âge en semaines et mois | DateCalc.app',
     metaDesc: 'Calculez l\'âge de votre bébé en semaines, jours et mois à partir de sa date de naissance. Essentiel pour suivre les étapes de développement.',
     kicker: 'Calculateur d\'âge bébé',
     headline: 'Quel âge a<br>mon <em>bébé</em> ?',
@@ -72,7 +72,7 @@ const T = {
     ],
   },
   es: {
-    title: 'Calculadora de edad del bebé – Edad en semanas y meses | Date.tools',
+    title: 'Calculadora de edad del bebé – Edad en semanas y meses | DateCalc.app',
     metaDesc: 'Calcula la edad de tu bebé en semanas, días y meses desde su fecha de nacimiento. Esencial para seguir los hitos del desarrollo.',
     kicker: 'Calculadora de edad del bebé',
     headline: '¿Cuántas semanas<br>tiene mi <em>bebé</em>?',

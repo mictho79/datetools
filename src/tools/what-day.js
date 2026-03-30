@@ -2,7 +2,7 @@
 
 const T = {
   en: {
-    title: 'What Day Is It Today? – Day of Week for Any Date | Date.tools',
+    title: 'What Day Is It Today? – Day of Week for Any Date | DateCalc.app',
     metaDesc: 'Find out what day it is today, or look up the day of the week for any date. Shows day number, week number, and days remaining in the year.',
     kicker: 'What Day Is It Today?',
     headline: 'What <em>day</em><br>is it?',
@@ -36,7 +36,7 @@ const T = {
     months: ['January','February','March','April','May','June','July','August','September','October','November','December'],
   },
   fr: {
-    title: 'Quel jour sommes-nous ? – Jour de la semaine pour n\'importe quelle date | Date.tools',
+    title: 'Quel jour sommes-nous ? – Jour de la semaine pour n\'importe quelle date | DateCalc.app',
     metaDesc: 'Découvrez quel jour nous sommes aujourd\'hui, ou trouvez le jour de la semaine pour n\'importe quelle date.',
     kicker: 'Quel jour sommes-nous ?',
     headline: 'Quel <em>jour</em><br>sommes-nous ?',
@@ -70,7 +70,7 @@ const T = {
     months: ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'],
   },
   es: {
-    title: '¿Qué día es hoy? – Día de la semana para cualquier fecha | Date.tools',
+    title: '¿Qué día es hoy? – Día de la semana para cualquier fecha | DateCalc.app',
     metaDesc: 'Descubre qué día es hoy, o busca el día de la semana para cualquier fecha. Muestra número del día, semana y días restantes en el año.',
     kicker: '¿Qué día es hoy?',
     headline: '¿Qué <em>día</em><br>es hoy?',

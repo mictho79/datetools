@@ -2,7 +2,7 @@
 
 const T = {
   en: {
-    title: 'Countdown Timer – Count Down to Any Date | Date.tools',
+    title: 'Countdown Timer – Count Down to Any Date | DateCalc.app',
     metaDesc: 'Free online countdown timer. Enter any future date and get a live countdown in days, hours, minutes and seconds.',
     kicker: 'Countdown Timer',
     headline: 'Count<em>down</em><br>to any date',
@@ -40,7 +40,7 @@ const T = {
     months: ['January','February','March','April','May','June','July','August','September','October','November','December'],
   },
   fr: {
-    title: 'Compte à rebours – Décompter jusqu\'à n\'importe quelle date | Date.tools',
+    title: 'Compte à rebours – Décompter jusqu\'à n\'importe quelle date | DateCalc.app',
     metaDesc: 'Compte à rebours en ligne gratuit. Entrez n\'importe quelle date future et obtenez un décompte en direct en jours, heures, minutes et secondes.',
     kicker: 'Compte à rebours',
     headline: 'Compte<em>-à-rebours</em><br>jusqu\'à une date',
@@ -78,7 +78,7 @@ const T = {
     months: ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'],
   },
   es: {
-    title: 'Cuenta regresiva – Cuenta atrás hasta cualquier fecha | Date.tools',
+    title: 'Cuenta regresiva – Cuenta atrás hasta cualquier fecha | DateCalc.app',
     metaDesc: 'Temporizador de cuenta regresiva gratuito. Ingresa cualquier fecha futura y obtén una cuenta atrás en vivo en días, horas, minutos y segundos.',
     kicker: 'Cuenta Regresiva',
     headline: 'Cuenta<em>-regresiva</em><br>hasta cualquier fecha',
