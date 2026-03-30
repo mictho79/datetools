@@ -38,9 +38,9 @@ const T = {
     faqTitle: 'Frequently asked questions',
     source: { url: 'https://www.ssa.gov/oact/population/longevity.html', label: 'U.S. Social Security Administration – Life Expectancy' },
     faqs: [
-      { q: 'How old am I if I was born in 1980?', a: 'If you were born in 1980, you turned 45 in 2025 (or will turn 45 later in the year, depending on your birthday). Enter your exact birth date above for a precise answer including months, weeks, and days.' },
-      { q: 'How old am I if I was born in 1990?', a: 'If you were born in 1990, you are 34 or 35 years old in 2025, depending on whether your birthday has passed. Use the calculator above with your exact date to get your age to the day.' },
-      { q: 'How old am I if I was born in 2000?', a: 'If you were born in 2000, you turned 25 in 2025. People born in 2000 are part of Generation Z. Enter your full birth date to see your exact age in months, weeks, and days.' },
+      { q: 'How old am I if I was born in 1980?', a: 'If you were born in 1980, you turned 46 in 2026 (or will turn 46 later in the year, depending on your birthday). Enter your exact birth date above for a precise answer including months, weeks, and days.' },
+      { q: 'How old am I if I was born in 1990?', a: 'If you were born in 1990, you are 35 or 36 years old in 2026, depending on whether your birthday has passed. Use the calculator above with your exact date to get your age to the day.' },
+      { q: 'How old am I if I was born in 2000?', a: 'If you were born in 2000, you turned 26 in 2026. People born in 2000 are part of Generation Z. Enter your full birth date to see your exact age in months, weeks, and days.' },
       { q: 'How do I calculate my exact age in days?', a: 'Subtract your birth date from today\'s date. There are about 365.25 days per year on average, accounting for leap years. This tool does the math instantly — just enter your birthday and the "Days" figure is shown directly in the results.' },
       { q: 'What is my age if I was born in a leap year?', a: 'If you were born on February 29, your birthday officially falls on March 1 in non-leap years for legal purposes in most countries. Our calculator handles this correctly and still counts your age accurately every year.' },
       { q: 'Can I use this as an age calculator for retirement?', a: 'Yes. Use the "Calculate for a specific date" option and enter your planned retirement date. The tool will show exactly how old you will be on that day — useful for comparing against Social Security eligibility ages (62, 67, or 70 in the US).' },
@@ -83,9 +83,9 @@ const T = {
     faqTitle: 'Questions fréquentes',
     source: { url: 'https://www.ssa.gov/oact/population/longevity.html', label: 'Administration de la sécurité sociale américaine – Espérance de vie' },
     faqs: [
-      { q: 'Quel âge ai-je si je suis né en 1980 ?', a: 'Si vous êtes né en 1980, vous avez eu 45 ans en 2025 (ou vous les aurez plus tard dans l\'année selon votre date d\'anniversaire). Entrez votre date de naissance exacte ci-dessus pour un résultat précis en mois, semaines et jours.' },
-      { q: 'Quel âge ai-je si je suis né en 1990 ?', a: 'Si vous êtes né en 1990, vous avez 34 ou 35 ans en 2025, selon que votre anniversaire est passé ou non. Utilisez le calculateur avec votre date exacte pour connaître votre âge au jour près.' },
-      { q: 'Quel âge ai-je si je suis né en 2000 ?', a: 'Si vous êtes né en 2000, vous avez eu 25 ans en 2025. Les personnes nées en 2000 appartiennent à la Génération Z. Entrez votre date de naissance complète pour voir votre âge en mois, semaines et jours.' },
+      { q: 'Quel âge ai-je si je suis né en 1980 ?', a: 'Si vous êtes né en 1980, vous avez eu 46 ans en 2026 (ou vous les aurez plus tard dans l\'année selon votre date d\'anniversaire). Entrez votre date de naissance exacte ci-dessus pour un résultat précis en mois, semaines et jours.' },
+      { q: 'Quel âge ai-je si je suis né en 1990 ?', a: 'Si vous êtes né en 1990, vous avez 35 ou 36 ans en 2026, selon que votre anniversaire est passé ou non. Utilisez le calculateur avec votre date exacte pour connaître votre âge au jour près.' },
+      { q: 'Quel âge ai-je si je suis né en 2000 ?', a: 'Si vous êtes né en 2000, vous avez eu 26 ans en 2026. Les personnes nées en 2000 appartiennent à la Génération Z. Entrez votre date de naissance complète pour voir votre âge en mois, semaines et jours.' },
       { q: 'Comment calculer mon âge exact en jours ?', a: 'Soustrayez votre date de naissance d\'aujourd\'hui. Il y a environ 365,25 jours par an en moyenne. Cet outil fait le calcul instantanément — entrez votre anniversaire et le nombre de jours apparaît directement dans les résultats.' },
       { q: 'Quel est mon âge si je suis né une année bissextile ?', a: 'Si vous êtes né le 29 février, votre anniversaire tombe officiellement le 1er mars les années non bissextiles dans la plupart des pays. Notre calculateur gère cela correctement et compte votre âge avec précision chaque année.' },
       { q: 'Puis-je utiliser cet outil comme calculateur d\'âge pour la retraite ?', a: 'Oui. Utilisez l\'option "Calculer à une date précise" et entrez votre date de départ à la retraite prévue. L\'outil affichera exactement quel âge vous aurez ce jour-là, utile pour comparer avec les seuils d\'éligibilité aux pensions.' },
@@ -128,9 +128,9 @@ const T = {
     faqTitle: 'Preguntas frecuentes',
     source: { url: 'https://www.ssa.gov/oact/population/longevity.html', label: 'Administración del Seguro Social de EE. UU. – Esperanza de vida' },
     faqs: [
-      { q: '¿Cuántos años tengo si nací en 1980?', a: 'Si naciste en 1980, cumpliste 45 años en 2025 (o los cumplirás más adelante en el año según tu fecha de nacimiento). Ingresa tu fecha exacta arriba para obtener un resultado preciso en meses, semanas y días.' },
-      { q: '¿Cuántos años tengo si nací en 1990?', a: 'Si naciste en 1990, tienes 34 o 35 años en 2025, dependiendo de si ya pasó tu cumpleaños. Usa la calculadora con tu fecha exacta para conocer tu edad al día.' },
-      { q: '¿Cuántos años tengo si nací en 2000?', a: 'Si naciste en 2000, cumpliste 25 años en 2025. Las personas nacidas en 2000 pertenecen a la Generación Z. Ingresa tu fecha de nacimiento completa para ver tu edad en meses, semanas y días.' },
+      { q: '¿Cuántos años tengo si nací en 1980?', a: 'Si naciste en 1980, cumpliste 46 años en 2026 (o los cumplirás más adelante en el año según tu fecha de nacimiento). Ingresa tu fecha exacta arriba para obtener un resultado preciso en meses, semanas y días.' },
+      { q: '¿Cuántos años tengo si nací en 1990?', a: 'Si naciste en 1990, tienes 35 o 36 años en 2026, dependiendo de si ya pasó tu cumpleaños. Usa la calculadora con tu fecha exacta para conocer tu edad al día.' },
+      { q: '¿Cuántos años tengo si nací en 2000?', a: 'Si naciste en 2000, cumpliste 26 años en 2026. Las personas nacidas en 2000 pertenecen a la Generación Z. Ingresa tu fecha de nacimiento completa para ver tu edad en meses, semanas y días.' },
       { q: '¿Cómo calculo mi edad exacta en días?', a: 'Resta tu fecha de nacimiento de la fecha de hoy. Hay aproximadamente 365,25 días por año en promedio. Esta herramienta hace el cálculo al instante — ingresa tu cumpleaños y el número de días aparece directamente en los resultados.' },
       { q: '¿Cuál es mi edad si nací en un año bisiesto?', a: 'Si naciste el 29 de febrero, tu cumpleaños cae oficialmente el 1 de marzo en los años no bisiestos en la mayoría de países. Nuestra calculadora maneja esto correctamente y cuenta tu edad con precisión cada año.' },
       { q: '¿Puedo usar esto como calculadora de edad para la jubilación?', a: 'Sí. Usa la opción "Calcular en una fecha específica" e ingresa tu fecha de jubilación planificada. La herramienta mostrará exactamente qué edad tendrás ese día, útil para comparar con los umbrales de elegibilidad para pensiones.' },
@@ -166,7 +166,7 @@ module.exports = {
         <span>/</span>
         <input type="number" id="month" placeholder="MM" min="1" max="12" inputmode="numeric" oninput="clamp(this,1,12)">
         <span>/</span>
-        <input type="number" id="year" placeholder="YYYY" min="1905" max="2025" inputmode="numeric" oninput="clamp(this,1905,2025)">
+        <input type="number" id="year" placeholder="YYYY" min="1905" max="2026" inputmode="numeric" oninput="clamp(this,1905,2026)">
       </div>
       <label class="ref-toggle-row">
         <input type="checkbox" id="refToggle" onchange="toggleRef()">
@@ -341,7 +341,7 @@ function calculate(){
   res.classList.remove('show');
   stopLive();
 
-  if(!d||!m||!y||d<1||d>31||m<1||m>12||y<1905||y>2025){
+  if(!d||!m||!y||d<1||d>31||m<1||m>12||y<1905||y>2026){
     err.textContent=D.errInvalid; err.classList.add('show'); return;
   }
   var bday=new Date(y,m-1,d);

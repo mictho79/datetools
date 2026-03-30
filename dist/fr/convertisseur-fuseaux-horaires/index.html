@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Convertisseur de fuseaux horaires – Convertir l'heure entre n'importe quels fuseaux | DateCalc.app</title>
+<meta name="robots" content="index, follow">
 <meta name="description" content="Convertissez l'heure entre n'importe quels fuseaux horaires instantanément. Prend en charge 25+ fuseaux dont UTC. Affiche l'heure locale, le décalage UTC et la différence.">
 <link rel="canonical" href="https://datecalc.app/fr/convertisseur-fuseaux-horaires/">
 <link rel="alternate" hreflang="en" href="https://datecalc.app/time-zone-converter/">
@@ -23,6 +24,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Space+Mono:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/style.css">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="shortcut icon" href="/favicon.svg">
 
@@ -118,10 +120,14 @@
 </head>
 <body>
 
+<noscript><div style="background:#c8392b;color:#fff;text-align:center;padding:.6rem;font-family:sans-serif;font-size:.9rem">This calculator requires JavaScript. Please enable it in your browser.</div></noscript>
+
+<header>
 <div class="masthead">
   <a href="/fr/calculateur-age/" class="masthead-brand">DateCalc<span>.</span>app</a>
   <div class="masthead-meta" id="todayMeta"></div>
 </div>
+</header>
 
 <div class="lang-strip">
   <a href="/time-zone-converter/" class="lang-btn">EN</a>
@@ -234,6 +240,7 @@
     </div>
   </div>
 
+  <nav aria-label="Tools">
   <div class="tool-nav">
     <div class="nav-group"><span class="nav-cat">Âge</span><div class="nav-links"><a href="/fr/calculateur-age/">Calculateur d'âge</a><span class="nav-sep">·</span><a href="/fr/age-chronologique/">Âge chronologique</a><span class="nav-sep">·</span><a href="/fr/calculateur-age-bebe/">Âge bébé</a><span class="nav-sep">·</span><a href="/fr/calculateur-age-chien/">Âge du chien</a><span class="nav-sep">·</span><a href="/fr/calculateur-age-chat/">Âge du chat</a></div></div>
     <div class="nav-group"><span class="nav-cat">Dates</span><div class="nav-links"><a href="/fr/jours-entre-deux-dates/">Jours entre deux dates</a><span class="nav-sep">·</span><a href="/fr/calculateur-date/">Calculateur de date</a><span class="nav-sep">·</span><a href="/fr/quel-jour-sommes-nous/">Quel jour sommes-nous</a><span class="nav-sep">·</span><a href="/fr/numero-semaine/">Numéro de semaine</a><span class="nav-sep">·</span><a href="/fr/calculateur-jours-ouvrables/">Jours ouvrables</a></div></div>
@@ -242,7 +249,9 @@
     <div class="nav-group"><span class="nav-cat">Né en</span><div class="nav-links"><a href="/fr/ne-en-1990/">Né en 1990</a><span class="nav-sep">·</span><a href="/fr/ne-en-1980/">Né en 1980</a><span class="nav-sep">·</span><a href="/fr/ne-en-2000/">Né en 2000</a></div></div>
     <div class="nav-group"><span class="nav-cat">Calendriers</span><div class="nav-links"><a href="/fr/numero-semaine/2025/">Semaines 2025</a><span class="nav-sep">·</span><a href="/fr/numero-semaine/2026/">Semaines 2026</a><span class="nav-sep">·</span><a href="/fr/numero-semaine/2027/">Semaines 2027</a></div></div>
   </div>
+  </nav>
 
+<main>
   <div class="seo-block">
     <div><h2>Comment fonctionnent les fuseaux horaires ?</h2><p>Le monde est divisé en 24 fuseaux horaires principaux, chacun espacé d'environ 15 degrés de longitude — la distance angulaire que la Terre tourne en une heure. La plupart des fuseaux sont décalés par rapport au Temps Universel Coordonné (UTC) d'un nombre entier d'heures, mais certains pays utilisent des décalages fractionnaires : l'Inde est UTC+5:30, le Népal UTC+5:45 et l'Iran UTC+3:30. La base de données des fuseaux horaires IANA (aussi appelée base de données tz) est la référence mondiale pour les définitions de fuseaux horaires. Lorsque vous convertissez une heure avec cet outil, le bon décalage UTC pour la date spécifique que vous entrez est utilisé, ce qui signifie que les transitions d'heure d'été sont gérées automatiquement.</p></div>
     <div><h2>Qu'est-ce que le décalage UTC ?</h2><p>Le décalage UTC est la différence signée entre un fuseau horaire spécifique et le Temps Universel Coordonné (UTC), le successeur du Temps Moyen de Greenwich (GMT). New York en hiver est UTC−5 (EST) et UTC−4 en été (EDT). Paris est UTC+1 en hiver (CET) et UTC+2 en été (CEST). La principale différence entre UTC et GMT est qu'UTC est un standard de temps basé sur des horloges atomiques et n'est jamais ajusté pour l'heure d'été, tandis que GMT est techniquement un fuseau horaire. Ce convertisseur utilise toujours le décalage UTC tenant compte de l'heure d'été pour la date exacte que vous entrez.</p></div>
@@ -263,7 +272,8 @@
     <span class="source-lbl">Source</span>
     <a href="https://www.iana.org/time-zones" target="_blank" rel="noopener noreferrer">Base de données des fuseaux horaires IANA</a>
   </div>
-  <footer>© 2026 Date.tools — Calculateurs de date et d'heure gratuits en ligne</footer>
+</main>
+  <footer>© 2026 DateCalc.app — Calculateurs de date et d'heure gratuits en ligne</footer>
 </div>
 
 <script>

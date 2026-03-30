@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Calculateur d'âge chronologique – Âge exact en années, mois et jours | DateCalc.app</title>
+<meta name="robots" content="index, follow">
 <meta name="description" content="Calculez l'âge chronologique de la date de naissance à n'importe quelle date de référence. Utilisé en contexte médical, éducatif et développemental.">
 <link rel="canonical" href="https://datecalc.app/fr/age-chronologique/">
 <link rel="alternate" hreflang="en" href="https://datecalc.app/chronological-age-calculator/">
@@ -23,6 +24,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Space+Mono:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/style.css">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="shortcut icon" href="/favicon.svg">
 
@@ -118,10 +120,14 @@
 </head>
 <body>
 
+<noscript><div style="background:#c8392b;color:#fff;text-align:center;padding:.6rem;font-family:sans-serif;font-size:.9rem">This calculator requires JavaScript. Please enable it in your browser.</div></noscript>
+
+<header>
 <div class="masthead">
   <a href="/fr/calculateur-age/" class="masthead-brand">DateCalc<span>.</span>app</a>
   <div class="masthead-meta" id="todayMeta"></div>
 </div>
+</header>
 
 <div class="lang-strip">
   <a href="/chronological-age-calculator/" class="lang-btn">EN</a>
@@ -185,6 +191,7 @@
     <div class="bday-banner" id="bdayBanner"></div>
   </div>
 
+  <nav aria-label="Tools">
   <div class="tool-nav">
     <div class="nav-group"><span class="nav-cat">Âge</span><div class="nav-links"><a href="/fr/calculateur-age/">Calculateur d'âge</a><span class="nav-sep">·</span><a href="/fr/age-chronologique/" aria-current="page">Âge chronologique</a><span class="nav-sep">·</span><a href="/fr/calculateur-age-bebe/">Âge bébé</a><span class="nav-sep">·</span><a href="/fr/calculateur-age-chien/">Âge du chien</a><span class="nav-sep">·</span><a href="/fr/calculateur-age-chat/">Âge du chat</a></div></div>
     <div class="nav-group"><span class="nav-cat">Dates</span><div class="nav-links"><a href="/fr/jours-entre-deux-dates/">Jours entre deux dates</a><span class="nav-sep">·</span><a href="/fr/calculateur-date/">Calculateur de date</a><span class="nav-sep">·</span><a href="/fr/quel-jour-sommes-nous/">Quel jour sommes-nous</a><span class="nav-sep">·</span><a href="/fr/numero-semaine/">Numéro de semaine</a><span class="nav-sep">·</span><a href="/fr/calculateur-jours-ouvrables/">Jours ouvrables</a></div></div>
@@ -193,7 +200,9 @@
     <div class="nav-group"><span class="nav-cat">Né en</span><div class="nav-links"><a href="/fr/ne-en-1990/">Né en 1990</a><span class="nav-sep">·</span><a href="/fr/ne-en-1980/">Né en 1980</a><span class="nav-sep">·</span><a href="/fr/ne-en-2000/">Né en 2000</a></div></div>
     <div class="nav-group"><span class="nav-cat">Calendriers</span><div class="nav-links"><a href="/fr/numero-semaine/2025/">Semaines 2025</a><span class="nav-sep">·</span><a href="/fr/numero-semaine/2026/">Semaines 2026</a><span class="nav-sep">·</span><a href="/fr/numero-semaine/2027/">Semaines 2027</a></div></div>
   </div>
+  </nav>
 
+<main>
   <div class="seo-block">
     <div><h2>Qu'est-ce que l'âge chronologique ?</h2><p>L'âge chronologique est la mesure précise du temps écoulé depuis la naissance d'une personne, exprimé en années, mois et jours. C'est la mesure d'âge la plus objective car elle est basée uniquement sur le temps calendaire écoulé, sans inférence sur l'état physique, les capacités cognitives ou la maturité. L'âge chronologique est utilisé dans de nombreux contextes : les pédiatres l'utilisent pour comparer le développement d'un enfant aux tableaux de jalons standard ; les écoles l'utilisent pour déterminer l'éligibilité à l'inscription ; les psychologues l'utilisent pour calculer les ratios de QI ; les assureurs l'utilisent pour définir les catégories de risque et les taux de prime. Contrairement à l'âge biologique ou mental, l'âge chronologique est entièrement objectif.</p></div>
     <div><h2>Comment calculer l'âge chronologique ?</h2><p>Pour calculer l'âge chronologique avec précision, soustrayez la date de naissance de la date de référence en trois étapes. D'abord, soustrayez le jour de naissance du jour de référence — si le résultat est négatif, empruntez des jours du mois précédent. Ensuite, soustrayez le mois de naissance — si négatif, empruntez 12 mois. Enfin, soustrayez l'année. Par exemple : enfant né le 15 mars 2018, évalué le 20 octobre 2025. Résultat : 7 ans, 7 mois, 5 jours. Ce calculateur gère automatiquement tous les cas particuliers.</p></div>
@@ -214,7 +223,8 @@
     <span class="source-lbl">Source</span>
     <a href="https://www.apa.org/topics/cognitive-development" target="_blank" rel="noopener noreferrer">American Psychological Association – Développement cognitif</a>
   </div>
-  <footer>© 2026 Date.tools — Calculateurs de date et d'heure gratuits en ligne</footer>
+</main>
+  <footer>© 2026 DateCalc.app — Calculateurs de date et d'heure gratuits en ligne</footer>
 </div>
 
 <script>

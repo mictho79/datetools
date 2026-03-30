@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>¿Qué día es hoy? – Día de la semana para cualquier fecha | DateCalc.app</title>
+<meta name="robots" content="index, follow">
 <meta name="description" content="Descubre qué día es hoy, o busca el día de la semana para cualquier fecha. Muestra número del día, semana y días restantes en el año.">
 <link rel="canonical" href="https://datecalc.app/es/que-dia-es-hoy/">
 <link rel="alternate" hreflang="en" href="https://datecalc.app/what-day-is-it-today/">
@@ -23,6 +24,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Space+Mono:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/style.css">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="shortcut icon" href="/favicon.svg">
 
@@ -118,10 +120,14 @@
 </head>
 <body>
 
+<noscript><div style="background:#c8392b;color:#fff;text-align:center;padding:.6rem;font-family:sans-serif;font-size:.9rem">This calculator requires JavaScript. Please enable it in your browser.</div></noscript>
+
+<header>
 <div class="masthead">
   <a href="/es/calculadora-edad/" class="masthead-brand">DateCalc<span>.</span>app</a>
   <div class="masthead-meta" id="todayMeta"></div>
 </div>
+</header>
 
 <div class="lang-strip">
   <a href="/what-day-is-it-today/" class="lang-btn">EN</a>
@@ -168,6 +174,7 @@
     </div>
   </div>
 
+  <nav aria-label="Tools">
   <div class="tool-nav">
     <div class="nav-group"><span class="nav-cat">Edad</span><div class="nav-links"><a href="/es/calculadora-edad/">Calculadora de edad</a><span class="nav-sep">·</span><a href="/es/edad-cronologica/">Edad cronológica</a><span class="nav-sep">·</span><a href="/es/calculadora-edad-bebe/">Edad del bebé</a><span class="nav-sep">·</span><a href="/es/calculadora-edad-perro/">Edad del perro</a><span class="nav-sep">·</span><a href="/es/calculadora-edad-gato/">Edad del gato</a></div></div>
     <div class="nav-group"><span class="nav-cat">Fechas</span><div class="nav-links"><a href="/es/dias-entre-fechas/">Días entre fechas</a><span class="nav-sep">·</span><a href="/es/calculadora-fechas/">Calculadora de fechas</a><span class="nav-sep">·</span><a href="/es/que-dia-es-hoy/" aria-current="page">¿Qué día es hoy?</a><span class="nav-sep">·</span><a href="/es/numero-semana/">Número de semana</a><span class="nav-sep">·</span><a href="/es/calculadora-dias-habiles/">Días hábiles</a></div></div>
@@ -176,7 +183,9 @@
     <div class="nav-group"><span class="nav-cat">Nacido en</span><div class="nav-links"><a href="/es/nacido-en-1990/">Nacido en 1990</a><span class="nav-sep">·</span><a href="/es/nacido-en-1980/">Nacido en 1980</a><span class="nav-sep">·</span><a href="/es/nacido-en-2000/">Nacido en 2000</a></div></div>
     <div class="nav-group"><span class="nav-cat">Calendarios</span><div class="nav-links"><a href="/es/numero-semana/2025/">Semanas 2025</a><span class="nav-sep">·</span><a href="/es/numero-semana/2026/">Semanas 2026</a><span class="nav-sep">·</span><a href="/es/numero-semana/2027/">Semanas 2027</a></div></div>
   </div>
+  </nav>
 
+<main>
   <div class="seo-block">
     <div><h2>¿Qué día de la semana es una fecha dada?</h2><p>Para encontrar el día de la semana de cualquier fecha, los matemáticos han desarrollado varios algoritmos elegantes. La congruencia de Zeller usa aritmética modular para calcular el día directamente a partir del día, mes y año. El algoritmo del Día del Juicio, inventado por el matemático John Conway, aprovecha que ciertas fechas memorables (4/4, 6/6, 8/8, 10/10, 12/12, y otras) siempre caen en el mismo día de la semana dentro de un año dado. Para uso cotidiano, nuestra calculadora hace todo esto automáticamente: ingresa cualquier fecha de 1900 a 2100 y ve instantáneamente qué día de la semana cae, junto con el número de semana ISO, el día del año y cuántos días quedan en el año.</p></div>
     <div><h2>¿Cuántos días tiene cada mes?</h2><p>Enero, marzo, mayo, julio, agosto, octubre y diciembre tienen 31 días. Abril, junio, septiembre y noviembre tienen 30 días. Febrero tiene 28 días en un año ordinario y 29 días en un año bisiesto. Un año bisiesto ocurre en cada año divisible por 4, excepto los años de siglo (divisibles por 100) que también deben ser divisibles por 400. Así 2000 fue bisiesto, pero 1900 no. Este ciclo hace que el patrón de día-semana de una fecha dada se desplace uno o dos días cada año.</p></div>
@@ -197,7 +206,8 @@
     <span class="source-lbl">Source</span>
     <a href="https://en.wikipedia.org/wiki/Gregorian_calendar" target="_blank" rel="noopener noreferrer">Wikipedia – Calendario Gregoriano</a>
   </div>
-  <footer>© 2026 Date.tools — Calculadoras de fecha y hora gratuitas en línea</footer>
+</main>
+  <footer>© 2026 DateCalc.app — Calculadoras de fecha y hora gratuitas en línea</footer>
 </div>
 
 <script>

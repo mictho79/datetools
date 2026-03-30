@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Conversor de zona horaria – Convertir hora entre zonas horarias | DateCalc.app</title>
+<meta name="robots" content="index, follow">
 <meta name="description" content="Convierte la hora entre cualquier zona horaria al instante. Compatible con 25+ zonas incluyendo UTC. Muestra hora local, desplazamiento UTC y diferencia horaria.">
 <link rel="canonical" href="https://datecalc.app/es/conversor-zona-horaria/">
 <link rel="alternate" hreflang="en" href="https://datecalc.app/time-zone-converter/">
@@ -23,6 +24,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Space+Mono:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/style.css">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="shortcut icon" href="/favicon.svg">
 
@@ -118,10 +120,14 @@
 </head>
 <body>
 
+<noscript><div style="background:#c8392b;color:#fff;text-align:center;padding:.6rem;font-family:sans-serif;font-size:.9rem">This calculator requires JavaScript. Please enable it in your browser.</div></noscript>
+
+<header>
 <div class="masthead">
   <a href="/es/calculadora-edad/" class="masthead-brand">DateCalc<span>.</span>app</a>
   <div class="masthead-meta" id="todayMeta"></div>
 </div>
+</header>
 
 <div class="lang-strip">
   <a href="/time-zone-converter/" class="lang-btn">EN</a>
@@ -234,6 +240,7 @@
     </div>
   </div>
 
+  <nav aria-label="Tools">
   <div class="tool-nav">
     <div class="nav-group"><span class="nav-cat">Edad</span><div class="nav-links"><a href="/es/calculadora-edad/">Calculadora de edad</a><span class="nav-sep">·</span><a href="/es/edad-cronologica/">Edad cronológica</a><span class="nav-sep">·</span><a href="/es/calculadora-edad-bebe/">Edad del bebé</a><span class="nav-sep">·</span><a href="/es/calculadora-edad-perro/">Edad del perro</a><span class="nav-sep">·</span><a href="/es/calculadora-edad-gato/">Edad del gato</a></div></div>
     <div class="nav-group"><span class="nav-cat">Fechas</span><div class="nav-links"><a href="/es/dias-entre-fechas/">Días entre fechas</a><span class="nav-sep">·</span><a href="/es/calculadora-fechas/">Calculadora de fechas</a><span class="nav-sep">·</span><a href="/es/que-dia-es-hoy/">¿Qué día es hoy?</a><span class="nav-sep">·</span><a href="/es/numero-semana/">Número de semana</a><span class="nav-sep">·</span><a href="/es/calculadora-dias-habiles/">Días hábiles</a></div></div>
@@ -242,7 +249,9 @@
     <div class="nav-group"><span class="nav-cat">Nacido en</span><div class="nav-links"><a href="/es/nacido-en-1990/">Nacido en 1990</a><span class="nav-sep">·</span><a href="/es/nacido-en-1980/">Nacido en 1980</a><span class="nav-sep">·</span><a href="/es/nacido-en-2000/">Nacido en 2000</a></div></div>
     <div class="nav-group"><span class="nav-cat">Calendarios</span><div class="nav-links"><a href="/es/numero-semana/2025/">Semanas 2025</a><span class="nav-sep">·</span><a href="/es/numero-semana/2026/">Semanas 2026</a><span class="nav-sep">·</span><a href="/es/numero-semana/2027/">Semanas 2027</a></div></div>
   </div>
+  </nav>
 
+<main>
   <div class="seo-block">
     <div><h2>¿Cómo funcionan las zonas horarias?</h2><p>El mundo está dividido en 24 zonas horarias principales, cada una separada aproximadamente 15 grados de longitud — la distancia angular que la Tierra rota en una hora. La mayoría de las zonas se desfasan del Tiempo Universal Coordinado (UTC) por un número entero de horas, pero algunos países usan desplazamientos fraccionarios: India es UTC+5:30, Nepal UTC+5:45 e Irán UTC+3:30. La base de datos de zonas horarias IANA (también llamada base de datos tz) es el estándar global autoritativo para las definiciones de zonas horarias, mantenida por la Autoridad de Números Asignados de Internet. Cuando conviertes una hora con esta herramienta, se usa el desplazamiento UTC correcto para la fecha específica que ingresas, lo que significa que las transiciones de horario de verano se manejan automáticamente.</p></div>
     <div><h2>¿Qué es el desplazamiento UTC?</h2><p>El desplazamiento UTC es la diferencia con signo entre una zona horaria específica y el Tiempo Universal Coordinado (UTC), el sucesor del Tiempo Medio de Greenwich (GMT). Nueva York en invierno es UTC−5 (EST) y UTC−4 en verano (EDT). París es UTC+1 en invierno (CET) y UTC+2 en verano (CEST). La principal diferencia entre UTC y GMT es que UTC es un estándar de tiempo basado en relojes atómicos y nunca se ajusta por horario de verano, mientras que GMT es técnicamente una zona horaria. Este conversor siempre usa el desplazamiento UTC con horario de verano para la fecha exacta que ingresas.</p></div>
@@ -263,7 +272,8 @@
     <span class="source-lbl">Source</span>
     <a href="https://www.iana.org/time-zones" target="_blank" rel="noopener noreferrer">Base de datos de zonas horarias IANA</a>
   </div>
-  <footer>© 2026 Date.tools — Calculadoras de fecha y hora gratuitas en línea</footer>
+</main>
+  <footer>© 2026 DateCalc.app — Calculadoras de fecha y hora gratuitas en línea</footer>
 </div>
 
 <script>

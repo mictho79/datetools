@@ -215,6 +215,7 @@ ${JSON.stringify({
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>${title}</title>
+<meta name="robots" content="index, follow">
 <meta name="description" content="${metaDesc}">
 <link rel="canonical" href="https://datecalc.app${canonical}">
 <link rel="alternate" hreflang="en" href="https://datecalc.app${hreflang.en}">
@@ -234,16 +235,21 @@ ${JSON.stringify({
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Space+Mono:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/style.css">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="shortcut icon" href="/favicon.svg">
 ${faqSchema}${appSchema}
 </head>
 <body>
 
+<noscript><div style="background:#c8392b;color:#fff;text-align:center;padding:.6rem;font-family:sans-serif;font-size:.9rem">This calculator requires JavaScript. Please enable it in your browser.</div></noscript>
+
+<header>
 <div class="masthead">
   <a href="${HOME_HREF[lang]}" class="masthead-brand">DateCalc<span>.</span>app</a>
   <div class="masthead-meta" id="todayMeta"></div>
 </div>
+</header>
 
 <div class="lang-strip">
 ${langBtns}
@@ -257,13 +263,17 @@ ${formGrid}
 
 ${resultsSection}
 
+  <nav aria-label="Tools">
   <div class="tool-nav">
 ${navLinks}
   </div>
+  </nav>
 
+<main>
 ${seoBlock}
 ${sourceBlock}
-  <footer>© ${BUILD_YEAR} Date.tools — ${FOOTER[lang]}</footer>
+</main>
+  <footer>© ${BUILD_YEAR} DateCalc.app — ${FOOTER[lang]}</footer>
 </div>
 
 <script>

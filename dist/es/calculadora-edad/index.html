@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Calculadora de edad – Encuentra tu edad exacta | DateCalc.app</title>
+<meta name="robots" content="index, follow">
 <meta name="description" content="Calculadora de edad gratuita. Ingresa tu fecha de nacimiento y obtén tu edad exacta en años, meses, semanas, días y horas — con contador en tiempo real.">
 <link rel="canonical" href="https://datecalc.app/es/calculadora-edad/">
 <link rel="alternate" hreflang="en" href="https://datecalc.app/age-calculator/">
@@ -23,6 +24,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Space+Mono:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/style.css">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="shortcut icon" href="/favicon.svg">
 
@@ -36,7 +38,7 @@
       "name": "¿Cuántos años tengo si nací en 1980?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Si naciste en 1980, cumpliste 45 años en 2025 (o los cumplirás más adelante en el año según tu fecha de nacimiento). Ingresa tu fecha exacta arriba para obtener un resultado preciso en meses, semanas y días."
+        "text": "Si naciste en 1980, cumpliste 46 años en 2026 (o los cumplirás más adelante en el año según tu fecha de nacimiento). Ingresa tu fecha exacta arriba para obtener un resultado preciso en meses, semanas y días."
       }
     },
     {
@@ -44,7 +46,7 @@
       "name": "¿Cuántos años tengo si nací en 1990?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Si naciste en 1990, tienes 34 o 35 años en 2025, dependiendo de si ya pasó tu cumpleaños. Usa la calculadora con tu fecha exacta para conocer tu edad al día."
+        "text": "Si naciste en 1990, tienes 35 o 36 años en 2026, dependiendo de si ya pasó tu cumpleaños. Usa la calculadora con tu fecha exacta para conocer tu edad al día."
       }
     },
     {
@@ -52,7 +54,7 @@
       "name": "¿Cuántos años tengo si nací en 2000?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Si naciste en 2000, cumpliste 25 años en 2025. Las personas nacidas en 2000 pertenecen a la Generación Z. Ingresa tu fecha de nacimiento completa para ver tu edad en meses, semanas y días."
+        "text": "Si naciste en 2000, cumpliste 26 años en 2026. Las personas nacidas en 2000 pertenecen a la Generación Z. Ingresa tu fecha de nacimiento completa para ver tu edad en meses, semanas y días."
       }
     },
     {
@@ -118,10 +120,14 @@
 </head>
 <body>
 
+<noscript><div style="background:#c8392b;color:#fff;text-align:center;padding:.6rem;font-family:sans-serif;font-size:.9rem">This calculator requires JavaScript. Please enable it in your browser.</div></noscript>
+
+<header>
 <div class="masthead">
   <a href="/es/calculadora-edad/" class="masthead-brand">DateCalc<span>.</span>app</a>
   <div class="masthead-meta" id="todayMeta"></div>
 </div>
+</header>
 
 <div class="lang-strip">
   <a href="/age-calculator/" class="lang-btn">EN</a>
@@ -145,7 +151,7 @@
         <span>/</span>
         <input type="number" id="month" placeholder="MM" min="1" max="12" inputmode="numeric" oninput="clamp(this,1,12)">
         <span>/</span>
-        <input type="number" id="year" placeholder="YYYY" min="1905" max="2025" inputmode="numeric" oninput="clamp(this,1905,2025)">
+        <input type="number" id="year" placeholder="YYYY" min="1905" max="2026" inputmode="numeric" oninput="clamp(this,1905,2026)">
       </div>
       <label class="ref-toggle-row">
         <input type="checkbox" id="refToggle" onchange="toggleRef()">
@@ -197,6 +203,7 @@
     <div class="world-when" id="worldWhen"></div>
   </div>
 
+  <nav aria-label="Tools">
   <div class="tool-nav">
     <div class="nav-group"><span class="nav-cat">Edad</span><div class="nav-links"><a href="/es/calculadora-edad/" aria-current="page">Calculadora de edad</a><span class="nav-sep">·</span><a href="/es/edad-cronologica/">Edad cronológica</a><span class="nav-sep">·</span><a href="/es/calculadora-edad-bebe/">Edad del bebé</a><span class="nav-sep">·</span><a href="/es/calculadora-edad-perro/">Edad del perro</a><span class="nav-sep">·</span><a href="/es/calculadora-edad-gato/">Edad del gato</a></div></div>
     <div class="nav-group"><span class="nav-cat">Fechas</span><div class="nav-links"><a href="/es/dias-entre-fechas/">Días entre fechas</a><span class="nav-sep">·</span><a href="/es/calculadora-fechas/">Calculadora de fechas</a><span class="nav-sep">·</span><a href="/es/que-dia-es-hoy/">¿Qué día es hoy?</a><span class="nav-sep">·</span><a href="/es/numero-semana/">Número de semana</a><span class="nav-sep">·</span><a href="/es/calculadora-dias-habiles/">Días hábiles</a></div></div>
@@ -205,16 +212,18 @@
     <div class="nav-group"><span class="nav-cat">Nacido en</span><div class="nav-links"><a href="/es/nacido-en-1990/">Nacido en 1990</a><span class="nav-sep">·</span><a href="/es/nacido-en-1980/">Nacido en 1980</a><span class="nav-sep">·</span><a href="/es/nacido-en-2000/">Nacido en 2000</a></div></div>
     <div class="nav-group"><span class="nav-cat">Calendarios</span><div class="nav-links"><a href="/es/numero-semana/2025/">Semanas 2025</a><span class="nav-sep">·</span><a href="/es/numero-semana/2026/">Semanas 2026</a><span class="nav-sep">·</span><a href="/es/numero-semana/2027/">Semanas 2027</a></div></div>
   </div>
+  </nav>
 
+<main>
   <div class="seo-block">
     <div><h2>¿Cómo se calcula la edad?</h2><p>La edad se calcula restando la fecha de nacimiento a la fecha actual, teniendo en cuenta la longitud variable de cada mes y el día extra de los años bisiestos. El cálculo se realiza en tres pasos: primero se encuentran los años completos transcurridos, luego los meses restantes y finalmente los días restantes. Por ejemplo, alguien nacido el 15 de julio de 1990 cumple 35 años en julio de 2025, pero antes de ese cumpleaños tiene 34 años, 11 meses y algunos días. Esta herramienta maneja todos esos casos de borde automáticamente, incluidos los cumpleaños del 29 de febrero, y muestra el resultado como un contador en vivo que se actualiza cada segundo.</p></div>
     <div><h2>¿Por qué calcular la edad al segundo?</h2><p>Conocer tu edad exacta en días, horas o incluso segundos tiene un valor práctico real más allá de la curiosidad. Los profesionales médicos usan la edad en días para cálculos de dosificación pediátrica. Los sistemas legales vinculan derechos y obligaciones a umbrales de edad precisos: votar a los 18, jubilación a los 62 o 65, elegibilidad para pensiones. Las aseguradoras usan la edad en meses para cálculos de primas. Los genealogistas verifican registros históricos cruzando edades declaradas con fechas de censo. El contador segundo a segundo también recuerda que tu vida siempre está en movimiento.</p></div>
   </div>
   <div class="faq-block">
     <h2>Preguntas frecuentes</h2>
-    <div class="faq-item"><h3>¿Cuántos años tengo si nací en 1980?</h3><p>Si naciste en 1980, cumpliste 45 años en 2025 (o los cumplirás más adelante en el año según tu fecha de nacimiento). Ingresa tu fecha exacta arriba para obtener un resultado preciso en meses, semanas y días.</p></div>
-    <div class="faq-item"><h3>¿Cuántos años tengo si nací en 1990?</h3><p>Si naciste en 1990, tienes 34 o 35 años en 2025, dependiendo de si ya pasó tu cumpleaños. Usa la calculadora con tu fecha exacta para conocer tu edad al día.</p></div>
-    <div class="faq-item"><h3>¿Cuántos años tengo si nací en 2000?</h3><p>Si naciste en 2000, cumpliste 25 años en 2025. Las personas nacidas en 2000 pertenecen a la Generación Z. Ingresa tu fecha de nacimiento completa para ver tu edad en meses, semanas y días.</p></div>
+    <div class="faq-item"><h3>¿Cuántos años tengo si nací en 1980?</h3><p>Si naciste en 1980, cumpliste 46 años en 2026 (o los cumplirás más adelante en el año según tu fecha de nacimiento). Ingresa tu fecha exacta arriba para obtener un resultado preciso en meses, semanas y días.</p></div>
+    <div class="faq-item"><h3>¿Cuántos años tengo si nací en 1990?</h3><p>Si naciste en 1990, tienes 35 o 36 años en 2026, dependiendo de si ya pasó tu cumpleaños. Usa la calculadora con tu fecha exacta para conocer tu edad al día.</p></div>
+    <div class="faq-item"><h3>¿Cuántos años tengo si nací en 2000?</h3><p>Si naciste en 2000, cumpliste 26 años en 2026. Las personas nacidas en 2000 pertenecen a la Generación Z. Ingresa tu fecha de nacimiento completa para ver tu edad en meses, semanas y días.</p></div>
     <div class="faq-item"><h3>¿Cómo calculo mi edad exacta en días?</h3><p>Resta tu fecha de nacimiento de la fecha de hoy. Hay aproximadamente 365,25 días por año en promedio. Esta herramienta hace el cálculo al instante — ingresa tu cumpleaños y el número de días aparece directamente en los resultados.</p></div>
     <div class="faq-item"><h3>¿Cuál es mi edad si nací en un año bisiesto?</h3><p>Si naciste el 29 de febrero, tu cumpleaños cae oficialmente el 1 de marzo en los años no bisiestos en la mayoría de países. Nuestra calculadora maneja esto correctamente y cuenta tu edad con precisión cada año.</p></div>
     <div class="faq-item"><h3>¿Puedo usar esto como calculadora de edad para la jubilación?</h3><p>Sí. Usa la opción "Calcular en una fecha específica" e ingresa tu fecha de jubilación planificada. La herramienta mostrará exactamente qué edad tendrás ese día, útil para comparar con los umbrales de elegibilidad para pensiones.</p></div>
@@ -226,7 +235,8 @@
     <span class="source-lbl">Source</span>
     <a href="https://www.ssa.gov/oact/population/longevity.html" target="_blank" rel="noopener noreferrer">Administración del Seguro Social de EE. UU. – Esperanza de vida</a>
   </div>
-  <footer>© 2026 Date.tools — Calculadoras de fecha y hora gratuitas en línea</footer>
+</main>
+  <footer>© 2026 DateCalc.app — Calculadoras de fecha y hora gratuitas en línea</footer>
 </div>
 
 <script>
@@ -338,7 +348,7 @@ function calculate(){
   res.classList.remove('show');
   stopLive();
 
-  if(!d||!m||!y||d<1||d>31||m<1||m>12||y<1905||y>2025){
+  if(!d||!m||!y||d<1||d>31||m<1||m>12||y<1905||y>2026){
     err.textContent=D.errInvalid; err.classList.add('show'); return;
   }
   var bday=new Date(y,m-1,d);

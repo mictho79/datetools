@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Calculateur de jours ouvrables – Compter les jours travaillés | DateCalc.app</title>
+<meta name="robots" content="index, follow">
 <meta name="description" content="Calculez le nombre de jours ouvrables entre deux dates, ou ajoutez des jours ouvrables à une date. Exclut les week-ends.">
 <link rel="canonical" href="https://datecalc.app/fr/calculateur-jours-ouvrables/">
 <link rel="alternate" hreflang="en" href="https://datecalc.app/business-days-calculator/">
@@ -23,6 +24,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Space+Mono:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/style.css">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="shortcut icon" href="/favicon.svg">
 
@@ -118,10 +120,14 @@
 </head>
 <body>
 
+<noscript><div style="background:#c8392b;color:#fff;text-align:center;padding:.6rem;font-family:sans-serif;font-size:.9rem">This calculator requires JavaScript. Please enable it in your browser.</div></noscript>
+
+<header>
 <div class="masthead">
   <a href="/fr/calculateur-age/" class="masthead-brand">DateCalc<span>.</span>app</a>
   <div class="masthead-meta" id="todayMeta"></div>
 </div>
+</header>
 
 <div class="lang-strip">
   <a href="/business-days-calculator/" class="lang-btn">EN</a>
@@ -215,6 +221,7 @@
     </div>
   </div>
 
+  <nav aria-label="Tools">
   <div class="tool-nav">
     <div class="nav-group"><span class="nav-cat">Âge</span><div class="nav-links"><a href="/fr/calculateur-age/">Calculateur d'âge</a><span class="nav-sep">·</span><a href="/fr/age-chronologique/">Âge chronologique</a><span class="nav-sep">·</span><a href="/fr/calculateur-age-bebe/">Âge bébé</a><span class="nav-sep">·</span><a href="/fr/calculateur-age-chien/">Âge du chien</a><span class="nav-sep">·</span><a href="/fr/calculateur-age-chat/">Âge du chat</a></div></div>
     <div class="nav-group"><span class="nav-cat">Dates</span><div class="nav-links"><a href="/fr/jours-entre-deux-dates/">Jours entre deux dates</a><span class="nav-sep">·</span><a href="/fr/calculateur-date/">Calculateur de date</a><span class="nav-sep">·</span><a href="/fr/quel-jour-sommes-nous/">Quel jour sommes-nous</a><span class="nav-sep">·</span><a href="/fr/numero-semaine/">Numéro de semaine</a><span class="nav-sep">·</span><a href="/fr/calculateur-jours-ouvrables/" aria-current="page">Jours ouvrables</a></div></div>
@@ -223,7 +230,9 @@
     <div class="nav-group"><span class="nav-cat">Né en</span><div class="nav-links"><a href="/fr/ne-en-1990/">Né en 1990</a><span class="nav-sep">·</span><a href="/fr/ne-en-1980/">Né en 1980</a><span class="nav-sep">·</span><a href="/fr/ne-en-2000/">Né en 2000</a></div></div>
     <div class="nav-group"><span class="nav-cat">Calendriers</span><div class="nav-links"><a href="/fr/numero-semaine/2025/">Semaines 2025</a><span class="nav-sep">·</span><a href="/fr/numero-semaine/2026/">Semaines 2026</a><span class="nav-sep">·</span><a href="/fr/numero-semaine/2027/">Semaines 2027</a></div></div>
   </div>
+  </nav>
 
+<main>
   <div class="seo-block">
     <div><h2>Que sont les jours ouvrables ?</h2><p>Les jours ouvrables — aussi appelés jours travaillés ou jours de semaine — sont du lundi au vendredi, excluant le samedi et le dimanche. Ils constituent l'unité de temps standard utilisée dans le commerce, la banque, les procédures juridiques et l'administration gouvernementale. Lorsqu'un contrat stipule "paiement dans les 5 jours ouvrables", cela signifie 5 jours du lundi au vendredi, pas 5 jours calendaires. Les jours fériés ne sont pas automatiquement exclus par ce calculateur car ils varient selon le pays, la région et l'année. Pour un simple décompte lundi-vendredi sans jours fériés, ce calculateur est parfaitement précis. Pour exclure des jours fériés spécifiques, soustrayez-les manuellement du résultat.</p></div>
     <div><h2>Comment calculer les jours ouvrables entre deux dates</h2><p>Pour compter les jours ouvrables entre deux dates : listez chaque date de la plage du début à la fin inclus, puis ne comptez que celles qui tombent du lundi au vendredi. Ce calculateur effectue ce décompte automatiquement et affiche également le total de jours calendaires et le nombre de jours de week-end. Le mode "Ajouter des jours ouvrables" fonctionne en sens inverse : à partir d'une date, il avance d'un jour ouvrable à la fois jusqu'à atteindre le nombre cible, en sautant automatiquement tous les samedis et dimanches.</p></div>
@@ -244,7 +253,8 @@
     <span class="source-lbl">Source</span>
     <a href="https://www.dol.gov/general/aboutdol/majorlaws" target="_blank" rel="noopener noreferrer">Département du Travail des États-Unis – Jours fériés fédéraux</a>
   </div>
-  <footer>© 2026 Date.tools — Calculateurs de date et d'heure gratuits en ligne</footer>
+</main>
+  <footer>© 2026 DateCalc.app — Calculateurs de date et d'heure gratuits en ligne</footer>
 </div>
 
 <script>

@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Quel jour sommes-nous ? – Jour de la semaine pour n'importe quelle date | DateCalc.app</title>
+<meta name="robots" content="index, follow">
 <meta name="description" content="Découvrez quel jour nous sommes aujourd'hui, ou trouvez le jour de la semaine pour n'importe quelle date.">
 <link rel="canonical" href="https://datecalc.app/fr/quel-jour-sommes-nous/">
 <link rel="alternate" hreflang="en" href="https://datecalc.app/what-day-is-it-today/">
@@ -23,6 +24,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Space+Mono:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/style.css">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="shortcut icon" href="/favicon.svg">
 
@@ -118,10 +120,14 @@
 </head>
 <body>
 
+<noscript><div style="background:#c8392b;color:#fff;text-align:center;padding:.6rem;font-family:sans-serif;font-size:.9rem">This calculator requires JavaScript. Please enable it in your browser.</div></noscript>
+
+<header>
 <div class="masthead">
   <a href="/fr/calculateur-age/" class="masthead-brand">DateCalc<span>.</span>app</a>
   <div class="masthead-meta" id="todayMeta"></div>
 </div>
+</header>
 
 <div class="lang-strip">
   <a href="/what-day-is-it-today/" class="lang-btn">EN</a>
@@ -168,6 +174,7 @@
     </div>
   </div>
 
+  <nav aria-label="Tools">
   <div class="tool-nav">
     <div class="nav-group"><span class="nav-cat">Âge</span><div class="nav-links"><a href="/fr/calculateur-age/">Calculateur d'âge</a><span class="nav-sep">·</span><a href="/fr/age-chronologique/">Âge chronologique</a><span class="nav-sep">·</span><a href="/fr/calculateur-age-bebe/">Âge bébé</a><span class="nav-sep">·</span><a href="/fr/calculateur-age-chien/">Âge du chien</a><span class="nav-sep">·</span><a href="/fr/calculateur-age-chat/">Âge du chat</a></div></div>
     <div class="nav-group"><span class="nav-cat">Dates</span><div class="nav-links"><a href="/fr/jours-entre-deux-dates/">Jours entre deux dates</a><span class="nav-sep">·</span><a href="/fr/calculateur-date/">Calculateur de date</a><span class="nav-sep">·</span><a href="/fr/quel-jour-sommes-nous/" aria-current="page">Quel jour sommes-nous</a><span class="nav-sep">·</span><a href="/fr/numero-semaine/">Numéro de semaine</a><span class="nav-sep">·</span><a href="/fr/calculateur-jours-ouvrables/">Jours ouvrables</a></div></div>
@@ -176,7 +183,9 @@
     <div class="nav-group"><span class="nav-cat">Né en</span><div class="nav-links"><a href="/fr/ne-en-1990/">Né en 1990</a><span class="nav-sep">·</span><a href="/fr/ne-en-1980/">Né en 1980</a><span class="nav-sep">·</span><a href="/fr/ne-en-2000/">Né en 2000</a></div></div>
     <div class="nav-group"><span class="nav-cat">Calendriers</span><div class="nav-links"><a href="/fr/numero-semaine/2025/">Semaines 2025</a><span class="nav-sep">·</span><a href="/fr/numero-semaine/2026/">Semaines 2026</a><span class="nav-sep">·</span><a href="/fr/numero-semaine/2027/">Semaines 2027</a></div></div>
   </div>
+  </nav>
 
+<main>
   <div class="seo-block">
     <div><h2>Quel jour de la semaine est une date donnée ?</h2><p>Pour trouver le jour de la semaine d'une date, les mathématiciens ont développé plusieurs algorithmes élégants. La congruence de Zeller utilise l'arithmétique modulaire pour calculer le jour directement à partir du jour, du mois et de l'année. L'algorithme du Jugement Dernier, inventé par le mathématicien John Conway, exploite le fait que certaines dates mémorables (4/4, 6/6, 8/8, 10/10, 12/12, et d'autres) tombent toujours le même jour de la semaine dans une année donnée. Pour un usage quotidien, notre calculateur fait tout cela automatiquement : entrez n'importe quelle date de 1900 à 2100 et voyez instantanément quel jour de la semaine elle tombe.</p></div>
     <div><h2>Combien de jours y a-t-il dans chaque mois ?</h2><p>Janvier, mars, mai, juillet, août, octobre et décembre ont 31 jours. Avril, juin, septembre et novembre ont 30 jours. Février a 28 jours en année ordinaire et 29 jours en année bissextile. Une année bissextile survient tous les 4 ans, sauf les années séculaires (divisibles par 100) qui doivent aussi être divisibles par 400. Ainsi 2000 était bissextile, mais 1900 ne l'était pas. Ce cycle fait que le motif jour-semaine d'une date donnée se décale d'un ou deux jours chaque année.</p></div>
@@ -197,7 +206,8 @@
     <span class="source-lbl">Source</span>
     <a href="https://en.wikipedia.org/wiki/Gregorian_calendar" target="_blank" rel="noopener noreferrer">Wikipédia – Calendrier grégorien</a>
   </div>
-  <footer>© 2026 Date.tools — Calculateurs de date et d'heure gratuits en ligne</footer>
+</main>
+  <footer>© 2026 DateCalc.app — Calculateurs de date et d'heure gratuits en ligne</footer>
 </div>
 
 <script>

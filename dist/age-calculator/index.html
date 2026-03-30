@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Age Calculator – Find Your Exact Age | DateCalc.app</title>
+<meta name="robots" content="index, follow">
 <meta name="description" content="Free age calculator. Enter your date of birth and instantly get your exact age in years, months, weeks, days, and hours — with a live second-by-second counter.">
 <link rel="canonical" href="https://datecalc.app/age-calculator/">
 <link rel="alternate" hreflang="en" href="https://datecalc.app/age-calculator/">
@@ -23,6 +24,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Space+Mono:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/style.css">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="shortcut icon" href="/favicon.svg">
 
@@ -36,7 +38,7 @@
       "name": "How old am I if I was born in 1980?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "If you were born in 1980, you turned 45 in 2025 (or will turn 45 later in the year, depending on your birthday). Enter your exact birth date above for a precise answer including months, weeks, and days."
+        "text": "If you were born in 1980, you turned 46 in 2026 (or will turn 46 later in the year, depending on your birthday). Enter your exact birth date above for a precise answer including months, weeks, and days."
       }
     },
     {
@@ -44,7 +46,7 @@
       "name": "How old am I if I was born in 1990?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "If you were born in 1990, you are 34 or 35 years old in 2025, depending on whether your birthday has passed. Use the calculator above with your exact date to get your age to the day."
+        "text": "If you were born in 1990, you are 35 or 36 years old in 2026, depending on whether your birthday has passed. Use the calculator above with your exact date to get your age to the day."
       }
     },
     {
@@ -52,7 +54,7 @@
       "name": "How old am I if I was born in 2000?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "If you were born in 2000, you turned 25 in 2025. People born in 2000 are part of Generation Z. Enter your full birth date to see your exact age in months, weeks, and days."
+        "text": "If you were born in 2000, you turned 26 in 2026. People born in 2000 are part of Generation Z. Enter your full birth date to see your exact age in months, weeks, and days."
       }
     },
     {
@@ -118,10 +120,14 @@
 </head>
 <body>
 
+<noscript><div style="background:#c8392b;color:#fff;text-align:center;padding:.6rem;font-family:sans-serif;font-size:.9rem">This calculator requires JavaScript. Please enable it in your browser.</div></noscript>
+
+<header>
 <div class="masthead">
   <a href="/" class="masthead-brand">DateCalc<span>.</span>app</a>
   <div class="masthead-meta" id="todayMeta"></div>
 </div>
+</header>
 
 <div class="lang-strip">
   <a href="/age-calculator/" class="lang-btn active">EN</a>
@@ -145,7 +151,7 @@
         <span>/</span>
         <input type="number" id="month" placeholder="MM" min="1" max="12" inputmode="numeric" oninput="clamp(this,1,12)">
         <span>/</span>
-        <input type="number" id="year" placeholder="YYYY" min="1905" max="2025" inputmode="numeric" oninput="clamp(this,1905,2025)">
+        <input type="number" id="year" placeholder="YYYY" min="1905" max="2026" inputmode="numeric" oninput="clamp(this,1905,2026)">
       </div>
       <label class="ref-toggle-row">
         <input type="checkbox" id="refToggle" onchange="toggleRef()">
@@ -197,6 +203,7 @@
     <div class="world-when" id="worldWhen"></div>
   </div>
 
+  <nav aria-label="Tools">
   <div class="tool-nav">
     <div class="nav-group"><span class="nav-cat">Age</span><div class="nav-links"><a href="/age-calculator/" aria-current="page">Age Calculator</a><span class="nav-sep">·</span><a href="/chronological-age-calculator/">Chronological Age</a><span class="nav-sep">·</span><a href="/baby-age-calculator/">Baby Age</a><span class="nav-sep">·</span><a href="/dog-age-calculator/">Dog Age</a><span class="nav-sep">·</span><a href="/cat-age-calculator/">Cat Age</a></div></div>
     <div class="nav-group"><span class="nav-cat">Dates</span><div class="nav-links"><a href="/days-between-dates/">Days Between Dates</a><span class="nav-sep">·</span><a href="/date-calculator/">Date Calculator</a><span class="nav-sep">·</span><a href="/what-day-is-it-today/">What Day Is It</a><span class="nav-sep">·</span><a href="/week-number/">Week Number</a><span class="nav-sep">·</span><a href="/business-days-calculator/">Business Days</a></div></div>
@@ -205,16 +212,18 @@
     <div class="nav-group"><span class="nav-cat">Born In</span><div class="nav-links"><a href="/born-in-1990/">Born in 1990</a><span class="nav-sep">·</span><a href="/born-in-1980/">Born in 1980</a><span class="nav-sep">·</span><a href="/born-in-2000/">Born in 2000</a></div></div>
     <div class="nav-group"><span class="nav-cat">Calendars</span><div class="nav-links"><a href="/week-number/2025/">Week Numbers 2025</a><span class="nav-sep">·</span><a href="/week-number/2026/">Week Numbers 2026</a><span class="nav-sep">·</span><a href="/week-number/2027/">Week Numbers 2027</a></div></div>
   </div>
+  </nav>
 
+<main>
   <div class="seo-block">
     <div><h2>How is age calculated?</h2><p>Your age is calculated by subtracting your birth date from today's date, taking into account the varying lengths of each month and the extra day added during leap years. The calculation works in three steps: first it finds the number of full years elapsed, then the remaining months, and finally the remaining days. For example, someone born on July 15, 1990 turns 35 in July 2025, but before that birthday they are still 34 years, 11 months, and some days old. This tool handles all those edge cases automatically — including February 29 birthdays — and displays the result as a live counter that updates every second, reflecting the relentless passage of time.</p></div>
     <div><h2>Why calculate age to the second?</h2><p>Knowing your exact age in days, hours, or even seconds has real practical value beyond curiosity. Medical professionals use age in days for pediatric dosing calculations. Legal systems worldwide tie rights and obligations to precise age thresholds — voting at 18, retirement benefits at 62 or 65, pension eligibility, and more. Insurance underwriters use age-in-months for premium calculations. Genealogists verify historical records by cross-checking reported ages against census dates. The live second-by-second counter is also a powerful reminder that your life is always in motion — a perspective that many people find unexpectedly moving.</p></div>
   </div>
   <div class="faq-block">
     <h2>Frequently asked questions</h2>
-    <div class="faq-item"><h3>How old am I if I was born in 1980?</h3><p>If you were born in 1980, you turned 45 in 2025 (or will turn 45 later in the year, depending on your birthday). Enter your exact birth date above for a precise answer including months, weeks, and days.</p></div>
-    <div class="faq-item"><h3>How old am I if I was born in 1990?</h3><p>If you were born in 1990, you are 34 or 35 years old in 2025, depending on whether your birthday has passed. Use the calculator above with your exact date to get your age to the day.</p></div>
-    <div class="faq-item"><h3>How old am I if I was born in 2000?</h3><p>If you were born in 2000, you turned 25 in 2025. People born in 2000 are part of Generation Z. Enter your full birth date to see your exact age in months, weeks, and days.</p></div>
+    <div class="faq-item"><h3>How old am I if I was born in 1980?</h3><p>If you were born in 1980, you turned 46 in 2026 (or will turn 46 later in the year, depending on your birthday). Enter your exact birth date above for a precise answer including months, weeks, and days.</p></div>
+    <div class="faq-item"><h3>How old am I if I was born in 1990?</h3><p>If you were born in 1990, you are 35 or 36 years old in 2026, depending on whether your birthday has passed. Use the calculator above with your exact date to get your age to the day.</p></div>
+    <div class="faq-item"><h3>How old am I if I was born in 2000?</h3><p>If you were born in 2000, you turned 26 in 2026. People born in 2000 are part of Generation Z. Enter your full birth date to see your exact age in months, weeks, and days.</p></div>
     <div class="faq-item"><h3>How do I calculate my exact age in days?</h3><p>Subtract your birth date from today's date. There are about 365.25 days per year on average, accounting for leap years. This tool does the math instantly — just enter your birthday and the "Days" figure is shown directly in the results.</p></div>
     <div class="faq-item"><h3>What is my age if I was born in a leap year?</h3><p>If you were born on February 29, your birthday officially falls on March 1 in non-leap years for legal purposes in most countries. Our calculator handles this correctly and still counts your age accurately every year.</p></div>
     <div class="faq-item"><h3>Can I use this as an age calculator for retirement?</h3><p>Yes. Use the "Calculate for a specific date" option and enter your planned retirement date. The tool will show exactly how old you will be on that day — useful for comparing against Social Security eligibility ages (62, 67, or 70 in the US).</p></div>
@@ -226,7 +235,8 @@
     <span class="source-lbl">Source</span>
     <a href="https://www.ssa.gov/oact/population/longevity.html" target="_blank" rel="noopener noreferrer">U.S. Social Security Administration – Life Expectancy</a>
   </div>
-  <footer>© 2026 Date.tools — Free online date &amp; time calculators</footer>
+</main>
+  <footer>© 2026 DateCalc.app — Free online date &amp; time calculators</footer>
 </div>
 
 <script>
@@ -338,7 +348,7 @@ function calculate(){
   res.classList.remove('show');
   stopLive();
 
-  if(!d||!m||!y||d<1||d>31||m<1||m>12||y<1905||y>2025){
+  if(!d||!m||!y||d<1||d>31||m<1||m>12||y<1905||y>2026){
     err.textContent=D.errInvalid; err.classList.add('show'); return;
   }
   var bday=new Date(y,m-1,d);

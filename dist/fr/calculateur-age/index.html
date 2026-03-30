@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Calculateur d'âge – Trouvez votre âge exact | DateCalc.app</title>
+<meta name="robots" content="index, follow">
 <meta name="description" content="Calculateur d'âge gratuit. Entrez votre date de naissance et obtenez votre âge exact en années, mois, semaines, jours et heures — avec un compteur en temps réel.">
 <link rel="canonical" href="https://datecalc.app/fr/calculateur-age/">
 <link rel="alternate" hreflang="en" href="https://datecalc.app/age-calculator/">
@@ -23,6 +24,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Space+Mono:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/style.css">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="shortcut icon" href="/favicon.svg">
 
@@ -36,7 +38,7 @@
       "name": "Quel âge ai-je si je suis né en 1980 ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Si vous êtes né en 1980, vous avez eu 45 ans en 2025 (ou vous les aurez plus tard dans l'année selon votre date d'anniversaire). Entrez votre date de naissance exacte ci-dessus pour un résultat précis en mois, semaines et jours."
+        "text": "Si vous êtes né en 1980, vous avez eu 46 ans en 2026 (ou vous les aurez plus tard dans l'année selon votre date d'anniversaire). Entrez votre date de naissance exacte ci-dessus pour un résultat précis en mois, semaines et jours."
       }
     },
     {
@@ -44,7 +46,7 @@
       "name": "Quel âge ai-je si je suis né en 1990 ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Si vous êtes né en 1990, vous avez 34 ou 35 ans en 2025, selon que votre anniversaire est passé ou non. Utilisez le calculateur avec votre date exacte pour connaître votre âge au jour près."
+        "text": "Si vous êtes né en 1990, vous avez 35 ou 36 ans en 2026, selon que votre anniversaire est passé ou non. Utilisez le calculateur avec votre date exacte pour connaître votre âge au jour près."
       }
     },
     {
@@ -52,7 +54,7 @@
       "name": "Quel âge ai-je si je suis né en 2000 ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Si vous êtes né en 2000, vous avez eu 25 ans en 2025. Les personnes nées en 2000 appartiennent à la Génération Z. Entrez votre date de naissance complète pour voir votre âge en mois, semaines et jours."
+        "text": "Si vous êtes né en 2000, vous avez eu 26 ans en 2026. Les personnes nées en 2000 appartiennent à la Génération Z. Entrez votre date de naissance complète pour voir votre âge en mois, semaines et jours."
       }
     },
     {
@@ -118,10 +120,14 @@
 </head>
 <body>
 
+<noscript><div style="background:#c8392b;color:#fff;text-align:center;padding:.6rem;font-family:sans-serif;font-size:.9rem">This calculator requires JavaScript. Please enable it in your browser.</div></noscript>
+
+<header>
 <div class="masthead">
   <a href="/fr/calculateur-age/" class="masthead-brand">DateCalc<span>.</span>app</a>
   <div class="masthead-meta" id="todayMeta"></div>
 </div>
+</header>
 
 <div class="lang-strip">
   <a href="/age-calculator/" class="lang-btn">EN</a>
@@ -145,7 +151,7 @@
         <span>/</span>
         <input type="number" id="month" placeholder="MM" min="1" max="12" inputmode="numeric" oninput="clamp(this,1,12)">
         <span>/</span>
-        <input type="number" id="year" placeholder="YYYY" min="1905" max="2025" inputmode="numeric" oninput="clamp(this,1905,2025)">
+        <input type="number" id="year" placeholder="YYYY" min="1905" max="2026" inputmode="numeric" oninput="clamp(this,1905,2026)">
       </div>
       <label class="ref-toggle-row">
         <input type="checkbox" id="refToggle" onchange="toggleRef()">
@@ -197,6 +203,7 @@
     <div class="world-when" id="worldWhen"></div>
   </div>
 
+  <nav aria-label="Tools">
   <div class="tool-nav">
     <div class="nav-group"><span class="nav-cat">Âge</span><div class="nav-links"><a href="/fr/calculateur-age/" aria-current="page">Calculateur d'âge</a><span class="nav-sep">·</span><a href="/fr/age-chronologique/">Âge chronologique</a><span class="nav-sep">·</span><a href="/fr/calculateur-age-bebe/">Âge bébé</a><span class="nav-sep">·</span><a href="/fr/calculateur-age-chien/">Âge du chien</a><span class="nav-sep">·</span><a href="/fr/calculateur-age-chat/">Âge du chat</a></div></div>
     <div class="nav-group"><span class="nav-cat">Dates</span><div class="nav-links"><a href="/fr/jours-entre-deux-dates/">Jours entre deux dates</a><span class="nav-sep">·</span><a href="/fr/calculateur-date/">Calculateur de date</a><span class="nav-sep">·</span><a href="/fr/quel-jour-sommes-nous/">Quel jour sommes-nous</a><span class="nav-sep">·</span><a href="/fr/numero-semaine/">Numéro de semaine</a><span class="nav-sep">·</span><a href="/fr/calculateur-jours-ouvrables/">Jours ouvrables</a></div></div>
@@ -205,16 +212,18 @@
     <div class="nav-group"><span class="nav-cat">Né en</span><div class="nav-links"><a href="/fr/ne-en-1990/">Né en 1990</a><span class="nav-sep">·</span><a href="/fr/ne-en-1980/">Né en 1980</a><span class="nav-sep">·</span><a href="/fr/ne-en-2000/">Né en 2000</a></div></div>
     <div class="nav-group"><span class="nav-cat">Calendriers</span><div class="nav-links"><a href="/fr/numero-semaine/2025/">Semaines 2025</a><span class="nav-sep">·</span><a href="/fr/numero-semaine/2026/">Semaines 2026</a><span class="nav-sep">·</span><a href="/fr/numero-semaine/2027/">Semaines 2027</a></div></div>
   </div>
+  </nav>
 
+<main>
   <div class="seo-block">
     <div><h2>Comment calcule-t-on son âge ?</h2><p>L'âge se calcule en soustrayant la date de naissance de la date actuelle, en tenant compte de la longueur variable de chaque mois et du jour supplémentaire des années bissextiles. Le calcul se fait en trois étapes : d'abord le nombre d'années complètes écoulées, puis les mois restants, et enfin les jours restants. Par exemple, une personne née le 15 juillet 1990 fête ses 35 ans en juillet 2025, mais avant cet anniversaire elle a encore 34 ans, 11 mois et quelques jours. Cet outil gère tous ces cas particuliers automatiquement — y compris les anniversaires du 29 février — et affiche le résultat sous forme de compteur en direct mis à jour chaque seconde.</p></div>
     <div><h2>Pourquoi calculer son âge à la seconde ?</h2><p>Connaître son âge exact en jours, heures ou même en secondes a une vraie valeur pratique au-delà de la simple curiosité. Les médecins utilisent l'âge en jours pour les calculs pédiatriques. Les systèmes juridiques lient les droits à des seuils d'âge précis — vote à 18 ans, retraite à 62 ou 65 ans, éligibilité aux pensions. Les assureurs utilisent l'âge en mois pour calculer les primes. Les généalogistes vérifient les archives historiques en croisant les âges déclarés avec les dates de recensement. Le compteur seconde par seconde rappelle aussi que la vie est toujours en mouvement.</p></div>
   </div>
   <div class="faq-block">
     <h2>Questions fréquentes</h2>
-    <div class="faq-item"><h3>Quel âge ai-je si je suis né en 1980 ?</h3><p>Si vous êtes né en 1980, vous avez eu 45 ans en 2025 (ou vous les aurez plus tard dans l'année selon votre date d'anniversaire). Entrez votre date de naissance exacte ci-dessus pour un résultat précis en mois, semaines et jours.</p></div>
-    <div class="faq-item"><h3>Quel âge ai-je si je suis né en 1990 ?</h3><p>Si vous êtes né en 1990, vous avez 34 ou 35 ans en 2025, selon que votre anniversaire est passé ou non. Utilisez le calculateur avec votre date exacte pour connaître votre âge au jour près.</p></div>
-    <div class="faq-item"><h3>Quel âge ai-je si je suis né en 2000 ?</h3><p>Si vous êtes né en 2000, vous avez eu 25 ans en 2025. Les personnes nées en 2000 appartiennent à la Génération Z. Entrez votre date de naissance complète pour voir votre âge en mois, semaines et jours.</p></div>
+    <div class="faq-item"><h3>Quel âge ai-je si je suis né en 1980 ?</h3><p>Si vous êtes né en 1980, vous avez eu 46 ans en 2026 (ou vous les aurez plus tard dans l'année selon votre date d'anniversaire). Entrez votre date de naissance exacte ci-dessus pour un résultat précis en mois, semaines et jours.</p></div>
+    <div class="faq-item"><h3>Quel âge ai-je si je suis né en 1990 ?</h3><p>Si vous êtes né en 1990, vous avez 35 ou 36 ans en 2026, selon que votre anniversaire est passé ou non. Utilisez le calculateur avec votre date exacte pour connaître votre âge au jour près.</p></div>
+    <div class="faq-item"><h3>Quel âge ai-je si je suis né en 2000 ?</h3><p>Si vous êtes né en 2000, vous avez eu 26 ans en 2026. Les personnes nées en 2000 appartiennent à la Génération Z. Entrez votre date de naissance complète pour voir votre âge en mois, semaines et jours.</p></div>
     <div class="faq-item"><h3>Comment calculer mon âge exact en jours ?</h3><p>Soustrayez votre date de naissance d'aujourd'hui. Il y a environ 365,25 jours par an en moyenne. Cet outil fait le calcul instantanément — entrez votre anniversaire et le nombre de jours apparaît directement dans les résultats.</p></div>
     <div class="faq-item"><h3>Quel est mon âge si je suis né une année bissextile ?</h3><p>Si vous êtes né le 29 février, votre anniversaire tombe officiellement le 1er mars les années non bissextiles dans la plupart des pays. Notre calculateur gère cela correctement et compte votre âge avec précision chaque année.</p></div>
     <div class="faq-item"><h3>Puis-je utiliser cet outil comme calculateur d'âge pour la retraite ?</h3><p>Oui. Utilisez l'option "Calculer à une date précise" et entrez votre date de départ à la retraite prévue. L'outil affichera exactement quel âge vous aurez ce jour-là, utile pour comparer avec les seuils d'éligibilité aux pensions.</p></div>
@@ -226,7 +235,8 @@
     <span class="source-lbl">Source</span>
     <a href="https://www.ssa.gov/oact/population/longevity.html" target="_blank" rel="noopener noreferrer">Administration de la sécurité sociale américaine – Espérance de vie</a>
   </div>
-  <footer>© 2026 Date.tools — Calculateurs de date et d'heure gratuits en ligne</footer>
+</main>
+  <footer>© 2026 DateCalc.app — Calculateurs de date et d'heure gratuits en ligne</footer>
 </div>
 
 <script>
@@ -338,7 +348,7 @@ function calculate(){
   res.classList.remove('show');
   stopLive();
 
-  if(!d||!m||!y||d<1||d>31||m<1||m>12||y<1905||y>2025){
+  if(!d||!m||!y||d<1||d>31||m<1||m>12||y<1905||y>2026){
     err.textContent=D.errInvalid; err.classList.add('show'); return;
   }
   var bday=new Date(y,m-1,d);

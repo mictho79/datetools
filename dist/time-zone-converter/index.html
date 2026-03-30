@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Time Zone Converter – Convert Time Between Any Two Time Zones | DateCalc.app</title>
+<meta name="robots" content="index, follow">
 <meta name="description" content="Convert time between any two time zones instantly. Supports 25+ zones including UTC. Shows local time, UTC offset, and time difference.">
 <link rel="canonical" href="https://datecalc.app/time-zone-converter/">
 <link rel="alternate" hreflang="en" href="https://datecalc.app/time-zone-converter/">
@@ -23,6 +24,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Space+Mono:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/style.css">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="shortcut icon" href="/favicon.svg">
 
@@ -118,10 +120,14 @@
 </head>
 <body>
 
+<noscript><div style="background:#c8392b;color:#fff;text-align:center;padding:.6rem;font-family:sans-serif;font-size:.9rem">This calculator requires JavaScript. Please enable it in your browser.</div></noscript>
+
+<header>
 <div class="masthead">
   <a href="/" class="masthead-brand">DateCalc<span>.</span>app</a>
   <div class="masthead-meta" id="todayMeta"></div>
 </div>
+</header>
 
 <div class="lang-strip">
   <a href="/time-zone-converter/" class="lang-btn active">EN</a>
@@ -234,6 +240,7 @@
     </div>
   </div>
 
+  <nav aria-label="Tools">
   <div class="tool-nav">
     <div class="nav-group"><span class="nav-cat">Age</span><div class="nav-links"><a href="/age-calculator/">Age Calculator</a><span class="nav-sep">·</span><a href="/chronological-age-calculator/">Chronological Age</a><span class="nav-sep">·</span><a href="/baby-age-calculator/">Baby Age</a><span class="nav-sep">·</span><a href="/dog-age-calculator/">Dog Age</a><span class="nav-sep">·</span><a href="/cat-age-calculator/">Cat Age</a></div></div>
     <div class="nav-group"><span class="nav-cat">Dates</span><div class="nav-links"><a href="/days-between-dates/">Days Between Dates</a><span class="nav-sep">·</span><a href="/date-calculator/">Date Calculator</a><span class="nav-sep">·</span><a href="/what-day-is-it-today/">What Day Is It</a><span class="nav-sep">·</span><a href="/week-number/">Week Number</a><span class="nav-sep">·</span><a href="/business-days-calculator/">Business Days</a></div></div>
@@ -242,7 +249,9 @@
     <div class="nav-group"><span class="nav-cat">Born In</span><div class="nav-links"><a href="/born-in-1990/">Born in 1990</a><span class="nav-sep">·</span><a href="/born-in-1980/">Born in 1980</a><span class="nav-sep">·</span><a href="/born-in-2000/">Born in 2000</a></div></div>
     <div class="nav-group"><span class="nav-cat">Calendars</span><div class="nav-links"><a href="/week-number/2025/">Week Numbers 2025</a><span class="nav-sep">·</span><a href="/week-number/2026/">Week Numbers 2026</a><span class="nav-sep">·</span><a href="/week-number/2027/">Week Numbers 2027</a></div></div>
   </div>
+  </nav>
 
+<main>
   <div class="seo-block">
     <div><h2>How do time zones work?</h2><p>The world is divided into 24 primary time zones, each roughly 15 degrees of longitude apart — the angular distance the Earth rotates in one hour. Most zones are offset from Coordinated Universal Time (UTC) by a whole number of hours, but some countries use fractional offsets: India is UTC+5:30, Nepal is UTC+5:45, and Iran is UTC+3:30. The IANA Time Zone Database (also called the tz database or zoneinfo) is the authoritative global standard for time zone definitions, maintained by the Internet Assigned Numbers Authority. It covers every historical and current time zone rule change for every region on Earth. When you convert a time using this tool, the correct UTC offset for the specific date you enter is used — meaning daylight saving time transitions are handled automatically. DST shifts clocks forward by one hour in spring and back in autumn in over 70 countries, though the exact dates vary by region.</p></div>
     <div><h2>What is UTC offset?</h2><p>UTC offset is the signed difference between a specific time zone and Coordinated Universal Time (UTC), the successor to Greenwich Mean Time (GMT). For example, New York in winter is UTC−5 (Eastern Standard Time), meaning clocks there read 5 hours behind UTC. During daylight saving time it becomes UTC−4 (Eastern Daylight Time). London in winter is UTC+0 (GMT) and UTC+1 in summer (BST). Paris is UTC+1 in winter (CET) and UTC+2 in summer (CEST). The key difference between UTC and GMT is that UTC is a time standard based on atomic clocks and is never adjusted for daylight saving, while GMT is technically a time zone. In everyday use, UTC and GMT are effectively identical. This converter always uses the DST-aware UTC offset for the exact date you enter.</p></div>
@@ -263,7 +272,8 @@
     <span class="source-lbl">Source</span>
     <a href="https://www.iana.org/time-zones" target="_blank" rel="noopener noreferrer">IANA Time Zone Database</a>
   </div>
-  <footer>© 2026 Date.tools — Free online date &amp; time calculators</footer>
+</main>
+  <footer>© 2026 DateCalc.app — Free online date &amp; time calculators</footer>
 </div>
 
 <script>

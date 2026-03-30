@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>What Day Is It Today? – Day of Week for Any Date | DateCalc.app</title>
+<meta name="robots" content="index, follow">
 <meta name="description" content="Find out what day it is today, or look up the day of the week for any date. Shows day number, week number, and days remaining in the year.">
 <link rel="canonical" href="https://datecalc.app/what-day-is-it-today/">
 <link rel="alternate" hreflang="en" href="https://datecalc.app/what-day-is-it-today/">
@@ -23,6 +24,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Space+Mono:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/style.css">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="shortcut icon" href="/favicon.svg">
 
@@ -118,10 +120,14 @@
 </head>
 <body>
 
+<noscript><div style="background:#c8392b;color:#fff;text-align:center;padding:.6rem;font-family:sans-serif;font-size:.9rem">This calculator requires JavaScript. Please enable it in your browser.</div></noscript>
+
+<header>
 <div class="masthead">
   <a href="/" class="masthead-brand">DateCalc<span>.</span>app</a>
   <div class="masthead-meta" id="todayMeta"></div>
 </div>
+</header>
 
 <div class="lang-strip">
   <a href="/what-day-is-it-today/" class="lang-btn active">EN</a>
@@ -168,6 +174,7 @@
     </div>
   </div>
 
+  <nav aria-label="Tools">
   <div class="tool-nav">
     <div class="nav-group"><span class="nav-cat">Age</span><div class="nav-links"><a href="/age-calculator/">Age Calculator</a><span class="nav-sep">·</span><a href="/chronological-age-calculator/">Chronological Age</a><span class="nav-sep">·</span><a href="/baby-age-calculator/">Baby Age</a><span class="nav-sep">·</span><a href="/dog-age-calculator/">Dog Age</a><span class="nav-sep">·</span><a href="/cat-age-calculator/">Cat Age</a></div></div>
     <div class="nav-group"><span class="nav-cat">Dates</span><div class="nav-links"><a href="/days-between-dates/">Days Between Dates</a><span class="nav-sep">·</span><a href="/date-calculator/">Date Calculator</a><span class="nav-sep">·</span><a href="/what-day-is-it-today/" aria-current="page">What Day Is It</a><span class="nav-sep">·</span><a href="/week-number/">Week Number</a><span class="nav-sep">·</span><a href="/business-days-calculator/">Business Days</a></div></div>
@@ -176,7 +183,9 @@
     <div class="nav-group"><span class="nav-cat">Born In</span><div class="nav-links"><a href="/born-in-1990/">Born in 1990</a><span class="nav-sep">·</span><a href="/born-in-1980/">Born in 1980</a><span class="nav-sep">·</span><a href="/born-in-2000/">Born in 2000</a></div></div>
     <div class="nav-group"><span class="nav-cat">Calendars</span><div class="nav-links"><a href="/week-number/2025/">Week Numbers 2025</a><span class="nav-sep">·</span><a href="/week-number/2026/">Week Numbers 2026</a><span class="nav-sep">·</span><a href="/week-number/2027/">Week Numbers 2027</a></div></div>
   </div>
+  </nav>
 
+<main>
   <div class="seo-block">
     <div><h2>What day of the week is a given date?</h2><p>To find the day of the week for any date, mathematicians have developed several elegant algorithms. Zeller's congruence uses modular arithmetic to compute the day directly from the day, month, and year values. The Doomsday algorithm, invented by mathematician John Conway, exploits the fact that certain memorable dates (4/4, 6/6, 8/8, 10/10, 12/12, and others) always fall on the same day of the week within a given year — making mental calendar calculations possible. For everyday use, our calculator does all of this automatically: just enter any date from 1900 to 2100 and instantly see which day of the week it falls on, along with the ISO week number, the day of the year, and how many days remain in the year.</p></div>
     <div><h2>How many days are in each month?</h2><p>January, March, May, July, August, October, and December have 31 days. April, June, September, and November have 30 days. February has 28 days in a regular year and 29 days in a leap year. A leap year occurs in every year divisible by 4, except for century years (divisible by 100) which must also be divisible by 400 to be leap years. So 2000 was a leap year, but 1900 was not. This cycle means the day-of-week pattern for any given date shifts by one or two days each year, which is why the same date falls on a different weekday year after year.</p></div>
@@ -197,7 +206,8 @@
     <span class="source-lbl">Source</span>
     <a href="https://en.wikipedia.org/wiki/Gregorian_calendar" target="_blank" rel="noopener noreferrer">Wikipedia – Gregorian Calendar</a>
   </div>
-  <footer>© 2026 Date.tools — Free online date &amp; time calculators</footer>
+</main>
+  <footer>© 2026 DateCalc.app — Free online date &amp; time calculators</footer>
 </div>
 
 <script>

@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Número de semana – ¿En qué semana estamos? | DateCalc.app</title>
+<meta name="robots" content="index, follow">
 <meta name="description" content="Encuentra el número de semana ISO para hoy o cualquier fecha. Muestra el primer y último día de la semana, días restantes en el año y más.">
 <link rel="canonical" href="https://datecalc.app/es/numero-semana/">
 <link rel="alternate" hreflang="en" href="https://datecalc.app/week-number/">
@@ -23,6 +24,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Space+Mono:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/style.css">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="shortcut icon" href="/favicon.svg">
 
@@ -118,10 +120,14 @@
 </head>
 <body>
 
+<noscript><div style="background:#c8392b;color:#fff;text-align:center;padding:.6rem;font-family:sans-serif;font-size:.9rem">This calculator requires JavaScript. Please enable it in your browser.</div></noscript>
+
+<header>
 <div class="masthead">
   <a href="/es/calculadora-edad/" class="masthead-brand">DateCalc<span>.</span>app</a>
   <div class="masthead-meta" id="todayMeta"></div>
 </div>
+</header>
 
 <div class="lang-strip">
   <a href="/week-number/" class="lang-btn">EN</a>
@@ -169,6 +175,7 @@
     </div>
   </div>
 
+  <nav aria-label="Tools">
   <div class="tool-nav">
     <div class="nav-group"><span class="nav-cat">Edad</span><div class="nav-links"><a href="/es/calculadora-edad/">Calculadora de edad</a><span class="nav-sep">·</span><a href="/es/edad-cronologica/">Edad cronológica</a><span class="nav-sep">·</span><a href="/es/calculadora-edad-bebe/">Edad del bebé</a><span class="nav-sep">·</span><a href="/es/calculadora-edad-perro/">Edad del perro</a><span class="nav-sep">·</span><a href="/es/calculadora-edad-gato/">Edad del gato</a></div></div>
     <div class="nav-group"><span class="nav-cat">Fechas</span><div class="nav-links"><a href="/es/dias-entre-fechas/">Días entre fechas</a><span class="nav-sep">·</span><a href="/es/calculadora-fechas/">Calculadora de fechas</a><span class="nav-sep">·</span><a href="/es/que-dia-es-hoy/">¿Qué día es hoy?</a><span class="nav-sep">·</span><a href="/es/numero-semana/" aria-current="page">Número de semana</a><span class="nav-sep">·</span><a href="/es/calculadora-dias-habiles/">Días hábiles</a></div></div>
@@ -177,7 +184,9 @@
     <div class="nav-group"><span class="nav-cat">Nacido en</span><div class="nav-links"><a href="/es/nacido-en-1990/">Nacido en 1990</a><span class="nav-sep">·</span><a href="/es/nacido-en-1980/">Nacido en 1980</a><span class="nav-sep">·</span><a href="/es/nacido-en-2000/">Nacido en 2000</a></div></div>
     <div class="nav-group"><span class="nav-cat">Calendarios</span><div class="nav-links"><a href="/es/numero-semana/2025/">Semanas 2025</a><span class="nav-sep">·</span><a href="/es/numero-semana/2026/">Semanas 2026</a><span class="nav-sep">·</span><a href="/es/numero-semana/2027/">Semanas 2027</a></div></div>
   </div>
+  </nav>
 
+<main>
   <div class="seo-block">
     <div><h2>¿Qué es un número de semana ISO?</h2><p>ISO 8601 define un sistema estandarizado para numerar las semanas dentro de un año. La semana 1 es la que contiene el primer jueves del año, y las semanas siempre van de lunes a domingo. Esta regla significa que la semana 1 de un año nuevo puede comenzar a finales de diciembre del año anterior — e inversamente, los últimos días de diciembre pueden pertenecer a la semana 1 del año siguiente. El 28 de diciembre siempre está en la última semana de su año ISO. Este sistema es ampliamente usado en empresas europeas, logística, manufactura y gestión de proyectos para crear referencias de semana sin ambigüedad.</p></div>
     <div><h2>¿Cuándo comienza la semana 1?</h2><p>La semana ISO 1 comienza el lunes de la semana que contiene el 4 de enero del nuevo año. Una forma más sencilla de recordarlo: la semana 1 es la primera semana del año que tiene al menos cuatro días cayendo en enero. Debido a esta regla, los años pueden tener 52 o 53 semanas ISO. Un año tiene 53 semanas cuando el 1 de enero cae en jueves (o en miércoles en año bisiesto). El sistema de numeración de semanas usado en Estados Unidos difiere del ISO: el sistema estadounidense cuenta el domingo como el primer día de la semana y la semana 1 como la que contiene el 1 de enero.</p></div>
@@ -198,7 +207,8 @@
     <span class="source-lbl">Source</span>
     <a href="https://www.iso.org/iso-8601-date-and-time-format.html" target="_blank" rel="noopener noreferrer">ISO 8601 – Estándar de numeración de semanas</a>
   </div>
-  <footer>© 2026 Date.tools — Calculadoras de fecha y hora gratuitas en línea</footer>
+</main>
+  <footer>© 2026 DateCalc.app — Calculadoras de fecha y hora gratuitas en línea</footer>
 </div>
 
 <script>

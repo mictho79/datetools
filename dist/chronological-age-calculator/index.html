@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Chronological Age Calculator – Exact Age in Years, Months & Days | DateCalc.app</title>
+<meta name="robots" content="index, follow">
 <meta name="description" content="Calculate chronological age from date of birth to any reference date. Get exact age in years, months, weeks, days and hours — used in medical, educational and developmental contexts.">
 <link rel="canonical" href="https://datecalc.app/chronological-age-calculator/">
 <link rel="alternate" hreflang="en" href="https://datecalc.app/chronological-age-calculator/">
@@ -23,6 +24,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Space+Mono:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/style.css">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="shortcut icon" href="/favicon.svg">
 
@@ -118,10 +120,14 @@
 </head>
 <body>
 
+<noscript><div style="background:#c8392b;color:#fff;text-align:center;padding:.6rem;font-family:sans-serif;font-size:.9rem">This calculator requires JavaScript. Please enable it in your browser.</div></noscript>
+
+<header>
 <div class="masthead">
   <a href="/" class="masthead-brand">DateCalc<span>.</span>app</a>
   <div class="masthead-meta" id="todayMeta"></div>
 </div>
+</header>
 
 <div class="lang-strip">
   <a href="/chronological-age-calculator/" class="lang-btn active">EN</a>
@@ -185,6 +191,7 @@
     <div class="bday-banner" id="bdayBanner"></div>
   </div>
 
+  <nav aria-label="Tools">
   <div class="tool-nav">
     <div class="nav-group"><span class="nav-cat">Age</span><div class="nav-links"><a href="/age-calculator/">Age Calculator</a><span class="nav-sep">·</span><a href="/chronological-age-calculator/" aria-current="page">Chronological Age</a><span class="nav-sep">·</span><a href="/baby-age-calculator/">Baby Age</a><span class="nav-sep">·</span><a href="/dog-age-calculator/">Dog Age</a><span class="nav-sep">·</span><a href="/cat-age-calculator/">Cat Age</a></div></div>
     <div class="nav-group"><span class="nav-cat">Dates</span><div class="nav-links"><a href="/days-between-dates/">Days Between Dates</a><span class="nav-sep">·</span><a href="/date-calculator/">Date Calculator</a><span class="nav-sep">·</span><a href="/what-day-is-it-today/">What Day Is It</a><span class="nav-sep">·</span><a href="/week-number/">Week Number</a><span class="nav-sep">·</span><a href="/business-days-calculator/">Business Days</a></div></div>
@@ -193,7 +200,9 @@
     <div class="nav-group"><span class="nav-cat">Born In</span><div class="nav-links"><a href="/born-in-1990/">Born in 1990</a><span class="nav-sep">·</span><a href="/born-in-1980/">Born in 1980</a><span class="nav-sep">·</span><a href="/born-in-2000/">Born in 2000</a></div></div>
     <div class="nav-group"><span class="nav-cat">Calendars</span><div class="nav-links"><a href="/week-number/2025/">Week Numbers 2025</a><span class="nav-sep">·</span><a href="/week-number/2026/">Week Numbers 2026</a><span class="nav-sep">·</span><a href="/week-number/2027/">Week Numbers 2027</a></div></div>
   </div>
+  </nav>
 
+<main>
   <div class="seo-block">
     <div><h2>What is chronological age?</h2><p>Chronological age is the precise amount of time that has elapsed since a person's birth, expressed in years, months, and days. It is the most objective measure of age because it is based purely on elapsed calendar time, with no inference about physical condition, cognitive ability, or maturity. Chronological age is used across many contexts: pediatricians use it to compare a child's development against standard milestone charts; schools use it to determine enrollment eligibility (for example, many states require a child to be 5 years old by September 1 to start kindergarten); psychologists use it as the denominator when calculating IQ ratios; insurers use it to determine risk categories and premium rates; and legal systems use it to define majority, consent, and criminal responsibility. Unlike biological age or mental age, chronological age is entirely objective and universally agreed upon.</p></div>
     <div><h2>How to calculate chronological age</h2><p>To calculate chronological age accurately, subtract the date of birth from the reference date using a three-step process. First, subtract the birth day from the reference day — if the result is negative, borrow days from the previous month. Second, subtract the birth month from the reference month — if negative, borrow 12 months and subtract 1 from the year. Third, subtract the birth year. For example: a child born March 15, 2018, assessed October 20, 2025. Days: 20 − 15 = 5 days. Months: 10 − 3 = 7 months. Years: 2025 − 2018 = 7 years. Result: 7 years, 7 months, 5 days. This calculator handles all edge cases automatically, including month-end borrowing, leap years, and any reference date from the past, present, or future.</p></div>
@@ -214,7 +223,8 @@
     <span class="source-lbl">Source</span>
     <a href="https://www.apa.org/topics/cognitive-development" target="_blank" rel="noopener noreferrer">American Psychological Association – Cognitive Development</a>
   </div>
-  <footer>© 2026 Date.tools — Free online date &amp; time calculators</footer>
+</main>
+  <footer>© 2026 DateCalc.app — Free online date &amp; time calculators</footer>
 </div>
 
 <script>
