@@ -183,7 +183,7 @@ ${JSON.stringify({
   "@type": "WebApplication",
   "name": title.split(' –')[0].split(' |')[0],
   "description": metaDesc,
-  "url": `https://date.tools${canonical}`,
+  "url": `https://datecalc.app${canonical}`,
   "applicationCategory": "UtilitiesApplication",
   "operatingSystem": "Web",
   "browserRequirements": "Requires JavaScript",
@@ -216,21 +216,21 @@ ${JSON.stringify({
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>${title}</title>
 <meta name="description" content="${metaDesc}">
-<link rel="canonical" href="https://date.tools${canonical}">
-<link rel="alternate" hreflang="en" href="https://date.tools${hreflang.en}">
-<link rel="alternate" hreflang="fr" href="https://date.tools${hreflang.fr}">
-<link rel="alternate" hreflang="es" href="https://date.tools${hreflang.es}">
-<link rel="alternate" hreflang="x-default" href="https://date.tools${hreflang.en}">
+<link rel="canonical" href="https://datecalc.app${canonical}">
+<link rel="alternate" hreflang="en" href="https://datecalc.app${hreflang.en}">
+<link rel="alternate" hreflang="fr" href="https://datecalc.app${hreflang.fr}">
+<link rel="alternate" hreflang="es" href="https://datecalc.app${hreflang.es}">
+<link rel="alternate" hreflang="x-default" href="https://datecalc.app${hreflang.en}">
 <meta property="og:type" content="website">
 <meta property="og:title" content="${title}">
 <meta property="og:description" content="${metaDesc}">
-<meta property="og:url" content="https://date.tools${canonical}">
-<meta property="og:site_name" content="Date.tools">
-<meta property="og:image" content="https://date.tools/og.png">
+<meta property="og:url" content="https://datecalc.app${canonical}">
+<meta property="og:site_name" content="DateCalc.app">
+<meta property="og:image" content="https://datecalc.app/og.png">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="${title}">
 <meta name="twitter:description" content="${metaDesc}">
-<meta name="twitter:image" content="https://date.tools/og.png">
+<meta name="twitter:image" content="https://datecalc.app/og.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Space+Mono:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/style.css">
@@ -370,7 +370,7 @@ const today = new Date().toISOString().split('T')[0];
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${allSlugs.map(s => `  <url>
-    <loc>https://date.tools${s}</loc>
+    <loc>https://datecalc.app${s}</loc>
     <lastmod>${today}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>${s === '/' ? '1.0' : '0.8'}</priority>
@@ -380,6 +380,6 @@ fs.writeFileSync(path.join(DIST, 'sitemap.xml'), sitemap, 'utf8');
 console.log('  ✓ /sitemap.xml');
 
 // ── ROBOTS.TXT ────────────────────────────────────────────
-const robots = `User-agent: *\nAllow: /\nSitemap: https://date.tools/sitemap.xml\n`;
+const robots = `User-agent: *\nAllow: /\nSitemap: https://datecalc.app/sitemap.xml\n`;
 fs.writeFileSync(path.join(DIST, 'robots.txt'), robots, 'utf8');
 console.log('  ✓ /robots.txt');
