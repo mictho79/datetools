@@ -113,6 +113,15 @@
   }
 }
 </script>
+<script>
+(function(){
+  if(sessionStorage.getItem('lang-redirected')) return;
+  sessionStorage.setItem('lang-redirected','1');
+  var l=(navigator.language||navigator.userLanguage||'').toLowerCase();
+  if(l.startsWith('fr')) window.location.replace('/fr/calculateur-age/');
+  else if(l.startsWith('es')) window.location.replace('/es/calculadora-edad/');
+})();
+</script>
 </head>
 <body>
 

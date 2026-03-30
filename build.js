@@ -325,7 +325,17 @@ for (const tool of tools) {
       count++;
 
       if (page.isHomepage && lang === 'en') {
-        writePage('index.html', html);
+        // Inject lang-detect snippet into homepage only
+        const langDetect = `<script>
+(function(){
+  if(sessionStorage.getItem('lang-redirected')) return;
+  sessionStorage.setItem('lang-redirected','1');
+  var l=(navigator.language||navigator.userLanguage||'').toLowerCase();
+  if(l.startsWith('fr')) window.location.replace('/fr/calculateur-age/');
+  else if(l.startsWith('es')) window.location.replace('/es/calculadora-edad/');
+})();
+</script>`;
+        writePage('index.html', html.replace('</head>', langDetect + '\n</head>'));
       }
     }
   }
@@ -335,27 +345,15 @@ console.log(`\nBuilt ${count} pages → dist/`);
 
 // ── REDIRECTS ─────────────────────────────────────────────
 const REDIRECTS = [
-  { from: 'how-old-am-i',          to: '/age-calculator/' },
-  { from: 'fr/quel-age-ai-je',     to: '/fr/calculateur-age/' },
-  { from: 'es/que-edad-tengo',     to: '/es/calculadora-edad/' },
+  { from: '/how-old-am-i/*',      to: '/age-calculator/' },
+  { from: '/fr/quel-age-ai-je/*', to: '/fr/calculateur-age/' },
+  { from: '/es/que-edad-tengo/*', to: '/es/calculadora-edad/' },
 ];
 
-for (const r of REDIRECTS) {
-  const html = `<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Redirecting…</title>
-<link rel="canonical" href="https://date.tools${r.to}">
-<meta http-equiv="refresh" content="0; url=${r.to}">
-<script>window.location.replace("${r.to}");</script>
-</head>
-<body>
-<p>Redirecting to <a href="${r.to}">${r.to}</a>…</p>
-</body>
-</html>`;
-  writePage(`${r.from}/index.html`, html);
-}
+// Cloudflare Pages _redirects file (301)
+const redirectsFile = REDIRECTS.map(r => `${r.from} ${r.to} 301`).join('\n') + '\n';
+fs.writeFileSync(path.join(DIST, '_redirects'), redirectsFile, 'utf8');
+console.log('  ✓ /_redirects');
 
 // ── SITEMAP ───────────────────────────────────────────────
 const allSlugs = [];
