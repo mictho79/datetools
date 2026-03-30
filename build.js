@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const zlib = require('zlib');
 
 const tools = [
   require('./src/tools/age'),
@@ -396,3 +397,80 @@ console.log('  ✓ /sitemap.xml');
 const robots = `User-agent: *\nAllow: /\nSitemap: https://datecalc.app/sitemap.xml\n`;
 fs.writeFileSync(path.join(DIST, 'robots.txt'), robots, 'utf8');
 console.log('  ✓ /robots.txt');
+
+// ── OG IMAGE ──────────────────────────────────────────────
+(function buildOGImage() {
+  const W = 1200, H = 630;
+
+  function crc32(buf) {
+    const t = new Uint32Array(256);
+    for (let n = 0; n < 256; n++) {
+      let c = n;
+      for (let k = 0; k < 8; k++) c = c & 1 ? 0xEDB88320 ^ (c >>> 1) : c >>> 1;
+      t[n] = c;
+    }
+    let c = 0xFFFFFFFF;
+    for (let i = 0; i < buf.length; i++) c = t[(c ^ buf[i]) & 0xFF] ^ (c >>> 8);
+    return (c ^ 0xFFFFFFFF) >>> 0;
+  }
+  function mkchunk(type, data) {
+    const tb = Buffer.from(type, 'ascii');
+    const lb = Buffer.allocUnsafe(4); lb.writeUInt32BE(data.length);
+    const cd = Buffer.concat([tb, data]);
+    const cb = Buffer.allocUnsafe(4); cb.writeUInt32BE(crc32(cd));
+    return Buffer.concat([lb, cd, cb]);
+  }
+
+  const ihdr = Buffer.allocUnsafe(13);
+  ihdr.writeUInt32BE(W, 0); ihdr.writeUInt32BE(H, 4);
+  ihdr[8] = 8; ihdr[9] = 2; ihdr[10] = ihdr[11] = ihdr[12] = 0;
+
+  const rowLen = 1 + W * 3;
+  const raw = Buffer.allocUnsafe(H * rowLen);
+  for (let y = 0; y < H; y++) raw[y * rowLen] = 0; // filter bytes
+
+  function rect(x1, y1, x2, y2, r, g, b) {
+    for (let y = y1; y < y2; y++)
+      for (let x = x1; x < x2; x++) {
+        const o = y * rowLen + 1 + x * 3;
+        raw[o] = r; raw[o + 1] = g; raw[o + 2] = b;
+      }
+  }
+
+  // Cream background
+  rect(0, 0, W, H, 0xf5, 0xf2, 0xeb);
+  // Red top stripe
+  rect(0, 0, W, 72, 0xc8, 0x39, 0x2b);
+  // Thin dark separator
+  rect(0, 72, W, 76, 0x11, 0x11, 0x11);
+  // Calendar: dark border
+  rect(344, 148, 856, 486, 0x11, 0x11, 0x11);
+  // Calendar: white body
+  rect(350, 154, 850, 480, 0xff, 0xff, 0xff);
+  // Calendar: red header
+  rect(350, 154, 850, 234, 0xc8, 0x39, 0x2b);
+  // Calendar: ring left (dark outer, white inner)
+  rect(412, 140, 434, 174, 0x11, 0x11, 0x11);
+  rect(417, 145, 429, 169, 0xf5, 0xf2, 0xeb);
+  // Calendar: ring right
+  rect(766, 140, 788, 174, 0x11, 0x11, 0x11);
+  rect(771, 145, 783, 169, 0xf5, 0xf2, 0xeb);
+  // Grid horizontal lines
+  rect(350, 295, 850, 298, 0xde, 0xda, 0xd3);
+  rect(350, 356, 850, 359, 0xde, 0xda, 0xd3);
+  rect(350, 417, 850, 420, 0xde, 0xda, 0xd3);
+  // Grid vertical lines
+  rect(433, 234, 436, 480, 0xde, 0xda, 0xd3);
+  rect(516, 234, 519, 480, 0xde, 0xda, 0xd3);
+  rect(599, 234, 602, 480, 0xde, 0xda, 0xd3);
+  rect(682, 234, 685, 480, 0xde, 0xda, 0xd3);
+  rect(765, 234, 768, 480, 0xde, 0xda, 0xd3);
+
+  const idat = zlib.deflateSync(raw, { level: 6 });
+  const png = Buffer.concat([
+    Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]),
+    mkchunk('IHDR', ihdr), mkchunk('IDAT', idat), mkchunk('IEND', Buffer.alloc(0))
+  ]);
+  fs.writeFileSync(path.join(DIST, 'og.png'), png);
+  console.log('  ✓ /og.png');
+})();
