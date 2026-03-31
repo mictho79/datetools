@@ -13,6 +13,7 @@ const T = {
     refToggleLabel: 'Calculate for a specific date',
     refLabel: 'Reference date',
     calcBtn: '→ Calculate',
+    ariaDay: 'Day', ariaMonth: 'Month', ariaYear: 'Year',
     tipText: '"Knowing your exact age, down to the second, is stranger and more beautiful than you think."',
     examples: ['Born July 15, 1990', 'Born January 1, 2000', 'Born December 25, 1985'],
     resultsHeader: 'Your exact age',
@@ -58,6 +59,7 @@ const T = {
     refToggleLabel: 'Calculer à une date précise',
     refLabel: 'Date de référence',
     calcBtn: '→ Calculer',
+    ariaDay: 'Jour', ariaMonth: 'Mois', ariaYear: 'Année',
     tipText: '"Connaître son âge exact, à la seconde près, est plus étrange et plus beau qu\'on ne le croit."',
     examples: ['Né le 15 juillet 1990', 'Né le 1er janvier 2000', 'Né le 25 décembre 1985'],
     resultsHeader: 'Votre âge exact',
@@ -103,6 +105,7 @@ const T = {
     refToggleLabel: 'Calcular en una fecha específica',
     refLabel: 'Fecha de referencia',
     calcBtn: '→ Calcular',
+    ariaDay: 'Día', ariaMonth: 'Mes', ariaYear: 'Año',
     tipText: '"Conocer tu edad exacta, al segundo, es más extraño y más hermoso de lo que crees."',
     examples: ['Nacido el 15 jul 1990', 'Nacido el 1 ene 2000', 'Nacido el 25 dic 1985'],
     resultsHeader: 'Tu edad exacta',
@@ -162,11 +165,11 @@ module.exports = {
     <div class="form-col">
       <div class="field-label">${t.dobLabel}</div>
       <div class="date-row">
-        <input type="number" id="day" placeholder="DD" min="1" max="31" inputmode="numeric" oninput="clamp(this,1,31)">
+        <input type="number" id="day" placeholder="DD" min="1" max="31" inputmode="numeric" oninput="clamp(this,1,31)" aria-label="${t.ariaDay}">
         <span>/</span>
-        <input type="number" id="month" placeholder="MM" min="1" max="12" inputmode="numeric" oninput="clamp(this,1,12)">
+        <input type="number" id="month" placeholder="MM" min="1" max="12" inputmode="numeric" oninput="clamp(this,1,12)" aria-label="${t.ariaMonth}">
         <span>/</span>
-        <input type="number" id="year" placeholder="YYYY" min="1905" max="2026" inputmode="numeric" oninput="clamp(this,1905,2026)">
+        <input type="number" id="year" placeholder="YYYY" min="1905" max="2026" inputmode="numeric" oninput="clamp(this,1905,2026)" aria-label="${t.ariaYear}">
       </div>
       <label class="ref-toggle-row">
         <input type="checkbox" id="refToggle" onchange="toggleRef()">
@@ -175,11 +178,11 @@ module.exports = {
       <div class="ref-fields" id="refFields">
         <div class="field-label" style="margin-top:.8rem">${t.refLabel}</div>
         <div class="date-row">
-          <input type="number" id="rDay" placeholder="DD" min="1" max="31" inputmode="numeric" oninput="clamp(this,1,31)">
+          <input type="number" id="rDay" placeholder="DD" min="1" max="31" inputmode="numeric" oninput="clamp(this,1,31)" aria-label="${t.ariaDay}">
           <span>/</span>
-          <input type="number" id="rMonth" placeholder="MM" min="1" max="12" inputmode="numeric" oninput="clamp(this,1,12)">
+          <input type="number" id="rMonth" placeholder="MM" min="1" max="12" inputmode="numeric" oninput="clamp(this,1,12)" aria-label="${t.ariaMonth}">
           <span>/</span>
-          <input type="number" id="rYear" placeholder="YYYY" min="1900" max="2100" inputmode="numeric" oninput="clamp(this,1900,2100)">
+          <input type="number" id="rYear" placeholder="YYYY" min="1900" max="2100" inputmode="numeric" oninput="clamp(this,1900,2100)" aria-label="${t.ariaYear}">
         </div>
       </div>
       <div class="error-line" id="errorLine"></div>

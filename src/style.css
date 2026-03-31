@@ -1,5 +1,8 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+.skip-link { position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden; }
+.skip-link:focus { position:fixed; left:1rem; top:1rem; width:auto; height:auto; padding:.5rem 1rem; background:var(--ink); color:#fff; font-size:.9rem; z-index:9999; border-radius:2px; text-decoration:none; }
+
 :root {
   --ink: #111;
   --paper: #f5f2eb;

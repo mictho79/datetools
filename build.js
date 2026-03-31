@@ -142,6 +142,9 @@ const FOOTER = {
   es: 'Calculadoras de fecha y hora gratuitas en línea',
 };
 
+const PRIVACY_HREF = { en: '/privacy/', fr: '/fr/confidentialite/', es: '/es/privacidad/' };
+const PRIVACY_LBL  = { en: 'Privacy', fr: 'Confidentialité', es: 'Privacidad' };
+
 const MASTHEAD_LABEL = {
   en: 'Free date calculator',
   fr: 'Calculateur de dates gratuit',
@@ -243,6 +246,7 @@ ${faqSchema}${appSchema}
 </head>
 <body>
 
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <noscript><div style="background:#c8392b;color:#fff;text-align:center;padding:.6rem;font-family:sans-serif;font-size:.9rem">This calculator requires JavaScript. Please enable it in your browser.</div></noscript>
 
 <header>
@@ -270,11 +274,11 @@ ${navLinks}
   </div>
   </nav>
 
-<main>
+<main id="main-content">
 ${seoBlock}
 ${sourceBlock}
 </main>
-  <footer>© ${BUILD_YEAR} DateCalc.app — ${FOOTER[lang]}</footer>
+  <footer>© ${BUILD_YEAR} DateCalc.app — ${FOOTER[lang]} · <a href="${PRIVACY_HREF[lang]}">${PRIVACY_LBL[lang]}</a></footer>
 </div>
 
 <script>
@@ -474,3 +478,107 @@ console.log('  ✓ /robots.txt');
   fs.writeFileSync(path.join(DIST, 'og.png'), png);
   console.log('  ✓ /og.png');
 })();
+
+// ── PRIVACY POLICY PAGES ──────────────────────────────────
+const PRIVACY_PAGES = [
+  { lang: 'en', slug: 'privacy',            canonical: 'https://datecalc.app/privacy/' },
+  { lang: 'fr', slug: 'fr/confidentialite', canonical: 'https://datecalc.app/fr/confidentialite/' },
+  { lang: 'es', slug: 'es/privacidad',      canonical: 'https://datecalc.app/es/privacidad/' },
+];
+const PRIVACY_CONTENT = {
+  en: {
+    title: 'Privacy Policy — DateCalc.app',
+    h1: 'Privacy Policy',
+    updated: 'Last updated: January 1, 2026',
+    intro: 'DateCalc.app is a free, client-side date calculator. All calculations happen in your browser. We do not collect, store, or sell any personal data.',
+    sections: [
+      { h: 'Data we collect', p: 'None. No account, no login, no form submission is ever sent to our servers. The dates you enter never leave your device.' },
+      { h: 'Google Fonts', p: 'We load fonts (Playfair Display, Space Mono, Inter) from Google Fonts. This causes your browser to make a request to Google\'s servers, which may log your IP address. See <a href="https://policies.google.com/privacy">Google\'s Privacy Policy</a>.' },
+      { h: 'Hosting (Cloudflare Pages)', p: 'This site is hosted on Cloudflare Pages. Cloudflare may process standard server access logs (IP address, browser type, page requested) for security and performance purposes. See <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare\'s Privacy Policy</a>.' },
+      { h: 'Cookies &amp; tracking', p: 'We do not use cookies, analytics, advertising trackers, or any form of cross-site tracking.' },
+      { h: 'Your rights', p: 'Since we hold no personal data about you, there is nothing to access, correct, or delete. If you have questions, contact us at <a href="mailto:hello@datecalc.app">hello@datecalc.app</a>.' },
+    ],
+  },
+  fr: {
+    title: 'Politique de confidentialité — DateCalc.app',
+    h1: 'Politique de confidentialité',
+    updated: 'Dernière mise à jour : 1er janvier 2026',
+    intro: 'DateCalc.app est une calculatrice de dates gratuite, entièrement côté client. Tous les calculs s\'effectuent dans votre navigateur. Nous ne collectons, stockons ni vendons aucune donnée personnelle.',
+    sections: [
+      { h: 'Données collectées', p: 'Aucune. Aucun compte, aucune connexion, aucune soumission de formulaire n\'est envoyée à nos serveurs. Les dates que vous saisissez ne quittent jamais votre appareil.' },
+      { h: 'Google Fonts', p: 'Nous chargeons des polices (Playfair Display, Space Mono, Inter) depuis Google Fonts. Cela entraîne une requête de votre navigateur vers les serveurs de Google, qui peut enregistrer votre adresse IP. Voir la <a href="https://policies.google.com/privacy">politique de confidentialité de Google</a>.' },
+      { h: 'Hébergement (Cloudflare Pages)', p: 'Ce site est hébergé sur Cloudflare Pages. Cloudflare peut traiter des journaux d\'accès standard (adresse IP, type de navigateur, page demandée) à des fins de sécurité et de performance. Voir la <a href="https://www.cloudflare.com/privacypolicy/">politique de confidentialité de Cloudflare</a>.' },
+      { h: 'Cookies &amp; traçage', p: 'Nous n\'utilisons pas de cookies, d\'analytiques, de trackers publicitaires ni aucune forme de traçage intersites.' },
+      { h: 'Vos droits (RGPD)', p: 'Nous ne détenons aucune donnée personnelle vous concernant. Il n\'y a donc rien à accéder, corriger ou supprimer. Pour toute question : <a href="mailto:hello@datecalc.app">hello@datecalc.app</a>.' },
+    ],
+  },
+  es: {
+    title: 'Política de privacidad — DateCalc.app',
+    h1: 'Política de privacidad',
+    updated: 'Última actualización: 1 de enero de 2026',
+    intro: 'DateCalc.app es una calculadora de fechas gratuita, completamente del lado del cliente. Todos los cálculos ocurren en tu navegador. No recopilamos, almacenamos ni vendemos ningún dato personal.',
+    sections: [
+      { h: 'Datos que recopilamos', p: 'Ninguno. Ninguna cuenta, inicio de sesión ni envío de formulario se envía a nuestros servidores. Las fechas que ingresas nunca salen de tu dispositivo.' },
+      { h: 'Google Fonts', p: 'Cargamos fuentes (Playfair Display, Space Mono, Inter) desde Google Fonts. Esto provoca que tu navegador haga una solicitud a los servidores de Google, que pueden registrar tu dirección IP. Ver la <a href="https://policies.google.com/privacy">política de privacidad de Google</a>.' },
+      { h: 'Alojamiento (Cloudflare Pages)', p: 'Este sitio está alojado en Cloudflare Pages. Cloudflare puede procesar registros de acceso estándar (dirección IP, tipo de navegador, página solicitada) con fines de seguridad y rendimiento. Ver la <a href="https://www.cloudflare.com/privacypolicy/">política de privacidad de Cloudflare</a>.' },
+      { h: 'Cookies y rastreo', p: 'No utilizamos cookies, análisis, rastreadores publicitarios ni ninguna forma de seguimiento entre sitios.' },
+      { h: 'Tus derechos', p: 'No conservamos ningún dato personal tuyo, por lo que no hay nada que acceder, corregir ni eliminar. Para preguntas: <a href="mailto:hello@datecalc.app">hello@datecalc.app</a>.' },
+    ],
+  },
+};
+const hreflangPrivacy = [
+  '<link rel="alternate" hreflang="en" href="https://datecalc.app/privacy/">',
+  '<link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/confidentialite/">',
+  '<link rel="alternate" hreflang="es" href="https://datecalc.app/es/privacidad/">',
+  '<link rel="alternate" hreflang="x-default" href="https://datecalc.app/privacy/">',
+].join('\n');
+
+for (const { lang, slug, canonical } of PRIVACY_PAGES) {
+  const p = PRIVACY_CONTENT[lang];
+  const outDir = path.join(DIST, slug);
+  fs.mkdirSync(outDir, { recursive: true });
+  const sectionsHtml = p.sections.map(s =>
+    `<h2>${s.h}</h2><p>${s.p}</p>`).join('\n');
+  const html = `<!doctype html>
+<html lang="${lang}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>${p.title}</title>
+<meta name="description" content="${p.intro.slice(0, 155)}">
+<link rel="canonical" href="${canonical}">
+${hreflangPrivacy}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header>
+<div class="masthead">
+  <a href="${HOME_HREF[lang]}" class="masthead-brand">DateCalc<span>.</span>app</a>
+</div>
+</header>
+<div class="page">
+<main id="main-content" style="max-width:680px;margin:3rem auto;padding:0 1.5rem">
+  <h1 style="font-family:'Playfair Display',serif;font-size:2rem;margin-bottom:.5rem">${p.h1}</h1>
+  <p style="color:var(--muted);font-size:.85rem;margin-bottom:2rem">${p.updated}</p>
+  <p style="margin-bottom:2rem">${p.intro}</p>
+  <div class="privacy-sections">
+${sectionsHtml}
+  </div>
+</main>
+<style>
+.privacy-sections h2{font-size:1rem;font-weight:600;margin:1.8rem 0 .4rem;text-transform:uppercase;letter-spacing:.05em}
+.privacy-sections p{line-height:1.7;color:#333;margin-bottom:.5rem}
+.privacy-sections a{color:var(--accent)}
+</style>
+  <footer>© ${BUILD_YEAR} DateCalc.app · <a href="${PRIVACY_HREF[lang]}">${PRIVACY_LBL[lang]}</a></footer>
+</div>
+</body>
+</html>`;
+  fs.writeFileSync(path.join(outDir, 'index.html'), html, 'utf8');
+  console.log(`  ✓ /${slug}/`);
+}

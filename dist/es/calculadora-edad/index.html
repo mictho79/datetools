@@ -120,6 +120,7 @@
 </head>
 <body>
 
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <noscript><div style="background:#c8392b;color:#fff;text-align:center;padding:.6rem;font-family:sans-serif;font-size:.9rem">This calculator requires JavaScript. Please enable it in your browser.</div></noscript>
 
 <header>
@@ -147,11 +148,11 @@
     <div class="form-col">
       <div class="field-label">Fecha de nacimiento</div>
       <div class="date-row">
-        <input type="number" id="day" placeholder="DD" min="1" max="31" inputmode="numeric" oninput="clamp(this,1,31)">
+        <input type="number" id="day" placeholder="DD" min="1" max="31" inputmode="numeric" oninput="clamp(this,1,31)" aria-label="Día">
         <span>/</span>
-        <input type="number" id="month" placeholder="MM" min="1" max="12" inputmode="numeric" oninput="clamp(this,1,12)">
+        <input type="number" id="month" placeholder="MM" min="1" max="12" inputmode="numeric" oninput="clamp(this,1,12)" aria-label="Mes">
         <span>/</span>
-        <input type="number" id="year" placeholder="YYYY" min="1905" max="2026" inputmode="numeric" oninput="clamp(this,1905,2026)">
+        <input type="number" id="year" placeholder="YYYY" min="1905" max="2026" inputmode="numeric" oninput="clamp(this,1905,2026)" aria-label="Año">
       </div>
       <label class="ref-toggle-row">
         <input type="checkbox" id="refToggle" onchange="toggleRef()">
@@ -160,11 +161,11 @@
       <div class="ref-fields" id="refFields">
         <div class="field-label" style="margin-top:.8rem">Fecha de referencia</div>
         <div class="date-row">
-          <input type="number" id="rDay" placeholder="DD" min="1" max="31" inputmode="numeric" oninput="clamp(this,1,31)">
+          <input type="number" id="rDay" placeholder="DD" min="1" max="31" inputmode="numeric" oninput="clamp(this,1,31)" aria-label="Día">
           <span>/</span>
-          <input type="number" id="rMonth" placeholder="MM" min="1" max="12" inputmode="numeric" oninput="clamp(this,1,12)">
+          <input type="number" id="rMonth" placeholder="MM" min="1" max="12" inputmode="numeric" oninput="clamp(this,1,12)" aria-label="Mes">
           <span>/</span>
-          <input type="number" id="rYear" placeholder="YYYY" min="1900" max="2100" inputmode="numeric" oninput="clamp(this,1900,2100)">
+          <input type="number" id="rYear" placeholder="YYYY" min="1900" max="2100" inputmode="numeric" oninput="clamp(this,1900,2100)" aria-label="Año">
         </div>
       </div>
       <div class="error-line" id="errorLine"></div>
@@ -214,7 +215,7 @@
   </div>
   </nav>
 
-<main>
+<main id="main-content">
   <div class="seo-block">
     <div><h2>¿Cómo se calcula la edad?</h2><p>La edad se calcula restando la fecha de nacimiento a la fecha actual, teniendo en cuenta la longitud variable de cada mes y el día extra de los años bisiestos. El cálculo se realiza en tres pasos: primero se encuentran los años completos transcurridos, luego los meses restantes y finalmente los días restantes. Por ejemplo, alguien nacido el 15 de julio de 1990 cumple 35 años en julio de 2025, pero antes de ese cumpleaños tiene 34 años, 11 meses y algunos días. Esta herramienta maneja todos esos casos de borde automáticamente, incluidos los cumpleaños del 29 de febrero, y muestra el resultado como un contador en vivo que se actualiza cada segundo.</p></div>
     <div><h2>¿Por qué calcular la edad al segundo?</h2><p>Conocer tu edad exacta en días, horas o incluso segundos tiene un valor práctico real más allá de la curiosidad. Los profesionales médicos usan la edad en días para cálculos de dosificación pediátrica. Los sistemas legales vinculan derechos y obligaciones a umbrales de edad precisos: votar a los 18, jubilación a los 62 o 65, elegibilidad para pensiones. Las aseguradoras usan la edad en meses para cálculos de primas. Los genealogistas verifican registros históricos cruzando edades declaradas con fechas de censo. El contador segundo a segundo también recuerda que tu vida siempre está en movimiento.</p></div>
@@ -236,7 +237,7 @@
     <a href="https://www.ssa.gov/oact/population/longevity.html" target="_blank" rel="noopener noreferrer">Administración del Seguro Social de EE. UU. – Esperanza de vida</a>
   </div>
 </main>
-  <footer>© 2026 DateCalc.app — Calculadoras de fecha y hora gratuitas en línea</footer>
+  <footer>© 2026 DateCalc.app — Calculadoras de fecha y hora gratuitas en línea · <a href="/es/privacidad/">Privacidad</a></footer>
 </div>
 
 <script>
