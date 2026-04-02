@@ -243,6 +243,7 @@ ${JSON.stringify({
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="shortcut icon" href="/favicon.svg">
 ${faqSchema}${appSchema}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4020973443671350" crossorigin="anonymous"></script>
 </head>
 <body>
 
