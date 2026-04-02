@@ -285,12 +285,12 @@ function clamp(el, lo, hi) {
   var r=document.getElementById('results');
   if(!r||r.classList.contains('auto-show'))return;
   var obs=new MutationObserver(function(){
-    if(r.style.display!=''&&r.style.display!='none'){
+    if(r.classList.contains('show')){
       r.scrollIntoView({behavior:'smooth',block:'start'});
       obs.disconnect();
     }
   });
-  obs.observe(r,{attributes:true,attributeFilter:['style']});
+  obs.observe(r,{attributes:true,attributeFilter:['class']});
 })();
 // Enter key submits calculator
 (function(){
