@@ -19,6 +19,7 @@ const tools = [
   require('./src/tools/time-zone'),
   require('./src/tools/born-in'),
   require('./src/tools/week-number-year'),
+  require('./src/tools/year-events'),
 ];
 
 const LANGS = ['en', 'fr', 'es'];
@@ -56,6 +57,11 @@ const NAV = {
       { label: 'Born in 1980', href: '/born-in-1980/' },
       { label: 'Born in 2000', href: '/born-in-2000/' },
     ]},
+    { cat: 'Year in Review', items: [
+      { label: 'What Happened in 2000', href: '/what-happened-in-2000/' },
+      { label: 'What Happened in 1990', href: '/what-happened-in-1990/' },
+      { label: 'What Happened in 1980', href: '/what-happened-in-1980/' },
+    ]},
     { cat: 'Calendars', items: [
       { label: 'Week Numbers 2025', href: '/week-number/2025/' },
       { label: 'Week Numbers 2026', href: '/week-number/2026/' },
@@ -92,6 +98,11 @@ const NAV = {
       { label: 'Né en 1980', href: '/fr/ne-en-1980/' },
       { label: 'Né en 2000', href: '/fr/ne-en-2000/' },
     ]},
+    { cat: 'Rétrospective', items: [
+      { label: 'Que s\'est-il passé en 2000', href: '/fr/que-s-est-il-passe-en-2000/' },
+      { label: 'Que s\'est-il passé en 1990', href: '/fr/que-s-est-il-passe-en-1990/' },
+      { label: 'Que s\'est-il passé en 1980', href: '/fr/que-s-est-il-passe-en-1980/' },
+    ]},
     { cat: 'Calendriers', items: [
       { label: 'Semaines 2025', href: '/fr/numero-semaine/2025/' },
       { label: 'Semaines 2026', href: '/fr/numero-semaine/2026/' },
@@ -127,6 +138,11 @@ const NAV = {
       { label: 'Nacido en 1990', href: '/es/nacido-en-1990/' },
       { label: 'Nacido en 1980', href: '/es/nacido-en-1980/' },
       { label: 'Nacido en 2000', href: '/es/nacido-en-2000/' },
+    ]},
+    { cat: 'Resumen del año', items: [
+      { label: '¿Qué pasó en 2000?', href: '/es/que-paso-en-2000/' },
+      { label: '¿Qué pasó en 1990?', href: '/es/que-paso-en-1990/' },
+      { label: '¿Qué pasó en 1980?', href: '/es/que-paso-en-1980/' },
     ]},
     { cat: 'Calendarios', items: [
       { label: 'Semanas 2025', href: '/es/numero-semana/2025/' },

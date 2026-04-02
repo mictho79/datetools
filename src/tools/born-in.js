@@ -1,12 +1,12 @@
-// Born In — Age by Birth Year (1950–2020)
-// Generates one static page per birth year × 3 languages = 213 pages
+// Born In — Age by Birth Year (1930–2024)
+// Generates one static page per birth year × 3 languages = 285 pages
 
 const EVENTS = require('../data/events.json');
 const EVENTS_FR = require('../data/events_fr.json');
 const EVENTS_ES = require('../data/events_es.json');
 
 const BIRTH_YEARS = [];
-for (let y = 1950; y <= 2020; y++) BIRTH_YEARS.push(y);
+for (let y = 1930; y <= 2024; y++) BIRTH_YEARS.push(y);
 
 const BUILD_YEAR = 2026; // current year at build time
 
