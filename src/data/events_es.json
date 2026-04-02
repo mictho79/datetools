@@ -1,4 +1,364 @@
 {
+  "1905": {
+    "periods": {
+      "1": ["La masacre del Domingo Sangriento desencadena la Revolución rusa de 1905 (22 ene.)", "Japón derrota a Rusia en la batalla de Mukden (mar.)"],
+      "2": ["La flota rusa es destruida en la batalla de Tsushima (27 may.)", "Einstein publica su teoría de la relatividad especial (jun.)"],
+      "3": ["El Tratado de Portsmouth pone fin a la guerra ruso-japonesa (5 sep.)", "Noruega disuelve su unión con Suecia y obtiene la independencia (oct.)"]
+    },
+    "tech": "Albert Einstein publica su teoría de la relatividad especial y E=mc²"
+  },
+  "1906": {
+    "periods": {
+      "1": ["El terremoto e incendio de San Francisco matan a más de 3 000 personas (18 abr.)", "La Conferencia de Algeciras resuelve la crisis de Marruecos (ene.–abr.)"],
+      "2": ["El HMS Dreadnought es lanzado, revolucionando la guerra naval (feb.)", "El túnel del Simplón abre como el túnel ferroviario más largo del mundo (jun.)"],
+      "3": ["La Ley de Alimentos y Medicamentos de EE. UU. firmada por Roosevelt (30 jun.)", "El caso Dreyfus concluye; Dreyfus es plenamente exonerado (12 jul.)"]
+    },
+    "tech": "Reginald Fessenden realizó la primera transmisión de voz por radio AM la Nochebuena"
+  },
+  "1907": {
+    "periods": {
+      "1": ["Oklahoma se convierte en el 46.° estado de EE. UU. (16 nov.)", "Gran Bretaña, Francia y Rusia forman la Triple Entente (ago.)"],
+      "2": ["Baden-Powell celebra el primer campamento scout en Brownsea Island (ago.)", "El Pánico de 1907 sacude a los Estados Unidos (oct.)"],
+      "3": ["Nueva Zelanda se convierte en el primer dominio autogobernado (26 sep.)", "JP Morgan organiza el rescate bancario para poner fin al pánico (nov.)"]
+    },
+    "tech": "Los hermanos Lumière presentaron el Autocromo, el primer proceso de fotografía en color"
+  },
+  "1908": {
+    "periods": {
+      "1": ["La explosión de Tunguska arrasa 2 000 km² de Siberia (30 jun.)", "La revolución de los Jóvenes Turcos reforma el Imperio Otomano (jul.)"],
+      "2": ["Ford presenta el automóvil Modelo T (1 oct.)", "Los Juegos Olímpicos de Londres concluyen; EE. UU. gana más medallas (oct.)"],
+      "3": ["Bulgaria declara su independencia del Imperio Otomano (5 oct.)", "Austria-Hungría anexa Bosnia-Herzegovina (6 oct.)"]
+    },
+    "tech": "Henry Ford presentó el Modelo T, haciendo los automóviles asequibles para el público"
+  },
+  "1909": {
+    "periods": {
+      "1": ["Robert Peary afirma haber llegado al Polo Norte (6 abr.)", "William Howard Taft asume como 27.° presidente de EE. UU. (4 mar.)"],
+      "2": ["Blériot realiza el primer vuelo en avión a través del Canal de la Mancha (25 jul.)", "La NAACP es fundada para defender los derechos de los afroamericanos (12 feb.)"],
+      "3": ["El predecesor de la NFL es formado (ago.)", "Sigmund Freud imparte conferencias en los Estados Unidos (sep.)"]
+    },
+    "tech": "Louis Blériot completó la primera travesía en avión del Canal de la Mancha"
+  },
+  "1910": {
+    "periods": {
+      "1": ["La Revolución Mexicana comienza tras el derrocamiento de Díaz (20 nov.)", "La Unión de Sudáfrica se convierte en un dominio británico (31 may.)"],
+      "2": ["Los Boy Scouts de América son incorporados oficialmente (8 feb.)", "El Día del Padre se celebra por primera vez en EE. UU. (19 jun.)"],
+      "3": ["El rey Eduardo VII muere; Jorge V sube al trono (6 may.)", "Portugal se convierte en república tras la revolución (5 oct.)"]
+    },
+    "tech": "Las primeras luces de neón fueron demostradas por Georges Claude en París"
+  },
+  "1911": {
+    "periods": {
+      "1": ["El incendio de la fábrica Triangle Shirtwaist mata a 146 trabajadoras (25 mar.)", "El equipo de Roald Amundsen llega primero al Polo Sur (14 dic.)"],
+      "2": ["Italia invade Libia en la guerra ítalo-turca (29 sep.)", "La Mona Lisa es robada del Louvre en París (21 ago.)"],
+      "3": ["La revolución china derroca la dinastía Qing (10 oct.)", "La Standard Oil es desmembrada por el Tribunal Supremo de EE. UU. (15 may.)"]
+    },
+    "tech": "Charles Kettering inventó el motor de arranque eléctrico para automóviles"
+  },
+  "1912": {
+    "periods": {
+      "1": ["El RMS Titanic se hunde en su viaje inaugural; 1 517 muertos (15 abr.)", "Nuevo México y Arizona se convierten en los estados 47.° y 48.° de EE. UU. (ene.–feb.)"],
+      "2": ["Woodrow Wilson gana la nominación presidencial demócrata (jul.)", "Los Juegos Olímpicos de Estocolmo abren con 28 naciones (5 may.)"],
+      "3": ["Woodrow Wilson elegido 28.° presidente de EE. UU. (5 nov.)", "La Primera Guerra de los Balcanes comienza en octubre"]
+    },
+    "tech": "El desastre del Titanic condujo a protocolos obligatorios de radio de socorro"
+  },
+  "1913": {
+    "periods": {
+      "1": ["Woodrow Wilson asume como 28.° presidente de EE. UU. (4 mar.)", "La 16.ª Enmienda establece el impuesto federal sobre la renta (3 feb.)"],
+      "2": ["La 17.ª Enmienda establece la elección directa de senadores (8 abr.)", "La Segunda Guerra de los Balcanes comienza (29 jun.)"],
+      "3": ["Henry Ford introduce la cadena de montaje móvil en octubre", "La Exposición del Armory introduce el arte moderno a los estadounidenses (feb.–mar.)"]
+    },
+    "tech": "Henry Ford introdujo la cadena de montaje móvil, revolucionando la fabricación"
+  },
+  "1914": {
+    "periods": {
+      "1": ["El archiduque Francisco Fernando es asesinado en Sarajevo (28 jun.)", "Austria-Hungría declara la guerra a Serbia (28 jul.)"],
+      "2": ["Alemania declara la guerra a Francia e invade Bélgica (3 ago.)", "Gran Bretaña declara la guerra a Alemania (4 ago.)"],
+      "3": ["La Primera Batalla del Marne detiene el avance alemán (sep.)", "Tregua de Navidad: soldados aliados y alemanes fraternizaron (25 dic.)"]
+    },
+    "tech": "El Canal de Panamá abrió, conectando los océanos Atlántico y Pacífico"
+  },
+  "1915": {
+    "periods": {
+      "1": ["Un submarino alemán hunde el RMS Lusitania, matando a 1 198 personas (7 may.)", "La campaña aliada de Gallipoli es lanzada contra los otomanos (abr.)"],
+      "2": ["Italia entra en la Primera Guerra Mundial del lado de los Aliados (23 may.)", "Los dirigibles Zeppelin alemanes bombardean Londres (may.)"],
+      "3": ["Bulgaria entra en la I GM del lado de Alemania (14 oct.)", "Albert Einstein completa la teoría de la relatividad general (nov.)"]
+    },
+    "tech": "Albert Einstein completó su teoría de la relatividad general"
+  },
+  "1916": {
+    "periods": {
+      "1": ["La batalla de Verdún comienza — la más sangrienta de la I GM (21 feb.)", "Levantamiento de Pascua: republicanos irlandeses se sublevan en Dublín (24 abr.)"],
+      "2": ["La batalla del Somme comienza con 57 000 bajas británicas (1 jul.)", "Woodrow Wilson es reelegido presidente de EE. UU. (7 nov.)"],
+      "3": ["La batalla de Jutlandia: la mayor batalla naval de la I GM (31 may.)", "Los tanques son usados en combate por primera vez (15 sep.)"]
+    },
+    "tech": "El tanque militar fue introducido en combate durante la batalla del Somme"
+  },
+  "1917": {
+    "periods": {
+      "1": ["EE. UU. entra en la I GM tras la guerra submarina sin restricciones (6 abr.)", "La Revolución de Febrero rusa derroca al Zar (mar.)"],
+      "2": ["La Revolución Bolchevique de Octubre toma el poder en Rusia (7 nov.)", "La Tercera Batalla de Ypres (Passchendaele) comienza (jul.)"],
+      "3": ["La Declaración Balfour apoya un hogar judío en Palestina (2 nov.)", "EE. UU. inicia el reclutamiento mediante la Ley de Servicio Selectivo (may.)"]
+    },
+    "tech": "El primer sistema de detección sonar operacional fue desarrollado para la guerra antisubmarina"
+  },
+  "1918": {
+    "periods": {
+      "1": ["Alemania lanza la Ofensiva de Primavera — último gran impulso (21 mar.)", "El Zar Nicolás II y su familia son ejecutados por los bolcheviques (17 jul.)"],
+      "2": ["La Ofensiva de los Cien Días de los Aliados rompe las líneas alemanas (8 ago.)", "La pandemia de gripe española mata hasta 50 millones en todo el mundo (1918–19)"],
+      "3": ["El armisticio pone fin a la Primera Guerra Mundial el 11 de noviembre a las 11h", "El káiser alemán Guillermo II abdica; se declara la república (9 nov.)"]
+    },
+    "tech": "Se estableció un servicio postal aéreo regular en los Estados Unidos"
+  },
+  "1919": {
+    "periods": {
+      "1": ["El Tratado de Versalles es firmado, poniendo fin a la I GM (28 jun.)", "La Conferencia de Paz de París abre en el Palacio de Versalles (ene.)"],
+      "2": ["Alcock y Brown realizan el primer vuelo transatlántico sin escalas (jun.)", "El Pacto de la Sociedad de Naciones es adoptado en París (abr.)"],
+      "3": ["El Senado de EE. UU. rechaza el Tratado de Versalles y la SDN (nov.)", "La 18.ª Enmienda sobre la Prohibición es ratificada (16 ene.)"]
+    },
+    "tech": "John Alcock y Arthur Whitten Brown completaron el primer vuelo transatlántico sin escalas"
+  },
+  "1920": {
+    "periods": {
+      "1": ["La Prohibición comienza en los Estados Unidos (17 ene.)", "La Sociedad de Naciones celebra su primera reunión (10 ene.)"],
+      "2": ["La 19.ª Enmienda otorga a las mujeres el derecho al voto (18 ago.)", "Los Juegos Olímpicos de Amberes abren (20 abr.)"],
+      "3": ["Warren Harding gana las elecciones presidenciales de EE. UU. (2 nov.)", "El atentado de Wall Street mata a 38 personas en Nueva York (16 sep.)"]
+    },
+    "tech": "La primera estación de radio comercial, KDKA, comenzó emisiones regulares en Pittsburgh"
+  },
+  "1921": {
+    "periods": {
+      "1": ["Warren Harding asume como 29.° presidente de EE. UU. (4 mar.)", "La masacre de Tulsa destruye el barrio Black Wall Street (31 may.)"],
+      "2": ["EE. UU. firma tratados de paz separados con Alemania y Austria (ago.)", "Irlanda es particionada; el Estado Libre Irlandés es creado (dic.)"],
+      "3": ["La insulina se usa por primera vez para tratar un paciente diabético (oct.)", "La Conferencia Naval de Washington abre para limitar los armamentos (12 nov.)"]
+    },
+    "tech": "Frederick Banting y Charles Best descubrieron la insulina como tratamiento de la diabetes"
+  },
+  "1922": {
+    "periods": {
+      "1": ["Los fascistas de Mussolini marchan sobre Roma y toman el poder (oct.)", "Howard Carter descubre la tumba de Tutankamón (4 nov.)"],
+      "2": ["La Unión Soviética es oficialmente fundada (30 dic.)", "La guerra civil irlandesa comienza tras el tratado (jun.)"],
+      "3": ["La BBC comienza emisiones de radio diarias en Londres (14 nov.)", "Turquía abolle el Sultanato Otomano (1 nov.)"]
+    },
+    "tech": "La BBC comenzó emisiones de radio regulares desde Londres"
+  },
+  "1923": {
+    "periods": {
+      "1": ["El presidente Harding muere; Calvin Coolidge se convierte en presidente (2 ago.)", "La hiperinflación alemana alcanza su punto máximo (nov.)"],
+      "2": ["El putsch de la Cervecería de Hitler fracasa en Múnich (8 nov.)", "Las tropas francesas y belgas ocupan el Ruhr alemán (ene.)"],
+      "3": ["El Gran Terremoto de Kantō devasta Tokio y Yokohama (1 sep.)", "La revista Time publica su primer número (3 mar.)"]
+    },
+    "tech": "El iconoscopio, tubo de cámara de televisión, fue patentado por Vladimir Zworykin"
+  },
+  "1924": {
+    "periods": {
+      "1": ["Lenin muere; Stalin comienza su ascenso al poder en la URSS (21 ene.)", "J. Edgar Hoover se convierte en director del FBI (10 may.)"],
+      "2": ["Los Juegos Olímpicos de París abren con 44 naciones (5 jul.)", "El Plan Dawes ayuda a estabilizar la economía alemana (ago.)"],
+      "3": ["Calvin Coolidge gana las elecciones presidenciales (4 nov.)", "El primer vuelo transcontinental de EE. UU. sin escalas es completado (jun.)"]
+    },
+    "tech": "Los científicos de Bell Labs demostraron la transmisión de televisión a larga distancia"
+  },
+  "1925": {
+    "periods": {
+      "1": ["El juicio Scopes sobre la enseñanza de la evolución (jul.)", "F. Scott Fitzgerald publica El Gran Gatsby (10 abr.)"],
+      "2": ["La Gran Carrera de la Antitoxina: un trineo lleva la cura de la difteria a Nome (feb.)", "El Ku Klux Klan desfila con 50 000 personas en Washington (8 ago.)"],
+      "3": ["Los Tratados de Locarno estabilizan las fronteras europeas de posguerra (oct.)", "Hirohito se convierte en emperador de Japón (25 dic.)"]
+    },
+    "tech": "John Logie Baird dio la primera demostración pública de televisión"
+  },
+  "1926": {
+    "periods": {
+      "1": ["La huelga general paraliza Gran Bretaña durante nueve días (3–12 may.)", "Robert Goddard lanza el primer cohete de propelente líquido del mundo (16 mar.)"],
+      "2": ["Hirohito es formalmente entronizado como emperador de Japón (25 nov.)", "Gertrude Ederle se convierte en la primera mujer en cruzar el Canal de la Mancha a nado (ago.)"],
+      "3": ["Ernest Hemingway publica El Sol También Sale (oct.)", "El Líbano es declarado república bajo mandato francés (23 may.)"]
+    },
+    "tech": "Robert Goddard lanzó el primer cohete de propelente líquido del mundo en Auburn, Massachusetts"
+  },
+  "1927": {
+    "periods": {
+      "1": ["Charles Lindbergh completa el primer vuelo transatlántico en solitario (21 may.)", "El cantor de jazz, primer película sonora, tiene su estreno (6 oct.)"],
+      "2": ["Sacco y Vanzetti son ejecutados a pesar de protestas generalizadas (23 ago.)", "La Unión Astronómica Internacional es establecida (jul.)"],
+      "3": ["Chiang Kai-shek establece un gobierno nacionalista en China (abr.)", "La inundación del Misisipi desplaza a 700 000 estadounidenses (abr.)"]
+    },
+    "tech": "Charles Lindbergh completó el primer vuelo transatlántico en solitario sin escalas en el Spirit of St. Louis"
+  },
+  "1928": {
+    "periods": {
+      "1": ["Alexander Fleming descubre la penicilina (28 sep.)", "Amelia Earhart se convierte en la primera mujer en volar a través del Atlántico (jun.)"],
+      "2": ["Herbert Hoover gana las elecciones presidenciales de EE. UU. (6 nov.)", "Los Juegos Olímpicos de Ámsterdam abren (17 may.)"],
+      "3": ["Stalin lanza el primer Plan Quinquenal en la Unión Soviética (oct.)", "El Pacto Briand-Kellogg para proscribir la guerra es firmado por 15 naciones (27 ago.)"]
+    },
+    "tech": "Alexander Fleming descubrió la penicilina, lanzando la era de los antibióticos"
+  },
+  "1929": {
+    "periods": {
+      "1": ["El crack de Wall Street desencadena la Gran Depresión (24–29 oct.)", "La Masacre del Día de San Valentín: siete gángsteres muertos (14 feb.)"],
+      "2": ["Herbert Hoover asume como 31.° presidente de EE. UU. (4 mar.)", "El Tratado de Letrán establece la Ciudad del Vaticano como estado soberano (feb.)"],
+      "3": ["La bolsa alcanza su punto máximo antes del colapso (sep.–oct.)", "Yugoslavia se convierte en una dictadura real bajo el rey Alejandro (ene.)"]
+    },
+    "tech": "La primera película proyectada en vuelo fue mostrada en un vuelo de Transcontinental Air Transport"
+  },
+  "1930": {
+    "periods": {
+      "1": ["El arancel Smoot-Hawley profundiza la Gran Depresión (17 jun.)", "Gandhi lidera la Marcha de la Sal para protestar contra el dominio británico (12 mar.)"],
+      "2": ["Clyde Tombaugh descubre Plutón en el observatorio Lowell (18 feb.)", "Uruguay gana la primera Copa del Mundo de fútbol (30 jul.)"],
+      "3": ["Haile Selassie es coronado emperador de Etiopía (2 nov.)", "Las quiebras bancarias se extienden por los Estados Unidos (dic.)"]
+    },
+    "tech": "Clyde Tombaugh descubrió Plutón en el observatorio Lowell en Arizona"
+  },
+  "1931": {
+    "periods": {
+      "1": ["Japón invade Manchuria, desafiando a la Sociedad de Naciones (18 sep.)", "El desempleo en EE. UU. alcanza el 16 % durante la Depresión (mar.)"],
+      "2": ["El Empire State Building abre como el edificio más alto del mundo (1 may.)", "Al Capone es condenado por evasión de impuestos (17 oct.)"],
+      "3": ["España se convierte en república tras la huida del rey Alfonso XIII (14 abr.)", "La Bandera Estrellada es adoptada oficialmente como himno nacional de EE. UU. (mar.)"]
+    },
+    "tech": "El Empire State Building abrió como el rascacielos más alto del mundo (443 m)"
+  },
+  "1932": {
+    "periods": {
+      "1": ["Franklin D. Roosevelt gana las elecciones presidenciales de EE. UU. (8 nov.)", "Amelia Earhart completa la primera travesía solitaria del Atlántico (20 may.)"],
+      "2": ["El bebé Lindbergh es secuestrado y asesinado (mar.–may.)", "Los Juegos Olímpicos de Los Ángeles abren (30 jul.)"],
+      "3": ["El Ejército de Bono es expulsado de Washington por el ejército de EE. UU. (jul.)", "La hambruna en la Ucrania soviética mata a millones (1932–33)"]
+    },
+    "tech": "El neutrón fue descubierto por James Chadwick en el laboratorio Cavendish"
+  },
+  "1933": {
+    "periods": {
+      "1": ["Hitler es nombrado canciller de Alemania (30 ene.)", "Roosevelt asume; declara Días Festivos Bancarios para detener las quiebras (4 mar.)"],
+      "2": ["El incendio del Reichstag permite a Hitler apoderarse de poderes de emergencia (27 feb.)", "Los programas del New Deal comienzan los esfuerzos de ayuda en EE. UU. (jun.)"],
+      "3": ["La Prohibición es derogada por la 21.ª Enmienda (5 dic.)", "Alemania se retira de la Sociedad de Naciones (14 oct.)"]
+    },
+    "tech": "Edwin Armstrong inventó la radio FM, mejorando drásticamente la calidad de las emisiones"
+  },
+  "1934": {
+    "periods": {
+      "1": ["Hitler se convierte en único líder tras la muerte de Hindenburg (2 ago.)", "Las tormentas del Dust Bowl devastan las granjas de las Grandes Llanuras (abr.)"],
+      "2": ["Mao Zedong comienza la Larga Marcha con las fuerzas comunistas (oct.)", "Bonnie y Clyde son muertos en una emboscada policial en Luisiana (23 may.)"],
+      "3": ["La Noche de los cuchillos largos: Hitler purga a sus rivales (30 jun.)", "Las quintillizas Dionne nacen en Canadá — las primeras que sobrevivieron (28 may.)"]
+    },
+    "tech": "Wallace Carothers inventó el nylon, la primera fibra completamente sintética"
+  },
+  "1935": {
+    "periods": {
+      "1": ["Italia invade Etiopía; la SDN no logra detenerla (oct.)", "La Ley de Seguridad Social es firmada por el presidente Roosevelt (14 ago.)"],
+      "2": ["Alemania reinstauró el servicio militar obligatorio (16 mar.)", "Las Leyes de Núremberg privan a los judíos alemanes de la ciudadanía (15 sep.)"],
+      "3": ["Huey Long es asesinado en el Capitolio de Luisiana (8 sep.)", "El primer sistema de radar es demostrado en Gran Bretaña (26 feb.)"]
+    },
+    "tech": "Robert Watson-Watt demostró el primer sistema de radar práctico"
+  },
+  "1936": {
+    "periods": {
+      "1": ["La guerra civil española comienza tras el golpe de Franco (17 jul.)", "Jesse Owens gana cuatro medallas de oro en los Juegos Olímpicos de Berlín (ago.)"],
+      "2": ["Hitler remilitariza la Renania (7 mar.)", "Los Juegos Olímpicos de Berlín abren (1 ago.)"],
+      "3": ["FDR es reelegido en un aplastante triunfo para su segundo mandato (3 nov.)", "Eduardo VIII abdica para casarse con Wallis Simpson (11 dic.)"]
+    },
+    "tech": "Alan Turing publicó su artículo sobre la máquina de cómputo teórica"
+  },
+  "1937": {
+    "periods": {
+      "1": ["El dirigible Hindenburg explota en Lakehurst, Nueva Jersey (6 may.)", "Japón lanza una invasión a gran escala de China (7 jul.)"],
+      "2": ["Amelia Earhart desaparece sobre el océano Pacífico (2 jul.)", "El puente Golden Gate abre en San Francisco (27 may.)"],
+      "3": ["La masacre de Nankín: las tropas japonesas matan a 200 000 chinos (dic.)", "El plan de reforma del Tribunal Supremo de FDR fracasa en el Senado (jul.)"]
+    },
+    "tech": "El primer motor a reacción fue probado con éxito por Frank Whittle en Inglaterra"
+  },
+  "1938": {
+    "periods": {
+      "1": ["Alemania anexa Austria en el Anschluss (13 mar.)", "La Noche de los Cristales Rotos: pogrom contra los judíos en Alemania (9 nov.)"],
+      "2": ["El Acuerdo de Múnich: los Aliados ceden ante Hitler sobre Checoslovaquia (30 sep.)", "La Guerra de los Mundos de Orson Welles en la radio genera pánico en EE. UU. (30 oct.)"],
+      "3": ["Alemania ocupa los Sudetes con aprobación británica y francesa (oct.)", "Howard Hughes da la vuelta al mundo en un tiempo récord de 91 horas (jul.)"]
+    },
+    "tech": "Otto Hahn y Fritz Strassmann lograron la primera fisión nuclear del uranio"
+  },
+  "1939": {
+    "periods": {
+      "1": ["Alemania invade Polonia; comienza la Segunda Guerra Mundial (1 sep.)", "Gran Bretaña y Francia declaran la guerra a Alemania (3 sep.)"],
+      "2": ["La Unión Soviética invade Finlandia (Guerra de Invierno) (30 nov.)", "Alemania y la URSS firman el Pacto Molotov-Ribbentrop (23 ago.)"],
+      "3": ["La guerra civil española termina con la victoria de Franco (1 abr.)", "FDR firma la Ley de Neutralidad manteniendo a EE. UU. fuera de la guerra (4 nov.)"]
+    },
+    "tech": "Igor Sikorsky voló en el primer helicóptero práctico, el VS-300"
+  },
+  "1940": {
+    "periods": {
+      "1": ["Alemania invade Dinamarca y Noruega (9 abr.)", "Finlandia firma un tratado de paz con la URSS (13 mar.)"],
+      "2": ["Alemania invade Francia, Bélgica y los Países Bajos (10 may.)", "La evacuación de Dunkerque salva a 338 000 soldados (may.–jun.)"],
+      "3": ["La Batalla de Gran Bretaña comienza (ago.)", "Japón, Alemania e Italia firman el Pacto Tripartito (sep.)"]
+    },
+    "tech": "El primer microscopio electrónico fue demostrado en los Estados Unidos"
+  },
+  "1941": {
+    "periods": {
+      "1": ["Alemania invade la Unión Soviética: Operación Barbarroja (22 jun.)", "La Carta del Atlántico es firmada por Roosevelt y Churchill (14 ago.)"],
+      "2": ["Japón ataca Pearl Harbor; EE. UU. entra en la II GM (7 dic.)", "Alemania declara la guerra a los Estados Unidos (11 dic.)"],
+      "3": ["El sitio de Leningrado comienza; durará 872 días (8 sep.)", "La Ley de Préstamo y Arriendo envía ayuda de EE. UU. a Gran Bretaña y los Aliados (11 mar.)"]
+    },
+    "tech": "La primera computadora electrónica programable, Colossus, comenzó a desarrollarse en Bletchley Park"
+  },
+  "1942": {
+    "periods": {
+      "1": ["La batalla de Midway: victoria naval decisiva de EE. UU. (4–7 jun.)", "Los estadounidenses de origen japonés son internados por la Orden Ejecutiva 9066 (feb.)"],
+      "2": ["La batalla de El Alamein: los Aliados derrotan a Rommel en África del Norte (oct.)", "La batalla de Stalingrado comienza; punto de inflexión en el frente oriental (ago.)"],
+      "3": ["Los Aliados desembarcan en África del Norte en la Operación Antorcha (8 nov.)", "El Proyecto Manhattan es lanzado formalmente para construir la bomba atómica (13 ago.)"]
+    },
+    "tech": "Enrico Fermi produjo la primera reacción nuclear en cadena autosostenida en Chicago"
+  },
+  "1943": {
+    "periods": {
+      "1": ["El 6.° Ejército alemán se rinde en Stalingrado (2 feb.)", "Los Aliados invaden Sicilia; Mussolini es depuesto (jul.)"],
+      "2": ["La Conferencia de Teherán: Roosevelt, Churchill y Stalin se reúnen (nov.–dic.)", "Italia se rinde ante los Aliados (8 sep.)"],
+      "3": ["El Levantamiento del Gueto de Varsovia: resistencia judía contra los nazis (abr.)", "La batalla de Kursk — la mayor batalla de tanques de la historia (jul.)"]
+    },
+    "tech": "Colossus, la primera computadora electrónica programable, fue completada en Bletchley Park"
+  },
+  "1944": {
+    "periods": {
+      "1": ["El Día D: invasión aliada de Normandía (6 jun.)", "Roma es liberada por las fuerzas aliadas (4 jun.)"],
+      "2": ["París es liberado por los Aliados y las Fuerzas Francesas Libres (25 ago.)", "La batalla del Mar de Filipinas: EE. UU. derrota a la marina japonesa (jun.)"],
+      "3": ["La batalla de las Ardenas: última gran ofensiva alemana (16 dic.)", "El sistema monetario de Bretton Woods es establecido (1 jul.)"]
+    },
+    "tech": "El primer misil balístico operacional, el cohete V-2, fue usado en combate"
+  },
+  "1945": {
+    "periods": {
+      "1": ["Alemania se rinde; el Día VE es celebrado en Europa (8 may.)", "El presidente Roosevelt muere; Truman se convierte en presidente (12 abr.)"],
+      "2": ["EE. UU. lanza bombas atómicas sobre Hiroshima y Nagasaki (6 y 9 ago.)", "Japón se rinde; la Segunda Guerra Mundial termina (15 ago.)"],
+      "3": ["La Carta de las Naciones Unidas es firmada en San Francisco (26 jun.)", "Los Juicios de Núremberg de criminales de guerra nazis comienzan (20 nov.)"]
+    },
+    "tech": "La primera bomba atómica fue detonada en el sitio de prueba Trinity en Nuevo México"
+  },
+  "1946": {
+    "periods": {
+      "1": ["Winston Churchill pronuncia su discurso sobre el Telón de Acero (5 mar.)", "La Sociedad de Naciones es formalmente disuelta (18 abr.)"],
+      "2": ["Primera reunión de la Asamblea General de la ONU en Londres (10 ene.)", "Las pruebas nucleares en el atolón Bikini son realizadas por EE. UU. (jul.)"],
+      "3": ["Los Juicios de Núremberg concluyen con 12 condenas a muerte (oct.)", "Primera reunión del Consejo de Seguridad de la ONU (17 ene.)"]
+    },
+    "tech": "ENIAC, la primera computadora electrónica de propósito general, fue presentada en Penn"
+  },
+  "1947": {
+    "periods": {
+      "1": ["India y Pakistán obtienen la independencia de Gran Bretaña (15 ago.)", "La Doctrina Truman compromete a EE. UU. contra el comunismo (12 mar.)"],
+      "2": ["El Plan Marshall es propuesto para reconstruir la Europa devastada por la guerra (5 jun.)", "Los Rollos del Mar Muerto son descubiertos en cuevas cerca de Qumrán (feb.)"],
+      "3": ["Chuck Yeager rompe la barrera del sonido en el Bell X-1 (14 oct.)", "La ONU vota para dividir Palestina en estados árabe y judío (29 nov.)"]
+    },
+    "tech": "Chuck Yeager rompió la barrera del sonido por primera vez en el Bell X-1"
+  },
+  "1948": {
+    "periods": {
+      "1": ["Israel declara la independencia; la guerra árabe-israelí comienza (14 may.)", "El Mahatma Gandhi es asesinado en Nueva Delhi (30 ene.)"],
+      "2": ["El bloqueo de Berlín comienza; el puente aéreo de EE. UU. abastece Berlín Occidental (24 jun.)", "Un golpe comunista toma el poder en Checoslovaquia (feb.)"],
+      "3": ["Truman gana las elecciones presidenciales por sorpresa (2 nov.)", "La Declaración Universal de Derechos Humanos es adoptada (10 dic.)"]
+    },
+    "tech": "Los científicos de Bell Labs inventaron el transistor, transformando la electrónica"
+  },
+  "1949": {
+    "periods": {
+      "1": ["La OTAN es fundada por 12 naciones occidentales (4 abr.)", "La República Popular China es proclamada por Mao Zedong (1 oct.)"],
+      "2": ["La Unión Soviética prueba su primera bomba atómica (29 ago.)", "El bloqueo de Berlín es levantado tras 11 meses (12 may.)"],
+      "3": ["Alemania Occidental (RFA) es establecida como estado separado (23 may.)", "Orwell publica Mil novecientos ochenta y cuatro (8 jun.)"]
+    },
+    "tech": "La Unión Soviética detonó su primera bomba atómica, iniciando la carrera nuclear"
+  },
   "1950": {
     "periods": {
       "1": ["Corea del Norte invade Corea del Sur el 25 de junio — comienza la guerra", "El Consejo de Seguridad de la ONU autoriza el uso de la fuerza en Corea"],
@@ -566,5 +926,45 @@
       "3": ["Biden es elegido 46.° presidente de EE. UU. (3 nov.)", "Las vacunas contra el COVID-19 son aprobadas; se administran las primeras dosis (dic.)"]
     },
     "tech": "Las vacunas de ARNm contra el COVID-19 son desarrolladas y aprobadas en tiempo récord"
+  },
+  "2021": {
+    "periods": {
+      "1": ["El asalto al Capitolio del 6 de enero: partidarios de Trump irrumpen en el Congreso (6 ene.)", "Biden asume; Harris se convierte en la primera vicepresidenta (20 ene.)"],
+      "2": ["Los Juegos Olímpicos de Tokio se celebran sin espectadores (23 jul.)", "El conflicto Israel-Gaza mata a 250 personas en 11 días (may.)"],
+      "3": ["EE. UU. se retira de Afganistán; los talibanes recuperan Kabul (15 ago.)", "Facebook, Instagram y WhatsApp sufren una interrupción global (4 oct.)"]
+    },
+    "tech": "Los NFT explotan en popularidad con la venta de una obra de Beeple por 69 millones de dólares"
+  },
+  "2022": {
+    "periods": {
+      "1": ["Rusia lanza una invasión a gran escala de Ucrania (24 feb.)", "Un tiroteo en la escuela Robb Elementary mata a 19 niños (24 may.)"],
+      "2": ["Roe v. Wade es anulado por el Tribunal Supremo de EE. UU. (24 jun.)", "La OTAN se amplía con las solicitudes de Finlandia y Suecia (may.)"],
+      "3": ["La reina Isabel II muere tras 70 años de reinado (8 sep.)", "Elon Musk completa la compra de Twitter (27 oct.)"]
+    },
+    "tech": "ChatGPT es lanzado por OpenAI, desencadenando una revolución global de la IA"
+  },
+  "2023": {
+    "periods": {
+      "1": ["ChatGPT alcanza 100 millones de usuarios — la aplicación más rápida de la historia (ene.)", "El terremoto de Turquía y Siria mata a 50 000 personas (6 feb.)"],
+      "2": ["El Grupo Wagner realiza una breve marcha hacia Moscú (23 jun.)", "El submarino Titan implosiona cerca de los restos del Titanic (18 jun.)"],
+      "3": ["Hamás ataca Israel; comienza la guerra en Gaza (7 oct.)", "Sam Altman es brevemente despedido y luego reinstaurado en OpenAI (nov.)"]
+    },
+    "tech": "La IA generativa se vuelve popular con ChatGPT superando los 100 millones de usuarios"
+  },
+  "2024": {
+    "periods": {
+      "1": ["El gobierno de Haití colapsa en medio de la violencia de las pandillas (mar.)", "Un eclipse solar total cruza América del Norte (8 abr.)"],
+      "2": ["Los Juegos Olímpicos de París abren (26 jul.)", "Biden se retira de la carrera presidencial (21 jul.)"],
+      "3": ["Donald Trump es reelegido 47.° presidente de EE. UU. (5 nov.)", "La cumbre climática COP29 se celebra en Bakú, Azerbaiyán (nov.)"]
+    },
+    "tech": "Apple Vision Pro es lanzado, introduciendo la computación espacial para los consumidores"
+  },
+  "2025": {
+    "periods": {
+      "1": ["Trump asume para su segundo mandato (20 ene.)", "Los incendios de Los Ángeles destruyen miles de hogares (ene.)"],
+      "2": ["El papa Francisco muere; es elegido un nuevo papa (abr.)", "EE. UU. impone aranceles generalizados a sus socios comerciales (abr.)"],
+      "3": ["Los agentes de IA comienzan a automatizar tareas complejas en múltiples industrias", "Los robots humanoides comienzan su despliegue comercial en fábricas"]
+    },
+    "tech": "Los robots humanoides comenzaron su despliegue comercial en fábricas de todo el mundo"
   }
 }
