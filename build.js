@@ -3,6 +3,7 @@ const path = require('path');
 const zlib = require('zlib');
 
 const tools = [
+  require('./src/tools/homepage'),
   require('./src/tools/age'),
   require('./src/tools/days-between'),
   require('./src/tools/date-calc'),
@@ -168,8 +169,14 @@ const MASTHEAD_LABEL = {
 };
 
 const DATE_LOCALE = { en: 'en-US', fr: 'fr-FR', es: 'es-ES' };
-const HOME_HREF = { en: '/', fr: '/fr/calculateur-age/', es: '/es/calculadora-edad/' };
+const HOME_HREF = { en: '/', fr: '/fr/', es: '/es/' };
 const BUILD_YEAR = new Date().getFullYear();
+
+const CONSENT = {
+  en: { text: 'We use Google AdSense to fund this free service. Do you accept advertising cookies?', accept: 'Accept', decline: 'Continue without' },
+  fr: { text: 'Nous utilisons Google AdSense pour financer ce service gratuit. Acceptez-vous les cookies publicitaires\u00a0?', accept: 'Accepter', decline: 'Continuer sans' },
+  es: { text: 'Usamos Google AdSense para financiar este servicio gratuito. \u00bfAcepta las cookies publicitarias?', accept: 'Aceptar', decline: 'Continuar sin' },
+};
 
 // ── LAYOUT ────────────────────────────────────────────────
 function renderLayout(data, lang) {
@@ -211,6 +218,12 @@ ${JSON.stringify({
 }, null, 2)}
 </script>`;
 
+  // Schema.org Organization (site-wide)
+  const orgSchema = `
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"DateCalc.app","url":"https://datecalc.app","logo":"https://datecalc.app/og.png","contactPoint":{"@type":"ContactPoint","email":"hello@datecalc.app","contactType":"customer support"}}
+</script>`;
+
   const langBtns = LANGS.map(l => {
     const href = hreflang[l];
     const active = l === lang ? ' active' : '';
@@ -219,6 +232,9 @@ ${JSON.stringify({
 
   // Fix H1 crawl bug: ensure space before <br> so Google doesn't concat words
   const fixedHeadlineBlock = headlineBlock.replace(/([^\s])<br>/g, '$1 <br>');
+
+  // Inject aria-live="polite" on results container for screen reader announcements
+  const liveResultsSection = resultsSection.replace(/id="results"/, 'id="results" aria-live="polite"');
 
   const navLinks = NAV[lang].map(group => {
     const links = group.items.map((item, i) => {
@@ -229,6 +245,11 @@ ${JSON.stringify({
     return `    <div class="nav-group"><span class="nav-cat">${group.cat}</span><div class="nav-links">${links}</div></div>`;
   }).join('\n');
 
+
+  const footerCols = NAV[lang].map(group => {
+    const fLinks = group.items.map(item => `<a href="${item.href}">${item.label}</a>`).join('\n');
+    return `<div class="footer-col"><strong>${group.cat}</strong>\n${fLinks}</div>`;
+  }).join('\n');
   return `<!DOCTYPE html>
 <html lang="${lang}">
 <head>
@@ -258,8 +279,7 @@ ${JSON.stringify({
 <link rel="sitemap" type="application/xml" href="/sitemap.xml">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="shortcut icon" href="/favicon.svg">
-${faqSchema}${appSchema}
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4020973443671350" crossorigin="anonymous"></script>
+${faqSchema}${appSchema}${orgSchema}
 </head>
 <body>
 
@@ -283,7 +303,7 @@ ${fixedHeadlineBlock}
 
 ${formGrid}
 
-${resultsSection}
+${liveResultsSection}
 
   <nav aria-label="Tools">
   <div class="tool-nav">
@@ -295,7 +315,12 @@ ${navLinks}
 ${seoBlock}
 ${sourceBlock}
 </main>
-  <footer>© ${BUILD_YEAR} DateCalc.app — ${FOOTER[lang]} · <a href="${PRIVACY_HREF[lang]}">${PRIVACY_LBL[lang]}</a></footer>
+  <footer>
+  <nav class="footer-nav" aria-label="Site links">
+${footerCols}
+  </nav>
+  <div class="footer-copy">© ${BUILD_YEAR} DateCalc.app — ${FOOTER[lang]} · <a href="${PRIVACY_HREF[lang]}">${PRIVACY_LBL[lang]}</a></div>
+</footer>
 </div>
 
 <script>
@@ -313,10 +338,54 @@ function clamp(el, lo, hi) {
   if (!isNaN(n) && n > hi) s = String(hi);
   el.value = s;
 }
+// Auto-scroll to results when they become visible
+(function(){
+  var r=document.getElementById('results');
+  if(!r||r.classList.contains('auto-show'))return;
+  var obs=new MutationObserver(function(){
+    if(r.style.display!=''&&r.style.display!='none'){
+      r.scrollIntoView({behavior:'smooth',block:'start'});
+      obs.disconnect();
+    }
+  });
+  obs.observe(r,{attributes:true,attributeFilter:['style']});
+})();
+// Enter key submits calculator
+(function(){
+  var fg=document.querySelector('.form-grid');
+  if(!fg)return;
+  fg.addEventListener('keydown',function(e){
+    if(e.key==='Enter'&&typeof calculate==='function')calculate();
+  });
+})();
+// AdSense: load only with consent
+(function(){
+  var ADS_SRC='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4020973443671350';
+  function loadAds(){
+    var s=document.createElement('script');
+    s.src=ADS_SRC;s.async=true;s.crossOrigin='anonymous';
+    document.head.appendChild(s);
+  }
+  if(localStorage.getItem('ads-ok')==='1')return loadAds();
+  if(localStorage.getItem('ads-ok')==='0')return;
+  var b=document.getElementById('consent-banner');
+  if(b)b.style.display='flex';
+  document.getElementById('consent-accept')&&document.getElementById('consent-accept').addEventListener('click',function(){
+    localStorage.setItem('ads-ok','1');b.style.display='none';loadAds();
+  });
+  document.getElementById('consent-decline')&&document.getElementById('consent-decline').addEventListener('click',function(){
+    localStorage.setItem('ads-ok','0');b.style.display='none';
+  });
+})();
 </script>
 <script>
 ${script}
 </script>
+<div id="consent-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#111111;color:#fff;padding:.9rem 1.4rem;z-index:9999;font-size:.82rem;font-family:sans-serif;align-items:center;gap:.8rem;flex-wrap:wrap">
+  <span style="flex:1;min-width:200px">${CONSENT[lang].text}</span>
+  <button id="consent-accept" style="background:#c8392b;color:#fff;border:none;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">${CONSENT[lang].accept}</button>
+  <button id="consent-decline" style="background:transparent;color:#aaa;border:1px solid #555;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">${CONSENT[lang].decline}</button>
+</div>
 </body>
 </html>`;
 }
@@ -345,29 +414,30 @@ for (const tool of tools) {
   for (const page of tool.pages) {
     for (const lang of LANGS) {
       const slug = page.slugs[lang];           // e.g. "fr/calculateur-age"
-      const canonical = `/${slug}/`;
+      const canonical = slug === '' ? '/' : `/${slug}/`;
 
       const data = tool.render(page.id, lang);
       data.canonical = canonical;
       data.hreflang = {
-        en: `/${page.slugs.en}/`,
-        fr: `/${page.slugs.fr}/`,
-        es: `/${page.slugs.es}/`,
+        en: page.slugs.en === '' ? '/' : `/${page.slugs.en}/`,
+        fr: page.slugs.fr === '' ? '/' : `/${page.slugs.fr}/`,
+        es: page.slugs.es === '' ? '/' : `/${page.slugs.es}/`,
       };
 
       const html = renderLayout(data, lang);
-      writePage(`${slug}/index.html`, html);
+      const relPath = slug === '' ? 'index.html' : `${slug}/index.html`;
+      writePage(relPath, html);
       count++;
 
       if (page.isHomepage && lang === 'en') {
-        // Inject lang-detect snippet into homepage only
+        // Inject lang-detect snippet into EN homepage only
         const langDetect = `<script>
 (function(){
   if(sessionStorage.getItem('lang-redirected')) return;
   sessionStorage.setItem('lang-redirected','1');
   var l=(navigator.language||navigator.userLanguage||'').toLowerCase();
-  if(l.startsWith('fr')) window.location.replace('/fr/calculateur-age/');
-  else if(l.startsWith('es')) window.location.replace('/es/calculadora-edad/');
+  if(l.startsWith('fr')) window.location.replace('/fr/');
+  else if(l.startsWith('es')) window.location.replace('/es/');
 })();
 </script>`;
         writePage('index.html', html.replace('</head>', langDetect + '\n</head>'));
@@ -395,11 +465,11 @@ const allSlugs = [];
 for (const tool of tools) {
   for (const page of tool.pages) {
     for (const lang of LANGS) {
-      allSlugs.push(`/${page.slugs[lang]}/`);
+      const s = page.slugs[lang];
+      allSlugs.push(s === '' ? '/' : `/${s}/`);
     }
   }
 }
-allSlugs.push('/'); // homepage
 
 const today = new Date().toISOString().split('T')[0];
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>

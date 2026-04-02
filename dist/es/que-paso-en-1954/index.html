@@ -93,7 +93,9 @@
   }
 }
 </script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4020973443671350" crossorigin="anonymous"></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"DateCalc.app","url":"https://datecalc.app","logo":"https://datecalc.app/og.png","contactPoint":{"@type":"ContactPoint","email":"hello@datecalc.app","contactType":"customer support"}}
+</script>
 </head>
 <body>
 
@@ -102,7 +104,7 @@
 
 <header>
 <div class="masthead">
-  <a href="/es/calculadora-edad/" class="masthead-brand">DateCalc<span>.</span>app</a>
+  <a href="/es/" class="masthead-brand">DateCalc<span>.</span>app</a>
   <div class="masthead-meta" id="todayMeta"></div>
 </div>
 </header>
@@ -123,7 +125,7 @@
 
 
 
-  <div class="results-section auto-show" id="results">
+  <div class="results-section auto-show" id="results" aria-live="polite">
     <div class="world-when"><div class="world-when-title">El mundo en 1954</div><div class="world-row"><span class="world-icon">🌍</span><span class="world-lbl">Eventos</span><span class="world-val">Comienzan las audiencias Army-McCarthy exponiendo al senador McCarthy · EE. UU. detona la bomba de hidrógeno Castle Bravo (1 mar.) · La Corte Suprema declara inconstitucional la segregación escolar (17 may.) · La primera central nuclear abre en Obninsk, Unión Soviética · Vietnam es dividido en el paralelo 17 tras la derrota francesa · El huracán Hazel mata a miles en Haití y EE. UU.</span></div><div class="world-row"><span class="world-icon">🎵</span><span class="world-lbl">Música</span><span class="world-val">Sh-Boom – The Crew-Cuts</span></div><div class="world-row"><span class="world-icon">🎬</span><span class="world-lbl">Película</span><span class="world-val">Rear Window</span></div><div class="world-row"><span class="world-icon">💻</span><span class="world-lbl">Tecnología</span><span class="world-val">Los Laboratorios Bell desarrollan la primera célula solar</span></div><div class="world-row"><span class="world-icon">🛒</span><span class="world-lbl">Precios</span><span class="world-val">Pan $0.17 · Gasolina $0.29/gal · Casa $10,250</span></div></div>
     <div style="text-align:center;margin:1.2rem 0 .5rem">
       <a href="/es/nacido-en-1954/" class="calc-btn" style="display:inline-block;text-decoration:none">¿Naciste en 1954? Descubre tu edad exacta →</a>
@@ -161,7 +163,43 @@
     <a href="https://en.wikipedia.org/wiki/1954" target="_blank" rel="noopener noreferrer">Wikipedia – 1954</a>
   </div>
 </main>
-  <footer>© 2026 DateCalc.app — Calculadoras de fecha y hora gratuitas en línea · <a href="/es/privacidad/">Privacidad</a></footer>
+  <footer>
+  <nav class="footer-nav" aria-label="Site links">
+<div class="footer-col"><strong>Edad</strong>
+<a href="/es/calculadora-edad/">Calculadora de edad</a>
+<a href="/es/edad-cronologica/">Edad cronológica</a>
+<a href="/es/calculadora-edad-bebe/">Edad del bebé</a>
+<a href="/es/calculadora-edad-perro/">Edad del perro</a>
+<a href="/es/calculadora-edad-gato/">Edad del gato</a></div>
+<div class="footer-col"><strong>Fechas</strong>
+<a href="/es/dias-entre-fechas/">Días entre fechas</a>
+<a href="/es/calculadora-fechas/">Calculadora de fechas</a>
+<a href="/es/que-dia-es-hoy/">¿Qué día es hoy?</a>
+<a href="/es/numero-semana/">Número de semana</a>
+<a href="/es/calculadora-dias-habiles/">Días hábiles</a></div>
+<div class="footer-col"><strong>Cuentas</strong>
+<a href="/es/dias-para-navidad/">Navidad</a>
+<a href="/es/dias-para-ano-nuevo/">Año Nuevo</a>
+<a href="/es/dias-para-halloween/">Halloween</a>
+<a href="/es/dias-para-pascua/">Pascua</a>
+<a href="/es/cuenta-regresiva/">Cuenta regresiva</a></div>
+<div class="footer-col"><strong>Mundo</strong>
+<a href="/es/conversor-zona-horaria/">Zona horaria</a></div>
+<div class="footer-col"><strong>Nacido en</strong>
+<a href="/es/nacido-en-1990/">Nacido en 1990</a>
+<a href="/es/nacido-en-1980/">Nacido en 1980</a>
+<a href="/es/nacido-en-2000/">Nacido en 2000</a></div>
+<div class="footer-col"><strong>Resumen del año</strong>
+<a href="/es/que-paso-en-2000/">¿Qué pasó en 2000?</a>
+<a href="/es/que-paso-en-1990/">¿Qué pasó en 1990?</a>
+<a href="/es/que-paso-en-1980/">¿Qué pasó en 1980?</a></div>
+<div class="footer-col"><strong>Calendarios</strong>
+<a href="/es/numero-semana/2025/">Semanas 2025</a>
+<a href="/es/numero-semana/2026/">Semanas 2026</a>
+<a href="/es/numero-semana/2027/">Semanas 2027</a></div>
+  </nav>
+  <div class="footer-copy">© 2026 DateCalc.app — Calculadoras de fecha y hora gratuitas en línea · <a href="/es/privacidad/">Privacidad</a></div>
+</footer>
 </div>
 
 <script>
@@ -179,9 +217,53 @@ function clamp(el, lo, hi) {
   if (!isNaN(n) && n > hi) s = String(hi);
   el.value = s;
 }
+// Auto-scroll to results when they become visible
+(function(){
+  var r=document.getElementById('results');
+  if(!r||r.classList.contains('auto-show'))return;
+  var obs=new MutationObserver(function(){
+    if(r.style.display!=''&&r.style.display!='none'){
+      r.scrollIntoView({behavior:'smooth',block:'start'});
+      obs.disconnect();
+    }
+  });
+  obs.observe(r,{attributes:true,attributeFilter:['style']});
+})();
+// Enter key submits calculator
+(function(){
+  var fg=document.querySelector('.form-grid');
+  if(!fg)return;
+  fg.addEventListener('keydown',function(e){
+    if(e.key==='Enter'&&typeof calculate==='function')calculate();
+  });
+})();
+// AdSense: load only with consent
+(function(){
+  var ADS_SRC='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4020973443671350';
+  function loadAds(){
+    var s=document.createElement('script');
+    s.src=ADS_SRC;s.async=true;s.crossOrigin='anonymous';
+    document.head.appendChild(s);
+  }
+  if(localStorage.getItem('ads-ok')==='1')return loadAds();
+  if(localStorage.getItem('ads-ok')==='0')return;
+  var b=document.getElementById('consent-banner');
+  if(b)b.style.display='flex';
+  document.getElementById('consent-accept')&&document.getElementById('consent-accept').addEventListener('click',function(){
+    localStorage.setItem('ads-ok','1');b.style.display='none';loadAds();
+  });
+  document.getElementById('consent-decline')&&document.getElementById('consent-decline').addEventListener('click',function(){
+    localStorage.setItem('ads-ok','0');b.style.display='none';
+  });
+})();
 </script>
 <script>
 
 </script>
+<div id="consent-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#111111;color:#fff;padding:.9rem 1.4rem;z-index:9999;font-size:.82rem;font-family:sans-serif;align-items:center;gap:.8rem;flex-wrap:wrap">
+  <span style="flex:1;min-width:200px">Usamos Google AdSense para financiar este servicio gratuito. ¿Acepta las cookies publicitarias?</span>
+  <button id="consent-accept" style="background:#c8392b;color:#fff;border:none;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Aceptar</button>
+  <button id="consent-decline" style="background:transparent;color:#aaa;border:1px solid #555;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Continuar sin</button>
+</div>
 </body>
 </html>

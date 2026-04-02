@@ -101,7 +101,9 @@
   }
 }
 </script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4020973443671350" crossorigin="anonymous"></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"DateCalc.app","url":"https://datecalc.app","logo":"https://datecalc.app/og.png","contactPoint":{"@type":"ContactPoint","email":"hello@datecalc.app","contactType":"customer support"}}
+</script>
 </head>
 <body>
 
@@ -131,7 +133,7 @@
 
 
 
-  <div class="results-section auto-show" id="results">
+  <div class="results-section auto-show" id="results" aria-live="polite">
 <style>
 .year-calendar { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin: 1.5rem 0; }
 .mini-cal { font-family: 'Space Mono', monospace; font-size: .72rem; }
@@ -594,7 +596,43 @@
     <a href="https://www.iso.org/iso-8601-date-and-time-format.html" target="_blank" rel="noopener noreferrer">ISO 8601 – Date and Time Format Standard</a>
   </div>
 </main>
-  <footer>© 2026 DateCalc.app — Free online date &amp; time calculators · <a href="/privacy/">Privacy</a></footer>
+  <footer>
+  <nav class="footer-nav" aria-label="Site links">
+<div class="footer-col"><strong>Age</strong>
+<a href="/age-calculator/">Age Calculator</a>
+<a href="/chronological-age-calculator/">Chronological Age</a>
+<a href="/baby-age-calculator/">Baby Age</a>
+<a href="/dog-age-calculator/">Dog Age</a>
+<a href="/cat-age-calculator/">Cat Age</a></div>
+<div class="footer-col"><strong>Dates</strong>
+<a href="/days-between-dates/">Days Between Dates</a>
+<a href="/date-calculator/">Date Calculator</a>
+<a href="/what-day-is-it-today/">What Day Is It</a>
+<a href="/week-number/">Week Number</a>
+<a href="/business-days-calculator/">Business Days</a></div>
+<div class="footer-col"><strong>Countdowns</strong>
+<a href="/days-until-christmas/">Christmas</a>
+<a href="/days-until-new-year/">New Year</a>
+<a href="/days-until-halloween/">Halloween</a>
+<a href="/days-until-easter/">Easter</a>
+<a href="/countdown-timer/">Countdown Timer</a></div>
+<div class="footer-col"><strong>World</strong>
+<a href="/time-zone-converter/">Time Zone Converter</a></div>
+<div class="footer-col"><strong>Born In</strong>
+<a href="/born-in-1990/">Born in 1990</a>
+<a href="/born-in-1980/">Born in 1980</a>
+<a href="/born-in-2000/">Born in 2000</a></div>
+<div class="footer-col"><strong>Year in Review</strong>
+<a href="/what-happened-in-2000/">What Happened in 2000</a>
+<a href="/what-happened-in-1990/">What Happened in 1990</a>
+<a href="/what-happened-in-1980/">What Happened in 1980</a></div>
+<div class="footer-col"><strong>Calendars</strong>
+<a href="/week-number/2025/">Week Numbers 2025</a>
+<a href="/week-number/2026/">Week Numbers 2026</a>
+<a href="/week-number/2027/">Week Numbers 2027</a></div>
+  </nav>
+  <div class="footer-copy">© 2026 DateCalc.app — Free online date &amp; time calculators · <a href="/privacy/">Privacy</a></div>
+</footer>
 </div>
 
 <script>
@@ -612,6 +650,45 @@ function clamp(el, lo, hi) {
   if (!isNaN(n) && n > hi) s = String(hi);
   el.value = s;
 }
+// Auto-scroll to results when they become visible
+(function(){
+  var r=document.getElementById('results');
+  if(!r||r.classList.contains('auto-show'))return;
+  var obs=new MutationObserver(function(){
+    if(r.style.display!=''&&r.style.display!='none'){
+      r.scrollIntoView({behavior:'smooth',block:'start'});
+      obs.disconnect();
+    }
+  });
+  obs.observe(r,{attributes:true,attributeFilter:['style']});
+})();
+// Enter key submits calculator
+(function(){
+  var fg=document.querySelector('.form-grid');
+  if(!fg)return;
+  fg.addEventListener('keydown',function(e){
+    if(e.key==='Enter'&&typeof calculate==='function')calculate();
+  });
+})();
+// AdSense: load only with consent
+(function(){
+  var ADS_SRC='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4020973443671350';
+  function loadAds(){
+    var s=document.createElement('script');
+    s.src=ADS_SRC;s.async=true;s.crossOrigin='anonymous';
+    document.head.appendChild(s);
+  }
+  if(localStorage.getItem('ads-ok')==='1')return loadAds();
+  if(localStorage.getItem('ads-ok')==='0')return;
+  var b=document.getElementById('consent-banner');
+  if(b)b.style.display='flex';
+  document.getElementById('consent-accept')&&document.getElementById('consent-accept').addEventListener('click',function(){
+    localStorage.setItem('ads-ok','1');b.style.display='none';loadAds();
+  });
+  document.getElementById('consent-decline')&&document.getElementById('consent-decline').addEventListener('click',function(){
+    localStorage.setItem('ads-ok','0');b.style.display='none';
+  });
+})();
 </script>
 <script>
 
@@ -629,5 +706,10 @@ function clamp(el, lo, hi) {
 })();
 
 </script>
+<div id="consent-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#111111;color:#fff;padding:.9rem 1.4rem;z-index:9999;font-size:.82rem;font-family:sans-serif;align-items:center;gap:.8rem;flex-wrap:wrap">
+  <span style="flex:1;min-width:200px">We use Google AdSense to fund this free service. Do you accept advertising cookies?</span>
+  <button id="consent-accept" style="background:#c8392b;color:#fff;border:none;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Accept</button>
+  <button id="consent-decline" style="background:transparent;color:#aaa;border:1px solid #555;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Continue without</button>
+</div>
 </body>
 </html>

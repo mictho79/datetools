@@ -149,7 +149,6 @@ module.exports = {
   pages: [
     {
       id: 'age-calculator',
-      isHomepage: true,
       slugs: { en: 'age-calculator', fr: 'fr/calculateur-age', es: 'es/calculadora-edad' },
     },
   ],

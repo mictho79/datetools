@@ -93,7 +93,9 @@
   }
 }
 </script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4020973443671350" crossorigin="anonymous"></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"DateCalc.app","url":"https://datecalc.app","logo":"https://datecalc.app/og.png","contactPoint":{"@type":"ContactPoint","email":"hello@datecalc.app","contactType":"customer support"}}
+</script>
 </head>
 <body>
 
@@ -102,7 +104,7 @@
 
 <header>
 <div class="masthead">
-  <a href="/fr/calculateur-age/" class="masthead-brand">DateCalc<span>.</span>app</a>
+  <a href="/fr/" class="masthead-brand">DateCalc<span>.</span>app</a>
   <div class="masthead-meta" id="todayMeta"></div>
 </div>
 </header>
@@ -123,7 +125,7 @@
 
 
 
-  <div class="results-section auto-show" id="results">
+  <div class="results-section auto-show" id="results" aria-live="polite">
     <div class="world-when"><div class="world-when-title">Le monde en 1957</div><div class="world-row"><span class="world-icon">🌍</span><span class="world-lbl">Événements</span><span class="world-val">La doctrine Eisenhower est annoncée pour le Moyen-Orient (jan.) · Le Ghana obtient son indépendance — première nation d'Afrique subsaharienne · L'Année géophysique internationale commence le 1er juillet · Les Soviétiques testent leur premier ICBM en août · L'Union soviétique lance Spoutnik 1 le 4 octobre · La loi sur les droits civiques de 1957 signée par Eisenhower</span></div><div class="world-row"><span class="world-icon">🎵</span><span class="world-lbl">Musique</span><span class="world-val">All Shook Up – Elvis Presley</span></div><div class="world-row"><span class="world-icon">🎬</span><span class="world-lbl">Film</span><span class="world-val">The Bridge on the River Kwai</span></div><div class="world-row"><span class="world-icon">💻</span><span class="world-lbl">Tech</span><span class="world-val">L'Union soviétique lance Spoutnik 1, le premier satellite artificiel terrestre</span></div><div class="world-row"><span class="world-icon">🛒</span><span class="world-lbl">Prix</span><span class="world-val">Pain $0.19 · Essence $0.31/gal · Maison $12,200</span></div></div>
     <div style="text-align:center;margin:1.2rem 0 .5rem">
       <a href="/fr/ne-en-1957/" class="calc-btn" style="display:inline-block;text-decoration:none">Êtes-vous né en 1957 ? Calculez votre âge exact →</a>
@@ -161,7 +163,43 @@
     <a href="https://en.wikipedia.org/wiki/1957" target="_blank" rel="noopener noreferrer">Wikipedia – 1957</a>
   </div>
 </main>
-  <footer>© 2026 DateCalc.app — Calculateurs de date et d'heure gratuits en ligne · <a href="/fr/confidentialite/">Confidentialité</a></footer>
+  <footer>
+  <nav class="footer-nav" aria-label="Site links">
+<div class="footer-col"><strong>Âge</strong>
+<a href="/fr/calculateur-age/">Calculateur d'âge</a>
+<a href="/fr/age-chronologique/">Âge chronologique</a>
+<a href="/fr/calculateur-age-bebe/">Âge bébé</a>
+<a href="/fr/calculateur-age-chien/">Âge du chien</a>
+<a href="/fr/calculateur-age-chat/">Âge du chat</a></div>
+<div class="footer-col"><strong>Dates</strong>
+<a href="/fr/jours-entre-deux-dates/">Jours entre deux dates</a>
+<a href="/fr/calculateur-date/">Calculateur de date</a>
+<a href="/fr/quel-jour-sommes-nous/">Quel jour sommes-nous</a>
+<a href="/fr/numero-semaine/">Numéro de semaine</a>
+<a href="/fr/calculateur-jours-ouvrables/">Jours ouvrables</a></div>
+<div class="footer-col"><strong>Comptes</strong>
+<a href="/fr/jours-avant-noel/">Avant Noël</a>
+<a href="/fr/jours-avant-nouvel-an/">Avant Nouvel An</a>
+<a href="/fr/jours-avant-halloween/">Avant Halloween</a>
+<a href="/fr/jours-avant-paques/">Avant Pâques</a>
+<a href="/fr/compte-a-rebours/">Compte à rebours</a></div>
+<div class="footer-col"><strong>Monde</strong>
+<a href="/fr/convertisseur-fuseaux-horaires/">Fuseaux horaires</a></div>
+<div class="footer-col"><strong>Né en</strong>
+<a href="/fr/ne-en-1990/">Né en 1990</a>
+<a href="/fr/ne-en-1980/">Né en 1980</a>
+<a href="/fr/ne-en-2000/">Né en 2000</a></div>
+<div class="footer-col"><strong>Rétrospective</strong>
+<a href="/fr/que-s-est-il-passe-en-2000/">Que s'est-il passé en 2000</a>
+<a href="/fr/que-s-est-il-passe-en-1990/">Que s'est-il passé en 1990</a>
+<a href="/fr/que-s-est-il-passe-en-1980/">Que s'est-il passé en 1980</a></div>
+<div class="footer-col"><strong>Calendriers</strong>
+<a href="/fr/numero-semaine/2025/">Semaines 2025</a>
+<a href="/fr/numero-semaine/2026/">Semaines 2026</a>
+<a href="/fr/numero-semaine/2027/">Semaines 2027</a></div>
+  </nav>
+  <div class="footer-copy">© 2026 DateCalc.app — Calculateurs de date et d'heure gratuits en ligne · <a href="/fr/confidentialite/">Confidentialité</a></div>
+</footer>
 </div>
 
 <script>
@@ -179,9 +217,53 @@ function clamp(el, lo, hi) {
   if (!isNaN(n) && n > hi) s = String(hi);
   el.value = s;
 }
+// Auto-scroll to results when they become visible
+(function(){
+  var r=document.getElementById('results');
+  if(!r||r.classList.contains('auto-show'))return;
+  var obs=new MutationObserver(function(){
+    if(r.style.display!=''&&r.style.display!='none'){
+      r.scrollIntoView({behavior:'smooth',block:'start'});
+      obs.disconnect();
+    }
+  });
+  obs.observe(r,{attributes:true,attributeFilter:['style']});
+})();
+// Enter key submits calculator
+(function(){
+  var fg=document.querySelector('.form-grid');
+  if(!fg)return;
+  fg.addEventListener('keydown',function(e){
+    if(e.key==='Enter'&&typeof calculate==='function')calculate();
+  });
+})();
+// AdSense: load only with consent
+(function(){
+  var ADS_SRC='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4020973443671350';
+  function loadAds(){
+    var s=document.createElement('script');
+    s.src=ADS_SRC;s.async=true;s.crossOrigin='anonymous';
+    document.head.appendChild(s);
+  }
+  if(localStorage.getItem('ads-ok')==='1')return loadAds();
+  if(localStorage.getItem('ads-ok')==='0')return;
+  var b=document.getElementById('consent-banner');
+  if(b)b.style.display='flex';
+  document.getElementById('consent-accept')&&document.getElementById('consent-accept').addEventListener('click',function(){
+    localStorage.setItem('ads-ok','1');b.style.display='none';loadAds();
+  });
+  document.getElementById('consent-decline')&&document.getElementById('consent-decline').addEventListener('click',function(){
+    localStorage.setItem('ads-ok','0');b.style.display='none';
+  });
+})();
 </script>
 <script>
 
 </script>
+<div id="consent-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#111111;color:#fff;padding:.9rem 1.4rem;z-index:9999;font-size:.82rem;font-family:sans-serif;align-items:center;gap:.8rem;flex-wrap:wrap">
+  <span style="flex:1;min-width:200px">Nous utilisons Google AdSense pour financer ce service gratuit. Acceptez-vous les cookies publicitaires ?</span>
+  <button id="consent-accept" style="background:#c8392b;color:#fff;border:none;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Accepter</button>
+  <button id="consent-decline" style="background:transparent;color:#aaa;border:1px solid #555;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Continuer sans</button>
+</div>
 </body>
 </html>
