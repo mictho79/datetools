@@ -1,0 +1,570 @@
+{
+  "1950": {
+    "periods": {
+      "1": ["La Corée du Nord envahit la Corée du Sud le 25 juin — début de la guerre", "Le Conseil de sécurité de l'ONU autorise le recours à la force en Corée"],
+      "2": ["Les troupes américaines débarquent à Inchon dans un audacieux assaut amphibie", "Les forces nord-coréennes repoussent les troupes de l'ONU vers le périmètre de Pusan"],
+      "3": ["La Chine entre dans la guerre de Corée avec 300 000 soldats", "Les forces de l'ONU reculent face à l'offensive chinoise"]
+    },
+    "tech": "L'UNIVAC I, premier ordinateur commercial aux États-Unis, est livré au Bureau du recensement"
+  },
+  "1951": {
+    "periods": {
+      "1": ["Le général MacArthur limogé par Truman pour insubordination", "Les négociations d'armistice en Corée commencent à Kaesong en juillet"],
+      "2": ["Premier essai nucléaire américain au Nevada (jan.–avr.)", "Julius et Ethel Rosenberg condamnés à mort pour espionnage"],
+      "3": ["Traité de paix avec le Japon signé à San Francisco (8 sep.)", "La télévision couleur fait ses débuts aux États-Unis"]
+    },
+    "tech": "L'UNIVAC I prédit les élections de 1952, démontrant la puissance du calcul informatique"
+  },
+  "1952": {
+    "periods": {
+      "1": ["Le Royaume-Uni teste sa première bombe atomique aux îles Monte Bello, Australie", "Eisenhower remporte la primaire du New Hampshire par écrit"],
+      "2": ["Eisenhower remporte la nomination républicaine à la présidence", "Les Jeux olympiques d'Helsinki s'ouvrent avec 69 nations"],
+      "3": ["Eisenhower élu 34e président américain dans un raz-de-marée", "Le Grand Smog de Londres tue des milliers de personnes en décembre"]
+    },
+    "tech": "Les États-Unis font exploser la première bombe à hydrogène"
+  },
+  "1953": {
+    "periods": {
+      "1": ["Staline meurt le 5 mars ; Khrouchtchev commence à consolider son pouvoir", "Eisenhower prend ses fonctions de 34e président américain en janvier"],
+      "2": ["Edmund Hillary et Tenzing Norgay atteignent le sommet de l'Everest (29 mai)", "Watson et Crick publient leur article sur la double hélice de l'ADN (25 avr.)"],
+      "3": ["L'armistice de la guerre de Corée est signé le 27 juillet", "L'Union soviétique teste la bombe à hydrogène en août"]
+    },
+    "tech": "Watson et Crick découvrent la structure en double hélice de l'ADN"
+  },
+  "1954": {
+    "periods": {
+      "1": ["Les audiences Army-McCarthy commencent à exposer le sénateur McCarthy", "Les États-Unis font exploser la bombe à hydrogène Castle Bravo (1er mars)"],
+      "2": ["La Cour suprême déclare inconstitutionnelle la ségrégation scolaire (17 mai)", "La première centrale nucléaire ouvre à Obninsk, URSS"],
+      "3": ["Le Vietnam est partagé au 17e parallèle après la défaite française", "L'ouragan Hazel tue des milliers de personnes en Haïti et aux États-Unis"]
+    },
+    "tech": "La première cellule solaire est développée par les Laboratoires Bell"
+  },
+  "1955": {
+    "periods": {
+      "1": ["L'Allemagne de l'Ouest rejoint l'OTAN le 5 mai", "Albert Einstein meurt à Princeton le 18 avril"],
+      "2": ["Disneyland ouvre à Anaheim, Californie, le 17 juillet", "Le Pacte de Varsovie est signé comme alliance militaire soviétique en mai"],
+      "3": ["Rosa Parks refuse de céder sa place dans le bus (1er déc.)", "Le boycott des bus de Montgomery commence après l'arrestation de Parks"]
+    },
+    "tech": "Le vaccin antipoliomyélitique de Jonas Salk approuvé pour une utilisation généralisée"
+  },
+  "1956": {
+    "periods": {
+      "1": ["Khrouchtchev prononce son discours secret dénonçant Staline (25 fév.)", "Le Pakistan devient la première République islamique (23 mars)"],
+      "2": ["L'Égypte nationalise le canal de Suez (26 juil.)", "Les Jeux olympiques s'ouvrent à Melbourne, Australie (22 nov.)"],
+      "3": ["La révolution hongroise est écrasée par les troupes soviétiques en novembre", "Crise de Suez : le Royaume-Uni, la France et Israël envahissent l'Égypte (29 oct.)"]
+    },
+    "tech": "IBM présente le premier disque dur commercial, le RAMAC 305"
+  },
+  "1957": {
+    "periods": {
+      "1": ["La doctrine Eisenhower est annoncée pour le Moyen-Orient (jan.)", "Le Ghana obtient son indépendance — première nation d'Afrique subsaharienne"],
+      "2": ["L'Année géophysique internationale commence le 1er juillet", "Les Soviétiques testent leur premier ICBM en août"],
+      "3": ["L'Union soviétique lance Spoutnik 1 le 4 octobre", "La loi sur les droits civiques de 1957 signée par Eisenhower"]
+    },
+    "tech": "L'Union soviétique lance Spoutnik 1, le premier satellite artificiel terrestre"
+  },
+  "1958": {
+    "periods": {
+      "1": ["Les États-Unis lancent Explorer 1, leur premier satellite (31 jan.)", "La NASA est créée par le Congrès et promulguée (mars)"],
+      "2": ["Le Grand Bond en avant commence en Chine sous Mao (mai)", "Le premier sous-marin nucléaire américain USS Nautilus traverse le pôle Nord"],
+      "3": ["Charles de Gaulle devient Premier ministre français (sep.)", "Jack Kilby présente le premier circuit intégré (sep.)"]
+    },
+    "tech": "Jack Kilby invente le circuit intégré chez Texas Instruments"
+  },
+  "1959": {
+    "periods": {
+      "1": ["Fidel Castro prend le pouvoir à Cuba le 1er janvier", "L'Alaska devient le 49e État américain le 3 janvier"],
+      "2": ["Hawaï devient le 50e État américain le 21 août", "La sonde soviétique Luna 2 devient le premier engin à atteindre la Lune"],
+      "3": ["Khrouchtchev visite les États-Unis en septembre", "Le Traité sur l'Antarctique est signé par 12 nations en décembre"]
+    },
+    "tech": "Le premier photocopieur commercial, le Xerox 914, est lancé"
+  },
+  "1960": {
+    "periods": {
+      "1": ["L'avion espion américain U-2 abattu au-dessus de l'URSS (1er mai)", "Dix-sept nations africaines obtiennent leur indépendance cette année"],
+      "2": ["Les Jeux olympiques de Rome s'ouvrent le 25 août", "Le Spoutnik 5 soviétique emporte les chiens Belka et Strelka en orbite"],
+      "3": ["John F. Kennedy élu 35e président américain (8 nov.)", "La Twist de Chubby Checker déclenche une mode de danse"]
+    },
+    "tech": "Le premier satellite météorologique, TIROS-1, est lancé par les États-Unis"
+  },
+  "1961": {
+    "periods": {
+      "1": ["Kennedy entre en fonction ; 'Ne demandez pas ce que votre pays peut faire' (20 jan.)", "Les États-Unis rompent leurs relations diplomatiques avec Cuba (3 jan.)"],
+      "2": ["L'invasion de la Baie des Cochons à Cuba échoue de façon désastreuse (17 avr.)", "Youri Gagarine devient le premier être humain dans l'espace (12 avr.)"],
+      "3": ["La construction du mur de Berlin commence le 13 août", "Alan Shepard devient le premier Américain dans l'espace (5 mai)"]
+    },
+    "tech": "Alan Shepard devient le premier Américain à voyager dans l'espace"
+  },
+  "1962": {
+    "periods": {
+      "1": ["John Glenn devient le premier Américain à orbiter la Terre (20 fév.)", "Les États-Unis commencent des opérations militaires secrètes au Sud-Vietnam"],
+      "2": ["L'Algérie obtient son indépendance de la France (5 juil.)", "Marilyn Monroe chante 'Happy Birthday' à JFK (19 mai)"],
+      "3": ["La crise des missiles de Cuba amène le monde au bord de la guerre nucléaire (oct.)", "Le concile Vatican II s'ouvre sous le pape Jean XXIII (11 oct.)"]
+    },
+    "tech": "Telstar 1, le premier satellite de communications actif, est lancé"
+  },
+  "1963": {
+    "periods": {
+      "1": ["Betty Friedan publie 'La Femme mystifiée' (fév.)", "Martin Luther King écrit sa 'Lettre de la prison de Birmingham' (avr.)"],
+      "2": ["Martin Luther King prononce son discours 'I Have a Dream' (28 août)", "Le Traité d'interdiction partielle des essais nucléaires est signé (5 août)"],
+      "3": ["Le président Kennedy assassiné à Dallas (22 nov.)", "Lee Harvey Oswald abattu par Jack Ruby en direct à la télévision (24 nov.)"]
+    },
+    "tech": "Le téléphone à touches est lancé par Bell System"
+  },
+  "1964": {
+    "periods": {
+      "1": ["Les Beatles arrivent en Amérique pour l'émission d'Ed Sullivan (9 fév.)", "Le 24e amendement abolissant les taxes électorales ratifié (23 jan.)"],
+      "2": ["La loi sur les droits civiques signée par LBJ (2 juil.)", "L'incident du golfe du Tonkin escalade le rôle américain au Vietnam (août)"],
+      "3": ["La Commission Warren conclut qu'Oswald a agi seul (27 sep.)", "Khrouchtchev renversé ; Brejnev devient chef soviétique (oct.)"]
+    },
+    "tech": "IBM présente la famille d'ordinateurs centraux System/360"
+  },
+  "1965": {
+    "periods": {
+      "1": ["Les États-Unis commencent l'opération Rolling Thunder au Nord-Vietnam", "Malcolm X assassiné à New York (21 fév.)"],
+      "2": ["Les États-Unis envoient leurs premiers soldats au Vietnam (8 mars)", "La loi sur les droits de vote signée par LBJ (6 août)"],
+      "3": ["Les émeutes de Watts à Los Angeles font 34 morts (août)", "La dernière tournée des Beatles inclut le stade Shea (août)"]
+    },
+    "tech": "Gordon Moore publie la loi de Moore prédisant la croissance des transistors"
+  },
+  "1966": {
+    "periods": {
+      "1": ["Indira Gandhi devient Première ministre de l'Inde (19 jan.)", "La Révolution culturelle lancée par Mao Zedong (16 mai)"],
+      "2": ["L'Organisation nationale des femmes (NOW) fondée (30 juin)", "Les programmes Medicare et Medicaid entrent en vigueur (1er juil.)"],
+      "3": ["Le Parti des Panthères noires fondé à Oakland, Californie (oct.)", "Lunar Orbiter 1 prend la première photo de la Terre depuis la Lune (août)"]
+    },
+    "tech": "La première souris informatique est présentée par Douglas Engelbart"
+  },
+  "1967": {
+    "periods": {
+      "1": ["L'incendie d'Apollo 1 tue trois astronautes lors d'un essai au sol (27 jan.)", "Thurgood Marshall nommé à la Cour suprême (juin)"],
+      "2": ["Israël remporte la guerre des Six Jours contre ses voisins arabes (5–10 juin)", "Summer of Love : 100 000 personnes se rassemblent à San Francisco"],
+      "3": ["Première transplantation cardiaque par le Dr Christiaan Barnard (3 déc.)", "Che Guevara capturé et tué en Bolivie (9 oct.)"]
+    },
+    "tech": "La première calculatrice de poche est développée par Texas Instruments"
+  },
+  "1968": {
+    "periods": {
+      "1": ["L'offensive du Têt choque les Américains avec l'ampleur de la guerre du Vietnam (jan.)", "Martin Luther King Jr. assassiné à Memphis (4 avr.)"],
+      "2": ["Robert Kennedy assassiné à Los Angeles (5 juin)", "Le Printemps de Prague : les chars soviétiques écrasent les réformes tchèques (août)"],
+      "3": ["Richard Nixon remporte l'élection présidentielle américaine (5 nov.)", "Les Jeux olympiques de Mexico City s'ouvrent ; le salut Black Power stupéfie le monde"]
+    },
+    "tech": "Douglas Engelbart présente publiquement la première souris informatique et l'hypertexte"
+  },
+  "1969": {
+    "periods": {
+      "1": ["Nixon prend ses fonctions ; entame des négociations secrètes de paix au Vietnam", "Yasser Arafat élu président de l'OLP (fév.)"],
+      "2": ["Neil Armstrong marche sur la Lune (20 juil.)", "Le festival de Woodstock attire 400 000 personnes dans l'État de New York (août)"],
+      "3": ["Hô Chi Minh meurt ; la direction du Nord-Vietnam change (2 sep.)", "Premiers soldats américains retirés du Vietnam (sep.)"]
+    },
+    "tech": "ARPANET, le précurseur d'internet, est lancé"
+  },
+  "1970": {
+    "periods": {
+      "1": ["Les États-Unis envahissent le Cambodge, élargissant la guerre du Vietnam (30 avr.)", "Le Jour de la Terre célébré pour la première fois (22 avr.)"],
+      "2": ["Fusillades de Kent State : quatre étudiants tués (4 mai)", "Les Beatles se séparent officiellement (août)"],
+      "3": ["Anouar el-Sadate devient président de l'Égypte (15 oct.)", "Salvador Allende élu président du Chili (4 nov.)"]
+    },
+    "tech": "IBM introduit la disquette pour le stockage de données"
+  },
+  "1971": {
+    "periods": {
+      "1": ["Le 26e amendement abaisse l'âge de vote aux États-Unis à 18 ans (ratifié juil.)", "Les Papiers du Pentagone publiés par le New York Times (13 juin)"],
+      "2": ["Apollo 15 se pose sur la Lune ; les astronautes conduisent le rover lunaire (juil.)", "Le Bangladesh déclare son indépendance du Pakistan (26 mars)"],
+      "3": ["Nixon impose des contrôles des salaires et des prix pour lutter contre l'inflation (août)", "La République populaire de Chine admise aux Nations Unies"]
+    },
+    "tech": "Intel lance le 4004, le premier microprocesseur commercial au monde"
+  },
+  "1972": {
+    "periods": {
+      "1": ["Nixon visite la Chine, ouvrant des relations diplomatiques (21 fév.)", "Bloody Sunday : des soldats britanniques tuent 14 personnes en Irlande du Nord (jan.)"],
+      "2": ["Les cambrioleurs du Watergate arrêtés au siège du DNC (17 juin)", "Nixon visite l'URSS ; le traité SALT I sur les armements est signé (mai)"],
+      "3": ["Nixon réélu dans un immense raz-de-marée (7 nov.)", "Le massacre des Jeux olympiques de Munich tue 11 athlètes israéliens (sep.)"]
+    },
+    "tech": "La première console de jeux vidéo, Magnavox Odyssey, est commercialisée"
+  },
+  "1973": {
+    "periods": {
+      "1": ["Roe v. Wade légalise l'avortement aux États-Unis (22 jan.)", "Les Accords de Paris sont signés ; les États-Unis se retirent du Vietnam (27 jan.)"],
+      "2": ["Les audiences du Sénat sur le Watergate sont télévisées nationalement (mai)", "La guerre du Kippour : l'Égypte et la Syrie attaquent Israël (oct.)"],
+      "3": ["L'embargo pétrolier arabe provoque une crise du carburant en Occident (oct.)", "Le vice-président Spiro Agnew démissionne sous des accusations de corruption (oct.)"]
+    },
+    "tech": "L'ingénieur Motorola Martin Cooper effectue le premier appel téléphonique cellulaire portable"
+  },
+  "1974": {
+    "periods": {
+      "1": ["La commission judiciaire de la Chambre ouvre des auditions d'impeachment (fév.)", "Hank Aaron bat le record de home runs de Babe Ruth (8 avr.)"],
+      "2": ["Articles d'impeachment de Nixon adoptés par la commission de la Chambre (juil.)", "Patricia Hearst kidnappée par l'Armée de libération symbionaise (fév.)"],
+      "3": ["Nixon démissionne ; Ford devient président (9 août)", "Ford gracie Nixon inconditionnellement (8 sep.)"]
+    },
+    "tech": "Le kit informatique Altair 8800 est lancé, déclenchant l'ère du PC"
+  },
+  "1975": {
+    "periods": {
+      "1": ["Le gouvernement du Sud-Vietnam s'effondre ; Saïgon tombe (30 avr.)", "Les Khmers rouges prennent le pouvoir au Cambodge (17 avr.)"],
+      "2": ["Microsoft fondé par Bill Gates et Paul Allen (4 avr.)", "Les Accords d'Helsinki sur les droits de l'homme signés (1er août)"],
+      "3": ["Francisco Franco meurt ; l'Espagne passe à la démocratie (nov.)", "L'Angola obtient son indépendance du Portugal (11 nov.)"]
+    },
+    "tech": "L'Altair 8800 est lancé, inspirant Gates et Allen à fonder Microsoft"
+  },
+  "1976": {
+    "periods": {
+      "1": ["Les célébrations du bicentenaire américain commencent à travers le pays", "Jimmy Carter remporte la nomination démocrate à la présidence"],
+      "2": ["Viking 1 se pose sur Mars et envoie des photos de la surface (20 juil.)", "Les Jeux olympiques de Montréal s'ouvrent (17 juil.)"],
+      "3": ["Jimmy Carter élu président américain (2 nov.)", "Mao Zedong meurt après des décennies à la tête de la Chine (9 sep.)"]
+    },
+    "tech": "Apple Computer est fondé et l'Apple I est mis en vente"
+  },
+  "1977": {
+    "periods": {
+      "1": ["Jimmy Carter entre en fonction comme 39e président américain (20 jan.)", "Star Wars sort et devient un phénomène culturel (25 mai)"],
+      "2": ["Elvis Presley meurt à 42 ans à Memphis (16 août)", "La panne de courant à New York déclenche des pillages généralisés (13 juil.)"],
+      "3": ["Le président égyptien Sadate effectue une visite historique en Israël (nov.)", "Les premiers ordinateurs Apple II sont mis en vente (5 juin)"]
+    },
+    "tech": "L'Apple II, le Commodore PET et le TRS-80 sont lancés la même année"
+  },
+  "1978": {
+    "periods": {
+      "1": ["Les négociations des Accords de Camp David commencent entre l'Égypte et Israël", "Le premier 'bébé éprouvette' Louise Brown naît en Angleterre (25 juil.)"],
+      "2": ["Les Accords de Camp David signés par Carter, Sadate et Begin (17 sep.)", "Le pape Jean-Paul Ier meurt après 33 jours ; Jean-Paul II élu"],
+      "3": ["Le suicide collectif de Jonestown tue 918 personnes (18 nov.)", "La Dominique obtient son indépendance du Royaume-Uni (3 nov.)"]
+    },
+    "tech": "Le premier courriel indésirable est envoyé sur ARPANET à des centaines d'utilisateurs"
+  },
+  "1979": {
+    "periods": {
+      "1": ["Le Chah d'Iran s'enfuit ; la Révolution islamique prend le pouvoir (11 fév.)", "Les États-Unis et la Chine établissent des relations diplomatiques complètes (1er jan.)"],
+      "2": ["L'accident nucléaire de Three Mile Island en Pennsylvanie (28 mars)", "Margaret Thatcher devient la première femme Premier ministre du Royaume-Uni (mai)"],
+      "3": ["L'Union soviétique envahit l'Afghanistan (24 déc.)", "La crise des otages en Iran commence ; l'ambassade américaine prise (4 nov.)"]
+    },
+    "tech": "Motorola lance le premier réseau de téléphonie cellulaire commercial au Japon"
+  },
+  "1980": {
+    "periods": {
+      "1": ["Les États-Unis boycottent les Jeux olympiques de Moscou en raison de l'invasion soviétique", "Le Mont St. Helens entre en éruption catastrophiquement dans l'État de Washington (18 mai)"],
+      "2": ["La guerre Iran-Irak commence lorsque l'Irak envahit l'Iran (22 sep.)", "Le syndicat Solidarité de Pologne fondé par Lech Wałęsa (31 août)"],
+      "3": ["Ronald Reagan élu 40e président américain (4 nov.)", "John Lennon abattu et tué à New York (8 déc.)"]
+    },
+    "tech": "Pac-Man sort en salle d'arcade et devient un phénomène mondial"
+  },
+  "1981": {
+    "periods": {
+      "1": ["Les otages américains en Iran libérés après 444 jours (20 jan.)", "Reagan entre en fonction ; une tentative d'assassinat le blesse (30 mars)"],
+      "2": ["IBM lance son premier ordinateur personnel (12 août)", "Le prince Charles et Diana se marient à Londres (29 juil.)"],
+      "3": ["Le SIDA officiellement reconnu comme épidémie par les CDC (déc.)", "Anouar el-Sadate assassiné au Caire (6 oct.)"]
+    },
+    "tech": "IBM lance son premier ordinateur personnel, l'IBM PC 5150"
+  },
+  "1982": {
+    "periods": {
+      "1": ["Guerre des Malouines : l'Argentine s'empare des îles ; le Royaume-Uni envoie une force (avr.)", "ET l'extraterrestre devient une sensation au box-office (juin)"],
+      "2": ["Israël envahit le Liban pour expulser l'OLP (6 juin)", "La guerre des Malouines se termine par la capitulation argentine (14 juin)"],
+      "3": ["Le disque compact (CD) lancé commercialement aux États-Unis (oct.)", "Massacre de Sabra et Chatila dans les camps de réfugiés libanais (sep.)"]
+    },
+    "tech": "Le disque compact (CD) est commercialement lancé au Japon et aux États-Unis"
+  },
+  "1983": {
+    "periods": {
+      "1": ["Reagan propose l'Initiative de défense stratégique (23 mars)", "L'ambassade américaine à Beyrouth bombardée, 63 morts (18 avr.)"],
+      "2": ["La crise entre les États-Unis et les Soviétiques autour du vol KAL 007 (sep.)", "L'attentat contre les casernes de Beyrouth tue 241 Marines américains (23 oct.)"],
+      "3": ["Les États-Unis envahissent la Grenade (25 oct.)", "L'internet naît lorsque ARPANET adopte TCP/IP le 1er jan."]
+    },
+    "tech": "L'internet naît lorsque ARPANET adopte la suite de protocoles TCP/IP"
+  },
+  "1984": {
+    "periods": {
+      "1": ["Apple lance l'ordinateur Macintosh (24 jan.)", "Indira Gandhi assassinée par ses gardes du corps (31 oct.)"],
+      "2": ["Les Jeux olympiques d'été de Los Angeles s'ouvrent (28 juil.)", "La famine éthiopienne commence à dévaster des millions de personnes"],
+      "3": ["Reagan réélu dans un raz-de-marée dans 49 États (6 nov.)", "La catastrophe de Bhopal tue des milliers de personnes en Inde (3 déc.)"]
+    },
+    "tech": "Apple lance le Macintosh, popularisant l'interface graphique"
+  },
+  "1985": {
+    "periods": {
+      "1": ["Mikhail Gorbatchev devient chef soviétique (11 mars)", "Reagan et Gorbatchev se rencontrent au sommet de Genève (nov.)"],
+      "2": ["Les concerts Live Aid récoltent 127 millions de dollars pour l'Éthiopie (13 juil.)", "Le navire Rainbow Warrior de Greenpeace est bombardé par la France (10 juil.)"],
+      "3": ["Des pirates palestiniens s'emparent du paquebot Achille Lauro (oct.)", "Le séisme de Mexico City tue 9 000 personnes (19 sep.)"]
+    },
+    "tech": "Microsoft Windows 1.0 est lancé au grand public"
+  },
+  "1986": {
+    "periods": {
+      "1": ["La navette spatiale Challenger explose 73 secondes après le lancement (28 jan.)", "Ferdinand Marcos renversé aux Philippines par la Révolution du Peuple (fév.)"],
+      "2": ["La catastrophe nucléaire de Tchernobyl en Ukraine soviétique (26 avr.)", "Les États-Unis bombardent la Libye en représailles au terrorisme (15 avr.)"],
+      "3": ["L'affaire Iran-Contra révélée par l'administration Reagan (nov.)", "Le sommet de Reykjavik : Reagan et Gorbatchev proches d'un accord sur les armements (oct.)"]
+    },
+    "tech": "La première version du système de noms de domaine internet (DNS) est mise en ligne"
+  },
+  "1987": {
+    "periods": {
+      "1": ["Discours de Reagan 'Abattez ce mur' à Berlin (12 juin)", "Klaus Barbie condamné pour crimes contre l'humanité pendant la WWII"],
+      "2": ["Lundi noir : les marchés boursiers mondiaux s'effondrent de 22 % (19 oct.)", "Le Traité FNI signé pour éliminer les missiles nucléaires (8 déc.)"],
+      "3": ["La première Intifada palestinienne commence à Gaza (9 déc.)", "Le premier appareil photo jetable lancé par Fujifilm (juil.)"]
+    },
+    "tech": "Le langage de programmation Perl est lancé par Larry Wall"
+  },
+  "1988": {
+    "periods": {
+      "1": ["L'Union soviétique commence à se retirer d'Afghanistan (15 mai)", "George H.W. Bush remporte la nomination républicaine à la présidence"],
+      "2": ["Les Jeux olympiques de Séoul s'ouvrent en Corée du Sud (17 sep.)", "Le vol Iran Air 655 abattu par la marine américaine (3 juil.)"],
+      "3": ["Le vol Pan Am 103 bombardé au-dessus de Lockerbie, Écosse (21 déc.)", "George H.W. Bush élu 41e président américain (8 nov.)"]
+    },
+    "tech": "Le ver Morris, l'un des premiers vers informatiques, se répand sur les réseaux"
+  },
+  "1989": {
+    "periods": {
+      "1": ["George H.W. Bush prend ses fonctions de 41e président américain (20 jan.)", "L'ayatollah Khomeini d'Iran lance une fatwa contre Salman Rushdie"],
+      "2": ["Les manifestations de la place Tiananmen écrasées par l'armée chinoise (4 juin)", "La Pologne tient ses premières élections libres depuis la WWII (4 juin)"],
+      "3": ["Le mur de Berlin tombe le 9 novembre", "Le Ceaușescu de Roumanie renversé et exécuté (déc.)"]
+    },
+    "tech": "Tim Berners-Lee propose le World Wide Web au CERN"
+  },
+  "1990": {
+    "periods": {
+      "1": ["Nelson Mandela libéré après 27 ans de prison (11 fév.)", "La Namibie obtient son indépendance de l'Afrique du Sud (21 mars)"],
+      "2": ["L'Irak envahit le Koweït le 2 août", "Le traité de réunification germanique signé (31 août)"],
+      "3": ["La réunification allemande est achevée le 3 octobre", "Margaret Thatcher démissionne comme Premier ministre britannique (22 nov.)"]
+    },
+    "tech": "Le World Wide Web est mis en ligne avec le premier site web"
+  },
+  "1991": {
+    "periods": {
+      "1": ["Guerre du Golfe : la coalition américaine libère le Koweït en 100 heures (fév.)", "Boris Eltsine élu président de la République de Russie (juin)"],
+      "2": ["Une tentative de coup d'État contre Gorbatchev échoue en août", "Les États baltes regagnent leur indépendance de l'Union soviétique (août–sep.)"],
+      "3": ["L'Union soviétique se dissout officiellement le 25 décembre", "La Yougoslavie commence à se décomposer ; la Croatie et la Slovénie sont libérées"]
+    },
+    "tech": "Le noyau Linux est créé et publié par Linus Torvalds"
+  },
+  "1992": {
+    "periods": {
+      "1": ["La Bosnie déclare son indépendance ; le siège de Sarajevo commence (avr.)", "Les forces américaines entrent en Somalie dans une mission humanitaire (déc.)"],
+      "2": ["Les émeutes de Los Angeles éclatent après le verdict de l'affaire Rodney King (29 avr.)", "Les Jeux olympiques de Barcelone s'ouvrent (25 juil.)"],
+      "3": ["Bill Clinton élu 42e président américain (3 nov.)", "L'ouragan Andrew dévaste le sud de la Floride (24 août)"]
+    },
+    "tech": "Le premier SMS est envoyé sur un réseau mobile"
+  },
+  "1993": {
+    "periods": {
+      "1": ["Le World Trade Center bombardé par des terroristes (26 fév.)", "Clinton prend ses fonctions de 42e président américain (20 jan.)"],
+      "2": ["Les Accords d'Oslo signés entre Israël et l'OLP (13 sep.)", "Ruth Bader Ginsburg confirmée à la Cour suprême (3 août)"],
+      "3": ["Le Traité de Maastricht crée l'Union européenne (1er nov.)", "L'ALENA signé par Clinton (8 déc.)"]
+    },
+    "tech": "Le navigateur Mosaic rend l'internet accessible au grand public"
+  },
+  "1994": {
+    "periods": {
+      "1": ["Le séisme de Northridge dévaste Los Angeles (17 jan.)", "Le génocide rwandais commence ; 800 000 morts en 100 jours (avr.)"],
+      "2": ["Nelson Mandela élu premier président noir d'Afrique du Sud (mai)", "Le tunnel sous la Manche entre le Royaume-Uni et la France ouvre (6 mai)"],
+      "3": ["O.J. Simpson arrêté pour le meurtre de Nicole Brown (juin)", "Les républicains remportent le Congrès avec le 'Contrat avec l'Amérique' (nov.)"]
+    },
+    "tech": "Netscape Navigator est lancé, alimentant la croissance explosive d'internet"
+  },
+  "1995": {
+    "periods": {
+      "1": ["L'attentat d'Oklahoma City tue 168 personnes (19 avr.)", "Le séisme de Kobe tue 6 434 personnes au Japon (17 jan.)"],
+      "2": ["O.J. Simpson acquitté du meurtre (3 oct.)", "Le massacre de Srebrenica tue 8 000 Bosniaques musulmans (juil.)"],
+      "3": ["Rabin assassiné lors d'un rassemblement pour la paix à Tel Aviv (4 nov.)", "Les Accords de Dayton mettent fin à la guerre de Bosnie (21 nov.)"]
+    },
+    "tech": "Amazon et eBay sont tous deux lancés, débutant la révolution du commerce électronique"
+  },
+  "1996": {
+    "periods": {
+      "1": ["La brebis Dolly clonée — annoncé en fév. 1997 (juil. 1996)", "L'Unabomber Ted Kaczynski arrêté au Montana (3 avr.)"],
+      "2": ["Le vol TWA 800 s'écrase au large de Long Island, tuant 230 (17 juil.)", "L'attentat dans le parc olympique d'Atlanta tue 2 personnes (27 juil.)"],
+      "3": ["Clinton réélu président face à Bob Dole (5 nov.)", "Les talibans s'emparent de Kaboul et prennent le contrôle de l'Afghanistan (sep.)"]
+    },
+    "tech": "BackRub, précurseur de Google, développé par Page et Brin à Stanford"
+  },
+  "1997": {
+    "periods": {
+      "1": ["Hong Kong rétrocédé à la Chine par le Royaume-Uni (1er juil.)", "Le suicide collectif de la secte Heaven's Gate tue 39 personnes (26 mars)"],
+      "2": ["La princesse Diana meurt dans un accident de voiture à Paris (31 août)", "Pathfinder se pose sur Mars ; le rover Sojourner explore (4 juil.)"],
+      "3": ["Mère Teresa meurt à Calcutta (5 sep.)", "Le Protocole de Kyoto sur le changement climatique est adopté (11 déc.)"]
+    },
+    "tech": "Deep Blue d'IBM bat le champion du monde d'échecs Garry Kasparov"
+  },
+  "1998": {
+    "periods": {
+      "1": ["Clinton nie une liaison avec Monica Lewinsky (26 jan.)", "L'Inde et le Pakistan conduisent tous deux des essais d'armes nucléaires (mai)"],
+      "2": ["Les ambassades américaines au Kenya et en Tanzanie bombardées (7 août)", "Google fondé par Larry Page et Sergey Brin (4 sep.)"],
+      "3": ["Clinton mis en accusation par la Chambre des représentants (19 déc.)", "L'ouragan Mitch tue 11 000 personnes en Amérique centrale (oct.)"]
+    },
+    "tech": "Google est incorporé et commence sa montée en tant que moteur de recherche"
+  },
+  "1999": {
+    "periods": {
+      "1": ["L'OTAN commence à bombarder la Yougoslavie à cause du Kosovo (24 mars)", "Clinton acquitté par le Sénat dans le procès d'impeachment (12 fév.)"],
+      "2": ["La fusillade de Columbine tue 13 personnes (20 avr.)", "JFK Jr. meurt dans un accident d'avion au large de Martha's Vineyard (16 juil.)"],
+      "3": ["Les craintes liées au bogue de l'an 2000 envahissent le monde (déc.)", "Les manifestations contre l'OMC éclatent à Seattle (30 nov.)"]
+    },
+    "tech": "Napster est lancé, révolutionnant le partage de musique en ligne"
+  },
+  "2000": {
+    "periods": {
+      "1": ["Le bogue Y2K ne cause pas de défaillances informatiques significatives (1er jan.)", "La bulle internet commence à éclater sur le NASDAQ (mars)"],
+      "2": ["L'USS Cole bombardé dans le port yéménite, tuant 17 marins (oct.)", "Les Jeux olympiques d'été s'ouvrent à Sydney, Australie (15 sep.)"],
+      "3": ["George W. Bush élu président dans un vote disputé en Floride (nov.)", "Le recomptage en Floride décidé par la Cour suprême (12 déc.)"]
+    },
+    "tech": "La bulle des dot-com éclate, mettant fin au boom internet des années 1990"
+  },
+  "2001": {
+    "periods": {
+      "1": ["George W. Bush prend ses fonctions de 43e président américain (20 jan.)", "Wikipedia est lancé publiquement le 15 janvier"],
+      "2": ["Les attentats du 11 septembre tuent près de 3 000 personnes (11 sep.)", "Les États-Unis envahissent l'Afghanistan (7 oct.)"],
+      "3": ["La loi USA PATRIOT est promulguée (26 oct.)", "Des lettres à l'anthrax tuent 5 personnes aux États-Unis (oct.)"]
+    },
+    "tech": "Apple présente l'iPod et iTunes, transformant l'industrie musicale"
+  },
+  "2002": {
+    "periods": {
+      "1": ["Les billets et pièces en euros entrent en circulation dans 12 nations (jan.)", "Bush qualifie l'Irak, l'Iran et la Corée du Nord d'«Axe du Mal» (29 jan.)"],
+      "2": ["Le département de la Sécurité intérieure est créé (25 nov.)", "Les attentats à la bombe de Bali tuent 202 touristes (12 oct.)"],
+      "3": ["Le sniper de Washington tue 10 personnes en Virginie et Maryland (oct.)", "Les inspecteurs d'armements de l'ONU retournent en Irak (nov.)"]
+    },
+    "tech": "Les premiers téléphones avec appareil photo sont commercialisés aux États-Unis"
+  },
+  "2003": {
+    "periods": {
+      "1": ["La navette Columbia se désintègre à la rentrée atmosphérique (1er fév.)", "Les États-Unis envahissent l'Irak ; le régime de Saddam Hussein s'effondre (20 mars)"],
+      "2": ["Le président américain déclare 'Mission accomplie' en Irak (1er mai)", "L'épidémie de SRAS se propage à l'échelle mondiale, tuant 774 personnes"],
+      "3": ["Saddam Hussein capturé dans un trou (13 déc.)", "Arnold Schwarzenegger élu gouverneur de Californie (oct.)"]
+    },
+    "tech": "MySpace et LinkedIn sont tous deux lancés, pionners des réseaux sociaux"
+  },
+  "2004": {
+    "periods": {
+      "1": ["Facebook lancé à Harvard comme 'TheFacebook' (4 fév.)", "Les attentats à la bombe de Madrid tuent 191 personnes (11 mars)"],
+      "2": ["Le scandale des abus à la prison d'Abu Ghraib éclate (avr.)", "Les Jeux olympiques d'Athènes s'ouvrent (13 août)"],
+      "3": ["George W. Bush réélu président (2 nov.)", "Le tsunami de l'océan Indien tue 227 898 personnes (26 déc.)"]
+    },
+    "tech": "Facebook est fondé et lancé comme 'TheFacebook' à Harvard"
+  },
+  "2005": {
+    "periods": {
+      "1": ["YouTube fondé par trois ex-employés de PayPal (14 fév.)", "Le pape Jean-Paul II meurt ; Benoît XVI élu (avr.)"],
+      "2": ["L'ouragan Katrina dévaste la Nouvelle-Orléans (29 août)", "Les attentats dans le métro de Londres tuent 52 personnes (7 juil.)"],
+      "3": ["Harriet Miers nommée puis se retire de la Cour suprême (oct.)", "Angela Merkel devient la première femme chancelière d'Allemagne (nov.)"]
+    },
+    "tech": "YouTube est fondé, changeant fondamentalement la façon dont les vidéos sont partagées"
+  },
+  "2006": {
+    "periods": {
+      "1": ["Twitter lancé et Jack Dorsey envoie le premier tweet (21 mars)", "Le Hamas remporte les élections législatives palestiniennes (25 jan.)"],
+      "2": ["La guerre Israël-Liban éclate après l'enlèvement de soldats par le Hezbollah (juil.)", "La Corée du Nord teste des missiles balistiques (5 juil.)"],
+      "3": ["La Corée du Nord effectue son premier essai nucléaire (9 oct.)", "Saddam Hussein condamné à mort (5 nov.)"]
+    },
+    "tech": "Twitter est lancé et Jack Dorsey envoie le premier tweet"
+  },
+  "2007": {
+    "periods": {
+      "1": ["Apple dévoile l'iPhone original à Macworld (9 jan.)", "La fusillade de Virginia Tech tue 32 personnes (16 avr.)"],
+      "2": ["L'iPhone est mis en vente pour la première fois (29 juin)", "Barry Bonds bat le record de home runs tous temps de Hank Aaron (août)"],
+      "3": ["L'effondrement du marché immobilier américain déclenche une crise mondiale du crédit (sep.)", "Benazir Bhutto retourne au Pakistan ; une tentative d'assassinat échoue"]
+    },
+    "tech": "Apple lance le premier iPhone, redéfinissant l'industrie des smartphones"
+  },
+  "2008": {
+    "periods": {
+      "1": ["Bear Stearns s'effondre ; la Fed arrange le rachat par JPMorgan (mars)", "Des protestations au Tibet éclatent avant les Jeux olympiques de Pékin (mars)"],
+      "2": ["Les Jeux olympiques de Pékin s'ouvrent avec un spectacle record (8 août)", "La Russie envahit la Géorgie dans une guerre de cinq jours (8 août)"],
+      "3": ["Lehman Brothers s'effondre, déclenchant la crise financière (15 sep.)", "Barack Obama élu premier président noir américain (4 nov.)"]
+    },
+    "tech": "Google lance le système d'exploitation Android et le premier téléphone Android"
+  },
+  "2009": {
+    "periods": {
+      "1": ["Barack Obama prend ses fonctions de 44e président américain (20 jan.)", "Le vol US Airways 1549 se pose sur la rivière Hudson (15 jan.)"],
+      "2": ["La pandémie de grippe H1N1 déclarée par l'OMS (11 juin)", "Michael Jackson meurt soudainement à Los Angeles (25 juin)"],
+      "3": ["Obama reçoit le prix Nobel de la paix (9 oct.)", "La fusillade de Fort Hood tue 13 soldats américains (5 nov.)"]
+    },
+    "tech": "Bitcoin est lancé par le pseudonyme Satoshi Nakamoto"
+  },
+  "2010": {
+    "periods": {
+      "1": ["Le séisme d'Haïti tue plus de 230 000 personnes (12 jan.)", "Apple lance la première iPad (3 avr.)"],
+      "2": ["La marée noire Deepwater Horizon de BP commence (20 avr.)", "La Coupe du monde s'ouvre en Afrique du Sud — première sur le sol africain (juin)"],
+      "3": ["Les mineurs chiliens secourus après 69 jours sous terre (13 oct.)", "Les élections de mi-mandat américaines donnent de grands gains aux républicains (nov.)"]
+    },
+    "tech": "Apple lance la première iPad, inaugurant l'ère moderne des tablettes"
+  },
+  "2011": {
+    "periods": {
+      "1": ["Printemps arabe : les gouvernements tunisien et égyptien tombent (jan.–fév.)", "Le séisme et le tsunami au Japon tuent 15 897 personnes (11 mars)"],
+      "2": ["Oussama ben Laden tué par les Navy SEALs américains (2 mai)", "Casey Anthony acquittée du meurtre de sa fille (5 juil.)"],
+      "3": ["Mouammar Kadhafi tué lors de la révolution libyenne (20 oct.)", "Steve Jobs meurt à 56 ans après des années de maladie (5 oct.)"]
+    },
+    "tech": "Apple dévoile Siri, le premier assistant vocal IA grand public"
+  },
+  "2012": {
+    "periods": {
+      "1": ["Trayvon Martin abattu par George Zimmerman (26 fév.)", "La Corée du Nord lance une fusée longue portée en avril"],
+      "2": ["Les Jeux olympiques de Londres s'ouvrent (27 juil.)", "Le boson de Higgs confirmé au CERN (4 juil.)"],
+      "3": ["Obama réélu président américain (6 nov.)", "La fusillade de Sandy Hook tue 20 enfants (14 déc.)"]
+    },
+    "tech": "SpaceX devient la première entreprise privée à s'amarrer à la Station spatiale"
+  },
+  "2013": {
+    "periods": {
+      "1": ["Obama prend ses fonctions pour un second mandat (21 jan.)", "L'attentat du Marathon de Boston blesse des centaines de personnes (15 avr.)"],
+      "2": ["Edward Snowden révèle la surveillance mondiale de la NSA (juin)", "George Zimmerman acquitté dans l'affaire Trayvon Martin (juil.)"],
+      "3": ["Le gouvernement américain ferme pendant 16 jours (1–16 oct.)", "Le typhon Haiyan aux Philippines tue 6 300 personnes (8 nov.)"]
+    },
+    "tech": "Les fuites de Snowden révèlent l'ampleur massive de la surveillance de la NSA"
+  },
+  "2014": {
+    "periods": {
+      "1": ["La Russie annexe la Crimée à l'Ukraine (18 mars)", "Le vol MH370 de Malaysia Airlines disparaît avec 239 personnes à bord (8 mars)"],
+      "2": ["Daech déclare un califat en Irak et en Syrie (29 juin)", "La Coupe du monde s'ouvre au Brésil au milieu des protestations (12 juin)"],
+      "3": ["L'épidémie d'Ebola se propage rapidement en Afrique de l'Ouest (sep.)", "Le mouvement des parapluies pour la démocratie à Hong Kong commence (sep.)"]
+    },
+    "tech": "Amazon lance Echo, introduisant Alexa comme première enceinte intelligente pour la maison"
+  },
+  "2015": {
+    "periods": {
+      "1": ["L'attentat contre Charlie Hebdo tue 12 personnes à Paris (7 jan.)", "L'Arabie saoudite et ses alliés commencent à bombarder le Yémen (26 mars)"],
+      "2": ["Le mariage homosexuel légalisé dans tous les États-Unis (26 juin)", "La crise de la dette grecque atteint un point critique (juil.)"],
+      "3": ["Les attentats de Paris tuent 130 personnes au Bataclan et dans des restaurants (13 nov.)", "La crise des réfugiés syriens atteint son pic avec plus d'un million d'arrivées dans l'UE"]
+    },
+    "tech": "L'Apple Watch est lancée, popularisant la montre connectée moderne"
+  },
+  "2016": {
+    "periods": {
+      "1": ["Le virus Zika déclaré urgence sanitaire mondiale par l'OMS (1er fév.)", "David Bowie et Prince meurent tous deux à quelques mois d'intervalle"],
+      "2": ["Brexit : le Royaume-Uni vote pour quitter l'Union européenne (23 juin)", "Les Jeux olympiques de Rio s'ouvrent au Brésil (5 août)"],
+      "3": ["Donald Trump élu 45e président américain (8 nov.)", "Alep tombe aux forces gouvernementales syriennes (déc.)"]
+    },
+    "tech": "Pokémon Go est lancé et devient une sensation mondiale de réalité augmentée"
+  },
+  "2017": {
+    "periods": {
+      "1": ["Trump prend ses fonctions ; la Marche des femmes rassemble des millions (jan.)", "L'attaque chimique syrienne à Khan Chaykhun (4 avr.)"],
+      "2": ["Les attentats du London Bridge et de l'Arena de Manchester (mai–juin)", "Le sommet du G20 ; Trump et Poutine se rencontrent pour la première fois (juil.)"],
+      "3": ["La fusillade de Las Vegas tue 60 personnes — la pire de l'histoire américaine (1er oct.)", "Le mouvement #MeToo devient viral après les accusations contre Weinstein (oct.)"]
+    },
+    "tech": "Le prix du Bitcoin dépasse 10 000 dollars pour la première fois"
+  },
+  "2018": {
+    "periods": {
+      "1": ["La fusillade de Parkland tue 17 personnes ; March For Our Lives (fév.–mars)", "Le scandale Cambridge Analytica expose l'abus des données Facebook (mars)"],
+      "2": ["Les dirigeants de Corée du Nord et du Sud se rencontrent lors d'un sommet historique (27 avr.)", "La Coupe du monde s'ouvre en Russie (14 juin)"],
+      "3": ["Jamal Khashoggi assassiné dans le consulat saoudien (2 oct.)", "Les élections de mi-mandat américaines : les démocrates reprennent la Chambre (nov.)"]
+    },
+    "tech": "Le RGPD entre en vigueur en Europe, transformant les normes mondiales de confidentialité des données"
+  },
+  "2019": {
+    "periods": {
+      "1": ["La cathédrale Notre-Dame de Paris gravement endommagée par un incendie (15 avr.)", "Les attentats contre les mosquées de Nouvelle-Zélande tuent 51 personnes (15 mars)"],
+      "2": ["Les manifestations à Hong Kong rassemblent des millions de personnes contre Pékin (juin–août)", "Jeffrey Epstein arrêté pour trafic sexuel (6 juil.)"],
+      "3": ["Le Parlement britannique suspendu lors de la crise du Brexit (sep.)", "Une enquête d'impeachment contre Trump lancée par la Chambre (24 sep.)"]
+    },
+    "tech": "Les réseaux 5G sont lancés commercialement dans plusieurs pays"
+  },
+  "2020": {
+    "periods": {
+      "1": ["La pandémie de COVID-19 déclarée par l'OMS (11 mars)", "Kobe Bryant tué dans un accident d'hélicoptère (26 jan.)"],
+      "2": ["George Floyd assassiné ; les manifestations Black Lives Matter balaient les États-Unis (mai–juin)", "SpaceX lance sa première mission avec équipage depuis le sol américain depuis 2011"],
+      "3": ["Biden élu 46e président américain (3 nov.)", "Les vaccins contre le COVID-19 approuvés ; premières injections administrées (déc.)"]
+    },
+    "tech": "Les vaccins à ARNm contre le COVID-19 sont développés et approuvés en un temps record"
+  }
+}

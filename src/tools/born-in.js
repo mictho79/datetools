@@ -2,6 +2,8 @@
 // Generates one static page per birth year × 3 languages = 213 pages
 
 const EVENTS = require('../data/events.json');
+const EVENTS_FR = require('../data/events_fr.json');
+const EVENTS_ES = require('../data/events_es.json');
 
 const BIRTH_YEARS = [];
 for (let y = 1950; y <= 2020; y++) BIRTH_YEARS.push(y);
@@ -127,30 +129,38 @@ function getGen(year, genRanges) {
 }
 
 // Helper: build world events block HTML from EVENTS data
-function buildWorldBlock(year, t) {
-  const ev = EVENTS[String(year)];
-  if (!ev) return '';
+function buildWorldBlock(year, t, lang) {
+  const evSrc = lang === 'fr' ? EVENTS_FR : lang === 'es' ? EVENTS_ES : EVENTS;
+  const ev = evSrc[String(year)] || EVENTS[String(year)]; // fallback to EN
+  const evEn = EVENTS[String(year)]; // always use English for music, film, prices
+  if (!evEn) return '';
 
-  // Collect all world events across all 3 periods
+  // Collect all world events across all 3 periods (from translated source)
   let worldEvents = [];
-  if (ev.periods) {
+  if (ev && ev.periods) {
     ['1', '2', '3'].forEach(p => {
       if (ev.periods[p]) worldEvents = worldEvents.concat(ev.periods[p]);
     });
-  } else if (ev.world) {
-    worldEvents = ev.world;
+  } else if (evEn.periods) {
+    ['1', '2', '3'].forEach(p => {
+      if (evEn.periods[p]) worldEvents = worldEvents.concat(evEn.periods[p]);
+    });
+  } else if (evEn.world) {
+    worldEvents = evEn.world;
   }
+
+  const techText = (ev && ev.tech) ? ev.tech : (evEn.tech || '');
 
   const wTitle = tpl(t.wTitle, { year });
   const rows = [
     ['🌍', t.wLblEvents, worldEvents.join(' · ')],
-    ['🎵', t.wLblMusic, ev.music || ''],
-    ['🎬', t.wLblFilm, ev.film || ''],
-    ['💻', t.wLblTech, ev.tech || ''],
+    ['🎵', t.wLblMusic, evEn.music || ''],
+    ['🎬', t.wLblFilm, evEn.film || ''],
+    ['💻', t.wLblTech, techText],
     ['🛒', t.wLblPrices,
-      t.wLblBread + ' ' + (ev.prices ? ev.prices.bread : '') +
-      ' · ' + t.wLblGas + ' ' + (ev.prices ? ev.prices.gas : '') +
-      ' · ' + t.wLblHouse + ' ' + (ev.prices ? ev.prices.house : ''),
+      t.wLblBread + ' ' + (evEn.prices ? evEn.prices.bread : '') +
+      ' · ' + t.wLblGas + ' ' + (evEn.prices ? evEn.prices.gas : '') +
+      ' · ' + t.wLblHouse + ' ' + (evEn.prices ? evEn.prices.house : ''),
     ],
   ];
 
@@ -204,7 +214,7 @@ module.exports = {
     const faqs = t.faqsTpl.map(f => tplDeep(f, vars));
 
     // World events block
-    const worldBlock = buildWorldBlock(year, t);
+    const worldBlock = buildWorldBlock(year, t, lang);
 
     // Blocks
     const headlineBlock = `  <div class="headline-block">

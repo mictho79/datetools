@@ -1,6 +1,8 @@
 // Age Calculator (live precise counter — updates every second)
 
 const EVENTS = require('../data/events.json');
+const EVENTS_FR = require('../data/events_fr.json');
+const EVENTS_ES = require('../data/events_es.json');
 
 const T = {
   en: {
@@ -235,6 +237,28 @@ module.exports = {
 ${faqHTML}
   </div>`;
 
+    // Build a merged events object: periods+tech from translated source, music/film/prices always from EN
+    const evSrc = lang === 'fr' ? EVENTS_FR : lang === 'es' ? EVENTS_ES : null;
+    let mergedEvents = EVENTS;
+    if (evSrc) {
+      mergedEvents = {};
+      for (const yr of Object.keys(EVENTS)) {
+        const enEv = EVENTS[yr];
+        const trEv = evSrc[yr];
+        if (trEv) {
+          mergedEvents[yr] = {
+            periods: trEv.periods || enEv.periods,
+            tech: trEv.tech || enEv.tech,
+            music: enEv.music,
+            film: enEv.film,
+            prices: enEv.prices,
+          };
+        } else {
+          mergedEvents[yr] = enEv;
+        }
+      }
+    }
+
     const data = JSON.stringify({
       zodiacSigns: t.zodiacSigns,
       weekDays: t.weekDays,
@@ -249,7 +273,7 @@ ${faqHTML}
       wLblEvents: t.wLblEvents, wLblMusic: t.wLblMusic, wLblFilm: t.wLblFilm,
       wLblTech: t.wLblTech, wLblPrices: t.wLblPrices,
       wLblBread: t.wLblBread, wLblGas: t.wLblGas, wLblHouse: t.wLblHouse,
-      events: EVENTS,
+      events: mergedEvents,
     });
 
     const script = `
