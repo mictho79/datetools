@@ -403,6 +403,11 @@ const robots = `User-agent: *\nAllow: /\nSitemap: https://datecalc.app/sitemap.x
 fs.writeFileSync(path.join(DIST, 'robots.txt'), robots, 'utf8');
 console.log('  ✓ /robots.txt');
 
+// ── ADS.TXT ───────────────────────────────────────────────
+const adstxt = `google.com, pub-4020973443671350, DIRECT, f08c47fec0942fa0\n`;
+fs.writeFileSync(path.join(DIST, 'ads.txt'), adstxt, 'utf8');
+console.log('  ✓ /ads.txt');
+
 // ── OG IMAGE ──────────────────────────────────────────────
 (function buildOGImage() {
   const W = 1200, H = 630;
