@@ -17,6 +17,7 @@ body {
   font-family: 'Inter', sans-serif;
   min-height: 100vh;
   padding: 0 0 6rem;
+  overflow-x: hidden;
 }
 
 /* ── MASTHEAD ── */
@@ -674,4 +675,10 @@ footer {
   .stat-item:nth-child(3) { border-right: 1px solid var(--ink); }
   .seo-block { grid-template-columns: 1fr; gap: 1.5rem; }
   input[type="number"] { font-size: 1.5rem; }
+  .nav-links { display: flex; flex-wrap: wrap; gap: .3rem; padding-left: 0; }
+  .nav-links a { white-space: normal; }
+  .nav-sep { display: none; }
+  .lang-strip { flex-wrap: wrap; }
+  .fact-item { min-width: 120px; }
+  .world-row { grid-template-columns: 1.4rem 3.5rem 1fr; font-size: .85rem; }
 }
