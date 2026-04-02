@@ -30,11 +30,11 @@ const T = {
     seoP2Tpl:    'Each year carries its own defining moments and cultural touchstones. {year} contributed unique chapters to the story of the 20th and 21st centuries. Whether you lived through {year} or are researching it, the events, art, technology, and everyday costs of that year paint a rich picture of life at the time.',
     faqTitle:    'Frequently asked questions',
     faqsTpl: [
-      { q: 'What major events happened in {year}?', a: 'Key world events of {year} include the milestones listed above. These ranged across politics, war, science, and culture, shaping the course of modern history.' },
-      { q: 'What was the #1 song in {year}?', a: 'The top song of {year} is listed in the music row above. Popular music in {year} reflected the tastes and mood of the era.' },
-      { q: 'What movies came out in {year}?', a: 'The standout film of {year} is shown in the film row above. Cinema in {year} captured the spirit of the times and influenced popular culture for years to come.' },
-      { q: 'What did things cost in {year}?', a: 'In {year}, everyday prices included the figures shown in the prices row above for bread, gasoline, and the average house. These numbers illustrate how much purchasing power and the cost of living have changed over time.' },
-      { q: 'What technology was new in {year}?', a: 'The tech highlight of {year} is described in the technology row above. Innovations from {year} often laid the groundwork for technologies we rely on today.' },
+      { q: 'What major events happened in {year}?', a: 'Major world events of {year} include: {events}.' },
+      { q: 'What was the #1 song in {year}?', a: 'The most iconic song of {year} was {music}.' },
+      { q: 'What was the top film in {year}?', a: 'The standout film of {year} was {film}.' },
+      { q: 'What did things cost in {year}?', a: 'In {year}, a loaf of bread cost {bread}, gasoline was {gas}, and the average house was {house}.' },
+      { q: 'What technology milestone happened in {year}?', a: '{tech}' },
     ],
     bornInCtaTpl:  'Were you born in {year}? Find out your exact age →',
     bornInHrefTpl: '/born-in-{year}/',
@@ -60,11 +60,11 @@ const T = {
     seoP2Tpl:    'Chaque année porte ses propres moments définissants et repères culturels. {year} a contribué à des chapitres uniques de l\'histoire des XX\u1d49 et XXI\u1d49 siècles. Que vous ayez vécu {year} ou que vous le recherchiez, les événements, l\'art, la technologie et les coûts quotidiens de cette année brossent un tableau riche de la vie de l\'époque.',
     faqTitle:    'Questions fréquentes',
     faqsTpl: [
-      { q: 'Quels grands événements ont eu lieu en {year} ?', a: 'Les principaux événements mondiaux de {year} comprennent les jalons listés ci-dessus, couvrant la politique, les conflits, la science et la culture.' },
-      { q: 'Quel était le tube n°1 en {year} ?', a: 'Le tube de {year} est indiqué dans la ligne musique ci-dessus. La musique populaire de {year} reflétait les goûts et l\'ambiance de l\'époque.' },
-      { q: 'Quels films sont sortis en {year} ?', a: 'Le film phare de {year} est affiché dans la ligne cinéma ci-dessus. Le cinéma de {year} a capturé l\'esprit du temps.' },
-      { q: 'Combien coûtaient les choses en {year} ?', a: 'En {year}, les prix courants comprenaient les chiffres indiqués ci-dessus pour le pain, l\'essence et la maison moyenne. Ces données illustrent l\'évolution du pouvoir d\'achat.' },
-      { q: 'Quelles technologies sont apparues en {year} ?', a: 'L\'innovation technologique phare de {year} est décrite dans la ligne tech ci-dessus. Ces innovations ont souvent posé les bases des technologies d\'aujourd\'hui.' },
+      { q: 'Quels grands événements ont eu lieu en {year} ?', a: 'Les principaux événements mondiaux de {year} incluent : {events}.' },
+      { q: 'Quel était le tube n°1 en {year} ?', a: 'Le tube incontournable de {year} était {music}.' },
+      { q: 'Quel était le film phare de {year} ?', a: 'Le film marquant de {year} était {film}.' },
+      { q: 'Combien coûtaient les choses en {year} ?', a: 'En {year}, le pain coûtait {bread}, l\'essence {gas} et la maison moyenne {house}.' },
+      { q: 'Quelle innovation technologique a marqué {year} ?', a: '{tech}' },
     ],
     bornInCtaTpl:  'Êtes-vous né en {year} ? Calculez votre âge exact →',
     bornInHrefTpl: '/fr/ne-en-{year}/',
@@ -90,11 +90,11 @@ const T = {
     seoP2Tpl:    'Cada año lleva sus propios momentos definitorios y referencias culturales. {year} aportó capítulos únicos a la historia de los siglos XX y XXI. Ya sea que hayas vivido {year} o lo estés investigando, los eventos, el arte, la tecnología y los costos cotidianos de ese año pintan un cuadro rico de la vida de la época.',
     faqTitle:    'Preguntas frecuentes',
     faqsTpl: [
-      { q: '¿Qué grandes eventos ocurrieron en {year}?', a: 'Los principales eventos mundiales de {year} incluyen los hitos listados arriba, abarcando política, conflictos, ciencia y cultura.' },
-      { q: '¿Cuál era la canción #1 en {year}?', a: 'La canción más popular de {year} se indica en la fila de música de arriba. La música popular de {year} reflejaba los gustos y el ánimo de la época.' },
-      { q: '¿Qué películas se estrenaron en {year}?', a: 'La película destacada de {year} se muestra en la fila de cine de arriba. El cine de {year} capturó el espíritu de los tiempos.' },
-      { q: '¿Cuánto costaban las cosas en {year}?', a: 'En {year}, los precios cotidianos incluían las cifras mostradas arriba para el pan, la gasolina y la casa promedio. Estas cifras ilustran cómo han cambiado el poder adquisitivo y el costo de vida.' },
-      { q: '¿Qué tecnología era nueva en {year}?', a: 'El avance tecnológico destacado de {year} se describe en la fila de tecnología de arriba. Las innovaciones de {year} a menudo sentaron las bases de las tecnologías que usamos hoy.' },
+      { q: '¿Qué grandes eventos ocurrieron en {year}?', a: 'Los principales eventos mundiales de {year} incluyen: {events}.' },
+      { q: '¿Cuál era la canción #1 en {year}?', a: 'La canción más icónica de {year} fue {music}.' },
+      { q: '¿Cuál fue la película más destacada de {year}?', a: 'La película más destacada de {year} fue {film}.' },
+      { q: '¿Cuánto costaban las cosas en {year}?', a: 'En {year}, el pan costaba {bread}, la gasolina {gas} y la casa promedio {house}.' },
+      { q: '¿Qué hito tecnológico marcó {year}?', a: '{tech}' },
     ],
     bornInCtaTpl:  '¿Naciste en {year}? Descubre tu edad exacta →',
     bornInHrefTpl: '/es/nacido-en-{year}/',
@@ -179,15 +179,36 @@ module.exports = {
     const year = parseInt(pageId.replace('what-happened-in-', ''), 10);
     const vars = { year };
 
-    const title      = tpl(t.titleTpl,    vars);
-    const metaDesc   = tpl(t.metaDescTpl, vars);
-    const headlineHtml = tpl(t.headlineTpl, vars);
-    const subheadHtml  = tpl(t.subheadTpl,  vars);
-    const seoH2a     = tpl(t.seoH2aTpl,  vars);
-    const seoP1      = tpl(t.seoP1Tpl,   vars);
-    const seoH2b     = tpl(t.seoH2bTpl,  vars);
-    const seoP2      = tpl(t.seoP2Tpl,   vars);
-    const faqs       = t.faqsTpl.map(f => tplDeep(f, vars));
+    // Gather real event data for FAQs and SEO text
+    const evSrc = lang === 'fr' ? EVENTS_FR : lang === 'es' ? EVENTS_ES : EVENTS;
+    const ev    = evSrc[String(year)] || EVENTS[String(year)];
+    const evEn  = EVENTS[String(year)];
+    let allEvents = [];
+    if (ev && ev.periods) {
+      ['1','2','3'].forEach(p => { if (ev.periods[p]) allEvents = allEvents.concat(ev.periods[p]); });
+    } else if (evEn && evEn.periods) {
+      ['1','2','3'].forEach(p => { if (evEn.periods[p]) allEvents = allEvents.concat(evEn.periods[p]); });
+    }
+    const dataVars = {
+      year,
+      events: allEvents.slice(0, 4).join('; '),
+      music:  evEn ? (evEn.music || '') : '',
+      film:   evEn ? (evEn.film  || '') : '',
+      tech:   (ev && ev.tech) ? ev.tech : (evEn ? (evEn.tech || '') : ''),
+      bread:  evEn && evEn.prices ? evEn.prices.bread : '',
+      gas:    evEn && evEn.prices ? evEn.prices.gas   : '',
+      house:  evEn && evEn.prices ? evEn.prices.house : '',
+    };
+
+    const title      = tpl(t.titleTpl,    dataVars);
+    const metaDesc   = tpl(t.metaDescTpl, dataVars);
+    const headlineHtml = tpl(t.headlineTpl, dataVars);
+    const subheadHtml  = tpl(t.subheadTpl,  dataVars);
+    const seoH2a     = tpl(t.seoH2aTpl,  dataVars);
+    const seoP1      = tpl(t.seoP1Tpl,   dataVars);
+    const seoH2b     = tpl(t.seoH2bTpl,  dataVars);
+    const seoP2      = tpl(t.seoP2Tpl,   dataVars);
+    const faqs       = t.faqsTpl.map(f => tplDeep(f, dataVars));
 
     const headlineBlock = `  <div class="headline-block">
     <div class="kicker">${t.kicker}</div>
