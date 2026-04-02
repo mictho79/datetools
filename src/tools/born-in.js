@@ -12,8 +12,8 @@ const BUILD_YEAR = 2026; // current year at build time
 
 const T = {
   en: {
-    titleTpl: 'How Old Am I If I Was Born in {year}? Age in 2026 | DateCalc.app',
-    metaDescTpl: 'Born in {year}? Find out how old you are in 2026. You are either {age} or {age1} years old depending on your birthday.',
+    titleTpl: 'Born in {year}: How Old Am I? — {age1} Years Old in 2026 | DateCalc.app',
+    metaDescTpl: 'Born in {year}? You are {age} or {age1} years old in 2026. From {year} to 2026 is {age1} years. Calculate your exact age to the day.',
     kicker: 'Age by Birth Year',
     headlineTpl: 'Born in<br><em>{year}</em>',
     subheadTpl: 'How old are you in 2026 if you were born in {year}?',
@@ -34,6 +34,7 @@ const T = {
     source: { url: 'https://www.ssa.gov/oact/population/longevity.html', label: 'U.S. Social Security Administration – Life Expectancy Calculator' },
     faqsTpl: [
       { q: 'How old am I if I was born in {year}?', a: 'If you were born in {year}, you are {age} or {age1} years old in 2026. You turn {age1} on your birthday in 2026. Use the age calculator for your exact age to the day.' },
+      { q: 'How many years from {year} to 2026?', a: 'From {year} to 2026 is {age1} years. If your birthday has not yet passed in 2026, you are still {age} years old.' },
       { q: 'What day of the week was I born in {year}?', a: 'The day of the week depends on your specific birth date. Use the age calculator and enter your full date of birth to find out exactly which day of the week you were born.' },
       { q: 'How many days old am I if I was born in {year}?', a: 'Someone born on January 1, {year} has lived approximately {days} days as of January 1, 2026. Your exact number of days depends on your birth date. Enter your date of birth in the age calculator for the precise count.' },
       { q: 'What generation am I if I was born in {year}?', a: 'People born in {year} belong to the {gen} generation. Each generation is shaped by the historical events and cultural trends of their formative years.' },
@@ -42,8 +43,8 @@ const T = {
     genRanges: [{y:1928,n:'Silent Generation'},{y:1946,n:'Baby Boomer'},{y:1965,n:'Generation X'},{y:1981,n:'Millennial'},{y:1997,n:'Generation Z'},{y:2013,n:'Generation Alpha'}],
   },
   fr: {
-    titleTpl: 'Quel âge ai-je si je suis né en {year} ? Âge en 2026 | DateCalc.app',
-    metaDescTpl: 'Né en {year} ? Découvrez votre âge en 2026. Vous avez {age} ou {age1} ans selon la date de votre anniversaire.',
+    titleTpl: 'Né en {year} : quel âge ai-je ? — {age1} ans en 2026 | DateCalc.app',
+    metaDescTpl: 'Né en {year} ? Vous avez {age} ou {age1} ans en 2026. De {year} à 2026, il y a {age1} ans. Calculez votre âge exact au jour près.',
     kicker: 'Âge par année de naissance',
     headlineTpl: 'Né en<br><em>{year}</em>',
     subheadTpl: 'Quel âge avez-vous en 2026 si vous êtes né en {year} ?',
@@ -64,6 +65,7 @@ const T = {
     source: { url: 'https://www.ssa.gov/oact/population/longevity.html', label: 'Administration de la Sécurité Sociale – Espérance de vie' },
     faqsTpl: [
       { q: 'Quel âge ai-je si je suis né en {year} ?', a: 'Si vous êtes né en {year}, vous avez {age} ou {age1} ans en 2026. Vous avez {age1} ans à partir de votre anniversaire en 2026.' },
+      { q: 'Combien d\'années de {year} à 2026 ?', a: 'De {year} à 2026, il y a {age1} ans. Si votre anniversaire n\'est pas encore passé en 2026, vous avez encore {age} ans.' },
       { q: 'Quel jour de la semaine suis-je né en {year} ?', a: 'Le jour de la semaine dépend de votre date de naissance exacte. Utilisez le calculateur d\'âge en entrant votre date de naissance complète.' },
       { q: 'Combien de jours ai-je si je suis né en {year} ?', a: 'Quelqu\'un né le 1er janvier {year} a vécu environ {days} jours au 1er janvier 2026. Entrez votre date de naissance dans le calculateur pour le décompte précis.' },
       { q: 'De quelle génération suis-je si je suis né en {year} ?', a: 'Les personnes nées en {year} appartiennent à la génération {gen}.' },
@@ -72,8 +74,8 @@ const T = {
     genRanges: [{y:1928,n:'Génération Silencieuse'},{y:1946,n:'Baby Boomer'},{y:1965,n:'Génération X'},{y:1981,n:'Millénial'},{y:1997,n:'Génération Z'},{y:2013,n:'Génération Alpha'}],
   },
   es: {
-    titleTpl: '¿Cuántos años tengo si nací en {year}? Edad en 2026 | DateCalc.app',
-    metaDescTpl: '¿Naciste en {year}? Descubre tu edad en 2026. Tienes {age} o {age1} años según tu fecha de cumpleaños.',
+    titleTpl: 'Si nací en {year} ¿cuántos años tengo? — {age1} años en 2026 | DateCalc.app',
+    metaDescTpl: 'Si naciste en {year}, tienes {age} o {age1} años en 2026. De {year} al 2026 son {age1} años. Calcula tu edad exacta al día.',
     kicker: 'Edad por año de nacimiento',
     headlineTpl: 'Nacido en<br><em>{year}</em>',
     subheadTpl: '¿Cuántos años tienes en 2026 si naciste en {year}?',
@@ -94,6 +96,7 @@ const T = {
     source: { url: 'https://www.ssa.gov/oact/population/longevity.html', label: 'Administración del Seguro Social – Esperanza de vida' },
     faqsTpl: [
       { q: '¿Cuántos años tengo si nací en {year}?', a: 'Si naciste en {year}, tienes {age} o {age1} años en 2026. Cumples {age1} años en tu cumpleaños de 2026.' },
+      { q: '¿De {year} al 2026 cuántos años son?', a: 'De {year} al 2026 son {age1} años. Si tu cumpleaños aún no ha pasado en 2026, todavía tienes {age} años.' },
       { q: '¿Qué día de la semana nací en {year}?', a: 'El día de la semana depende de tu fecha de nacimiento exacta. Usa la calculadora de edad ingresando tu fecha completa.' },
       { q: '¿Cuántos días tengo si nací en {year}?', a: 'Alguien nacido el 1 de enero de {year} ha vivido aproximadamente {days} días al 1 de enero de 2026.' },
       { q: '¿De qué generación soy si nací en {year}?', a: 'Las personas nacidas en {year} pertenecen a la generación {gen}.' },
