@@ -106,11 +106,37 @@ const T = {
       { q: '¿Cuál es el perro más viejo jamás registrado?', a: 'El perro más viejo jamás registrado fue Bobi, un Rafeiro do Alentejo de Portugal, que vivió 31 años y 165 días.' },
     ],
   },
+  pt: {
+    title: 'Calculadora de Idade do Cachorro em Anos Humanos | DateCalc',
+    metaDesc: 'Converta a idade do seu cachorro em anos humanos. Baseado no tamanho do cão — raças pequenas, médias e grandes. Grátis e instantâneo.',
+    kicker: 'Idade do Cachorro',
+    headline: 'Calculadora de<br><em>Idade do<br>Cachorro</em>',
+    subhead: 'Converta a idade do seu cachorro em anos humanos equivalentes',
+    resultsHeader: 'Idade em anos humanos',
+    errInvalid: 'Por favor, insira uma idade válida entre 0 e 30.',
+    labelAge: 'Idade do cachorro (anos)',
+    labelSize: 'Tamanho',
+    sizes: { small: 'Pequeno (menos de 10 kg)', medium: 'Médio (10–25 kg)', large: 'Grande (25–45 kg)', giant: 'Gigante (mais de 45 kg)' },
+    btnCalc: '→ CALCULAR',
+    unitHumanYears: 'anos humanos',
+    examples: ['Labrador, 3 anos', 'Chihuahua, 8 anos', 'Pastor alemão, 5 anos'],
+    seoH2a: 'Como converter a idade do cachorro em anos humanos?',
+    seoP1: 'A conversão de idade canina em anos humanos não é simples como multiplicar por 7. Cães amadurecem rapidamente nos primeiros anos e depois mais devagar. Além disso, cães de raças grandes envelhecem mais rápido que raças pequenas. Esta calculadora usa tabelas científicas baseadas no tamanho do animal.',
+    seoH2b: 'Por que o tamanho importa no cálculo?',
+    seoP2: 'Raças grandes têm vida mais curta que raças pequenas. Um cão grande de 10 anos equivale a cerca de 66 anos humanos, enquanto um cão pequeno de 10 anos equivale a cerca de 56 anos humanos.',
+    faqTitle: 'Perguntas frequentes',
+    faqs: [
+      { q: 'Meu cachorro tem 7 anos — quantos anos humanos são?', a: 'Depende do tamanho. Um cachorro pequeno de 7 anos tem cerca de 44 anos humanos. Um cachorro grande de 7 anos tem cerca de 50 anos humanos. Use a calculadora para o número exato.' },
+      { q: 'Por que não basta multiplicar por 7?', a: 'A regra dos 7 é uma simplificação. Cães amadurecem muito mais rápido no início da vida — o primeiro ano canino equivale a cerca de 15 anos humanos. Depois o ritmo diminui.' },
+      { q: 'Qual é a expectativa de vida dos cães?', a: 'Varia muito por raça e tamanho. Raças pequenas vivem em média 12–16 anos. Raças grandes vivem em média 8–12 anos.' },
+    ],
+    source: { url: 'https://www.akc.org/expert-advice/health/how-to-calculate-dog-years-to-human-years/', label: 'American Kennel Club – Calculadora de Idade Canina' },
+  },
 };
 
 module.exports = {
   pages: [
-    { id: 'dog-age-calculator', slugs: { en: 'dog-age-calculator', fr: 'fr/calculateur-age-chien', es: 'es/calculadora-edad-perro' } },
+    { id: 'dog-age-calculator', slugs: { en: 'dog-age-calculator', fr: 'fr/calculateur-age-chien', es: 'es/calculadora-edad-perro', pt: 'pt/calculadora-idade-cachorro' } },
   ],
 
   render(pageId, lang) {

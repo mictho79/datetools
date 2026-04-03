@@ -109,11 +109,42 @@ const T = {
     ],
     weekDays: ['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'],
   },
+  pt: {
+    title: 'Calculadora de Dias Entre Datas 2026 – Grátis e Instantâneo',
+    metaDesc: 'Calcule o número exato de dias entre duas datas. Mostra também semanas, meses e anos — grátis, sem cadastro, resultado imediato.',
+    kicker: 'Dias Entre Datas',
+    headline: 'Quantos dias<br>entre<br><em>duas datas?</em>',
+    subhead: 'Calcule a diferença exata entre duas datas',
+    startLabel: 'Data inicial',
+    endLabel: 'Data final',
+    todayBtn: 'Hoje',
+    calcBtn: '→ CALCULAR',
+    tipText: '"Cada dia é uma página do livro. Quantas páginas você escreveu entre dois capítulos?"',
+    examples: ['1 jan 2000 → Hoje', 'Seu aniversário → Hoje', 'Início do ano → Hoje'],
+    resultsHeader: 'Diferença',
+    heroSuffix: 'dias',
+    weeks: 'semanas', months: 'meses', years: 'anos',
+    startDay: 'Dia inicial', endDay: 'Dia final', weekendsLbl: 'Fins de semana', workdaysLbl: 'Dias úteis',
+    errInvalid: '→ Data inválida. Verifique sua entrada.',
+    errOrder: '→ A data final deve ser posterior à data inicial.',
+    seoH2a: 'Como calcular dias entre duas datas?',
+    seoP1: 'Para calcular o número de dias entre duas datas, subtraia a data mais antiga da mais recente. Esta calculadora faz isso automaticamente e também mostra o resultado em semanas, meses e anos.',
+    seoH2b: 'Para que serve calcular dias entre datas?',
+    seoP2: 'Calcular dias entre datas é útil para: prazo de contratos, duração de projetos, contagem regressiva para eventos, cálculo de idade, vencimento de documentos e muito mais.',
+    faqTitle: 'Perguntas frequentes',
+    source: null,
+    faqs: [
+      { q: 'Quantos dias há em um ano?', a: 'Um ano comum tem 365 dias. Um ano bissexto tem 366 dias. Em média, considerando os anos bissextos, um ano tem 365,25 dias.' },
+      { q: 'Como calcular semanas entre duas datas?', a: 'Divida o número de dias por 7. Por exemplo, 100 dias = 14 semanas e 2 dias. Esta calculadora mostra automaticamente semanas e dias.' },
+      { q: 'A calculadora conta o dia inicial ou final?', a: 'A calculadora conta os dias completos entre as datas, não incluindo o dia inicial. Se quiser incluir o primeiro e o último dia, adicione 1 ao resultado.' },
+    ],
+    weekDays: ['Domingo','Segunda-feira','Terça-feira','Quarta-feira','Quinta-feira','Sexta-feira','Sábado'],
+  },
 };
 
 module.exports = {
   pages: [
-    { id: 'days-between-dates', slugs: { en: 'days-between-dates', fr: 'fr/jours-entre-deux-dates', es: 'es/dias-entre-fechas' } },
+    { id: 'days-between-dates', slugs: { en: 'days-between-dates', fr: 'fr/jours-entre-deux-dates', es: 'es/dias-entre-fechas', pt: 'pt/dias-entre-datas' } },
   ],
 
   render(pageId, lang) {

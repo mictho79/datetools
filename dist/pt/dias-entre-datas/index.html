@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de Dias Entre Datas 2026 – Grátis e Instantâneo</title>
+<meta name="robots" content="index, follow">
+<meta name="description" content="Calcule o número exato de dias entre duas datas. Mostra também semanas, meses e anos — grátis, sem cadastro, resultado imediato.">
+<link rel="canonical" href="https://datecalc.app/pt/dias-entre-datas/">
+<link rel="alternate" hreflang="en" href="https://datecalc.app/days-between-dates/">
+<link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/jours-entre-deux-dates/">
+<link rel="alternate" hreflang="es" href="https://datecalc.app/es/dias-entre-fechas/">
+<link rel="alternate" hreflang="pt" href="https://datecalc.app/pt/dias-entre-datas/">
+<link rel="alternate" hreflang="x-default" href="https://datecalc.app/days-between-dates/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Calculadora de Dias Entre Datas 2026 – Grátis e Instantâneo">
+<meta property="og:description" content="Calcule o número exato de dias entre duas datas. Mostra também semanas, meses e anos — grátis, sem cadastro, resultado imediato.">
+<meta property="og:url" content="https://datecalc.app/pt/dias-entre-datas/">
+<meta property="og:site_name" content="DateCalc.app">
+<meta property="og:image" content="https://datecalc.app/og.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Calculadora de Dias Entre Datas 2026 – Grátis e Instantâneo">
+<meta name="twitter:description" content="Calcule o número exato de dias entre duas datas. Mostra também semanas, meses e anos — grátis, sem cadastro, resultado imediato.">
+<meta name="twitter:image" content="https://datecalc.app/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Space+Mono:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="shortcut icon" href="/favicon.svg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Quantos dias há em um ano?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Um ano comum tem 365 dias. Um ano bissexto tem 366 dias. Em média, considerando os anos bissextos, um ano tem 365,25 dias."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Como calcular semanas entre duas datas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Divida o número de dias por 7. Por exemplo, 100 dias = 14 semanas e 2 dias. Esta calculadora mostra automaticamente semanas e dias."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "A calculadora conta o dia inicial ou final?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A calculadora conta os dias completos entre as datas, não incluindo o dia inicial. Se quiser incluir o primeiro e o último dia, adicione 1 ao resultado."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Calculadora de Dias Entre Datas 2026",
+  "description": "Calcule o número exato de dias entre duas datas. Mostra também semanas, meses e anos — grátis, sem cadastro, resultado imediato.",
+  "url": "https://datecalc.app/pt/dias-entre-datas/",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Web",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"DateCalc.app","url":"https://datecalc.app","logo":"https://datecalc.app/og.png","contactPoint":{"@type":"ContactPoint","email":"hello@datecalc.app","contactType":"customer support"}}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<noscript><div style="background:#c8392b;color:#fff;text-align:center;padding:.6rem;font-family:sans-serif;font-size:.9rem">This calculator requires JavaScript. Please enable it in your browser.</div></noscript>
+
+<header>
+<div class="masthead">
+  <a href="/pt/" class="masthead-brand">DateCalc<span>.</span>app</a>
+  <div class="masthead-meta" id="todayMeta"></div>
+</div>
+</header>
+
+<div class="lang-strip">
+  <a href="/days-between-dates/" class="lang-btn">EN</a>
+  <a href="/fr/jours-entre-deux-dates/" class="lang-btn">FR</a>
+  <a href="/es/dias-entre-fechas/" class="lang-btn">ES</a>
+  <a href="/pt/dias-entre-datas/" class="lang-btn active">PT</a>
+</div>
+
+<div class="page">
+
+  <div class="headline-block">
+    <div class="kicker">Dias Entre Datas</div>
+    <h1 class="headline">Quantos dias <br>entre <br><em>duas datas?</em></h1>
+    <p class="subhead">Calcule a diferença exata entre duas datas</p>
+  </div>
+
+  <div class="form-grid">
+    <div class="form-col">
+      <div class="field-label">Data inicial</div>
+      <div class="date-row">
+        <input type="number" id="d1" placeholder="DD" min="1" max="31" inputmode="numeric" oninput="clamp(this,1,31)">
+        <span>/</span>
+        <input type="number" id="m1" placeholder="MM" min="1" max="12" inputmode="numeric" oninput="clamp(this,1,12)">
+        <span>/</span>
+        <input type="number" id="y1" placeholder="YYYY" min="1900" max="2100" inputmode="numeric" oninput="clamp(this,1900,2100)">
+      </div>
+      <div class="field-label" style="margin-top:1.5rem">Data final <button type="button" onclick="setToday()" style="background:none;border:none;font-family:'Space Mono',monospace;font-size:.6rem;color:var(--accent);cursor:pointer;letter-spacing:.05em;text-transform:uppercase;padding:0 .4rem">Hoje</button></div>
+      <div class="date-row">
+        <input type="number" id="d2" placeholder="DD" min="1" max="31" inputmode="numeric" oninput="clamp(this,1,31)">
+        <span>/</span>
+        <input type="number" id="m2" placeholder="MM" min="1" max="12" inputmode="numeric" oninput="clamp(this,1,12)">
+        <span>/</span>
+        <input type="number" id="y2" placeholder="YYYY" min="1900" max="2100" inputmode="numeric" oninput="clamp(this,1900,2100)">
+      </div>
+      <div class="error-line" id="errorLine"></div>
+      <button class="calc-btn" onclick="calculate()">→ CALCULAR</button>
+    </div>
+    <div class="form-col">
+      <p class="tip-text">"Cada dia é uma página do livro. Quantas páginas você escreveu entre dois capítulos?"</p>
+      <ul class="example-list">
+        <li onclick="fillExample(0)">1 jan 2000 → Hoje →</li>
+        <li onclick="fillExample(1)">Seu aniversário → Hoje →</li>
+        <li onclick="fillExample(2)">Início do ano → Hoje →</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="results-section" id="results" aria-live="polite">
+    <div class="results-header">Diferença</div>
+    <div class="age-display">
+      <span class="age-number" id="heroDays">—</span>
+      <span class="age-suffix">dias</span>
+    </div>
+    <div class="stats-strip cols-3">
+      <div class="stat-item"><div class="stat-num" id="statWeeks">—</div><div class="stat-lbl">semanas</div></div>
+      <div class="stat-item"><div class="stat-num" id="statMonths">—</div><div class="stat-lbl">meses</div></div>
+      <div class="stat-item"><div class="stat-num" id="statYears">—</div><div class="stat-lbl">anos</div></div>
+    </div>
+    <div class="facts-row">
+      <div class="fact-item"><div class="fact-key">Dia inicial</div><div class="fact-val" id="ffStart">—</div></div>
+      <div class="fact-item"><div class="fact-key">Dia final</div><div class="fact-val" id="ffEnd">—</div></div>
+      <div class="fact-item"><div class="fact-key">Fins de semana</div><div class="fact-val" id="ffWeekends">—</div></div>
+      <div class="fact-item"><div class="fact-key">Dias úteis</div><div class="fact-val" id="ffWorkdays">—</div></div>
+    </div>
+  </div>
+
+  <nav aria-label="Tools">
+  <div class="tool-nav">
+    <div class="nav-group"><span class="nav-cat">Idade</span><div class="nav-links"><a href="/pt/calculadora-de-idade/">Calculadora de Idade</a><span class="nav-sep">·</span><a href="/pt/idade-cronologica/">Idade Cronológica</a><span class="nav-sep">·</span><a href="/pt/calculadora-idade-bebe/">Idade do Bebê</a><span class="nav-sep">·</span><a href="/pt/calculadora-idade-cachorro/">Idade do Cachorro</a><span class="nav-sep">·</span><a href="/pt/calculadora-idade-gato/">Idade do Gato</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Datas</span><div class="nav-links"><a href="/pt/dias-entre-datas/" aria-current="page">Dias Entre Datas</a><span class="nav-sep">·</span><a href="/pt/calculadora-de-data/">Calculadora de Data</a><span class="nav-sep">·</span><a href="/pt/que-dia-e-hoje/">Que Dia É Hoje</a><span class="nav-sep">·</span><a href="/pt/numero-da-semana/">Número da Semana</a><span class="nav-sep">·</span><a href="/pt/calculadora-dias-uteis/">Dias Úteis</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Contagens</span><div class="nav-links"><a href="/pt/dias-para-o-natal/">Natal</a><span class="nav-sep">·</span><a href="/pt/dias-para-ano-novo/">Ano Novo</a><span class="nav-sep">·</span><a href="/pt/dias-para-o-halloween/">Halloween</a><span class="nav-sep">·</span><a href="/pt/dias-para-a-pascoa/">Páscoa</a><span class="nav-sep">·</span><a href="/pt/temporizador-regressivo/">Temporizador</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Mundo</span><div class="nav-links"><a href="/pt/conversor-fuso-horario/">Fuso Horário</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Nascido em</span><div class="nav-links"><a href="/pt/nascido-em-1990/">Nascido em 1990</a><span class="nav-sep">·</span><a href="/pt/nascido-em-1980/">Nascido em 1980</a><span class="nav-sep">·</span><a href="/pt/nascido-em-2000/">Nascido em 2000</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Retrospectiva</span><div class="nav-links"><a href="/pt/o-que-aconteceu-em-2000/">O que aconteceu em 2000</a><span class="nav-sep">·</span><a href="/pt/o-que-aconteceu-em-1990/">O que aconteceu em 1990</a><span class="nav-sep">·</span><a href="/pt/o-que-aconteceu-em-1980/">O que aconteceu em 1980</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Calendários</span><div class="nav-links"><a href="/pt/numero-da-semana/2025/">Semanas 2025</a><span class="nav-sep">·</span><a href="/pt/numero-da-semana/2026/">Semanas 2026</a><span class="nav-sep">·</span><a href="/pt/numero-da-semana/2027/">Semanas 2027</a></div></div>
+  </div>
+  </nav>
+
+<main id="main-content">
+  <div class="seo-block">
+    <div><h2>Como calcular dias entre duas datas?</h2><p>Para calcular o número de dias entre duas datas, subtraia a data mais antiga da mais recente. Esta calculadora faz isso automaticamente e também mostra o resultado em semanas, meses e anos.</p></div>
+    <div><h2>Para que serve calcular dias entre datas?</h2><p>Calcular dias entre datas é útil para: prazo de contratos, duração de projetos, contagem regressiva para eventos, cálculo de idade, vencimento de documentos e muito mais.</p></div>
+  </div>
+  <div class="faq-block">
+    <h2>Perguntas frequentes</h2>
+    <div class="faq-item"><h3>Quantos dias há em um ano?</h3><p>Um ano comum tem 365 dias. Um ano bissexto tem 366 dias. Em média, considerando os anos bissextos, um ano tem 365,25 dias.</p></div>
+    <div class="faq-item"><h3>Como calcular semanas entre duas datas?</h3><p>Divida o número de dias por 7. Por exemplo, 100 dias = 14 semanas e 2 dias. Esta calculadora mostra automaticamente semanas e dias.</p></div>
+    <div class="faq-item"><h3>A calculadora conta o dia inicial ou final?</h3><p>A calculadora conta os dias completos entre as datas, não incluindo o dia inicial. Se quiser incluir o primeiro e o último dia, adicione 1 ao resultado.</p></div>
+  </div>
+
+</main>
+  <footer>
+  <nav class="footer-nav" aria-label="Site links">
+<div class="footer-col"><strong>Idade</strong>
+<a href="/pt/calculadora-de-idade/">Calculadora de Idade</a>
+<a href="/pt/idade-cronologica/">Idade Cronológica</a>
+<a href="/pt/calculadora-idade-bebe/">Idade do Bebê</a>
+<a href="/pt/calculadora-idade-cachorro/">Idade do Cachorro</a>
+<a href="/pt/calculadora-idade-gato/">Idade do Gato</a></div>
+<div class="footer-col"><strong>Datas</strong>
+<a href="/pt/dias-entre-datas/">Dias Entre Datas</a>
+<a href="/pt/calculadora-de-data/">Calculadora de Data</a>
+<a href="/pt/que-dia-e-hoje/">Que Dia É Hoje</a>
+<a href="/pt/numero-da-semana/">Número da Semana</a>
+<a href="/pt/calculadora-dias-uteis/">Dias Úteis</a></div>
+<div class="footer-col"><strong>Contagens</strong>
+<a href="/pt/dias-para-o-natal/">Natal</a>
+<a href="/pt/dias-para-ano-novo/">Ano Novo</a>
+<a href="/pt/dias-para-o-halloween/">Halloween</a>
+<a href="/pt/dias-para-a-pascoa/">Páscoa</a>
+<a href="/pt/temporizador-regressivo/">Temporizador</a></div>
+<div class="footer-col"><strong>Mundo</strong>
+<a href="/pt/conversor-fuso-horario/">Fuso Horário</a></div>
+<div class="footer-col"><strong>Nascido em</strong>
+<a href="/pt/nascido-em-1990/">Nascido em 1990</a>
+<a href="/pt/nascido-em-1980/">Nascido em 1980</a>
+<a href="/pt/nascido-em-2000/">Nascido em 2000</a></div>
+<div class="footer-col"><strong>Retrospectiva</strong>
+<a href="/pt/o-que-aconteceu-em-2000/">O que aconteceu em 2000</a>
+<a href="/pt/o-que-aconteceu-em-1990/">O que aconteceu em 1990</a>
+<a href="/pt/o-que-aconteceu-em-1980/">O que aconteceu em 1980</a></div>
+<div class="footer-col"><strong>Calendários</strong>
+<a href="/pt/numero-da-semana/2025/">Semanas 2025</a>
+<a href="/pt/numero-da-semana/2026/">Semanas 2026</a>
+<a href="/pt/numero-da-semana/2027/">Semanas 2027</a></div>
+  </nav>
+  <div class="footer-copy">© 2026 DateCalc.app — Calculadoras de data e hora gratuitas online · <a href="/pt/privacidade/">Privacidade</a></div>
+</footer>
+</div>
+
+<script>
+(function(){
+  var now = new Date();
+  var opts = {weekday:'long',year:'numeric',month:'long',day:'numeric'};
+  document.getElementById('todayMeta').innerHTML =
+    now.toLocaleDateString('pt-BR', opts) + '<br>Calculadora de datas gratuita';
+})();
+// Shared input guard: strip non-digits, truncate to max digit length, clamp to hi
+function clamp(el, lo, hi) {
+  var maxLen = String(hi).length;
+  var s = el.value.replace(/\D/g, '').slice(0, maxLen);
+  var n = parseInt(s, 10);
+  if (!isNaN(n) && n > hi) s = String(hi);
+  el.value = s;
+}
+// Auto-scroll to results when they become visible
+(function(){
+  var r=document.getElementById('results');
+  if(!r||r.classList.contains('auto-show'))return;
+  var obs=new MutationObserver(function(){
+    if(r.classList.contains('show')){
+      r.scrollIntoView({behavior:'smooth',block:'start'});
+      obs.disconnect();
+    }
+  });
+  obs.observe(r,{attributes:true,attributeFilter:['class']});
+})();
+// Enter key submits calculator
+(function(){
+  var fg=document.querySelector('.form-grid');
+  if(!fg)return;
+  fg.addEventListener('keydown',function(e){
+    if(e.key==='Enter'&&typeof calculate==='function')calculate();
+  });
+})();
+// AdSense: load only with consent
+(function(){
+  var ADS_SRC='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4020973443671350';
+  function loadAds(){
+    var s=document.createElement('script');
+    s.src=ADS_SRC;s.async=true;s.crossOrigin='anonymous';
+    document.head.appendChild(s);
+  }
+  if(localStorage.getItem('ads-ok')==='1')return loadAds();
+  if(localStorage.getItem('ads-ok')==='0')return;
+  var b=document.getElementById('consent-banner');
+  if(b)b.style.display='flex';
+  document.getElementById('consent-accept')&&document.getElementById('consent-accept').addEventListener('click',function(){
+    localStorage.setItem('ads-ok','1');b.style.display='none';loadAds();
+  });
+  document.getElementById('consent-decline')&&document.getElementById('consent-decline').addEventListener('click',function(){
+    localStorage.setItem('ads-ok','0');b.style.display='none';
+  });
+})();
+</script>
+<script>
+
+var D = {"errInvalid":"→ Data inválida. Verifique sua entrada.","errOrder":"→ A data final deve ser posterior à data inicial.","weekDays":["Domingo","Segunda-feira","Terça-feira","Quarta-feira","Quinta-feira","Sexta-feira","Sábado"]};
+function fmt(n){return n.toLocaleString();}
+
+function setToday(){
+  var now=new Date();
+  document.getElementById('d2').value=now.getDate();
+  document.getElementById('m2').value=now.getMonth()+1;
+  document.getElementById('y2').value=now.getFullYear();
+}
+
+function fillExample(idx){
+  var now=new Date();
+  if(idx===0){
+    document.getElementById('d1').value=1; document.getElementById('m1').value=1; document.getElementById('y1').value=2000;
+  } else if(idx===1){
+    document.getElementById('d1').value=15; document.getElementById('m1').value=6; document.getElementById('y1').value=1990;
+  } else {
+    document.getElementById('d1').value=1; document.getElementById('m1').value=1; document.getElementById('y1').value=now.getFullYear();
+  }
+  setToday(); calculate();
+}
+
+function parseDate(d,m,y){
+  if(!d||!m||!y) return null;
+  var dt=new Date(y,m-1,d);
+  return (dt.getDate()===d)?dt:null;
+}
+
+function calculate(){
+  var d1=parseInt(document.getElementById('d1').value);
+  var m1=parseInt(document.getElementById('m1').value);
+  var y1=parseInt(document.getElementById('y1').value);
+  var d2=parseInt(document.getElementById('d2').value);
+  var m2=parseInt(document.getElementById('m2').value);
+  var y2=parseInt(document.getElementById('y2').value);
+  var err=document.getElementById('errorLine');
+  var res=document.getElementById('results');
+  err.classList.remove('show'); res.classList.remove('show');
+
+  var date1=parseDate(d1,m1,y1);
+  var date2=parseDate(d2,m2,y2);
+  if(!date1||!date2){err.textContent=D.errInvalid; err.classList.add('show'); return;}
+  if(date2<date1){err.textContent=D.errOrder; err.classList.add('show'); return;}
+
+  var totalDays=Math.round((date2-date1)/86400000);
+  var totalWeeks=Math.floor(totalDays/7);
+
+  // months diff
+  var mDiff=(date2.getFullYear()-date1.getFullYear())*12+(date2.getMonth()-date1.getMonth());
+  if(date2.getDate()<date1.getDate()) mDiff--;
+  var yDiff=Math.floor(mDiff/12);
+
+  // weekends & workdays
+  var weekends=0, workdays=0;
+  var cur=new Date(date1);
+  while(cur<=date2){
+    var day=cur.getDay();
+    if(day===0||day===6) weekends++; else workdays++;
+    cur.setDate(cur.getDate()+1);
+  }
+
+  document.getElementById('heroDays').textContent=fmt(totalDays);
+  document.getElementById('statWeeks').textContent=fmt(totalWeeks);
+  document.getElementById('statMonths').textContent=fmt(mDiff);
+  document.getElementById('statYears').textContent=fmt(yDiff);
+  document.getElementById('ffStart').textContent=D.weekDays[date1.getDay()];
+  document.getElementById('ffEnd').textContent=D.weekDays[date2.getDay()];
+  document.getElementById('ffWeekends').textContent=fmt(weekends);
+  document.getElementById('ffWorkdays').textContent=fmt(workdays);
+  res.classList.add('show');
+  res.scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+document.addEventListener('keydown',function(e){if(e.key==='Enter') calculate();});
+// Pre-fill end date with today
+setToday();
+
+</script>
+<div id="consent-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#111111;color:#fff;padding:.9rem 1.4rem;z-index:9999;font-size:.82rem;font-family:sans-serif;align-items:center;gap:.8rem;flex-wrap:wrap">
+  <span style="flex:1;min-width:200px">Usamos Google AdSense para financiar este serviço gratuito. Você aceita cookies de publicidade?</span>
+  <button id="consent-accept" style="background:#c8392b;color:#fff;border:none;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Aceitar</button>
+  <button id="consent-decline" style="background:transparent;color:#aaa;border:1px solid #555;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Continuar sem</button>
+</div>
+</body>
+</html>

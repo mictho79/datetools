@@ -109,11 +109,42 @@ const T = {
     ],
     weekDays: ['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'],
   },
+  pt: {
+    title: 'Calculadora de Data 2026 – Adicionar ou Subtrair Dias | Grátis',
+    metaDesc: 'Adicione ou subtraia dias, semanas, meses ou anos a qualquer data. Descubra qual será a data daqui a N dias — grátis e instantâneo.',
+    kicker: 'Calculadora de Data',
+    headline: 'Calcule uma<br><em>data futura<br>ou passada</em>',
+    subhead: 'Adicione ou subtraia um período a qualquer data',
+    dateLabel: 'Data inicial',
+    opLabel: 'Operação',
+    add: 'Adicionar', sub: 'Subtrair',
+    unitDays: 'Dias', unitWeeks: 'Semanas', unitMonths: 'Meses', unitYears: 'Anos',
+    calcBtn: '→ CALCULAR',
+    tipText: '"O tempo flui em uma direção, mas a curiosidade nos permite olhar para frente e para trás."',
+    examples: ['Hoje + 100 dias', 'Hoje − 90 dias', 'Hoje + 1 ano'],
+    resultsHeader: 'Data calculada',
+    weekdayLbl: 'Dia da semana', dayOfYearLbl: 'Dia do ano', weekNumLbl: 'Semana', leapLbl: 'Ano bissexto',
+    yes: 'Sim', no: 'Não',
+    errInvalid: '→ Data inválida. Verifique sua entrada.',
+    errAmount: '→ Por favor insira uma quantidade válida.',
+    seoH2a: 'Como adicionar dias a uma data?',
+    seoP1: 'Para adicionar dias a uma data, some o número de dias desejado à data inicial. Esta calculadora lida automaticamente com meses de comprimentos diferentes e anos bissextos.',
+    seoH2b: 'Exemplos de uso da calculadora de data',
+    seoP2: 'Use esta calculadora para: calcular a data de entrega de um projeto, descobrir quando vence um prazo de 30 ou 90 dias, calcular a data de término de um contrato, ou descobrir que dia da semana será uma data futura.',
+    faqTitle: 'Perguntas frequentes',
+    source: null,
+    faqs: [
+      { q: 'Qual será a data daqui a 30 dias?', a: 'Use esta calculadora: insira a data de hoje, escolha "Adicionar" e coloque 30 dias. O resultado mostrará a data exata daqui a 30 dias.' },
+      { q: 'Como calcular 90 dias a partir de hoje?', a: 'Insira a data atual, selecione "Adicionar" e coloque 90 dias. A calculadora retorna a data exata, considerando meses com diferentes números de dias.' },
+      { q: 'A calculadora considera anos bissextos?', a: 'Sim. A calculadora leva em conta anos bissextos automaticamente ao calcular datas.' },
+    ],
+    weekDays: ['Domingo','Segunda-feira','Terça-feira','Quarta-feira','Quinta-feira','Sexta-feira','Sábado'],
+  },
 };
 
 module.exports = {
   pages: [
-    { id: 'date-calculator', slugs: { en: 'date-calculator', fr: 'fr/calculateur-date', es: 'es/calculadora-fechas' } },
+    { id: 'date-calculator', slugs: { en: 'date-calculator', fr: 'fr/calculateur-date', es: 'es/calculadora-fechas', pt: 'pt/calculadora-de-data' } },
   ],
 
   render(pageId, lang) {
@@ -187,7 +218,8 @@ ${faqHTML}
 
     const months = { en: ['January','February','March','April','May','June','July','August','September','October','November','December'],
       fr: ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'],
-      es: ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'] };
+      es: ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'],
+      pt: ['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'] };
 
     const data = JSON.stringify({
       errInvalid: t.errInvalid, errAmount: t.errAmount,

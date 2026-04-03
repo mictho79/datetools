@@ -103,11 +103,35 @@ const T = {
       { q: '¿Cuál es el gato más viejo jamás registrado?', a: 'El gato más viejo jamás registrado fue Creme Puff de Austin, Texas, que vivió 38 años y 3 días (1967–2005), certificado por el Guinness World Records.' },
     ],
   },
+  pt: {
+    title: 'Calculadora de Idade do Gato em Anos Humanos | DateCalc',
+    metaDesc: 'Converta a idade do seu gato em anos humanos equivalentes. Cálculo preciso por faixa etária — grátis e instantâneo.',
+    kicker: 'Idade do Gato',
+    headline: 'Calculadora de<br><em>Idade do<br>Gato</em>',
+    subhead: 'Converta a idade do seu gato em anos humanos equivalentes',
+    resultsHeader: 'Idade em anos humanos',
+    errInvalid: 'Por favor, insira uma idade válida entre 0 e 30.',
+    labelAge: 'Idade do gato (anos)',
+    btnCalc: '→ CALCULAR',
+    unitHumanYears: 'anos humanos',
+    examples: ['Filhote, 1 ano', 'Gato adulto, 5 anos', 'Gato sênior, 12 anos'],
+    seoH2a: 'Como converter a idade do gato em anos humanos?',
+    seoP1: 'Gatos amadurecem rapidamente nos primeiros dois anos — o primeiro ano equivale a cerca de 15 anos humanos, o segundo a mais 9 anos. A partir daí, cada ano felino equivale a aproximadamente 4 anos humanos.',
+    seoH2b: 'Gatos envelhecem mais rápido que humanos?',
+    seoP2: 'Sim, especialmente nos primeiros anos. Um gato de 2 anos já tem a maturidade equivalente a um humano de 24 anos. Depois o envelhecimento diminui o ritmo.',
+    faqTitle: 'Perguntas frequentes',
+    faqs: [
+      { q: 'Meu gato tem 10 anos — quantos anos humanos são?', a: 'Um gato de 10 anos tem aproximadamente 56 anos humanos. Os dois primeiros anos equivalem a 24 anos humanos, e depois cada ano felino equivale a 4 anos humanos.' },
+      { q: 'Qual é a expectativa de vida dos gatos?', a: 'Gatos domésticos vivem em média 12–15 anos. Alguns gatos bem cuidados podem viver 20 anos ou mais.' },
+      { q: 'Gatos de interior vivem mais?', a: 'Geralmente sim. Gatos de interior têm menos exposição a riscos como doenças, predadores e acidentes de trânsito, o que aumenta a expectativa de vida.' },
+    ],
+    source: { url: 'https://www.purina.com/articles/cat/behavior/understanding-cats/cat-age-chart-cat-years-to-human-years', label: 'Purina – Tabela de Conversão Idade do Gato' },
+  },
 };
 
 module.exports = {
   pages: [
-    { id: 'cat-age-calculator', slugs: { en: 'cat-age-calculator', fr: 'fr/calculateur-age-chat', es: 'es/calculadora-edad-gato' } },
+    { id: 'cat-age-calculator', slugs: { en: 'cat-age-calculator', fr: 'fr/calculateur-age-chat', es: 'es/calculadora-edad-gato', pt: 'pt/calculadora-idade-gato' } },
   ],
 
   render(pageId, lang) {

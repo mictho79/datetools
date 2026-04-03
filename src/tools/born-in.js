@@ -4,6 +4,7 @@
 const EVENTS = require('../data/events.json');
 const EVENTS_FR = require('../data/events_fr.json');
 const EVENTS_ES = require('../data/events_es.json');
+const EVENTS_PT = require('../data/events_pt.json');
 
 const BIRTH_YEARS = [];
 for (let y = 1930; y <= 2024; y++) BIRTH_YEARS.push(y);
@@ -104,6 +105,37 @@ const T = {
     weekDays: ['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'],
     genRanges: [{y:1928,n:'Generación Silenciosa'},{y:1946,n:'Baby Boomer'},{y:1965,n:'Generación X'},{y:1981,n:'Millennial'},{y:1997,n:'Generación Z'},{y:2013,n:'Generación Alfa'}],
   },
+  pt: {
+    titleTpl: 'Nascido em {year}: Quantos Anos Tenho? — {age1} Anos em 2026',
+    metaDescTpl: 'Nascido em {year}? Você tem {age} ou {age1} anos em 2026. De {year} a 2026 são {age1} anos. Calcule sua idade exata ao dia.',
+    kicker: 'Idade por Ano de Nascimento',
+    headlineTpl: 'Nascido em<br><em>{year}</em>',
+    subheadTpl: 'Quantos anos você tem em 2026 se nasceu em {year}?',
+    resultsHeader: 'Sua idade em 2026',
+    heroTpl: '{age} ou {age1}',
+    heroSuffix: 'anos',
+    explainTpl: 'Se você nasceu em {year}, faz {age1} anos em 2026. Antes do seu aniversário você ainda tem {age} anos.',
+    exactCta: '→ Calcular sua idade exata',
+    exactHref: '/pt/calculadora-de-idade/',
+    wTitle: 'O Mundo em {year}',
+    wLblEvents: 'Eventos', wLblMusic: 'Música', wLblFilm: 'Filme', wLblTech: 'Tecnologia', wLblPrices: 'Preços',
+    wLblBread: 'Pão', wLblGas: 'Gasolina', wLblHouse: 'Casa',
+    seoH2aTpl: 'Quantos anos tenho se nasci em {year}?',
+    seoP1Tpl: 'Se você nasceu em {year}, tem {age} anos durante a maior parte de 2026, completando {age1} anos quando chegar seu aniversário. Alguém nascido em 1º de janeiro de {year} faz {age1} anos em 1º de janeiro de 2026, enquanto alguém nascido em 31 de dezembro de {year} só faz {age1} anos em 31 de dezembro de 2026. As pessoas nascidas em {year} pertencem à geração {gen}.',
+    seoH2bTpl: 'Qual geração nasceu em {year}?',
+    seoP2Tpl: 'As pessoas nascidas em {year} pertencem à geração {gen}. Use a calculadora acima para encontrar sua idade exata em anos, meses, semanas e dias.',
+    faqTitle: 'Perguntas frequentes',
+    source: { url: 'https://www.ssa.gov/oact/population/longevity.html', label: 'U.S. Social Security Administration – Expectativa de vida' },
+    faqsTpl: [
+      { q: 'Quantos anos tenho se nasci em {year}?', a: 'Se você nasceu em {year}, tem {age} ou {age1} anos em 2026. Você faz {age1} anos no seu aniversário de 2026.' },
+      { q: 'Quantos anos de {year} a 2026?', a: 'De {year} a 2026 são {age1} anos. Se seu aniversário ainda não passou em 2026, você ainda tem {age} anos.' },
+      { q: 'Em que dia da semana nasci em {year}?', a: 'O dia da semana depende da sua data de nascimento exata. Use a calculadora de idade inserindo sua data completa.' },
+      { q: 'Quantos dias tenho de vida se nasci em {year}?', a: 'Alguém nascido em 1º de janeiro de {year} viveu aproximadamente {days} dias até 1º de janeiro de 2026. Insira sua data de nascimento na calculadora para a contagem precisa.' },
+      { q: 'De que geração sou se nasci em {year}?', a: 'As pessoas nascidas em {year} pertencem à geração {gen}.' },
+    ],
+    weekDays: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'],
+    genRanges: [{y:1928,n:'Geração Silenciosa'},{y:1946,n:'Baby Boomer'},{y:1965,n:'Geração X'},{y:1981,n:'Millennial'},{y:1997,n:'Geração Z'},{y:2013,n:'Geração Alpha'}],
+  },
 };
 
 // Helper: replace all template tokens in a string
@@ -133,7 +165,7 @@ function getGen(year, genRanges) {
 
 // Helper: build world events block HTML from EVENTS data
 function buildWorldBlock(year, t, lang) {
-  const evSrc = lang === 'fr' ? EVENTS_FR : lang === 'es' ? EVENTS_ES : EVENTS;
+  const evSrc = lang === 'fr' ? EVENTS_FR : lang === 'es' ? EVENTS_ES : lang === 'pt' ? EVENTS_PT : EVENTS;
   const ev = evSrc[String(year)] || EVENTS[String(year)]; // fallback to EN
   const evEn = EVENTS[String(year)]; // always use English for music, film, prices
   if (!evEn) return '';
@@ -184,6 +216,7 @@ module.exports = {
       en: `born-in-${y}`,
       fr: `fr/ne-en-${y}`,
       es: `es/nacido-en-${y}`,
+      pt: `pt/nascido-em-${y}`,
     },
   })),
 
@@ -207,11 +240,13 @@ module.exports = {
       en: 'Born in {year}? You\'re {age1} in 2026 — Exact Age Calculator',
       fr: 'Né en {year} : quel âge en 2026 ? — {age1} ans | DateCalc',
       es: '¿Cuántos años son de {year} a 2026? — {age1} años | DateCalc',
+      pt: 'Nascido em {year}? Você tem {age1} anos em 2026 — Calculadora de Idade',
     };
     const OPT_DESC = {
       en: 'Born in {year}? You are {age} or {age1} years old in 2026. Calculate your exact age in years, months and days — free, instant, no sign-up.',
       fr: 'Né en {year} ? Vous avez {age} ou {age1} ans en 2026. De {year} à 2026, il y a {age1} ans. Calculez votre âge exact au jour près — gratuit.',
       es: 'Si naciste en {year}, tienes {age} o {age1} años en 2026. Del {year} al 2026 son {age1} años. Edad exacta en años, meses y días — gratis, al instante.',
+      pt: 'Nascido em {year}? Você tem {age} ou {age1} anos em 2026. Calcule sua idade exata em anos, meses e dias — grátis, instantâneo, sem cadastro.',
     };
 
     // Resolve all template strings

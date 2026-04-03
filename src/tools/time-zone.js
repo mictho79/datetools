@@ -137,11 +137,43 @@ const T = {
       { q: '¿Qué es UTC?', a: 'UTC (Tiempo Universal Coordinado) es el estándar de tiempo principal por el que el mundo regula los relojes. No observa el horario de verano y se usa como referencia para todas las demás zonas horarias.' },
     ],
   },
+  pt: {
+    title: 'Conversor de Fuso Horário 2026 – Grátis, Instantâneo, 25+ Zonas',
+    metaDesc: 'Converta horários entre qualquer fuso horário instantaneamente. Compatível com 25+ fusos incluindo UTC. Mostra hora local, offset UTC e diferença — grátis.',
+    kicker: 'Conversor de Fuso Horário',
+    headline: 'Conversor de<br><em>Fuso Horário</em>',
+    subhead: 'Converta horários entre qualquer fuso horário instantaneamente',
+    fromLabel: 'Fuso origem',
+    toLabel: 'Fuso destino',
+    dateLabel: 'Data',
+    timeLabel: 'Hora',
+    swapBtn: '⇄ Trocar fusos',
+    calcBtn: '→ CONVERTER',
+    tipText: '"O mundo funciona com 24 relógios diferentes. Esta ferramenta permite que você os leia todos."',
+    resultsHeader: 'Horários convertidos',
+    fromTimeLbl: 'Hora original', toTimeLbl: 'Hora convertida',
+    fromOffsetLbl: 'Offset UTC (origem)', toOffsetLbl: 'Offset UTC (destino)',
+    diffLbl: 'Diferença horária',
+    errInvalid: '→ Data ou hora inválida. Verifique sua entrada.',
+    labelFromZone: 'Fuso origem', labelToZone: 'Fuso destino',
+    labelHour: 'Hora', labelMinute: 'Minuto',
+    seoH2a: 'Como converter fusos horários?',
+    seoP1: 'Para converter um horário entre fusos, selecione o fuso de origem e o destino, depois insira o horário. Esta calculadora mostra o horário convertido, o offset UTC de cada fuso e a diferença entre eles.',
+    seoH2b: 'Quais fusos horários o Brasil usa?',
+    seoP2: 'O Brasil tem 4 fusos horários: UTC-2 (Fernando de Noronha), UTC-3 (Brasília – BRT, a maioria do país), UTC-4 (Amazonas) e UTC-5 (Acre). O horário oficial de Brasília (BRT, UTC-3) é o mais usado.',
+    faqTitle: 'Perguntas frequentes',
+    source: { url: 'https://www.iana.org/time-zones', label: 'Banco de dados de fusos horários IANA' },
+    faqs: [
+      { q: 'Qual é o fuso horário do Brasil?', a: 'A maior parte do Brasil usa UTC-3 (Horário de Brasília). Os estados do Amazonas usam UTC-4, o Acre usa UTC-5, e Fernando de Noronha usa UTC-2.' },
+      { q: 'Qual a diferença entre Brasil e Portugal?', a: 'Portugal (Lisboa) está em UTC+0 no inverno e UTC+1 no verão. A diferença para Brasília (UTC-3) é de 3 a 4 horas, dependendo do horário de verão em Portugal.' },
+      { q: 'Qual a diferença entre São Paulo e Nova York?', a: 'São Paulo (UTC-3) e Nova York (UTC-5 no inverno, UTC-4 no verão) têm 1 a 2 horas de diferença. São Paulo está sempre à frente de Nova York.' },
+    ],
+  },
 };
 
 module.exports = {
   pages: [
-    { id: 'time-zone-converter', slugs: { en: 'time-zone-converter', fr: 'fr/convertisseur-fuseaux-horaires', es: 'es/conversor-zona-horaria' } },
+    { id: 'time-zone-converter', slugs: { en: 'time-zone-converter', fr: 'fr/convertisseur-fuseaux-horaires', es: 'es/conversor-zona-horaria', pt: 'pt/conversor-fuso-horario' } },
   ],
 
   render(pageId, lang) {

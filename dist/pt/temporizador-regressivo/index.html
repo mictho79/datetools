@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Temporizador Regressivo – Contagem Regressiva para Qualquer Data</title>
+<meta name="robots" content="index, follow">
+<meta name="description" content="Crie uma contagem regressiva para qualquer data ou evento. Mostra dias, horas, minutos e segundos em tempo real — grátis.">
+<link rel="canonical" href="https://datecalc.app/pt/temporizador-regressivo/">
+<link rel="alternate" hreflang="en" href="https://datecalc.app/countdown-timer/">
+<link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/compte-a-rebours/">
+<link rel="alternate" hreflang="es" href="https://datecalc.app/es/cuenta-regresiva/">
+<link rel="alternate" hreflang="pt" href="https://datecalc.app/pt/temporizador-regressivo/">
+<link rel="alternate" hreflang="x-default" href="https://datecalc.app/countdown-timer/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Temporizador Regressivo – Contagem Regressiva para Qualquer Data">
+<meta property="og:description" content="Crie uma contagem regressiva para qualquer data ou evento. Mostra dias, horas, minutos e segundos em tempo real — grátis.">
+<meta property="og:url" content="https://datecalc.app/pt/temporizador-regressivo/">
+<meta property="og:site_name" content="DateCalc.app">
+<meta property="og:image" content="https://datecalc.app/og.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Temporizador Regressivo – Contagem Regressiva para Qualquer Data">
+<meta name="twitter:description" content="Crie uma contagem regressiva para qualquer data ou evento. Mostra dias, horas, minutos e segundos em tempo real — grátis.">
+<meta name="twitter:image" content="https://datecalc.app/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Space+Mono:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="shortcut icon" href="/favicon.svg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Como criar uma contagem regressiva para meu aniversário?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Insira a data do seu próximo aniversário no formulário e clique em Iniciar. A contagem mostrará exatamente quantos dias, horas, minutos e segundos faltam."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "A contagem regressiva atualiza automaticamente?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim. O contador é atualizado a cada segundo enquanto a página estiver aberta."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Posso usar para datas passadas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Não. O temporizador funciona apenas para datas futuras. Para calcular dias entre datas passadas, use a calculadora de dias entre datas."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Temporizador Regressivo",
+  "description": "Crie uma contagem regressiva para qualquer data ou evento. Mostra dias, horas, minutos e segundos em tempo real — grátis.",
+  "url": "https://datecalc.app/pt/temporizador-regressivo/",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Web",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"DateCalc.app","url":"https://datecalc.app","logo":"https://datecalc.app/og.png","contactPoint":{"@type":"ContactPoint","email":"hello@datecalc.app","contactType":"customer support"}}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<noscript><div style="background:#c8392b;color:#fff;text-align:center;padding:.6rem;font-family:sans-serif;font-size:.9rem">This calculator requires JavaScript. Please enable it in your browser.</div></noscript>
+
+<header>
+<div class="masthead">
+  <a href="/pt/" class="masthead-brand">DateCalc<span>.</span>app</a>
+  <div class="masthead-meta" id="todayMeta"></div>
+</div>
+</header>
+
+<div class="lang-strip">
+  <a href="/countdown-timer/" class="lang-btn">EN</a>
+  <a href="/fr/compte-a-rebours/" class="lang-btn">FR</a>
+  <a href="/es/cuenta-regresiva/" class="lang-btn">ES</a>
+  <a href="/pt/temporizador-regressivo/" class="lang-btn active">PT</a>
+</div>
+
+<div class="page">
+
+  <div class="headline-block">
+    <div class="kicker">Temporizador Regressivo</div>
+    <h1 class="headline">Contagem <br><em>regressiva</em> <br>para qualquer data</h1>
+    <p class="subhead">Crie uma contagem regressiva personalizada para qualquer evento</p>
+  </div>
+
+  <div class="form-grid">
+    <div class="form-col">
+      <div class="field-label">Data alvo</div>
+      <div class="date-row">
+        <input type="number" id="day" placeholder="DD" min="1" max="31" inputmode="numeric" oninput="clamp(this,1,31)">
+        <span>/</span>
+        <input type="number" id="month" placeholder="MM" min="1" max="12" inputmode="numeric" oninput="clamp(this,1,12)">
+        <span>/</span>
+        <input type="number" id="year" placeholder="YYYY" min="2024" max="2099" inputmode="numeric" oninput="clamp(this,2024,2099)">
+      </div>
+      <div class="field-label" style="margin-top:1.2rem">Nome do evento (opcional)</div>
+      <input type="text" id="eventLabel" placeholder="e.g. My Birthday" maxlength="40" style="background:none;border:none;border-bottom:2px solid var(--ink);font-family:'Inter',sans-serif;font-size:1rem;color:var(--ink);width:100%;padding:.2rem 0;outline:none;">
+      <div class="error-line" id="errorLine"></div>
+      <button class="calc-btn" onclick="calculate()">→ INICIAR</button>
+    </div>
+    <div class="form-col">
+      <p class="tip-text">"A antecipação é parte da alegria."</p>
+      <ul class="example-list">
+        <li>Réveillon</li>
+        <li>Próximo aniversário</li>
+        <li>Prazo do projeto</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="results-section" id="results" aria-live="polite">
+    <div class="results-header" id="resultsHeader">Tempo restante</div>
+    <div class="age-display">
+      <span class="age-number" id="heroDays">—</span>
+      <span class="age-suffix">dias</span>
+    </div>
+    <div class="precise-age" id="liveHMS"></div>
+    <div class="stats-strip">
+      <div class="stat-item"><div class="stat-num" id="statWeeks">—</div><div class="stat-lbl">semanas</div></div>
+      <div class="stat-item"><div class="stat-num" id="statTotalH">—</div><div class="stat-lbl">horas totais</div></div>
+      <div class="stat-item"><div class="stat-num" id="statTotalM">—</div><div class="stat-lbl">minutos totais</div></div>
+      <div class="stat-item"><div class="stat-num" id="statSecs">—</div><div class="stat-lbl">segundos</div></div>
+    </div>
+    <div class="facts-row">
+      <div class="fact-item"><div class="fact-key">Data alvo</div><div class="fact-val" id="ffDate">—</div></div>
+      <div class="fact-item"><div class="fact-key">Dia da semana</div><div class="fact-val" id="ffDay">—</div></div>
+    </div>
+    <div class="bday-banner" id="doneBanner"></div>
+  </div>
+
+  <nav aria-label="Tools">
+  <div class="tool-nav">
+    <div class="nav-group"><span class="nav-cat">Idade</span><div class="nav-links"><a href="/pt/calculadora-de-idade/">Calculadora de Idade</a><span class="nav-sep">·</span><a href="/pt/idade-cronologica/">Idade Cronológica</a><span class="nav-sep">·</span><a href="/pt/calculadora-idade-bebe/">Idade do Bebê</a><span class="nav-sep">·</span><a href="/pt/calculadora-idade-cachorro/">Idade do Cachorro</a><span class="nav-sep">·</span><a href="/pt/calculadora-idade-gato/">Idade do Gato</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Datas</span><div class="nav-links"><a href="/pt/dias-entre-datas/">Dias Entre Datas</a><span class="nav-sep">·</span><a href="/pt/calculadora-de-data/">Calculadora de Data</a><span class="nav-sep">·</span><a href="/pt/que-dia-e-hoje/">Que Dia É Hoje</a><span class="nav-sep">·</span><a href="/pt/numero-da-semana/">Número da Semana</a><span class="nav-sep">·</span><a href="/pt/calculadora-dias-uteis/">Dias Úteis</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Contagens</span><div class="nav-links"><a href="/pt/dias-para-o-natal/">Natal</a><span class="nav-sep">·</span><a href="/pt/dias-para-ano-novo/">Ano Novo</a><span class="nav-sep">·</span><a href="/pt/dias-para-o-halloween/">Halloween</a><span class="nav-sep">·</span><a href="/pt/dias-para-a-pascoa/">Páscoa</a><span class="nav-sep">·</span><a href="/pt/temporizador-regressivo/" aria-current="page">Temporizador</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Mundo</span><div class="nav-links"><a href="/pt/conversor-fuso-horario/">Fuso Horário</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Nascido em</span><div class="nav-links"><a href="/pt/nascido-em-1990/">Nascido em 1990</a><span class="nav-sep">·</span><a href="/pt/nascido-em-1980/">Nascido em 1980</a><span class="nav-sep">·</span><a href="/pt/nascido-em-2000/">Nascido em 2000</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Retrospectiva</span><div class="nav-links"><a href="/pt/o-que-aconteceu-em-2000/">O que aconteceu em 2000</a><span class="nav-sep">·</span><a href="/pt/o-que-aconteceu-em-1990/">O que aconteceu em 1990</a><span class="nav-sep">·</span><a href="/pt/o-que-aconteceu-em-1980/">O que aconteceu em 1980</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Calendários</span><div class="nav-links"><a href="/pt/numero-da-semana/2025/">Semanas 2025</a><span class="nav-sep">·</span><a href="/pt/numero-da-semana/2026/">Semanas 2026</a><span class="nav-sep">·</span><a href="/pt/numero-da-semana/2027/">Semanas 2027</a></div></div>
+  </div>
+  </nav>
+
+<main id="main-content">
+  <div class="seo-block">
+    <div><h2>Como criar uma contagem regressiva?</h2><p>Insira a data do evento no formulário acima e clique em Iniciar. A contagem regressiva será exibida em dias, horas, minutos e segundos, atualizando em tempo real.</p></div>
+    <div><h2>Para que serve um temporizador regressivo?</h2><p>Use para contar os dias até férias, casamentos, formaturas, datas comemorativas, lançamentos de produtos ou qualquer evento especial.</p></div>
+  </div>
+  <div class="faq-block">
+    <h2>Perguntas frequentes</h2>
+    <div class="faq-item"><h3>Como criar uma contagem regressiva para meu aniversário?</h3><p>Insira a data do seu próximo aniversário no formulário e clique em Iniciar. A contagem mostrará exatamente quantos dias, horas, minutos e segundos faltam.</p></div>
+    <div class="faq-item"><h3>A contagem regressiva atualiza automaticamente?</h3><p>Sim. O contador é atualizado a cada segundo enquanto a página estiver aberta.</p></div>
+    <div class="faq-item"><h3>Posso usar para datas passadas?</h3><p>Não. O temporizador funciona apenas para datas futuras. Para calcular dias entre datas passadas, use a calculadora de dias entre datas.</p></div>
+  </div>
+
+</main>
+  <footer>
+  <nav class="footer-nav" aria-label="Site links">
+<div class="footer-col"><strong>Idade</strong>
+<a href="/pt/calculadora-de-idade/">Calculadora de Idade</a>
+<a href="/pt/idade-cronologica/">Idade Cronológica</a>
+<a href="/pt/calculadora-idade-bebe/">Idade do Bebê</a>
+<a href="/pt/calculadora-idade-cachorro/">Idade do Cachorro</a>
+<a href="/pt/calculadora-idade-gato/">Idade do Gato</a></div>
+<div class="footer-col"><strong>Datas</strong>
+<a href="/pt/dias-entre-datas/">Dias Entre Datas</a>
+<a href="/pt/calculadora-de-data/">Calculadora de Data</a>
+<a href="/pt/que-dia-e-hoje/">Que Dia É Hoje</a>
+<a href="/pt/numero-da-semana/">Número da Semana</a>
+<a href="/pt/calculadora-dias-uteis/">Dias Úteis</a></div>
+<div class="footer-col"><strong>Contagens</strong>
+<a href="/pt/dias-para-o-natal/">Natal</a>
+<a href="/pt/dias-para-ano-novo/">Ano Novo</a>
+<a href="/pt/dias-para-o-halloween/">Halloween</a>
+<a href="/pt/dias-para-a-pascoa/">Páscoa</a>
+<a href="/pt/temporizador-regressivo/">Temporizador</a></div>
+<div class="footer-col"><strong>Mundo</strong>
+<a href="/pt/conversor-fuso-horario/">Fuso Horário</a></div>
+<div class="footer-col"><strong>Nascido em</strong>
+<a href="/pt/nascido-em-1990/">Nascido em 1990</a>
+<a href="/pt/nascido-em-1980/">Nascido em 1980</a>
+<a href="/pt/nascido-em-2000/">Nascido em 2000</a></div>
+<div class="footer-col"><strong>Retrospectiva</strong>
+<a href="/pt/o-que-aconteceu-em-2000/">O que aconteceu em 2000</a>
+<a href="/pt/o-que-aconteceu-em-1990/">O que aconteceu em 1990</a>
+<a href="/pt/o-que-aconteceu-em-1980/">O que aconteceu em 1980</a></div>
+<div class="footer-col"><strong>Calendários</strong>
+<a href="/pt/numero-da-semana/2025/">Semanas 2025</a>
+<a href="/pt/numero-da-semana/2026/">Semanas 2026</a>
+<a href="/pt/numero-da-semana/2027/">Semanas 2027</a></div>
+  </nav>
+  <div class="footer-copy">© 2026 DateCalc.app — Calculadoras de data e hora gratuitas online · <a href="/pt/privacidade/">Privacidade</a></div>
+</footer>
+</div>
+
+<script>
+(function(){
+  var now = new Date();
+  var opts = {weekday:'long',year:'numeric',month:'long',day:'numeric'};
+  document.getElementById('todayMeta').innerHTML =
+    now.toLocaleDateString('pt-BR', opts) + '<br>Calculadora de datas gratuita';
+})();
+// Shared input guard: strip non-digits, truncate to max digit length, clamp to hi
+function clamp(el, lo, hi) {
+  var maxLen = String(hi).length;
+  var s = el.value.replace(/\D/g, '').slice(0, maxLen);
+  var n = parseInt(s, 10);
+  if (!isNaN(n) && n > hi) s = String(hi);
+  el.value = s;
+}
+// Auto-scroll to results when they become visible
+(function(){
+  var r=document.getElementById('results');
+  if(!r||r.classList.contains('auto-show'))return;
+  var obs=new MutationObserver(function(){
+    if(r.classList.contains('show')){
+      r.scrollIntoView({behavior:'smooth',block:'start'});
+      obs.disconnect();
+    }
+  });
+  obs.observe(r,{attributes:true,attributeFilter:['class']});
+})();
+// Enter key submits calculator
+(function(){
+  var fg=document.querySelector('.form-grid');
+  if(!fg)return;
+  fg.addEventListener('keydown',function(e){
+    if(e.key==='Enter'&&typeof calculate==='function')calculate();
+  });
+})();
+// AdSense: load only with consent
+(function(){
+  var ADS_SRC='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4020973443671350';
+  function loadAds(){
+    var s=document.createElement('script');
+    s.src=ADS_SRC;s.async=true;s.crossOrigin='anonymous';
+    document.head.appendChild(s);
+  }
+  if(localStorage.getItem('ads-ok')==='1')return loadAds();
+  if(localStorage.getItem('ads-ok')==='0')return;
+  var b=document.getElementById('consent-banner');
+  if(b)b.style.display='flex';
+  document.getElementById('consent-accept')&&document.getElementById('consent-accept').addEventListener('click',function(){
+    localStorage.setItem('ads-ok','1');b.style.display='none';loadAds();
+  });
+  document.getElementById('consent-decline')&&document.getElementById('consent-decline').addEventListener('click',function(){
+    localStorage.setItem('ads-ok','0');b.style.display='none';
+  });
+})();
+</script>
+<script>
+
+var D = {"errInvalid":"→ Data inválida. Verifique sua entrada.","errPast":"→ A data selecionada já passou.","reachedMsg":"🎉 A data chegou!","weekDays":["Domingo","Segunda-feira","Terça-feira","Quarta-feira","Quinta-feira","Sexta-feira","Sábado"],"months":["janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro"]};
+var _target = null;
+var _timer = null;
+function fmt(n){return n.toLocaleString();}
+function pad2(n){return n<10?'0'+n:''+n;}
+
+function tick(){
+  if(!_target) return;
+  var now = new Date();
+  var diff = _target - now;
+  if(diff <= 0){
+    document.getElementById('heroDays').textContent = '0';
+    document.getElementById('liveHMS').textContent = '00h · 00min · 00s';
+    document.getElementById('statWeeks').textContent = '0';
+    document.getElementById('statTotalH').textContent = '0';
+    document.getElementById('statTotalM').textContent = '0';
+    document.getElementById('statSecs').textContent = '0';
+    document.getElementById('doneBanner').textContent = D.reachedMsg;
+    return;
+  }
+  var totalSec = Math.floor(diff/1000);
+  var s = totalSec%60, totalMin = Math.floor(totalSec/60);
+  var min = totalMin%60, totalH = Math.floor(totalMin/60);
+  var h = totalH%24, days = Math.floor(totalH/24);
+  document.getElementById('heroDays').textContent = fmt(days);
+  document.getElementById('liveHMS').textContent = pad2(h)+'h · '+pad2(min)+'min · '+pad2(s)+'s';
+  document.getElementById('statWeeks').textContent = fmt(Math.floor(days/7));
+  document.getElementById('statTotalH').textContent = fmt(totalH);
+  document.getElementById('statTotalM').textContent = fmt(totalMin);
+  document.getElementById('statSecs').textContent = fmt(totalSec);
+}
+
+function calculate(){
+  var d = parseInt(document.getElementById('day').value);
+  var m = parseInt(document.getElementById('month').value);
+  var y = parseInt(document.getElementById('year').value);
+  var label = document.getElementById('eventLabel').value.trim();
+  var err = document.getElementById('errorLine');
+  var res = document.getElementById('results');
+  err.classList.remove('show'); res.classList.remove('show');
+  if(_timer){clearInterval(_timer); _timer=null;}
+
+  if(!d||!m||!y||d<1||d>31||m<1||m>12||y<2024||y>2099){err.textContent=D.errInvalid; err.classList.add('show'); return;}
+  var target = new Date(y, m-1, d);
+  if(target.getDate()!==d){err.textContent=D.errInvalid; err.classList.add('show'); return;}
+  if(target <= new Date()){err.textContent=D.errPast; err.classList.add('show'); return;}
+
+  _target = target;
+  document.getElementById('resultsHeader').textContent = label || 'Tempo restante';
+  document.getElementById('ffDate').textContent = target.getDate()+' '+D.months[target.getMonth()]+' '+target.getFullYear();
+  document.getElementById('ffDay').textContent = D.weekDays[target.getDay()];
+  document.getElementById('doneBanner').textContent = '';
+  res.classList.add('show');
+  res.scrollIntoView({behavior:'smooth',block:'start'});
+  tick();
+  _timer = setInterval(tick, 1000);
+}
+
+document.addEventListener('keydown', function(e){if(e.key==='Enter') calculate();});
+
+</script>
+<div id="consent-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#111111;color:#fff;padding:.9rem 1.4rem;z-index:9999;font-size:.82rem;font-family:sans-serif;align-items:center;gap:.8rem;flex-wrap:wrap">
+  <span style="flex:1;min-width:200px">Usamos Google AdSense para financiar este serviço gratuito. Você aceita cookies de publicidade?</span>
+  <button id="consent-accept" style="background:#c8392b;color:#fff;border:none;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Aceitar</button>
+  <button id="consent-decline" style="background:transparent;color:#aaa;border:1px solid #555;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Continuar sem</button>
+</div>
+</body>
+</html>

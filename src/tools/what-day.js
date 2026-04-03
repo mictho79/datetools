@@ -103,11 +103,40 @@ const T = {
     weekDays: ['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'],
     months: ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'],
   },
+  pt: {
+    title: 'Que Dia É Hoje? Data e Hora Atual 2026 | DateCalc',
+    metaDesc: 'Descubra que dia é hoje — data completa, dia da semana, número da semana ISO e horário atual. Atualizado em tempo real.',
+    kicker: 'Que Dia É Hoje',
+    headline: 'Que dia<br>é<br><em>hoje?</em>',
+    subhead: 'Data, dia da semana e número da semana atuais',
+    dateLabel: 'Data (deixe em branco para hoje)',
+    calcBtn: '→ Verificar',
+    tipText: '"Segunda-feira é um estado mental. Mas pelo menos agora você sabe em qual está."',
+    resultsHeader: 'Hoje',
+    dayLbl: 'Dia da semana', dateLbl: 'Data completa',
+    doyLbl: 'Dia do ano', weekNumLbl: 'Número da semana',
+    doyLeftLbl: 'Dias restantes no ano', leapLbl: 'Ano bissexto',
+    yes: 'Sim', no: 'Não',
+    errInvalid: '→ Data inválida. Verifique sua entrada.',
+    seoH2a: 'Que dia é hoje?',
+    seoP1: 'Esta página mostra a data de hoje em tempo real, incluindo o dia da semana, o número da semana ISO e a hora atual no seu fuso horário local.',
+    seoH2b: 'Como funciona o cálculo do dia da semana?',
+    seoP2: 'O dia da semana é calculado com base na data atual do seu dispositivo. O número da semana segue o padrão ISO 8601, onde a semana começa na segunda-feira.',
+    faqTitle: 'Perguntas frequentes',
+    source: null,
+    faqs: [
+      { q: 'Que dia é hoje?', a: 'Esta página mostra a data de hoje em tempo real. Acesse-a para ver a data atual, o dia da semana e o número da semana ISO.' },
+      { q: 'Como saber em que semana do ano estamos?', a: 'O número da semana ISO é mostrado automaticamente nesta página. Ele é calculado conforme o padrão ISO 8601.' },
+      { q: 'A hora mostrada é a hora local?', a: 'Sim. A hora exibida é baseada no fuso horário configurado no seu dispositivo.' },
+    ],
+    weekDays: ['Domingo','Segunda-feira','Terça-feira','Quarta-feira','Quinta-feira','Sexta-feira','Sábado'],
+    months: ['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'],
+  },
 };
 
 module.exports = {
   pages: [
-    { id: 'what-day-is-it-today', slugs: { en: 'what-day-is-it-today', fr: 'fr/quel-jour-sommes-nous', es: 'es/que-dia-es-hoy' } },
+    { id: 'what-day-is-it-today', slugs: { en: 'what-day-is-it-today', fr: 'fr/quel-jour-sommes-nous', es: 'es/que-dia-es-hoy', pt: 'pt/que-dia-e-hoje' } },
   ],
 
   render(pageId, lang) {

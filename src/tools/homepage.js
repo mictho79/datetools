@@ -120,7 +120,46 @@ const TOOLS_ES = [
   },
 ];
 
-const TOOLS_BY_LANG = { en: TOOLS_EN, fr: TOOLS_FR, es: TOOLS_ES };
+const TOOLS_PT = [
+  {
+    cat: 'Idade',
+    items: [
+      { label: 'Calculadora de Idade', href: '/pt/calculadora-de-idade/', desc: 'Idade exata em anos, meses e dias' },
+      { label: 'Idade Cronológica', href: '/pt/idade-cronologica/', desc: 'Diferença entre duas datas' },
+      { label: 'Idade do Bebê', href: '/pt/calculadora-idade-bebe/', desc: 'Idade em semanas e meses' },
+      { label: 'Idade do Cachorro', href: '/pt/calculadora-idade-cachorro/', desc: 'Anos caninos em humanos' },
+      { label: 'Idade do Gato', href: '/pt/calculadora-idade-gato/', desc: 'Anos felinos em humanos' },
+    ],
+  },
+  {
+    cat: 'Datas',
+    items: [
+      { label: 'Dias Entre Datas', href: '/pt/dias-entre-datas/', desc: 'Diferença em dias, semanas' },
+      { label: 'Calculadora de Data', href: '/pt/calculadora-de-data/', desc: 'Adicionar ou subtrair dias' },
+      { label: 'Dias Úteis', href: '/pt/calculadora-dias-uteis/', desc: 'Contar dias úteis' },
+      { label: 'Número da Semana', href: '/pt/numero-da-semana/', desc: 'Semana ISO atual' },
+      { label: 'Que Dia É Hoje', href: '/pt/que-dia-e-hoje/', desc: 'Data e semana atual' },
+    ],
+  },
+  {
+    cat: 'Contagens',
+    items: [
+      { label: 'Contagem para o Natal', href: '/pt/dias-para-o-natal/', desc: 'Dias até 25 de dezembro' },
+      { label: 'Contagem para Ano Novo', href: '/pt/dias-para-ano-novo/', desc: 'Dias até 1º de janeiro' },
+      { label: 'Contagem para Halloween', href: '/pt/dias-para-o-halloween/', desc: 'Dias até 31 de outubro' },
+      { label: 'Contagem para Páscoa', href: '/pt/dias-para-a-pascoa/', desc: 'Dias até a Páscoa' },
+      { label: 'Temporizador Regressivo', href: '/pt/temporizador-regressivo/', desc: 'Contagem para qualquer data' },
+    ],
+  },
+  {
+    cat: 'Mundo',
+    items: [
+      { label: 'Fuso Horário', href: '/pt/conversor-fuso-horario/', desc: 'Converter fusos horários' },
+    ],
+  },
+];
+
+const TOOLS_BY_LANG = { en: TOOLS_EN, fr: TOOLS_FR, es: TOOLS_ES, pt: TOOLS_PT };
 
 function buildGrid(tools) {
   const cats = tools.map(group => {
@@ -193,6 +232,22 @@ const T = {
       { q: '¿Qué idiomas están disponibles?', a: 'DateCalc.app está disponible en inglés, francés (Français) y español. Cada herramienta está completamente traducida y usa formatos de fecha apropiados para cada idioma. Cambia de idioma usando los botones EN / FR / ES en la parte superior de cualquier página.' },
     ],
   },
+  pt: {
+    title: 'DateCalc.app – Calculadoras de Data e Hora Gratuitas 2026',
+    metaDesc: 'Calculadoras de data e hora gratuitas. Calcule idade, dias entre datas, contagens regressivas, fusos horários e mais — grátis, sem cadastro.',
+    kicker: 'Calculadoras de Data',
+    headline: 'Calculadoras de<br><em>Data & Hora</em><br>Gratuitas',
+    subhead: 'Ferramentas simples e precisas para todos os seus cálculos de data',
+    seoH2a: 'O que você pode calcular com DateCalc.app?',
+    seoP1: 'DateCalc.app é uma coleção gratuita de calculadoras de data e hora que cobre todos os cálculos comuns de que você pode precisar. Seja para saber exatamente quantos anos você tem, contar os dias entre duas datas, calcular os dias úteis antes de um prazo ou converter um horário entre fusos horários — este site tem uma ferramenta dedicada para isso. Todas as calculadoras funcionam diretamente no seu navegador, sem necessidade de conta, sem anúncios bloqueando sua visão e sem barreiras de pagamento. Os resultados são instantâneos e a interface é limpa.',
+    seoH2b: 'Por que usar uma calculadora de datas dedicada?',
+    seoP2: 'A aritmética mental de datas é propensa a erros: o comprimento dos meses varia, os anos bissextos adicionam um dia a cada quatro anos e os fusos horários podem mudar completamente a data do calendário. Uma calculadora dedicada elimina as suposições. Profissionais as usam para prazos legais, durações de contratos e cronogramas de projetos. Pais usam calculadoras de idade para bebês para acompanhar marcos do desenvolvimento. DateCalc.app cobre todos esses casos de uso em inglês, francês, espanhol e português.',
+    faqs: [
+      { q: 'Como calcular minha idade exata?', a: 'Use nossa calculadora de idade: insira sua data de nascimento e obtenha sua idade em anos, meses, dias e segundos.' },
+      { q: 'Como calcular dias entre duas datas?', a: 'Use a calculadora de dias entre datas: insira as duas datas e obtenha a diferença em dias, semanas e meses.' },
+      { q: 'Como converter fusos horários?', a: 'Use o conversor de fuso horário: selecione os fusos de origem e destino e insira o horário para conversão instantânea.' },
+    ],
+  },
 };
 
 module.exports = {
@@ -200,7 +255,7 @@ module.exports = {
     {
       id: 'home-en',
       isHomepage: true,
-      slugs: { en: '', fr: 'fr', es: 'es' },
+      slugs: { en: '', fr: 'fr', es: 'es', pt: 'pt' },
     },
   ],
 

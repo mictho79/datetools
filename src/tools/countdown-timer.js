@@ -115,11 +115,44 @@ const T = {
     weekDays: ['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'],
     months: ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'],
   },
+  pt: {
+    title: 'Temporizador Regressivo – Contagem Regressiva para Qualquer Data',
+    metaDesc: 'Crie uma contagem regressiva para qualquer data ou evento. Mostra dias, horas, minutos e segundos em tempo real — grátis.',
+    kicker: 'Temporizador Regressivo',
+    headline: 'Contagem<br><em>regressiva</em><br>para qualquer data',
+    subhead: 'Crie uma contagem regressiva personalizada para qualquer evento',
+    targetLabel: 'Data alvo',
+    labelLabel: 'Nome do evento (opcional)',
+    calcBtn: '→ INICIAR',
+    tipText: '"A antecipação é parte da alegria."',
+    examples: ['Réveillon', 'Próximo aniversário', 'Prazo do projeto'],
+    resultsHeader: 'Tempo restante',
+    heroSuffix: 'dias',
+    hoursLbl: 'horas', minsLbl: 'minutos', secsLbl: 'segundos',
+    weeksLbl: 'semanas', totalHoursLbl: 'horas totais', totalMinsLbl: 'minutos totais',
+    eventLbl: 'Evento', dateLbl: 'Data alvo', dayLbl: 'Dia da semana',
+    errInvalid: '→ Data inválida. Verifique sua entrada.',
+    errPast: '→ A data selecionada já passou.',
+    reachedMsg: '🎉 A data chegou!',
+    seoH2a: 'Como criar uma contagem regressiva?',
+    seoP1: 'Insira a data do evento no formulário acima e clique em Iniciar. A contagem regressiva será exibida em dias, horas, minutos e segundos, atualizando em tempo real.',
+    seoH2b: 'Para que serve um temporizador regressivo?',
+    seoP2: 'Use para contar os dias até férias, casamentos, formaturas, datas comemorativas, lançamentos de produtos ou qualquer evento especial.',
+    faqTitle: 'Perguntas frequentes',
+    source: null,
+    faqs: [
+      { q: 'Como criar uma contagem regressiva para meu aniversário?', a: 'Insira a data do seu próximo aniversário no formulário e clique em Iniciar. A contagem mostrará exatamente quantos dias, horas, minutos e segundos faltam.' },
+      { q: 'A contagem regressiva atualiza automaticamente?', a: 'Sim. O contador é atualizado a cada segundo enquanto a página estiver aberta.' },
+      { q: 'Posso usar para datas passadas?', a: 'Não. O temporizador funciona apenas para datas futuras. Para calcular dias entre datas passadas, use a calculadora de dias entre datas.' },
+    ],
+    weekDays: ['Domingo','Segunda-feira','Terça-feira','Quarta-feira','Quinta-feira','Sexta-feira','Sábado'],
+    months: ['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'],
+  },
 };
 
 module.exports = {
   pages: [
-    { id: 'countdown-timer', slugs: { en: 'countdown-timer', fr: 'fr/compte-a-rebours', es: 'es/cuenta-regresiva' } },
+    { id: 'countdown-timer', slugs: { en: 'countdown-timer', fr: 'fr/compte-a-rebours', es: 'es/cuenta-regresiva', pt: 'pt/temporizador-regressivo' } },
   ],
 
   render(pageId, lang) {

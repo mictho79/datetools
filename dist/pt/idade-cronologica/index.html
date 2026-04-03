@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de Idade Cronológica – Anos, Meses e Dias | DateCalc</title>
+<meta name="robots" content="index, follow">
+<meta name="description" content="Calcule a idade cronológica exata entre duas datas. Mostra anos, meses e dias completos — grátis, sem cadastro.">
+<link rel="canonical" href="https://datecalc.app/pt/idade-cronologica/">
+<link rel="alternate" hreflang="en" href="https://datecalc.app/chronological-age-calculator/">
+<link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/age-chronologique/">
+<link rel="alternate" hreflang="es" href="https://datecalc.app/es/edad-cronologica/">
+<link rel="alternate" hreflang="pt" href="https://datecalc.app/pt/idade-cronologica/">
+<link rel="alternate" hreflang="x-default" href="https://datecalc.app/chronological-age-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Calculadora de Idade Cronológica – Anos, Meses e Dias | DateCalc">
+<meta property="og:description" content="Calcule a idade cronológica exata entre duas datas. Mostra anos, meses e dias completos — grátis, sem cadastro.">
+<meta property="og:url" content="https://datecalc.app/pt/idade-cronologica/">
+<meta property="og:site_name" content="DateCalc.app">
+<meta property="og:image" content="https://datecalc.app/og.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Calculadora de Idade Cronológica – Anos, Meses e Dias | DateCalc">
+<meta name="twitter:description" content="Calcule a idade cronológica exata entre duas datas. Mostra anos, meses e dias completos — grátis, sem cadastro.">
+<meta name="twitter:image" content="https://datecalc.app/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Space+Mono:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="shortcut icon" href="/favicon.svg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "O que é idade cronológica?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A idade cronológica é o tempo decorrido desde o nascimento, expresso em anos, meses e dias. É diferente da idade biológica, que reflete o estado de saúde celular."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Como calcular a idade cronológica exata?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Insira as datas de início e fim nesta calculadora. Ela calcula automaticamente os anos, meses e dias completos entre as duas datas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Posso calcular a diferença entre qualquer duas datas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim. Esta calculadora funciona para qualquer par de datas — não apenas idades. Use-a para calcular a duração de um projeto, período de emprego ou qualquer intervalo de tempo."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Calculadora de Idade Cronológica",
+  "description": "Calcule a idade cronológica exata entre duas datas. Mostra anos, meses e dias completos — grátis, sem cadastro.",
+  "url": "https://datecalc.app/pt/idade-cronologica/",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Web",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"DateCalc.app","url":"https://datecalc.app","logo":"https://datecalc.app/og.png","contactPoint":{"@type":"ContactPoint","email":"hello@datecalc.app","contactType":"customer support"}}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<noscript><div style="background:#c8392b;color:#fff;text-align:center;padding:.6rem;font-family:sans-serif;font-size:.9rem">This calculator requires JavaScript. Please enable it in your browser.</div></noscript>
+
+<header>
+<div class="masthead">
+  <a href="/pt/" class="masthead-brand">DateCalc<span>.</span>app</a>
+  <div class="masthead-meta" id="todayMeta"></div>
+</div>
+</header>
+
+<div class="lang-strip">
+  <a href="/chronological-age-calculator/" class="lang-btn">EN</a>
+  <a href="/fr/age-chronologique/" class="lang-btn">FR</a>
+  <a href="/es/edad-cronologica/" class="lang-btn">ES</a>
+  <a href="/pt/idade-cronologica/" class="lang-btn active">PT</a>
+</div>
+
+<div class="page">
+
+  <div class="headline-block">
+    <div class="kicker">Idade Cronológica</div>
+    <h1 class="headline">Calculadora de <br><em>Idade <br>Cronológica</em></h1>
+    <p class="subhead">Calcule a diferença exata entre duas datas em anos, meses e dias</p>
+  </div>
+
+  <div class="form-grid">
+    <div class="form-col">
+      <div class="field-label">undefined</div>
+      <div class="date-row">
+        <input type="number" id="day" placeholder="DD" min="1" max="31" inputmode="numeric" oninput="clamp(this,1,31)">
+        <span>/</span>
+        <input type="number" id="month" placeholder="MM" min="1" max="12" inputmode="numeric" oninput="clamp(this,1,12)">
+        <span>/</span>
+        <input type="number" id="year" placeholder="YYYY" min="1900" max="2026" inputmode="numeric" oninput="clamp(this,1900,2026)">
+      </div>
+      <div class="field-label" style="margin-top:1rem">undefined</div>
+      <div class="date-row">
+        <input type="number" id="rDay" placeholder="DD" min="1" max="31" inputmode="numeric" oninput="clamp(this,1,31)">
+        <span>/</span>
+        <input type="number" id="rMonth" placeholder="MM" min="1" max="12" inputmode="numeric" oninput="clamp(this,1,12)">
+        <span>/</span>
+        <input type="number" id="rYear" placeholder="YYYY" min="1900" max="2100" inputmode="numeric" oninput="clamp(this,1900,2100)">
+      </div>
+      <div class="error-line" id="errorLine"></div>
+      <button class="calc-btn" onclick="calculate()">undefined</button>
+    </div>
+    <div class="form-col">
+      <p class="tip-text">undefined</p>
+    </div>
+  </div>
+
+  <div class="results-section" id="results" aria-live="polite">
+    <div class="results-header">Idade cronológica</div>
+    <div class="age-display">
+      <span class="age-number" id="heroAge">—</span>
+      <span class="age-suffix">undefined</span>
+    </div>
+    <div class="precise-age" id="preciseAge"></div>
+    <div class="stats-strip">
+      <div class="stat-item"><div class="stat-num" id="statMonths">—</div><div class="stat-lbl">undefined</div></div>
+      <div class="stat-item"><div class="stat-num" id="statWeeks">—</div><div class="stat-lbl">undefined</div></div>
+      <div class="stat-item"><div class="stat-num" id="statDays">—</div><div class="stat-lbl">undefined</div></div>
+      <div class="stat-item"><div class="stat-num" id="statHours">—</div><div class="stat-lbl">undefined</div></div>
+    </div>
+    <div class="facts-row">
+      <div class="fact-item"><div class="fact-key">undefined</div><div class="fact-val" id="ffZodiac">—</div></div>
+      <div class="fact-item"><div class="fact-key">undefined</div><div class="fact-val" id="ffGen">—</div></div>
+      <div class="fact-item"><div class="fact-key">undefined</div><div class="fact-val" id="ffDay">—</div></div>
+      <div class="fact-item"><div class="fact-key">undefined</div><div class="fact-val" id="ffLeap">—</div></div>
+    </div>
+    <div class="bday-banner" id="bdayBanner"></div>
+  </div>
+
+  <nav aria-label="Tools">
+  <div class="tool-nav">
+    <div class="nav-group"><span class="nav-cat">Idade</span><div class="nav-links"><a href="/pt/calculadora-de-idade/">Calculadora de Idade</a><span class="nav-sep">·</span><a href="/pt/idade-cronologica/" aria-current="page">Idade Cronológica</a><span class="nav-sep">·</span><a href="/pt/calculadora-idade-bebe/">Idade do Bebê</a><span class="nav-sep">·</span><a href="/pt/calculadora-idade-cachorro/">Idade do Cachorro</a><span class="nav-sep">·</span><a href="/pt/calculadora-idade-gato/">Idade do Gato</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Datas</span><div class="nav-links"><a href="/pt/dias-entre-datas/">Dias Entre Datas</a><span class="nav-sep">·</span><a href="/pt/calculadora-de-data/">Calculadora de Data</a><span class="nav-sep">·</span><a href="/pt/que-dia-e-hoje/">Que Dia É Hoje</a><span class="nav-sep">·</span><a href="/pt/numero-da-semana/">Número da Semana</a><span class="nav-sep">·</span><a href="/pt/calculadora-dias-uteis/">Dias Úteis</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Contagens</span><div class="nav-links"><a href="/pt/dias-para-o-natal/">Natal</a><span class="nav-sep">·</span><a href="/pt/dias-para-ano-novo/">Ano Novo</a><span class="nav-sep">·</span><a href="/pt/dias-para-o-halloween/">Halloween</a><span class="nav-sep">·</span><a href="/pt/dias-para-a-pascoa/">Páscoa</a><span class="nav-sep">·</span><a href="/pt/temporizador-regressivo/">Temporizador</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Mundo</span><div class="nav-links"><a href="/pt/conversor-fuso-horario/">Fuso Horário</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Nascido em</span><div class="nav-links"><a href="/pt/nascido-em-1990/">Nascido em 1990</a><span class="nav-sep">·</span><a href="/pt/nascido-em-1980/">Nascido em 1980</a><span class="nav-sep">·</span><a href="/pt/nascido-em-2000/">Nascido em 2000</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Retrospectiva</span><div class="nav-links"><a href="/pt/o-que-aconteceu-em-2000/">O que aconteceu em 2000</a><span class="nav-sep">·</span><a href="/pt/o-que-aconteceu-em-1990/">O que aconteceu em 1990</a><span class="nav-sep">·</span><a href="/pt/o-que-aconteceu-em-1980/">O que aconteceu em 1980</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Calendários</span><div class="nav-links"><a href="/pt/numero-da-semana/2025/">Semanas 2025</a><span class="nav-sep">·</span><a href="/pt/numero-da-semana/2026/">Semanas 2026</a><span class="nav-sep">·</span><a href="/pt/numero-da-semana/2027/">Semanas 2027</a></div></div>
+  </div>
+  </nav>
+
+<main id="main-content">
+  <div class="seo-block">
+    <div><h2>O que é idade cronológica?</h2><p>A idade cronológica é a quantidade de tempo decorrido desde o nascimento de uma pessoa, medida em anos, meses e dias completos. É a medida mais comum de idade e é usada em contextos médicos, educacionais e legais.</p></div>
+    <div><h2>Quando a idade cronológica é importante?</h2><p>A idade cronológica é importante em avaliações de desenvolvimento infantil, elegibilidade para benefícios, diagnósticos médicos e planejamento educacional. Use esta calculadora para obter a diferença exata entre qualquer duas datas.</p></div>
+  </div>
+  <div class="faq-block">
+    <h2>Perguntas frequentes</h2>
+    <div class="faq-item"><h3>O que é idade cronológica?</h3><p>A idade cronológica é o tempo decorrido desde o nascimento, expresso em anos, meses e dias. É diferente da idade biológica, que reflete o estado de saúde celular.</p></div>
+    <div class="faq-item"><h3>Como calcular a idade cronológica exata?</h3><p>Insira as datas de início e fim nesta calculadora. Ela calcula automaticamente os anos, meses e dias completos entre as duas datas.</p></div>
+    <div class="faq-item"><h3>Posso calcular a diferença entre qualquer duas datas?</h3><p>Sim. Esta calculadora funciona para qualquer par de datas — não apenas idades. Use-a para calcular a duração de um projeto, período de emprego ou qualquer intervalo de tempo.</p></div>
+  </div>
+
+</main>
+  <footer>
+  <nav class="footer-nav" aria-label="Site links">
+<div class="footer-col"><strong>Idade</strong>
+<a href="/pt/calculadora-de-idade/">Calculadora de Idade</a>
+<a href="/pt/idade-cronologica/">Idade Cronológica</a>
+<a href="/pt/calculadora-idade-bebe/">Idade do Bebê</a>
+<a href="/pt/calculadora-idade-cachorro/">Idade do Cachorro</a>
+<a href="/pt/calculadora-idade-gato/">Idade do Gato</a></div>
+<div class="footer-col"><strong>Datas</strong>
+<a href="/pt/dias-entre-datas/">Dias Entre Datas</a>
+<a href="/pt/calculadora-de-data/">Calculadora de Data</a>
+<a href="/pt/que-dia-e-hoje/">Que Dia É Hoje</a>
+<a href="/pt/numero-da-semana/">Número da Semana</a>
+<a href="/pt/calculadora-dias-uteis/">Dias Úteis</a></div>
+<div class="footer-col"><strong>Contagens</strong>
+<a href="/pt/dias-para-o-natal/">Natal</a>
+<a href="/pt/dias-para-ano-novo/">Ano Novo</a>
+<a href="/pt/dias-para-o-halloween/">Halloween</a>
+<a href="/pt/dias-para-a-pascoa/">Páscoa</a>
+<a href="/pt/temporizador-regressivo/">Temporizador</a></div>
+<div class="footer-col"><strong>Mundo</strong>
+<a href="/pt/conversor-fuso-horario/">Fuso Horário</a></div>
+<div class="footer-col"><strong>Nascido em</strong>
+<a href="/pt/nascido-em-1990/">Nascido em 1990</a>
+<a href="/pt/nascido-em-1980/">Nascido em 1980</a>
+<a href="/pt/nascido-em-2000/">Nascido em 2000</a></div>
+<div class="footer-col"><strong>Retrospectiva</strong>
+<a href="/pt/o-que-aconteceu-em-2000/">O que aconteceu em 2000</a>
+<a href="/pt/o-que-aconteceu-em-1990/">O que aconteceu em 1990</a>
+<a href="/pt/o-que-aconteceu-em-1980/">O que aconteceu em 1980</a></div>
+<div class="footer-col"><strong>Calendários</strong>
+<a href="/pt/numero-da-semana/2025/">Semanas 2025</a>
+<a href="/pt/numero-da-semana/2026/">Semanas 2026</a>
+<a href="/pt/numero-da-semana/2027/">Semanas 2027</a></div>
+  </nav>
+  <div class="footer-copy">© 2026 DateCalc.app — Calculadoras de data e hora gratuitas online · <a href="/pt/privacidade/">Privacidade</a></div>
+</footer>
+</div>
+
+<script>
+(function(){
+  var now = new Date();
+  var opts = {weekday:'long',year:'numeric',month:'long',day:'numeric'};
+  document.getElementById('todayMeta').innerHTML =
+    now.toLocaleDateString('pt-BR', opts) + '<br>Calculadora de datas gratuita';
+})();
+// Shared input guard: strip non-digits, truncate to max digit length, clamp to hi
+function clamp(el, lo, hi) {
+  var maxLen = String(hi).length;
+  var s = el.value.replace(/\D/g, '').slice(0, maxLen);
+  var n = parseInt(s, 10);
+  if (!isNaN(n) && n > hi) s = String(hi);
+  el.value = s;
+}
+// Auto-scroll to results when they become visible
+(function(){
+  var r=document.getElementById('results');
+  if(!r||r.classList.contains('auto-show'))return;
+  var obs=new MutationObserver(function(){
+    if(r.classList.contains('show')){
+      r.scrollIntoView({behavior:'smooth',block:'start'});
+      obs.disconnect();
+    }
+  });
+  obs.observe(r,{attributes:true,attributeFilter:['class']});
+})();
+// Enter key submits calculator
+(function(){
+  var fg=document.querySelector('.form-grid');
+  if(!fg)return;
+  fg.addEventListener('keydown',function(e){
+    if(e.key==='Enter'&&typeof calculate==='function')calculate();
+  });
+})();
+// AdSense: load only with consent
+(function(){
+  var ADS_SRC='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4020973443671350';
+  function loadAds(){
+    var s=document.createElement('script');
+    s.src=ADS_SRC;s.async=true;s.crossOrigin='anonymous';
+    document.head.appendChild(s);
+  }
+  if(localStorage.getItem('ads-ok')==='1')return loadAds();
+  if(localStorage.getItem('ads-ok')==='0')return;
+  var b=document.getElementById('consent-banner');
+  if(b)b.style.display='flex';
+  document.getElementById('consent-accept')&&document.getElementById('consent-accept').addEventListener('click',function(){
+    localStorage.setItem('ads-ok','1');b.style.display='none';loadAds();
+  });
+  document.getElementById('consent-decline')&&document.getElementById('consent-decline').addEventListener('click',function(){
+    localStorage.setItem('ads-ok','0');b.style.display='none';
+  });
+})();
+</script>
+<script>
+
+var D = {"errInvalid":"Data inválida. Verifique dia, mês e ano."};
+
+function fmt(n){return n.toLocaleString();}
+function pad2(n){return n<10?'0'+n:''+n;}
+
+function getZodiac(d,m){
+  var b=[20,19,20,20,21,21,22,22,22,22,21,21];
+  var idx=(m===1&&d<=b[0])||(m===12&&d>b[11])?0:d<=b[m-1]?m-1:m;
+  return D.zodiacSigns[idx];
+}
+
+function getGen(y){
+  var gs=D.gens;
+  for(var i=gs.length-1;i>=0;i--) if(y>=gs[i].y) return gs[i].n;
+  return gs[0].n;
+}
+
+function leapCount(from,to){
+  var c=0;
+  for(var y=from;y<=to;y++) if((y%4===0&&y%100!==0)||y%400===0) c++;
+  return c;
+}
+
+function calculate(){
+  var d=parseInt(document.getElementById('day').value);
+  var m=parseInt(document.getElementById('month').value);
+  var y=parseInt(document.getElementById('year').value);
+  var err=document.getElementById('errorLine');
+  var res=document.getElementById('results');
+  err.classList.remove('show');
+  res.classList.remove('show');
+  document.getElementById('preciseAge').textContent='';
+
+  if(!d||!m||!y||d<1||d>31||m<1||m>12||y<1900||y>2026){
+    err.textContent=D.errInvalid; err.classList.add('show'); return;
+  }
+  var bday=new Date(y,m-1,d);
+  if(isNaN(bday)||bday.getDate()!==d){
+    err.textContent=D.errInvalid; err.classList.add('show'); return;
+  }
+
+  var rd=parseInt(document.getElementById('rDay').value);
+  var rm=parseInt(document.getElementById('rMonth').value);
+  var ry=parseInt(document.getElementById('rYear').value);
+  var ref;
+  if(rd&&rm&&ry){
+    ref=new Date(ry,rm-1,rd);
+    if(isNaN(ref)||ref.getDate()!==rd){err.textContent=D.errInvalid; err.classList.add('show'); return;}
+  } else {
+    ref=new Date(); ref.setHours(0,0,0,0);
+  }
+
+  if(bday>ref){err.textContent=D.errFuture; err.classList.add('show'); return;}
+
+  var ageY=ref.getFullYear()-bday.getFullYear();
+  var ageM=ref.getMonth()-bday.getMonth();
+  var ageD2=ref.getDate()-bday.getDate();
+  if(ageD2<0){ageM--; ageD2+=new Date(ref.getFullYear(),ref.getMonth(),0).getDate();}
+  if(ageM<0){ageY--; ageM+=12;}
+
+  var totalDays=Math.floor((ref-bday)/86400000);
+  var totalWeeks=Math.floor(totalDays/7);
+  var totalMonths=ageY*12+ageM;
+  var totalHours=totalDays*24;
+  var leaps=leapCount(y, ref.getFullYear());
+
+  var next=new Date(ref.getFullYear(),m-1,d);
+  if(next<=ref) next.setFullYear(next.getFullYear()+1);
+  var daysNext=Math.ceil((next-ref)/86400000);
+
+  // Show precise breakdown
+  var parts=[];
+  if(ageY>0) parts.push(ageY+D.pY);
+  if(ageM>0) parts.push(ageM+D.pM);
+  if(ageD2>0) parts.push(ageD2+D.pD);
+  document.getElementById('preciseAge').textContent=parts.join(' · ');
+
+  document.getElementById('heroAge').textContent=ageY;
+  document.getElementById('statMonths').textContent=fmt(totalMonths);
+  document.getElementById('statWeeks').textContent=fmt(totalWeeks);
+  document.getElementById('statDays').textContent=fmt(totalDays);
+  document.getElementById('statHours').textContent=fmt(totalHours);
+  document.getElementById('ffZodiac').textContent=getZodiac(d,m);
+  document.getElementById('ffGen').textContent=getGen(y);
+  document.getElementById('ffDay').textContent=D.weekDays[bday.getDay()];
+  document.getElementById('ffLeap').textContent=leaps;
+
+  var banner=document.getElementById('bdayBanner');
+  if(daysNext===0){
+    banner.textContent=D.nextBdayToday;
+  } else {
+    var dw=daysNext===1?D.dayWord[0]:D.dayWord[1];
+    banner.textContent=D.nextBdayIn+' '+daysNext+' '+dw;
+  }
+
+  res.classList.add('show');
+  res.scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+document.addEventListener('keydown',function(e){if(e.key==='Enter') calculate();});
+
+</script>
+<div id="consent-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#111111;color:#fff;padding:.9rem 1.4rem;z-index:9999;font-size:.82rem;font-family:sans-serif;align-items:center;gap:.8rem;flex-wrap:wrap">
+  <span style="flex:1;min-width:200px">Usamos Google AdSense para financiar este serviço gratuito. Você aceita cookies de publicidade?</span>
+  <button id="consent-accept" style="background:#c8392b;color:#fff;border:none;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Aceitar</button>
+  <button id="consent-decline" style="background:transparent;color:#aaa;border:1px solid #555;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Continuar sem</button>
+</div>
+</body>
+</html>

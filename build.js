@@ -23,7 +23,7 @@ const tools = [
   require('./src/tools/year-events'),
 ];
 
-const LANGS = ['en', 'fr', 'es'];
+const LANGS = ['en', 'fr', 'es', 'pt'];
 const DIST = path.join(__dirname, 'dist');
 
 // ── TOOL NAV ──────────────────────────────────────────────
@@ -151,31 +151,75 @@ const NAV = {
       { label: 'Semanas 2027', href: '/es/numero-semana/2027/' },
     ]},
   ],
+  pt: [
+    { cat: 'Idade', items: [
+      { label: 'Calculadora de Idade', href: '/pt/calculadora-de-idade/' },
+      { label: 'Idade Cronológica', href: '/pt/idade-cronologica/' },
+      { label: 'Idade do Bebê', href: '/pt/calculadora-idade-bebe/' },
+      { label: 'Idade do Cachorro', href: '/pt/calculadora-idade-cachorro/' },
+      { label: 'Idade do Gato', href: '/pt/calculadora-idade-gato/' },
+    ]},
+    { cat: 'Datas', items: [
+      { label: 'Dias Entre Datas', href: '/pt/dias-entre-datas/' },
+      { label: 'Calculadora de Data', href: '/pt/calculadora-de-data/' },
+      { label: 'Que Dia É Hoje', href: '/pt/que-dia-e-hoje/' },
+      { label: 'Número da Semana', href: '/pt/numero-da-semana/' },
+      { label: 'Dias Úteis', href: '/pt/calculadora-dias-uteis/' },
+    ]},
+    { cat: 'Contagens', items: [
+      { label: 'Natal', href: '/pt/dias-para-o-natal/' },
+      { label: 'Ano Novo', href: '/pt/dias-para-ano-novo/' },
+      { label: 'Halloween', href: '/pt/dias-para-o-halloween/' },
+      { label: 'Páscoa', href: '/pt/dias-para-a-pascoa/' },
+      { label: 'Temporizador', href: '/pt/temporizador-regressivo/' },
+    ]},
+    { cat: 'Mundo', items: [
+      { label: 'Fuso Horário', href: '/pt/conversor-fuso-horario/' },
+    ]},
+    { cat: 'Nascido em', items: [
+      { label: 'Nascido em 1990', href: '/pt/nascido-em-1990/' },
+      { label: 'Nascido em 1980', href: '/pt/nascido-em-1980/' },
+      { label: 'Nascido em 2000', href: '/pt/nascido-em-2000/' },
+    ]},
+    { cat: 'Retrospectiva', items: [
+      { label: 'O que aconteceu em 2000', href: '/pt/o-que-aconteceu-em-2000/' },
+      { label: 'O que aconteceu em 1990', href: '/pt/o-que-aconteceu-em-1990/' },
+      { label: 'O que aconteceu em 1980', href: '/pt/o-que-aconteceu-em-1980/' },
+    ]},
+    { cat: 'Calendários', items: [
+      { label: 'Semanas 2025', href: '/pt/numero-da-semana/2025/' },
+      { label: 'Semanas 2026', href: '/pt/numero-da-semana/2026/' },
+      { label: 'Semanas 2027', href: '/pt/numero-da-semana/2027/' },
+    ]},
+  ],
 };
 
 const FOOTER = {
   en: 'Free online date &amp; time calculators',
   fr: 'Calculateurs de date et d\'heure gratuits en ligne',
   es: 'Calculadoras de fecha y hora gratuitas en línea',
+  pt: 'Calculadoras de data e hora gratuitas online',
 };
 
-const PRIVACY_HREF = { en: '/privacy/', fr: '/fr/confidentialite/', es: '/es/privacidad/' };
-const PRIVACY_LBL  = { en: 'Privacy', fr: 'Confidentialité', es: 'Privacidad' };
+const PRIVACY_HREF = { en: '/privacy/', fr: '/fr/confidentialite/', es: '/es/privacidad/', pt: '/pt/privacidade/' };
+const PRIVACY_LBL  = { en: 'Privacy', fr: 'Confidentialité', es: 'Privacidad', pt: 'Privacidade' };
 
 const MASTHEAD_LABEL = {
   en: 'Free date calculator',
   fr: 'Calculateur de dates gratuit',
   es: 'Calculadora de fechas gratuita',
+  pt: 'Calculadora de datas gratuita',
 };
 
-const DATE_LOCALE = { en: 'en-US', fr: 'fr-FR', es: 'es-ES' };
-const HOME_HREF = { en: '/', fr: '/fr/', es: '/es/' };
+const DATE_LOCALE = { en: 'en-US', fr: 'fr-FR', es: 'es-ES', pt: 'pt-BR' };
+const HOME_HREF = { en: '/', fr: '/fr/', es: '/es/', pt: '/pt/' };
 const BUILD_YEAR = new Date().getFullYear();
 
 const CONSENT = {
   en: { text: 'We use Google AdSense to fund this free service. Do you accept advertising cookies?', accept: 'Accept', decline: 'Continue without' },
   fr: { text: 'Nous utilisons Google AdSense pour financer ce service gratuit. Acceptez-vous les cookies publicitaires\u00a0?', accept: 'Accepter', decline: 'Continuer sans' },
   es: { text: 'Usamos Google AdSense para financiar este servicio gratuito. \u00bfAcepta las cookies publicitarias?', accept: 'Aceptar', decline: 'Continuar sin' },
+  pt: { text: 'Usamos Google AdSense para financiar este serviço gratuito. Você aceita cookies de publicidade?', accept: 'Aceitar', decline: 'Continuar sem' },
 };
 
 // ── LAYOUT ────────────────────────────────────────────────
@@ -262,6 +306,7 @@ ${JSON.stringify({
 <link rel="alternate" hreflang="en" href="https://datecalc.app${hreflang.en}">
 <link rel="alternate" hreflang="fr" href="https://datecalc.app${hreflang.fr}">
 <link rel="alternate" hreflang="es" href="https://datecalc.app${hreflang.es}">
+<link rel="alternate" hreflang="pt" href="https://datecalc.app${hreflang.pt}">
 <link rel="alternate" hreflang="x-default" href="https://datecalc.app${hreflang.en}">
 <meta property="og:type" content="website">
 <meta property="og:title" content="${title}">
@@ -422,6 +467,7 @@ for (const tool of tools) {
         en: page.slugs.en === '' ? '/' : `/${page.slugs.en}/`,
         fr: page.slugs.fr === '' ? '/' : `/${page.slugs.fr}/`,
         es: page.slugs.es === '' ? '/' : `/${page.slugs.es}/`,
+        pt: page.slugs.pt === '' ? '/' : `/${page.slugs.pt}/`,
       };
 
       const html = renderLayout(data, lang);
@@ -438,6 +484,7 @@ for (const tool of tools) {
   var l=(navigator.language||navigator.userLanguage||'').toLowerCase();
   if(l.startsWith('fr')) window.location.replace('/fr/');
   else if(l.startsWith('es')) window.location.replace('/es/');
+  else if(l.startsWith('pt')) window.location.replace('/pt/');
 })();
 </script>`;
         writePage('index.html', html.replace('</head>', langDetect + '\n</head>'));
@@ -576,6 +623,7 @@ const PRIVACY_PAGES = [
   { lang: 'en', slug: 'privacy',            canonical: 'https://datecalc.app/privacy/' },
   { lang: 'fr', slug: 'fr/confidentialite', canonical: 'https://datecalc.app/fr/confidentialite/' },
   { lang: 'es', slug: 'es/privacidad',      canonical: 'https://datecalc.app/es/privacidad/' },
+  { lang: 'pt', slug: 'pt/privacidade',     canonical: 'https://datecalc.app/pt/privacidade/' },
 ];
 const PRIVACY_CONTENT = {
   en: {
@@ -617,11 +665,25 @@ const PRIVACY_CONTENT = {
       { h: 'Tus derechos', p: 'No conservamos ningún dato personal tuyo, por lo que no hay nada que acceder, corregir ni eliminar. Para preguntas: <a href="mailto:hello@datecalc.app">hello@datecalc.app</a>.' },
     ],
   },
+  pt: {
+    title: 'Política de Privacidade — DateCalc.app',
+    h1: 'Política de Privacidade',
+    updated: 'Última atualização: 1º de janeiro de 2026',
+    intro: 'DateCalc.app é uma calculadora de datas gratuita, totalmente do lado do cliente. Todos os cálculos acontecem no seu navegador. Não coletamos, armazenamos nem vendemos nenhum dado pessoal.',
+    sections: [
+      { h: 'Dados que coletamos', p: 'Nenhum. Nenhuma conta, login ou envio de formulário é enviado aos nossos servidores. As datas que você insere nunca saem do seu dispositivo.' },
+      { h: 'Google Fonts', p: 'Carregamos fontes (Playfair Display, Space Mono, Inter) do Google Fonts. Isso faz com que seu navegador faça uma solicitação aos servidores do Google, que podem registrar seu endereço IP. Veja a <a href="https://policies.google.com/privacy">política de privacidade do Google</a>.' },
+      { h: 'Hospedagem (Cloudflare Pages)', p: 'Este site é hospedado no Cloudflare Pages. O Cloudflare pode processar logs de acesso padrão (endereço IP, tipo de navegador, página solicitada) para fins de segurança e desempenho. Veja a <a href="https://www.cloudflare.com/privacypolicy/">política de privacidade do Cloudflare</a>.' },
+      { h: 'Cookies e rastreamento', p: 'Não usamos cookies, análises, rastreadores de publicidade ou qualquer forma de rastreamento entre sites.' },
+      { h: 'Seus direitos (LGPD)', p: 'Não mantemos nenhum dado pessoal seu, portanto não há nada a acessar, corrigir ou excluir. Para dúvidas: <a href="mailto:hello@datecalc.app">hello@datecalc.app</a>.' },
+    ],
+  },
 };
 const hreflangPrivacy = [
   '<link rel="alternate" hreflang="en" href="https://datecalc.app/privacy/">',
   '<link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/confidentialite/">',
   '<link rel="alternate" hreflang="es" href="https://datecalc.app/es/privacidad/">',
+  '<link rel="alternate" hreflang="pt" href="https://datecalc.app/pt/privacidade/">',
   '<link rel="alternate" hreflang="x-default" href="https://datecalc.app/privacy/">',
 ].join('\n');
 

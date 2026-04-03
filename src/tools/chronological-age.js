@@ -124,11 +124,36 @@ const T = {
       { q: '¿Puedo calcular la edad cronológica para una fecha pasada?', a: 'Sí. Ingresa la fecha de nacimiento y cualquier fecha de referencia — pasada, presente o futura. La calculadora calculará la edad cronológica exacta entre esas dos fechas.' },
     ],
   },
+  pt: {
+    title: 'Calculadora de Idade Cronológica – Anos, Meses e Dias | DateCalc',
+    metaDesc: 'Calcule a idade cronológica exata entre duas datas. Mostra anos, meses e dias completos — grátis, sem cadastro.',
+    kicker: 'Idade Cronológica',
+    headline: 'Calculadora de<br><em>Idade<br>Cronológica</em>',
+    subhead: 'Calcule a diferença exata entre duas datas em anos, meses e dias',
+    resultsHeader: 'Idade cronológica',
+    errInvalid: 'Data inválida. Verifique dia, mês e ano.',
+    errOrder: 'A data de início deve ser anterior à data de término.',
+    labelStartDay: 'Dia inicial', labelStartMonth: 'Mês inicial', labelStartYear: 'Ano inicial',
+    labelEndDay: 'Dia final', labelEndMonth: 'Mês final', labelEndYear: 'Ano final',
+    btnCalc: '→ CALCULAR',
+    unitYears: 'anos', unitMonths: 'meses', unitDays: 'dias',
+    seoH2a: 'O que é idade cronológica?',
+    seoP1: 'A idade cronológica é a quantidade de tempo decorrido desde o nascimento de uma pessoa, medida em anos, meses e dias completos. É a medida mais comum de idade e é usada em contextos médicos, educacionais e legais.',
+    seoH2b: 'Quando a idade cronológica é importante?',
+    seoP2: 'A idade cronológica é importante em avaliações de desenvolvimento infantil, elegibilidade para benefícios, diagnósticos médicos e planejamento educacional. Use esta calculadora para obter a diferença exata entre qualquer duas datas.',
+    faqTitle: 'Perguntas frequentes',
+    faqs: [
+      { q: 'O que é idade cronológica?', a: 'A idade cronológica é o tempo decorrido desde o nascimento, expresso em anos, meses e dias. É diferente da idade biológica, que reflete o estado de saúde celular.' },
+      { q: 'Como calcular a idade cronológica exata?', a: 'Insira as datas de início e fim nesta calculadora. Ela calcula automaticamente os anos, meses e dias completos entre as duas datas.' },
+      { q: 'Posso calcular a diferença entre qualquer duas datas?', a: 'Sim. Esta calculadora funciona para qualquer par de datas — não apenas idades. Use-a para calcular a duração de um projeto, período de emprego ou qualquer intervalo de tempo.' },
+    ],
+    source: null,
+  },
 };
 
 module.exports = {
   pages: [
-    { id: 'chronological-age-calculator', slugs: { en: 'chronological-age-calculator', fr: 'fr/age-chronologique', es: 'es/edad-cronologica' } },
+    { id: 'chronological-age-calculator', slugs: { en: 'chronological-age-calculator', fr: 'fr/age-chronologique', es: 'es/edad-cronologica', pt: 'pt/idade-cronologica' } },
   ],
 
   render(pageId, lang) {

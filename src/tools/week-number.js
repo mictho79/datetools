@@ -103,11 +103,40 @@ const T = {
     weekDays: ['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'],
     months: ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'],
   },
+  pt: {
+    title: 'Número da Semana Atual 2026 – Qual Semana ISO É Hoje?',
+    metaDesc: 'Descubra o número da semana atual segundo o padrão ISO 8601. Mostra também as datas de início e fim da semana — grátis.',
+    kicker: 'Número da Semana',
+    headline: 'Qual é o número<br>da semana<br><em>de hoje?</em>',
+    subhead: 'Semana atual segundo o padrão ISO 8601',
+    dateLabel: 'Data (deixe em branco para hoje)',
+    calcBtn: '→ Ver número da semana',
+    tipText: '"Um ano tem 52 ou 53 semanas, mas a maioria das pessoas não sabe em qual semana está sem procurar."',
+    resultsHeader: 'Semana atual',
+    heroSuffix: 'de {year}',
+    weekStartLbl: 'Semana começa', weekEndLbl: 'Semana termina',
+    doyLbl: 'Dia do ano', doyLeftLbl: 'Dias restantes no ano',
+    weekTotal: 'Semanas totais no ano',
+    errInvalid: '→ Data inválida. Verifique sua entrada.',
+    seoH2a: 'O que é número da semana ISO?',
+    seoP1: 'O número da semana ISO 8601 é um sistema internacional que numera as semanas de 1 a 52 (ou 53) a partir do início do ano. A semana começa na segunda-feira e a primeira semana do ano é a que contém a primeira quinta-feira.',
+    seoH2b: 'Como o número da semana é calculado?',
+    seoP2: 'Segundo a norma ISO 8601, a semana 1 é a primeira semana com maioria dos dias no novo ano — ou seja, a semana que contém a primeira quinta-feira de janeiro. As semanas vão de segunda a domingo.',
+    faqTitle: 'Perguntas frequentes',
+    source: null,
+    faqs: [
+      { q: 'Quantas semanas tem um ano?', a: 'A maioria dos anos tem 52 semanas. Alguns anos têm 53 semanas — isso acontece quando o ano começa em quinta-feira, ou quando é bissexto e começa em quarta ou quinta-feira.' },
+      { q: 'Em que dia começa a semana no padrão ISO?', a: 'No padrão ISO 8601, a semana começa na segunda-feira e termina no domingo.' },
+      { q: 'Qual é o número da semana hoje?', a: 'Use esta calculadora — ela mostra o número da semana atual baseado na data de hoje, atualizado automaticamente.' },
+    ],
+    weekDays: ['Domingo','Segunda-feira','Terça-feira','Quarta-feira','Quinta-feira','Sexta-feira','Sábado'],
+    months: ['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'],
+  },
 };
 
 module.exports = {
   pages: [
-    { id: 'week-number', slugs: { en: 'week-number', fr: 'fr/numero-semaine', es: 'es/numero-semana' } },
+    { id: 'week-number', slugs: { en: 'week-number', fr: 'fr/numero-semaine', es: 'es/numero-semana', pt: 'pt/numero-da-semana' } },
   ],
 
   render(pageId, lang) {

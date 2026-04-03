@@ -4,6 +4,7 @@
 const EVENTS    = require('../data/events.json');
 const EVENTS_FR = require('../data/events_fr.json');
 const EVENTS_ES = require('../data/events_es.json');
+const EVENTS_PT = require('../data/events_pt.json');
 
 const EVENT_YEARS = [];
 for (let y = 1905; y <= 2025; y++) EVENT_YEARS.push(y);
@@ -99,6 +100,37 @@ const T = {
     bornInCtaTpl:  '¿Naciste en {year}? Descubre tu edad exacta →',
     bornInHrefTpl: '/es/nacido-en-{year}/',
   },
+  pt: {
+    titleTpl:    'O que aconteceu em {year}? Eventos, Música, Filmes | DateCalc',
+    metaDescTpl: 'Descubra os principais acontecimentos de {year}: eventos históricos, músicas, filmes e preços. Retrospectiva completa de {year}.',
+    kicker:      'Restrospectiva do Ano',
+    headlineTpl: 'O que<br>aconteceu em<br><em>{year}?</em>',
+    subheadTpl:  'Principais eventos, cultura e curiosidades de {year}',
+    wTitle:      'O Mundo em {year}',
+    wLblEvents:  'Eventos',
+    wLblMusic:   'Música',
+    wLblFilm:    'Filme',
+    wLblTech:    'Tecnologia',
+    wLblPrices:  'Preços',
+    wLblBread:   'Pão',
+    wLblGas:     'Gasolina',
+    wLblHouse:   'Casa',
+    seoH2aTpl:   'Quais foram os principais eventos de {year}?',
+    seoP1Tpl:    '{year} foi um ano de importantes eventos mundiais que moldaram a história. De convulsões políticas a marcos culturais, o ano deixou uma marca duradoura na sociedade. As paradas musicais, as telas de cinema e o panorama tecnológico de {year} refletem o caráter único dessa época. Os preços de produtos cotidianos como pão, gasolina e casas oferecem um retrato vívido do clima econômico da época.',
+    seoH2bTpl:   'Por que {year} é historicamente significativo?',
+    seoP2Tpl:    'Cada ano carrega seus próprios momentos marcantes e referências culturais. {year} contribuiu com capítulos únicos para a história dos séculos XX e XXI. Quer você tenha vivido {year} ou esteja pesquisando sobre ele, os eventos, a arte, a tecnologia e os custos cotidianos daquele ano pintam um quadro rico da vida na época.',
+    faqTitle:    'Perguntas frequentes',
+    faqsTpl: [
+      { q: 'Quais foram os principais eventos de {year}?', a: 'Os principais eventos mundiais de {year} incluem: {events}.' },
+      { q: 'Qual música era hit em {year}?', a: 'Um dos grandes sucessos musicais de {year} foi: {music}.' },
+      { q: 'Qual filme foi destaque em {year}?', a: 'Um dos filmes mais marcantes de {year} foi: {film}.' },
+      { q: 'Quanto custavam as coisas em {year}?', a: 'Em {year}, o preço do pão era aproximadamente {bread}, a gasolina {gas} e uma casa {house} (valores em dólares americanos).' },
+      { q: 'Nascido em {year}, quantos anos tenho em 2026?', a: 'Se você nasceu em {year}, tem {age} ou {age1} anos em 2026. Clique no link acima para calcular sua idade exata.' },
+    ],
+    bornInCtaTpl:  'Nascido em {year}? Calcule sua idade exata →',
+    bornInHrefTpl: '/pt/nascido-em-{year}/',
+    source: null,
+  },
 };
 
 // Helper: replace {token} placeholders in a string
@@ -120,7 +152,7 @@ function tplDeep(val, vars) {
 
 // Build the world events HTML block (reuses same CSS classes as born-in.js)
 function buildWorldBlock(year, t, lang) {
-  const evSrc = lang === 'fr' ? EVENTS_FR : lang === 'es' ? EVENTS_ES : EVENTS;
+  const evSrc = lang === 'fr' ? EVENTS_FR : lang === 'es' ? EVENTS_ES : lang === 'pt' ? EVENTS_PT : EVENTS;
   const ev    = evSrc[String(year)] || EVENTS[String(year)]; // translated, fallback to EN
   const evEn  = EVENTS[String(year)];                         // always EN for music/film/prices
   if (!evEn) return '';
@@ -171,6 +203,7 @@ module.exports = {
       en: `what-happened-in-${y}`,
       fr: `fr/que-s-est-il-passe-en-${y}`,
       es: `es/que-paso-en-${y}`,
+      pt: `pt/o-que-aconteceu-em-${y}`,
     },
   })),
 
@@ -180,7 +213,7 @@ module.exports = {
     const vars = { year };
 
     // Gather real event data for FAQs and SEO text
-    const evSrc = lang === 'fr' ? EVENTS_FR : lang === 'es' ? EVENTS_ES : EVENTS;
+    const evSrc = lang === 'fr' ? EVENTS_FR : lang === 'es' ? EVENTS_ES : lang === 'pt' ? EVENTS_PT : EVENTS;
     const ev    = evSrc[String(year)] || EVENTS[String(year)];
     const evEn  = EVENTS[String(year)];
     let allEvents = [];

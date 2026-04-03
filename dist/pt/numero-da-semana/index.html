@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Número da Semana Atual 2026 – Qual Semana ISO É Hoje?</title>
+<meta name="robots" content="index, follow">
+<meta name="description" content="Descubra o número da semana atual segundo o padrão ISO 8601. Mostra também as datas de início e fim da semana — grátis.">
+<link rel="canonical" href="https://datecalc.app/pt/numero-da-semana/">
+<link rel="alternate" hreflang="en" href="https://datecalc.app/week-number/">
+<link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/numero-semaine/">
+<link rel="alternate" hreflang="es" href="https://datecalc.app/es/numero-semana/">
+<link rel="alternate" hreflang="pt" href="https://datecalc.app/pt/numero-da-semana/">
+<link rel="alternate" hreflang="x-default" href="https://datecalc.app/week-number/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Número da Semana Atual 2026 – Qual Semana ISO É Hoje?">
+<meta property="og:description" content="Descubra o número da semana atual segundo o padrão ISO 8601. Mostra também as datas de início e fim da semana — grátis.">
+<meta property="og:url" content="https://datecalc.app/pt/numero-da-semana/">
+<meta property="og:site_name" content="DateCalc.app">
+<meta property="og:image" content="https://datecalc.app/og.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Número da Semana Atual 2026 – Qual Semana ISO É Hoje?">
+<meta name="twitter:description" content="Descubra o número da semana atual segundo o padrão ISO 8601. Mostra também as datas de início e fim da semana — grátis.">
+<meta name="twitter:image" content="https://datecalc.app/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Space+Mono:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="shortcut icon" href="/favicon.svg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Quantas semanas tem um ano?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A maioria dos anos tem 52 semanas. Alguns anos têm 53 semanas — isso acontece quando o ano começa em quinta-feira, ou quando é bissexto e começa em quarta ou quinta-feira."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Em que dia começa a semana no padrão ISO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No padrão ISO 8601, a semana começa na segunda-feira e termina no domingo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual é o número da semana hoje?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use esta calculadora — ela mostra o número da semana atual baseado na data de hoje, atualizado automaticamente."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Número da Semana Atual 2026",
+  "description": "Descubra o número da semana atual segundo o padrão ISO 8601. Mostra também as datas de início e fim da semana — grátis.",
+  "url": "https://datecalc.app/pt/numero-da-semana/",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Web",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"DateCalc.app","url":"https://datecalc.app","logo":"https://datecalc.app/og.png","contactPoint":{"@type":"ContactPoint","email":"hello@datecalc.app","contactType":"customer support"}}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<noscript><div style="background:#c8392b;color:#fff;text-align:center;padding:.6rem;font-family:sans-serif;font-size:.9rem">This calculator requires JavaScript. Please enable it in your browser.</div></noscript>
+
+<header>
+<div class="masthead">
+  <a href="/pt/" class="masthead-brand">DateCalc<span>.</span>app</a>
+  <div class="masthead-meta" id="todayMeta"></div>
+</div>
+</header>
+
+<div class="lang-strip">
+  <a href="/week-number/" class="lang-btn">EN</a>
+  <a href="/fr/numero-semaine/" class="lang-btn">FR</a>
+  <a href="/es/numero-semana/" class="lang-btn">ES</a>
+  <a href="/pt/numero-da-semana/" class="lang-btn active">PT</a>
+</div>
+
+<div class="page">
+
+  <div class="headline-block">
+    <div class="kicker">Número da Semana</div>
+    <h1 class="headline">Qual é o número <br>da semana <br><em>de hoje?</em></h1>
+    <p class="subhead">Semana atual segundo o padrão ISO 8601</p>
+  </div>
+
+  <div class="form-grid">
+    <div class="form-col">
+      <div class="field-label">Data (deixe em branco para hoje)</div>
+      <div class="date-row">
+        <input type="number" id="day" placeholder="DD" min="1" max="31" inputmode="numeric" oninput="clamp(this,1,31)">
+        <span>/</span>
+        <input type="number" id="month" placeholder="MM" min="1" max="12" inputmode="numeric" oninput="clamp(this,1,12)">
+        <span>/</span>
+        <input type="number" id="year" placeholder="YYYY" min="1900" max="2100" inputmode="numeric" oninput="clamp(this,1900,2100)">
+      </div>
+      <div class="error-line" id="errorLine"></div>
+      <button class="calc-btn" onclick="calculate()">→ Ver número da semana</button>
+    </div>
+    <div class="form-col auto-info">
+      <p class="tip-text">"Um ano tem 52 ou 53 semanas, mas a maioria das pessoas não sabe em qual semana está sem procurar."</p>
+    </div>
+  </div>
+
+  <div class="results-section auto-show" id="results" aria-live="polite">
+    <div class="results-header">Semana atual</div>
+    <div class="age-display">
+      <span class="age-number" id="heroWeek">—</span>
+      <span class="age-suffix" id="heroSuffix"></span>
+    </div>
+    <div class="facts-row">
+      <div class="fact-item"><div class="fact-key">Semana começa</div><div class="fact-val" id="ffStart">—</div></div>
+      <div class="fact-item"><div class="fact-key">Semana termina</div><div class="fact-val" id="ffEnd">—</div></div>
+      <div class="fact-item"><div class="fact-key">Dia do ano</div><div class="fact-val" id="ffDoy">—</div></div>
+      <div class="fact-item"><div class="fact-key">Dias restantes no ano</div><div class="fact-val" id="ffLeft">—</div></div>
+    </div>
+  </div>
+
+  <nav aria-label="Tools">
+  <div class="tool-nav">
+    <div class="nav-group"><span class="nav-cat">Idade</span><div class="nav-links"><a href="/pt/calculadora-de-idade/">Calculadora de Idade</a><span class="nav-sep">·</span><a href="/pt/idade-cronologica/">Idade Cronológica</a><span class="nav-sep">·</span><a href="/pt/calculadora-idade-bebe/">Idade do Bebê</a><span class="nav-sep">·</span><a href="/pt/calculadora-idade-cachorro/">Idade do Cachorro</a><span class="nav-sep">·</span><a href="/pt/calculadora-idade-gato/">Idade do Gato</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Datas</span><div class="nav-links"><a href="/pt/dias-entre-datas/">Dias Entre Datas</a><span class="nav-sep">·</span><a href="/pt/calculadora-de-data/">Calculadora de Data</a><span class="nav-sep">·</span><a href="/pt/que-dia-e-hoje/">Que Dia É Hoje</a><span class="nav-sep">·</span><a href="/pt/numero-da-semana/" aria-current="page">Número da Semana</a><span class="nav-sep">·</span><a href="/pt/calculadora-dias-uteis/">Dias Úteis</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Contagens</span><div class="nav-links"><a href="/pt/dias-para-o-natal/">Natal</a><span class="nav-sep">·</span><a href="/pt/dias-para-ano-novo/">Ano Novo</a><span class="nav-sep">·</span><a href="/pt/dias-para-o-halloween/">Halloween</a><span class="nav-sep">·</span><a href="/pt/dias-para-a-pascoa/">Páscoa</a><span class="nav-sep">·</span><a href="/pt/temporizador-regressivo/">Temporizador</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Mundo</span><div class="nav-links"><a href="/pt/conversor-fuso-horario/">Fuso Horário</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Nascido em</span><div class="nav-links"><a href="/pt/nascido-em-1990/">Nascido em 1990</a><span class="nav-sep">·</span><a href="/pt/nascido-em-1980/">Nascido em 1980</a><span class="nav-sep">·</span><a href="/pt/nascido-em-2000/">Nascido em 2000</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Retrospectiva</span><div class="nav-links"><a href="/pt/o-que-aconteceu-em-2000/">O que aconteceu em 2000</a><span class="nav-sep">·</span><a href="/pt/o-que-aconteceu-em-1990/">O que aconteceu em 1990</a><span class="nav-sep">·</span><a href="/pt/o-que-aconteceu-em-1980/">O que aconteceu em 1980</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Calendários</span><div class="nav-links"><a href="/pt/numero-da-semana/2025/">Semanas 2025</a><span class="nav-sep">·</span><a href="/pt/numero-da-semana/2026/">Semanas 2026</a><span class="nav-sep">·</span><a href="/pt/numero-da-semana/2027/">Semanas 2027</a></div></div>
+  </div>
+  </nav>
+
+<main id="main-content">
+  <div class="seo-block">
+    <div><h2>O que é número da semana ISO?</h2><p>O número da semana ISO 8601 é um sistema internacional que numera as semanas de 1 a 52 (ou 53) a partir do início do ano. A semana começa na segunda-feira e a primeira semana do ano é a que contém a primeira quinta-feira.</p></div>
+    <div><h2>Como o número da semana é calculado?</h2><p>Segundo a norma ISO 8601, a semana 1 é a primeira semana com maioria dos dias no novo ano — ou seja, a semana que contém a primeira quinta-feira de janeiro. As semanas vão de segunda a domingo.</p></div>
+  </div>
+  <div class="faq-block">
+    <h2>Perguntas frequentes</h2>
+    <div class="faq-item"><h3>Quantas semanas tem um ano?</h3><p>A maioria dos anos tem 52 semanas. Alguns anos têm 53 semanas — isso acontece quando o ano começa em quinta-feira, ou quando é bissexto e começa em quarta ou quinta-feira.</p></div>
+    <div class="faq-item"><h3>Em que dia começa a semana no padrão ISO?</h3><p>No padrão ISO 8601, a semana começa na segunda-feira e termina no domingo.</p></div>
+    <div class="faq-item"><h3>Qual é o número da semana hoje?</h3><p>Use esta calculadora — ela mostra o número da semana atual baseado na data de hoje, atualizado automaticamente.</p></div>
+  </div>
+
+</main>
+  <footer>
+  <nav class="footer-nav" aria-label="Site links">
+<div class="footer-col"><strong>Idade</strong>
+<a href="/pt/calculadora-de-idade/">Calculadora de Idade</a>
+<a href="/pt/idade-cronologica/">Idade Cronológica</a>
+<a href="/pt/calculadora-idade-bebe/">Idade do Bebê</a>
+<a href="/pt/calculadora-idade-cachorro/">Idade do Cachorro</a>
+<a href="/pt/calculadora-idade-gato/">Idade do Gato</a></div>
+<div class="footer-col"><strong>Datas</strong>
+<a href="/pt/dias-entre-datas/">Dias Entre Datas</a>
+<a href="/pt/calculadora-de-data/">Calculadora de Data</a>
+<a href="/pt/que-dia-e-hoje/">Que Dia É Hoje</a>
+<a href="/pt/numero-da-semana/">Número da Semana</a>
+<a href="/pt/calculadora-dias-uteis/">Dias Úteis</a></div>
+<div class="footer-col"><strong>Contagens</strong>
+<a href="/pt/dias-para-o-natal/">Natal</a>
+<a href="/pt/dias-para-ano-novo/">Ano Novo</a>
+<a href="/pt/dias-para-o-halloween/">Halloween</a>
+<a href="/pt/dias-para-a-pascoa/">Páscoa</a>
+<a href="/pt/temporizador-regressivo/">Temporizador</a></div>
+<div class="footer-col"><strong>Mundo</strong>
+<a href="/pt/conversor-fuso-horario/">Fuso Horário</a></div>
+<div class="footer-col"><strong>Nascido em</strong>
+<a href="/pt/nascido-em-1990/">Nascido em 1990</a>
+<a href="/pt/nascido-em-1980/">Nascido em 1980</a>
+<a href="/pt/nascido-em-2000/">Nascido em 2000</a></div>
+<div class="footer-col"><strong>Retrospectiva</strong>
+<a href="/pt/o-que-aconteceu-em-2000/">O que aconteceu em 2000</a>
+<a href="/pt/o-que-aconteceu-em-1990/">O que aconteceu em 1990</a>
+<a href="/pt/o-que-aconteceu-em-1980/">O que aconteceu em 1980</a></div>
+<div class="footer-col"><strong>Calendários</strong>
+<a href="/pt/numero-da-semana/2025/">Semanas 2025</a>
+<a href="/pt/numero-da-semana/2026/">Semanas 2026</a>
+<a href="/pt/numero-da-semana/2027/">Semanas 2027</a></div>
+  </nav>
+  <div class="footer-copy">© 2026 DateCalc.app — Calculadoras de data e hora gratuitas online · <a href="/pt/privacidade/">Privacidade</a></div>
+</footer>
+</div>
+
+<script>
+(function(){
+  var now = new Date();
+  var opts = {weekday:'long',year:'numeric',month:'long',day:'numeric'};
+  document.getElementById('todayMeta').innerHTML =
+    now.toLocaleDateString('pt-BR', opts) + '<br>Calculadora de datas gratuita';
+})();
+// Shared input guard: strip non-digits, truncate to max digit length, clamp to hi
+function clamp(el, lo, hi) {
+  var maxLen = String(hi).length;
+  var s = el.value.replace(/\D/g, '').slice(0, maxLen);
+  var n = parseInt(s, 10);
+  if (!isNaN(n) && n > hi) s = String(hi);
+  el.value = s;
+}
+// Auto-scroll to results when they become visible
+(function(){
+  var r=document.getElementById('results');
+  if(!r||r.classList.contains('auto-show'))return;
+  var obs=new MutationObserver(function(){
+    if(r.classList.contains('show')){
+      r.scrollIntoView({behavior:'smooth',block:'start'});
+      obs.disconnect();
+    }
+  });
+  obs.observe(r,{attributes:true,attributeFilter:['class']});
+})();
+// Enter key submits calculator
+(function(){
+  var fg=document.querySelector('.form-grid');
+  if(!fg)return;
+  fg.addEventListener('keydown',function(e){
+    if(e.key==='Enter'&&typeof calculate==='function')calculate();
+  });
+})();
+// AdSense: load only with consent
+(function(){
+  var ADS_SRC='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4020973443671350';
+  function loadAds(){
+    var s=document.createElement('script');
+    s.src=ADS_SRC;s.async=true;s.crossOrigin='anonymous';
+    document.head.appendChild(s);
+  }
+  if(localStorage.getItem('ads-ok')==='1')return loadAds();
+  if(localStorage.getItem('ads-ok')==='0')return;
+  var b=document.getElementById('consent-banner');
+  if(b)b.style.display='flex';
+  document.getElementById('consent-accept')&&document.getElementById('consent-accept').addEventListener('click',function(){
+    localStorage.setItem('ads-ok','1');b.style.display='none';loadAds();
+  });
+  document.getElementById('consent-decline')&&document.getElementById('consent-decline').addEventListener('click',function(){
+    localStorage.setItem('ads-ok','0');b.style.display='none';
+  });
+})();
+</script>
+<script>
+
+var D = {"errInvalid":"→ Data inválida. Verifique sua entrada.","weekDays":["Domingo","Segunda-feira","Terça-feira","Quarta-feira","Quinta-feira","Sexta-feira","Sábado"],"months":["janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro"],"heroSuffix":"de {year}"};
+function fmt(n){return n.toLocaleString();}
+
+function getWeekNum(d){
+  var date=new Date(Date.UTC(d.getFullYear(),d.getMonth(),d.getDate()));
+  var day=date.getUTCDay()||7;
+  date.setUTCDate(date.getUTCDate()+4-day);
+  var yearStart=new Date(Date.UTC(date.getUTCFullYear(),0,1));
+  return {week:Math.ceil((((date-yearStart)/86400000)+1)/7), isoYear:date.getUTCFullYear()};
+}
+
+function weeksInYear(y){
+  var d31dec=new Date(y,11,31);
+  return getWeekNum(d31dec).week;
+}
+
+function getDoy(d){
+  return Math.floor((d-new Date(d.getFullYear(),0,0))/86400000);
+}
+
+function daysInYear(y){ return ((y%4===0&&y%100!==0)||y%400===0)?366:365; }
+
+function fmtDate(d){
+  return d.getDate()+' '+D.months[d.getMonth()]+' '+d.getFullYear();
+}
+
+function calculate(){
+  var dv=parseInt(document.getElementById('day').value);
+  var mv=parseInt(document.getElementById('month').value);
+  var yv=parseInt(document.getElementById('year').value);
+  var err=document.getElementById('errorLine');
+  err.classList.remove('show');
+
+  var date;
+  if(!dv&&!mv&&!yv){
+    date=new Date(); date.setHours(0,0,0,0);
+  } else {
+    if(!dv||!mv||!yv||dv<1||dv>31||mv<1||mv>12){err.textContent=D.errInvalid; err.classList.add('show'); return;}
+    date=new Date(yv,mv-1,dv);
+    if(date.getDate()!==dv){err.textContent=D.errInvalid; err.classList.add('show'); return;}
+  }
+
+  var wn=getWeekNum(date);
+  var doy=getDoy(date);
+  var diy=daysInYear(date.getFullYear());
+  var left=diy-doy;
+
+  // Monday of this week
+  var dow=(date.getDay()+6)%7; // 0=Mon
+  var weekStart=new Date(date); weekStart.setDate(date.getDate()-dow);
+  var weekEnd=new Date(weekStart); weekEnd.setDate(weekStart.getDate()+6);
+
+  document.getElementById('heroWeek').textContent=wn.week;
+  document.getElementById('heroSuffix').textContent=D.heroSuffix.replace('{year}',wn.isoYear);
+  document.getElementById('ffStart').textContent=fmtDate(weekStart);
+  document.getElementById('ffEnd').textContent=fmtDate(weekEnd);
+  document.getElementById('ffDoy').textContent=doy;
+  document.getElementById('ffLeft').textContent=left;
+}
+
+calculate();
+document.addEventListener('keydown',function(e){if(e.key==='Enter') calculate();});
+
+</script>
+<div id="consent-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#111111;color:#fff;padding:.9rem 1.4rem;z-index:9999;font-size:.82rem;font-family:sans-serif;align-items:center;gap:.8rem;flex-wrap:wrap">
+  <span style="flex:1;min-width:200px">Usamos Google AdSense para financiar este serviço gratuito. Você aceita cookies de publicidade?</span>
+  <button id="consent-accept" style="background:#c8392b;color:#fff;border:none;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Aceitar</button>
+  <button id="consent-decline" style="background:transparent;color:#aaa;border:1px solid #555;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Continuar sem</button>
+</div>
+</body>
+</html>

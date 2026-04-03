@@ -79,11 +79,38 @@ const T = {
     weekDays: ['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'],
     months: ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'],
   },
+  pt: {
+    title: 'Quantos Dias para o Natal 2026? Contagem Regressiva ao Vivo',
+    metaDesc: 'Quantos dias faltam para o Natal? Contagem regressiva ao vivo até 25 de dezembro em dias, horas, minutos e segundos — atualizado em tempo real.',
+    kicker: 'Contagem do Natal',
+    headline: 'Quantos dias<br>até o<br><em>Natal?</em>',
+    subhead: 'Contagem regressiva ao vivo até 25 de dezembro de 2026',
+    resultsHeader: 'Faltam para o Natal',
+    heroSuffix: 'dias',
+    weeksLbl: 'semanas', hoursLbl: 'horas', monthsLbl: 'meses',
+    xmasDateLbl: 'Data do Natal', xmasDayLbl: 'Dia da semana', yearLbl: 'Ano',
+    todayBanner: '🎄 Feliz Natal! Que seja um dia maravilhoso.',
+    tomorrowBanner: '🎄 O Natal é amanhã!',
+    unitDays: 'dias', unitHours: 'horas', unitMinutes: 'minutos', unitSeconds: 'segundos',
+    seoH2a: 'Quantos dias faltam para o Natal?',
+    seoP1: 'Esta página mostra uma contagem regressiva em tempo real até o Natal (25 de dezembro). O contador é atualizado a cada segundo.',
+    seoH2b: 'Quando é o Natal?',
+    seoP2: 'O Natal é celebrado em 25 de dezembro de cada ano. No Brasil, é um feriado nacional e uma das datas mais importantes do calendário.',
+    faqTitle: 'Perguntas frequentes',
+    faqs: [
+      { q: 'Quantos dias faltam para o Natal?', a: 'Veja o contador acima — ele mostra exatamente quantos dias, horas, minutos e segundos faltam para o Natal, atualizado em tempo real.' },
+      { q: 'Em que dia da semana cai o Natal em 2026?', a: 'O Natal de 2026 cai em uma sexta-feira, dia 25 de dezembro.' },
+      { q: 'Quantos dias tem o mês de dezembro?', a: 'Dezembro tem 31 dias. É o último mês do ano e o mês do Natal.' },
+    ],
+    weekDays: ['Domingo','Segunda-feira','Terça-feira','Quarta-feira','Quinta-feira','Sexta-feira','Sábado'],
+    months: ['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'],
+    source: null,
+  },
 };
 
 module.exports = {
   pages: [
-    { id: 'days-until-christmas', slugs: { en: 'days-until-christmas', fr: 'fr/jours-avant-noel', es: 'es/dias-para-navidad' } },
+    { id: 'days-until-christmas', slugs: { en: 'days-until-christmas', fr: 'fr/jours-avant-noel', es: 'es/dias-para-navidad', pt: 'pt/dias-para-o-natal' } },
   ],
 
   render(pageId, lang) {

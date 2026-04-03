@@ -90,6 +90,31 @@ const T = {
       { q: '¿Cuándo comienza la semana 1 de {year}?', a: 'La semana ISO 1 de {year} comienza el {w1startFull}. Es el lunes de la semana que contiene el primer jueves de {year}, según lo especificado por ISO 8601.' },
     ],
   },
+  pt: {
+    titleTpl: 'Números da Semana {year} – Calendário ISO Completo | DateCalc',
+    metaDescTpl: 'Lista completa dos números de semana ISO para {year}. Todas as {weeks} semanas com datas de início e fim. Calendário ISO gratuito.',
+    kicker: 'Calendário de Semanas',
+    headlineTpl: 'Semanas<br><em>{year}</em>',
+    subheadTpl: 'Todos os números de semana ISO para {year}',
+    weekLabel: 'Semana',
+    fromLabel: 'De',
+    toLabel: 'Até',
+    monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
+    dayNames: ['Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
+    currentWeekLabel: 'Semana atual',
+    totalWeeksLabel: 'Semanas ISO totais',
+    weeksInYear: 'semanas',
+    seoH2a: 'O que são números de semana ISO?',
+    seoP1: 'Os números de semana ISO 8601 numeriam as semanas de 1 a 52 (ou 53) a cada ano. A semana começa na segunda-feira e a primeira semana do ano é aquela que contém a primeira quinta-feira.',
+    seoH2b: 'Como usar o calendário de semanas?',
+    seoP2Tpl: 'Use este calendário para planejar projetos, verificar prazos, calcular períodos fiscais ou qualquer situação que exija referência a semanas numeradas.',
+    faqTitle: 'Perguntas frequentes',
+    source: null,
+    faqsTpl: [
+      { q: 'Quantas semanas tem o ano {year}?', a: '{year} tem {weeks} semanas segundo o calendário ISO 8601.' },
+      { q: 'Quando começa a semana 1 de {year}?', a: 'A semana 1 de {year} começa em {w1startFull}.' },
+    ],
+  },
 };
 
 // ── ISO week helpers ───────────────────────────────────────────────────────────
@@ -271,6 +296,7 @@ module.exports = {
         en: 'week-number/' + y,
         fr: 'fr/numero-semaine/' + y,
         es: 'es/numero-semana/' + y,
+        pt: 'pt/numero-da-semana/' + y,
       },
     };
   }),

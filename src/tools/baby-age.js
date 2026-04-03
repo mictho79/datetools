@@ -106,11 +106,41 @@ const T = {
       { q: '¿Cuándo dejo de contar en semanas?', a: 'La mayoría de los padres pasan de semanas a meses a los 3 meses (12–13 semanas), y de meses a años a los 2 años. Los pediatras típicamente usan semanas hasta los 3 meses, luego meses hasta los 2 años.' },
     ],
   },
+  pt: {
+    title: 'Calculadora Idade Bebê 2026 – Semanas, Meses e Dias | DateCalc',
+    metaDesc: 'Calcule a idade do seu bebê em semanas, dias e meses desde a data de nascimento. Essencial para acompanhar os marcos do desenvolvimento — grátis.',
+    kicker: 'Calculadora de Idade do Bebê',
+    headline: 'Calculadora de<br><em>Idade do<br>Bebê</em>',
+    subhead: 'Calcule a idade do seu bebê em semanas, dias e meses',
+    resultsHeader: 'Idade do bebê',
+    errInvalid: 'Data inválida. Por favor, verifique dia, mês e ano.',
+    errFuture: 'A data não pode ser no futuro.',
+    labelDay: 'Dia', labelMonth: 'Mês', labelYear: 'Ano',
+    btnCalc: '→ CALCULAR',
+    tipText: '"Cada semana é um marco quando se conta desde o zero."',
+    examples: ['Nascido há 2 meses', 'Nascido há 6 meses', 'Nascido há 1 ano'],
+    unitWeeks: 'semanas', unitDays: 'dias', unitMonths: 'meses',
+    correctedLabel: 'Idade corrigida',
+    prematureToggle: 'Bebê prematuro (usar idade corrigida)',
+    prematureWeeksLabel: 'Semanas de gestação ao nascer',
+    seoH2a: 'Como calcular a idade exata do bebê?',
+    seoP1: 'A idade do bebê é calculada a partir da data de nascimento até hoje, expressa em semanas, dias e meses. Para bebês prematuros, a idade corrigida subtrai as semanas de prematuridade da idade cronológica — fornecendo uma medida mais precisa do desenvolvimento.',
+    seoH2b: 'Como funciona a idade corrigida para bebês prematuros?',
+    seoP2: 'A idade corrigida (ou ajustada) é usada para bebês nascidos antes de 37 semanas de gestação. É calculada subtraindo o número de semanas prematuras da idade cronológica do bebê. Use a calculadora acima e ative a opção de prematuro para calcular a idade corrigida automaticamente.',
+    faqTitle: 'Perguntas frequentes',
+    faqs: [
+      { q: 'Como calcular a idade do bebê em semanas?', a: 'Subtraia a data de nascimento da data de hoje para obter o total de dias, depois divida por 7. Por exemplo, um bebê de 45 dias tem 6 semanas e 3 dias. Esta calculadora faz isso automaticamente.' },
+      { q: 'O que é idade corrigida para prematuros?', a: 'A idade corrigida subtrai as semanas de prematuridade da idade cronológica. Um bebê nascido 8 semanas prematuro com 6 meses de vida tem uma idade corrigida de aproximadamente 4 meses.' },
+      { q: 'Até quando devo usar a idade corrigida?', a: 'A maioria dos pediatras recomenda usar a idade corrigida até os 2 anos de idade. Após isso, a maioria dos bebês prematuros alcança o desenvolvimento esperado para sua idade cronológica.' },
+      { q: 'Com quantas semanas o bebê já é considerado a termo?', a: 'Um bebê é considerado a termo quando nasce entre 37 e 42 semanas de gestação. Nascimentos antes das 37 semanas são prematuros.' },
+    ],
+    source: { url: 'https://www.who.int/news-room/fact-sheets/detail/preterm-birth', label: 'OMS – Nascimento Prematuro' },
+  },
 };
 
 module.exports = {
   pages: [
-    { id: 'baby-age-calculator', slugs: { en: 'baby-age-calculator', fr: 'fr/calculateur-age-bebe', es: 'es/calculadora-edad-bebe' } },
+    { id: 'baby-age-calculator', slugs: { en: 'baby-age-calculator', fr: 'fr/calculateur-age-bebe', es: 'es/calculadora-edad-bebe', pt: 'pt/calculadora-idade-bebe' } },
   ],
 
   render(pageId, lang) {
