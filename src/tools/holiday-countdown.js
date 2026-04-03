@@ -27,7 +27,7 @@ const HOLIDAYS = {
       months: ['January','February','March','April','May','June','July','August','September','October','November','December'],
     },
     fr: {
-      title: 'Jours avant le Nouvel An 2027 – Compte à rebours | DateCalc.app',
+      title: 'Combien de jours avant le Nouvel An 2027 ? Compte à rebours',
       metaDesc: 'Combien de jours avant le Nouvel An ? Compte à rebours jusqu\'au 1er janvier en jours, heures, minutes et secondes.',
       kicker: 'Compte à rebours Nouvel An',
       headline: 'Jours avant<br><em>le Nouvel An</em>',
@@ -125,8 +125,8 @@ const HOLIDAYS = {
       months: ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'],
     },
     es: {
-      title: 'Días para Halloween 2026 – Cuenta regresiva | DateCalc.app',
-      metaDesc: '¿Cuántos días faltan para Halloween? Cuenta regresiva hasta el 31 de octubre en días, horas, minutos y segundos.',
+      title: '¿Cuántos días faltan para Halloween 2026? Cuenta regresiva',
+      metaDesc: '¿Cuántos días quedan para Halloween 2026? Cuenta regresiva en vivo hasta el 31 de octubre en días, horas, minutos y segundos — actualizado al instante.',
       kicker: 'Cuenta regresiva Halloween',
       headline: 'Días para<br><em>Halloween</em>',
       subhead: 'Cuenta regresiva hasta el 31 de octubre — días, horas, minutos, segundos.',

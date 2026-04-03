@@ -6,8 +6,8 @@ const EVENTS_ES = require('../data/events_es.json');
 
 const T = {
   en: {
-    title: 'Age Calculator – Find Your Exact Age | DateCalc.app',
-    metaDesc: 'Free age calculator. Enter your date of birth and instantly get your exact age in years, months, weeks, days, and hours — with a live second-by-second counter.',
+    title: 'Age Calculator 2026 – How Old Am I? Free & Instant',
+    metaDesc: 'Free age calculator. Enter your date of birth and instantly get your exact age in years, months, weeks, days and seconds — live counter, no sign-up needed.',
     kicker: 'Age Calculator',
     headline: 'How <em>old</em><br>am I?',
     subhead: 'Enter your date of birth — get your exact age, live to the second.',
@@ -52,8 +52,8 @@ const T = {
     ],
   },
   fr: {
-    title: 'Calculateur d\'âge – Trouvez votre âge exact | DateCalc.app',
-    metaDesc: 'Calculateur d\'âge gratuit. Entrez votre date de naissance et obtenez votre âge exact en années, mois, semaines, jours et heures — avec un compteur en temps réel.',
+    title: 'Calculateur d\'âge 2026 – Quel âge ai-je ? Gratuit',
+    metaDesc: 'Calculateur d\'âge gratuit. Entrez votre date de naissance et obtenez votre âge exact en années, mois, semaines, jours et secondes — compteur en temps réel.',
     kicker: 'Calculateur d\'âge',
     headline: 'Quel <em>âge</em><br>ai-je ?',
     subhead: 'Entrez votre date de naissance — obtenez votre âge exact, en direct à la seconde.',
@@ -98,8 +98,8 @@ const T = {
     ],
   },
   es: {
-    title: 'Calculadora de edad – Encuentra tu edad exacta | DateCalc.app',
-    metaDesc: 'Calculadora de edad gratuita. Ingresa tu fecha de nacimiento y obtén tu edad exacta en años, meses, semanas, días y horas — con contador en tiempo real.',
+    title: 'Calculadora de Edad 2026 – ¿Cuántos años tengo? Gratis',
+    metaDesc: '¿Cuántos años tengo? Ingresa tu fecha de nacimiento y obtén tu edad exacta en años, meses, días y segundos — gratis, sin registro, al instante.',
     kicker: 'Calculadora de edad',
     headline: '¿Cuántos <em>años</em><br>tengo?',
     subhead: 'Ingresa tu fecha de nacimiento — obtén tu edad exacta, en vivo al segundo.',

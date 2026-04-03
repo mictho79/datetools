@@ -201,9 +201,22 @@ module.exports = {
     // Token map used for all template substitutions
     const vars = { year, age, age1, days, lived, gen };
 
+    // Optimised title/desc for high-traffic years (1950–2017)
+    const OPT_YEARS = year >= 1950 && year <= 2017;
+    const OPT_TITLE = {
+      en: 'Born in {year}? You\'re {age1} in 2026 — Exact Age Calculator',
+      fr: 'Né en {year} : quel âge en 2026 ? — {age1} ans | DateCalc',
+      es: '¿Cuántos años son de {year} a 2026? — {age1} años | DateCalc',
+    };
+    const OPT_DESC = {
+      en: 'Born in {year}? You are {age} or {age1} years old in 2026. Calculate your exact age in years, months and days — free, instant, no sign-up.',
+      fr: 'Né en {year} ? Vous avez {age} ou {age1} ans en 2026. De {year} à 2026, il y a {age1} ans. Calculez votre âge exact au jour près — gratuit.',
+      es: 'Si naciste en {year}, tienes {age} o {age1} años en 2026. Del {year} al 2026 son {age1} años. Edad exacta en años, meses y días — gratis, al instante.',
+    };
+
     // Resolve all template strings
-    const title = tpl(t.titleTpl, vars);
-    const metaDesc = tpl(t.metaDescTpl, vars);
+    const title = tpl(OPT_YEARS ? OPT_TITLE[lang] : t.titleTpl, vars);
+    const metaDesc = tpl(OPT_YEARS ? OPT_DESC[lang] : t.metaDescTpl, vars);
     const headlineHtml = tpl(t.headlineTpl, vars);
     const subheadHtml = tpl(t.subheadTpl, vars);
     const heroText = tpl(t.heroTpl, vars);

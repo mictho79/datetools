@@ -33,8 +33,8 @@ const zonesJson = JSON.stringify(ZONES);
 
 const T = {
   en: {
-    title: 'Time Zone Converter – Convert Time Between Any Two Time Zones | DateCalc.app',
-    metaDesc: 'Convert time between any two time zones instantly. Supports 25+ zones including UTC. Shows local time, UTC offset, and time difference.',
+    title: 'Time Zone Converter 2026 – Free, Instant, 25+ Zones',
+    metaDesc: 'Convert time between any two time zones instantly. Supports 25+ zones including UTC. Shows local time, UTC offset and time difference — free, no sign-up.',
     kicker: 'Time Zone Converter',
     headline: 'Convert<br><em>time zones</em>',
     subhead: 'Convert any date and time between 25+ time zones instantly.',
@@ -103,8 +103,8 @@ const T = {
     ],
   },
   es: {
-    title: 'Conversor de zona horaria – Convertir hora entre zonas horarias | DateCalc.app',
-    metaDesc: 'Convierte la hora entre cualquier zona horaria al instante. Compatible con 25+ zonas incluyendo UTC. Muestra hora local, desplazamiento UTC y diferencia horaria.',
+    title: 'Conversor de Zona Horaria 2026 – Gratis, Instantáneo, 25+ Zonas',
+    metaDesc: 'Convierte la hora entre cualquier zona horaria al instante. Compatible con 25+ zonas incluyendo UTC. Muestra hora local, offset UTC y diferencia horaria — gratis.',
     kicker: 'Conversor de zona horaria',
     headline: 'Convertir<br><em>zonas horarias</em>',
     subhead: 'Convierte cualquier fecha y hora entre 25+ zonas horarias al instante.',

@@ -72,8 +72,8 @@ const T = {
     ],
   },
   es: {
-    title: 'Calculadora de edad del bebé – Edad en semanas y meses | DateCalc.app',
-    metaDesc: 'Calcula la edad de tu bebé en semanas, días y meses desde su fecha de nacimiento. Esencial para seguir los hitos del desarrollo.',
+    title: 'Calculadora Edad Bebé 2026 – Semanas, Meses y Días | DateCalc',
+    metaDesc: 'Calcula la edad de tu bebé en semanas, días y meses desde su fecha de nacimiento. Esencial para seguir los hitos del desarrollo — gratis.',
     kicker: 'Calculadora de edad del bebé',
     headline: '¿Cuántas semanas<br>tiene mi <em>bebé</em>?',
     subhead: 'Ingresa la fecha de nacimiento de tu bebé — obtén su edad exacta en semanas, días y meses.',
