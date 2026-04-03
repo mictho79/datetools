@@ -5,6 +5,9 @@ const EVENTS = require('../data/events.json');
 const EVENTS_FR = require('../data/events_fr.json');
 const EVENTS_ES = require('../data/events_es.json');
 const EVENTS_PT = require('../data/events_pt.json');
+const EVENTS_DE = require('../data/events_de.json');
+const EVENTS_IT = require('../data/events_it.json');
+const EVENTS_PL = require('../data/events_pl.json');
 
 const BIRTH_YEARS = [];
 for (let y = 1930; y <= 2024; y++) BIRTH_YEARS.push(y);
@@ -136,6 +139,99 @@ const T = {
     weekDays: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'],
     genRanges: [{y:1928,n:'Geração Silenciosa'},{y:1946,n:'Baby Boomer'},{y:1965,n:'Geração X'},{y:1981,n:'Millennial'},{y:1997,n:'Geração Z'},{y:2013,n:'Geração Alpha'}],
   },
+  de: {
+    titleTpl: 'Geboren {year}: Wie alt bin ich? — {age1} Jahre alt 2026',
+    metaDescTpl: 'Geboren {year}? Du bist {age} oder {age1} Jahre alt im Jahr 2026. Von {year} bis 2026 sind es {age1} Jahre. Berechne dein genaues Alter.',
+    kicker: 'Alter nach Geburtsjahr',
+    headlineTpl: 'Geboren<br><em>{year}</em>',
+    subheadTpl: 'Wie alt bist du 2026, wenn du {year} geboren wurdest?',
+    resultsHeader: 'Dein Alter 2026',
+    heroTpl: '{age} oder {age1}',
+    heroSuffix: 'Jahre alt',
+    explainTpl: 'Wenn du {year} geboren wurdest, wirst du 2026 {age1} Jahre alt. Vor deinem Geburtstag bist du noch {age} Jahre alt.',
+    exactCta: '→ Genaues Alter berechnen',
+    exactHref: '/de/altersrechner/',
+    wTitle: 'Die Welt im Jahr {year}',
+    wLblEvents: 'Ereignisse', wLblMusic: 'Musik', wLblFilm: 'Film', wLblTech: 'Technologie', wLblPrices: 'Preise',
+    wLblBread: 'Brot', wLblGas: 'Benzin', wLblHouse: 'Haus',
+    seoH2aTpl: 'Wie alt bin ich, wenn ich {year} geboren wurde?',
+    seoP1Tpl: 'Wenn du {year} geboren wurdest, bist du 2026 die meiste Zeit {age} Jahre alt und wirst {age1} Jahre alt, sobald dein Geburtstag kommt. Die Personen, die {year} geboren wurden, gehören zur Generation {gen}.',
+    seoH2bTpl: 'Welche Generation wurde {year} geboren?',
+    seoP2Tpl: 'Personen, die {year} geboren wurden, gehören zur Generation {gen}. Verwende den Rechner oben, um dein genaues Alter in Jahren, Monaten, Wochen und Tagen zu berechnen.',
+    faqTitle: 'Häufig gestellte Fragen',
+    source: { url: 'https://www.ssa.gov/oact/population/longevity.html', label: 'U.S. Social Security Administration – Lebenserwartungsrechner' },
+    faqsTpl: [
+      { q: 'Wie alt bin ich, wenn ich {year} geboren wurde?', a: 'Wenn du {year} geboren wurdest, bist du 2026 {age} oder {age1} Jahre alt. Du wirst {age1} Jahre alt an deinem Geburtstag 2026.' },
+      { q: 'Wie viele Jahre sind es von {year} bis 2026?', a: 'Von {year} bis 2026 sind es {age1} Jahre. Wenn dein Geburtstag 2026 noch nicht war, bist du noch {age} Jahre alt.' },
+      { q: 'An welchem Wochentag wurde ich {year} geboren?', a: 'Der Wochentag hängt von deinem genauen Geburtsdatum ab. Nutze den Altersrechner und gib dein vollständiges Geburtsdatum ein.' },
+      { q: 'Wie viele Tage alt bin ich, wenn ich {year} geboren wurde?', a: 'Jemand, der am 1. Januar {year} geboren wurde, hat bis zum 1. Januar 2026 ungefähr {days} Tage gelebt. Gib dein Geburtsdatum im Rechner ein für die genaue Zahl.' },
+      { q: 'Welcher Generation gehöre ich an, wenn ich {year} geboren wurde?', a: 'Personen, die {year} geboren wurden, gehören zur Generation {gen}.' },
+    ],
+    weekDays: ['Sonntag','Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag'],
+    genRanges: [{y:1928,n:'Stille Generation'},{y:1946,n:'Baby Boomer'},{y:1965,n:'Generation X'},{y:1981,n:'Millennial'},{y:1997,n:'Generation Z'},{y:2013,n:'Generation Alpha'}],
+  },
+  it: {
+    titleTpl: 'Nato nel {year}: Quanti Anni Ho? — {age1} Anni nel 2026',
+    metaDescTpl: 'Nato nel {year}? Hai {age} o {age1} anni nel 2026. Dal {year} al 2026 sono {age1} anni. Calcola la tua età esatta al giorno.',
+    kicker: 'Età per Anno di Nascita',
+    headlineTpl: 'Nato nel<br><em>{year}</em>',
+    subheadTpl: 'Quanti anni hai nel 2026 se sei nato nel {year}?',
+    resultsHeader: 'La tua età nel 2026',
+    heroTpl: '{age} o {age1}',
+    heroSuffix: 'anni',
+    explainTpl: 'Se sei nato nel {year}, compi {age1} anni nel 2026. Prima del tuo compleanno hai ancora {age} anni.',
+    exactCta: '→ Calcola la tua età esatta',
+    exactHref: '/it/calcolo-eta/',
+    wTitle: 'Il Mondo nel {year}',
+    wLblEvents: 'Eventi', wLblMusic: 'Musica', wLblFilm: 'Film', wLblTech: 'Tecnologia', wLblPrices: 'Prezzi',
+    wLblBread: 'Pane', wLblGas: 'Benzina', wLblHouse: 'Casa',
+    seoH2aTpl: 'Quanti anni ho se sono nato nel {year}?',
+    seoP1Tpl: 'Se sei nato nel {year}, hai {age} anni per la maggior parte del 2026, compiendo {age1} anni quando arriva il tuo compleanno. Le persone nate nel {year} appartengono alla generazione {gen}.',
+    seoH2bTpl: 'Quale generazione è nata nel {year}?',
+    seoP2Tpl: 'Le persone nate nel {year} appartengono alla generazione {gen}. Usa il calcolatore sopra per trovare la tua età esatta in anni, mesi, settimane e giorni.',
+    faqTitle: 'Domande frequenti',
+    source: { url: 'https://www.ssa.gov/oact/population/longevity.html', label: 'U.S. Social Security Administration – Calcolatore Aspettativa di Vita' },
+    faqsTpl: [
+      { q: 'Quanti anni ho se sono nato nel {year}?', a: 'Se sei nato nel {year}, hai {age} o {age1} anni nel 2026. Compi {age1} anni al tuo compleanno del 2026.' },
+      { q: 'Quanti anni dal {year} al 2026?', a: 'Dal {year} al 2026 sono {age1} anni. Se il tuo compleanno non è ancora passato nel 2026, hai ancora {age} anni.' },
+      { q: 'In che giorno della settimana sono nato nel {year}?', a: 'Il giorno della settimana dipende dalla tua data di nascita esatta. Usa il calcolatore di età inserendo la tua data completa.' },
+      { q: 'Quanti giorni ho vissuto se sono nato nel {year}?', a: 'Qualcuno nato il 1° gennaio {year} ha vissuto circa {days} giorni fino al 1° gennaio 2026. Inserisci la tua data di nascita nel calcolatore per il conteggio preciso.' },
+      { q: 'A quale generazione appartengo se sono nato nel {year}?', a: 'Le persone nate nel {year} appartengono alla generazione {gen}.' },
+    ],
+    weekDays: ['Domenica','Lunedì','Martedì','Mercoledì','Giovedì','Venerdì','Sabato'],
+    genRanges: [{y:1928,n:'Generazione Silenziosa'},{y:1946,n:'Baby Boomer'},{y:1965,n:'Generazione X'},{y:1981,n:'Millennial'},{y:1997,n:'Generazione Z'},{y:2013,n:'Generazione Alpha'}],
+  },
+  pl: {
+    titleTpl: 'Urodzony w {year}: Ile Mam Lat? — {age1} Lat w 2026',
+    metaDescTpl: 'Urodzony w {year}? Masz {age} lub {age1} lat w 2026 roku. Od {year} do 2026 to {age1} lat. Oblicz swój dokładny wiek.',
+    kicker: 'Wiek według Roku Urodzenia',
+    headlineTpl: 'Urodzony w<br><em>{year}</em>',
+    subheadTpl: 'Ile masz lat w 2026, jeśli urodziłeś się w {year}?',
+    resultsHeader: 'Twój wiek w 2026',
+    heroTpl: '{age} lub {age1}',
+    heroSuffix: 'lat',
+    explainTpl: 'Jeśli urodziłeś się w {year}, kończysz {age1} lat w 2026. Przed swoimi urodzinami masz jeszcze {age} lat.',
+    exactCta: '→ Oblicz swój dokładny wiek',
+    exactHref: '/pl/kalkulator-wieku/',
+    wTitle: 'Świat w {year} roku',
+    wLblEvents: 'Wydarzenia', wLblMusic: 'Muzyka', wLblFilm: 'Film', wLblTech: 'Technologia', wLblPrices: 'Ceny',
+    wLblBread: 'Chleb', wLblGas: 'Benzyna', wLblHouse: 'Dom',
+    seoH2aTpl: 'Ile mam lat, jeśli urodziłem się w {year}?',
+    seoP1Tpl: 'Jeśli urodziłeś się w {year}, przez większą część 2026 roku masz {age} lat i kończysz {age1} lat w dniu urodzin. Osoby urodzone w {year} należą do pokolenia {gen}.',
+    seoH2bTpl: 'Jakie pokolenie urodziło się w {year}?',
+    seoP2Tpl: 'Osoby urodzone w {year} należą do pokolenia {gen}. Użyj kalkulatora powyżej, aby znaleźć swój dokładny wiek w latach, miesiącach, tygodniach i dniach.',
+    faqTitle: 'Często zadawane pytania',
+    source: { url: 'https://www.ssa.gov/oact/population/longevity.html', label: 'U.S. Social Security Administration – Kalkulator Oczekiwanej Długości Życia' },
+    faqsTpl: [
+      { q: 'Ile mam lat, jeśli urodziłem się w {year}?', a: 'Jeśli urodziłeś się w {year}, masz {age} lub {age1} lat w 2026 roku. Kończysz {age1} lat w dniu swoich urodzin w 2026.' },
+      { q: 'Ile lat od {year} do 2026?', a: 'Od {year} do 2026 to {age1} lat. Jeśli twoje urodziny jeszcze nie minęły w 2026, masz jeszcze {age} lat.' },
+      { q: 'W jaki dzień tygodnia urodziłem się w {year}?', a: 'Dzień tygodnia zależy od twojej dokładnej daty urodzenia. Użyj kalkulatora wieku, wprowadzając pełną datę urodzenia.' },
+      { q: 'Ile dni żyję, jeśli urodziłem się w {year}?', a: 'Ktoś urodzony 1 stycznia {year} przeżył do 1 stycznia 2026 roku około {days} dni. Wprowadź datę urodzenia w kalkulatorze, aby uzyskać dokładną liczbę.' },
+      { q: 'Do jakiego pokolenia należę, jeśli urodziłem się w {year}?', a: 'Osoby urodzone w {year} należą do pokolenia {gen}.' },
+    ],
+    weekDays: ['Niedziela','Poniedziałek','Wtorek','Środa','Czwartek','Piątek','Sobota'],
+    genRanges: [{y:1928,n:'Ciche Pokolenie'},{y:1946,n:'Baby Boomer'},{y:1965,n:'Pokolenie X'},{y:1981,n:'Millennial'},{y:1997,n:'Pokolenie Z'},{y:2013,n:'Pokolenie Alpha'}],
+  },
 };
 
 // Helper: replace all template tokens in a string
@@ -165,7 +261,7 @@ function getGen(year, genRanges) {
 
 // Helper: build world events block HTML from EVENTS data
 function buildWorldBlock(year, t, lang) {
-  const evSrc = lang === 'fr' ? EVENTS_FR : lang === 'es' ? EVENTS_ES : lang === 'pt' ? EVENTS_PT : EVENTS;
+  const evSrc = lang === 'fr' ? EVENTS_FR : lang === 'es' ? EVENTS_ES : lang === 'pt' ? EVENTS_PT : lang === 'de' ? EVENTS_DE : lang === 'it' ? EVENTS_IT : lang === 'pl' ? EVENTS_PL : EVENTS;
   const ev = evSrc[String(year)] || EVENTS[String(year)]; // fallback to EN
   const evEn = EVENTS[String(year)]; // always use English for music, film, prices
   if (!evEn) return '';
@@ -217,6 +313,9 @@ module.exports = {
       fr: `fr/ne-en-${y}`,
       es: `es/nacido-en-${y}`,
       pt: `pt/nascido-em-${y}`,
+      de: `de/geboren-in-${y}`,
+      it: `it/nato-nel-${y}`,
+      pl: `pl/urodzony-w-${y}`,
     },
   })),
 
@@ -241,12 +340,18 @@ module.exports = {
       fr: 'Né en {year} : quel âge en 2026 ? — {age1} ans | DateCalc',
       es: '¿Cuántos años son de {year} a 2026? — {age1} años | DateCalc',
       pt: 'Nascido em {year}? Você tem {age1} anos em 2026 — Calculadora de Idade',
+      de: 'Geboren {year}? Du bist {age1} Jahre alt 2026 — Altersrechner',
+      it: 'Nato nel {year}? Hai {age1} anni nel 2026 — Calcolo Età',
+      pl: 'Urodzony w {year}? Masz {age1} lat w 2026 — Kalkulator Wieku',
     };
     const OPT_DESC = {
       en: 'Born in {year}? You are {age} or {age1} years old in 2026. Calculate your exact age in years, months and days — free, instant, no sign-up.',
       fr: 'Né en {year} ? Vous avez {age} ou {age1} ans en 2026. De {year} à 2026, il y a {age1} ans. Calculez votre âge exact au jour près — gratuit.',
       es: 'Si naciste en {year}, tienes {age} o {age1} años en 2026. Del {year} al 2026 son {age1} años. Edad exacta en años, meses y días — gratis, al instante.',
       pt: 'Nascido em {year}? Você tem {age} ou {age1} anos em 2026. Calcule sua idade exata em anos, meses e dias — grátis, instantâneo, sem cadastro.',
+      de: 'Geboren {year}? Du bist {age} oder {age1} Jahre alt im Jahr 2026. Berechne dein genaues Alter in Jahren, Monaten und Tagen — kostenlos, sofort, ohne Anmeldung.',
+      it: 'Nato nel {year}? Hai {age} o {age1} anni nel 2026. Calcola la tua età esatta in anni, mesi e giorni — gratis, immediato, senza registrazione.',
+      pl: 'Urodzony w {year}? Masz {age} lub {age1} lat w 2026 roku. Oblicz swój dokładny wiek w latach, miesiącach i dniach — za darmo, natychmiast, bez rejestracji.',
     };
 
     // Resolve all template strings

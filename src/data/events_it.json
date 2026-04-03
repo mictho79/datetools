@@ -1,0 +1,970 @@
+{
+  "1905": {
+    "periods": {
+      "1": ["Il massacro della Domenica di Sangue scatena la Rivoluzione Russa del 1905 (22 gen.)", "Il Giappone sconfigge la Russia nella Battaglia di Mukden (mar.)"],
+      "2": ["La flotta russa viene distrutta nella Battaglia di Tsushima (27 mag.)", "Einstein pubblica la teoria della relatività ristretta (giu.)"],
+      "3": ["Il Trattato di Portsmouth pone fine alla Guerra Russo-Giapponese (5 set.)", "La Norvegia scioglie la sua unione con la Svezia e ottiene l'indipendenza (ott.)"]
+    },
+    "tech": "Albert Einstein pubblica la teoria della relatività ristretta e E=mc²"
+  },
+  "1906": {
+    "periods": {
+      "1": ["Il terremoto e incendio di San Francisco uccidono oltre 3.000 persone (18 apr.)", "La Conferenza di Algeciras risolve la crisi marocchina (gen.–apr.)"],
+      "2": ["La HMS Dreadnought viene varata, rivoluzionando la marina militare (feb.)", "Il Tunnel del Sempione apre come il più lungo tunnel ferroviario del mondo (giu.)"],
+      "3": ["Roosevelt firma la legge americana su alimenti e farmaci (30 giu.)", "L'affaire Dreyfus si conclude; Dreyfus viene completamente riabilitato (12 lug.)"]
+    },
+    "tech": "Reginald Fessenden effettua la prima trasmissione radio AM vocale la Vigilia di Natale"
+  },
+  "1907": {
+    "periods": {
+      "1": ["L'Oklahoma diventa il 46° Stato americano (16 nov.)", "Gran Bretagna, Francia e Russia formano la Triplice Intesa (ago.)"],
+      "2": ["Baden-Powell organizza il primo campeggio scout a Brownsea Island (ago.)", "Il panico finanziario del 1907 scuote gli Stati Uniti (ott.)"],
+      "3": ["La Nuova Zelanda diventa il primo dominio autonomo (26 set.)", "JP Morgan organizza un salvataggio bancario per porre fine al panico (nov.)"]
+    },
+    "tech": "I fratelli Lumière introducono l'Autocrome, primo processo di fotografia a colori"
+  },
+  "1908": {
+    "periods": {
+      "1": ["L'esplosione di Tunguska devasta 2.000 km² della Siberia (30 giu.)", "La rivoluzione dei Giovani Turchi riforma l'Impero Ottomano (lug.)"],
+      "2": ["Ford presenta la Ford Modello T (1° ott.)", "I Giochi Olimpici di Londra si concludono; gli USA vincono più medaglie (ott.)"],
+      "3": ["La Bulgaria dichiara l'indipendenza dall'Impero Ottomano (5 ott.)", "L'Austria-Ungheria annette la Bosnia-Erzegovina (6 ott.)"]
+    },
+    "tech": "Henry Ford presenta la Modello T, rendendo l'automobile accessibile al grande pubblico"
+  },
+  "1909": {
+    "periods": {
+      "1": ["Robert Peary afferma di aver raggiunto il Polo Nord (6 apr.)", "William Howard Taft viene inaugurato come 27° presidente americano (4 mar.)"],
+      "2": ["Blériot effettua la prima traversata in aereo della Manica (25 lug.)", "La NAACP viene fondata per difendere i diritti dei neri americani (12 feb.)"],
+      "3": ["Il predecessore della NFL viene formato (ago.)", "Sigmund Freud tiene conferenze negli Stati Uniti (set.)"]
+    },
+    "tech": "Louis Blériot effettua la prima traversata in aereo della Manica"
+  },
+  "1910": {
+    "periods": {
+      "1": ["La Rivoluzione Messicana inizia dopo la caduta di Díaz (20 nov.)", "L'Unione Sudafricana diventa un dominio britannico (31 mag.)"],
+      "2": ["I Boy Scouts of America vengono ufficialmente fondati (8 feb.)", "La Festa del Papà viene celebrata per la prima volta negli USA (19 giu.)"],
+      "3": ["Il re Edoardo VII muore; Giorgio V sale al trono (6 mag.)", "Il Portogallo diventa una repubblica dopo la rivoluzione (5 ott.)"]
+    },
+    "tech": "Le prime lampade al neon vengono dimostrate da Georges Claude a Parigi"
+  },
+  "1911": {
+    "periods": {
+      "1": ["L'incendio al Triangle Shirtwaist uccide 146 operaie (25 mar.)", "Il team di Roald Amundsen raggiunge per primo il Polo Sud (14 dic.)"],
+      "2": ["L'Italia invade la Libia nella guerra italo-turca (29 set.)", "La Gioconda viene rubata dal Louvre di Parigi (21 ago.)"],
+      "3": ["La rivoluzione cinese rovescia la dinastia Qing (10 ott.)", "La Standard Oil viene smantellata dalla Corte Suprema americana (15 mag.)"]
+    },
+    "tech": "Charles Kettering inventa il motorino di avviamento elettrico per automobili"
+  },
+  "1912": {
+    "periods": {
+      "1": ["La RMS Titanic affonda nel suo viaggio inaugurale; 1.517 morti (15 apr.)", "New Mexico e Arizona diventano il 47° e 48° Stato americano (gen.–feb.)"],
+      "2": ["Woodrow Wilson vince la nomination presidenziale democratica (lug.)", "I Giochi Olimpici di Stoccolma aprono con 28 nazioni (5 mag.)"],
+      "3": ["Woodrow Wilson viene eletto 28° presidente americano (5 nov.)", "La Prima Guerra Balcanica inizia in ottobre"]
+    },
+    "tech": "La tragedia del Titanic porta all'obbligo di protocolli radio di emergenza"
+  },
+  "1913": {
+    "periods": {
+      "1": ["Woodrow Wilson viene inaugurato come 28° presidente americano (4 mar.)", "Il 16° Emendamento istituisce l'imposta sul reddito federale (3 feb.)"],
+      "2": ["Il 17° Emendamento prevede l'elezione diretta dei senatori (8 apr.)", "La Seconda Guerra Balcanica inizia (29 giu.)"],
+      "3": ["Henry Ford introduce la catena di montaggio mobile in ottobre", "L'Armory Show presenta l'arte moderna agli americani (feb.–mar.)"]
+    },
+    "tech": "Henry Ford introduce la catena di montaggio mobile, rivoluzionando l'industria"
+  },
+  "1914": {
+    "periods": {
+      "1": ["L'Arciduca Francesco Ferdinando viene assassinato a Sarajevo (28 giu.)", "L'Austria-Ungheria dichiara guerra alla Serbia (28 lug.)"],
+      "2": ["La Germania dichiara guerra alla Francia e invade il Belgio (3 ago.)", "La Gran Bretagna dichiara guerra alla Germania (4 ago.)"],
+      "3": ["La Prima Battaglia della Marna ferma l'avanzata tedesca (set.)", "Tregua di Natale: soldati alleati e tedeschi fraternizzano (25 dic.)"]
+    },
+    "tech": "Il Canale di Panama viene inaugurato, collegando gli oceani Atlantico e Pacifico"
+  },
+  "1915": {
+    "periods": {
+      "1": ["Un sottomarino tedesco affonda la RMS Lusitania, uccidendo 1.198 persone (7 mag.)", "La campagna alleata di Gallipoli viene lanciata contro gli ottomani (apr.)"],
+      "2": ["L'Italia entra nella Prima Guerra Mondiale al fianco degli Alleati (23 mag.)", "Dirigibili Zeppelin tedeschi bombardano Londra (mag.)"],
+      "3": ["La Bulgaria entra nella WWI dalla parte della Germania (14 ott.)", "Albert Einstein completa la teoria della relatività generale (nov.)"]
+    },
+    "tech": "Albert Einstein completa la sua teoria della relatività generale"
+  },
+  "1916": {
+    "periods": {
+      "1": ["La Battaglia di Verdun inizia — la più sanguinosa della WWI (21 feb.)", "La Rivolta di Pasqua: repubblicani irlandesi si ribellano a Dublino (24 apr.)"],
+      "2": ["La Battaglia della Somme inizia con 57.000 vittime britanniche (1° lug.)", "Woodrow Wilson viene rieletto presidente americano (7 nov.)"],
+      "3": ["La Battaglia dello Jutland: la più grande battaglia navale della WWI (31 mag.)", "I carri armati vengono usati in combattimento per la prima volta (15 set.)"]
+    },
+    "tech": "Il carro armato militare viene introdotto in combattimento durante la Battaglia della Somme"
+  },
+  "1917": {
+    "periods": {
+      "1": ["Gli USA entrano nella WWI dopo la guerra sottomarina illimitata (6 apr.)", "La Rivoluzione di Febbraio rovescia lo zar in Russia (mar.)"],
+      "2": ["La Rivoluzione Bolscevica di Ottobre prende il potere in Russia (7 nov.)", "La Terza Battaglia di Ypres (Passchendaele) inizia (lug.)"],
+      "3": ["La Dichiarazione Balfour sostiene una patria ebraica in Palestina (2 nov.)", "Gli USA iniziano la coscrizione con il Selective Service Act (mag.)"]
+    },
+    "tech": "Il primo sistema sonar operativo viene sviluppato per la guerra antisommergibile"
+  },
+  "1918": {
+    "periods": {
+      "1": ["La Germania lancia l'Offensiva di Primavera — ultimo grande avanzamento (21 mar.)", "Lo Zar Nicola II e la sua famiglia vengono giustiziati dai bolscevichi (17 lug.)"],
+      "2": ["L'Offensiva dei Cento Giorni degli Alleati sfonda le linee tedesche (8 ago.)", "La pandemia di influenza spagnola uccide fino a 50 milioni di persone (1918–19)"],
+      "3": ["L'armistizio pone fine alla Prima Guerra Mondiale l'11 novembre alle 11", "L'imperatore tedesco Guglielmo II abdica; viene dichiarata la repubblica (9 nov.)"]
+    },
+    "tech": "Un servizio postale aereo regolare viene istituito negli Stati Uniti"
+  },
+  "1919": {
+    "periods": {
+      "1": ["Il Trattato di Versailles viene firmato, ponendo fine alla Prima Guerra Mondiale (28 giu.)", "La Conferenza di Pace di Parigi apre a Versailles (gen.)"],
+      "2": ["Alcock e Brown effettuano la prima traversata transatlantica senza scalo (giu.)", "Il patto della Società delle Nazioni viene adottato a Parigi (apr.)"],
+      "3": ["Il Senato americano respinge il Trattato di Versailles e la Società delle Nazioni (nov.)", "Il 18° Emendamento sul Proibizionismo viene ratificato (16 gen.)"]
+    },
+    "tech": "John Alcock e Arthur Whitten Brown effettuano la prima traversata transatlantica senza scalo"
+  },
+  "1920": {
+    "periods": {
+      "1": ["Il Proibizionismo inizia negli Stati Uniti (17 gen.)", "La Società delle Nazioni tiene la sua prima riunione (10 gen.)"],
+      "2": ["Il 19° Emendamento concede il diritto di voto alle donne (18 ago.)", "I Giochi Olimpici di Anversa aprono (20 apr.)"],
+      "3": ["Warren Harding vince le elezioni presidenziali americane (2 nov.)", "L'attentato di Wall Street uccide 38 persone a New York (16 set.)"]
+    },
+    "tech": "La prima stazione radio commerciale, KDKA, inizia le trasmissioni regolari a Pittsburgh"
+  },
+  "1921": {
+    "periods": {
+      "1": ["Warren Harding viene inaugurato come 29° presidente americano (4 mar.)", "Il massacro di Tulsa distrugge il quartiere Black Wall Street (31 mag.)"],
+      "2": ["Gli USA firmano trattati di pace separati con Germania e Austria (ago.)", "L'Irlanda viene divisa; lo Stato Libero d'Irlanda viene creato (dic.)"],
+      "3": ["L'insulina viene usata per la prima volta per trattare un diabetico (ott.)", "La Conferenza Navale di Washington apre per limitare gli armamenti (12 nov.)"]
+    },
+    "tech": "Frederick Banting e Charles Best scoprono l'insulina come trattamento per il diabete"
+  },
+  "1922": {
+    "periods": {
+      "1": ["I fascisti di Mussolini marciano su Roma e prendono il potere (ott.)", "Howard Carter scopre la tomba di Tutankhamon (4 nov.)"],
+      "2": ["L'Unione Sovietica viene ufficialmente fondata (30 dic.)", "La guerra civile irlandese inizia dopo il trattato (giu.)"],
+      "3": ["La BBC inizia le trasmissioni radio quotidiane a Londra (14 nov.)", "La Turchia abolisce il sultanato ottomano (1° nov.)"]
+    },
+    "tech": "La BBC inizia le trasmissioni radio regolari da Londra"
+  },
+  "1923": {
+    "periods": {
+      "1": ["Il presidente Harding muore; Calvin Coolidge diventa presidente (2 ago.)", "L'iperinflazione tedesca raggiunge il picco (nov.)"],
+      "2": ["Il Putsch della Birreria di Hitler fallisce a Monaco (8 nov.)", "Truppe francesi e belghe occupano la Ruhr tedesca (gen.)"],
+      "3": ["Il Grande Terremoto del Kantō devasta Tokyo e Yokohama (1° set.)", "La rivista Time pubblica il suo primo numero (3 mar.)"]
+    },
+    "tech": "L'iconoscopio, tubo per telecamera televisiva, viene brevettato da Vladimir Zworykin"
+  },
+  "1924": {
+    "periods": {
+      "1": ["Lenin muore; Stalin inizia la sua ascesa nell'URSS (21 gen.)", "J. Edgar Hoover diventa direttore dell'FBI (10 mag.)"],
+      "2": ["I Giochi Olimpici di Parigi aprono con 44 nazioni (5 lug.)", "Il Piano Dawes aiuta a stabilizzare l'economia tedesca (ago.)"],
+      "3": ["Calvin Coolidge vince le elezioni presidenziali (4 nov.)", "Primo volo transcontinentale americano senza scalo (giu.)"]
+    },
+    "tech": "Gli scienziati dei Bell Labs dimostrano la trasmissione televisiva a lunga distanza"
+  },
+  "1925": {
+    "periods": {
+      "1": ["Il processo Scopes sull'insegnamento dell'evoluzione (lug.)", "F. Scott Fitzgerald pubblica Il Grande Gatsby (10 apr.)"],
+      "2": ["La Grande Corsa del Siero: una slitta consegna il siero antidifterico a Nome (feb.)", "Il Ku Klux Klan sfila con 50.000 persone a Washington (8 ago.)"],
+      "3": ["I Trattati di Locarno stabilizzano i confini europei del dopoguerra (ott.)", "Hirohito diventa imperatore del Giappone (25 dic.)"]
+    },
+    "tech": "John Logie Baird fa la prima dimostrazione pubblica della televisione"
+  },
+  "1926": {
+    "periods": {
+      "1": ["Lo sciopero generale paralizza la Gran Bretagna per nove giorni (3–12 mag.)", "Robert Goddard lancia il primo razzo a propellente liquido (16 mar.)"],
+      "2": ["Hirohito viene ufficialmente incoronato imperatore del Giappone (25 nov.)", "Gertrude Ederle diventa la prima donna a nuotare attraverso la Manica (ago.)"],
+      "3": ["Ernest Hemingway pubblica Il Sole Sorge Ancora (ott.)", "Il Libano viene dichiarato Repubblica sotto mandato francese (23 mag.)"]
+    },
+    "tech": "Robert Goddard lancia il primo razzo a propellente liquido ad Auburn, Massachusetts"
+  },
+  "1927": {
+    "periods": {
+      "1": ["Charles Lindbergh effettua il primo volo solitario transatlantico (21 mag.)", "Il Cantante di Jazz, primo film sonoro, debutta (6 ott.)"],
+      "2": ["Sacco e Vanzetti vengono giustiziati nonostante le proteste diffuse (23 ago.)", "L'Unione Astronomica Internazionale viene fondata (lug.)"],
+      "3": ["Chiang Kai-shek stabilisce un governo nazionalista in Cina (apr.)", "Le inondazioni del Mississippi spostano 700.000 americani (apr.)"]
+    },
+    "tech": "Charles Lindbergh effettua il primo volo solitario non-stop attraverso l'Atlantico sullo Spirit of St. Louis"
+  },
+  "1928": {
+    "periods": {
+      "1": ["Alexander Fleming scopre la penicillina (28 set.)", "Amelia Earhart diventa la prima donna ad attraversare l'Atlantico in aereo (giu.)"],
+      "2": ["Herbert Hoover vince le elezioni presidenziali americane (6 nov.)", "I Giochi Olimpici di Amsterdam aprono (17 mag.)"],
+      "3": ["Stalin lancia il primo Piano Quinquennale nell'URSS (ott.)", "Il Patto Briand-Kellogg che vieta la guerra viene firmato da 15 nazioni (27 ago.)"]
+    },
+    "tech": "Alexander Fleming scopre la penicillina, inaugurando l'era degli antibiotici"
+  },
+  "1929": {
+    "periods": {
+      "1": ["Il crollo di Wall Street scatena la Grande Depressione (24–29 ott.)", "Il Massacro di San Valentino: sette gangster vengono uccisi (14 feb.)"],
+      "2": ["Herbert Hoover viene inaugurato come 31° presidente americano (4 mar.)", "Il Trattato del Laterano stabilisce il Vaticano come Stato sovrano (feb.)"],
+      "3": ["Il mercato azionario raggiunge il picco e poi crolla (set.–ott.)", "La Jugoslavia diventa una dittatura reale sotto il re Alessandro (gen.)"]
+    },
+    "tech": "Il primo film proiettato durante un volo viene mostrato su un volo della Transcontinental Air Transport"
+  },
+  "1930": {
+    "periods": {
+      "1": ["La tariffa Smoot-Hawley aggrava la Grande Depressione (17 giu.)", "Gandhi guida la Marcia del Sale per protestare contro il dominio britannico (12 mar.)"],
+      "2": ["Clyde Tombaugh scopre Plutone all'Osservatorio Lowell (18 feb.)", "L'Uruguay vince la prima Coppa del Mondo di calcio (30 lug.)"],
+      "3": ["Haile Selassie viene incoronato imperatore dell'Etiopia (2 nov.)", "I fallimenti bancari travolgono gli Stati Uniti (dic.)"]
+    },
+    "tech": "Clyde Tombaugh scopre Plutone all'Osservatorio Lowell in Arizona"
+  },
+  "1931": {
+    "periods": {
+      "1": ["Il Giappone invade la Manciuria, sfidando la Società delle Nazioni (18 set.)", "La disoccupazione negli USA raggiunge il 16% durante la Depressione (mar.)"],
+      "2": ["L'Empire State Building apre come edificio più alto del mondo (1° mag.)", "Al Capone viene condannato per evasione fiscale (17 ott.)"],
+      "3": ["La Spagna diventa una repubblica dopo la fuga del re Alfonso XIII (14 apr.)", "The Star-Spangled Banner viene adottata ufficialmente come inno nazionale americano (mar.)"]
+    },
+    "tech": "L'Empire State Building apre come grattacielo più alto del mondo (443 m)"
+  },
+  "1932": {
+    "periods": {
+      "1": ["Franklin D. Roosevelt vince le elezioni presidenziali americane (8 nov.)", "Amelia Earhart effettua la prima traversata solitaria dell'Atlantico (20 mag.)"],
+      "2": ["Il bambino Lindbergh viene rapito e ucciso (mar.–mag.)", "I Giochi Olimpici di Los Angeles aprono (30 lug.)"],
+      "3": ["L'Esercito del Bonus viene espulso da Washington dall'esercito americano (lug.)", "La carestia in Ucraina sovietica uccide milioni di persone (1932–33)"]
+    },
+    "tech": "Il neutrone viene scoperto da James Chadwick al Laboratorio Cavendish"
+  },
+  "1933": {
+    "periods": {
+      "1": ["Hitler viene nominato Cancelliere della Germania (30 gen.)", "Roosevelt si insedia; dichiara la Bank Holiday per fermare i fallimenti bancari (4 mar.)"],
+      "2": ["L'incendio del Reichstag permette a Hitler di assumere poteri d'emergenza (27 feb.)", "I programmi del New Deal avviano misure di soccorso negli USA (giu.)"],
+      "3": ["Il Proibizionismo viene revocato dal 21° Emendamento (5 dic.)", "La Germania si ritira dalla Società delle Nazioni (14 ott.)"]
+    },
+    "tech": "Edwin Armstrong inventa la radio FM, migliorando notevolmente la qualità delle trasmissioni"
+  },
+  "1934": {
+    "periods": {
+      "1": ["Hitler diventa unico leader dopo la morte di Hindenburg (2 ago.)", "Le tempeste di polvere devastano le fattorie delle Grandi Pianure (apr.)"],
+      "2": ["Mao Zedong inizia la Lunga Marcia con le forze comuniste (ott.)", "Bonnie e Clyde vengono uccisi in un'imboscata della polizia in Louisiana (23 mag.)"],
+      "3": ["La Notte dei lunghi coltelli: Hitler elimina i suoi rivali (30 giu.)", "Le quintuple Dionne nascono in Canada — prime sopravvissute (28 mag.)"]
+    },
+    "tech": "Wallace Carothers inventa il nylon, prima fibra completamente sintetica"
+  },
+  "1935": {
+    "periods": {
+      "1": ["L'Italia invade l'Etiopia; la Società delle Nazioni fallisce nel contenerla (ott.)", "Il Social Security Act viene firmato dal presidente Roosevelt (14 ago.)"],
+      "2": ["La Germania reintroduce la coscrizione militare (16 mar.)", "Le Leggi di Norimberga privano gli ebrei tedeschi della cittadinanza (15 set.)"],
+      "3": ["Huey Long viene assassinato al Campidoglio della Louisiana (8 set.)", "Il primo sistema radar viene dimostrato in Gran Bretagna (26 feb.)"]
+    },
+    "tech": "Robert Watson-Watt dimostra il primo sistema radar pratico"
+  },
+  "1936": {
+    "periods": {
+      "1": ["La Guerra Civile Spagnola inizia dopo il colpo di stato di Franco (17 lug.)", "Jesse Owens vince quattro medaglie d'oro ai Giochi Olimpici di Berlino (ago.)"],
+      "2": ["Hitler rimilitarizza la Renania (7 mar.)", "I Giochi Olimpici di Berlino aprono (1° ago.)"],
+      "3": ["FDR viene rieletto in una vittoria schiacciante per il suo secondo mandato (3 nov.)", "Edoardo VIII abdica per sposare Wallis Simpson (11 dic.)"]
+    },
+    "tech": "Alan Turing pubblica il suo articolo sulla macchina calcolatrice teorica"
+  },
+  "1937": {
+    "periods": {
+      "1": ["Il dirigibile Hindenburg esplode a Lakehurst, New Jersey (6 mag.)", "Il Giappone lancia un'invasione su vasta scala della Cina (7 lug.)"],
+      "2": ["Amelia Earhart scompare sopra il Pacifico (2 lug.)", "Il Golden Gate Bridge viene inaugurato a San Francisco (27 mag.)"],
+      "3": ["Il Massacro di Nanchino: truppe giapponesi uccidono 200.000 cinesi (dic.)", "Il piano di riforma della Corte Suprema di FDR fallisce al Senato (lug.)"]
+    },
+    "tech": "Il primo motore a reazione viene testato con successo da Frank Whittle in Inghilterra"
+  },
+  "1938": {
+    "periods": {
+      "1": ["La Germania annette l'Austria nell'Anschluss (13 mar.)", "La Notte dei cristalli: pogrom contro gli ebrei in Germania (9 nov.)"],
+      "2": ["L'Accordo di Monaco: gli Alleati cedono alle richieste di Hitler sulla Cecoslovacchia (30 set.)", "La Guerra dei mondi di Orson Welles alla radio provoca panico negli USA (30 ott.)"],
+      "3": ["La Germania occupa i Sudeti con approvazione britannica e francese (ott.)", "Howard Hughes circumnaviga il mondo in 91 ore record (lug.)"]
+    },
+    "tech": "Otto Hahn e Fritz Strassmann effettuano la prima fissione nucleare dell'uranio"
+  },
+  "1939": {
+    "periods": {
+      "1": ["La Germania invade la Polonia; la Seconda Guerra Mondiale inizia (1° set.)", "Gran Bretagna e Francia dichiarano guerra alla Germania (3 set.)"],
+      "2": ["L'URSS invade la Finlandia (Guerra d'Inverno) (30 nov.)", "Germania e URSS firmano il Patto Molotov-Ribbentrop (23 ago.)"],
+      "3": ["La Guerra Civile Spagnola termina con la vittoria di Franco (1° apr.)", "FDR firma la legge di neutralità tenendo gli USA fuori dalla guerra (4 nov.)"]
+    },
+    "tech": "Igor Sikorsky vola nel primo elicottero pratico, il VS-300"
+  },
+  "1940": {
+    "periods": {
+      "1": ["La Germania invade Danimarca e Norvegia (9 apr.)", "La Finlandia firma un trattato di pace con l'URSS (13 mar.)"],
+      "2": ["La Germania invade Francia, Belgio e Paesi Bassi (10 mag.)", "L'evacuazione di Dunkerque salva 338.000 soldati (mag.–giu.)"],
+      "3": ["La Battaglia d'Inghilterra inizia (ago.)", "Giappone, Germania e Italia firmano il Patto Tripartito (set.)"]
+    },
+    "tech": "Il primo microscopio elettronico viene dimostrato negli Stati Uniti"
+  },
+  "1941": {
+    "periods": {
+      "1": ["La Germania invade l'Unione Sovietica: Operazione Barbarossa (22 giu.)", "La Carta Atlantica viene firmata da Roosevelt e Churchill (14 ago.)"],
+      "2": ["Il Giappone attacca Pearl Harbor; gli USA entrano nella Seconda Guerra Mondiale (7 dic.)", "La Germania dichiara guerra agli USA (11 dic.)"],
+      "3": ["L'assedio di Leningrado inizia; durerà 872 giorni (8 set.)", "Il Lend-Lease Act invia aiuti americani alla Gran Bretagna e agli Alleati (11 mar.)"]
+    },
+    "tech": "Il primo computer elettronico programmabile, Colossus, inizia a essere sviluppato a Bletchley Park"
+  },
+  "1942": {
+    "periods": {
+      "1": ["La Battaglia di Midway: decisiva vittoria navale degli USA (4–7 giu.)", "Gli americani di origine giapponese vengono internati dall'Ordine Esecutivo 9066 (feb.)"],
+      "2": ["La Battaglia di El Alamein: gli Alleati sconfiggono Rommel nel Nord Africa (ott.)", "La Battaglia di Stalingrado inizia; punto di svolta sul Fronte Orientale (ago.)"],
+      "3": ["Gli Alleati sbarcano nel Nord Africa nell'Operazione Torch (8 nov.)", "Il Progetto Manhattan viene ufficialmente lanciato per costruire la bomba atomica (13 ago.)"]
+    },
+    "tech": "Enrico Fermi produce la prima reazione nucleare a catena autosostenuta a Chicago"
+  },
+  "1943": {
+    "periods": {
+      "1": ["La 6ª Armata tedesca capitola a Stalingrado (2 feb.)", "Gli Alleati invadono la Sicilia; Mussolini viene rovesciato (lug.)"],
+      "2": ["La Conferenza di Teheran: Roosevelt, Churchill e Stalin si incontrano (nov.–dic.)", "L'Italia capitola davanti agli Alleati (8 set.)"],
+      "3": ["La Rivolta del Ghetto di Varsavia: resistenza ebraica contro i nazisti (apr.)", "La Battaglia di Kursk — la più grande battaglia di carri armati della storia (lug.)"]
+    },
+    "tech": "Colossus, il primo computer elettronico programmabile, viene completato a Bletchley Park"
+  },
+  "1944": {
+    "periods": {
+      "1": ["Il D-Day: invasione alleata della Normandia (6 giu.)", "Roma viene liberata dalle forze alleate (4 giu.)"],
+      "2": ["Parigi viene liberata dagli Alleati e dalle Forze Francesi Libere (25 ago.)", "La Battaglia del Mare delle Filippine: gli USA sconfiggono la marina giapponese (giu.)"],
+      "3": ["La Battaglia delle Ardenne: ultima grande offensiva tedesca (16 dic.)", "Il sistema monetario di Bretton Woods viene stabilito (1° lug.)"]
+    },
+    "tech": "Il primo missile balistico operativo, il razzo V-2, viene usato in combattimento"
+  },
+  "1945": {
+    "periods": {
+      "1": ["La Germania capitola; il V-E Day viene celebrato in Europa (8 mag.)", "Il presidente Roosevelt muore; Truman diventa presidente (12 apr.)"],
+      "2": ["Gli USA lanciano bombe atomiche su Hiroshima e Nagasaki (6 e 9 ago.)", "Il Giappone capitola; la Seconda Guerra Mondiale finisce (15 ago.)"],
+      "3": ["La Carta delle Nazioni Unite viene firmata a San Francisco (26 giu.)", "I processi di Norimberga per i criminali di guerra nazisti iniziano (20 nov.)"]
+    },
+    "tech": "La prima bomba atomica viene detonata nel sito di test di Trinity, in New Mexico"
+  },
+  "1946": {
+    "periods": {
+      "1": ["Winston Churchill pronuncia il suo discorso sulla Cortina di Ferro (5 mar.)", "La Società delle Nazioni viene ufficialmente sciolta (18 apr.)"],
+      "2": ["Prima riunione dell'Assemblea Generale ONU a Londra (10 gen.)", "I test nucleari sull'Atollo di Bikini vengono condotti dagli USA (lug.)"],
+      "3": ["I processi di Norimberga si concludono con 12 condanne a morte (ott.)", "Prima riunione del Consiglio di Sicurezza ONU (17 gen.)"]
+    },
+    "tech": "L'ENIAC, primo computer elettronico per uso generale, viene presentato alla Penn"
+  },
+  "1947": {
+    "periods": {
+      "1": ["India e Pakistan ottengono l'indipendenza dalla Gran Bretagna (15 ago.)", "La Dottrina Truman impegna gli USA contro il comunismo (12 mar.)"],
+      "2": ["Il Piano Marshall viene proposto per ricostruire l'Europa devastata dalla guerra (5 giu.)", "I Rotoli del Mar Morto vengono scoperti in grotte vicino a Qumran (feb.)"],
+      "3": ["Chuck Yeager rompe la barriera del suono nel Bell X-1 (14 ott.)", "L'ONU vota la spartizione della Palestina in Stati arabo ed ebraico (29 nov.)"]
+    },
+    "tech": "Chuck Yeager rompe la barriera del suono per la prima volta nel Bell X-1"
+  },
+  "1948": {
+    "periods": {
+      "1": ["Israele dichiara l'indipendenza; inizia la guerra arabo-israeliana (14 mag.)", "Il Mahatma Gandhi viene assassinato a Nuova Delhi (30 gen.)"],
+      "2": ["Il blocco di Berlino inizia; il ponte aereo americano rifornisce Berlino Ovest (24 giu.)", "Un colpo di stato comunista prende il potere in Cecoslovacchia (feb.)"],
+      "3": ["Truman vince le elezioni presidenziali a sorpresa (2 nov.)", "La Dichiarazione Universale dei Diritti Umani viene adottata (10 dic.)"]
+    },
+    "tech": "Gli scienziati dei Bell Labs inventano il transistor, trasformando l'elettronica"
+  },
+  "1949": {
+    "periods": {
+      "1": ["La NATO viene fondata da 12 nazioni occidentali (4 apr.)", "La Repubblica Popolare Cinese viene proclamata da Mao Zedong (1° ott.)"],
+      "2": ["L'Unione Sovietica testa la sua prima bomba atomica (29 ago.)", "Il blocco di Berlino viene revocato dopo 11 mesi (12 mag.)"],
+      "3": ["La Germania Occidentale (RFT) viene istituita come Stato distinto (23 mag.)", "Orwell pubblica 1984 (8 giu.)"]
+    },
+    "tech": "L'Unione Sovietica detona la sua prima bomba atomica, avviando la corsa agli armamenti nucleari"
+  },
+  "1950": {
+    "periods": {
+      "1": ["La Corea del Nord invade la Corea del Sud il 25 giugno — inizio della guerra", "Il Consiglio di Sicurezza ONU autorizza l'uso della forza in Corea"],
+      "2": ["Le truppe americane sbarcano a Inchon in un audace assalto anfibio", "Le forze nordcoreane respingono le truppe ONU verso il Perimetro di Pusan"],
+      "3": ["La Cina entra nella Guerra di Corea con 300.000 soldati", "Le forze ONU si ritirano davanti all'offensiva cinese"]
+    },
+    "tech": "L'UNIVAC I, primo computer commerciale negli USA, viene consegnato all'Ufficio del Censimento"
+  },
+  "1951": {
+    "periods": {
+      "1": ["Il generale MacArthur viene licenziato da Truman per insubordinazione", "I negoziati per un armistizio in Corea iniziano a Kaesong in luglio"],
+      "2": ["Primo test nucleare americano nel Nevada (gen.–apr.)", "Julius ed Ethel Rosenberg vengono condannati a morte per spionaggio"],
+      "3": ["Il trattato di pace con il Giappone viene firmato a San Francisco (8 set.)", "La televisione a colori debutta negli Stati Uniti"]
+    },
+    "tech": "L'UNIVAC I prevede le elezioni del 1952, dimostrando la potenza dell'elaborazione dati"
+  },
+  "1952": {
+    "periods": {
+      "1": ["La Gran Bretagna testa la sua prima bomba atomica nelle Isole Monte Bello, Australia", "Eisenhower vince le primarie del New Hampshire come candidato scritto"],
+      "2": ["Eisenhower vince la nomination presidenziale repubblicana", "I Giochi Olimpici di Helsinki aprono con 69 nazioni"],
+      "3": ["Eisenhower viene eletto 34° presidente americano in una vittoria schiacciante", "Il Grande Smog di Londra uccide migliaia di persone in dicembre"]
+    },
+    "tech": "Gli USA fanno esplodere la prima bomba all'idrogeno"
+  },
+  "1953": {
+    "periods": {
+      "1": ["Stalin muore il 5 marzo; Krusciov inizia a consolidare il suo potere", "Eisenhower si insedia come 34° presidente americano in gennaio"],
+      "2": ["Edmund Hillary e Tenzing Norgay raggiungono la vetta dell'Everest (29 mag.)", "Watson e Crick pubblicano il loro articolo sulla doppia elica del DNA (25 apr.)"],
+      "3": ["L'armistizio della Guerra di Corea viene firmato il 27 luglio", "L'Unione Sovietica testa la bomba all'idrogeno in agosto"]
+    },
+    "tech": "Watson e Crick scoprono la struttura a doppia elica del DNA"
+  },
+  "1954": {
+    "periods": {
+      "1": ["Le udienze Army-McCarthy iniziano a smascherare il senatore McCarthy", "Gli USA detonano la bomba all'idrogeno Castle Bravo (1° mar.)"],
+      "2": ["La Corte Suprema dichiara incostituzionale la segregazione nelle scuole (17 mag.)", "La prima centrale nucleare apre a Obninsk, URSS"],
+      "3": ["Il Vietnam viene diviso lungo il 17° parallelo dopo la sconfitta francese", "L'uragano Hazel uccide migliaia di persone ad Haiti e negli USA"]
+    },
+    "tech": "La prima cella solare viene sviluppata dai Bell Laboratories"
+  },
+  "1955": {
+    "periods": {
+      "1": ["La Germania Occidentale entra nella NATO il 5 maggio", "Albert Einstein muore a Princeton il 18 aprile"],
+      "2": ["Disneyland apre ad Anaheim, California, il 17 luglio", "Il Patto di Varsavia viene firmato come alleanza militare sovietica in maggio"],
+      "3": ["Rosa Parks si rifiuta di cedere il suo posto sull'autobus (1° dic.)", "Il boicottaggio degli autobus di Montgomery inizia dopo l'arresto di Parks"]
+    },
+    "tech": "Il vaccino antipolio di Jonas Salk viene approvato per uso generale"
+  },
+  "1956": {
+    "periods": {
+      "1": ["Krusciov pronuncia il suo discorso segreto denunciando Stalin (25 feb.)", "Il Pakistan diventa la prima Repubblica Islamica (23 mar.)"],
+      "2": ["L'Egitto nazionalizza il Canale di Suez (26 lug.)", "I Giochi Olimpici aprono a Melbourne, Australia (22 nov.)"],
+      "3": ["La rivoluzione ungherese viene schiacciata dalle truppe sovietiche in novembre", "Crisi di Suez: Gran Bretagna, Francia e Israele invadono l'Egitto (29 ott.)"]
+    },
+    "tech": "IBM presenta il primo disco rigido commerciale, il RAMAC 305"
+  },
+  "1957": {
+    "periods": {
+      "1": ["La Dottrina Eisenhower viene annunciata per il Medio Oriente (gen.)", "Il Ghana ottiene l'indipendenza — prima nazione dell'Africa subsahariana"],
+      "2": ["L'Anno Geofisico Internazionale inizia il 1° luglio", "I sovietici testano il loro primo ICBM in agosto"],
+      "3": ["L'Unione Sovietica lancia lo Sputnik 1 il 4 ottobre", "Il Civil Rights Act del 1957 viene firmato da Eisenhower"]
+    },
+    "tech": "L'Unione Sovietica lancia lo Sputnik 1, il primo satellite artificiale della Terra"
+  },
+  "1958": {
+    "periods": {
+      "1": ["Gli USA lanciano Explorer 1, il loro primo satellite (31 gen.)", "La NASA viene creata dal Congresso e promulgata (mar.)"],
+      "2": ["Il Grande Balzo in Avanti inizia in Cina sotto Mao (mag.)", "Il primo sottomarino nucleare americano USS Nautilus attraversa il Polo Nord"],
+      "3": ["Charles de Gaulle diventa Primo Ministro della Francia (set.)", "Jack Kilby presenta il primo circuito integrato (set.)"]
+    },
+    "tech": "Jack Kilby inventa il circuito integrato alla Texas Instruments"
+  },
+  "1959": {
+    "periods": {
+      "1": ["Fidel Castro prende il potere a Cuba il 1° gennaio", "L'Alaska diventa il 49° Stato americano il 3 gennaio"],
+      "2": ["Le Hawaii diventano il 50° Stato americano il 21 agosto", "La sonda sovietica Luna 2 diventa il primo veicolo spaziale a raggiungere la Luna"],
+      "3": ["Krusciov visita gli Stati Uniti in settembre", "Il Trattato Antartico viene firmato da 12 nazioni in dicembre"]
+    },
+    "tech": "La prima fotocopiatrice commerciale, la Xerox 914, viene lanciata"
+  },
+  "1960": {
+    "periods": {
+      "1": ["Un aereo spia americano U-2 viene abbattuto sull'URSS (1° mag.)", "Diciassette nazioni africane ottengono l'indipendenza quest'anno"],
+      "2": ["I Giochi Olimpici di Roma aprono il 25 agosto", "Lo Sputnik 5 sovietico porta in orbita le cagnoline Belka e Strelka"],
+      "3": ["John F. Kennedy viene eletto 35° presidente americano (8 nov.)", "Il Twist di Chubby Checker scatena una moda di danza"]
+    },
+    "tech": "Il primo satellite meteorologico, TIROS-1, viene lanciato dagli USA"
+  },
+  "1961": {
+    "periods": {
+      "1": ["Kennedy si insedia; 'Non chiedere cosa il tuo paese può fare per te' (20 gen.)", "Gli USA rompono le relazioni diplomatiche con Cuba (3 gen.)"],
+      "2": ["L'invasione della Baia dei Porchi a Cuba fallisce disastrosamente (17 apr.)", "Yuri Gagarin diventa il primo essere umano nello spazio (12 apr.)"],
+      "3": ["La costruzione del Muro di Berlino inizia il 13 agosto", "Alan Shepard diventa il primo americano nello spazio (5 mag.)"]
+    },
+    "tech": "Alan Shepard diventa il primo americano a viaggiare nello spazio"
+  },
+  "1962": {
+    "periods": {
+      "1": ["John Glenn diventa il primo americano ad orbitare intorno alla Terra (20 feb.)", "Gli USA iniziano operazioni militari segrete nel Vietnam del Sud"],
+      "2": ["L'Algeria ottiene l'indipendenza dalla Francia (5 lug.)", "Marilyn Monroe canta 'Happy Birthday' per JFK (19 mag.)"],
+      "3": ["La Crisi dei Missili di Cuba porta il mondo sull'orlo della guerra nucleare (ott.)", "Il Concilio Vaticano II viene aperto sotto Papa Giovanni XXIII (11 ott.)"]
+    },
+    "tech": "Telstar 1, il primo satellite di comunicazione attivo, viene lanciato"
+  },
+  "1963": {
+    "periods": {
+      "1": ["Betty Friedan pubblica La Mistica Femminile (feb.)", "Martin Luther King scrive la sua 'Lettera dalla prigione di Birmingham' (apr.)"],
+      "2": ["Martin Luther King pronuncia il suo discorso 'Ho un sogno' (28 ago.)", "Il Trattato di Messa al Bando Parziale dei Test Nucleari viene firmato (5 ago.)"],
+      "3": ["Il presidente Kennedy viene assassinato a Dallas (22 nov.)", "Lee Harvey Oswald viene sparato da Jack Ruby in diretta televisiva (24 nov.)"]
+    },
+    "tech": "Il telefono a tasti viene lanciato dal Bell System"
+  },
+  "1964": {
+    "periods": {
+      "1": ["I Beatles arrivano in America per il programma di Ed Sullivan (9 feb.)", "Il 24° Emendamento che abolisce le tasse di voto viene ratificato (23 gen.)"],
+      "2": ["Il Civil Rights Act viene firmato da LBJ (2 lug.)", "L'incidente del Golfo del Tonchino aumenta il ruolo americano in Vietnam (ago.)"],
+      "3": ["La Commissione Warren conclude che Oswald ha agito da solo (27 set.)", "Krusciov viene deposto; Breznev diventa leader sovietico (ott.)"]
+    },
+    "tech": "IBM presenta la famiglia di computer mainframe System/360"
+  },
+  "1965": {
+    "periods": {
+      "1": ["Gli USA avviano l'Operazione Rolling Thunder nel Vietnam del Nord", "Malcolm X viene assassinato a New York (21 feb.)"],
+      "2": ["Gli USA inviano i loro primi soldati in Vietnam (8 mar.)", "Il Voting Rights Act viene firmato da LBJ (6 ago.)"],
+      "3": ["Le rivolte di Watts a Los Angeles lasciano 34 morti (ago.)", "L'ultimo tour dei Beatles include lo Shea Stadium (ago.)"]
+    },
+    "tech": "Gordon Moore pubblica la Legge di Moore prevedendo la crescita dei transistor"
+  },
+  "1966": {
+    "periods": {
+      "1": ["Indira Gandhi diventa Primo Ministro dell'India (19 gen.)", "La Rivoluzione Culturale viene lanciata da Mao Zedong (16 mag.)"],
+      "2": ["La National Organization for Women (NOW) viene fondata (30 giu.)", "I programmi Medicare e Medicaid entrano in vigore (1° lug.)"],
+      "3": ["Il Partito delle Pantere Nere viene fondato a Oakland, California (ott.)", "Lunar Orbiter 1 scatta la prima foto della Terra dalla Luna (ago.)"]
+    },
+    "tech": "Il primo mouse per computer viene presentato da Douglas Engelbart"
+  },
+  "1967": {
+    "periods": {
+      "1": ["L'incendio dell'Apollo 1 uccide tre astronauti durante un test a terra (27 gen.)", "Thurgood Marshall viene nominato alla Corte Suprema (giu.)"],
+      "2": ["Israele vince la Guerra dei Sei Giorni contro i suoi vicini arabi (5–10 giu.)", "Estate dell'Amore: 100.000 persone si riuniscono a San Francisco"],
+      "3": ["Primo trapianto cardiaco dal dottor Christiaan Barnard (3 dic.)", "Che Guevara viene catturato e ucciso in Bolivia (9 ott.)"]
+    },
+    "tech": "La prima calcolatrice tascabile viene sviluppata dalla Texas Instruments"
+  },
+  "1968": {
+    "periods": {
+      "1": ["L'Offensiva del Tet sciocca gli americani con la portata della guerra del Vietnam (gen.)", "Martin Luther King Jr. viene assassinato a Memphis (4 apr.)"],
+      "2": ["Robert Kennedy viene assassinato a Los Angeles (5 giu.)", "Primavera di Praga: i carri armati sovietici soffocano le riforme ceche (ago.)"],
+      "3": ["Richard Nixon vince le elezioni presidenziali americane (5 nov.)", "I Giochi Olimpici di Città del Messico aprono; il saluto Black Power sciocca il mondo"]
+    },
+    "tech": "Douglas Engelbart presenta pubblicamente il primo mouse per computer e l'ipertesto"
+  },
+  "1969": {
+    "periods": {
+      "1": ["Nixon si insedia; inizia negoziati di pace segreti in Vietnam", "Yasser Arafat viene eletto presidente dell'OLP (feb.)"],
+      "2": ["Neil Armstrong cammina sulla Luna (20 lug.)", "Il festival di Woodstock attira 400.000 persone nello Stato di New York (ago.)"],
+      "3": ["Ho Chi Minh muore; la leadership del Vietnam del Nord cambia (2 set.)", "I primi soldati americani vengono ritirati dal Vietnam (set.)"]
+    },
+    "tech": "L'ARPANET, precursore di Internet, viene lanciato"
+  },
+  "1970": {
+    "periods": {
+      "1": ["Gli USA invadono la Cambogia, ampliando la guerra del Vietnam (30 apr.)", "La prima Giornata della Terra viene celebrata (22 apr.)"],
+      "2": ["Le sparatorie di Kent State: quattro studenti uccisi (4 mag.)", "I Beatles si separano ufficialmente (ago.)"],
+      "3": ["Anwar Sadat diventa presidente dell'Egitto (15 ott.)", "Salvador Allende viene eletto presidente del Cile (4 nov.)"]
+    },
+    "tech": "IBM introduce il floppy disk per l'archiviazione dei dati"
+  },
+  "1971": {
+    "periods": {
+      "1": ["Il 26° Emendamento abbassa l'età di voto negli USA a 18 anni (ratificato lug.)", "I Pentagon Papers vengono pubblicati dal New York Times (13 giu.)"],
+      "2": ["Apollo 15 atterra sulla Luna; gli astronauti guidano il rover lunare (lug.)", "Il Bangladesh dichiara l'indipendenza dal Pakistan (26 mar.)"],
+      "3": ["Nixon impone controlli su salari e prezzi per combattere l'inflazione (ago.)", "La Repubblica Popolare Cinese viene ammessa alle Nazioni Unite"]
+    },
+    "tech": "Intel lancia il 4004, il primo microprocessore commerciale del mondo"
+  },
+  "1972": {
+    "periods": {
+      "1": ["Nixon visita la Cina, aprendo le relazioni diplomatiche (21 feb.)", "Bloody Sunday: soldati britannici uccidono 14 persone in Irlanda del Nord (gen.)"],
+      "2": ["I ladri del Watergate vengono arrestati al quartier generale del DNC (17 giu.)", "Nixon visita l'URSS; il trattato SALT I sugli armamenti viene firmato (mag.)"],
+      "3": ["Nixon viene rieletto in una vittoria schiacciante (7 nov.)", "Il Massacro delle Olimpiadi di Monaco uccide 11 atleti israeliani (set.)"]
+    },
+    "tech": "La prima console per videogiochi domestica, Magnavox Odyssey, viene commercializzata"
+  },
+  "1973": {
+    "periods": {
+      "1": ["Roe v. Wade legalizza l'aborto negli Stati Uniti (22 gen.)", "Gli Accordi di Parigi vengono firmati; gli USA si ritirano dal Vietnam (27 gen.)"],
+      "2": ["Le udienze del Senato sul Watergate vengono trasmesse nazionalmente in televisione (mag.)", "La Guerra dello Yom Kippur: Egitto e Siria attaccano Israele (ott.)"],
+      "3": ["L'embargo petrolifero arabo provoca una crisi energetica in Occidente (ott.)", "Il vice presidente Spiro Agnew si dimette sotto accuse di corruzione (ott.)"]
+    },
+    "tech": "L'ingegnere Motorola Martin Cooper effettua la prima chiamata con un telefono cellulare portatile"
+  },
+  "1974": {
+    "periods": {
+      "1": ["Il comitato giudiziario della Camera apre le udienze di impeachment (feb.)", "Hank Aaron batte il record di home run di Babe Ruth (8 apr.)"],
+      "2": ["Gli articoli di impeachment di Nixon vengono adottati dal comitato della Camera (lug.)", "Patricia Hearst viene rapita dall'Esercito di Liberazione Simbionesano (feb.)"],
+      "3": ["Nixon si dimette; Ford diventa presidente (9 ago.)", "Ford concede a Nixon un perdono incondizionato (8 set.)"]
+    },
+    "tech": "Il kit per computer Altair 8800 viene lanciato, inaugurando l'era del PC"
+  },
+  "1975": {
+    "periods": {
+      "1": ["Il governo del Vietnam del Sud crolla; Saigon cade (30 apr.)", "I Khmer Rossi prendono il potere in Cambogia (17 apr.)"],
+      "2": ["Microsoft viene fondata da Bill Gates e Paul Allen (4 apr.)", "Gli Accordi di Helsinki sui diritti umani vengono firmati (1° ago.)"],
+      "3": ["Francisco Franco muore; la Spagna transita verso la democrazia (nov.)", "L'Angola ottiene l'indipendenza dal Portogallo (11 nov.)"]
+    },
+    "tech": "L'Altair 8800 viene lanciato, ispirando Gates e Allen a fondare Microsoft"
+  },
+  "1976": {
+    "periods": {
+      "1": ["Le celebrazioni del bicentenario americano iniziano in tutto il paese", "Jimmy Carter vince la nomination presidenziale democratica"],
+      "2": ["Viking 1 atterra su Marte e invia foto della superficie (20 lug.)", "I Giochi Olimpici di Montreal aprono (17 lug.)"],
+      "3": ["Jimmy Carter viene eletto presidente americano (2 nov.)", "Mao Zedong muore dopo decenni alla guida della Cina (9 set.)"]
+    },
+    "tech": "Apple Computer viene fondata e l'Apple I viene messo in vendita"
+  },
+  "1977": {
+    "periods": {
+      "1": ["Jimmy Carter si insedia come 39° presidente americano (20 gen.)", "Guerre Stellari viene rilasciato e diventa un fenomeno culturale (25 mag.)"],
+      "2": ["Elvis Presley muore a 42 anni a Memphis (16 ago.)", "Il blackout di New York scatena saccheggi diffusi (13 lug.)"],
+      "3": ["Il presidente egiziano Sadat fa una visita storica in Israele (nov.)", "I primi computer Apple II vengono messi in vendita (5 giu.)"]
+    },
+    "tech": "L'Apple II, il Commodore PET e il TRS-80 vengono lanciati nello stesso anno"
+  },
+  "1978": {
+    "periods": {
+      "1": ["I negoziati degli Accordi di Camp David tra Egitto e Israele iniziano", "La prima bambina in provetta Louise Brown nasce in Inghilterra (25 lug.)"],
+      "2": ["Gli Accordi di Camp David vengono firmati da Carter, Sadat e Begin (17 set.)", "Papa Giovanni Paolo I muore dopo 33 giorni; viene eletto Giovanni Paolo II"],
+      "3": ["Il suicidio di massa di Jonestown uccide 918 persone (18 nov.)", "Dominica ottiene l'indipendenza dal Regno Unito (3 nov.)"]
+    },
+    "tech": "La prima email indesiderata viene inviata sull'ARPANET a centinaia di utenti"
+  },
+  "1979": {
+    "periods": {
+      "1": ["Lo Shah dell'Iran fugge; la Rivoluzione Islamica prende il potere (11 feb.)", "USA e Cina stabiliscono relazioni diplomatiche complete (1° gen.)"],
+      "2": ["L'incidente nucleare di Three Mile Island in Pennsylvania (28 mar.)", "Margaret Thatcher diventa la prima donna Primo Ministro del Regno Unito (mag.)"],
+      "3": ["L'Unione Sovietica invade l'Afghanistan (24 dic.)", "La crisi degli ostaggi in Iran inizia; l'ambasciata americana viene occupata (4 nov.)"]
+    },
+    "tech": "Motorola lancia la prima rete di telefonia cellulare commerciale in Giappone"
+  },
+  "1980": {
+    "periods": {
+      "1": ["Gli USA boicottano i Giochi Olimpici di Mosca a causa dell'invasione sovietica", "Il Monte St. Helens erutta catastroficamente nello Stato di Washington (18 mag.)"],
+      "2": ["La guerra Iran-Iraq inizia quando l'Iraq invade l'Iran (22 set.)", "Il sindacato polacco Solidarność viene fondato da Lech Wałęsa (31 ago.)"],
+      "3": ["Ronald Reagan viene eletto 40° presidente americano (4 nov.)", "John Lennon viene sparato e ucciso a New York (8 dic.)"]
+    },
+    "tech": "Pac-Man viene lanciato nelle sale giochi e diventa un fenomeno mondiale"
+  },
+  "1981": {
+    "periods": {
+      "1": ["Gli ostaggi americani in Iran vengono rilasciati dopo 444 giorni (20 gen.)", "Reagan si insedia; un tentativo di assassinio lo ferisce (30 mar.)"],
+      "2": ["IBM lancia il suo primo personal computer (12 ago.)", "Il principe Carlo e Diana si sposano a Londra (29 lug.)"],
+      "3": ["L'AIDS viene ufficialmente riconosciuta come epidemia dal CDC (dic.)", "Anwar Sadat viene assassinato al Cairo (6 ott.)"]
+    },
+    "tech": "IBM lancia il suo primo personal computer, l'IBM PC 5150"
+  },
+  "1982": {
+    "periods": {
+      "1": ["Guerra delle Falkland: l'Argentina occupa le isole; il Regno Unito invia una forza (apr.)", "E.T. - L'extraterrestre diventa un successo al botteghino (giu.)"],
+      "2": ["Israele invade il Libano per espellere l'OLP (6 giu.)", "La Guerra delle Falkland termina con la capitolazione argentina (14 giu.)"],
+      "3": ["Il disco compatto (CD) viene lanciato commercialmente negli USA (ott.)", "Massacro di Sabra e Shatila in campi profughi libanesi (set.)"]
+    },
+    "tech": "Il disco compatto (CD) viene lanciato commercialmente in Giappone e negli USA"
+  },
+  "1983": {
+    "periods": {
+      "1": ["Reagan propone l'Iniziativa di Difesa Strategica (23 mar.)", "L'ambasciata americana a Beirut viene bombardata, 63 morti (18 apr.)"],
+      "2": ["La crisi USA-sovietica intorno al volo KAL 007 (set.)", "L'attentato alla caserma di Beirut uccide 241 marines americani (23 ott.)"],
+      "3": ["Gli USA invadono Grenada (25 ott.)", "Internet nasce quando l'ARPANET adotta il TCP/IP il 1° gen."]
+    },
+    "tech": "Internet nasce quando l'ARPANET adotta il protocollo TCP/IP"
+  },
+  "1984": {
+    "periods": {
+      "1": ["Apple lancia il computer Macintosh (24 gen.)", "Indira Gandhi viene assassinata dalle sue guardie del corpo (31 ott.)"],
+      "2": ["I Giochi Olimpici Estivi di Los Angeles aprono (28 lug.)", "La carestia etiope inizia a devastare milioni di persone"],
+      "3": ["Reagan viene rieletto in una vittoria schiacciante in 49 stati (6 nov.)", "Il disastro di Bhopal uccide migliaia di persone in India (3 dic.)"]
+    },
+    "tech": "Apple lancia il Macintosh, rendendo popolare l'interfaccia grafica utente"
+  },
+  "1985": {
+    "periods": {
+      "1": ["Mikhail Gorbaciov diventa leader sovietico (11 mar.)", "Reagan e Gorbaciov si incontrano al vertice di Ginevra (nov.)"],
+      "2": ["I concerti Live Aid raccolgono 127 milioni di dollari per l'Etiopia (13 lug.)", "La nave Rainbow Warrior di Greenpeace viene affondata dalla Francia (10 lug.)"],
+      "3": ["Pirati palestinesi sequestrano la nave da crociera Achille Lauro (ott.)", "Il terremoto di Città del Messico uccide 9.000 persone (19 set.)"]
+    },
+    "tech": "Microsoft Windows 1.0 viene rilasciato al pubblico generale"
+  },
+  "1986": {
+    "periods": {
+      "1": ["Lo Space Shuttle Challenger esplode 73 secondi dopo il lancio (28 gen.)", "Ferdinand Marcos viene rovesciato nelle Filippine dalla Rivoluzione del Popolo (feb.)"],
+      "2": ["Il disastro nucleare di Chernobyl in Ucraina sovietica (26 apr.)", "Gli USA bombardano la Libia in rappresaglia al terrorismo (15 apr.)"],
+      "3": ["Lo scandalo Iran-Contra viene rivelato dal governo Reagan (nov.)", "Il vertice di Reykjavik: Reagan e Gorbaciov vicini a un accordo sugli armamenti (ott.)"]
+    },
+    "tech": "La prima versione del sistema dei nomi di dominio Internet (DNS) entra in funzione"
+  },
+  "1987": {
+    "periods": {
+      "1": ["Il discorso di Reagan 'Abbatta questo muro' a Berlino (12 giu.)", "Klaus Barbie viene condannato per crimini contro l'umanità durante la Seconda Guerra Mondiale"],
+      "2": ["Lunedì Nero: i mercati azionari globali crollano del 22% (19 ott.)", "Il Trattato INF viene firmato per eliminare i missili nucleari (8 dic.)"],
+      "3": ["La prima Intifada palestinese inizia a Gaza (9 dic.)", "La prima macchina fotografica usa e getta viene lanciata da Fujifilm (lug.)"]
+    },
+    "tech": "Il linguaggio di programmazione Perl viene rilasciato da Larry Wall"
+  },
+  "1988": {
+    "periods": {
+      "1": ["L'Unione Sovietica inizia il ritiro dall'Afghanistan (15 mag.)", "George H.W. Bush vince la nomination presidenziale repubblicana"],
+      "2": ["I Giochi Olimpici di Seul, Corea del Sud, aprono (17 set.)", "Il volo Iran Air 655 viene abbattuto dalla marina americana (3 lug.)"],
+      "3": ["Il volo Pan Am 103 viene fatto esplodere sopra Lockerbie, Scozia (21 dic.)", "George H.W. Bush viene eletto 41° presidente americano (8 nov.)"]
+    },
+    "tech": "Il virus Morris, uno dei primi worm informatici, si diffonde nelle reti"
+  },
+  "1989": {
+    "periods": {
+      "1": ["George H.W. Bush si insedia come 41° presidente americano (20 gen.)", "L'ayatollah Khomeini dell'Iran emette una fatwa contro Salman Rushdie"],
+      "2": ["Le proteste di piazza Tiananmen vengono schiacciate dall'esercito cinese (4 giu.)", "La Polonia tiene le sue prime elezioni libere dalla Seconda Guerra Mondiale (4 giu.)"],
+      "3": ["Il Muro di Berlino cade il 9 novembre", "Il dittatore rumeno Ceaușescu viene rovesciato ed eseguito (dic.)"]
+    },
+    "tech": "Tim Berners-Lee propone il World Wide Web al CERN"
+  },
+  "1990": {
+    "periods": {
+      "1": ["Nelson Mandela viene rilasciato dopo 27 anni di prigione (11 feb.)", "La Namibia ottiene l'indipendenza dal Sudafrica (21 mar.)"],
+      "2": ["L'Iraq invade il Kuwait il 2 agosto", "Il trattato di riunificazione tedesca viene firmato (31 ago.)"],
+      "3": ["La riunificazione tedesca viene completata il 3 ottobre", "Margaret Thatcher si dimette da Primo Ministro britannico (22 nov.)"]
+    },
+    "tech": "Il World Wide Web va online con il primo sito Internet"
+  },
+  "1991": {
+    "periods": {
+      "1": ["Guerra del Golfo: la coalizione americana libera il Kuwait in 100 ore (feb.)", "Boris Eltsin viene eletto presidente della Repubblica Russa (giu.)"],
+      "2": ["Un tentativo di colpo di stato contro Gorbaciov fallisce in agosto", "Gli Stati Baltici riacquistano l'indipendenza dall'Unione Sovietica (ago.–set.)"],
+      "3": ["L'Unione Sovietica si dissolve ufficialmente il 25 dicembre", "La Jugoslavia inizia a frammentarsi; Croazia e Slovenia vengono liberate"]
+    },
+    "tech": "Il kernel Linux viene creato e pubblicato da Linus Torvalds"
+  },
+  "1992": {
+    "periods": {
+      "1": ["La Bosnia dichiara l'indipendenza; inizia l'assedio di Sarajevo (apr.)", "Le forze americane entrano in Somalia in una missione umanitaria (dic.)"],
+      "2": ["Le rivolte di Los Angeles scoppiano dopo il verdetto del caso Rodney King (29 apr.)", "I Giochi Olimpici di Barcellona aprono (25 lug.)"],
+      "3": ["Bill Clinton viene eletto 42° presidente americano (3 nov.)", "L'uragano Andrew devasta il sud della Florida (24 ago.)"]
+    },
+    "tech": "Il primo SMS viene inviato su una rete mobile"
+  },
+  "1993": {
+    "periods": {
+      "1": ["Il World Trade Center viene bombardato da terroristi (26 feb.)", "Clinton si insedia come 42° presidente americano (20 gen.)"],
+      "2": ["Gli Accordi di Oslo vengono firmati tra Israele e l'OLP (13 set.)", "Ruth Bader Ginsburg viene confermata alla Corte Suprema (3 ago.)"],
+      "3": ["Il Trattato di Maastricht crea l'Unione Europea (1° nov.)", "Il NAFTA viene firmato da Clinton (8 dic.)"]
+    },
+    "tech": "Il browser Mosaic rende Internet accessibile al grande pubblico"
+  },
+  "1994": {
+    "periods": {
+      "1": ["Il terremoto di Northridge devasta Los Angeles (17 gen.)", "Il genocidio in Ruanda inizia; 800.000 morti in 100 giorni (apr.)"],
+      "2": ["Nelson Mandela viene eletto primo presidente nero del Sudafrica (mag.)", "Il Tunnel della Manica tra Regno Unito e Francia apre (6 mag.)"],
+      "3": ["O.J. Simpson viene arrestato per l'omicidio di Nicole Brown (giu.)", "I Repubblicani vincono il Congresso con il 'Contratto con l'America' (nov.)"]
+    },
+    "tech": "Netscape Navigator viene lanciato, alimentando la crescita esplosiva di Internet"
+  },
+  "1995": {
+    "periods": {
+      "1": ["L'attentato di Oklahoma City uccide 168 persone (19 apr.)", "Il terremoto di Kobe uccide 6.434 persone in Giappone (17 gen.)"],
+      "2": ["O.J. Simpson viene assolto dall'accusa di omicidio (3 ott.)", "Il massacro di Srebrenica uccide 8.000 musulmani bosniaci (lug.)"],
+      "3": ["Rabin viene assassinato a un raduno per la pace a Tel Aviv (4 nov.)", "Gli Accordi di Dayton pongono fine alla guerra in Bosnia (21 nov.)"]
+    },
+    "tech": "Amazon e eBay vengono entrambi lanciati, avviando la rivoluzione del commercio elettronico"
+  },
+  "1996": {
+    "periods": {
+      "1": ["La pecora Dolly viene clonata — annunciata nel feb. 1997 (lug. 1996)", "Il Unabomber Ted Kaczynski viene arrestato nel Montana (3 apr.)"],
+      "2": ["Il volo TWA 800 precipita al largo di Long Island, uccidendo 230 (17 lug.)", "L'attentato al Parco Olimpico di Atlanta uccide 2 persone (27 lug.)"],
+      "3": ["Clinton viene rieletto contro Bob Dole (5 nov.)", "I Talebani prendono Kabul e assumono il controllo dell'Afghanistan (set.)"]
+    },
+    "tech": "BackRub, precursore di Google, sviluppato da Page e Brin a Stanford"
+  },
+  "1997": {
+    "periods": {
+      "1": ["Hong Kong viene restituita alla Cina dal Regno Unito (1° lug.)", "Il suicidio di massa della setta Heaven's Gate uccide 39 persone (26 mar.)"],
+      "2": ["La principessa Diana muore in un incidente d'auto a Parigi (31 ago.)", "Pathfinder atterra su Marte; il rover Sojourner esplora (4 lug.)"],
+      "3": ["Madre Teresa muore a Calcutta (5 set.)", "Il Protocollo di Kyoto sui cambiamenti climatici viene adottato (11 dic.)"]
+    },
+    "tech": "Deep Blue di IBM sconfigge il campione mondiale di scacchi Garry Kasparov"
+  },
+  "1998": {
+    "periods": {
+      "1": ["Clinton nega una relazione amorosa con Monica Lewinsky (26 gen.)", "India e Pakistan effettuano test di armi nucleari (mag.)"],
+      "2": ["Le ambasciate americane in Kenya e Tanzania vengono bombardate (7 ago.)", "Google viene fondato da Larry Page e Sergey Brin (4 set.)"],
+      "3": ["Clinton viene sottoposto a processo di impeachment dalla Camera (19 dic.)", "L'uragano Mitch uccide 11.000 persone in America Centrale (ott.)"]
+    },
+    "tech": "Google viene incorporato e inizia la sua ascesa come motore di ricerca"
+  },
+  "1999": {
+    "periods": {
+      "1": ["La NATO inizia a bombardare la Jugoslavia per il Kosovo (24 mar.)", "Clinton viene assolto dal Senato nel processo di impeachment (12 feb.)"],
+      "2": ["Il massacro di Columbine uccide 13 persone (20 apr.)", "JFK Jr. muore in un incidente aereo al largo di Martha's Vineyard (16 lug.)"],
+      "3": ["I timori del Bug del Millennio si diffondono nel mondo (dic.)", "Le proteste contro il WTO scoppiano a Seattle (30 nov.)"]
+    },
+    "tech": "Napster viene lanciato, rivoluzionando la condivisione di musica online"
+  },
+  "2000": {
+    "periods": {
+      "1": ["Il Bug del Millennio non causa guasti significativi ai computer (1° gen.)", "La bolla di Internet inizia a scoppiare sul NASDAQ (mar.)"],
+      "2": ["La USS Cole viene bombardata nel porto yemenita, uccidendo 17 marinai (ott.)", "I Giochi Olimpici Estivi aprono a Sydney, Australia (15 set.)"],
+      "3": ["George W. Bush viene eletto presidente in un voto contestato in Florida (nov.)", "Il riconteggio in Florida viene deciso dalla Corte Suprema (12 dic.)"]
+    },
+    "tech": "La bolla delle dot-com scoppia, ponendo fine al boom di Internet degli anni '90"
+  },
+  "2001": {
+    "periods": {
+      "1": ["George W. Bush si insedia come 43° presidente americano (20 gen.)", "Wikipedia viene lanciata pubblicamente il 15 gennaio"],
+      "2": ["Gli attacchi dell'11 settembre uccidono quasi 3.000 persone (11 set.)", "Gli USA invadono l'Afghanistan (7 ott.)"],
+      "3": ["Il USA PATRIOT Act viene promulgato (26 ott.)", "Le lettere all'antrace uccidono 5 persone negli USA (ott.)"]
+    },
+    "tech": "Apple presenta l'iPod e iTunes, trasformando l'industria musicale"
+  },
+  "2002": {
+    "periods": {
+      "1": ["Banconote e monete in euro entrano in circolazione in 12 nazioni (gen.)", "Bush definisce Iraq, Iran e Corea del Nord 'Asse del Male' (29 gen.)"],
+      "2": ["Il Dipartimento per la Sicurezza Interna viene creato (25 nov.)", "Gli attentati di Bali uccidono 202 turisti (12 ott.)"],
+      "3": ["Il cecchino di Washington uccide 10 persone in Virginia e Maryland (ott.)", "Gli ispettori ONU tornano in Iraq (nov.)"]
+    },
+    "tech": "I primi telefoni con fotocamera vengono commercializzati negli Stati Uniti"
+  },
+  "2003": {
+    "periods": {
+      "1": ["Lo Space Shuttle Columbia si disintegra al rientro (1° feb.)", "Gli USA invadono l'Iraq; il regime di Saddam crolla (20 mar.)"],
+      "2": ["Il presidente americano dichiara 'Missione Compiuta' in Iraq (1° mag.)", "L'epidemia di SARS si diffonde globalmente, uccidendo 774 persone"],
+      "3": ["Saddam Hussein viene catturato in una buca (13 dic.)", "Arnold Schwarzenegger viene eletto governatore della California (ott.)"]
+    },
+    "tech": "MySpace e LinkedIn vengono entrambi lanciati, pionieri dei social network"
+  },
+  "2004": {
+    "periods": {
+      "1": ["Facebook viene lanciato ad Harvard come 'TheFacebook' (4 feb.)", "Gli attentati di Madrid uccidono 191 persone (11 mar.)"],
+      "2": ["Lo scandalo degli abusi nella prigione di Abu Ghraib scoppia (apr.)", "I Giochi Olimpici di Atene aprono (13 ago.)"],
+      "3": ["George W. Bush viene rieletto presidente (2 nov.)", "Lo tsunami dell'Oceano Indiano uccide 227.898 persone (26 dic.)"]
+    },
+    "tech": "Facebook viene fondato e lanciato come 'TheFacebook' ad Harvard"
+  },
+  "2005": {
+    "periods": {
+      "1": ["YouTube viene fondato da tre ex dipendenti di PayPal (14 feb.)", "Papa Giovanni Paolo II muore; Benedetto XVI viene eletto (apr.)"],
+      "2": ["L'uragano Katrina devasta New Orleans (29 ago.)", "Gli attentati nella metropolitana di Londra uccidono 52 persone (7 lug.)"],
+      "3": ["Harriet Miers viene nominata e poi ritira la sua candidatura alla Corte Suprema (ott.)", "Angela Merkel diventa la prima donna cancelliera della Germania (nov.)"]
+    },
+    "tech": "YouTube viene fondato, cambiando fondamentalmente come i video vengono condivisi"
+  },
+  "2006": {
+    "periods": {
+      "1": ["Twitter viene lanciato e Jack Dorsey invia il primo tweet (21 mar.)", "Hamas vince le elezioni legislative palestinesi (25 gen.)"],
+      "2": ["La guerra Israele-Libano scoppia dopo il rapimento di soldati da parte di Hezbollah (lug.)", "La Corea del Nord testa missili balistici (5 lug.)"],
+      "3": ["La Corea del Nord effettua il suo primo test nucleare (9 ott.)", "Saddam Hussein viene condannato a morte (5 nov.)"]
+    },
+    "tech": "Twitter viene lanciato e Jack Dorsey invia il primo tweet"
+  },
+  "2007": {
+    "periods": {
+      "1": ["Apple presenta l'iPhone originale alla Macworld (9 gen.)", "La sparatoria alla Virginia Tech uccide 32 persone (16 apr.)"],
+      "2": ["L'iPhone viene messo in vendita per la prima volta (29 giu.)", "Barry Bonds batte il record di home run in carriera di Hank Aaron (ago.)"],
+      "3": ["Il crollo del mercato immobiliare americano scatena una crisi globale del credito (set.)", "Benazir Bhutto torna in Pakistan; un attentato fallisce"]
+    },
+    "tech": "Apple lancia il primo iPhone, ridefinendo l'industria degli smartphone"
+  },
+  "2008": {
+    "periods": {
+      "1": ["Bear Stearns crolla; la Fed organizza l'acquisto da parte di JPMorgan (mar.)", "Le proteste in Tibet scoppiano prima dei Giochi Olimpici di Pechino (mar.)"],
+      "2": ["I Giochi Olimpici di Pechino aprono con uno spettacolo da record (8 ago.)", "La Russia invade la Georgia in una guerra di cinque giorni (8 ago.)"],
+      "3": ["Lehman Brothers crolla, scatenando la crisi finanziaria (15 set.)", "Barack Obama viene eletto primo presidente nero americano (4 nov.)"]
+    },
+    "tech": "Google lancia il sistema operativo Android e il primo telefono Android"
+  },
+  "2009": {
+    "periods": {
+      "1": ["Barack Obama si insedia come 44° presidente americano (20 gen.)", "Il volo US Airways 1549 atterra sul fiume Hudson (15 gen.)"],
+      "2": ["La pandemia di influenza H1N1 viene dichiarata dall'OMS (11 giu.)", "Michael Jackson muore improvvisamente a Los Angeles (25 giu.)"],
+      "3": ["Obama riceve il Premio Nobel per la Pace (9 ott.)", "La sparatoria a Fort Hood uccide 13 soldati americani (5 nov.)"]
+    },
+    "tech": "Bitcoin viene lanciato dallo pseudonimo Satoshi Nakamoto"
+  },
+  "2010": {
+    "periods": {
+      "1": ["Il terremoto di Haiti uccide più di 230.000 persone (12 gen.)", "Apple lancia il primo iPad (3 apr.)"],
+      "2": ["La perdita di petrolio Deepwater Horizon della BP inizia (20 apr.)", "La Coppa del Mondo apre in Sudafrica — prima sul suolo africano (giu.)"],
+      "3": ["I minatori cileni vengono salvati dopo 69 giorni sottoterra (13 ott.)", "Le elezioni di medio termine americane portano grandi guadagni ai Repubblicani (nov.)"]
+    },
+    "tech": "Apple lancia il primo iPad, inaugurando l'era moderna dei tablet"
+  },
+  "2011": {
+    "periods": {
+      "1": ["Primavera Araba: i governi tunisino ed egiziano cadono (gen.–feb.)", "Il terremoto e tsunami in Giappone uccidono 15.897 persone (11 mar.)"],
+      "2": ["Osama bin Laden viene ucciso dai Navy SEALs americani (2 mag.)", "Casey Anthony viene assolta dall'accusa di omicidio di sua figlia (5 lug.)"],
+      "3": ["Muammar Gheddafi viene ucciso durante la rivoluzione libica (20 ott.)", "Steve Jobs muore a 56 anni dopo anni di malattia (5 ott.)"]
+    },
+    "tech": "Apple rivela Siri, il primo assistente vocale con IA per il grande pubblico"
+  },
+  "2012": {
+    "periods": {
+      "1": ["Trayvon Martin viene sparato da George Zimmerman (26 feb.)", "La Corea del Nord lancia un razzo a lungo raggio in aprile"],
+      "2": ["I Giochi Olimpici di Londra aprono (27 lug.)", "Il bosone di Higgs viene confermato al CERN (4 lug.)"],
+      "3": ["Obama viene rieletto presidente americano (6 nov.)", "La sparatoria alla Sandy Hook uccide 20 bambini (14 dic.)"]
+    },
+    "tech": "SpaceX diventa la prima azienda privata ad attraccare alla Stazione Spaziale"
+  },
+  "2013": {
+    "periods": {
+      "1": ["Obama viene inaugurato per un secondo mandato (21 gen.)", "L'attentato alla Maratona di Boston ferisce centinaia di persone (15 apr.)"],
+      "2": ["Edward Snowden rivela la sorveglianza globale della NSA (giu.)", "George Zimmerman viene assolto nel caso Trayvon Martin (lug.)"],
+      "3": ["Il governo americano chiude per 16 giorni (1–16 ott.)", "Il tifone Haiyan nelle Filippine uccide 6.300 persone (8 nov.)"]
+    },
+    "tech": "Le rivelazioni di Snowden rivelano la vasta portata della sorveglianza della NSA"
+  },
+  "2014": {
+    "periods": {
+      "1": ["La Russia annette la Crimea dall'Ucraina (18 mar.)", "Il volo MH370 della Malaysia Airlines scompare con 239 persone a bordo (8 mar.)"],
+      "2": ["Lo Stato Islamico dichiara un califfato in Iraq e Siria (29 giu.)", "La Coppa del Mondo apre in Brasile tra proteste (12 giu.)"],
+      "3": ["L'epidemia di Ebola si diffonde rapidamente nell'Africa Occidentale (set.)", "Il movimento degli ombrelli per la democrazia a Hong Kong inizia (set.)"]
+    },
+    "tech": "Amazon lancia l'Echo, presentando Alexa come prima smart speaker per la casa"
+  },
+  "2015": {
+    "periods": {
+      "1": ["L'attentato a Charlie Hebdo uccide 12 persone a Parigi (7 gen.)", "L'Arabia Saudita e i suoi alleati iniziano a bombardare lo Yemen (26 mar.)"],
+      "2": ["Il matrimonio omosessuale viene legalizzato in tutti gli USA (26 giu.)", "La crisi del debito greco raggiunge un punto critico (lug.)"],
+      "3": ["Gli attentati di Parigi uccidono 130 persone al Bataclan e nei ristoranti (13 nov.)", "La crisi dei rifugiati siriani raggiunge il picco con più di un milione di arrivi nell'UE"]
+    },
+    "tech": "L'Apple Watch viene lanciato, rendendo popolare il moderno smartwatch"
+  },
+  "2016": {
+    "periods": {
+      "1": ["Il virus Zika viene dichiarato emergenza sanitaria globale dall'OMS (1° feb.)", "David Bowie e Prince muoiono entrambi a pochi mesi di distanza"],
+      "2": ["Brexit: il Regno Unito vota per uscire dall'Unione Europea (23 giu.)", "I Giochi Olimpici di Rio aprono in Brasile (5 ago.)"],
+      "3": ["Donald Trump viene eletto 45° presidente americano (8 nov.)", "Aleppo cade alle forze governative siriane (dic.)"]
+    },
+    "tech": "Pokémon Go viene lanciato e diventa una sensazione mondiale di realtà aumentata"
+  },
+  "2017": {
+    "periods": {
+      "1": ["Trump si insedia; la Marcia delle Donne riunisce milioni (gen.)", "L'attacco chimico siriano a Khan Shaykhun (4 apr.)"],
+      "2": ["Gli attentati al London Bridge e alla Manchester Arena (mag.–giu.)", "Vertice del G20; Trump e Putin si incontrano per la prima volta (lug.)"],
+      "3": ["La sparatoria di Las Vegas uccide 60 persone — la peggiore della storia americana (1° ott.)", "Il movimento #MeToo diventa virale dopo le accuse contro Weinstein (ott.)"]
+    },
+    "tech": "Il prezzo del Bitcoin supera per la prima volta i 10.000 dollari"
+  },
+  "2018": {
+    "periods": {
+      "1": ["La sparatoria di Parkland uccide 17 persone; la March For Our Lives (feb.–mar.)", "Lo scandalo Cambridge Analytica espone l'abuso di dati di Facebook (mar.)"],
+      "2": ["I leader della Corea del Nord e del Sud si incontrano in un storico vertice (27 apr.)", "La Coppa del Mondo apre in Russia (14 giu.)"],
+      "3": ["Jamal Khashoggi viene assassinato nel consolato saudita (2 ott.)", "Le elezioni di medio termine americane: i Democratici riprendono la Camera (nov.)"]
+    },
+    "tech": "Il GDPR entra in vigore in Europa, trasformando gli standard globali di privacy dei dati"
+  },
+  "2019": {
+    "periods": {
+      "1": ["La cattedrale di Notre-Dame de Paris viene gravemente danneggiata da un incendio (15 apr.)", "Gli attentati alle moschee in Nuova Zelanda uccidono 51 persone (15 mar.)"],
+      "2": ["Le proteste a Hong Kong riuniscono milioni contro Pechino (giu.–ago.)", "Jeffrey Epstein viene arrestato per traffico sessuale (6 lug.)"],
+      "3": ["Il Parlamento britannico viene sospeso durante la crisi della Brexit (set.)", "Un'indagine di impeachment contro Trump viene avviata dalla Camera (24 set.)"]
+    },
+    "tech": "Le reti 5G vengono lanciate commercialmente in diversi paesi"
+  },
+  "2020": {
+    "periods": {
+      "1": ["La pandemia di COVID-19 viene dichiarata dall'OMS (11 mar.)", "Kobe Bryant muore in un incidente di elicottero (26 gen.)"],
+      "2": ["George Floyd viene assassinato; le proteste Black Lives Matter scuotono gli USA (mag.–giu.)", "SpaceX lancia la sua prima missione con equipaggio dal suolo americano dal 2011"],
+      "3": ["Biden viene eletto 46° presidente americano (3 nov.)", "I vaccini contro il COVID-19 vengono approvati; prime dosi somministrate (dic.)"]
+    },
+    "tech": "I vaccini COVID-19 a mRNA vengono sviluppati e approvati in tempi record"
+  },
+  "2021": {
+    "periods": {
+      "1": ["L'insurrezione del Campidoglio del 6 gennaio: sostenitori di Trump invadono il Congresso (6 gen.)", "Biden si insedia; Harris diventa la prima vicepresidente donna (20 gen.)"],
+      "2": ["I Giochi Olimpici di Tokyo si svolgono senza spettatori (23 lug.)", "Il conflitto Israele-Gaza lascia 250 morti in 11 giorni (mag.)"],
+      "3": ["Gli USA si ritirano dall'Afghanistan; i Talebani riprendono Kabul (15 ago.)", "Facebook, Instagram e WhatsApp subiscono un'interruzione globale (4 ott.)"]
+    },
+    "tech": "Gli NFT esplodono in popolarità con la vendita dell'opera di Beeple per 69 milioni di dollari"
+  },
+  "2022": {
+    "periods": {
+      "1": ["La Russia lancia un'invasione su vasta scala dell'Ucraina (24 feb.)", "La sparatoria alla Robb Elementary School uccide 19 bambini (24 mag.)"],
+      "2": ["Roe v. Wade viene annullata dalla Corte Suprema americana (24 giu.)", "La NATO si espande con le candidature di Finlandia e Svezia (mag.)"],
+      "3": ["La regina Elisabetta II muore dopo 70 anni di regno (8 set.)", "Elon Musk finalizza l'acquisto di Twitter (27 ott.)"]
+    },
+    "tech": "ChatGPT viene lanciato da OpenAI, scatenando una rivoluzione globale dell'IA"
+  },
+  "2023": {
+    "periods": {
+      "1": ["ChatGPT raggiunge 100 milioni di utenti — l'app più veloce della storia (gen.)", "Il terremoto in Turchia e Siria uccide 50.000 persone (6 feb.)"],
+      "2": ["La rivolta del gruppo Wagner marcia brevemente verso Mosca (23 giu.)", "Il sottomarino Titan implode vicino ai resti del Titanic (18 giu.)"],
+      "3": ["Hamas attacca Israele; la guerra a Gaza inizia (7 ott.)", "Sam Altman viene brevemente licenziato e poi reintegrato alla guida di OpenAI (nov.)"]
+    },
+    "tech": "L'IA generativa diventa mainstream con ChatGPT che supera i 100 milioni di utenti"
+  },
+  "2024": {
+    "periods": {
+      "1": ["Il governo haitiano crolla di fronte alla violenza delle bande (mar.)", "Un'eclissi solare totale attraversa il Nord America (8 apr.)"],
+      "2": ["I Giochi Olimpici di Parigi aprono (26 lug.)", "Biden si ritira dalla corsa presidenziale (21 lug.)"],
+      "3": ["Donald Trump viene rieletto 47° presidente americano (5 nov.)", "La COP29 sul clima si tiene a Baku, Azerbaigian (nov.)"]
+    },
+    "tech": "L'Apple Vision Pro viene lanciato, introducendo la spatial computing per i consumatori"
+  },
+  "2025": {
+    "periods": {
+      "1": ["Trump si insedia per il suo secondo mandato (20 gen.)", "Gli incendi di Los Angeles distruggono migliaia di case (gen.)"],
+      "2": ["Papa Francesco muore; viene eletto un nuovo papa (apr.)", "Gli USA impongono tariffe ampie ai loro partner commerciali (apr.)"],
+      "3": ["Gli agenti di IA iniziano ad automatizzare compiti complessi in molti settori", "I robot umanoidi iniziano la loro distribuzione commerciale nelle fabbriche"]
+    },
+    "tech": "I robot umanoidi iniziano la loro distribuzione commerciale nelle fabbriche mondiali"
+  }
+}

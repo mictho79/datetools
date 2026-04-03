@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calcolatore di Date – Aggiungere o Sottrarre Giorni | DateCalc.app</title>
+<meta name="robots" content="index, follow">
+<meta name="description" content="Aggiungi o sottrai giorni, settimane, mesi o anni a qualsiasi data. Scopri quale sarà la data tra X giorni. Calcolatore di date gratuito.">
+<link rel="canonical" href="https://datecalc.app/it/calcolatore-data/">
+<link rel="alternate" hreflang="en" href="https://datecalc.app/date-calculator/">
+<link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/calculateur-date/">
+<link rel="alternate" hreflang="es" href="https://datecalc.app/es/calculadora-fechas/">
+<link rel="alternate" hreflang="pt" href="https://datecalc.app/pt/calculadora-de-data/">
+<link rel="alternate" hreflang="de" href="https://datecalc.app/de/datumsrechner/">
+<link rel="alternate" hreflang="it" href="https://datecalc.app/it/calcolatore-data/">
+<link rel="alternate" hreflang="pl" href="https://datecalc.app/pl/kalkulator-daty/">
+<link rel="alternate" hreflang="x-default" href="https://datecalc.app/date-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Calcolatore di Date – Aggiungere o Sottrarre Giorni | DateCalc.app">
+<meta property="og:description" content="Aggiungi o sottrai giorni, settimane, mesi o anni a qualsiasi data. Scopri quale sarà la data tra X giorni. Calcolatore di date gratuito.">
+<meta property="og:url" content="https://datecalc.app/it/calcolatore-data/">
+<meta property="og:site_name" content="DateCalc.app">
+<meta property="og:image" content="https://datecalc.app/og.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Calcolatore di Date – Aggiungere o Sottrarre Giorni | DateCalc.app">
+<meta name="twitter:description" content="Aggiungi o sottrai giorni, settimane, mesi o anni a qualsiasi data. Scopri quale sarà la data tra X giorni. Calcolatore di date gratuito.">
+<meta name="twitter:image" content="https://datecalc.app/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Space+Mono:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="shortcut icon" href="/favicon.svg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Quale data è tra 30 giorni?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Inserisci la data di oggi come inizio, scegli \"Aggiungere\" e \"30 giorni\", poi clicca su Calcola. Il risultato sarà la data esatta tra 30 giorni. Per esempio, 30 giorni dopo il 15 marzo è il 14 aprile."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quale data è tra 90 giorni?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Usa lo stesso metodo con 90 giorni. Questo è un calcolo aziendale comune — molti contratti e garanzie hanno termini di 90 giorni. Poiché i mesi variano in lunghezza, 90 giorni non equivalgono esattamente a 3 mesi."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Come aggiungo 30 giorni a una data specifica?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Inserisci la tua data target come data di inizio, seleziona \"Aggiungere\" e inserisci 30 nel campo importo con \"giorni\" come unità, poi clicca su Calcola. La data risultante esatta viene mostrata immediatamente insieme al giorno della settimana e al numero della settimana."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Come sottraggo mesi da una data?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Seleziona \"Sottrarre\" dal menu a discesa dell'operazione, inserisci il numero di mesi e scegli \"mesi\" come unità. Il calcolatore gestisce i casi limite come sottrarre 1 mese dal 31 marzo, che restituisce correttamente il 28 febbraio (o 29 in un anno bisestile)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Come calcolo una scadenza di progetto?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Inserisci la data di inizio del progetto, seleziona \"Aggiungere\", inserisci la durata del progetto e scegli l'unità appropriata. Il risultato mostra la data di scadenza insieme al giorno della settimana."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quale data è tra 100 giorni?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "100 giorni dal 1° gennaio cade sull'11 aprile in un anno normale."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quale data è tra 6 mesi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Inserisci oggi come inizio, scegli \"Aggiungere\" e \"6 mesi\". Il risultato gestisce correttamente i casi limite come aggiungere 6 mesi al 31 agosto."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Gli anni bisestili vengono considerati?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sì. Il calcolatore tiene conto automaticamente degli anni bisestili nel calcolo delle date."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Calcolatore di Date",
+  "description": "Aggiungi o sottrai giorni, settimane, mesi o anni a qualsiasi data. Scopri quale sarà la data tra X giorni. Calcolatore di date gratuito.",
+  "url": "https://datecalc.app/it/calcolatore-data/",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Web",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"DateCalc.app","url":"https://datecalc.app","logo":"https://datecalc.app/og.png","contactPoint":{"@type":"ContactPoint","email":"hello@datecalc.app","contactType":"customer support"}}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<noscript><div style="background:#c8392b;color:#fff;text-align:center;padding:.6rem;font-family:sans-serif;font-size:.9rem">This calculator requires JavaScript. Please enable it in your browser.</div></noscript>
+
+<header>
+<div class="masthead">
+  <a href="/it/" class="masthead-brand">DateCalc<span>.</span>app</a>
+  <div class="masthead-meta" id="todayMeta"></div>
+</div>
+</header>
+
+<div class="lang-strip">
+  <a href="/date-calculator/" class="lang-btn">EN</a>
+  <a href="/fr/calculateur-date/" class="lang-btn">FR</a>
+  <a href="/es/calculadora-fechas/" class="lang-btn">ES</a>
+  <a href="/pt/calculadora-de-data/" class="lang-btn">PT</a>
+  <a href="/de/datumsrechner/" class="lang-btn">DE</a>
+  <a href="/it/calcolatore-data/" class="lang-btn active">IT</a>
+  <a href="/pl/kalkulator-daty/" class="lang-btn">PL</a>
+</div>
+
+<div class="page">
+
+  <div class="headline-block">
+    <div class="kicker">Calcolatore di Date</div>
+    <h1 class="headline">Quale <em>data</em> <br>sarà?</h1>
+    <p class="subhead">Aggiungi o sottrai giorni, settimane, mesi o anni a partire da qualsiasi data di inizio.</p>
+  </div>
+
+  <div class="form-grid">
+    <div class="form-col">
+      <div class="field-label">Data di inizio</div>
+      <div class="date-row">
+        <input type="number" id="day" placeholder="DD" min="1" max="31" inputmode="numeric" oninput="clamp(this,1,31)">
+        <span>/</span>
+        <input type="number" id="month" placeholder="MM" min="1" max="12" inputmode="numeric" oninput="clamp(this,1,12)">
+        <span>/</span>
+        <input type="number" id="year" placeholder="YYYY" min="1900" max="2100" inputmode="numeric" oninput="clamp(this,1900,2100)">
+      </div>
+      <div class="field-label" style="margin-top:1.5rem">Operazione</div>
+      <div class="op-row">
+        <select id="opSign">
+          <option value="add">+ Aggiungere</option>
+          <option value="sub">− Sottrarre</option>
+        </select>
+        <input type="number" id="opAmount" placeholder="0" min="0" max="9999" inputmode="numeric" style="width:4ch" oninput="clamp(this,0,9999)">
+        <select id="opUnit">
+          <option value="days">giorni</option>
+          <option value="weeks">settimane</option>
+          <option value="months">mesi</option>
+          <option value="years">anni</option>
+        </select>
+      </div>
+      <div class="error-line" id="errorLine"></div>
+      <button class="calc-btn" onclick="calculate()">→ CALCOLA</button>
+    </div>
+    <div class="form-col">
+      <p class="tip-text">"Il tempo scorre in una direzione, ma la curiosità ci permette di guardare avanti e indietro."</p>
+      <ul class="example-list">
+        <li onclick="fillExample(0)">Oggi + 100 giorni →</li>
+        <li onclick="fillExample(1)">Oggi − 90 giorni →</li>
+        <li onclick="fillExample(2)">Oggi + 1 anno →</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="results-section" id="results" aria-live="polite">
+    <div class="results-header">Data risultante</div>
+    <div class="result-date" id="resultDate">—</div>
+    <div class="result-date-sub" id="resultSub"></div>
+    <div class="facts-row">
+      <div class="fact-item"><div class="fact-key">Giorno della settimana</div><div class="fact-val" id="ffWeekday">—</div></div>
+      <div class="fact-item"><div class="fact-key">Giorno dell'anno</div><div class="fact-val" id="ffDoy">—</div></div>
+      <div class="fact-item"><div class="fact-key">Numero settimana</div><div class="fact-val" id="ffWeek">—</div></div>
+      <div class="fact-item"><div class="fact-key">Anno bisestile</div><div class="fact-val" id="ffLeap">—</div></div>
+    </div>
+  </div>
+
+  <nav aria-label="Tools">
+  <div class="tool-nav">
+    <div class="nav-group"><span class="nav-cat">Età</span><div class="nav-links"><a href="/it/calcolo-eta/">Calcolo Età</a><span class="nav-sep">·</span><a href="/it/eta-cronologica/">Età Cronologica</a><span class="nav-sep">·</span><a href="/it/calcolatore-eta-neonato/">Età Neonato</a><span class="nav-sep">·</span><a href="/it/calcolatore-eta-cane/">Età del Cane</a><span class="nav-sep">·</span><a href="/it/calcolatore-eta-gatto/">Età del Gatto</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Date</span><div class="nav-links"><a href="/it/giorni-tra-date/">Giorni Tra Date</a><span class="nav-sep">·</span><a href="/it/calcolatore-data/" aria-current="page">Calcolatore Data</a><span class="nav-sep">·</span><a href="/it/che-giorno-e-oggi/">Che Giorno È Oggi</a><span class="nav-sep">·</span><a href="/it/numero-settimana/">Numero Settimana</a><span class="nav-sep">·</span><a href="/it/calcolatore-giorni-lavorativi/">Giorni Lavorativi</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Countdown</span><div class="nav-links"><a href="/it/giorni-a-natale/">Natale</a><span class="nav-sep">·</span><a href="/it/giorni-a-capodanno/">Capodanno</a><span class="nav-sep">·</span><a href="/it/giorni-a-halloween/">Halloween</a><span class="nav-sep">·</span><a href="/it/giorni-a-pasqua/">Pasqua</a><span class="nav-sep">·</span><a href="/it/conto-alla-rovescia/">Conto alla Rovescia</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Mondo</span><div class="nav-links"><a href="/it/convertitore-fuso-orario/">Fuso Orario</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Nato nel</span><div class="nav-links"><a href="/it/nato-nel-1990/">Nato nel 1990</a><span class="nav-sep">·</span><a href="/it/nato-nel-1980/">Nato nel 1980</a><span class="nav-sep">·</span><a href="/it/nato-nel-2000/">Nato nel 2000</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Retrospettiva</span><div class="nav-links"><a href="/it/cosa-e-successo-nel-2000/">Cosa è successo nel 2000</a><span class="nav-sep">·</span><a href="/it/cosa-e-successo-nel-1990/">Cosa è successo nel 1990</a><span class="nav-sep">·</span><a href="/it/cosa-e-successo-nel-1980/">Cosa è successo nel 1980</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Calendari</span><div class="nav-links"><a href="/it/numero-settimana/2025/">Settimane 2025</a><span class="nav-sep">·</span><a href="/it/numero-settimana/2026/">Settimane 2026</a><span class="nav-sep">·</span><a href="/it/numero-settimana/2027/">Settimane 2027</a></div></div>
+  </div>
+  </nav>
+
+<main id="main-content">
+  <div class="seo-block">
+    <div><h2>Come aggiungere giorni a una data</h2><p>Aggiungere giorni a una data sembra semplice — conta in avanti dall'inizio — ma i confini dei mesi lo complicano. Se aggiungi 30 giorni al 15 gennaio, arrivi al 14 febbraio in un anno normale. Aggiungi 30 giorni al 31 gennaio e arrivi al 2 marzo (o al 1° marzo in un anno bisestile). Questo calcolatore gestisce automaticamente tutti questi casi limite, incluse le variazioni nella lunghezza dei mesi, i cambi di anno e il giorno extra di febbraio negli anni bisestili. Supporta giorni, settimane, mesi e anni come unità.</p></div>
+    <div><h2>Usi pratici dell'aritmetica delle date</h2><p>L'aritmetica delle date viene usata costantemente nella vita professionale e personale. Le aziende calcolano date di scadenza dei pagamenti (termini netto-30, netto-60), date di rinnovo degli abbonamenti, date di fine periodi di prova e scadenze di garanzia. I professionisti sanitari tracciano i calendari dei farmaci, le tappe prenatali e le finestre degli appuntamenti di follow-up. I team legali calcolano le scadenze di legge. I project manager trovano le date delle milestone aggiungendo le durate degli sprint alle date di inizio. Questo calcolatore fa la matematica per te.</p></div>
+  </div>
+  <div class="faq-block">
+    <h2>Domande frequenti</h2>
+    <div class="faq-item"><h3>Quale data è tra 30 giorni?</h3><p>Inserisci la data di oggi come inizio, scegli "Aggiungere" e "30 giorni", poi clicca su Calcola. Il risultato sarà la data esatta tra 30 giorni. Per esempio, 30 giorni dopo il 15 marzo è il 14 aprile.</p></div>
+    <div class="faq-item"><h3>Quale data è tra 90 giorni?</h3><p>Usa lo stesso metodo con 90 giorni. Questo è un calcolo aziendale comune — molti contratti e garanzie hanno termini di 90 giorni. Poiché i mesi variano in lunghezza, 90 giorni non equivalgono esattamente a 3 mesi.</p></div>
+    <div class="faq-item"><h3>Come aggiungo 30 giorni a una data specifica?</h3><p>Inserisci la tua data target come data di inizio, seleziona "Aggiungere" e inserisci 30 nel campo importo con "giorni" come unità, poi clicca su Calcola. La data risultante esatta viene mostrata immediatamente insieme al giorno della settimana e al numero della settimana.</p></div>
+    <div class="faq-item"><h3>Come sottraggo mesi da una data?</h3><p>Seleziona "Sottrarre" dal menu a discesa dell'operazione, inserisci il numero di mesi e scegli "mesi" come unità. Il calcolatore gestisce i casi limite come sottrarre 1 mese dal 31 marzo, che restituisce correttamente il 28 febbraio (o 29 in un anno bisestile).</p></div>
+    <div class="faq-item"><h3>Come calcolo una scadenza di progetto?</h3><p>Inserisci la data di inizio del progetto, seleziona "Aggiungere", inserisci la durata del progetto e scegli l'unità appropriata. Il risultato mostra la data di scadenza insieme al giorno della settimana.</p></div>
+    <div class="faq-item"><h3>Quale data è tra 100 giorni?</h3><p>100 giorni dal 1° gennaio cade sull'11 aprile in un anno normale.</p></div>
+    <div class="faq-item"><h3>Quale data è tra 6 mesi?</h3><p>Inserisci oggi come inizio, scegli "Aggiungere" e "6 mesi". Il risultato gestisce correttamente i casi limite come aggiungere 6 mesi al 31 agosto.</p></div>
+    <div class="faq-item"><h3>Gli anni bisestili vengono considerati?</h3><p>Sì. Il calcolatore tiene conto automaticamente degli anni bisestili nel calcolo delle date.</p></div>
+  </div>
+
+  <div class="source-block">
+    <span class="source-lbl">Source</span>
+    <a href="https://www.iso.org/iso-8601-date-and-time-format.html" target="_blank" rel="noopener noreferrer">ISO 8601 – Formato di data e ora</a>
+  </div>
+</main>
+  <footer>
+  <nav class="footer-nav" aria-label="Site links">
+<div class="footer-col"><strong>Età</strong>
+<a href="/it/calcolo-eta/">Calcolo Età</a>
+<a href="/it/eta-cronologica/">Età Cronologica</a>
+<a href="/it/calcolatore-eta-neonato/">Età Neonato</a>
+<a href="/it/calcolatore-eta-cane/">Età del Cane</a>
+<a href="/it/calcolatore-eta-gatto/">Età del Gatto</a></div>
+<div class="footer-col"><strong>Date</strong>
+<a href="/it/giorni-tra-date/">Giorni Tra Date</a>
+<a href="/it/calcolatore-data/">Calcolatore Data</a>
+<a href="/it/che-giorno-e-oggi/">Che Giorno È Oggi</a>
+<a href="/it/numero-settimana/">Numero Settimana</a>
+<a href="/it/calcolatore-giorni-lavorativi/">Giorni Lavorativi</a></div>
+<div class="footer-col"><strong>Countdown</strong>
+<a href="/it/giorni-a-natale/">Natale</a>
+<a href="/it/giorni-a-capodanno/">Capodanno</a>
+<a href="/it/giorni-a-halloween/">Halloween</a>
+<a href="/it/giorni-a-pasqua/">Pasqua</a>
+<a href="/it/conto-alla-rovescia/">Conto alla Rovescia</a></div>
+<div class="footer-col"><strong>Mondo</strong>
+<a href="/it/convertitore-fuso-orario/">Fuso Orario</a></div>
+<div class="footer-col"><strong>Nato nel</strong>
+<a href="/it/nato-nel-1990/">Nato nel 1990</a>
+<a href="/it/nato-nel-1980/">Nato nel 1980</a>
+<a href="/it/nato-nel-2000/">Nato nel 2000</a></div>
+<div class="footer-col"><strong>Retrospettiva</strong>
+<a href="/it/cosa-e-successo-nel-2000/">Cosa è successo nel 2000</a>
+<a href="/it/cosa-e-successo-nel-1990/">Cosa è successo nel 1990</a>
+<a href="/it/cosa-e-successo-nel-1980/">Cosa è successo nel 1980</a></div>
+<div class="footer-col"><strong>Calendari</strong>
+<a href="/it/numero-settimana/2025/">Settimane 2025</a>
+<a href="/it/numero-settimana/2026/">Settimane 2026</a>
+<a href="/it/numero-settimana/2027/">Settimane 2027</a></div>
+  </nav>
+  <div class="footer-copy">© 2026 DateCalc.app — Calcolatori di data e ora gratuiti online · <a href="/it/privacy/">Privacy</a></div>
+</footer>
+</div>
+
+<script>
+(function(){
+  var now = new Date();
+  var opts = {weekday:'long',year:'numeric',month:'long',day:'numeric'};
+  document.getElementById('todayMeta').innerHTML =
+    now.toLocaleDateString('it-IT', opts) + '<br>Calcolatore di date gratuito';
+})();
+// Shared input guard: strip non-digits, truncate to max digit length, clamp to hi
+function clamp(el, lo, hi) {
+  var maxLen = String(hi).length;
+  var s = el.value.replace(/\D/g, '').slice(0, maxLen);
+  var n = parseInt(s, 10);
+  if (!isNaN(n) && n > hi) s = String(hi);
+  el.value = s;
+}
+// Auto-scroll to results when they become visible
+(function(){
+  var r=document.getElementById('results');
+  if(!r||r.classList.contains('auto-show'))return;
+  var obs=new MutationObserver(function(){
+    if(r.classList.contains('show')){
+      r.scrollIntoView({behavior:'smooth',block:'start'});
+      obs.disconnect();
+    }
+  });
+  obs.observe(r,{attributes:true,attributeFilter:['class']});
+})();
+// Enter key submits calculator
+(function(){
+  var fg=document.querySelector('.form-grid');
+  if(!fg)return;
+  fg.addEventListener('keydown',function(e){
+    if(e.key==='Enter'&&typeof calculate==='function')calculate();
+  });
+})();
+// AdSense: load only with consent
+(function(){
+  var ADS_SRC='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4020973443671350';
+  function loadAds(){
+    var s=document.createElement('script');
+    s.src=ADS_SRC;s.async=true;s.crossOrigin='anonymous';
+    document.head.appendChild(s);
+  }
+  if(localStorage.getItem('ads-ok')==='1')return loadAds();
+  if(localStorage.getItem('ads-ok')==='0')return;
+  var b=document.getElementById('consent-banner');
+  if(b)b.style.display='flex';
+  document.getElementById('consent-accept')&&document.getElementById('consent-accept').addEventListener('click',function(){
+    localStorage.setItem('ads-ok','1');b.style.display='none';loadAds();
+  });
+  document.getElementById('consent-decline')&&document.getElementById('consent-decline').addEventListener('click',function(){
+    localStorage.setItem('ads-ok','0');b.style.display='none';
+  });
+})();
+</script>
+<script>
+
+var D = {"errInvalid":"→ Data non valida. Controlla il tuo input.","errAmount":"→ Inserisci un importo valido.","weekDays":["Domenica","Lunedì","Martedì","Mercoledì","Giovedì","Venerdì","Sabato"],"months":["Gennaio","Febbraio","Marzo","Aprile","Maggio","Giugno","Luglio","Agosto","Settembre","Ottobre","Novembre","Dicembre"],"yes":"Sì","no":"No"};
+function fmt(n){return n.toLocaleString();}
+
+function getWeekNum(d){
+  var date=new Date(Date.UTC(d.getFullYear(),d.getMonth(),d.getDate()));
+  var day=date.getUTCDay()||7;
+  date.setUTCDate(date.getUTCDate()+4-day);
+  var yearStart=new Date(Date.UTC(date.getUTCFullYear(),0,1));
+  return Math.ceil((((date-yearStart)/86400000)+1)/7);
+}
+
+function getDoy(d){
+  var start=new Date(d.getFullYear(),0,0);
+  return Math.floor((d-start)/86400000);
+}
+
+function isLeap(y){ return (y%4===0&&y%100!==0)||y%400===0; }
+
+function addToDate(date, amount, unit){
+  var r=new Date(date);
+  if(unit==='days') r.setDate(r.getDate()+amount);
+  else if(unit==='weeks') r.setDate(r.getDate()+amount*7);
+  else if(unit==='months'){
+    var m=r.getMonth()+amount;
+    var y=r.getFullYear()+Math.floor(m/12);
+    m=((m%12)+12)%12;
+    var lastDay=new Date(y,m+1,0).getDate();
+    r.setFullYear(y,m,Math.min(r.getDate(),lastDay));
+  } else {
+    r.setFullYear(r.getFullYear()+amount);
+  }
+  return r;
+}
+
+function fillExample(idx){
+  var now=new Date();
+  document.getElementById('day').value=now.getDate();
+  document.getElementById('month').value=now.getMonth()+1;
+  document.getElementById('year').value=now.getFullYear();
+  if(idx===0){ document.getElementById('opSign').value='add'; document.getElementById('opAmount').value=100; document.getElementById('opUnit').value='days'; }
+  else if(idx===1){ document.getElementById('opSign').value='sub'; document.getElementById('opAmount').value=90; document.getElementById('opUnit').value='days'; }
+  else { document.getElementById('opSign').value='add'; document.getElementById('opAmount').value=1; document.getElementById('opUnit').value='years'; }
+  calculate();
+}
+
+function calculate(){
+  var d=parseInt(document.getElementById('day').value);
+  var m=parseInt(document.getElementById('month').value);
+  var y=parseInt(document.getElementById('year').value);
+  var amount=parseInt(document.getElementById('opAmount').value);
+  var sign=document.getElementById('opSign').value;
+  var unit=document.getElementById('opUnit').value;
+  var err=document.getElementById('errorLine');
+  var res=document.getElementById('results');
+  err.classList.remove('show'); res.classList.remove('show');
+
+  if(!d||!m||!y||d<1||d>31||m<1||m>12){err.textContent=D.errInvalid; err.classList.add('show'); return;}
+  var start=new Date(y,m-1,d);
+  if(start.getDate()!==d){err.textContent=D.errInvalid; err.classList.add('show'); return;}
+  if(isNaN(amount)||amount<0){err.textContent=D.errAmount; err.classList.add('show'); return;}
+
+  var delta=sign==='add'?amount:-amount;
+  var result=addToDate(start,delta,unit);
+
+  var dateStr=result.getDate()+' '+D.months[result.getMonth()]+' '+result.getFullYear();
+  document.getElementById('resultDate').textContent=dateStr;
+  document.getElementById('resultSub').textContent=(sign==='add'?'+ ':'− ')+amount+' '+unit;
+  document.getElementById('ffWeekday').textContent=D.weekDays[result.getDay()];
+  document.getElementById('ffDoy').textContent=getDoy(result);
+  document.getElementById('ffWeek').textContent=getWeekNum(result);
+  document.getElementById('ffLeap').textContent=isLeap(result.getFullYear())?D.yes:D.no;
+  res.classList.add('show');
+  res.scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+// Pre-fill today
+(function(){
+  var now=new Date();
+  document.getElementById('day').value=now.getDate();
+  document.getElementById('month').value=now.getMonth()+1;
+  document.getElementById('year').value=now.getFullYear();
+})();
+
+document.addEventListener('keydown',function(e){if(e.key==='Enter') calculate();});
+
+</script>
+<div id="consent-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#111111;color:#fff;padding:.9rem 1.4rem;z-index:9999;font-size:.82rem;font-family:sans-serif;align-items:center;gap:.8rem;flex-wrap:wrap">
+  <span style="flex:1;min-width:200px">Utilizziamo Google AdSense per finanziare questo servizio gratuito. Accetti i cookie pubblicitari?</span>
+  <button id="consent-accept" style="background:#c8392b;color:#fff;border:none;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Accetta</button>
+  <button id="consent-decline" style="background:transparent;color:#aaa;border:1px solid #555;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Continua senza</button>
+</div>
+</body>
+</html>

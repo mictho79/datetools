@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calcolatore Età Cane – Anni del Cane in Anni Umani | DateCalc.app</title>
+<meta name="robots" content="index, follow">
+<meta name="description" content="Quanti anni ha il tuo cane in anni umani? Inserisci l'età del tuo cane e la taglia della razza per una conversione accurata.">
+<link rel="canonical" href="https://datecalc.app/it/calcolatore-eta-cane/">
+<link rel="alternate" hreflang="en" href="https://datecalc.app/dog-age-calculator/">
+<link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/calculateur-age-chien/">
+<link rel="alternate" hreflang="es" href="https://datecalc.app/es/calculadora-edad-perro/">
+<link rel="alternate" hreflang="pt" href="https://datecalc.app/pt/calculadora-idade-cachorro/">
+<link rel="alternate" hreflang="de" href="https://datecalc.app/de/hund-alter-rechner/">
+<link rel="alternate" hreflang="it" href="https://datecalc.app/it/calcolatore-eta-cane/">
+<link rel="alternate" hreflang="pl" href="https://datecalc.app/pl/wiek-psa/">
+<link rel="alternate" hreflang="x-default" href="https://datecalc.app/dog-age-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Calcolatore Età Cane – Anni del Cane in Anni Umani | DateCalc.app">
+<meta property="og:description" content="Quanti anni ha il tuo cane in anni umani? Inserisci l'età del tuo cane e la taglia della razza per una conversione accurata.">
+<meta property="og:url" content="https://datecalc.app/it/calcolatore-eta-cane/">
+<meta property="og:site_name" content="DateCalc.app">
+<meta property="og:image" content="https://datecalc.app/og.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Calcolatore Età Cane – Anni del Cane in Anni Umani | DateCalc.app">
+<meta name="twitter:description" content="Quanti anni ha il tuo cane in anni umani? Inserisci l'età del tuo cane e la taglia della razza per una conversione accurata.">
+<meta name="twitter:image" content="https://datecalc.app/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Space+Mono:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="shortcut icon" href="/favicon.svg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Quanti anni ha il mio cane in anni umani?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Usa la formula adattata alla taglia: anno 1 = 15 anni umani, anno 2 aggiunge 9 (totale 24), poi ogni anno aggiuntivo aggiunge 4 anni per le razze piccole, 5 per le medie, 6 per le grandi e 7 per le giganti. Inserisci l'età e la taglia del tuo cane sopra per un risultato immediato."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "La regola \"7 anni cane = 1 anno umano\" è un mito?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sì, è una semplificazione eccessiva. Il rapporto varia enormemente per età: un cane di 1 anno assomiglia più a un umano di 15 anni, non di 7. La regola 1:7 è approssimativamente corretta solo intorno ai 7 anni per i cani di taglia media. Per qualsiasi altra età o taglia, la formula adattata di questo calcolatore è molto più accurata."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quanti anni ha un cane di 7 anni in anni umani?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Un cane di taglia media (10–25 kg) di 7 anni ha circa 49 anni umani. Un cane grande avrebbe 51, uno piccolo 47."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quanti anni ha un cane di 1 anno in anni umani?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Un cane di 1 anno equivale a circa 15 anni umani. A questa età, i cani sono completamente sessualmente maturi e hanno raggiunto circa il 90% della loro taglia adulta."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "A che età un cane è considerato senior?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dipende dalla taglia della razza. Le razze piccole (meno di 10 kg) sono considerate senior intorno ai 10–12 anni. Le razze medie raggiungono lo status senior a 8–10 anni, le grandi a 7–8 anni, e le giganti già a 5–6 anni. I cani senior beneficiano di visite veterinarie più frequenti."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quanto vivono i cani in media?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La durata di vita media dei cani varia da circa 8 anni per le razze giganti come il Danese a 16 o più anni per le razze piccole come i Chihuahua. I cani meticci spesso vivono un po' più a lungo dei purosangue grazie alla diversità genetica."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quanti anni ha un Labrador in anni umani?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "I Labrador sono una razza grande (25–35 kg), quindi invecchiano di circa 6 anni umani per anno cane dopo i 2 anni. Un Labrador di 3 anni ha circa 30 anni umani, uno di 7 anni circa 48, e uno di 10 anni circa 66 anni umani. I Labrador sono considerati senior intorno ai 7–8 anni."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual è il cane più vecchio mai registrato?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Il cane più vecchio mai registrato era Bobi, un Rafeiro do Alentejo del Portogallo, che è vissuto 31 anni e 165 giorni, certificato dal Guinness World Records."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Calcolatore Età Cane",
+  "description": "Quanti anni ha il tuo cane in anni umani? Inserisci l'età del tuo cane e la taglia della razza per una conversione accurata.",
+  "url": "https://datecalc.app/it/calcolatore-eta-cane/",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Web",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"DateCalc.app","url":"https://datecalc.app","logo":"https://datecalc.app/og.png","contactPoint":{"@type":"ContactPoint","email":"hello@datecalc.app","contactType":"customer support"}}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<noscript><div style="background:#c8392b;color:#fff;text-align:center;padding:.6rem;font-family:sans-serif;font-size:.9rem">This calculator requires JavaScript. Please enable it in your browser.</div></noscript>
+
+<header>
+<div class="masthead">
+  <a href="/it/" class="masthead-brand">DateCalc<span>.</span>app</a>
+  <div class="masthead-meta" id="todayMeta"></div>
+</div>
+</header>
+
+<div class="lang-strip">
+  <a href="/dog-age-calculator/" class="lang-btn">EN</a>
+  <a href="/fr/calculateur-age-chien/" class="lang-btn">FR</a>
+  <a href="/es/calculadora-edad-perro/" class="lang-btn">ES</a>
+  <a href="/pt/calculadora-idade-cachorro/" class="lang-btn">PT</a>
+  <a href="/de/hund-alter-rechner/" class="lang-btn">DE</a>
+  <a href="/it/calcolatore-eta-cane/" class="lang-btn active">IT</a>
+  <a href="/pl/wiek-psa/" class="lang-btn">PL</a>
+</div>
+
+<div class="page">
+
+  <div class="headline-block">
+    <div class="kicker">Calcolatore età cane</div>
+    <h1 class="headline">Quanti anni ha <br>il mio <em>cane</em>?</h1>
+    <p class="subhead">Converti l'età del tuo cane in anni umani in base alla taglia della razza.</p>
+  </div>
+
+  <div class="form-grid">
+    <div class="form-col">
+      <div class="field-label">Età del cane (anni)</div>
+      <div class="date-row">
+        <input type="number" id="dogAge" placeholder="0" min="0" max="30" inputmode="numeric" oninput="clamp(this,0,30)" style="width:4ch">
+      </div>
+      <div class="field-label" style="margin-top:1.5rem">Taglia della razza</div>
+      <div class="op-row" style="flex-direction:column;gap:.5rem;align-items:flex-start">
+        <label style="font-size:.85rem;color:var(--muted);cursor:pointer"><input type="radio" name="size" value="small" style="accent-color:var(--accent)"> Piccolo (meno di 10 kg)</label>
+        <label style="font-size:.85rem;color:var(--muted);cursor:pointer"><input type="radio" name="size" value="medium" checked style="accent-color:var(--accent)"> Medio (10–25 kg)</label>
+        <label style="font-size:.85rem;color:var(--muted);cursor:pointer"><input type="radio" name="size" value="large" style="accent-color:var(--accent)"> Grande (25–45 kg)</label>
+        <label style="font-size:.85rem;color:var(--muted);cursor:pointer"><input type="radio" name="size" value="giant" style="accent-color:var(--accent)"> Gigante (oltre 45 kg)</label>
+      </div>
+      <div class="error-line" id="errorLine"></div>
+      <button class="calc-btn" onclick="calculate()">→ CALCOLA</button>
+    </div>
+    <div class="form-col">
+      <p class="tip-text">"I cani non contano gli anni. Contano le coccole."</p>
+      <ul class="example-list">
+        <li onclick="fillExample(3,'medium')">Labrador, 3 anni →</li>
+        <li onclick="fillExample(8,'small')">Chihuahua, 8 anni →</li>
+        <li onclick="fillExample(5,'large')">Pastore tedesco, 5 anni →</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="results-section" id="results" aria-live="polite">
+    <div class="results-header">L'età del tuo cane</div>
+    <div class="age-display">
+      <span class="age-number" id="heroAge">—</span>
+      <span class="age-suffix">anni umani</span>
+    </div>
+    <div class="facts-row">
+      <div class="fact-item"><div class="fact-key">Anni cane</div><div class="fact-val" id="ffDogYears">—</div></div>
+      <div class="fact-item"><div class="fact-key">Fase della vita</div><div class="fact-val" id="ffStage">—</div></div>
+      <div class="fact-item"><div class="fact-key">Taglia</div><div class="fact-val" id="ffSize">—</div></div>
+    </div>
+  </div>
+
+  <nav aria-label="Tools">
+  <div class="tool-nav">
+    <div class="nav-group"><span class="nav-cat">Età</span><div class="nav-links"><a href="/it/calcolo-eta/">Calcolo Età</a><span class="nav-sep">·</span><a href="/it/eta-cronologica/">Età Cronologica</a><span class="nav-sep">·</span><a href="/it/calcolatore-eta-neonato/">Età Neonato</a><span class="nav-sep">·</span><a href="/it/calcolatore-eta-cane/" aria-current="page">Età del Cane</a><span class="nav-sep">·</span><a href="/it/calcolatore-eta-gatto/">Età del Gatto</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Date</span><div class="nav-links"><a href="/it/giorni-tra-date/">Giorni Tra Date</a><span class="nav-sep">·</span><a href="/it/calcolatore-data/">Calcolatore Data</a><span class="nav-sep">·</span><a href="/it/che-giorno-e-oggi/">Che Giorno È Oggi</a><span class="nav-sep">·</span><a href="/it/numero-settimana/">Numero Settimana</a><span class="nav-sep">·</span><a href="/it/calcolatore-giorni-lavorativi/">Giorni Lavorativi</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Countdown</span><div class="nav-links"><a href="/it/giorni-a-natale/">Natale</a><span class="nav-sep">·</span><a href="/it/giorni-a-capodanno/">Capodanno</a><span class="nav-sep">·</span><a href="/it/giorni-a-halloween/">Halloween</a><span class="nav-sep">·</span><a href="/it/giorni-a-pasqua/">Pasqua</a><span class="nav-sep">·</span><a href="/it/conto-alla-rovescia/">Conto alla Rovescia</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Mondo</span><div class="nav-links"><a href="/it/convertitore-fuso-orario/">Fuso Orario</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Nato nel</span><div class="nav-links"><a href="/it/nato-nel-1990/">Nato nel 1990</a><span class="nav-sep">·</span><a href="/it/nato-nel-1980/">Nato nel 1980</a><span class="nav-sep">·</span><a href="/it/nato-nel-2000/">Nato nel 2000</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Retrospettiva</span><div class="nav-links"><a href="/it/cosa-e-successo-nel-2000/">Cosa è successo nel 2000</a><span class="nav-sep">·</span><a href="/it/cosa-e-successo-nel-1990/">Cosa è successo nel 1990</a><span class="nav-sep">·</span><a href="/it/cosa-e-successo-nel-1980/">Cosa è successo nel 1980</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Calendari</span><div class="nav-links"><a href="/it/numero-settimana/2025/">Settimane 2025</a><span class="nav-sep">·</span><a href="/it/numero-settimana/2026/">Settimane 2026</a><span class="nav-sep">·</span><a href="/it/numero-settimana/2027/">Settimane 2027</a></div></div>
+  </div>
+  </nav>
+
+<main id="main-content">
+  <div class="seo-block">
+    <div><h2>Come convertire gli anni del cane in anni umani</h2><p>La vecchia regola "moltiplica per 7" è un mito. In realtà, i cani invecchiano molto più velocemente nei primi anni e più lentamente in seguito. Il primo anno di vita di un cane equivale a circa 15 anni umani, poiché i cuccioli raggiungono la maturità sessuale, sviluppano i denti adulti e acquisiscono le capacità motorie complete in soli 12 mesi. Il secondo anno aggiunge circa 9 anni (24 in totale), poi ogni anno aggiuntivo aggiunge 4–7 anni umani a seconda della taglia. Un Labrador di 3 anni equivale a un umano di circa 32 anni.</p></div>
+    <div><h2>Perché i cani più grandi invecchiano più velocemente?</h2><p>Le razze grandi e giganti hanno una durata di vita media più breve (8–10 anni per i giganti come il Danese) rispetto alle razze piccole (14–16 anni per i Chihuahua). Gli scienziati ritengono che ciò sia dovuto al fatto che i cani più grandi crescono molto più velocemente nel periodo cucciolo, il che accelera lo stress ossidativo e i processi di invecchiamento cellulare. Razze giganti come il San Bernardo sono considerate senior già a 5–6 anni, mentre un piccolo terrier potrebbe non raggiungere lo stato senior fino ai 10 anni.</p></div>
+  </div>
+  <div class="faq-block">
+    <h2>Domande frequenti</h2>
+    <div class="faq-item"><h3>Quanti anni ha il mio cane in anni umani?</h3><p>Usa la formula adattata alla taglia: anno 1 = 15 anni umani, anno 2 aggiunge 9 (totale 24), poi ogni anno aggiuntivo aggiunge 4 anni per le razze piccole, 5 per le medie, 6 per le grandi e 7 per le giganti. Inserisci l'età e la taglia del tuo cane sopra per un risultato immediato.</p></div>
+    <div class="faq-item"><h3>La regola "7 anni cane = 1 anno umano" è un mito?</h3><p>Sì, è una semplificazione eccessiva. Il rapporto varia enormemente per età: un cane di 1 anno assomiglia più a un umano di 15 anni, non di 7. La regola 1:7 è approssimativamente corretta solo intorno ai 7 anni per i cani di taglia media. Per qualsiasi altra età o taglia, la formula adattata di questo calcolatore è molto più accurata.</p></div>
+    <div class="faq-item"><h3>Quanti anni ha un cane di 7 anni in anni umani?</h3><p>Un cane di taglia media (10–25 kg) di 7 anni ha circa 49 anni umani. Un cane grande avrebbe 51, uno piccolo 47.</p></div>
+    <div class="faq-item"><h3>Quanti anni ha un cane di 1 anno in anni umani?</h3><p>Un cane di 1 anno equivale a circa 15 anni umani. A questa età, i cani sono completamente sessualmente maturi e hanno raggiunto circa il 90% della loro taglia adulta.</p></div>
+    <div class="faq-item"><h3>A che età un cane è considerato senior?</h3><p>Dipende dalla taglia della razza. Le razze piccole (meno di 10 kg) sono considerate senior intorno ai 10–12 anni. Le razze medie raggiungono lo status senior a 8–10 anni, le grandi a 7–8 anni, e le giganti già a 5–6 anni. I cani senior beneficiano di visite veterinarie più frequenti.</p></div>
+    <div class="faq-item"><h3>Quanto vivono i cani in media?</h3><p>La durata di vita media dei cani varia da circa 8 anni per le razze giganti come il Danese a 16 o più anni per le razze piccole come i Chihuahua. I cani meticci spesso vivono un po' più a lungo dei purosangue grazie alla diversità genetica.</p></div>
+    <div class="faq-item"><h3>Quanti anni ha un Labrador in anni umani?</h3><p>I Labrador sono una razza grande (25–35 kg), quindi invecchiano di circa 6 anni umani per anno cane dopo i 2 anni. Un Labrador di 3 anni ha circa 30 anni umani, uno di 7 anni circa 48, e uno di 10 anni circa 66 anni umani. I Labrador sono considerati senior intorno ai 7–8 anni.</p></div>
+    <div class="faq-item"><h3>Qual è il cane più vecchio mai registrato?</h3><p>Il cane più vecchio mai registrato era Bobi, un Rafeiro do Alentejo del Portogallo, che è vissuto 31 anni e 165 giorni, certificato dal Guinness World Records.</p></div>
+  </div>
+
+  <div class="source-block">
+    <span class="source-lbl">Source</span>
+    <a href="https://www.akc.org/expert-advice/health/how-to-calculate-dog-years-to-human-years/" target="_blank" rel="noopener noreferrer">American Kennel Club – Come calcolare gli anni del cane</a>
+  </div>
+</main>
+  <footer>
+  <nav class="footer-nav" aria-label="Site links">
+<div class="footer-col"><strong>Età</strong>
+<a href="/it/calcolo-eta/">Calcolo Età</a>
+<a href="/it/eta-cronologica/">Età Cronologica</a>
+<a href="/it/calcolatore-eta-neonato/">Età Neonato</a>
+<a href="/it/calcolatore-eta-cane/">Età del Cane</a>
+<a href="/it/calcolatore-eta-gatto/">Età del Gatto</a></div>
+<div class="footer-col"><strong>Date</strong>
+<a href="/it/giorni-tra-date/">Giorni Tra Date</a>
+<a href="/it/calcolatore-data/">Calcolatore Data</a>
+<a href="/it/che-giorno-e-oggi/">Che Giorno È Oggi</a>
+<a href="/it/numero-settimana/">Numero Settimana</a>
+<a href="/it/calcolatore-giorni-lavorativi/">Giorni Lavorativi</a></div>
+<div class="footer-col"><strong>Countdown</strong>
+<a href="/it/giorni-a-natale/">Natale</a>
+<a href="/it/giorni-a-capodanno/">Capodanno</a>
+<a href="/it/giorni-a-halloween/">Halloween</a>
+<a href="/it/giorni-a-pasqua/">Pasqua</a>
+<a href="/it/conto-alla-rovescia/">Conto alla Rovescia</a></div>
+<div class="footer-col"><strong>Mondo</strong>
+<a href="/it/convertitore-fuso-orario/">Fuso Orario</a></div>
+<div class="footer-col"><strong>Nato nel</strong>
+<a href="/it/nato-nel-1990/">Nato nel 1990</a>
+<a href="/it/nato-nel-1980/">Nato nel 1980</a>
+<a href="/it/nato-nel-2000/">Nato nel 2000</a></div>
+<div class="footer-col"><strong>Retrospettiva</strong>
+<a href="/it/cosa-e-successo-nel-2000/">Cosa è successo nel 2000</a>
+<a href="/it/cosa-e-successo-nel-1990/">Cosa è successo nel 1990</a>
+<a href="/it/cosa-e-successo-nel-1980/">Cosa è successo nel 1980</a></div>
+<div class="footer-col"><strong>Calendari</strong>
+<a href="/it/numero-settimana/2025/">Settimane 2025</a>
+<a href="/it/numero-settimana/2026/">Settimane 2026</a>
+<a href="/it/numero-settimana/2027/">Settimane 2027</a></div>
+  </nav>
+  <div class="footer-copy">© 2026 DateCalc.app — Calcolatori di data e ora gratuiti online · <a href="/it/privacy/">Privacy</a></div>
+</footer>
+</div>
+
+<script>
+(function(){
+  var now = new Date();
+  var opts = {weekday:'long',year:'numeric',month:'long',day:'numeric'};
+  document.getElementById('todayMeta').innerHTML =
+    now.toLocaleDateString('it-IT', opts) + '<br>Calcolatore di date gratuito';
+})();
+// Shared input guard: strip non-digits, truncate to max digit length, clamp to hi
+function clamp(el, lo, hi) {
+  var maxLen = String(hi).length;
+  var s = el.value.replace(/\D/g, '').slice(0, maxLen);
+  var n = parseInt(s, 10);
+  if (!isNaN(n) && n > hi) s = String(hi);
+  el.value = s;
+}
+// Auto-scroll to results when they become visible
+(function(){
+  var r=document.getElementById('results');
+  if(!r||r.classList.contains('auto-show'))return;
+  var obs=new MutationObserver(function(){
+    if(r.classList.contains('show')){
+      r.scrollIntoView({behavior:'smooth',block:'start'});
+      obs.disconnect();
+    }
+  });
+  obs.observe(r,{attributes:true,attributeFilter:['class']});
+})();
+// Enter key submits calculator
+(function(){
+  var fg=document.querySelector('.form-grid');
+  if(!fg)return;
+  fg.addEventListener('keydown',function(e){
+    if(e.key==='Enter'&&typeof calculate==='function')calculate();
+  });
+})();
+// AdSense: load only with consent
+(function(){
+  var ADS_SRC='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4020973443671350';
+  function loadAds(){
+    var s=document.createElement('script');
+    s.src=ADS_SRC;s.async=true;s.crossOrigin='anonymous';
+    document.head.appendChild(s);
+  }
+  if(localStorage.getItem('ads-ok')==='1')return loadAds();
+  if(localStorage.getItem('ads-ok')==='0')return;
+  var b=document.getElementById('consent-banner');
+  if(b)b.style.display='flex';
+  document.getElementById('consent-accept')&&document.getElementById('consent-accept').addEventListener('click',function(){
+    localStorage.setItem('ads-ok','1');b.style.display='none';loadAds();
+  });
+  document.getElementById('consent-decline')&&document.getElementById('consent-decline').addEventListener('click',function(){
+    localStorage.setItem('ads-ok','0');b.style.display='none';
+  });
+})();
+</script>
+<script>
+
+var D = {"errInvalid":"→ Inserisci un'età valida (1–30).","stages":["Cucciolo","Giovane adulto","Adulto","Maturo","Senior","Geriatrico"],"stageYears":[1,3,7,10,12,15],"sizeLabels":{"small":"Piccolo (meno di 10 kg)","medium":"Medio (10–25 kg)","large":"Grande (25–45 kg)","giant":"Gigante (oltre 45 kg)"}};
+
+function dogToHuman(age, size) {
+  var perYear = { small:4, medium:5, large:6, giant:7 };
+  if (age <= 0) return 0;
+  if (age === 1) return 15;
+  if (age === 2) return 24;
+  return 24 + (age - 2) * perYear[size];
+}
+
+function getStage(age) {
+  var yrs = D.stageYears;
+  for (var i = yrs.length - 1; i >= 0; i--) if (age >= yrs[i]) return D.stages[i];
+  return D.stages[0];
+}
+
+function fillExample(age, size) {
+  document.getElementById('dogAge').value = age;
+  document.querySelectorAll('input[name="size"]').forEach(function(r){ r.checked = r.value === size; });
+  calculate();
+}
+
+function calculate() {
+  var age = parseInt(document.getElementById('dogAge').value);
+  var size = document.querySelector('input[name="size"]:checked').value;
+  var err = document.getElementById('errorLine');
+  var res = document.getElementById('results');
+  err.classList.remove('show'); res.classList.remove('show');
+
+  if (!age || age < 1 || age > 30) { err.textContent = D.errInvalid; err.classList.add('show'); return; }
+
+  var human = dogToHuman(age, size);
+  document.getElementById('heroAge').textContent = human;
+  document.getElementById('ffDogYears').textContent = age;
+  document.getElementById('ffStage').textContent = getStage(age);
+  document.getElementById('ffSize').textContent = D.sizeLabels[size];
+  res.classList.add('show');
+  res.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+document.addEventListener('keydown', function(e){ if(e.key==='Enter') calculate(); });
+
+</script>
+<div id="consent-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#111111;color:#fff;padding:.9rem 1.4rem;z-index:9999;font-size:.82rem;font-family:sans-serif;align-items:center;gap:.8rem;flex-wrap:wrap">
+  <span style="flex:1;min-width:200px">Utilizziamo Google AdSense per finanziare questo servizio gratuito. Accetti i cookie pubblicitari?</span>
+  <button id="consent-accept" style="background:#c8392b;color:#fff;border:none;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Accetta</button>
+  <button id="consent-decline" style="background:transparent;color:#aaa;border:1px solid #555;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Continua senza</button>
+</div>
+</body>
+</html>

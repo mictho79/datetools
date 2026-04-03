@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DateCalc.app – Bezpłatne Kalkulatory Dat i Czasu 2026</title>
+<meta name="robots" content="index, follow">
+<meta name="description" content="Bezpłatne kalkulatory dat i czasu. Oblicz wiek, dni między datami, odliczanie, strefy czasowe i więcej — za darmo, bez rejestracji.">
+<link rel="canonical" href="https://datecalc.app/pl/">
+<link rel="alternate" hreflang="en" href="https://datecalc.app/">
+<link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/">
+<link rel="alternate" hreflang="es" href="https://datecalc.app/es/">
+<link rel="alternate" hreflang="pt" href="https://datecalc.app/pt/">
+<link rel="alternate" hreflang="de" href="https://datecalc.app/de/">
+<link rel="alternate" hreflang="it" href="https://datecalc.app/it/">
+<link rel="alternate" hreflang="pl" href="https://datecalc.app/pl/">
+<link rel="alternate" hreflang="x-default" href="https://datecalc.app/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="DateCalc.app – Bezpłatne Kalkulatory Dat i Czasu 2026">
+<meta property="og:description" content="Bezpłatne kalkulatory dat i czasu. Oblicz wiek, dni między datami, odliczanie, strefy czasowe i więcej — za darmo, bez rejestracji.">
+<meta property="og:url" content="https://datecalc.app/pl/">
+<meta property="og:site_name" content="DateCalc.app">
+<meta property="og:image" content="https://datecalc.app/og.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="DateCalc.app – Bezpłatne Kalkulatory Dat i Czasu 2026">
+<meta name="twitter:description" content="Bezpłatne kalkulatory dat i czasu. Oblicz wiek, dni między datami, odliczanie, strefy czasowe i więcej — za darmo, bez rejestracji.">
+<meta name="twitter:image" content="https://datecalc.app/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Space+Mono:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="shortcut icon" href="/favicon.svg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Jak obliczyć swój dokładny wiek?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Użyj naszego kalkulatora wieku: wprowadź datę urodzenia i uzyskaj swój wiek w latach, miesiącach, dniach i sekundach."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jak obliczyć dni między dwiema datami?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Użyj kalkulatora dni między datami: wprowadź obie daty i uzyskaj różnicę w dniach, tygodniach i miesiącach."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jak przeliczać strefy czasowe?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Użyj przelicznika stref czasowych: wybierz strefy źródłową i docelową, a następnie wprowadź czas dla natychmiastowego przeliczenia."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "DateCalc.app",
+  "description": "Bezpłatne kalkulatory dat i czasu. Oblicz wiek, dni między datami, odliczanie, strefy czasowe i więcej — za darmo, bez rejestracji.",
+  "url": "https://datecalc.app/pl/",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Web",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"DateCalc.app","url":"https://datecalc.app","logo":"https://datecalc.app/og.png","contactPoint":{"@type":"ContactPoint","email":"hello@datecalc.app","contactType":"customer support"}}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<noscript><div style="background:#c8392b;color:#fff;text-align:center;padding:.6rem;font-family:sans-serif;font-size:.9rem">This calculator requires JavaScript. Please enable it in your browser.</div></noscript>
+
+<header>
+<div class="masthead">
+  <a href="/pl/" class="masthead-brand">DateCalc<span>.</span>app</a>
+  <div class="masthead-meta" id="todayMeta"></div>
+</div>
+</header>
+
+<div class="lang-strip">
+  <a href="/" class="lang-btn">EN</a>
+  <a href="/fr/" class="lang-btn">FR</a>
+  <a href="/es/" class="lang-btn">ES</a>
+  <a href="/pt/" class="lang-btn">PT</a>
+  <a href="/de/" class="lang-btn">DE</a>
+  <a href="/it/" class="lang-btn">IT</a>
+  <a href="/pl/" class="lang-btn active">PL</a>
+</div>
+
+<div class="page">
+
+  <div class="headline-block">
+    <div class="kicker">Kalkulatory Dat</div>
+    <h1 class="headline">Bezpłatne <br><em>Kalkulatory</em> <br>Dat i Czasu</h1>
+    <p class="subhead">Proste i precyzyjne narzędzia do wszystkich obliczeń dat</p>
+  </div>
+
+  <div class="tool-catalog">
+<div class="tool-category">
+    <div class="tool-cat-label">Wiek</div>
+    <div class="tool-grid"><a class="tool-card" href="/pl/kalkulator-wieku/">
+        <span class="tool-card-name">Kalkulator Wieku</span>
+        <span class="tool-card-desc">Dokładny wiek w latach, miesiącach i dniach</span>
+      </a>
+<a class="tool-card" href="/pl/wiek-chronologiczny/">
+        <span class="tool-card-name">Wiek Chronologiczny</span>
+        <span class="tool-card-desc">Różnica między dwoma datami</span>
+      </a>
+<a class="tool-card" href="/pl/wiek-niemowlecia/">
+        <span class="tool-card-name">Wiek Niemowlęcia</span>
+        <span class="tool-card-desc">Wiek w tygodniach i miesiącach</span>
+      </a>
+<a class="tool-card" href="/pl/wiek-psa/">
+        <span class="tool-card-name">Wiek Psa</span>
+        <span class="tool-card-desc">Lata psa w ludzkich latach</span>
+      </a>
+<a class="tool-card" href="/pl/wiek-kota/">
+        <span class="tool-card-name">Wiek Kota</span>
+        <span class="tool-card-desc">Lata kota w ludzkich latach</span>
+      </a></div>
+  </div>
+<div class="tool-category">
+    <div class="tool-cat-label">Daty</div>
+    <div class="tool-grid"><a class="tool-card" href="/pl/dni-miedzy-datami/">
+        <span class="tool-card-name">Dni Między Datami</span>
+        <span class="tool-card-desc">Różnica w dniach i tygodniach</span>
+      </a>
+<a class="tool-card" href="/pl/kalkulator-daty/">
+        <span class="tool-card-name">Kalkulator Daty</span>
+        <span class="tool-card-desc">Dodaj lub odejmij dni</span>
+      </a>
+<a class="tool-card" href="/pl/jaki-dzis-dzien/">
+        <span class="tool-card-name">Jaki Dziś Dzień</span>
+        <span class="tool-card-desc">Aktualna data i tydzień</span>
+      </a>
+<a class="tool-card" href="/pl/numer-tygodnia/">
+        <span class="tool-card-name">Numer Tygodnia</span>
+        <span class="tool-card-desc">Aktualny tydzień ISO</span>
+      </a>
+<a class="tool-card" href="/pl/kalkulator-dni-roboczych/">
+        <span class="tool-card-name">Dni Robocze</span>
+        <span class="tool-card-desc">Zliczanie dni roboczych</span>
+      </a></div>
+  </div>
+<div class="tool-category">
+    <div class="tool-cat-label">Odliczanie</div>
+    <div class="tool-grid"><a class="tool-card" href="/pl/ile-dni-do-bozego-narodzenia/">
+        <span class="tool-card-name">Boże Narodzenie</span>
+        <span class="tool-card-desc">Dni do 25 grudnia</span>
+      </a>
+<a class="tool-card" href="/pl/ile-dni-do-nowego-roku/">
+        <span class="tool-card-name">Nowy Rok</span>
+        <span class="tool-card-desc">Dni do 1 stycznia</span>
+      </a>
+<a class="tool-card" href="/pl/ile-dni-do-halloween/">
+        <span class="tool-card-name">Halloween</span>
+        <span class="tool-card-desc">Dni do 31 października</span>
+      </a>
+<a class="tool-card" href="/pl/ile-dni-do-wielkanocy/">
+        <span class="tool-card-name">Wielkanoc</span>
+        <span class="tool-card-desc">Dni do Wielkanocy</span>
+      </a>
+<a class="tool-card" href="/pl/odliczanie/">
+        <span class="tool-card-name">Odliczanie</span>
+        <span class="tool-card-desc">Odliczanie do dowolnej daty</span>
+      </a></div>
+  </div>
+<div class="tool-category">
+    <div class="tool-cat-label">Świat</div>
+    <div class="tool-grid"><a class="tool-card" href="/pl/przelicznik-stref-czasowych/">
+        <span class="tool-card-name">Strefy Czasowe</span>
+        <span class="tool-card-desc">Przeliczanie stref czasowych</span>
+      </a></div>
+  </div>
+  </div>
+
+
+
+  <nav aria-label="Tools">
+  <div class="tool-nav">
+    <div class="nav-group"><span class="nav-cat">Wiek</span><div class="nav-links"><a href="/pl/kalkulator-wieku/">Kalkulator Wieku</a><span class="nav-sep">·</span><a href="/pl/wiek-chronologiczny/">Wiek Chronologiczny</a><span class="nav-sep">·</span><a href="/pl/wiek-niemowlecia/">Wiek Niemowlęcia</a><span class="nav-sep">·</span><a href="/pl/wiek-psa/">Wiek Psa</a><span class="nav-sep">·</span><a href="/pl/wiek-kota/">Wiek Kota</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Daty</span><div class="nav-links"><a href="/pl/dni-miedzy-datami/">Dni Między Datami</a><span class="nav-sep">·</span><a href="/pl/kalkulator-daty/">Kalkulator Daty</a><span class="nav-sep">·</span><a href="/pl/jaki-dzis-dzien/">Jaki Dziś Dzień</a><span class="nav-sep">·</span><a href="/pl/numer-tygodnia/">Numer Tygodnia</a><span class="nav-sep">·</span><a href="/pl/kalkulator-dni-roboczych/">Dni Robocze</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Odliczanie</span><div class="nav-links"><a href="/pl/ile-dni-do-bozego-narodzenia/">Boże Narodzenie</a><span class="nav-sep">·</span><a href="/pl/ile-dni-do-nowego-roku/">Nowy Rok</a><span class="nav-sep">·</span><a href="/pl/ile-dni-do-halloween/">Halloween</a><span class="nav-sep">·</span><a href="/pl/ile-dni-do-wielkanocy/">Wielkanoc</a><span class="nav-sep">·</span><a href="/pl/odliczanie/">Odliczanie</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Świat</span><div class="nav-links"><a href="/pl/przelicznik-stref-czasowych/">Strefy Czasowe</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Urodzony w</span><div class="nav-links"><a href="/pl/urodzony-w-1990/">Urodzony w 1990</a><span class="nav-sep">·</span><a href="/pl/urodzony-w-1980/">Urodzony w 1980</a><span class="nav-sep">·</span><a href="/pl/urodzony-w-2000/">Urodzony w 2000</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Podsumowanie</span><div class="nav-links"><a href="/pl/co-sie-wydarzylo-w-2000/">Co się wydarzyło w 2000</a><span class="nav-sep">·</span><a href="/pl/co-sie-wydarzylo-w-1990/">Co się wydarzyło w 1990</a><span class="nav-sep">·</span><a href="/pl/co-sie-wydarzylo-w-1980/">Co się wydarzyło w 1980</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Kalendarze</span><div class="nav-links"><a href="/pl/numer-tygodnia/2025/">Tygodnie 2025</a><span class="nav-sep">·</span><a href="/pl/numer-tygodnia/2026/">Tygodnie 2026</a><span class="nav-sep">·</span><a href="/pl/numer-tygodnia/2027/">Tygodnie 2027</a></div></div>
+  </div>
+  </nav>
+
+<main id="main-content">
+<div class="faq-block">
+  <h2>Często zadawane pytania</h2>
+  <div class="faq-item"><h3>Jak obliczyć swój dokładny wiek?</h3><p>Użyj naszego kalkulatora wieku: wprowadź datę urodzenia i uzyskaj swój wiek w latach, miesiącach, dniach i sekundach.</p></div>
+  <div class="faq-item"><h3>Jak obliczyć dni między dwiema datami?</h3><p>Użyj kalkulatora dni między datami: wprowadź obie daty i uzyskaj różnicę w dniach, tygodniach i miesiącach.</p></div>
+  <div class="faq-item"><h3>Jak przeliczać strefy czasowe?</h3><p>Użyj przelicznika stref czasowych: wybierz strefy źródłową i docelową, a następnie wprowadź czas dla natychmiastowego przeliczenia.</p></div>
+</div>
+
+</main>
+  <footer>
+  <nav class="footer-nav" aria-label="Site links">
+<div class="footer-col"><strong>Wiek</strong>
+<a href="/pl/kalkulator-wieku/">Kalkulator Wieku</a>
+<a href="/pl/wiek-chronologiczny/">Wiek Chronologiczny</a>
+<a href="/pl/wiek-niemowlecia/">Wiek Niemowlęcia</a>
+<a href="/pl/wiek-psa/">Wiek Psa</a>
+<a href="/pl/wiek-kota/">Wiek Kota</a></div>
+<div class="footer-col"><strong>Daty</strong>
+<a href="/pl/dni-miedzy-datami/">Dni Między Datami</a>
+<a href="/pl/kalkulator-daty/">Kalkulator Daty</a>
+<a href="/pl/jaki-dzis-dzien/">Jaki Dziś Dzień</a>
+<a href="/pl/numer-tygodnia/">Numer Tygodnia</a>
+<a href="/pl/kalkulator-dni-roboczych/">Dni Robocze</a></div>
+<div class="footer-col"><strong>Odliczanie</strong>
+<a href="/pl/ile-dni-do-bozego-narodzenia/">Boże Narodzenie</a>
+<a href="/pl/ile-dni-do-nowego-roku/">Nowy Rok</a>
+<a href="/pl/ile-dni-do-halloween/">Halloween</a>
+<a href="/pl/ile-dni-do-wielkanocy/">Wielkanoc</a>
+<a href="/pl/odliczanie/">Odliczanie</a></div>
+<div class="footer-col"><strong>Świat</strong>
+<a href="/pl/przelicznik-stref-czasowych/">Strefy Czasowe</a></div>
+<div class="footer-col"><strong>Urodzony w</strong>
+<a href="/pl/urodzony-w-1990/">Urodzony w 1990</a>
+<a href="/pl/urodzony-w-1980/">Urodzony w 1980</a>
+<a href="/pl/urodzony-w-2000/">Urodzony w 2000</a></div>
+<div class="footer-col"><strong>Podsumowanie</strong>
+<a href="/pl/co-sie-wydarzylo-w-2000/">Co się wydarzyło w 2000</a>
+<a href="/pl/co-sie-wydarzylo-w-1990/">Co się wydarzyło w 1990</a>
+<a href="/pl/co-sie-wydarzylo-w-1980/">Co się wydarzyło w 1980</a></div>
+<div class="footer-col"><strong>Kalendarze</strong>
+<a href="/pl/numer-tygodnia/2025/">Tygodnie 2025</a>
+<a href="/pl/numer-tygodnia/2026/">Tygodnie 2026</a>
+<a href="/pl/numer-tygodnia/2027/">Tygodnie 2027</a></div>
+  </nav>
+  <div class="footer-copy">© 2026 DateCalc.app — Bezpłatne kalkulatory dat i czasu online · <a href="/pl/prywatnosc/">Prywatność</a></div>
+</footer>
+</div>
+
+<script>
+(function(){
+  var now = new Date();
+  var opts = {weekday:'long',year:'numeric',month:'long',day:'numeric'};
+  document.getElementById('todayMeta').innerHTML =
+    now.toLocaleDateString('pl-PL', opts) + '<br>Bezpłatny kalkulator dat';
+})();
+// Shared input guard: strip non-digits, truncate to max digit length, clamp to hi
+function clamp(el, lo, hi) {
+  var maxLen = String(hi).length;
+  var s = el.value.replace(/\D/g, '').slice(0, maxLen);
+  var n = parseInt(s, 10);
+  if (!isNaN(n) && n > hi) s = String(hi);
+  el.value = s;
+}
+// Auto-scroll to results when they become visible
+(function(){
+  var r=document.getElementById('results');
+  if(!r||r.classList.contains('auto-show'))return;
+  var obs=new MutationObserver(function(){
+    if(r.classList.contains('show')){
+      r.scrollIntoView({behavior:'smooth',block:'start'});
+      obs.disconnect();
+    }
+  });
+  obs.observe(r,{attributes:true,attributeFilter:['class']});
+})();
+// Enter key submits calculator
+(function(){
+  var fg=document.querySelector('.form-grid');
+  if(!fg)return;
+  fg.addEventListener('keydown',function(e){
+    if(e.key==='Enter'&&typeof calculate==='function')calculate();
+  });
+})();
+// AdSense: load only with consent
+(function(){
+  var ADS_SRC='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4020973443671350';
+  function loadAds(){
+    var s=document.createElement('script');
+    s.src=ADS_SRC;s.async=true;s.crossOrigin='anonymous';
+    document.head.appendChild(s);
+  }
+  if(localStorage.getItem('ads-ok')==='1')return loadAds();
+  if(localStorage.getItem('ads-ok')==='0')return;
+  var b=document.getElementById('consent-banner');
+  if(b)b.style.display='flex';
+  document.getElementById('consent-accept')&&document.getElementById('consent-accept').addEventListener('click',function(){
+    localStorage.setItem('ads-ok','1');b.style.display='none';loadAds();
+  });
+  document.getElementById('consent-decline')&&document.getElementById('consent-decline').addEventListener('click',function(){
+    localStorage.setItem('ads-ok','0');b.style.display='none';
+  });
+})();
+</script>
+<script>
+
+</script>
+<div id="consent-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#111111;color:#fff;padding:.9rem 1.4rem;z-index:9999;font-size:.82rem;font-family:sans-serif;align-items:center;gap:.8rem;flex-wrap:wrap">
+  <span style="flex:1;min-width:200px">Używamy Google AdSense do finansowania tej bezpłatnej usługi. Czy akceptujesz ciasteczka reklamowe?</span>
+  <button id="consent-accept" style="background:#c8392b;color:#fff;border:none;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Akceptuj</button>
+  <button id="consent-decline" style="background:transparent;color:#aaa;border:1px solid #555;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Kontynuuj bez</button>
+</div>
+</body>
+</html>

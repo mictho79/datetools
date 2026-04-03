@@ -5,6 +5,9 @@ const EVENTS    = require('../data/events.json');
 const EVENTS_FR = require('../data/events_fr.json');
 const EVENTS_ES = require('../data/events_es.json');
 const EVENTS_PT = require('../data/events_pt.json');
+const EVENTS_DE = require('../data/events_de.json');
+const EVENTS_IT = require('../data/events_it.json');
+const EVENTS_PL = require('../data/events_pl.json');
 
 const EVENT_YEARS = [];
 for (let y = 1905; y <= 2025; y++) EVENT_YEARS.push(y);
@@ -131,6 +134,99 @@ const T = {
     bornInHrefTpl: '/pt/nascido-em-{year}/',
     source: null,
   },
+  de: {
+    titleTpl:    'Was geschah {year}? Ereignisse, Musik, Filme | DateCalc',
+    metaDescTpl: 'Entdecke die wichtigsten Ereignisse von {year}: historische Ereignisse, Musik, Filme und Preise. Vollständiger Jahresrückblick {year}.',
+    kicker:      'Jahresrückblick',
+    headlineTpl: 'Was geschah<br>im Jahr<br><em>{year}?</em>',
+    subheadTpl:  'Wichtige Ereignisse, Kultur und Wissenswertes aus {year}',
+    wTitle:      'Die Welt im Jahr {year}',
+    wLblEvents:  'Ereignisse',
+    wLblMusic:   'Musik',
+    wLblFilm:    'Film',
+    wLblTech:    'Technologie',
+    wLblPrices:  'Preise',
+    wLblBread:   'Brot',
+    wLblGas:     'Benzin',
+    wLblHouse:   'Haus',
+    seoH2aTpl:   'Was waren die wichtigsten Ereignisse von {year}?',
+    seoP1Tpl:    '{year} war ein Jahr bedeutender Weltereignisse, die die Geschichte geprägt haben. Von politischen Umwälzungen bis zu kulturellen Meilensteinen hinterließ das Jahr einen dauerhaften Eindruck in der Gesellschaft. Die Musikcharts, Kinoleinwände und die technologische Landschaft von {year} spiegeln den einzigartigen Charakter dieser Epoche wider.',
+    seoH2bTpl:   'Warum ist {year} historisch bedeutsam?',
+    seoP2Tpl:    'Jedes Jahr trägt seine eigenen prägenden Momente und kulturellen Orientierungspunkte. {year} trug einzigartige Kapitel zur Geschichte des 20. und 21. Jahrhunderts bei. Ob du {year} erlebt hast oder darüber forschst – die Ereignisse, Kunst, Technologie und alltäglichen Kosten dieses Jahres zeichnen ein reiches Bild des damaligen Lebens.',
+    faqTitle:    'Häufig gestellte Fragen',
+    faqsTpl: [
+      { q: 'Was waren die wichtigsten Ereignisse von {year}?', a: 'Zu den wichtigsten Weltereignissen von {year} gehören: {events}.' },
+      { q: 'Welche Musik war 1 {year} beliebt?', a: 'Ein großer Musikhit des Jahres {year} war: {music}.' },
+      { q: 'Welcher Film war {year} ein Highlight?', a: 'Einer der bedeutendsten Filme von {year} war: {film}.' },
+      { q: 'Was kosteten Dinge im Jahr {year}?', a: 'Im Jahr {year} kostete Brot ungefähr {bread}, Benzin {gas} und ein Haus {house} (Preise in US-Dollar).' },
+      { q: '{year} geboren, wie alt bin ich 2026?', a: 'Wenn du {year} geboren wurdest, bist du 2026 {age} oder {age1} Jahre alt. Klicke oben auf den Link, um dein genaues Alter zu berechnen.' },
+    ],
+    bornInCtaTpl:  '{year} geboren? Berechne dein genaues Alter →',
+    bornInHrefTpl: '/de/geboren-in-{year}/',
+    source: null,
+  },
+  it: {
+    titleTpl:    'Cosa è successo nel {year}? Eventi, Musica, Film | DateCalc',
+    metaDescTpl: 'Scopri i principali avvenimenti del {year}: eventi storici, musica, film e prezzi. Retrospettiva completa del {year}.',
+    kicker:      'Retrospettiva dell\'Anno',
+    headlineTpl: 'Cosa è<br>successo nel<br><em>{year}?</em>',
+    subheadTpl:  'Principali eventi, cultura e curiosità del {year}',
+    wTitle:      'Il Mondo nel {year}',
+    wLblEvents:  'Eventi',
+    wLblMusic:   'Musica',
+    wLblFilm:    'Film',
+    wLblTech:    'Tecnologia',
+    wLblPrices:  'Prezzi',
+    wLblBread:   'Pane',
+    wLblGas:     'Benzina',
+    wLblHouse:   'Casa',
+    seoH2aTpl:   'Quali furono i principali eventi del {year}?',
+    seoP1Tpl:    'Il {year} fu un anno di importanti eventi mondiali che hanno plasmato la storia. Da sconvolgimenti politici a traguardi culturali, l\'anno ha lasciato un segno duraturo nella società. Le classifiche musicali, gli schermi cinematografici e il panorama tecnologico del {year} riflettono il carattere unico di quell\'epoca.',
+    seoH2bTpl:   'Perché il {year} è storicamente significativo?',
+    seoP2Tpl:    'Ogni anno porta i propri momenti definitori e punti di riferimento culturali. Il {year} ha contribuito con capitoli unici alla storia del XX e XXI secolo. Che tu abbia vissuto il {year} o lo stia ricercando, gli eventi, l\'arte, la tecnologia e i costi quotidiani di quell\'anno dipingono un quadro ricco della vita dell\'epoca.',
+    faqTitle:    'Domande frequenti',
+    faqsTpl: [
+      { q: 'Quali furono i principali eventi del {year}?', a: 'I principali eventi mondiali del {year} includono: {events}.' },
+      { q: 'Quale musica era di tendenza nel {year}?', a: 'Uno dei grandi successi musicali del {year} fu: {music}.' },
+      { q: 'Quale film fu il più importante nel {year}?', a: 'Uno dei film più significativi del {year} fu: {film}.' },
+      { q: 'Quanto costavano le cose nel {year}?', a: 'Nel {year}, il prezzo del pane era circa {bread}, la benzina {gas} e una casa {house} (prezzi in dollari americani).' },
+      { q: 'Nato nel {year}, quanti anni ho nel 2026?', a: 'Se sei nato nel {year}, hai {age} o {age1} anni nel 2026. Clicca il link sopra per calcolare la tua età esatta.' },
+    ],
+    bornInCtaTpl:  'Nato nel {year}? Calcola la tua età esatta →',
+    bornInHrefTpl: '/it/nato-nel-{year}/',
+    source: null,
+  },
+  pl: {
+    titleTpl:    'Co się wydarzyło w {year}? Wydarzenia, Muzyka, Filmy | DateCalc',
+    metaDescTpl: 'Odkryj najważniejsze wydarzenia z {year}: historia, muzyka, filmy i ceny. Pełne podsumowanie roku {year}.',
+    kicker:      'Podsumowanie Roku',
+    headlineTpl: 'Co się<br>wydarzyło<br><em>w {year}?</em>',
+    subheadTpl:  'Najważniejsze wydarzenia, kultura i ciekawostki z {year}',
+    wTitle:      'Świat w {year} roku',
+    wLblEvents:  'Wydarzenia',
+    wLblMusic:   'Muzyka',
+    wLblFilm:    'Film',
+    wLblTech:    'Technologia',
+    wLblPrices:  'Ceny',
+    wLblBread:   'Chleb',
+    wLblGas:     'Benzyna',
+    wLblHouse:   'Dom',
+    seoH2aTpl:   'Jakie były najważniejsze wydarzenia w {year}?',
+    seoP1Tpl:    '{year} był rokiem ważnych wydarzeń światowych, które ukształtowały historię. Od politycznych przewrotów po kulturowe kamienie milowe, rok ten pozostawił trwały ślad w społeczeństwie. Listy przebojów, ekrany kinowe i technologiczny krajobraz roku {year} odzwierciedlają unikalny charakter tej epoki.',
+    seoH2bTpl:   'Dlaczego {year} jest historycznie znaczący?',
+    seoP2Tpl:    'Każdy rok niesie ze sobą własne przełomowe momenty i kulturowe punkty odniesienia. {year} wniósł unikalne rozdziały do historii XX i XXI wieku. Niezależnie od tego, czy przeżyłeś {year}, czy go badasz, wydarzenia, sztuka, technologia i codzienne koszty tamtego roku tworzą bogaty obraz ówczesnego życia.',
+    faqTitle:    'Często zadawane pytania',
+    faqsTpl: [
+      { q: 'Jakie były najważniejsze wydarzenia w {year}?', a: 'Najważniejsze światowe wydarzenia z {year} to: {events}.' },
+      { q: 'Jaka muzyka była popularna w {year}?', a: 'Jednym z wielkich hitów muzycznych z {year} był: {music}.' },
+      { q: 'Który film był hitem w {year}?', a: 'Jednym z najważniejszych filmów z {year} był: {film}.' },
+      { q: 'Ile kosztowały rzeczy w {year}?', a: 'W {year} roku cena chleba wynosiła około {bread}, benzyny {gas}, a domu {house} (ceny w dolarach amerykańskich).' },
+      { q: 'Urodzony w {year}, ile mam lat w 2026?', a: 'Jeśli urodziłeś się w {year}, masz {age} lub {age1} lat w 2026. Kliknij powyższy link, aby obliczyć swój dokładny wiek.' },
+    ],
+    bornInCtaTpl:  'Urodzony w {year}? Oblicz swój dokładny wiek →',
+    bornInHrefTpl: '/pl/urodzony-w-{year}/',
+    source: null,
+  },
 };
 
 // Helper: replace {token} placeholders in a string
@@ -152,7 +248,7 @@ function tplDeep(val, vars) {
 
 // Build the world events HTML block (reuses same CSS classes as born-in.js)
 function buildWorldBlock(year, t, lang) {
-  const evSrc = lang === 'fr' ? EVENTS_FR : lang === 'es' ? EVENTS_ES : lang === 'pt' ? EVENTS_PT : EVENTS;
+  const evSrc = lang === 'fr' ? EVENTS_FR : lang === 'es' ? EVENTS_ES : lang === 'pt' ? EVENTS_PT : lang === 'de' ? EVENTS_DE : lang === 'it' ? EVENTS_IT : lang === 'pl' ? EVENTS_PL : EVENTS;
   const ev    = evSrc[String(year)] || EVENTS[String(year)]; // translated, fallback to EN
   const evEn  = EVENTS[String(year)];                         // always EN for music/film/prices
   if (!evEn) return '';
@@ -204,6 +300,9 @@ module.exports = {
       fr: `fr/que-s-est-il-passe-en-${y}`,
       es: `es/que-paso-en-${y}`,
       pt: `pt/o-que-aconteceu-em-${y}`,
+      de: `de/was-geschah-${y}`,
+      it: `it/cosa-e-successo-nel-${y}`,
+      pl: `pl/co-sie-wydarzylo-w-${y}`,
     },
   })),
 
@@ -213,7 +312,7 @@ module.exports = {
     const vars = { year };
 
     // Gather real event data for FAQs and SEO text
-    const evSrc = lang === 'fr' ? EVENTS_FR : lang === 'es' ? EVENTS_ES : lang === 'pt' ? EVENTS_PT : EVENTS;
+    const evSrc = lang === 'fr' ? EVENTS_FR : lang === 'es' ? EVENTS_ES : lang === 'pt' ? EVENTS_PT : lang === 'de' ? EVENTS_DE : lang === 'it' ? EVENTS_IT : lang === 'pl' ? EVENTS_PL : EVENTS;
     const ev    = evSrc[String(year)] || EVENTS[String(year)];
     const evEn  = EVENTS[String(year)];
     let allEvents = [];

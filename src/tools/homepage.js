@@ -159,7 +159,124 @@ const TOOLS_PT = [
   },
 ];
 
-const TOOLS_BY_LANG = { en: TOOLS_EN, fr: TOOLS_FR, es: TOOLS_ES, pt: TOOLS_PT };
+const TOOLS_DE = [
+  {
+    cat: 'Alter',
+    items: [
+      { label: 'Altersrechner', href: '/de/altersrechner/', desc: 'Genaues Alter in Jahren, Monaten und Tagen' },
+      { label: 'Chronologisches Alter', href: '/de/chronologisches-alter/', desc: 'Differenz zwischen zwei Daten' },
+      { label: 'Baby-Altersrechner', href: '/de/baby-alter-rechner/', desc: 'Alter in Wochen und Monaten' },
+      { label: 'Hund Altersrechner', href: '/de/hund-alter-rechner/', desc: 'Hundejahre in Menschenjahren' },
+      { label: 'Katze Altersrechner', href: '/de/katze-alter-rechner/', desc: 'Katzenjahre in Menschenjahren' },
+    ],
+  },
+  {
+    cat: 'Daten',
+    items: [
+      { label: 'Tage zwischen Daten', href: '/de/tage-zwischen-datumen/', desc: 'Differenz in Tagen und Wochen' },
+      { label: 'Datumsrechner', href: '/de/datumsrechner/', desc: 'Tage addieren oder subtrahieren' },
+      { label: 'Welcher Tag ist heute', href: '/de/welcher-tag-ist-heute/', desc: 'Aktuelles Datum und Woche' },
+      { label: 'Kalenderwoche', href: '/de/kalenderwoche/', desc: 'Aktuelle ISO-Kalenderwoche' },
+      { label: 'Arbeitstage Rechner', href: '/de/arbeitstage-rechner/', desc: 'Arbeitstage zählen' },
+    ],
+  },
+  {
+    cat: 'Countdowns',
+    items: [
+      { label: 'Bis Weihnachten', href: '/de/tage-bis-weihnachten/', desc: 'Tage bis 25. Dezember' },
+      { label: 'Bis Neujahr', href: '/de/tage-bis-neujahr/', desc: 'Tage bis 1. Januar' },
+      { label: 'Bis Halloween', href: '/de/tage-bis-halloween/', desc: 'Tage bis 31. Oktober' },
+      { label: 'Bis Ostern', href: '/de/tage-bis-ostern/', desc: 'Tage bis Ostersonntag' },
+      { label: 'Countdown-Timer', href: '/de/countdown-timer/', desc: 'Countdown für jedes Datum' },
+    ],
+  },
+  {
+    cat: 'Welt',
+    items: [
+      { label: 'Zeitzonen-Umrechner', href: '/de/zeitzonen-umrechner/', desc: 'Zeitzonen konvertieren' },
+    ],
+  },
+];
+
+const TOOLS_IT = [
+  {
+    cat: 'Età',
+    items: [
+      { label: 'Calcolo Età', href: '/it/calcolo-eta/', desc: 'Età esatta in anni, mesi e giorni' },
+      { label: 'Età Cronologica', href: '/it/eta-cronologica/', desc: 'Differenza tra due date' },
+      { label: 'Età Neonato', href: '/it/calcolatore-eta-neonato/', desc: 'Età in settimane e mesi' },
+      { label: 'Età del Cane', href: '/it/calcolatore-eta-cane/', desc: 'Anni canini in umani' },
+      { label: 'Età del Gatto', href: '/it/calcolatore-eta-gatto/', desc: 'Anni felini in umani' },
+    ],
+  },
+  {
+    cat: 'Date',
+    items: [
+      { label: 'Giorni Tra Date', href: '/it/giorni-tra-date/', desc: 'Differenza in giorni e settimane' },
+      { label: 'Calcolatore Data', href: '/it/calcolatore-data/', desc: 'Aggiungere o sottrarre giorni' },
+      { label: 'Che Giorno È Oggi', href: '/it/che-giorno-e-oggi/', desc: 'Data e settimana correnti' },
+      { label: 'Numero Settimana', href: '/it/numero-settimana/', desc: 'Settimana ISO corrente' },
+      { label: 'Giorni Lavorativi', href: '/it/calcolatore-giorni-lavorativi/', desc: 'Contare giorni lavorativi' },
+    ],
+  },
+  {
+    cat: 'Countdown',
+    items: [
+      { label: 'Giorni a Natale', href: '/it/giorni-a-natale/', desc: 'Giorni fino al 25 dicembre' },
+      { label: 'Giorni a Capodanno', href: '/it/giorni-a-capodanno/', desc: 'Giorni fino al 1° gennaio' },
+      { label: 'Giorni a Halloween', href: '/it/giorni-a-halloween/', desc: 'Giorni fino al 31 ottobre' },
+      { label: 'Giorni a Pasqua', href: '/it/giorni-a-pasqua/', desc: 'Giorni fino alla Pasqua' },
+      { label: 'Conto alla Rovescia', href: '/it/conto-alla-rovescia/', desc: 'Countdown per qualsiasi data' },
+    ],
+  },
+  {
+    cat: 'Mondo',
+    items: [
+      { label: 'Fuso Orario', href: '/it/convertitore-fuso-orario/', desc: 'Convertire fusi orari' },
+    ],
+  },
+];
+
+const TOOLS_PL = [
+  {
+    cat: 'Wiek',
+    items: [
+      { label: 'Kalkulator Wieku', href: '/pl/kalkulator-wieku/', desc: 'Dokładny wiek w latach, miesiącach i dniach' },
+      { label: 'Wiek Chronologiczny', href: '/pl/wiek-chronologiczny/', desc: 'Różnica między dwoma datami' },
+      { label: 'Wiek Niemowlęcia', href: '/pl/wiek-niemowlecia/', desc: 'Wiek w tygodniach i miesiącach' },
+      { label: 'Wiek Psa', href: '/pl/wiek-psa/', desc: 'Lata psa w ludzkich latach' },
+      { label: 'Wiek Kota', href: '/pl/wiek-kota/', desc: 'Lata kota w ludzkich latach' },
+    ],
+  },
+  {
+    cat: 'Daty',
+    items: [
+      { label: 'Dni Między Datami', href: '/pl/dni-miedzy-datami/', desc: 'Różnica w dniach i tygodniach' },
+      { label: 'Kalkulator Daty', href: '/pl/kalkulator-daty/', desc: 'Dodaj lub odejmij dni' },
+      { label: 'Jaki Dziś Dzień', href: '/pl/jaki-dzis-dzien/', desc: 'Aktualna data i tydzień' },
+      { label: 'Numer Tygodnia', href: '/pl/numer-tygodnia/', desc: 'Aktualny tydzień ISO' },
+      { label: 'Dni Robocze', href: '/pl/kalkulator-dni-roboczych/', desc: 'Zliczanie dni roboczych' },
+    ],
+  },
+  {
+    cat: 'Odliczanie',
+    items: [
+      { label: 'Boże Narodzenie', href: '/pl/ile-dni-do-bozego-narodzenia/', desc: 'Dni do 25 grudnia' },
+      { label: 'Nowy Rok', href: '/pl/ile-dni-do-nowego-roku/', desc: 'Dni do 1 stycznia' },
+      { label: 'Halloween', href: '/pl/ile-dni-do-halloween/', desc: 'Dni do 31 października' },
+      { label: 'Wielkanoc', href: '/pl/ile-dni-do-wielkanocy/', desc: 'Dni do Wielkanocy' },
+      { label: 'Odliczanie', href: '/pl/odliczanie/', desc: 'Odliczanie do dowolnej daty' },
+    ],
+  },
+  {
+    cat: 'Świat',
+    items: [
+      { label: 'Strefy Czasowe', href: '/pl/przelicznik-stref-czasowych/', desc: 'Przeliczanie stref czasowych' },
+    ],
+  },
+];
+
+const TOOLS_BY_LANG = { en: TOOLS_EN, fr: TOOLS_FR, es: TOOLS_ES, pt: TOOLS_PT, de: TOOLS_DE, it: TOOLS_IT, pl: TOOLS_PL };
 
 function buildGrid(tools) {
   const cats = tools.map(group => {
@@ -248,6 +365,102 @@ const T = {
       { q: 'Como converter fusos horários?', a: 'Use o conversor de fuso horário: selecione os fusos de origem e destino e insira o horário para conversão instantânea.' },
     ],
   },
+  de: {
+    title: 'DateCalc.app – Kostenlose Datums- und Zeitrechner 2026',
+    metaDesc: 'Kostenlose Datums- und Zeitrechner. Alter berechnen, Tage zwischen Daten, Countdowns, Zeitzonen und mehr — kostenlos, ohne Anmeldung.',
+    kicker: 'Datumsrechner',
+    headline: 'Kostenlose<br><em>Datums- &amp; Zeit-<br>rechner</em>',
+    subhead: 'Einfache und präzise Werkzeuge für alle deine Datumsberechnungen',
+    catAge: 'Alter', catDates: 'Daten', catCountdowns: 'Countdowns', catWorld: 'Welt',
+    faqTitle: 'Häufig gestellte Fragen',
+    faqs: [
+      { q: 'Wie berechne ich mein genaues Alter?', a: 'Nutze unseren Altersrechner: Gib dein Geburtsdatum ein und erhalte dein Alter in Jahren, Monaten, Tagen und Sekunden.' },
+      { q: 'Wie berechne ich Tage zwischen zwei Daten?', a: 'Nutze den Tage-Rechner: Gib beide Daten ein und erhalte die Differenz in Tagen, Wochen und Monaten.' },
+      { q: 'Wie konvertiere ich Zeitzonen?', a: 'Nutze den Zeitzonen-Umrechner: Wähle Quell- und Zielzeitzone und gib die Zeit für die sofortige Umrechnung ein.' },
+    ],
+    tools: [
+      { label: 'Altersrechner', href: '/de/altersrechner/', desc: 'Genaues Alter in Jahren, Monaten und Tagen' },
+      { label: 'Chronologisches Alter', href: '/de/chronologisches-alter/', desc: 'Differenz zwischen zwei Daten' },
+      { label: 'Baby-Altersrechner', href: '/de/baby-alter-rechner/', desc: 'Alter in Wochen und Monaten' },
+      { label: 'Hund Altersrechner', href: '/de/hund-alter-rechner/', desc: 'Hundejahre in Menschenjahren' },
+      { label: 'Katze Altersrechner', href: '/de/katze-alter-rechner/', desc: 'Katzenjahre in Menschenjahren' },
+      { label: 'Tage zwischen Daten', href: '/de/tage-zwischen-datumen/', desc: 'Differenz in Tagen und Wochen' },
+      { label: 'Datumsrechner', href: '/de/datumsrechner/', desc: 'Tage addieren oder subtrahieren' },
+      { label: 'Welcher Tag ist heute', href: '/de/welcher-tag-ist-heute/', desc: 'Aktuelles Datum und Woche' },
+      { label: 'Kalenderwoche', href: '/de/kalenderwoche/', desc: 'Aktuelle ISO-Kalenderwoche' },
+      { label: 'Arbeitstage Rechner', href: '/de/arbeitstage-rechner/', desc: 'Arbeitstage zählen' },
+      { label: 'Bis Weihnachten', href: '/de/tage-bis-weihnachten/', desc: 'Tage bis 25. Dezember' },
+      { label: 'Bis Neujahr', href: '/de/tage-bis-neujahr/', desc: 'Tage bis 1. Januar' },
+      { label: 'Bis Halloween', href: '/de/tage-bis-halloween/', desc: 'Tage bis 31. Oktober' },
+      { label: 'Bis Ostern', href: '/de/tage-bis-ostern/', desc: 'Tage bis Ostersonntag' },
+      { label: 'Countdown-Timer', href: '/de/countdown-timer/', desc: 'Countdown für jedes Datum' },
+      { label: 'Zeitzonen-Umrechner', href: '/de/zeitzonen-umrechner/', desc: 'Zeitzonen konvertieren' },
+    ],
+  },
+  it: {
+    title: 'DateCalc.app – Calcolatori di Date e Orari Gratuiti 2026',
+    metaDesc: 'Calcolatori di date e orari gratuiti. Calcola età, giorni tra date, conto alla rovescia, fusi orari e altro — gratis, senza registrazione.',
+    kicker: 'Calcolatori di Date',
+    headline: 'Calcolatori di<br><em>Date &amp; Ora</em><br>Gratuiti',
+    subhead: 'Strumenti semplici e precisi per tutti i tuoi calcoli di date',
+    catAge: 'Età', catDates: 'Date', catCountdowns: 'Countdown', catWorld: 'Mondo',
+    faqTitle: 'Domande frequenti',
+    faqs: [
+      { q: 'Come calcolo la mia età esatta?', a: 'Usa il nostro calcolatore di età: inserisci la tua data di nascita e ottieni la tua età in anni, mesi, giorni e secondi.' },
+      { q: 'Come calcolo i giorni tra due date?', a: 'Usa il calcolatore di giorni tra date: inserisci le due date e ottieni la differenza in giorni, settimane e mesi.' },
+      { q: 'Come converto i fusi orari?', a: 'Usa il convertitore di fuso orario: seleziona i fusi di origine e destinazione e inserisci l\'orario per la conversione immediata.' },
+    ],
+    tools: [
+      { label: 'Calcolo Età', href: '/it/calcolo-eta/', desc: 'Età esatta in anni, mesi e giorni' },
+      { label: 'Età Cronologica', href: '/it/eta-cronologica/', desc: 'Differenza tra due date' },
+      { label: 'Età Neonato', href: '/it/calcolatore-eta-neonato/', desc: 'Età in settimane e mesi' },
+      { label: 'Età del Cane', href: '/it/calcolatore-eta-cane/', desc: 'Anni canini in umani' },
+      { label: 'Età del Gatto', href: '/it/calcolatore-eta-gatto/', desc: 'Anni felini in umani' },
+      { label: 'Giorni Tra Date', href: '/it/giorni-tra-date/', desc: 'Differenza in giorni e settimane' },
+      { label: 'Calcolatore Data', href: '/it/calcolatore-data/', desc: 'Aggiungere o sottrarre giorni' },
+      { label: 'Che Giorno È Oggi', href: '/it/che-giorno-e-oggi/', desc: 'Data e settimana correnti' },
+      { label: 'Numero Settimana', href: '/it/numero-settimana/', desc: 'Settimana ISO corrente' },
+      { label: 'Giorni Lavorativi', href: '/it/calcolatore-giorni-lavorativi/', desc: 'Contare giorni lavorativi' },
+      { label: 'Giorni a Natale', href: '/it/giorni-a-natale/', desc: 'Giorni fino al 25 dicembre' },
+      { label: 'Giorni a Capodanno', href: '/it/giorni-a-capodanno/', desc: 'Giorni fino al 1° gennaio' },
+      { label: 'Giorni a Halloween', href: '/it/giorni-a-halloween/', desc: 'Giorni fino al 31 ottobre' },
+      { label: 'Giorni a Pasqua', href: '/it/giorni-a-pasqua/', desc: 'Giorni fino alla Pasqua' },
+      { label: 'Conto alla Rovescia', href: '/it/conto-alla-rovescia/', desc: 'Countdown per qualsiasi data' },
+      { label: 'Fuso Orario', href: '/it/convertitore-fuso-orario/', desc: 'Convertire fusi orari' },
+    ],
+  },
+  pl: {
+    title: 'DateCalc.app – Bezpłatne Kalkulatory Dat i Czasu 2026',
+    metaDesc: 'Bezpłatne kalkulatory dat i czasu. Oblicz wiek, dni między datami, odliczanie, strefy czasowe i więcej — za darmo, bez rejestracji.',
+    kicker: 'Kalkulatory Dat',
+    headline: 'Bezpłatne<br><em>Kalkulatory</em><br>Dat i Czasu',
+    subhead: 'Proste i precyzyjne narzędzia do wszystkich obliczeń dat',
+    catAge: 'Wiek', catDates: 'Daty', catCountdowns: 'Odliczanie', catWorld: 'Świat',
+    faqTitle: 'Często zadawane pytania',
+    faqs: [
+      { q: 'Jak obliczyć swój dokładny wiek?', a: 'Użyj naszego kalkulatora wieku: wprowadź datę urodzenia i uzyskaj swój wiek w latach, miesiącach, dniach i sekundach.' },
+      { q: 'Jak obliczyć dni między dwiema datami?', a: 'Użyj kalkulatora dni między datami: wprowadź obie daty i uzyskaj różnicę w dniach, tygodniach i miesiącach.' },
+      { q: 'Jak przeliczać strefy czasowe?', a: 'Użyj przelicznika stref czasowych: wybierz strefy źródłową i docelową, a następnie wprowadź czas dla natychmiastowego przeliczenia.' },
+    ],
+    tools: [
+      { label: 'Kalkulator Wieku', href: '/pl/kalkulator-wieku/', desc: 'Dokładny wiek w latach, miesiącach i dniach' },
+      { label: 'Wiek Chronologiczny', href: '/pl/wiek-chronologiczny/', desc: 'Różnica między dwoma datami' },
+      { label: 'Wiek Niemowlęcia', href: '/pl/wiek-niemowlecia/', desc: 'Wiek w tygodniach i miesiącach' },
+      { label: 'Wiek Psa', href: '/pl/wiek-psa/', desc: 'Lata psa w ludzkich latach' },
+      { label: 'Wiek Kota', href: '/pl/wiek-kota/', desc: 'Lata kota w ludzkich latach' },
+      { label: 'Dni Między Datami', href: '/pl/dni-miedzy-datami/', desc: 'Różnica w dniach i tygodniach' },
+      { label: 'Kalkulator Daty', href: '/pl/kalkulator-daty/', desc: 'Dodaj lub odejmij dni' },
+      { label: 'Jaki Dziś Dzień', href: '/pl/jaki-dzis-dzien/', desc: 'Aktualna data i tydzień' },
+      { label: 'Numer Tygodnia', href: '/pl/numer-tygodnia/', desc: 'Aktualny tydzień ISO' },
+      { label: 'Dni Robocze', href: '/pl/kalkulator-dni-roboczych/', desc: 'Zliczanie dni roboczych' },
+      { label: 'Boże Narodzenie', href: '/pl/ile-dni-do-bozego-narodzenia/', desc: 'Dni do 25 grudnia' },
+      { label: 'Nowy Rok', href: '/pl/ile-dni-do-nowego-roku/', desc: 'Dni do 1 stycznia' },
+      { label: 'Halloween', href: '/pl/ile-dni-do-halloween/', desc: 'Dni do 31 października' },
+      { label: 'Wielkanoc', href: '/pl/ile-dni-do-wielkanocy/', desc: 'Dni do Wielkanocy' },
+      { label: 'Odliczanie', href: '/pl/odliczanie/', desc: 'Odliczanie do dowolnej daty' },
+      { label: 'Strefy Czasowe', href: '/pl/przelicznik-stref-czasowych/', desc: 'Przeliczanie stref czasowych' },
+    ],
+  },
 };
 
 module.exports = {
@@ -255,7 +468,7 @@ module.exports = {
     {
       id: 'home-en',
       isHomepage: true,
-      slugs: { en: '', fr: 'fr', es: 'es', pt: 'pt' },
+      slugs: { en: '', fr: 'fr', es: 'es', pt: 'pt', de: 'de', it: 'it', pl: 'pl' },
     },
   ],
 
@@ -272,7 +485,7 @@ module.exports = {
 
     const resultsSection = '';
 
-    const seoBlock = `<div class="seo-block">
+    const seoBlock = (t.seoH2a ? `<div class="seo-block">
   <div>
     <h2>${t.seoH2a}</h2>
     <p>${t.seoP1}</p>
@@ -282,8 +495,8 @@ module.exports = {
     <p>${t.seoP2}</p>
   </div>
 </div>
-<div class="faq-block">
-  <h2>FAQ</h2>
+` : '') + `<div class="faq-block">
+  <h2>${t.faqTitle || 'FAQ'}</h2>
   ${t.faqs.map(f => `<div class="faq-item"><h3>${f.q}</h3><p>${f.a}</p></div>`).join('\n  ')}
 </div>`;
 

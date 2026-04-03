@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jaki Dziś Dzień? – Dzień Tygodnia dla Dowolnej Daty | DateCalc.app</title>
+<meta name="robots" content="index, follow">
+<meta name="description" content="Sprawdź, jaki dziś jest dzień, lub znajdź dzień tygodnia dla dowolnej daty. Pokazuje numer dnia, tygodnia i dni pozostałych w roku.">
+<link rel="canonical" href="https://datecalc.app/pl/jaki-dzis-dzien/">
+<link rel="alternate" hreflang="en" href="https://datecalc.app/what-day-is-it-today/">
+<link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/quel-jour-sommes-nous/">
+<link rel="alternate" hreflang="es" href="https://datecalc.app/es/que-dia-es-hoy/">
+<link rel="alternate" hreflang="pt" href="https://datecalc.app/pt/que-dia-e-hoje/">
+<link rel="alternate" hreflang="de" href="https://datecalc.app/de/welcher-tag-ist-heute/">
+<link rel="alternate" hreflang="it" href="https://datecalc.app/it/che-giorno-e-oggi/">
+<link rel="alternate" hreflang="pl" href="https://datecalc.app/pl/jaki-dzis-dzien/">
+<link rel="alternate" hreflang="x-default" href="https://datecalc.app/what-day-is-it-today/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Jaki Dziś Dzień? – Dzień Tygodnia dla Dowolnej Daty | DateCalc.app">
+<meta property="og:description" content="Sprawdź, jaki dziś jest dzień, lub znajdź dzień tygodnia dla dowolnej daty. Pokazuje numer dnia, tygodnia i dni pozostałych w roku.">
+<meta property="og:url" content="https://datecalc.app/pl/jaki-dzis-dzien/">
+<meta property="og:site_name" content="DateCalc.app">
+<meta property="og:image" content="https://datecalc.app/og.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Jaki Dziś Dzień? – Dzień Tygodnia dla Dowolnej Daty | DateCalc.app">
+<meta name="twitter:description" content="Sprawdź, jaki dziś jest dzień, lub znajdź dzień tygodnia dla dowolnej daty. Pokazuje numer dnia, tygodnia i dni pozostałych w roku.">
+<meta name="twitter:image" content="https://datecalc.app/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Space+Mono:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="shortcut icon" href="/favicon.svg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Jaki dziś jest dzień?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Otwórz tę stronę, aby automatycznie zobaczyć dzisiejszy dzień tygodnia. Wyświetlana data jest oparta na twoim lokalnym strefie czasowej. Nie jest potrzebne żadne wprowadzanie danych — wynik aktualizuje się natychmiast po załadowaniu strony."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jaki dzień był 1 stycznia 2000?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "1 stycznia 2000 roku był sobotą. Był to również pierwszy dzień nowego milenium. Możesz to sprawdzić wpisując 01/01/2000 w pole daty powyżej."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "W jakim dniu tygodnia się urodziłem?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wpisz swoją datę urodzenia w pole powyżej, a kalkulator powie ci, w jakim dniu tygodnia się urodziłeś. Możesz też sprawdzić, w jaki dzień przypadną twoje następne urodziny."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jaki dzień będzie za 100 dni?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Do tego obliczenia użyj naszego Kalkulatora Daty, który pozwala dodawać dni do daty."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Co to jest algorytm Doomsday?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Algorytm Doomsday to metoda obliczeń w pamięci wynaleziona przez Johna Conwaya, która pozwala obliczyć dzień tygodnia dla dowolnej daty w głowie. Dla roku 2026 dniem Doomsday jest poniedziałek."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jaki dzień przypada Boże Narodzenie w 2026 roku?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Boże Narodzenie 2026 (25 grudnia 2026) przypada w piątek. Wpisz 25/12/2026 powyżej, aby potwierdzić."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jaki dzień był w przeszłości?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wpisz dowolną datę historyczną między 1 stycznia 1900 a 31 grudnia 2100 w pole daty powyżej."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "W jaki dzień tygodnia przypadają moje następne urodziny?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wpisz swoje nadchodzące urodziny w pole daty. Wynik pokazuje dokładny dzień tygodnia. Na przykład, jeśli twoje urodziny są 15 czerwca, wpisz 15/06/2026, aby zobaczyć, że to poniedziałek."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Jaki Dziś Dzień?",
+  "description": "Sprawdź, jaki dziś jest dzień, lub znajdź dzień tygodnia dla dowolnej daty. Pokazuje numer dnia, tygodnia i dni pozostałych w roku.",
+  "url": "https://datecalc.app/pl/jaki-dzis-dzien/",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Web",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"DateCalc.app","url":"https://datecalc.app","logo":"https://datecalc.app/og.png","contactPoint":{"@type":"ContactPoint","email":"hello@datecalc.app","contactType":"customer support"}}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<noscript><div style="background:#c8392b;color:#fff;text-align:center;padding:.6rem;font-family:sans-serif;font-size:.9rem">This calculator requires JavaScript. Please enable it in your browser.</div></noscript>
+
+<header>
+<div class="masthead">
+  <a href="/pl/" class="masthead-brand">DateCalc<span>.</span>app</a>
+  <div class="masthead-meta" id="todayMeta"></div>
+</div>
+</header>
+
+<div class="lang-strip">
+  <a href="/what-day-is-it-today/" class="lang-btn">EN</a>
+  <a href="/fr/quel-jour-sommes-nous/" class="lang-btn">FR</a>
+  <a href="/es/que-dia-es-hoy/" class="lang-btn">ES</a>
+  <a href="/pt/que-dia-e-hoje/" class="lang-btn">PT</a>
+  <a href="/de/welcher-tag-ist-heute/" class="lang-btn">DE</a>
+  <a href="/it/che-giorno-e-oggi/" class="lang-btn">IT</a>
+  <a href="/pl/jaki-dzis-dzien/" class="lang-btn active">PL</a>
+</div>
+
+<div class="page">
+
+  <div class="headline-block">
+    <div class="kicker">Jaki dziś dzień?</div>
+    <h1 class="headline">Jaki <em>dzień</em> <br>jest dziś?</h1>
+    <p class="subhead">Zobacz dzisiejszy dzień od razu lub znajdź dzień tygodnia dla dowolnej daty.</p>
+  </div>
+
+  <div class="form-grid">
+    <div class="form-col">
+      <div class="field-label">Data (zostaw puste dla dzisiaj)</div>
+      <div class="date-row">
+        <input type="number" id="day" placeholder="DD" min="1" max="31" inputmode="numeric" oninput="clamp(this,1,31)">
+        <span>/</span>
+        <input type="number" id="month" placeholder="MM" min="1" max="12" inputmode="numeric" oninput="clamp(this,1,12)">
+        <span>/</span>
+        <input type="number" id="year" placeholder="YYYY" min="1900" max="2100" inputmode="numeric" oninput="clamp(this,1900,2100)">
+      </div>
+      <div class="error-line" id="errorLine"></div>
+      <button class="calc-btn" onclick="calculate()">→ Sprawdź datę</button>
+    </div>
+    <div class="form-col auto-info">
+      <p class="tip-text">"Poniedziałek to stan umysłu. Ale przynajmniej teraz wiesz, w którym jesteś."</p>
+    </div>
+  </div>
+
+  <div class="results-section auto-show" id="results" aria-live="polite">
+    <div class="results-header">Informacje o dacie</div>
+    <div class="age-display">
+      <span class="age-number" id="heroDay" style="font-size:clamp(2.5rem,10vw,5rem)">—</span>
+    </div>
+    <div class="facts-row">
+      <div class="fact-item"><div class="fact-key">Pełna data</div><div class="fact-val" id="ffDate">—</div></div>
+      <div class="fact-item"><div class="fact-key">Dzień roku</div><div class="fact-val" id="ffDoy">—</div></div>
+      <div class="fact-item"><div class="fact-key">Numer tygodnia</div><div class="fact-val" id="ffWeek">—</div></div>
+      <div class="fact-item"><div class="fact-key">Pozostałe dni w roku</div><div class="fact-val" id="ffLeft">—</div></div>
+    </div>
+  </div>
+
+  <nav aria-label="Tools">
+  <div class="tool-nav">
+    <div class="nav-group"><span class="nav-cat">Wiek</span><div class="nav-links"><a href="/pl/kalkulator-wieku/">Kalkulator Wieku</a><span class="nav-sep">·</span><a href="/pl/wiek-chronologiczny/">Wiek Chronologiczny</a><span class="nav-sep">·</span><a href="/pl/wiek-niemowlecia/">Wiek Niemowlęcia</a><span class="nav-sep">·</span><a href="/pl/wiek-psa/">Wiek Psa</a><span class="nav-sep">·</span><a href="/pl/wiek-kota/">Wiek Kota</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Daty</span><div class="nav-links"><a href="/pl/dni-miedzy-datami/">Dni Między Datami</a><span class="nav-sep">·</span><a href="/pl/kalkulator-daty/">Kalkulator Daty</a><span class="nav-sep">·</span><a href="/pl/jaki-dzis-dzien/" aria-current="page">Jaki Dziś Dzień</a><span class="nav-sep">·</span><a href="/pl/numer-tygodnia/">Numer Tygodnia</a><span class="nav-sep">·</span><a href="/pl/kalkulator-dni-roboczych/">Dni Robocze</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Odliczanie</span><div class="nav-links"><a href="/pl/ile-dni-do-bozego-narodzenia/">Boże Narodzenie</a><span class="nav-sep">·</span><a href="/pl/ile-dni-do-nowego-roku/">Nowy Rok</a><span class="nav-sep">·</span><a href="/pl/ile-dni-do-halloween/">Halloween</a><span class="nav-sep">·</span><a href="/pl/ile-dni-do-wielkanocy/">Wielkanoc</a><span class="nav-sep">·</span><a href="/pl/odliczanie/">Odliczanie</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Świat</span><div class="nav-links"><a href="/pl/przelicznik-stref-czasowych/">Strefy Czasowe</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Urodzony w</span><div class="nav-links"><a href="/pl/urodzony-w-1990/">Urodzony w 1990</a><span class="nav-sep">·</span><a href="/pl/urodzony-w-1980/">Urodzony w 1980</a><span class="nav-sep">·</span><a href="/pl/urodzony-w-2000/">Urodzony w 2000</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Podsumowanie</span><div class="nav-links"><a href="/pl/co-sie-wydarzylo-w-2000/">Co się wydarzyło w 2000</a><span class="nav-sep">·</span><a href="/pl/co-sie-wydarzylo-w-1990/">Co się wydarzyło w 1990</a><span class="nav-sep">·</span><a href="/pl/co-sie-wydarzylo-w-1980/">Co się wydarzyło w 1980</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Kalendarze</span><div class="nav-links"><a href="/pl/numer-tygodnia/2025/">Tygodnie 2025</a><span class="nav-sep">·</span><a href="/pl/numer-tygodnia/2026/">Tygodnie 2026</a><span class="nav-sep">·</span><a href="/pl/numer-tygodnia/2027/">Tygodnie 2027</a></div></div>
+  </div>
+  </nav>
+
+<main id="main-content">
+  <div class="seo-block">
+    <div><h2>Jaki dzień tygodnia to dana data?</h2><p>Aby znaleźć dzień tygodnia dla dowolnej daty, matematycy opracowali kilka eleganckich algorytmów. Kongruencja Zellera używa arytmetyki modularnej do obliczenia dnia bezpośrednio z wartości dnia, miesiąca i roku. Algorytm Doomsday, wynaleziony przez matematyka Johna Conwaya, wykorzystuje fakt, że pewne pamiętne daty (4/4, 6/6, 8/8, 10/10, 12/12 i inne) zawsze przypadają na ten sam dzień tygodnia w danym roku. Do codziennego użytku nasz kalkulator robi to wszystko automatycznie: wpisz dowolną datę od 1900 do 2100 i natychmiast sprawdź, na jaki dzień tygodnia przypada.</p></div>
+    <div><h2>Ile dni ma każdy miesiąc?</h2><p>Styczeń, marzec, maj, lipiec, sierpień, październik i grudzień mają 31 dni. Kwiecień, czerwiec, wrzesień i listopad mają 30 dni. Luty ma 28 dni w zwykłym roku i 29 dni w roku przestępnym. Rok przestępny występuje w każdym roku podzielnym przez 4, z wyjątkiem lat stuletnich (podzielnych przez 100), które muszą być też podzielne przez 400. Tak więc 2000 był rokiem przestępnym, ale 1900 nie.</p></div>
+  </div>
+  <div class="faq-block">
+    <h2>Często zadawane pytania</h2>
+    <div class="faq-item"><h3>Jaki dziś jest dzień?</h3><p>Otwórz tę stronę, aby automatycznie zobaczyć dzisiejszy dzień tygodnia. Wyświetlana data jest oparta na twoim lokalnym strefie czasowej. Nie jest potrzebne żadne wprowadzanie danych — wynik aktualizuje się natychmiast po załadowaniu strony.</p></div>
+    <div class="faq-item"><h3>Jaki dzień był 1 stycznia 2000?</h3><p>1 stycznia 2000 roku był sobotą. Był to również pierwszy dzień nowego milenium. Możesz to sprawdzić wpisując 01/01/2000 w pole daty powyżej.</p></div>
+    <div class="faq-item"><h3>W jakim dniu tygodnia się urodziłem?</h3><p>Wpisz swoją datę urodzenia w pole powyżej, a kalkulator powie ci, w jakim dniu tygodnia się urodziłeś. Możesz też sprawdzić, w jaki dzień przypadną twoje następne urodziny.</p></div>
+    <div class="faq-item"><h3>Jaki dzień będzie za 100 dni?</h3><p>Do tego obliczenia użyj naszego Kalkulatora Daty, który pozwala dodawać dni do daty.</p></div>
+    <div class="faq-item"><h3>Co to jest algorytm Doomsday?</h3><p>Algorytm Doomsday to metoda obliczeń w pamięci wynaleziona przez Johna Conwaya, która pozwala obliczyć dzień tygodnia dla dowolnej daty w głowie. Dla roku 2026 dniem Doomsday jest poniedziałek.</p></div>
+    <div class="faq-item"><h3>Jaki dzień przypada Boże Narodzenie w 2026 roku?</h3><p>Boże Narodzenie 2026 (25 grudnia 2026) przypada w piątek. Wpisz 25/12/2026 powyżej, aby potwierdzić.</p></div>
+    <div class="faq-item"><h3>Jaki dzień był w przeszłości?</h3><p>Wpisz dowolną datę historyczną między 1 stycznia 1900 a 31 grudnia 2100 w pole daty powyżej.</p></div>
+    <div class="faq-item"><h3>W jaki dzień tygodnia przypadają moje następne urodziny?</h3><p>Wpisz swoje nadchodzące urodziny w pole daty. Wynik pokazuje dokładny dzień tygodnia. Na przykład, jeśli twoje urodziny są 15 czerwca, wpisz 15/06/2026, aby zobaczyć, że to poniedziałek.</p></div>
+  </div>
+
+  <div class="source-block">
+    <span class="source-lbl">Source</span>
+    <a href="https://en.wikipedia.org/wiki/Gregorian_calendar" target="_blank" rel="noopener noreferrer">Wikipedia – Kalendarz gregoriański</a>
+  </div>
+</main>
+  <footer>
+  <nav class="footer-nav" aria-label="Site links">
+<div class="footer-col"><strong>Wiek</strong>
+<a href="/pl/kalkulator-wieku/">Kalkulator Wieku</a>
+<a href="/pl/wiek-chronologiczny/">Wiek Chronologiczny</a>
+<a href="/pl/wiek-niemowlecia/">Wiek Niemowlęcia</a>
+<a href="/pl/wiek-psa/">Wiek Psa</a>
+<a href="/pl/wiek-kota/">Wiek Kota</a></div>
+<div class="footer-col"><strong>Daty</strong>
+<a href="/pl/dni-miedzy-datami/">Dni Między Datami</a>
+<a href="/pl/kalkulator-daty/">Kalkulator Daty</a>
+<a href="/pl/jaki-dzis-dzien/">Jaki Dziś Dzień</a>
+<a href="/pl/numer-tygodnia/">Numer Tygodnia</a>
+<a href="/pl/kalkulator-dni-roboczych/">Dni Robocze</a></div>
+<div class="footer-col"><strong>Odliczanie</strong>
+<a href="/pl/ile-dni-do-bozego-narodzenia/">Boże Narodzenie</a>
+<a href="/pl/ile-dni-do-nowego-roku/">Nowy Rok</a>
+<a href="/pl/ile-dni-do-halloween/">Halloween</a>
+<a href="/pl/ile-dni-do-wielkanocy/">Wielkanoc</a>
+<a href="/pl/odliczanie/">Odliczanie</a></div>
+<div class="footer-col"><strong>Świat</strong>
+<a href="/pl/przelicznik-stref-czasowych/">Strefy Czasowe</a></div>
+<div class="footer-col"><strong>Urodzony w</strong>
+<a href="/pl/urodzony-w-1990/">Urodzony w 1990</a>
+<a href="/pl/urodzony-w-1980/">Urodzony w 1980</a>
+<a href="/pl/urodzony-w-2000/">Urodzony w 2000</a></div>
+<div class="footer-col"><strong>Podsumowanie</strong>
+<a href="/pl/co-sie-wydarzylo-w-2000/">Co się wydarzyło w 2000</a>
+<a href="/pl/co-sie-wydarzylo-w-1990/">Co się wydarzyło w 1990</a>
+<a href="/pl/co-sie-wydarzylo-w-1980/">Co się wydarzyło w 1980</a></div>
+<div class="footer-col"><strong>Kalendarze</strong>
+<a href="/pl/numer-tygodnia/2025/">Tygodnie 2025</a>
+<a href="/pl/numer-tygodnia/2026/">Tygodnie 2026</a>
+<a href="/pl/numer-tygodnia/2027/">Tygodnie 2027</a></div>
+  </nav>
+  <div class="footer-copy">© 2026 DateCalc.app — Bezpłatne kalkulatory dat i czasu online · <a href="/pl/prywatnosc/">Prywatność</a></div>
+</footer>
+</div>
+
+<script>
+(function(){
+  var now = new Date();
+  var opts = {weekday:'long',year:'numeric',month:'long',day:'numeric'};
+  document.getElementById('todayMeta').innerHTML =
+    now.toLocaleDateString('pl-PL', opts) + '<br>Bezpłatny kalkulator dat';
+})();
+// Shared input guard: strip non-digits, truncate to max digit length, clamp to hi
+function clamp(el, lo, hi) {
+  var maxLen = String(hi).length;
+  var s = el.value.replace(/\D/g, '').slice(0, maxLen);
+  var n = parseInt(s, 10);
+  if (!isNaN(n) && n > hi) s = String(hi);
+  el.value = s;
+}
+// Auto-scroll to results when they become visible
+(function(){
+  var r=document.getElementById('results');
+  if(!r||r.classList.contains('auto-show'))return;
+  var obs=new MutationObserver(function(){
+    if(r.classList.contains('show')){
+      r.scrollIntoView({behavior:'smooth',block:'start'});
+      obs.disconnect();
+    }
+  });
+  obs.observe(r,{attributes:true,attributeFilter:['class']});
+})();
+// Enter key submits calculator
+(function(){
+  var fg=document.querySelector('.form-grid');
+  if(!fg)return;
+  fg.addEventListener('keydown',function(e){
+    if(e.key==='Enter'&&typeof calculate==='function')calculate();
+  });
+})();
+// AdSense: load only with consent
+(function(){
+  var ADS_SRC='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4020973443671350';
+  function loadAds(){
+    var s=document.createElement('script');
+    s.src=ADS_SRC;s.async=true;s.crossOrigin='anonymous';
+    document.head.appendChild(s);
+  }
+  if(localStorage.getItem('ads-ok')==='1')return loadAds();
+  if(localStorage.getItem('ads-ok')==='0')return;
+  var b=document.getElementById('consent-banner');
+  if(b)b.style.display='flex';
+  document.getElementById('consent-accept')&&document.getElementById('consent-accept').addEventListener('click',function(){
+    localStorage.setItem('ads-ok','1');b.style.display='none';loadAds();
+  });
+  document.getElementById('consent-decline')&&document.getElementById('consent-decline').addEventListener('click',function(){
+    localStorage.setItem('ads-ok','0');b.style.display='none';
+  });
+})();
+</script>
+<script>
+
+var D = {"errInvalid":"→ Nieprawidłowa data. Sprawdź swój wpis.","weekDays":["Niedziela","Poniedziałek","Wtorek","Środa","Czwartek","Piątek","Sobota"],"months":["Styczeń","Luty","Marzec","Kwiecień","Maj","Czerwiec","Lipiec","Sierpień","Wrzesień","Październik","Listopad","Grudzień"],"yes":"Tak","no":"Nie"};
+
+function getWeekNum(d){
+  var date=new Date(Date.UTC(d.getFullYear(),d.getMonth(),d.getDate()));
+  var day=date.getUTCDay()||7;
+  date.setUTCDate(date.getUTCDate()+4-day);
+  var yearStart=new Date(Date.UTC(date.getUTCFullYear(),0,1));
+  return Math.ceil((((date-yearStart)/86400000)+1)/7);
+}
+
+function getDoy(d){ return Math.floor((d-new Date(d.getFullYear(),0,0))/86400000); }
+function daysInYear(y){ return ((y%4===0&&y%100!==0)||y%400===0)?366:365; }
+function isLeap(y){ return (y%4===0&&y%100!==0)||y%400===0; }
+
+function fmtDate(d){
+  return d.getDate()+' '+D.months[d.getMonth()]+' '+d.getFullYear();
+}
+
+function calculate(){
+  var dv=parseInt(document.getElementById('day').value);
+  var mv=parseInt(document.getElementById('month').value);
+  var yv=parseInt(document.getElementById('year').value);
+  var err=document.getElementById('errorLine');
+  err.classList.remove('show');
+
+  var date;
+  if(!dv&&!mv&&!yv){
+    date=new Date(); date.setHours(0,0,0,0);
+  } else {
+    if(!dv||!mv||!yv||dv<1||dv>31||mv<1||mv>12){err.textContent=D.errInvalid; err.classList.add('show'); return;}
+    date=new Date(yv,mv-1,dv);
+    if(date.getDate()!==dv){err.textContent=D.errInvalid; err.classList.add('show'); return;}
+  }
+
+  var doy=getDoy(date);
+  var diy=daysInYear(date.getFullYear());
+  document.getElementById('heroDay').textContent=D.weekDays[date.getDay()];
+  document.getElementById('ffDate').textContent=fmtDate(date);
+  document.getElementById('ffDoy').textContent=doy+' / '+diy;
+  document.getElementById('ffWeek').textContent=getWeekNum(date);
+  document.getElementById('ffLeft').textContent=diy-doy;
+}
+
+calculate();
+document.addEventListener('keydown',function(e){if(e.key==='Enter') calculate();});
+
+</script>
+<div id="consent-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#111111;color:#fff;padding:.9rem 1.4rem;z-index:9999;font-size:.82rem;font-family:sans-serif;align-items:center;gap:.8rem;flex-wrap:wrap">
+  <span style="flex:1;min-width:200px">Używamy Google AdSense do finansowania tej bezpłatnej usługi. Czy akceptujesz ciasteczka reklamowe?</span>
+  <button id="consent-accept" style="background:#c8392b;color:#fff;border:none;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Akceptuj</button>
+  <button id="consent-decline" style="background:transparent;color:#aaa;border:1px solid #555;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Kontynuuj bez</button>
+</div>
+</body>
+</html>

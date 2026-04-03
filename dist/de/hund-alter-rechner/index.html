@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hund-Altersrechner – Hundejahre in Menschenjahre umrechnen | DateCalc.app</title>
+<meta name="robots" content="index, follow">
+<meta name="description" content="Wie alt ist dein Hund in Menschenjahren? Gib das Alter deines Hundes und die Rassengroße ein für eine genaue Umrechnung.">
+<link rel="canonical" href="https://datecalc.app/de/hund-alter-rechner/">
+<link rel="alternate" hreflang="en" href="https://datecalc.app/dog-age-calculator/">
+<link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/calculateur-age-chien/">
+<link rel="alternate" hreflang="es" href="https://datecalc.app/es/calculadora-edad-perro/">
+<link rel="alternate" hreflang="pt" href="https://datecalc.app/pt/calculadora-idade-cachorro/">
+<link rel="alternate" hreflang="de" href="https://datecalc.app/de/hund-alter-rechner/">
+<link rel="alternate" hreflang="it" href="https://datecalc.app/it/calcolatore-eta-cane/">
+<link rel="alternate" hreflang="pl" href="https://datecalc.app/pl/wiek-psa/">
+<link rel="alternate" hreflang="x-default" href="https://datecalc.app/dog-age-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hund-Altersrechner – Hundejahre in Menschenjahre umrechnen | DateCalc.app">
+<meta property="og:description" content="Wie alt ist dein Hund in Menschenjahren? Gib das Alter deines Hundes und die Rassengroße ein für eine genaue Umrechnung.">
+<meta property="og:url" content="https://datecalc.app/de/hund-alter-rechner/">
+<meta property="og:site_name" content="DateCalc.app">
+<meta property="og:image" content="https://datecalc.app/og.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hund-Altersrechner – Hundejahre in Menschenjahre umrechnen | DateCalc.app">
+<meta name="twitter:description" content="Wie alt ist dein Hund in Menschenjahren? Gib das Alter deines Hundes und die Rassengroße ein für eine genaue Umrechnung.">
+<meta name="twitter:image" content="https://datecalc.app/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Space+Mono:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="shortcut icon" href="/favicon.svg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wie alt ist mein Hund in Menschenjahren?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Verwende die größenangepasste Formel: Jahr 1 = 15 Menschenjahre, Jahr 2 fügt 9 hinzu (insgesamt 24), dann fügt jedes zusätzliche Jahr 4 Jahre für kleine Rassen, 5 für mittlere, 6 für große und 7 für Riesenrassen hinzu. Gib oben das Alter und die Größe deines Hundes ein für ein sofortiges Ergebnis."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ist die Regel „7 Hundejahre = 1 Menschenjahr\" ein Mythos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, es ist eine Vereinfachung. Das Verhältnis variiert stark nach Alter: Ein 1-jähriger Hund entspricht eher einem 15-jährigen Menschen, nicht einem 7-jährigen. Die 1:7-Regel ist nur bei etwa 7 Jahren für mittelgroße Hunde ungefähr korrekt. Für jedes andere Alter oder jede andere Rassengröße ist die angepasste Formel in diesem Rechner viel genauer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie alt ist ein 7-jähriger Hund in Menschenjahren?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ein 7-jähriger mittelgroßer Hund (10–25 kg) ist ungefähr 49 Menschenjahre alt. Ein großer Hund wäre 51, ein kleiner Hund 47. Die alte „mal 7\"-Regel würde 49 für alle ergeben, was in diesem Alter ungefähr stimmt, aber für junge Hunde ungenau ist."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie alt ist ein 1-jähriger Hund in Menschenjahren?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ein 1-jähriger Hund entspricht ungefähr einem 15-jährigen Menschen. In diesem Alter sind Hunde vollständig geschlechtsreif und haben etwa 90 % ihrer Erwachsenengröße erreicht."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ab welchem Alter gilt ein Hund als Senior?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Das hängt von der Rassengröße ab. Kleine Rassen (unter 10 kg) gelten um 10–12 Jahre als Senior. Mittelgroße Rassen erreichen den Senior-Status bei etwa 8–10 Jahren, große bei 7–8 Jahren und Riesenrassen bereits bei 5–6 Jahren. Senior-Hunde profitieren von häufigeren Tierarztbesuchen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie lange leben Hunde im Durchschnitt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Die durchschnittliche Lebenserwartung von Hunden reicht von etwa 8 Jahren bei Riesenrassen wie der Deutschen Dogge bis zu 16 oder mehr Jahren bei kleinen Rassen wie Chihuahuas. Mischlingshunde leben oft etwas länger als Reinrassige aufgrund von Mischungsheterosis."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie alt ist ein Labrador in Menschenjahren?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Labradors sind eine große Rasse (25–35 kg) und altern nach dem Alter von 2 Jahren mit etwa 6 Menschenjahren pro Hundejahr. Ein 3-jähriger Labrador hat etwa 30 Menschenjahre, ein 7-jähriger etwa 48 und ein 10-jähriger etwa 66 Menschenjahre. Labradors gelten bei etwa 7–8 Jahren als Senior."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was war der älteste jemals aufgezeichnete Hund?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Der älteste jemals aufgezeichnete Hund war Bobi, ein Rafeiro do Alentejo aus Portugal, der 31 Jahre und 165 Tage alt wurde, zertifiziert vom Guinness-Weltrekord."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Hund-Altersrechner",
+  "description": "Wie alt ist dein Hund in Menschenjahren? Gib das Alter deines Hundes und die Rassengroße ein für eine genaue Umrechnung.",
+  "url": "https://datecalc.app/de/hund-alter-rechner/",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Web",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"DateCalc.app","url":"https://datecalc.app","logo":"https://datecalc.app/og.png","contactPoint":{"@type":"ContactPoint","email":"hello@datecalc.app","contactType":"customer support"}}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<noscript><div style="background:#c8392b;color:#fff;text-align:center;padding:.6rem;font-family:sans-serif;font-size:.9rem">This calculator requires JavaScript. Please enable it in your browser.</div></noscript>
+
+<header>
+<div class="masthead">
+  <a href="/de/" class="masthead-brand">DateCalc<span>.</span>app</a>
+  <div class="masthead-meta" id="todayMeta"></div>
+</div>
+</header>
+
+<div class="lang-strip">
+  <a href="/dog-age-calculator/" class="lang-btn">EN</a>
+  <a href="/fr/calculateur-age-chien/" class="lang-btn">FR</a>
+  <a href="/es/calculadora-edad-perro/" class="lang-btn">ES</a>
+  <a href="/pt/calculadora-idade-cachorro/" class="lang-btn">PT</a>
+  <a href="/de/hund-alter-rechner/" class="lang-btn active">DE</a>
+  <a href="/it/calcolatore-eta-cane/" class="lang-btn">IT</a>
+  <a href="/pl/wiek-psa/" class="lang-btn">PL</a>
+</div>
+
+<div class="page">
+
+  <div class="headline-block">
+    <div class="kicker">Hund-Altersrechner</div>
+    <h1 class="headline">Wie alt ist <br>mein <em>Hund</em>?</h1>
+    <p class="subhead">Rechne das Alter deines Hundes basierend auf der Rassengröße in Menschenjahre um.</p>
+  </div>
+
+  <div class="form-grid">
+    <div class="form-col">
+      <div class="field-label">Alter des Hundes (Jahre)</div>
+      <div class="date-row">
+        <input type="number" id="dogAge" placeholder="0" min="0" max="30" inputmode="numeric" oninput="clamp(this,0,30)" style="width:4ch">
+      </div>
+      <div class="field-label" style="margin-top:1.5rem">Rassengröße</div>
+      <div class="op-row" style="flex-direction:column;gap:.5rem;align-items:flex-start">
+        <label style="font-size:.85rem;color:var(--muted);cursor:pointer"><input type="radio" name="size" value="small" style="accent-color:var(--accent)"> Klein (unter 10 kg)</label>
+        <label style="font-size:.85rem;color:var(--muted);cursor:pointer"><input type="radio" name="size" value="medium" checked style="accent-color:var(--accent)"> Mittel (10–25 kg)</label>
+        <label style="font-size:.85rem;color:var(--muted);cursor:pointer"><input type="radio" name="size" value="large" style="accent-color:var(--accent)"> Groß (25–45 kg)</label>
+        <label style="font-size:.85rem;color:var(--muted);cursor:pointer"><input type="radio" name="size" value="giant" style="accent-color:var(--accent)"> Riesig (über 45 kg)</label>
+      </div>
+      <div class="error-line" id="errorLine"></div>
+      <button class="calc-btn" onclick="calculate()">→ BERECHNEN</button>
+    </div>
+    <div class="form-col">
+      <p class="tip-text">"Hunde zählen keine Jahre. Sie zählen Bauchkrauler."</p>
+      <ul class="example-list">
+        <li onclick="fillExample(3,'medium')">Labrador, 3 Jahre →</li>
+        <li onclick="fillExample(8,'small')">Chihuahua, 8 Jahre →</li>
+        <li onclick="fillExample(5,'large')">Schäferhund, 5 Jahre →</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="results-section" id="results" aria-live="polite">
+    <div class="results-header">Das Alter deines Hundes</div>
+    <div class="age-display">
+      <span class="age-number" id="heroAge">—</span>
+      <span class="age-suffix">Menschenjahre</span>
+    </div>
+    <div class="facts-row">
+      <div class="fact-item"><div class="fact-key">Hundejahre</div><div class="fact-val" id="ffDogYears">—</div></div>
+      <div class="fact-item"><div class="fact-key">Lebensphase</div><div class="fact-val" id="ffStage">—</div></div>
+      <div class="fact-item"><div class="fact-key">Rassengröße</div><div class="fact-val" id="ffSize">—</div></div>
+    </div>
+  </div>
+
+  <nav aria-label="Tools">
+  <div class="tool-nav">
+    <div class="nav-group"><span class="nav-cat">Alter</span><div class="nav-links"><a href="/de/altersrechner/">Altersrechner</a><span class="nav-sep">·</span><a href="/de/chronologisches-alter/">Chronologisches Alter</a><span class="nav-sep">·</span><a href="/de/baby-alter-rechner/">Baby-Altersrechner</a><span class="nav-sep">·</span><a href="/de/hund-alter-rechner/" aria-current="page">Hund Altersrechner</a><span class="nav-sep">·</span><a href="/de/katze-alter-rechner/">Katze Altersrechner</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Daten</span><div class="nav-links"><a href="/de/tage-zwischen-datumen/">Tage zwischen Daten</a><span class="nav-sep">·</span><a href="/de/datumsrechner/">Datumsrechner</a><span class="nav-sep">·</span><a href="/de/welcher-tag-ist-heute/">Welcher Tag ist heute</a><span class="nav-sep">·</span><a href="/de/kalenderwoche/">Kalenderwoche</a><span class="nav-sep">·</span><a href="/de/arbeitstage-rechner/">Arbeitstage Rechner</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Countdowns</span><div class="nav-links"><a href="/de/tage-bis-weihnachten/">Weihnachten</a><span class="nav-sep">·</span><a href="/de/tage-bis-neujahr/">Neujahr</a><span class="nav-sep">·</span><a href="/de/tage-bis-halloween/">Halloween</a><span class="nav-sep">·</span><a href="/de/tage-bis-ostern/">Ostern</a><span class="nav-sep">·</span><a href="/de/countdown-timer/">Countdown-Timer</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Welt</span><div class="nav-links"><a href="/de/zeitzonen-umrechner/">Zeitzonen-Umrechner</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Geboren in</span><div class="nav-links"><a href="/de/geboren-in-1990/">Geboren 1990</a><span class="nav-sep">·</span><a href="/de/geboren-in-1980/">Geboren 1980</a><span class="nav-sep">·</span><a href="/de/geboren-in-2000/">Geboren 2000</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Jahresrückblick</span><div class="nav-links"><a href="/de/was-geschah-2000/">Was geschah 2000</a><span class="nav-sep">·</span><a href="/de/was-geschah-1990/">Was geschah 1990</a><span class="nav-sep">·</span><a href="/de/was-geschah-1980/">Was geschah 1980</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Kalender</span><div class="nav-links"><a href="/de/kalenderwoche/2025/">KW 2025</a><span class="nav-sep">·</span><a href="/de/kalenderwoche/2026/">KW 2026</a><span class="nav-sep">·</span><a href="/de/kalenderwoche/2027/">KW 2027</a></div></div>
+  </div>
+  </nav>
+
+<main id="main-content">
+  <div class="seo-block">
+    <div><h2>Wie rechnet man Hundejahre in Menschenjahre um?</h2><p>Die alte Regel „mit 7 multiplizieren" ist ein Mythos. In Wirklichkeit altern Hunde in ihren frühen Jahren viel schneller und später langsamer. Das erste Lebensjahr eines Hundes entspricht etwa 15 Menschenjahren, da Welpen in nur 12 Monaten die Geschlechtsreife erreichen, ihre Erwachsenenzähne entwickeln und vollständige motorische Fähigkeiten ausbilden. Das zweite Jahr fügt etwa 9 weitere Jahre hinzu (insgesamt 24), da Hunde die volle soziale und emotionale Reife erreichen. Danach fügt jedes zusätzliche Jahr je nach Rassengröße 4–7 Menschenjahre hinzu. Ein 3-jähriger Labrador entspricht einem 32-jährigen Menschen.</p></div>
+    <div><h2>Warum altern größere Hunde schneller?</h2><p>Große und riesige Rassen haben eine kürzere durchschnittliche Lebensdauer (8–10 Jahre für Riesen wie die Deutsche Dogge) im Vergleich zu kleinen Rassen (14–16 Jahre für Chihuahuas). Wissenschaftler glauben, dass dies daran liegt, dass größere Hunde in der Welpenphase viel schneller wachsen, was oxidativen Stress und zelluläre Alterungsprozesse beschleunigt. Riesige Rassen wie Bernhardiner und Irische Wolfshunde gelten schon mit 5–6 Jahren als Senior, während ein kleiner Terrier diesen Status erst mit 10 Jahren erreicht.</p></div>
+  </div>
+  <div class="faq-block">
+    <h2>Häufig gestellte Fragen</h2>
+    <div class="faq-item"><h3>Wie alt ist mein Hund in Menschenjahren?</h3><p>Verwende die größenangepasste Formel: Jahr 1 = 15 Menschenjahre, Jahr 2 fügt 9 hinzu (insgesamt 24), dann fügt jedes zusätzliche Jahr 4 Jahre für kleine Rassen, 5 für mittlere, 6 für große und 7 für Riesenrassen hinzu. Gib oben das Alter und die Größe deines Hundes ein für ein sofortiges Ergebnis.</p></div>
+    <div class="faq-item"><h3>Ist die Regel „7 Hundejahre = 1 Menschenjahr" ein Mythos?</h3><p>Ja, es ist eine Vereinfachung. Das Verhältnis variiert stark nach Alter: Ein 1-jähriger Hund entspricht eher einem 15-jährigen Menschen, nicht einem 7-jährigen. Die 1:7-Regel ist nur bei etwa 7 Jahren für mittelgroße Hunde ungefähr korrekt. Für jedes andere Alter oder jede andere Rassengröße ist die angepasste Formel in diesem Rechner viel genauer.</p></div>
+    <div class="faq-item"><h3>Wie alt ist ein 7-jähriger Hund in Menschenjahren?</h3><p>Ein 7-jähriger mittelgroßer Hund (10–25 kg) ist ungefähr 49 Menschenjahre alt. Ein großer Hund wäre 51, ein kleiner Hund 47. Die alte „mal 7"-Regel würde 49 für alle ergeben, was in diesem Alter ungefähr stimmt, aber für junge Hunde ungenau ist.</p></div>
+    <div class="faq-item"><h3>Wie alt ist ein 1-jähriger Hund in Menschenjahren?</h3><p>Ein 1-jähriger Hund entspricht ungefähr einem 15-jährigen Menschen. In diesem Alter sind Hunde vollständig geschlechtsreif und haben etwa 90 % ihrer Erwachsenengröße erreicht.</p></div>
+    <div class="faq-item"><h3>Ab welchem Alter gilt ein Hund als Senior?</h3><p>Das hängt von der Rassengröße ab. Kleine Rassen (unter 10 kg) gelten um 10–12 Jahre als Senior. Mittelgroße Rassen erreichen den Senior-Status bei etwa 8–10 Jahren, große bei 7–8 Jahren und Riesenrassen bereits bei 5–6 Jahren. Senior-Hunde profitieren von häufigeren Tierarztbesuchen.</p></div>
+    <div class="faq-item"><h3>Wie lange leben Hunde im Durchschnitt?</h3><p>Die durchschnittliche Lebenserwartung von Hunden reicht von etwa 8 Jahren bei Riesenrassen wie der Deutschen Dogge bis zu 16 oder mehr Jahren bei kleinen Rassen wie Chihuahuas. Mischlingshunde leben oft etwas länger als Reinrassige aufgrund von Mischungsheterosis.</p></div>
+    <div class="faq-item"><h3>Wie alt ist ein Labrador in Menschenjahren?</h3><p>Labradors sind eine große Rasse (25–35 kg) und altern nach dem Alter von 2 Jahren mit etwa 6 Menschenjahren pro Hundejahr. Ein 3-jähriger Labrador hat etwa 30 Menschenjahre, ein 7-jähriger etwa 48 und ein 10-jähriger etwa 66 Menschenjahre. Labradors gelten bei etwa 7–8 Jahren als Senior.</p></div>
+    <div class="faq-item"><h3>Was war der älteste jemals aufgezeichnete Hund?</h3><p>Der älteste jemals aufgezeichnete Hund war Bobi, ein Rafeiro do Alentejo aus Portugal, der 31 Jahre und 165 Tage alt wurde, zertifiziert vom Guinness-Weltrekord.</p></div>
+  </div>
+
+  <div class="source-block">
+    <span class="source-lbl">Source</span>
+    <a href="https://www.akc.org/expert-advice/health/how-to-calculate-dog-years-to-human-years/" target="_blank" rel="noopener noreferrer">American Kennel Club – Hundejahre berechnen</a>
+  </div>
+</main>
+  <footer>
+  <nav class="footer-nav" aria-label="Site links">
+<div class="footer-col"><strong>Alter</strong>
+<a href="/de/altersrechner/">Altersrechner</a>
+<a href="/de/chronologisches-alter/">Chronologisches Alter</a>
+<a href="/de/baby-alter-rechner/">Baby-Altersrechner</a>
+<a href="/de/hund-alter-rechner/">Hund Altersrechner</a>
+<a href="/de/katze-alter-rechner/">Katze Altersrechner</a></div>
+<div class="footer-col"><strong>Daten</strong>
+<a href="/de/tage-zwischen-datumen/">Tage zwischen Daten</a>
+<a href="/de/datumsrechner/">Datumsrechner</a>
+<a href="/de/welcher-tag-ist-heute/">Welcher Tag ist heute</a>
+<a href="/de/kalenderwoche/">Kalenderwoche</a>
+<a href="/de/arbeitstage-rechner/">Arbeitstage Rechner</a></div>
+<div class="footer-col"><strong>Countdowns</strong>
+<a href="/de/tage-bis-weihnachten/">Weihnachten</a>
+<a href="/de/tage-bis-neujahr/">Neujahr</a>
+<a href="/de/tage-bis-halloween/">Halloween</a>
+<a href="/de/tage-bis-ostern/">Ostern</a>
+<a href="/de/countdown-timer/">Countdown-Timer</a></div>
+<div class="footer-col"><strong>Welt</strong>
+<a href="/de/zeitzonen-umrechner/">Zeitzonen-Umrechner</a></div>
+<div class="footer-col"><strong>Geboren in</strong>
+<a href="/de/geboren-in-1990/">Geboren 1990</a>
+<a href="/de/geboren-in-1980/">Geboren 1980</a>
+<a href="/de/geboren-in-2000/">Geboren 2000</a></div>
+<div class="footer-col"><strong>Jahresrückblick</strong>
+<a href="/de/was-geschah-2000/">Was geschah 2000</a>
+<a href="/de/was-geschah-1990/">Was geschah 1990</a>
+<a href="/de/was-geschah-1980/">Was geschah 1980</a></div>
+<div class="footer-col"><strong>Kalender</strong>
+<a href="/de/kalenderwoche/2025/">KW 2025</a>
+<a href="/de/kalenderwoche/2026/">KW 2026</a>
+<a href="/de/kalenderwoche/2027/">KW 2027</a></div>
+  </nav>
+  <div class="footer-copy">© 2026 DateCalc.app — Kostenlose Online-Datums- und Zeitrechner · <a href="/de/datenschutz/">Datenschutz</a></div>
+</footer>
+</div>
+
+<script>
+(function(){
+  var now = new Date();
+  var opts = {weekday:'long',year:'numeric',month:'long',day:'numeric'};
+  document.getElementById('todayMeta').innerHTML =
+    now.toLocaleDateString('de-DE', opts) + '<br>Kostenloser Datumsrechner';
+})();
+// Shared input guard: strip non-digits, truncate to max digit length, clamp to hi
+function clamp(el, lo, hi) {
+  var maxLen = String(hi).length;
+  var s = el.value.replace(/\D/g, '').slice(0, maxLen);
+  var n = parseInt(s, 10);
+  if (!isNaN(n) && n > hi) s = String(hi);
+  el.value = s;
+}
+// Auto-scroll to results when they become visible
+(function(){
+  var r=document.getElementById('results');
+  if(!r||r.classList.contains('auto-show'))return;
+  var obs=new MutationObserver(function(){
+    if(r.classList.contains('show')){
+      r.scrollIntoView({behavior:'smooth',block:'start'});
+      obs.disconnect();
+    }
+  });
+  obs.observe(r,{attributes:true,attributeFilter:['class']});
+})();
+// Enter key submits calculator
+(function(){
+  var fg=document.querySelector('.form-grid');
+  if(!fg)return;
+  fg.addEventListener('keydown',function(e){
+    if(e.key==='Enter'&&typeof calculate==='function')calculate();
+  });
+})();
+// AdSense: load only with consent
+(function(){
+  var ADS_SRC='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4020973443671350';
+  function loadAds(){
+    var s=document.createElement('script');
+    s.src=ADS_SRC;s.async=true;s.crossOrigin='anonymous';
+    document.head.appendChild(s);
+  }
+  if(localStorage.getItem('ads-ok')==='1')return loadAds();
+  if(localStorage.getItem('ads-ok')==='0')return;
+  var b=document.getElementById('consent-banner');
+  if(b)b.style.display='flex';
+  document.getElementById('consent-accept')&&document.getElementById('consent-accept').addEventListener('click',function(){
+    localStorage.setItem('ads-ok','1');b.style.display='none';loadAds();
+  });
+  document.getElementById('consent-decline')&&document.getElementById('consent-decline').addEventListener('click',function(){
+    localStorage.setItem('ads-ok','0');b.style.display='none';
+  });
+})();
+</script>
+<script>
+
+var D = {"errInvalid":"→ Bitte gib ein gültiges Alter ein (1–30).","stages":["Welpe","Junger Erwachsener","Erwachsen","Reif","Senior","Geriatrisch"],"stageYears":[1,3,7,10,12,15],"sizeLabels":{"small":"Klein (unter 10 kg)","medium":"Mittel (10–25 kg)","large":"Groß (25–45 kg)","giant":"Riesig (über 45 kg)"}};
+
+function dogToHuman(age, size) {
+  var perYear = { small:4, medium:5, large:6, giant:7 };
+  if (age <= 0) return 0;
+  if (age === 1) return 15;
+  if (age === 2) return 24;
+  return 24 + (age - 2) * perYear[size];
+}
+
+function getStage(age) {
+  var yrs = D.stageYears;
+  for (var i = yrs.length - 1; i >= 0; i--) if (age >= yrs[i]) return D.stages[i];
+  return D.stages[0];
+}
+
+function fillExample(age, size) {
+  document.getElementById('dogAge').value = age;
+  document.querySelectorAll('input[name="size"]').forEach(function(r){ r.checked = r.value === size; });
+  calculate();
+}
+
+function calculate() {
+  var age = parseInt(document.getElementById('dogAge').value);
+  var size = document.querySelector('input[name="size"]:checked').value;
+  var err = document.getElementById('errorLine');
+  var res = document.getElementById('results');
+  err.classList.remove('show'); res.classList.remove('show');
+
+  if (!age || age < 1 || age > 30) { err.textContent = D.errInvalid; err.classList.add('show'); return; }
+
+  var human = dogToHuman(age, size);
+  document.getElementById('heroAge').textContent = human;
+  document.getElementById('ffDogYears').textContent = age;
+  document.getElementById('ffStage').textContent = getStage(age);
+  document.getElementById('ffSize').textContent = D.sizeLabels[size];
+  res.classList.add('show');
+  res.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+document.addEventListener('keydown', function(e){ if(e.key==='Enter') calculate(); });
+
+</script>
+<div id="consent-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#111111;color:#fff;padding:.9rem 1.4rem;z-index:9999;font-size:.82rem;font-family:sans-serif;align-items:center;gap:.8rem;flex-wrap:wrap">
+  <span style="flex:1;min-width:200px">Wir nutzen Google AdSense zur Finanzierung dieses kostenlosen Dienstes. Akzeptierst du Werbe-Cookies?</span>
+  <button id="consent-accept" style="background:#c8392b;color:#fff;border:none;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Akzeptieren</button>
+  <button id="consent-decline" style="background:transparent;color:#aaa;border:1px solid #555;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Weiter ohne</button>
+</div>
+</body>
+</html>

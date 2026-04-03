@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kalkulator Wieku Chronologicznego – Dokładny Wiek w Latach, Miesiącach i Dniach | DateCalc.app</title>
+<meta name="robots" content="index, follow">
+<meta name="description" content="Oblicz wiek chronologiczny od daty urodzenia do dowolnej daty referencyjnej. Stosowany w kontekstach medycznych, edukacyjnych i rozwojowych.">
+<link rel="canonical" href="https://datecalc.app/pl/wiek-chronologiczny/">
+<link rel="alternate" hreflang="en" href="https://datecalc.app/chronological-age-calculator/">
+<link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/age-chronologique/">
+<link rel="alternate" hreflang="es" href="https://datecalc.app/es/edad-cronologica/">
+<link rel="alternate" hreflang="pt" href="https://datecalc.app/pt/idade-cronologica/">
+<link rel="alternate" hreflang="de" href="https://datecalc.app/de/chronologisches-alter/">
+<link rel="alternate" hreflang="it" href="https://datecalc.app/it/eta-cronologica/">
+<link rel="alternate" hreflang="pl" href="https://datecalc.app/pl/wiek-chronologiczny/">
+<link rel="alternate" hreflang="x-default" href="https://datecalc.app/chronological-age-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kalkulator Wieku Chronologicznego – Dokładny Wiek w Latach, Miesiącach i Dniach | DateCalc.app">
+<meta property="og:description" content="Oblicz wiek chronologiczny od daty urodzenia do dowolnej daty referencyjnej. Stosowany w kontekstach medycznych, edukacyjnych i rozwojowych.">
+<meta property="og:url" content="https://datecalc.app/pl/wiek-chronologiczny/">
+<meta property="og:site_name" content="DateCalc.app">
+<meta property="og:image" content="https://datecalc.app/og.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Kalkulator Wieku Chronologicznego – Dokładny Wiek w Latach, Miesiącach i Dniach | DateCalc.app">
+<meta name="twitter:description" content="Oblicz wiek chronologiczny od daty urodzenia do dowolnej daty referencyjnej. Stosowany w kontekstach medycznych, edukacyjnych i rozwojowych.">
+<meta name="twitter:image" content="https://datecalc.app/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Space+Mono:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="shortcut icon" href="/favicon.svg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Czym jest wiek chronologiczny w psychologii?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "W psychologii wiek chronologiczny (WC) to rzeczywisty czas upłynięty od urodzenia, używany jako punkt odniesienia do porównywania miar rozwojowych, poznawczych i behawioralnych. Klasyczna formuła IQ dzieli wiek umysłowy przez wiek chronologiczny i mnoży przez 100. Wiek chronologiczny pozostaje centralny w ocenach rozwojowych i decyzjach o plasowaniu edukacyjnym."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jaka jest różnica między wiekiem chronologicznym a umysłowym?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wiek chronologiczny to rzeczywisty czas upłynięty od urodzenia — całkowicie obiektywny. Wiek umysłowy to miara zdolności poznawczych w stosunku do tego, co jest typowe dla danego wieku chronologicznego. Dziesięciolatek, który osiąga wyniki 13-latka w testach poznawczych, ma wiek umysłowy 13 lat, ale wiek chronologiczny 10 lat."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jak obliczyć wiek chronologiczny dla zapisu do szkoły?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Większość szkół oblicza wiek chronologiczny, porównując datę urodzenia dziecka z datą graniczną (np. 1 września). Dziecko musi osiągnąć wymagany wiek w tej dacie lub przed nią. Wprowadź datę urodzenia i datę graniczną zapisu do tego kalkulatora, aby uzyskać dokładny wiek przy zapisie."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jaka jest formuła wieku chronologicznego?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Formuła to: WC = Data referencyjna − Data urodzenia, wyrażona w latach, miesiącach i dniach. Obliczenie wymaga ostrożnego obsługiwania pożyczek końca miesiąca i lat przestępnych. Ten kalkulator stosuje formułę poprawnie dla dowolnych dwóch dat."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jak wiek chronologiczny jest używany w ubezpieczeniach?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Firmy ubezpieczeniowe używają wieku chronologicznego do określania kategorii ryzyka, ustalania stawek składek i definiowania uprawnień do polis. Składki ubezpieczenia na życie zazwyczaj rosną z każdymi urodzinami. Plany ubezpieczenia zdrowotnego często mają przedziały cenowe oparte na wieku."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jak wiek chronologiczny jest używany w testach standaryzowanych?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Większość standaryzowanych testów psychologicznych i edukacyjnych jest znormalizowana według grup wiekowych. Surowy wynik zdającego jest porównywany z wynikami innych w tej samej klasie wieku chronologicznego, aby uzyskać wynik standardowy lub rangę percentylową. Użycie nieprawidłowego wieku chronologicznego może przesunąć wynik do innej grupy normatywnej."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do czego służy wiek chronologiczny?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wiek chronologiczny jest używany w ocenach pediatrycznych, uprawnieniach szkolnych, śledzeniu kamieni milowych rozwoju, obliczeniach ubezpieczeniowych i interpretacji testów standaryzowanych."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Czy mogę obliczyć wiek chronologiczny dla przeszłej daty?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tak. Wprowadź datę urodzenia i dowolną datę referencyjną — przeszłą, obecną lub przyszłą. Kalkulator obliczy dokładny wiek chronologiczny między tymi dwiema datami."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Kalkulator Wieku Chronologicznego",
+  "description": "Oblicz wiek chronologiczny od daty urodzenia do dowolnej daty referencyjnej. Stosowany w kontekstach medycznych, edukacyjnych i rozwojowych.",
+  "url": "https://datecalc.app/pl/wiek-chronologiczny/",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Web",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"DateCalc.app","url":"https://datecalc.app","logo":"https://datecalc.app/og.png","contactPoint":{"@type":"ContactPoint","email":"hello@datecalc.app","contactType":"customer support"}}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<noscript><div style="background:#c8392b;color:#fff;text-align:center;padding:.6rem;font-family:sans-serif;font-size:.9rem">This calculator requires JavaScript. Please enable it in your browser.</div></noscript>
+
+<header>
+<div class="masthead">
+  <a href="/pl/" class="masthead-brand">DateCalc<span>.</span>app</a>
+  <div class="masthead-meta" id="todayMeta"></div>
+</div>
+</header>
+
+<div class="lang-strip">
+  <a href="/chronological-age-calculator/" class="lang-btn">EN</a>
+  <a href="/fr/age-chronologique/" class="lang-btn">FR</a>
+  <a href="/es/edad-cronologica/" class="lang-btn">ES</a>
+  <a href="/pt/idade-cronologica/" class="lang-btn">PT</a>
+  <a href="/de/chronologisches-alter/" class="lang-btn">DE</a>
+  <a href="/it/eta-cronologica/" class="lang-btn">IT</a>
+  <a href="/pl/wiek-chronologiczny/" class="lang-btn active">PL</a>
+</div>
+
+<div class="page">
+
+  <div class="headline-block">
+    <div class="kicker">Wiek Chronologiczny</div>
+    <h1 class="headline">Wiek <br><em>chronologiczny</em></h1>
+    <p class="subhead">Oblicz dokładny wiek chronologiczny między dwiema datami — lata, miesiące, tygodnie i dni.</p>
+  </div>
+
+  <div class="form-grid">
+    <div class="form-col">
+      <div class="field-label">Data urodzenia</div>
+      <div class="date-row">
+        <input type="number" id="day" placeholder="DD" min="1" max="31" inputmode="numeric" oninput="clamp(this,1,31)">
+        <span>/</span>
+        <input type="number" id="month" placeholder="MM" min="1" max="12" inputmode="numeric" oninput="clamp(this,1,12)">
+        <span>/</span>
+        <input type="number" id="year" placeholder="YYYY" min="1900" max="2026" inputmode="numeric" oninput="clamp(this,1900,2026)">
+      </div>
+      <div class="field-label" style="margin-top:1rem">Data referencyjna (zostaw puste dla dzisiaj)</div>
+      <div class="date-row">
+        <input type="number" id="rDay" placeholder="DD" min="1" max="31" inputmode="numeric" oninput="clamp(this,1,31)">
+        <span>/</span>
+        <input type="number" id="rMonth" placeholder="MM" min="1" max="12" inputmode="numeric" oninput="clamp(this,1,12)">
+        <span>/</span>
+        <input type="number" id="rYear" placeholder="YYYY" min="1900" max="2100" inputmode="numeric" oninput="clamp(this,1900,2100)">
+      </div>
+      <div class="error-line" id="errorLine"></div>
+      <button class="calc-btn" onclick="calculate()">→ OBLICZ</button>
+    </div>
+    <div class="form-col">
+      <p class="tip-text">"Wiek chronologiczny to liczba lat, miesięcy i dni od urodzenia — najdokładniejsza miara przeżytego czasu."</p>
+    </div>
+  </div>
+
+  <div class="results-section" id="results" aria-live="polite">
+    <div class="results-header">Wiek chronologiczny</div>
+    <div class="age-display">
+      <span class="age-number" id="heroAge">—</span>
+      <span class="age-suffix">lat</span>
+    </div>
+    <div class="precise-age" id="preciseAge"></div>
+    <div class="stats-strip">
+      <div class="stat-item"><div class="stat-num" id="statMonths">—</div><div class="stat-lbl">miesiące</div></div>
+      <div class="stat-item"><div class="stat-num" id="statWeeks">—</div><div class="stat-lbl">tygodnie</div></div>
+      <div class="stat-item"><div class="stat-num" id="statDays">—</div><div class="stat-lbl">dni</div></div>
+      <div class="stat-item"><div class="stat-num" id="statHours">—</div><div class="stat-lbl">godziny</div></div>
+    </div>
+    <div class="facts-row">
+      <div class="fact-item"><div class="fact-key">Znak zodiaku</div><div class="fact-val" id="ffZodiac">—</div></div>
+      <div class="fact-item"><div class="fact-key">Pokolenie</div><div class="fact-val" id="ffGen">—</div></div>
+      <div class="fact-item"><div class="fact-key">Dzień urodzenia</div><div class="fact-val" id="ffDay">—</div></div>
+      <div class="fact-item"><div class="fact-key">Przeżyte lata przestępne</div><div class="fact-val" id="ffLeap">—</div></div>
+    </div>
+    <div class="bday-banner" id="bdayBanner"></div>
+  </div>
+
+  <nav aria-label="Tools">
+  <div class="tool-nav">
+    <div class="nav-group"><span class="nav-cat">Wiek</span><div class="nav-links"><a href="/pl/kalkulator-wieku/">Kalkulator Wieku</a><span class="nav-sep">·</span><a href="/pl/wiek-chronologiczny/" aria-current="page">Wiek Chronologiczny</a><span class="nav-sep">·</span><a href="/pl/wiek-niemowlecia/">Wiek Niemowlęcia</a><span class="nav-sep">·</span><a href="/pl/wiek-psa/">Wiek Psa</a><span class="nav-sep">·</span><a href="/pl/wiek-kota/">Wiek Kota</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Daty</span><div class="nav-links"><a href="/pl/dni-miedzy-datami/">Dni Między Datami</a><span class="nav-sep">·</span><a href="/pl/kalkulator-daty/">Kalkulator Daty</a><span class="nav-sep">·</span><a href="/pl/jaki-dzis-dzien/">Jaki Dziś Dzień</a><span class="nav-sep">·</span><a href="/pl/numer-tygodnia/">Numer Tygodnia</a><span class="nav-sep">·</span><a href="/pl/kalkulator-dni-roboczych/">Dni Robocze</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Odliczanie</span><div class="nav-links"><a href="/pl/ile-dni-do-bozego-narodzenia/">Boże Narodzenie</a><span class="nav-sep">·</span><a href="/pl/ile-dni-do-nowego-roku/">Nowy Rok</a><span class="nav-sep">·</span><a href="/pl/ile-dni-do-halloween/">Halloween</a><span class="nav-sep">·</span><a href="/pl/ile-dni-do-wielkanocy/">Wielkanoc</a><span class="nav-sep">·</span><a href="/pl/odliczanie/">Odliczanie</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Świat</span><div class="nav-links"><a href="/pl/przelicznik-stref-czasowych/">Strefy Czasowe</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Urodzony w</span><div class="nav-links"><a href="/pl/urodzony-w-1990/">Urodzony w 1990</a><span class="nav-sep">·</span><a href="/pl/urodzony-w-1980/">Urodzony w 1980</a><span class="nav-sep">·</span><a href="/pl/urodzony-w-2000/">Urodzony w 2000</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Podsumowanie</span><div class="nav-links"><a href="/pl/co-sie-wydarzylo-w-2000/">Co się wydarzyło w 2000</a><span class="nav-sep">·</span><a href="/pl/co-sie-wydarzylo-w-1990/">Co się wydarzyło w 1990</a><span class="nav-sep">·</span><a href="/pl/co-sie-wydarzylo-w-1980/">Co się wydarzyło w 1980</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Kalendarze</span><div class="nav-links"><a href="/pl/numer-tygodnia/2025/">Tygodnie 2025</a><span class="nav-sep">·</span><a href="/pl/numer-tygodnia/2026/">Tygodnie 2026</a><span class="nav-sep">·</span><a href="/pl/numer-tygodnia/2027/">Tygodnie 2027</a></div></div>
+  </div>
+  </nav>
+
+<main id="main-content">
+  <div class="seo-block">
+    <div><h2>Czym jest wiek chronologiczny?</h2><p>Wiek chronologiczny to precyzyjna miara czasu, który upłynął od narodzin danej osoby, wyrażona w latach, miesiącach i dniach. Jest to najbardziej obiektywna miara wieku, ponieważ opiera się wyłącznie na upływie czasu kalendarzowego, bez wnioskowania o stanie fizycznym, zdolnościach poznawczych czy dojrzałości. Wiek chronologiczny jest używany w wielu kontekstach: pediatrzy używają go do porównywania rozwoju dziecka ze standardowymi tabelami kamieni milowych; szkoły używają go do określania uprawnień do zapisów; psycholodzy używają go jako mianownik przy obliczaniu ilorazów inteligencji; ubezpieczyciele używają go dla kategorii ryzyka i stawek składek.</p></div>
+    <div><h2>Jak obliczać wiek chronologiczny?</h2><p>Aby dokładnie obliczyć wiek chronologiczny, odejmij datę urodzenia od daty referencyjnej w trzech krokach. Po pierwsze odejmij dzień urodzenia od dnia referencyjnego — jeśli wynik jest ujemny, pożycz dni z poprzedniego miesiąca. Po drugie odejmij miesiąc urodzenia — jeśli ujemny, pożycz 12 miesięcy i odejmij 1 od roku. Po trzecie odejmij rok urodzenia. Przykład: dziecko urodzone 15 marca 2018 roku, oceniane 20 października 2025 roku. Wynik: 7 lat, 7 miesięcy, 5 dni. Ten kalkulator obsługuje automatycznie wszystkie szczególne przypadki.</p></div>
+  </div>
+  <div class="faq-block">
+    <h2>Często zadawane pytania</h2>
+    <div class="faq-item"><h3>Czym jest wiek chronologiczny w psychologii?</h3><p>W psychologii wiek chronologiczny (WC) to rzeczywisty czas upłynięty od urodzenia, używany jako punkt odniesienia do porównywania miar rozwojowych, poznawczych i behawioralnych. Klasyczna formuła IQ dzieli wiek umysłowy przez wiek chronologiczny i mnoży przez 100. Wiek chronologiczny pozostaje centralny w ocenach rozwojowych i decyzjach o plasowaniu edukacyjnym.</p></div>
+    <div class="faq-item"><h3>Jaka jest różnica między wiekiem chronologicznym a umysłowym?</h3><p>Wiek chronologiczny to rzeczywisty czas upłynięty od urodzenia — całkowicie obiektywny. Wiek umysłowy to miara zdolności poznawczych w stosunku do tego, co jest typowe dla danego wieku chronologicznego. Dziesięciolatek, który osiąga wyniki 13-latka w testach poznawczych, ma wiek umysłowy 13 lat, ale wiek chronologiczny 10 lat.</p></div>
+    <div class="faq-item"><h3>Jak obliczyć wiek chronologiczny dla zapisu do szkoły?</h3><p>Większość szkół oblicza wiek chronologiczny, porównując datę urodzenia dziecka z datą graniczną (np. 1 września). Dziecko musi osiągnąć wymagany wiek w tej dacie lub przed nią. Wprowadź datę urodzenia i datę graniczną zapisu do tego kalkulatora, aby uzyskać dokładny wiek przy zapisie.</p></div>
+    <div class="faq-item"><h3>Jaka jest formuła wieku chronologicznego?</h3><p>Formuła to: WC = Data referencyjna − Data urodzenia, wyrażona w latach, miesiącach i dniach. Obliczenie wymaga ostrożnego obsługiwania pożyczek końca miesiąca i lat przestępnych. Ten kalkulator stosuje formułę poprawnie dla dowolnych dwóch dat.</p></div>
+    <div class="faq-item"><h3>Jak wiek chronologiczny jest używany w ubezpieczeniach?</h3><p>Firmy ubezpieczeniowe używają wieku chronologicznego do określania kategorii ryzyka, ustalania stawek składek i definiowania uprawnień do polis. Składki ubezpieczenia na życie zazwyczaj rosną z każdymi urodzinami. Plany ubezpieczenia zdrowotnego często mają przedziały cenowe oparte na wieku.</p></div>
+    <div class="faq-item"><h3>Jak wiek chronologiczny jest używany w testach standaryzowanych?</h3><p>Większość standaryzowanych testów psychologicznych i edukacyjnych jest znormalizowana według grup wiekowych. Surowy wynik zdającego jest porównywany z wynikami innych w tej samej klasie wieku chronologicznego, aby uzyskać wynik standardowy lub rangę percentylową. Użycie nieprawidłowego wieku chronologicznego może przesunąć wynik do innej grupy normatywnej.</p></div>
+    <div class="faq-item"><h3>Do czego służy wiek chronologiczny?</h3><p>Wiek chronologiczny jest używany w ocenach pediatrycznych, uprawnieniach szkolnych, śledzeniu kamieni milowych rozwoju, obliczeniach ubezpieczeniowych i interpretacji testów standaryzowanych.</p></div>
+    <div class="faq-item"><h3>Czy mogę obliczyć wiek chronologiczny dla przeszłej daty?</h3><p>Tak. Wprowadź datę urodzenia i dowolną datę referencyjną — przeszłą, obecną lub przyszłą. Kalkulator obliczy dokładny wiek chronologiczny między tymi dwiema datami.</p></div>
+  </div>
+
+  <div class="source-block">
+    <span class="source-lbl">Source</span>
+    <a href="https://www.apa.org/topics/cognitive-development" target="_blank" rel="noopener noreferrer">American Psychological Association – Rozwój poznawczy</a>
+  </div>
+</main>
+  <footer>
+  <nav class="footer-nav" aria-label="Site links">
+<div class="footer-col"><strong>Wiek</strong>
+<a href="/pl/kalkulator-wieku/">Kalkulator Wieku</a>
+<a href="/pl/wiek-chronologiczny/">Wiek Chronologiczny</a>
+<a href="/pl/wiek-niemowlecia/">Wiek Niemowlęcia</a>
+<a href="/pl/wiek-psa/">Wiek Psa</a>
+<a href="/pl/wiek-kota/">Wiek Kota</a></div>
+<div class="footer-col"><strong>Daty</strong>
+<a href="/pl/dni-miedzy-datami/">Dni Między Datami</a>
+<a href="/pl/kalkulator-daty/">Kalkulator Daty</a>
+<a href="/pl/jaki-dzis-dzien/">Jaki Dziś Dzień</a>
+<a href="/pl/numer-tygodnia/">Numer Tygodnia</a>
+<a href="/pl/kalkulator-dni-roboczych/">Dni Robocze</a></div>
+<div class="footer-col"><strong>Odliczanie</strong>
+<a href="/pl/ile-dni-do-bozego-narodzenia/">Boże Narodzenie</a>
+<a href="/pl/ile-dni-do-nowego-roku/">Nowy Rok</a>
+<a href="/pl/ile-dni-do-halloween/">Halloween</a>
+<a href="/pl/ile-dni-do-wielkanocy/">Wielkanoc</a>
+<a href="/pl/odliczanie/">Odliczanie</a></div>
+<div class="footer-col"><strong>Świat</strong>
+<a href="/pl/przelicznik-stref-czasowych/">Strefy Czasowe</a></div>
+<div class="footer-col"><strong>Urodzony w</strong>
+<a href="/pl/urodzony-w-1990/">Urodzony w 1990</a>
+<a href="/pl/urodzony-w-1980/">Urodzony w 1980</a>
+<a href="/pl/urodzony-w-2000/">Urodzony w 2000</a></div>
+<div class="footer-col"><strong>Podsumowanie</strong>
+<a href="/pl/co-sie-wydarzylo-w-2000/">Co się wydarzyło w 2000</a>
+<a href="/pl/co-sie-wydarzylo-w-1990/">Co się wydarzyło w 1990</a>
+<a href="/pl/co-sie-wydarzylo-w-1980/">Co się wydarzyło w 1980</a></div>
+<div class="footer-col"><strong>Kalendarze</strong>
+<a href="/pl/numer-tygodnia/2025/">Tygodnie 2025</a>
+<a href="/pl/numer-tygodnia/2026/">Tygodnie 2026</a>
+<a href="/pl/numer-tygodnia/2027/">Tygodnie 2027</a></div>
+  </nav>
+  <div class="footer-copy">© 2026 DateCalc.app — Bezpłatne kalkulatory dat i czasu online · <a href="/pl/prywatnosc/">Prywatność</a></div>
+</footer>
+</div>
+
+<script>
+(function(){
+  var now = new Date();
+  var opts = {weekday:'long',year:'numeric',month:'long',day:'numeric'};
+  document.getElementById('todayMeta').innerHTML =
+    now.toLocaleDateString('pl-PL', opts) + '<br>Bezpłatny kalkulator dat';
+})();
+// Shared input guard: strip non-digits, truncate to max digit length, clamp to hi
+function clamp(el, lo, hi) {
+  var maxLen = String(hi).length;
+  var s = el.value.replace(/\D/g, '').slice(0, maxLen);
+  var n = parseInt(s, 10);
+  if (!isNaN(n) && n > hi) s = String(hi);
+  el.value = s;
+}
+// Auto-scroll to results when they become visible
+(function(){
+  var r=document.getElementById('results');
+  if(!r||r.classList.contains('auto-show'))return;
+  var obs=new MutationObserver(function(){
+    if(r.classList.contains('show')){
+      r.scrollIntoView({behavior:'smooth',block:'start'});
+      obs.disconnect();
+    }
+  });
+  obs.observe(r,{attributes:true,attributeFilter:['class']});
+})();
+// Enter key submits calculator
+(function(){
+  var fg=document.querySelector('.form-grid');
+  if(!fg)return;
+  fg.addEventListener('keydown',function(e){
+    if(e.key==='Enter'&&typeof calculate==='function')calculate();
+  });
+})();
+// AdSense: load only with consent
+(function(){
+  var ADS_SRC='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4020973443671350';
+  function loadAds(){
+    var s=document.createElement('script');
+    s.src=ADS_SRC;s.async=true;s.crossOrigin='anonymous';
+    document.head.appendChild(s);
+  }
+  if(localStorage.getItem('ads-ok')==='1')return loadAds();
+  if(localStorage.getItem('ads-ok')==='0')return;
+  var b=document.getElementById('consent-banner');
+  if(b)b.style.display='flex';
+  document.getElementById('consent-accept')&&document.getElementById('consent-accept').addEventListener('click',function(){
+    localStorage.setItem('ads-ok','1');b.style.display='none';loadAds();
+  });
+  document.getElementById('consent-decline')&&document.getElementById('consent-decline').addEventListener('click',function(){
+    localStorage.setItem('ads-ok','0');b.style.display='none';
+  });
+})();
+</script>
+<script>
+
+var D = {"zodiacSigns":["Koziorożec","Wodnik","Ryby","Baran","Byk","Bliźnięta","Rak","Lew","Panna","Waga","Skorpion","Strzelec","Koziorożec"],"weekDays":["Niedziela","Poniedziałek","Wtorek","Środa","Czwartek","Piątek","Sobota"],"gens":[{"y":1928,"n":"Ciche Pokolenie"},{"y":1946,"n":"Baby Boomer"},{"y":1965,"n":"Pokolenie X"},{"y":1981,"n":"Millennial"},{"y":1997,"n":"Pokolenie Z"},{"y":2013,"n":"Pokolenie Alpha"}],"errInvalid":"→ Nieprawidłowa data. Sprawdź wprowadzone dane.","errFuture":"→ Data urodzenia nie może być późniejsza niż data referencyjna.","nextBdayIn":"Następne urodziny za","nextBdayToday":"🎉 Wszystkiego najlepszego z okazji urodzin!","dayWord":["dzień","dni"],"pY":"l","pM":"mies","pD":"d"};
+
+function fmt(n){return n.toLocaleString();}
+function pad2(n){return n<10?'0'+n:''+n;}
+
+function getZodiac(d,m){
+  var b=[20,19,20,20,21,21,22,22,22,22,21,21];
+  var idx=(m===1&&d<=b[0])||(m===12&&d>b[11])?0:d<=b[m-1]?m-1:m;
+  return D.zodiacSigns[idx];
+}
+
+function getGen(y){
+  var gs=D.gens;
+  for(var i=gs.length-1;i>=0;i--) if(y>=gs[i].y) return gs[i].n;
+  return gs[0].n;
+}
+
+function leapCount(from,to){
+  var c=0;
+  for(var y=from;y<=to;y++) if((y%4===0&&y%100!==0)||y%400===0) c++;
+  return c;
+}
+
+function calculate(){
+  var d=parseInt(document.getElementById('day').value);
+  var m=parseInt(document.getElementById('month').value);
+  var y=parseInt(document.getElementById('year').value);
+  var err=document.getElementById('errorLine');
+  var res=document.getElementById('results');
+  err.classList.remove('show');
+  res.classList.remove('show');
+  document.getElementById('preciseAge').textContent='';
+
+  if(!d||!m||!y||d<1||d>31||m<1||m>12||y<1900||y>2026){
+    err.textContent=D.errInvalid; err.classList.add('show'); return;
+  }
+  var bday=new Date(y,m-1,d);
+  if(isNaN(bday)||bday.getDate()!==d){
+    err.textContent=D.errInvalid; err.classList.add('show'); return;
+  }
+
+  var rd=parseInt(document.getElementById('rDay').value);
+  var rm=parseInt(document.getElementById('rMonth').value);
+  var ry=parseInt(document.getElementById('rYear').value);
+  var ref;
+  if(rd&&rm&&ry){
+    ref=new Date(ry,rm-1,rd);
+    if(isNaN(ref)||ref.getDate()!==rd){err.textContent=D.errInvalid; err.classList.add('show'); return;}
+  } else {
+    ref=new Date(); ref.setHours(0,0,0,0);
+  }
+
+  if(bday>ref){err.textContent=D.errFuture; err.classList.add('show'); return;}
+
+  var ageY=ref.getFullYear()-bday.getFullYear();
+  var ageM=ref.getMonth()-bday.getMonth();
+  var ageD2=ref.getDate()-bday.getDate();
+  if(ageD2<0){ageM--; ageD2+=new Date(ref.getFullYear(),ref.getMonth(),0).getDate();}
+  if(ageM<0){ageY--; ageM+=12;}
+
+  var totalDays=Math.floor((ref-bday)/86400000);
+  var totalWeeks=Math.floor(totalDays/7);
+  var totalMonths=ageY*12+ageM;
+  var totalHours=totalDays*24;
+  var leaps=leapCount(y, ref.getFullYear());
+
+  var next=new Date(ref.getFullYear(),m-1,d);
+  if(next<=ref) next.setFullYear(next.getFullYear()+1);
+  var daysNext=Math.ceil((next-ref)/86400000);
+
+  // Show precise breakdown
+  var parts=[];
+  if(ageY>0) parts.push(ageY+D.pY);
+  if(ageM>0) parts.push(ageM+D.pM);
+  if(ageD2>0) parts.push(ageD2+D.pD);
+  document.getElementById('preciseAge').textContent=parts.join(' · ');
+
+  document.getElementById('heroAge').textContent=ageY;
+  document.getElementById('statMonths').textContent=fmt(totalMonths);
+  document.getElementById('statWeeks').textContent=fmt(totalWeeks);
+  document.getElementById('statDays').textContent=fmt(totalDays);
+  document.getElementById('statHours').textContent=fmt(totalHours);
+  document.getElementById('ffZodiac').textContent=getZodiac(d,m);
+  document.getElementById('ffGen').textContent=getGen(y);
+  document.getElementById('ffDay').textContent=D.weekDays[bday.getDay()];
+  document.getElementById('ffLeap').textContent=leaps;
+
+  var banner=document.getElementById('bdayBanner');
+  if(daysNext===0){
+    banner.textContent=D.nextBdayToday;
+  } else {
+    var dw=daysNext===1?D.dayWord[0]:D.dayWord[1];
+    banner.textContent=D.nextBdayIn+' '+daysNext+' '+dw;
+  }
+
+  res.classList.add('show');
+  res.scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+document.addEventListener('keydown',function(e){if(e.key==='Enter') calculate();});
+
+</script>
+<div id="consent-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#111111;color:#fff;padding:.9rem 1.4rem;z-index:9999;font-size:.82rem;font-family:sans-serif;align-items:center;gap:.8rem;flex-wrap:wrap">
+  <span style="flex:1;min-width:200px">Używamy Google AdSense do finansowania tej bezpłatnej usługi. Czy akceptujesz ciasteczka reklamowe?</span>
+  <button id="consent-accept" style="background:#c8392b;color:#fff;border:none;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Akceptuj</button>
+  <button id="consent-decline" style="background:transparent;color:#aaa;border:1px solid #555;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Kontynuuj bez</button>
+</div>
+</body>
+</html>

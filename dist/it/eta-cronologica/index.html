@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calcolatore Età Cronologica – Età Esatta in Anni, Mesi e Giorni | DateCalc.app</title>
+<meta name="robots" content="index, follow">
+<meta name="description" content="Calcola l'età cronologica dalla data di nascita a qualsiasi data di riferimento. Usato in contesti medici, educativi e dello sviluppo.">
+<link rel="canonical" href="https://datecalc.app/it/eta-cronologica/">
+<link rel="alternate" hreflang="en" href="https://datecalc.app/chronological-age-calculator/">
+<link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/age-chronologique/">
+<link rel="alternate" hreflang="es" href="https://datecalc.app/es/edad-cronologica/">
+<link rel="alternate" hreflang="pt" href="https://datecalc.app/pt/idade-cronologica/">
+<link rel="alternate" hreflang="de" href="https://datecalc.app/de/chronologisches-alter/">
+<link rel="alternate" hreflang="it" href="https://datecalc.app/it/eta-cronologica/">
+<link rel="alternate" hreflang="pl" href="https://datecalc.app/pl/wiek-chronologiczny/">
+<link rel="alternate" hreflang="x-default" href="https://datecalc.app/chronological-age-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Calcolatore Età Cronologica – Età Esatta in Anni, Mesi e Giorni | DateCalc.app">
+<meta property="og:description" content="Calcola l'età cronologica dalla data di nascita a qualsiasi data di riferimento. Usato in contesti medici, educativi e dello sviluppo.">
+<meta property="og:url" content="https://datecalc.app/it/eta-cronologica/">
+<meta property="og:site_name" content="DateCalc.app">
+<meta property="og:image" content="https://datecalc.app/og.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Calcolatore Età Cronologica – Età Esatta in Anni, Mesi e Giorni | DateCalc.app">
+<meta name="twitter:description" content="Calcola l'età cronologica dalla data di nascita a qualsiasi data di riferimento. Usato in contesti medici, educativi e dello sviluppo.">
+<meta name="twitter:image" content="https://datecalc.app/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Space+Mono:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="shortcut icon" href="/favicon.svg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Cos'è l'età cronologica in psicologia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In psicologia, l'età cronologica (EC) è il tempo reale trascorso dalla nascita, usato come riferimento per confrontare misure dello sviluppo, cognitive e comportamentali. La formula classica del QI divide l'età mentale per l'età cronologica e moltiplica per 100. L'età cronologica rimane centrale nelle valutazioni dello sviluppo e nelle decisioni di collocazione educativa."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual è la differenza tra età cronologica ed età mentale?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "L'età cronologica è il tempo reale trascorso dalla nascita — puramente oggettiva. L'età mentale è una misura della capacità cognitiva rispetto a ciò che è tipico per una data età cronologica. Un bambino di 10 anni che ottiene i risultati di un 13enne ha un'età mentale di 13 ma un'età cronologica di 10."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Come calcolo l'età cronologica per l'iscrizione scolastica?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La maggior parte delle scuole calcola l'età cronologica confrontando la data di nascita del bambino con una data limite (es. 1° settembre). Il bambino deve aver compiuto l'età richiesta entro quella data. Inserisci la data di nascita e la data limite in questo calcolatore per ottenere l'età esatta all'iscrizione."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual è la formula dell'età cronologica?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La formula è: EC = Data di riferimento − Data di nascita, espressa in anni, mesi e giorni. Il calcolo richiede una gestione attenta dei prestiti di fine mese e degli anni bisestili. Questo calcolatore applica la formula correttamente per qualsiasi coppia di date."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Come viene usata l'età cronologica per le assicurazioni?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Le compagnie assicurative usano l'età cronologica per determinare le categorie di rischio, fissare le tariffe dei premi e definire l'idoneità alla polizza. I premi delle assicurazioni sulla vita aumentano tipicamente ad ogni compleanno. I piani sanitari hanno spesso fasce di prezzo basate sull'età."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Come viene usata l'età cronologica per i test standardizzati?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La maggior parte dei test psicologici ed educativi standardizzati sono normati per fascia d'età. Il punteggio grezzo di un candidato viene confrontato con i punteggi degli altri nella stessa fascia d'età cronologica per produrre un punteggio standard o un rango percentile. Un'età cronologica errata può spostare un punteggio in un gruppo normativo diverso."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "A cosa serve l'età cronologica?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "L'età cronologica viene usata nelle valutazioni pediatriche, nell'idoneità scolastica, nel monitoraggio delle tappe dello sviluppo, nei calcoli assicurativi e nell'interpretazione dei test standardizzati."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Posso calcolare l'età cronologica per una data passata?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sì. Inserisci la data di nascita e qualsiasi data di riferimento — passata, presente o futura. Il calcolatore calcolerà l'età cronologica esatta tra quelle due date."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Calcolatore Età Cronologica",
+  "description": "Calcola l'età cronologica dalla data di nascita a qualsiasi data di riferimento. Usato in contesti medici, educativi e dello sviluppo.",
+  "url": "https://datecalc.app/it/eta-cronologica/",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Web",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"DateCalc.app","url":"https://datecalc.app","logo":"https://datecalc.app/og.png","contactPoint":{"@type":"ContactPoint","email":"hello@datecalc.app","contactType":"customer support"}}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<noscript><div style="background:#c8392b;color:#fff;text-align:center;padding:.6rem;font-family:sans-serif;font-size:.9rem">This calculator requires JavaScript. Please enable it in your browser.</div></noscript>
+
+<header>
+<div class="masthead">
+  <a href="/it/" class="masthead-brand">DateCalc<span>.</span>app</a>
+  <div class="masthead-meta" id="todayMeta"></div>
+</div>
+</header>
+
+<div class="lang-strip">
+  <a href="/chronological-age-calculator/" class="lang-btn">EN</a>
+  <a href="/fr/age-chronologique/" class="lang-btn">FR</a>
+  <a href="/es/edad-cronologica/" class="lang-btn">ES</a>
+  <a href="/pt/idade-cronologica/" class="lang-btn">PT</a>
+  <a href="/de/chronologisches-alter/" class="lang-btn">DE</a>
+  <a href="/it/eta-cronologica/" class="lang-btn active">IT</a>
+  <a href="/pl/wiek-chronologiczny/" class="lang-btn">PL</a>
+</div>
+
+<div class="page">
+
+  <div class="headline-block">
+    <div class="kicker">Età Cronologica</div>
+    <h1 class="headline">Età <br><em>cronologica</em></h1>
+    <p class="subhead">Calcola l'età cronologica esatta tra due date — anni, mesi, settimane e giorni.</p>
+  </div>
+
+  <div class="form-grid">
+    <div class="form-col">
+      <div class="field-label">Data di nascita</div>
+      <div class="date-row">
+        <input type="number" id="day" placeholder="DD" min="1" max="31" inputmode="numeric" oninput="clamp(this,1,31)">
+        <span>/</span>
+        <input type="number" id="month" placeholder="MM" min="1" max="12" inputmode="numeric" oninput="clamp(this,1,12)">
+        <span>/</span>
+        <input type="number" id="year" placeholder="YYYY" min="1900" max="2026" inputmode="numeric" oninput="clamp(this,1900,2026)">
+      </div>
+      <div class="field-label" style="margin-top:1rem">Data di riferimento (lascia vuoto per oggi)</div>
+      <div class="date-row">
+        <input type="number" id="rDay" placeholder="DD" min="1" max="31" inputmode="numeric" oninput="clamp(this,1,31)">
+        <span>/</span>
+        <input type="number" id="rMonth" placeholder="MM" min="1" max="12" inputmode="numeric" oninput="clamp(this,1,12)">
+        <span>/</span>
+        <input type="number" id="rYear" placeholder="YYYY" min="1900" max="2100" inputmode="numeric" oninput="clamp(this,1900,2100)">
+      </div>
+      <div class="error-line" id="errorLine"></div>
+      <button class="calc-btn" onclick="calculate()">→ CALCOLA</button>
+    </div>
+    <div class="form-col">
+      <p class="tip-text">"L'età cronologica è il numero di anni, mesi e giorni dalla nascita — la misura più precisa del tempo vissuto."</p>
+    </div>
+  </div>
+
+  <div class="results-section" id="results" aria-live="polite">
+    <div class="results-header">Età cronologica</div>
+    <div class="age-display">
+      <span class="age-number" id="heroAge">—</span>
+      <span class="age-suffix">anni</span>
+    </div>
+    <div class="precise-age" id="preciseAge"></div>
+    <div class="stats-strip">
+      <div class="stat-item"><div class="stat-num" id="statMonths">—</div><div class="stat-lbl">mesi</div></div>
+      <div class="stat-item"><div class="stat-num" id="statWeeks">—</div><div class="stat-lbl">settimane</div></div>
+      <div class="stat-item"><div class="stat-num" id="statDays">—</div><div class="stat-lbl">giorni</div></div>
+      <div class="stat-item"><div class="stat-num" id="statHours">—</div><div class="stat-lbl">ore</div></div>
+    </div>
+    <div class="facts-row">
+      <div class="fact-item"><div class="fact-key">Segno zodiacale</div><div class="fact-val" id="ffZodiac">—</div></div>
+      <div class="fact-item"><div class="fact-key">Generazione</div><div class="fact-val" id="ffGen">—</div></div>
+      <div class="fact-item"><div class="fact-key">Giorno di nascita</div><div class="fact-val" id="ffDay">—</div></div>
+      <div class="fact-item"><div class="fact-key">Anni bisestili vissuti</div><div class="fact-val" id="ffLeap">—</div></div>
+    </div>
+    <div class="bday-banner" id="bdayBanner"></div>
+  </div>
+
+  <nav aria-label="Tools">
+  <div class="tool-nav">
+    <div class="nav-group"><span class="nav-cat">Età</span><div class="nav-links"><a href="/it/calcolo-eta/">Calcolo Età</a><span class="nav-sep">·</span><a href="/it/eta-cronologica/" aria-current="page">Età Cronologica</a><span class="nav-sep">·</span><a href="/it/calcolatore-eta-neonato/">Età Neonato</a><span class="nav-sep">·</span><a href="/it/calcolatore-eta-cane/">Età del Cane</a><span class="nav-sep">·</span><a href="/it/calcolatore-eta-gatto/">Età del Gatto</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Date</span><div class="nav-links"><a href="/it/giorni-tra-date/">Giorni Tra Date</a><span class="nav-sep">·</span><a href="/it/calcolatore-data/">Calcolatore Data</a><span class="nav-sep">·</span><a href="/it/che-giorno-e-oggi/">Che Giorno È Oggi</a><span class="nav-sep">·</span><a href="/it/numero-settimana/">Numero Settimana</a><span class="nav-sep">·</span><a href="/it/calcolatore-giorni-lavorativi/">Giorni Lavorativi</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Countdown</span><div class="nav-links"><a href="/it/giorni-a-natale/">Natale</a><span class="nav-sep">·</span><a href="/it/giorni-a-capodanno/">Capodanno</a><span class="nav-sep">·</span><a href="/it/giorni-a-halloween/">Halloween</a><span class="nav-sep">·</span><a href="/it/giorni-a-pasqua/">Pasqua</a><span class="nav-sep">·</span><a href="/it/conto-alla-rovescia/">Conto alla Rovescia</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Mondo</span><div class="nav-links"><a href="/it/convertitore-fuso-orario/">Fuso Orario</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Nato nel</span><div class="nav-links"><a href="/it/nato-nel-1990/">Nato nel 1990</a><span class="nav-sep">·</span><a href="/it/nato-nel-1980/">Nato nel 1980</a><span class="nav-sep">·</span><a href="/it/nato-nel-2000/">Nato nel 2000</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Retrospettiva</span><div class="nav-links"><a href="/it/cosa-e-successo-nel-2000/">Cosa è successo nel 2000</a><span class="nav-sep">·</span><a href="/it/cosa-e-successo-nel-1990/">Cosa è successo nel 1990</a><span class="nav-sep">·</span><a href="/it/cosa-e-successo-nel-1980/">Cosa è successo nel 1980</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Calendari</span><div class="nav-links"><a href="/it/numero-settimana/2025/">Settimane 2025</a><span class="nav-sep">·</span><a href="/it/numero-settimana/2026/">Settimane 2026</a><span class="nav-sep">·</span><a href="/it/numero-settimana/2027/">Settimane 2027</a></div></div>
+  </div>
+  </nav>
+
+<main id="main-content">
+  <div class="seo-block">
+    <div><h2>Cos'è l'età cronologica?</h2><p>L'età cronologica è la misura precisa del tempo trascorso dalla nascita di una persona, espressa in anni, mesi e giorni. È la misura dell'età più oggettiva perché si basa puramente sul tempo di calendario trascorso, senza inferenze sulle condizioni fisiche, le capacità cognitive o la maturità. L'età cronologica viene usata in molti contesti: i pediatri la usano per confrontare lo sviluppo di un bambino con le tabelle standard; le scuole la usano per determinare l'idoneità all'iscrizione; gli psicologi la usano come denominatore nel calcolo dei quozienti di intelligenza; le assicurazioni la usano per le categorie di rischio e le tariffe premium.</p></div>
+    <div><h2>Come calcolare l'età cronologica</h2><p>Per calcolare l'età cronologica con precisione, sottrai la data di nascita dalla data di riferimento in tre passaggi. Prima sottrai il giorno di nascita dal giorno di riferimento — se il risultato è negativo, prendi in prestito giorni dal mese precedente. Poi sottrai il mese di nascita — se negativo, prendi in prestito 12 mesi. Infine sottrai l'anno. Esempio: un bambino nato il 15 marzo 2018, valutato il 20 ottobre 2025. Risultato: 7 anni, 7 mesi, 5 giorni. Questo calcolatore gestisce automaticamente tutti i casi particolari.</p></div>
+  </div>
+  <div class="faq-block">
+    <h2>Domande frequenti</h2>
+    <div class="faq-item"><h3>Cos'è l'età cronologica in psicologia?</h3><p>In psicologia, l'età cronologica (EC) è il tempo reale trascorso dalla nascita, usato come riferimento per confrontare misure dello sviluppo, cognitive e comportamentali. La formula classica del QI divide l'età mentale per l'età cronologica e moltiplica per 100. L'età cronologica rimane centrale nelle valutazioni dello sviluppo e nelle decisioni di collocazione educativa.</p></div>
+    <div class="faq-item"><h3>Qual è la differenza tra età cronologica ed età mentale?</h3><p>L'età cronologica è il tempo reale trascorso dalla nascita — puramente oggettiva. L'età mentale è una misura della capacità cognitiva rispetto a ciò che è tipico per una data età cronologica. Un bambino di 10 anni che ottiene i risultati di un 13enne ha un'età mentale di 13 ma un'età cronologica di 10.</p></div>
+    <div class="faq-item"><h3>Come calcolo l'età cronologica per l'iscrizione scolastica?</h3><p>La maggior parte delle scuole calcola l'età cronologica confrontando la data di nascita del bambino con una data limite (es. 1° settembre). Il bambino deve aver compiuto l'età richiesta entro quella data. Inserisci la data di nascita e la data limite in questo calcolatore per ottenere l'età esatta all'iscrizione.</p></div>
+    <div class="faq-item"><h3>Qual è la formula dell'età cronologica?</h3><p>La formula è: EC = Data di riferimento − Data di nascita, espressa in anni, mesi e giorni. Il calcolo richiede una gestione attenta dei prestiti di fine mese e degli anni bisestili. Questo calcolatore applica la formula correttamente per qualsiasi coppia di date.</p></div>
+    <div class="faq-item"><h3>Come viene usata l'età cronologica per le assicurazioni?</h3><p>Le compagnie assicurative usano l'età cronologica per determinare le categorie di rischio, fissare le tariffe dei premi e definire l'idoneità alla polizza. I premi delle assicurazioni sulla vita aumentano tipicamente ad ogni compleanno. I piani sanitari hanno spesso fasce di prezzo basate sull'età.</p></div>
+    <div class="faq-item"><h3>Come viene usata l'età cronologica per i test standardizzati?</h3><p>La maggior parte dei test psicologici ed educativi standardizzati sono normati per fascia d'età. Il punteggio grezzo di un candidato viene confrontato con i punteggi degli altri nella stessa fascia d'età cronologica per produrre un punteggio standard o un rango percentile. Un'età cronologica errata può spostare un punteggio in un gruppo normativo diverso.</p></div>
+    <div class="faq-item"><h3>A cosa serve l'età cronologica?</h3><p>L'età cronologica viene usata nelle valutazioni pediatriche, nell'idoneità scolastica, nel monitoraggio delle tappe dello sviluppo, nei calcoli assicurativi e nell'interpretazione dei test standardizzati.</p></div>
+    <div class="faq-item"><h3>Posso calcolare l'età cronologica per una data passata?</h3><p>Sì. Inserisci la data di nascita e qualsiasi data di riferimento — passata, presente o futura. Il calcolatore calcolerà l'età cronologica esatta tra quelle due date.</p></div>
+  </div>
+
+  <div class="source-block">
+    <span class="source-lbl">Source</span>
+    <a href="https://www.apa.org/topics/cognitive-development" target="_blank" rel="noopener noreferrer">American Psychological Association – Sviluppo cognitivo</a>
+  </div>
+</main>
+  <footer>
+  <nav class="footer-nav" aria-label="Site links">
+<div class="footer-col"><strong>Età</strong>
+<a href="/it/calcolo-eta/">Calcolo Età</a>
+<a href="/it/eta-cronologica/">Età Cronologica</a>
+<a href="/it/calcolatore-eta-neonato/">Età Neonato</a>
+<a href="/it/calcolatore-eta-cane/">Età del Cane</a>
+<a href="/it/calcolatore-eta-gatto/">Età del Gatto</a></div>
+<div class="footer-col"><strong>Date</strong>
+<a href="/it/giorni-tra-date/">Giorni Tra Date</a>
+<a href="/it/calcolatore-data/">Calcolatore Data</a>
+<a href="/it/che-giorno-e-oggi/">Che Giorno È Oggi</a>
+<a href="/it/numero-settimana/">Numero Settimana</a>
+<a href="/it/calcolatore-giorni-lavorativi/">Giorni Lavorativi</a></div>
+<div class="footer-col"><strong>Countdown</strong>
+<a href="/it/giorni-a-natale/">Natale</a>
+<a href="/it/giorni-a-capodanno/">Capodanno</a>
+<a href="/it/giorni-a-halloween/">Halloween</a>
+<a href="/it/giorni-a-pasqua/">Pasqua</a>
+<a href="/it/conto-alla-rovescia/">Conto alla Rovescia</a></div>
+<div class="footer-col"><strong>Mondo</strong>
+<a href="/it/convertitore-fuso-orario/">Fuso Orario</a></div>
+<div class="footer-col"><strong>Nato nel</strong>
+<a href="/it/nato-nel-1990/">Nato nel 1990</a>
+<a href="/it/nato-nel-1980/">Nato nel 1980</a>
+<a href="/it/nato-nel-2000/">Nato nel 2000</a></div>
+<div class="footer-col"><strong>Retrospettiva</strong>
+<a href="/it/cosa-e-successo-nel-2000/">Cosa è successo nel 2000</a>
+<a href="/it/cosa-e-successo-nel-1990/">Cosa è successo nel 1990</a>
+<a href="/it/cosa-e-successo-nel-1980/">Cosa è successo nel 1980</a></div>
+<div class="footer-col"><strong>Calendari</strong>
+<a href="/it/numero-settimana/2025/">Settimane 2025</a>
+<a href="/it/numero-settimana/2026/">Settimane 2026</a>
+<a href="/it/numero-settimana/2027/">Settimane 2027</a></div>
+  </nav>
+  <div class="footer-copy">© 2026 DateCalc.app — Calcolatori di data e ora gratuiti online · <a href="/it/privacy/">Privacy</a></div>
+</footer>
+</div>
+
+<script>
+(function(){
+  var now = new Date();
+  var opts = {weekday:'long',year:'numeric',month:'long',day:'numeric'};
+  document.getElementById('todayMeta').innerHTML =
+    now.toLocaleDateString('it-IT', opts) + '<br>Calcolatore di date gratuito';
+})();
+// Shared input guard: strip non-digits, truncate to max digit length, clamp to hi
+function clamp(el, lo, hi) {
+  var maxLen = String(hi).length;
+  var s = el.value.replace(/\D/g, '').slice(0, maxLen);
+  var n = parseInt(s, 10);
+  if (!isNaN(n) && n > hi) s = String(hi);
+  el.value = s;
+}
+// Auto-scroll to results when they become visible
+(function(){
+  var r=document.getElementById('results');
+  if(!r||r.classList.contains('auto-show'))return;
+  var obs=new MutationObserver(function(){
+    if(r.classList.contains('show')){
+      r.scrollIntoView({behavior:'smooth',block:'start'});
+      obs.disconnect();
+    }
+  });
+  obs.observe(r,{attributes:true,attributeFilter:['class']});
+})();
+// Enter key submits calculator
+(function(){
+  var fg=document.querySelector('.form-grid');
+  if(!fg)return;
+  fg.addEventListener('keydown',function(e){
+    if(e.key==='Enter'&&typeof calculate==='function')calculate();
+  });
+})();
+// AdSense: load only with consent
+(function(){
+  var ADS_SRC='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4020973443671350';
+  function loadAds(){
+    var s=document.createElement('script');
+    s.src=ADS_SRC;s.async=true;s.crossOrigin='anonymous';
+    document.head.appendChild(s);
+  }
+  if(localStorage.getItem('ads-ok')==='1')return loadAds();
+  if(localStorage.getItem('ads-ok')==='0')return;
+  var b=document.getElementById('consent-banner');
+  if(b)b.style.display='flex';
+  document.getElementById('consent-accept')&&document.getElementById('consent-accept').addEventListener('click',function(){
+    localStorage.setItem('ads-ok','1');b.style.display='none';loadAds();
+  });
+  document.getElementById('consent-decline')&&document.getElementById('consent-decline').addEventListener('click',function(){
+    localStorage.setItem('ads-ok','0');b.style.display='none';
+  });
+})();
+</script>
+<script>
+
+var D = {"zodiacSigns":["Capricorno","Acquario","Pesci","Ariete","Toro","Gemelli","Cancro","Leone","Vergine","Bilancia","Scorpione","Sagittario","Capricorno"],"weekDays":["Domenica","Lunedì","Martedì","Mercoledì","Giovedì","Venerdì","Sabato"],"gens":[{"y":1928,"n":"Generazione Silenziosa"},{"y":1946,"n":"Baby Boomer"},{"y":1965,"n":"Generazione X"},{"y":1981,"n":"Millennial"},{"y":1997,"n":"Generazione Z"},{"y":2013,"n":"Generazione Alpha"}],"errInvalid":"→ Data non valida. Controlla i dati inseriti.","errFuture":"→ La data di nascita non può essere successiva alla data di riferimento.","nextBdayIn":"Prossimo compleanno tra","nextBdayToday":"🎉 Buon compleanno!","dayWord":["giorno","giorni"],"pY":"a","pM":"me","pD":"g"};
+
+function fmt(n){return n.toLocaleString();}
+function pad2(n){return n<10?'0'+n:''+n;}
+
+function getZodiac(d,m){
+  var b=[20,19,20,20,21,21,22,22,22,22,21,21];
+  var idx=(m===1&&d<=b[0])||(m===12&&d>b[11])?0:d<=b[m-1]?m-1:m;
+  return D.zodiacSigns[idx];
+}
+
+function getGen(y){
+  var gs=D.gens;
+  for(var i=gs.length-1;i>=0;i--) if(y>=gs[i].y) return gs[i].n;
+  return gs[0].n;
+}
+
+function leapCount(from,to){
+  var c=0;
+  for(var y=from;y<=to;y++) if((y%4===0&&y%100!==0)||y%400===0) c++;
+  return c;
+}
+
+function calculate(){
+  var d=parseInt(document.getElementById('day').value);
+  var m=parseInt(document.getElementById('month').value);
+  var y=parseInt(document.getElementById('year').value);
+  var err=document.getElementById('errorLine');
+  var res=document.getElementById('results');
+  err.classList.remove('show');
+  res.classList.remove('show');
+  document.getElementById('preciseAge').textContent='';
+
+  if(!d||!m||!y||d<1||d>31||m<1||m>12||y<1900||y>2026){
+    err.textContent=D.errInvalid; err.classList.add('show'); return;
+  }
+  var bday=new Date(y,m-1,d);
+  if(isNaN(bday)||bday.getDate()!==d){
+    err.textContent=D.errInvalid; err.classList.add('show'); return;
+  }
+
+  var rd=parseInt(document.getElementById('rDay').value);
+  var rm=parseInt(document.getElementById('rMonth').value);
+  var ry=parseInt(document.getElementById('rYear').value);
+  var ref;
+  if(rd&&rm&&ry){
+    ref=new Date(ry,rm-1,rd);
+    if(isNaN(ref)||ref.getDate()!==rd){err.textContent=D.errInvalid; err.classList.add('show'); return;}
+  } else {
+    ref=new Date(); ref.setHours(0,0,0,0);
+  }
+
+  if(bday>ref){err.textContent=D.errFuture; err.classList.add('show'); return;}
+
+  var ageY=ref.getFullYear()-bday.getFullYear();
+  var ageM=ref.getMonth()-bday.getMonth();
+  var ageD2=ref.getDate()-bday.getDate();
+  if(ageD2<0){ageM--; ageD2+=new Date(ref.getFullYear(),ref.getMonth(),0).getDate();}
+  if(ageM<0){ageY--; ageM+=12;}
+
+  var totalDays=Math.floor((ref-bday)/86400000);
+  var totalWeeks=Math.floor(totalDays/7);
+  var totalMonths=ageY*12+ageM;
+  var totalHours=totalDays*24;
+  var leaps=leapCount(y, ref.getFullYear());
+
+  var next=new Date(ref.getFullYear(),m-1,d);
+  if(next<=ref) next.setFullYear(next.getFullYear()+1);
+  var daysNext=Math.ceil((next-ref)/86400000);
+
+  // Show precise breakdown
+  var parts=[];
+  if(ageY>0) parts.push(ageY+D.pY);
+  if(ageM>0) parts.push(ageM+D.pM);
+  if(ageD2>0) parts.push(ageD2+D.pD);
+  document.getElementById('preciseAge').textContent=parts.join(' · ');
+
+  document.getElementById('heroAge').textContent=ageY;
+  document.getElementById('statMonths').textContent=fmt(totalMonths);
+  document.getElementById('statWeeks').textContent=fmt(totalWeeks);
+  document.getElementById('statDays').textContent=fmt(totalDays);
+  document.getElementById('statHours').textContent=fmt(totalHours);
+  document.getElementById('ffZodiac').textContent=getZodiac(d,m);
+  document.getElementById('ffGen').textContent=getGen(y);
+  document.getElementById('ffDay').textContent=D.weekDays[bday.getDay()];
+  document.getElementById('ffLeap').textContent=leaps;
+
+  var banner=document.getElementById('bdayBanner');
+  if(daysNext===0){
+    banner.textContent=D.nextBdayToday;
+  } else {
+    var dw=daysNext===1?D.dayWord[0]:D.dayWord[1];
+    banner.textContent=D.nextBdayIn+' '+daysNext+' '+dw;
+  }
+
+  res.classList.add('show');
+  res.scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+document.addEventListener('keydown',function(e){if(e.key==='Enter') calculate();});
+
+</script>
+<div id="consent-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#111111;color:#fff;padding:.9rem 1.4rem;z-index:9999;font-size:.82rem;font-family:sans-serif;align-items:center;gap:.8rem;flex-wrap:wrap">
+  <span style="flex:1;min-width:200px">Utilizziamo Google AdSense per finanziare questo servizio gratuito. Accetti i cookie pubblicitari?</span>
+  <button id="consent-accept" style="background:#c8392b;color:#fff;border:none;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Accetta</button>
+  <button id="consent-decline" style="background:transparent;color:#aaa;border:1px solid #555;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Continua senza</button>
+</div>
+</body>
+</html>
