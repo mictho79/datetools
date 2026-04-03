@@ -356,7 +356,7 @@ const CONSENT = {
 
 // ── LAYOUT ────────────────────────────────────────────────
 function renderLayout(data, lang) {
-  const { title, metaDesc, canonical, hreflang, headlineBlock, formGrid, resultsSection, seoBlock, script, faqs, source } = data;
+  const { title, metaDesc, canonical, hreflang, headlineBlock, formGrid, resultsSection, seoBlock, script, faqs, source, howto } = data;
 
   const sourceBlock = source ? `
   <div class="source-block">
@@ -393,6 +393,23 @@ ${JSON.stringify({
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
 }, null, 2)}
 </script>`;
+
+  // Schema.org HowTo (optional, passed from tool)
+  const howtoSchema = howto ? `
+<script type="application/ld+json">
+${JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": howto.name,
+  "description": howto.description,
+  "step": howto.steps.map((s, i) => ({
+    "@type": "HowToStep",
+    "position": i + 1,
+    "name": s.name,
+    "text": s.text
+  }))
+}, null, 2)}
+</script>` : '';
 
   // Schema.org Organization (site-wide)
   const orgSchema = `
@@ -453,13 +470,13 @@ ${JSON.stringify({
 <meta name="twitter:title" content="${title}">
 <meta name="twitter:description" content="${metaDesc}">
 <meta name="twitter:image" content="https://datecalc.app/og.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Space+Mono:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/playfair-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/style.css">
 <link rel="sitemap" type="application/xml" href="/sitemap.xml">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="shortcut icon" href="/favicon.svg">
-${faqSchema}${appSchema}${orgSchema}
+${faqSchema}${howtoSchema}${appSchema}${orgSchema}
 </head>
 <body>
 
@@ -586,7 +603,14 @@ if (fs.existsSync(DIST)) fs.rmSync(DIST, { recursive: true });
 ensureDir(DIST);
 fs.copyFileSync(path.join(__dirname, 'src', 'style.css'), path.join(DIST, 'style.css'));
 fs.copyFileSync(path.join(__dirname, 'src', 'favicon.svg'), path.join(DIST, 'favicon.svg'));
-console.log('  ✓ /style.css');
+// Copy self-hosted fonts
+const fontSrc = path.join(__dirname, 'src', 'fonts');
+const fontDst = path.join(DIST, 'fonts');
+ensureDir(fontDst);
+for (const f of fs.readdirSync(fontSrc)) {
+  fs.copyFileSync(path.join(fontSrc, f), path.join(fontDst, f));
+}
+console.log('  ✓ /style.css + /fonts/');
 
 let count = 0;
 
@@ -889,8 +913,8 @@ for (const { lang, slug, canonical } of PRIVACY_PAGES) {
 <meta name="description" content="${p.intro.slice(0, 155)}">
 <link rel="canonical" href="${canonical}">
 ${hreflangPrivacy}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/playfair-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/style.css">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 </head>

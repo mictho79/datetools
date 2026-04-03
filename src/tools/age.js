@@ -373,6 +373,79 @@ const T = {
   },
 };
 
+const HOWTO = {
+  en: {
+    name: 'How to calculate your exact age',
+    description: 'Step-by-step guide to calculating your precise age in years, months, weeks, and days.',
+    steps: [
+      { name: 'Enter your date of birth', text: 'Type your birth day, month, and year in the DD / MM / YYYY fields.' },
+      { name: 'Click Calculate', text: 'Press the Calculate button or hit Enter. Your exact age appears instantly.' },
+      { name: 'Read your result', text: 'The results strip shows your age in years, months, weeks, days, and hours — updated live every second.' },
+      { name: 'Calculate for a specific date (optional)', text: 'Check "Calculate for a specific date" and enter a reference date to find your age on any past or future day.' },
+    ],
+  },
+  fr: {
+    name: 'Comment calculer votre âge exact',
+    description: 'Guide étape par étape pour calculer votre âge précis en années, mois, semaines et jours.',
+    steps: [
+      { name: 'Entrez votre date de naissance', text: 'Saisissez votre jour, mois et année de naissance dans les champs JJ / MM / AAAA.' },
+      { name: 'Cliquez sur Calculer', text: 'Appuyez sur le bouton Calculer ou sur Entrée. Votre âge exact s\'affiche instantanément.' },
+      { name: 'Lisez votre résultat', text: 'Les résultats affichent votre âge en années, mois, semaines, jours et heures — mis à jour en direct chaque seconde.' },
+      { name: 'Calculer pour une date précise (optionnel)', text: 'Cochez "Calculer à une date précise" et entrez une date de référence pour connaître votre âge à n\'importe quelle date passée ou future.' },
+    ],
+  },
+  es: {
+    name: 'Cómo calcular tu edad exacta',
+    description: 'Guía paso a paso para calcular tu edad precisa en años, meses, semanas y días.',
+    steps: [
+      { name: 'Introduce tu fecha de nacimiento', text: 'Escribe tu día, mes y año de nacimiento en los campos DD / MM / AAAA.' },
+      { name: 'Haz clic en Calcular', text: 'Pulsa el botón Calcular o presiona Enter. Tu edad exacta aparece al instante.' },
+      { name: 'Lee tu resultado', text: 'La franja de resultados muestra tu edad en años, meses, semanas, días y horas — actualizada en vivo cada segundo.' },
+      { name: 'Calcular para una fecha específica (opcional)', text: 'Marca "Calcular para una fecha específica" e introduce una fecha de referencia para saber tu edad en cualquier día pasado o futuro.' },
+    ],
+  },
+  pt: {
+    name: 'Como calcular sua idade exata',
+    description: 'Guia passo a passo para calcular sua idade precisa em anos, meses, semanas e dias.',
+    steps: [
+      { name: 'Digite sua data de nascimento', text: 'Insira seu dia, mês e ano de nascimento nos campos DD / MM / AAAA.' },
+      { name: 'Clique em Calcular', text: 'Pressione o botão Calcular ou Enter. Sua idade exata aparece instantaneamente.' },
+      { name: 'Leia seu resultado', text: 'A faixa de resultados mostra sua idade em anos, meses, semanas, dias e horas — atualizada ao vivo a cada segundo.' },
+      { name: 'Calcular para uma data específica (opcional)', text: 'Marque "Calcular para uma data específica" e insira uma data de referência para saber sua idade em qualquer dia passado ou futuro.' },
+    ],
+  },
+  de: {
+    name: 'So berechnest du dein genaues Alter',
+    description: 'Schritt-für-Schritt-Anleitung zur Berechnung deines genauen Alters in Jahren, Monaten, Wochen und Tagen.',
+    steps: [
+      { name: 'Geburtsdatum eingeben', text: 'Gib deinen Geburtstag, Monat und Jahr in die Felder TT / MM / JJJJ ein.' },
+      { name: 'Auf Berechnen klicken', text: 'Drücke die Schaltfläche Berechnen oder die Eingabetaste. Dein genaues Alter erscheint sofort.' },
+      { name: 'Ergebnis ablesen', text: 'Die Ergebnisleiste zeigt dein Alter in Jahren, Monaten, Wochen, Tagen und Stunden — live jede Sekunde aktualisiert.' },
+      { name: 'Für ein bestimmtes Datum berechnen (optional)', text: 'Aktiviere "Für ein bestimmtes Datum berechnen" und gib ein Referenzdatum ein, um dein Alter an einem beliebigen vergangenen oder zukünftigen Tag zu ermitteln.' },
+    ],
+  },
+  it: {
+    name: 'Come calcolare la tua età esatta',
+    description: 'Guida passo dopo passo per calcolare la tua età precisa in anni, mesi, settimane e giorni.',
+    steps: [
+      { name: 'Inserisci la tua data di nascita', text: 'Digita il tuo giorno, mese e anno di nascita nei campi GG / MM / AAAA.' },
+      { name: 'Clicca su Calcola', text: 'Premi il pulsante Calcola o Invio. La tua età esatta appare istantaneamente.' },
+      { name: 'Leggi il risultato', text: 'La striscia dei risultati mostra la tua età in anni, mesi, settimane, giorni e ore — aggiornata in tempo reale ogni secondo.' },
+      { name: 'Calcola per una data specifica (opzionale)', text: 'Seleziona "Calcola per una data specifica" e inserisci una data di riferimento per conoscere la tua età in qualsiasi giorno passato o futuro.' },
+    ],
+  },
+  pl: {
+    name: 'Jak obliczyć swój dokładny wiek',
+    description: 'Przewodnik krok po kroku do obliczania swojego dokładnego wieku w latach, miesiącach, tygodniach i dniach.',
+    steps: [
+      { name: 'Wpisz datę urodzenia', text: 'Wpisz swój dzień, miesiąc i rok urodzenia w polach DD / MM / RRRR.' },
+      { name: 'Kliknij Oblicz', text: 'Naciśnij przycisk Oblicz lub Enter. Twój dokładny wiek pojawi się natychmiast.' },
+      { name: 'Odczytaj wynik', text: 'Pasek wyników pokazuje Twój wiek w latach, miesiącach, tygodniach, dniach i godzinach — aktualizowany na żywo co sekundę.' },
+      { name: 'Oblicz dla konkretnej daty (opcjonalnie)', text: 'Zaznacz "Oblicz dla konkretnej daty" i wpisz datę referencyjną, aby poznać swój wiek w dowolnym przeszłym lub przyszłym dniu.' },
+    ],
+  },
+};
+
 module.exports = {
   pages: [
     {
@@ -667,6 +740,6 @@ function calculate(){
 document.addEventListener('keydown',function(e){if(e.key==='Enter') calculate();});
 `;
 
-    return { title: t.title, metaDesc: t.metaDesc, headlineBlock, formGrid, resultsSection, seoBlock, script, faqs: t.faqs, source: t.source };
+    return { title: t.title, metaDesc: t.metaDesc, headlineBlock, formGrid, resultsSection, seoBlock, script, faqs: t.faqs, source: t.source, howto: HOWTO[lang] };
   },
 };
