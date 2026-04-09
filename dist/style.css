@@ -917,14 +917,6 @@ footer {
   border: 1px solid var(--ink);
 }
 
-.np-photo-caption {
-  font-family: 'Space Mono', monospace;
-  font-size: .6rem;
-  letter-spacing: .08em;
-  color: var(--muted);
-  margin: .3rem 0 0;
-  text-align: left;
-}
 
 /* Two-column layout: age left, world events right */
 .np-results {

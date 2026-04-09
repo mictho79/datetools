@@ -481,8 +481,7 @@ module.exports = {
     const yearImg = YEAR_IMAGES[year];
     const imgBlock = yearImg ? `
     <div class="np-photo-wrap">
-      <img src="${yearImg.src}" alt="${yearImg.alt}" class="np-photo" width="900" height="500" loading="lazy">
-      <p class="np-photo-caption">${yearImg.caption}</p>
+      <img src="${yearImg.src}" alt="${yearImg.alt}" class="np-photo" width="900" height="500" loading="lazy" onerror="this.closest('.np-photo-wrap').style.display='none'">
     </div>` : '';
 
     const headlineBlock = `  <div class="headline-block np-front">
