@@ -484,12 +484,23 @@ module.exports = {
           <img src="${yearImg.src}" alt="${yearImg.alt}" class="np-photo" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.np-photo-wrap').style.display='none'">
         </div>` : '';
 
+    // Prev/next year navigation
+    const slugPfx = { en: 'born-in-', fr: 'fr/ne-en-', es: 'es/nacido-en-', pt: 'pt/nascido-em-', de: 'de/geboren-in-', it: 'it/nato-nel-', pl: 'pl/urodzony-w-' };
+    const pfx = slugPfx[lang] || slugPfx.en;
+    const prevHref = year > 1930 ? `/${pfx}${year - 1}/` : null;
+    const nextHref = year < 2024 ? `/${pfx}${year + 1}/` : null;
+    const yearNav = `<div class="np-year-nav">
+      ${prevHref ? `<a href="${prevHref}" class="np-nav-link">← ${year - 1}</a>` : '<span></span>'}
+      ${nextHref ? `<a href="${nextHref}" class="np-nav-link">${year + 1} →</a>` : '<span></span>'}
+    </div>`;
+
     const headlineBlock = `  <div class="headline-block np-front">
     <div class="np-gazette-hdr">
       <div class="np-rule-top"></div>
       <div class="np-gazette-title">The DateCalc Gazette</div>
       <div class="np-rule-double"></div>
       <div class="np-edition">Est. ${year} &nbsp;·&nbsp; Vol. ${age1} &nbsp;·&nbsp; ${BUILD_YEAR} Edition</div>
+      ${yearNav}
       <div class="np-rule-bottom"></div>
     </div>
     <div class="kicker">${t.kicker}</div>
