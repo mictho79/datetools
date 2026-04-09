@@ -480,9 +480,9 @@ module.exports = {
     // Blocks — newspaper front page layout
     const yearImg = YEAR_IMAGES[year];
     const imgBlock = yearImg ? `
-    <div class="np-photo-wrap">
-      <img src="${yearImg.src}" alt="${yearImg.alt}" class="np-photo" width="900" height="500" loading="lazy" onerror="this.closest('.np-photo-wrap').style.display='none'">
-    </div>` : '';
+        <div class="np-photo-wrap">
+          <img src="${yearImg.src}" alt="${yearImg.alt}" class="np-photo" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.np-photo-wrap').style.display='none'">
+        </div>` : '';
 
     const headlineBlock = `  <div class="headline-block np-front">
     <div class="np-gazette-hdr">
@@ -494,7 +494,6 @@ module.exports = {
     </div>
     <div class="kicker">${t.kicker}</div>
     <h1 class="headline">${headlineHtml}</h1>
-    ${imgBlock}
   </div>`;
 
     // No form — results auto-show
@@ -513,6 +512,7 @@ module.exports = {
       </div>
       <div class="np-world-col">
         ${worldBlock}
+        ${imgBlock}
       </div>
     </div>
   </div>`;
