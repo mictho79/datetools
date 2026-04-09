@@ -593,6 +593,9 @@ ${JSON.stringify({
 <link rel="alternate" hreflang="de" href="https://datecalc.app${hreflang.de}">
 <link rel="alternate" hreflang="it" href="https://datecalc.app${hreflang.it}">
 <link rel="alternate" hreflang="pl" href="https://datecalc.app${hreflang.pl}">
+<link rel="alternate" hreflang="ja" href="https://datecalc.app${hreflang.ja}">
+<link rel="alternate" hreflang="ko" href="https://datecalc.app${hreflang.ko}">
+<link rel="alternate" hreflang="nl" href="https://datecalc.app${hreflang.nl}">
 <link rel="alternate" hreflang="x-default" href="https://datecalc.app${hreflang.en}">
 <meta property="og:type" content="website">
 <meta property="og:title" content="${title}">
@@ -774,6 +777,9 @@ for (const tool of tools) {
         de: page.slugs.de === '' ? '/' : `/${page.slugs.de}/`,
         it: page.slugs.it === '' ? '/' : `/${page.slugs.it}/`,
         pl: page.slugs.pl === '' ? '/' : `/${page.slugs.pl}/`,
+        ja: page.slugs.ja === '' ? '/' : `/${page.slugs.ja}/`,
+        ko: page.slugs.ko === '' ? '/' : `/${page.slugs.ko}/`,
+        nl: page.slugs.nl === '' ? '/' : `/${page.slugs.nl}/`,
       };
 
       const html = renderLayout(data, lang);
