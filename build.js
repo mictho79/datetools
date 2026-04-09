@@ -613,6 +613,16 @@ for (const f of fs.readdirSync(fontSrc)) {
   fs.copyFileSync(path.join(fontSrc, f), path.join(fontDst, f));
 }
 console.log('  ✓ /style.css + /fonts/');
+// Copy year photos if they exist
+const yearPhotosSrc = path.join(__dirname, 'src', 'data', 'year-photos');
+if (fs.existsSync(yearPhotosSrc)) {
+  const yearPhotosDst = path.join(DIST, 'year-photos');
+  ensureDir(yearPhotosDst);
+  for (const f of fs.readdirSync(yearPhotosSrc)) {
+    fs.copyFileSync(path.join(yearPhotosSrc, f), path.join(yearPhotosDst, f));
+  }
+  console.log('  ✓ /year-photos/');
+}
 
 let count = 0;
 
