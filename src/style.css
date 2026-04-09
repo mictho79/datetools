@@ -964,6 +964,16 @@ footer {
   align-items: flex-start;
 }
 
+.np-age-col .hero-or {
+  font-family: 'Space Mono', monospace;
+  font-size: .22em;
+  font-weight: 400;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  vertical-align: middle;
+  color: var(--muted);
+}
+
 .np-world-col {
   padding: 2rem 0 2rem 1.5rem;
 }
