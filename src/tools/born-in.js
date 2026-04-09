@@ -489,18 +489,16 @@ module.exports = {
     const pfx = slugPfx[lang] || slugPfx.en;
     const prevHref = year > 1930 ? `/${pfx}${year - 1}/` : null;
     const nextHref = year < 2024 ? `/${pfx}${year + 1}/` : null;
-    const yearNav = `<div class="np-year-nav">
-      ${prevHref ? `<a href="${prevHref}" class="np-nav-link">← ${year - 1}</a>` : '<span></span>'}
-      ${nextHref ? `<a href="${nextHref}" class="np-nav-link">${year + 1} →</a>` : '<span></span>'}
-    </div>`;
+    const vol = year - 1929;
 
     const headlineBlock = `  <div class="headline-block np-front">
     <div class="np-gazette-hdr">
+      ${prevHref ? `<a href="${prevHref}" class="np-nav-link np-nav-prev">← ${year - 1}</a>` : ''}
+      ${nextHref ? `<a href="${nextHref}" class="np-nav-link np-nav-next">${year + 1} →</a>` : ''}
       <div class="np-rule-top"></div>
       <div class="np-gazette-title">The DateCalc Gazette</div>
       <div class="np-rule-double"></div>
-      <div class="np-edition">Est. ${year} &nbsp;·&nbsp; Vol. ${age1} &nbsp;·&nbsp; ${BUILD_YEAR} Edition</div>
-      ${yearNav}
+      <div class="np-edition">Est. ${year} &nbsp;·&nbsp; Vol. ${vol} &nbsp;·&nbsp; ${BUILD_YEAR} Edition</div>
       <div class="np-rule-bottom"></div>
     </div>
     <div class="kicker">${t.kicker}</div>
