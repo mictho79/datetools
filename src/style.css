@@ -888,19 +888,20 @@ footer {
 }
 
 .np-front .headline {
-  font-size: clamp(2.8rem, 12vw, 8rem);
-  line-height: 1;
+  font-size: clamp(2rem, 9vw, 5.5rem);
+  line-height: 1.05;
   letter-spacing: -.03em;
-  margin: .1rem 0 1rem;
+  margin: .2rem 0 1.2rem;
   overflow-wrap: break-word;
   word-break: break-word;
+  hyphens: auto;
   width: 100%;
 }
 
 .np-front .subhead {
   font-style: italic;
   max-width: 50ch;
-  margin: 0 auto .6rem;
+  margin: .5rem auto 1rem;
 }
 
 /* Two-column layout: age left, world events right */
@@ -966,7 +967,7 @@ footer {
     padding: 1.5rem 0;
   }
   .np-front .headline {
-    font-size: clamp(3rem, 16vw, 6rem);
+    font-size: clamp(1.8rem, 9vw, 4rem);
   }
 }
 
