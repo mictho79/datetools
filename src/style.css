@@ -992,7 +992,7 @@ footer {
   letter-spacing: .18em;
   text-transform: uppercase;
   color: var(--muted);
-  margin: -.2em 0;
+  line-height: 2.5;
 }
 
 .np-world-col {
