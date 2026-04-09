@@ -917,8 +917,8 @@ footer {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(circle, rgba(0,0,0,.55) 1px, transparent 1px);
-  background-size: 3px 3px;
+  background-image: radial-gradient(circle, rgba(0,0,0,.35) 1px, transparent 1px);
+  background-size: 5px 5px;
   mix-blend-mode: multiply;
   pointer-events: none;
   transition: opacity .4s ease;
