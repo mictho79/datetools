@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>日付計算ツール – 日付に日数を加算・減算 | DateCalc.app</title>
+<meta name="robots" content="index, follow">
+<meta name="description" content="任意の日付に日数・週数・月数・年数を加算または減算します。X日後の日付を確認できる無料オンライン日付計算ツール。">
+<link rel="canonical" href="https://datecalc.app/ja/hidzuke-keisanki/">
+<link rel="alternate" hreflang="en" href="https://datecalc.app/date-calculator/">
+<link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/calculateur-date/">
+<link rel="alternate" hreflang="es" href="https://datecalc.app/es/calculadora-fechas/">
+<link rel="alternate" hreflang="pt" href="https://datecalc.app/pt/calculadora-de-data/">
+<link rel="alternate" hreflang="de" href="https://datecalc.app/de/datumsrechner/">
+<link rel="alternate" hreflang="it" href="https://datecalc.app/it/calcolatore-data/">
+<link rel="alternate" hreflang="pl" href="https://datecalc.app/pl/kalkulator-daty/">
+<link rel="alternate" hreflang="x-default" href="https://datecalc.app/date-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="日付計算ツール – 日付に日数を加算・減算 | DateCalc.app">
+<meta property="og:description" content="任意の日付に日数・週数・月数・年数を加算または減算します。X日後の日付を確認できる無料オンライン日付計算ツール。">
+<meta property="og:url" content="https://datecalc.app/ja/hidzuke-keisanki/">
+<meta property="og:site_name" content="DateCalc.app">
+<meta property="og:image" content="https://datecalc.app/og.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="日付計算ツール – 日付に日数を加算・減算 | DateCalc.app">
+<meta name="twitter:description" content="任意の日付に日数・週数・月数・年数を加算または減算します。X日後の日付を確認できる無料オンライン日付計算ツール。">
+<meta name="twitter:image" content="https://datecalc.app/og.png">
+<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/playfair-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/style.css">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="shortcut icon" href="/favicon.svg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "30日後の日付は何日ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "今日を開始日として入力し、「加算」と「30日」を選択してから「計算する」をクリックしてください。結果は30日後の正確な日付になります。例えば3月15日の30日後は4月14日です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "90日後の日付は何日ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "同じ方法で90日を使用してください。月の長さが異なるため、90日は正確に3ヶ月とは一致しません。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "特定の日付に30日を加算するには？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "対象の日付を開始日として入力し、「加算」を選択し、数量フィールドに30を入力して「日」を単位として選び「計算する」をクリックしてください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "日付から月数を引くには？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "演算メニューから「減算」を選択し、月数を入力して「月」を単位として選択します。計算ツールは3月31日から1ヶ月引くと2月28日（閏年は29日）になる境界ケースも正しく処理します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "プロジェクトの期日を計算するには？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "プロジェクトの開始日を入力し、「加算」を選択して、プロジェクト期間を入力し、適切な単位を選択してください。結果には曜日とともに期日が表示されます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "100日後の日付は何日ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "1月1日から100日後は通常の年では4月11日です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "6ヶ月後の日付は何日ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "今日を開始日として入力し、「加算」と「6ヶ月」を選択してください。結果は8月31日に6ヶ月を加えるなどの境界ケースも正しく処理します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "閏年は考慮されますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい。計算ツールは日付の計算において閏年を自動的に考慮します。"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "日付計算ツール",
+  "description": "任意の日付に日数・週数・月数・年数を加算または減算します。X日後の日付を確認できる無料オンライン日付計算ツール。",
+  "url": "https://datecalc.app/ja/hidzuke-keisanki/",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Web",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"DateCalc.app","url":"https://datecalc.app","logo":"https://datecalc.app/og.png","contactPoint":{"@type":"ContactPoint","email":"hello@datecalc.app","contactType":"customer support"}}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<noscript><div style="background:#c8392b;color:#fff;text-align:center;padding:.6rem;font-family:sans-serif;font-size:.9rem">This calculator requires JavaScript. Please enable it in your browser.</div></noscript>
+
+<header>
+<div class="masthead">
+  <a href="/ja/" class="masthead-brand">DateCalc<span>.</span>app</a>
+  <div class="masthead-meta" id="todayMeta"></div>
+</div>
+</header>
+
+<div class="lang-strip">
+  <a href="/date-calculator/" class="lang-btn">EN</a>
+  <a href="/fr/calculateur-date/" class="lang-btn">FR</a>
+  <a href="/es/calculadora-fechas/" class="lang-btn">ES</a>
+  <a href="/pt/calculadora-de-data/" class="lang-btn">PT</a>
+  <a href="/de/datumsrechner/" class="lang-btn">DE</a>
+  <a href="/it/calcolatore-data/" class="lang-btn">IT</a>
+  <a href="/pl/kalkulator-daty/" class="lang-btn">PL</a>
+  <a href="undefined" class="lang-btn active">JA</a>
+  <a href="undefined" class="lang-btn">KO</a>
+  <a href="undefined" class="lang-btn">NL</a>
+</div>
+
+<div class="page">
+
+  <div class="headline-block">
+    <div class="kicker">日付計算ツール</div>
+    <h1 class="headline">その<em>日付</em>は <br>いつですか？</h1>
+    <p class="subhead">任意の開始日から日数・週数・月数・年数を加算または減算します。</p>
+  </div>
+
+  <div class="form-grid">
+    <div class="form-col">
+      <div class="field-label">開始日</div>
+      <div class="date-row">
+        <input type="number" id="day" placeholder="DD" min="1" max="31" inputmode="numeric" oninput="clamp(this,1,31)">
+        <span>/</span>
+        <input type="number" id="month" placeholder="MM" min="1" max="12" inputmode="numeric" oninput="clamp(this,1,12)">
+        <span>/</span>
+        <input type="number" id="year" placeholder="YYYY" min="1900" max="2100" inputmode="numeric" oninput="clamp(this,1900,2100)">
+      </div>
+      <div class="field-label" style="margin-top:1.5rem">演算</div>
+      <div class="op-row">
+        <select id="opSign">
+          <option value="add">+ 加算</option>
+          <option value="sub">− 減算</option>
+        </select>
+        <input type="number" id="opAmount" placeholder="0" min="0" max="9999" inputmode="numeric" style="width:4ch" oninput="clamp(this,0,9999)">
+        <select id="opUnit">
+          <option value="days">日</option>
+          <option value="weeks">週</option>
+          <option value="months">ヶ月</option>
+          <option value="years">年</option>
+        </select>
+      </div>
+      <div class="error-line" id="errorLine"></div>
+      <button class="calc-btn" onclick="calculate()">→ 計算する</button>
+    </div>
+    <div class="form-col">
+      <p class="tip-text">"時間は一方向に流れるが、好奇心は前にも後ろにも向けることができる。"</p>
+      <ul class="example-list">
+        <li onclick="fillExample(0)">今日 + 100日 →</li>
+        <li onclick="fillExample(1)">今日 − 90日 →</li>
+        <li onclick="fillExample(2)">今日 + 1年 →</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="results-section" id="results" aria-live="polite">
+    <div class="results-header">計算結果の日付</div>
+    <div class="result-date" id="resultDate">—</div>
+    <div class="result-date-sub" id="resultSub"></div>
+    <div class="facts-row">
+      <div class="fact-item"><div class="fact-key">曜日</div><div class="fact-val" id="ffWeekday">—</div></div>
+      <div class="fact-item"><div class="fact-key">年間通算日</div><div class="fact-val" id="ffDoy">—</div></div>
+      <div class="fact-item"><div class="fact-key">週番号</div><div class="fact-val" id="ffWeek">—</div></div>
+      <div class="fact-item"><div class="fact-key">閏年</div><div class="fact-val" id="ffLeap">—</div></div>
+    </div>
+  </div>
+
+  <nav aria-label="Tools">
+  <div class="tool-nav">
+    <div class="nav-group"><span class="nav-cat">年齢</span><div class="nav-links"><a href="/ja/nenrei-keisanki/">年齢計算機</a><span class="nav-sep">·</span><a href="/ja/jikan-nenrei/">時系列年齢</a><span class="nav-sep">·</span><a href="/ja/akachan-nenrei/">赤ちゃん年齢</a><span class="nav-sep">·</span><a href="/ja/inu-nenrei/">犬の年齢</a><span class="nav-sep">·</span><a href="/ja/neko-nenrei/">猫の年齢</a></div></div>
+    <div class="nav-group"><span class="nav-cat">日付</span><div class="nav-links"><a href="/ja/hidzuke-no-nissuu/">日付の間の日数</a><span class="nav-sep">·</span><a href="/ja/hidzuke-keisanki/" aria-current="page">日付計算機</a><span class="nav-sep">·</span><a href="/ja/kyou-wa-nannichi/">今日は何日</a><span class="nav-sep">·</span><a href="/ja/shuu-bangou/">週番号</a><span class="nav-sep">·</span><a href="/ja/eigyounichu/">営業日計算機</a></div></div>
+    <div class="nav-group"><span class="nav-cat">カウントダウン</span><div class="nav-links"><a href="/ja/kurisumasu-made/">クリスマスまで</a><span class="nav-sep">·</span><a href="/ja/shinnen-made/">新年まで</a><span class="nav-sep">·</span><a href="/ja/harouin-made/">ハロウィンまで</a><span class="nav-sep">·</span><a href="/ja/iisutaa-made/">イースターまで</a><span class="nav-sep">·</span><a href="/ja/kauntodaun/">カウントダウン</a></div></div>
+    <div class="nav-group"><span class="nav-cat">世界</span><div class="nav-links"><a href="/ja/taimuzon-henkan/">タイムゾーン変換</a></div></div>
+    <div class="nav-group"><span class="nav-cat">生まれ年</span><div class="nav-links"><a href="/ja/umareta-1990/">1990年生まれ</a><span class="nav-sep">·</span><a href="/ja/umareta-1980/">1980年生まれ</a><span class="nav-sep">·</span><a href="/ja/umareta-2000/">2000年生まれ</a></div></div>
+    <div class="nav-group"><span class="nav-cat">年間レビュー</span><div class="nav-links"><a href="/ja/nani-ga-okita-2000/">2000年に何があった</a><span class="nav-sep">·</span><a href="/ja/nani-ga-okita-1990/">1990年に何があった</a><span class="nav-sep">·</span><a href="/ja/nani-ga-okita-1980/">1980年に何があった</a></div></div>
+    <div class="nav-group"><span class="nav-cat">カレンダー</span><div class="nav-links"><a href="/ja/shuu-bangou/2025/">2025年週番号</a><span class="nav-sep">·</span><a href="/ja/shuu-bangou/2026/">2026年週番号</a><span class="nav-sep">·</span><a href="/ja/shuu-bangou/2027/">2027年週番号</a></div></div>
+  </div>
+  </nav>
+
+<main id="main-content">
+  <div class="seo-block">
+    <div><h2>日付に日数を加算するには？</h2><p>日付に日数を加算するのは簡単に見えますが、月の境目で複雑になります。1月15日に30日を加えると、通常の年では2月14日になります。1月31日に30日を加えると3月2日（閏年は3月1日）になります。この計算ツールは月の長さの違い、年の変わり目、閏年の2月の追加日を含むすべての境界ケースを自動で処理します。</p></div>
+    <div><h2>日付計算の実用的な使用例</h2><p>日付計算はビジネスと個人生活で常に使われます。企業は支払期日（ネット30日、ネット60日）、サブスクリプションの更新日、試用期間の終了日、保証期限を計算します。医療スタッフは投薬スケジュール、妊娠段階、フォローアップ診察の期間を追跡します。法務チームは法定期限を計算します。プロジェクトマネージャーはスプリント期間を開始日に加えてマイルストーン日程を設定します。</p></div>
+  </div>
+  <div class="faq-block">
+    <h2>よくある質問</h2>
+    <div class="faq-item"><h3>30日後の日付は何日ですか？</h3><p>今日を開始日として入力し、「加算」と「30日」を選択してから「計算する」をクリックしてください。結果は30日後の正確な日付になります。例えば3月15日の30日後は4月14日です。</p></div>
+    <div class="faq-item"><h3>90日後の日付は何日ですか？</h3><p>同じ方法で90日を使用してください。月の長さが異なるため、90日は正確に3ヶ月とは一致しません。</p></div>
+    <div class="faq-item"><h3>特定の日付に30日を加算するには？</h3><p>対象の日付を開始日として入力し、「加算」を選択し、数量フィールドに30を入力して「日」を単位として選び「計算する」をクリックしてください。</p></div>
+    <div class="faq-item"><h3>日付から月数を引くには？</h3><p>演算メニューから「減算」を選択し、月数を入力して「月」を単位として選択します。計算ツールは3月31日から1ヶ月引くと2月28日（閏年は29日）になる境界ケースも正しく処理します。</p></div>
+    <div class="faq-item"><h3>プロジェクトの期日を計算するには？</h3><p>プロジェクトの開始日を入力し、「加算」を選択して、プロジェクト期間を入力し、適切な単位を選択してください。結果には曜日とともに期日が表示されます。</p></div>
+    <div class="faq-item"><h3>100日後の日付は何日ですか？</h3><p>1月1日から100日後は通常の年では4月11日です。</p></div>
+    <div class="faq-item"><h3>6ヶ月後の日付は何日ですか？</h3><p>今日を開始日として入力し、「加算」と「6ヶ月」を選択してください。結果は8月31日に6ヶ月を加えるなどの境界ケースも正しく処理します。</p></div>
+    <div class="faq-item"><h3>閏年は考慮されますか？</h3><p>はい。計算ツールは日付の計算において閏年を自動的に考慮します。</p></div>
+  </div>
+
+  <div class="source-block">
+    <span class="source-lbl">Source</span>
+    <a href="https://www.iso.org/iso-8601-date-and-time-format.html" target="_blank" rel="noopener noreferrer">ISO 8601 – 日付と時刻のフォーマット</a>
+  </div>
+</main>
+  <footer>
+  <nav class="footer-nav" aria-label="Site links">
+<div class="footer-col"><strong>年齢</strong>
+<a href="/ja/nenrei-keisanki/">年齢計算機</a>
+<a href="/ja/jikan-nenrei/">時系列年齢</a>
+<a href="/ja/akachan-nenrei/">赤ちゃん年齢</a>
+<a href="/ja/inu-nenrei/">犬の年齢</a>
+<a href="/ja/neko-nenrei/">猫の年齢</a></div>
+<div class="footer-col"><strong>日付</strong>
+<a href="/ja/hidzuke-no-nissuu/">日付の間の日数</a>
+<a href="/ja/hidzuke-keisanki/">日付計算機</a>
+<a href="/ja/kyou-wa-nannichi/">今日は何日</a>
+<a href="/ja/shuu-bangou/">週番号</a>
+<a href="/ja/eigyounichu/">営業日計算機</a></div>
+<div class="footer-col"><strong>カウントダウン</strong>
+<a href="/ja/kurisumasu-made/">クリスマスまで</a>
+<a href="/ja/shinnen-made/">新年まで</a>
+<a href="/ja/harouin-made/">ハロウィンまで</a>
+<a href="/ja/iisutaa-made/">イースターまで</a>
+<a href="/ja/kauntodaun/">カウントダウン</a></div>
+<div class="footer-col"><strong>世界</strong>
+<a href="/ja/taimuzon-henkan/">タイムゾーン変換</a></div>
+<div class="footer-col"><strong>生まれ年</strong>
+<a href="/ja/umareta-1990/">1990年生まれ</a>
+<a href="/ja/umareta-1980/">1980年生まれ</a>
+<a href="/ja/umareta-2000/">2000年生まれ</a></div>
+<div class="footer-col"><strong>年間レビュー</strong>
+<a href="/ja/nani-ga-okita-2000/">2000年に何があった</a>
+<a href="/ja/nani-ga-okita-1990/">1990年に何があった</a>
+<a href="/ja/nani-ga-okita-1980/">1980年に何があった</a></div>
+<div class="footer-col"><strong>カレンダー</strong>
+<a href="/ja/shuu-bangou/2025/">2025年週番号</a>
+<a href="/ja/shuu-bangou/2026/">2026年週番号</a>
+<a href="/ja/shuu-bangou/2027/">2027年週番号</a></div>
+  </nav>
+  <div class="footer-copy">© 2026 DateCalc.app — 無料オンライン日付・時刻計算機 · <a href="/ja/about/">このサイトについて</a> · <a href="/ja/privacy/">プライバシー</a></div>
+</footer>
+</div>
+
+<script>
+(function(){
+  var now = new Date();
+  var opts = {weekday:'long',year:'numeric',month:'long',day:'numeric'};
+  document.getElementById('todayMeta').innerHTML =
+    now.toLocaleDateString('ja-JP', opts) + '<br>無料日付計算機';
+})();
+// Shared input guard: strip non-digits, truncate to max digit length, clamp to hi
+function clamp(el, lo, hi) {
+  var maxLen = String(hi).length;
+  var s = el.value.replace(/\D/g, '').slice(0, maxLen);
+  var n = parseInt(s, 10);
+  if (!isNaN(n) && n > hi) s = String(hi);
+  el.value = s;
+}
+// Auto-scroll to results when they become visible
+(function(){
+  var r=document.getElementById('results');
+  if(!r||r.classList.contains('auto-show'))return;
+  var obs=new MutationObserver(function(){
+    if(r.classList.contains('show')){
+      r.scrollIntoView({behavior:'smooth',block:'start'});
+      obs.disconnect();
+    }
+  });
+  obs.observe(r,{attributes:true,attributeFilter:['class']});
+})();
+// Enter key submits calculator
+(function(){
+  var fg=document.querySelector('.form-grid');
+  if(!fg)return;
+  fg.addEventListener('keydown',function(e){
+    if(e.key==='Enter'&&typeof calculate==='function')calculate();
+  });
+})();
+// AdSense: load only with consent
+(function(){
+  var ADS_SRC='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4020973443671350';
+  function loadAds(){
+    var s=document.createElement('script');
+    s.src=ADS_SRC;s.async=true;s.crossOrigin='anonymous';
+    document.head.appendChild(s);
+  }
+  if(localStorage.getItem('ads-ok')==='1')return loadAds();
+  if(localStorage.getItem('ads-ok')==='0')return;
+  var b=document.getElementById('consent-banner');
+  if(b)b.style.display='flex';
+  document.getElementById('consent-accept')&&document.getElementById('consent-accept').addEventListener('click',function(){
+    localStorage.setItem('ads-ok','1');b.style.display='none';loadAds();
+  });
+  document.getElementById('consent-decline')&&document.getElementById('consent-decline').addEventListener('click',function(){
+    localStorage.setItem('ads-ok','0');b.style.display='none';
+  });
+})();
+</script>
+<script>
+
+var D = {"errInvalid":"→ 無効な日付です。入力を確認してください。","errAmount":"→ 有効な数値を入力してください。","weekDays":["日曜日","月曜日","火曜日","水曜日","木曜日","金曜日","土曜日"],"months":["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"yes":"はい","no":"いいえ"};
+function fmt(n){return n.toLocaleString();}
+
+function getWeekNum(d){
+  var date=new Date(Date.UTC(d.getFullYear(),d.getMonth(),d.getDate()));
+  var day=date.getUTCDay()||7;
+  date.setUTCDate(date.getUTCDate()+4-day);
+  var yearStart=new Date(Date.UTC(date.getUTCFullYear(),0,1));
+  return Math.ceil((((date-yearStart)/86400000)+1)/7);
+}
+
+function getDoy(d){
+  var start=new Date(d.getFullYear(),0,0);
+  return Math.floor((d-start)/86400000);
+}
+
+function isLeap(y){ return (y%4===0&&y%100!==0)||y%400===0; }
+
+function addToDate(date, amount, unit){
+  var r=new Date(date);
+  if(unit==='days') r.setDate(r.getDate()+amount);
+  else if(unit==='weeks') r.setDate(r.getDate()+amount*7);
+  else if(unit==='months'){
+    var m=r.getMonth()+amount;
+    var y=r.getFullYear()+Math.floor(m/12);
+    m=((m%12)+12)%12;
+    var lastDay=new Date(y,m+1,0).getDate();
+    r.setFullYear(y,m,Math.min(r.getDate(),lastDay));
+  } else {
+    r.setFullYear(r.getFullYear()+amount);
+  }
+  return r;
+}
+
+function fillExample(idx){
+  var now=new Date();
+  document.getElementById('day').value=now.getDate();
+  document.getElementById('month').value=now.getMonth()+1;
+  document.getElementById('year').value=now.getFullYear();
+  if(idx===0){ document.getElementById('opSign').value='add'; document.getElementById('opAmount').value=100; document.getElementById('opUnit').value='days'; }
+  else if(idx===1){ document.getElementById('opSign').value='sub'; document.getElementById('opAmount').value=90; document.getElementById('opUnit').value='days'; }
+  else { document.getElementById('opSign').value='add'; document.getElementById('opAmount').value=1; document.getElementById('opUnit').value='years'; }
+  calculate();
+}
+
+function calculate(){
+  var d=parseInt(document.getElementById('day').value);
+  var m=parseInt(document.getElementById('month').value);
+  var y=parseInt(document.getElementById('year').value);
+  var amount=parseInt(document.getElementById('opAmount').value);
+  var sign=document.getElementById('opSign').value;
+  var unit=document.getElementById('opUnit').value;
+  var err=document.getElementById('errorLine');
+  var res=document.getElementById('results');
+  err.classList.remove('show'); res.classList.remove('show');
+
+  if(!d||!m||!y||d<1||d>31||m<1||m>12){err.textContent=D.errInvalid; err.classList.add('show'); return;}
+  var start=new Date(y,m-1,d);
+  if(start.getDate()!==d){err.textContent=D.errInvalid; err.classList.add('show'); return;}
+  if(isNaN(amount)||amount<0){err.textContent=D.errAmount; err.classList.add('show'); return;}
+
+  var delta=sign==='add'?amount:-amount;
+  var result=addToDate(start,delta,unit);
+
+  var dateStr=result.getDate()+' '+D.months[result.getMonth()]+' '+result.getFullYear();
+  document.getElementById('resultDate').textContent=dateStr;
+  document.getElementById('resultSub').textContent=(sign==='add'?'+ ':'− ')+amount+' '+unit;
+  document.getElementById('ffWeekday').textContent=D.weekDays[result.getDay()];
+  document.getElementById('ffDoy').textContent=getDoy(result);
+  document.getElementById('ffWeek').textContent=getWeekNum(result);
+  document.getElementById('ffLeap').textContent=isLeap(result.getFullYear())?D.yes:D.no;
+  res.classList.add('show');
+  res.scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+// Pre-fill today
+(function(){
+  var now=new Date();
+  document.getElementById('day').value=now.getDate();
+  document.getElementById('month').value=now.getMonth()+1;
+  document.getElementById('year').value=now.getFullYear();
+})();
+
+document.addEventListener('keydown',function(e){if(e.key==='Enter') calculate();});
+
+</script>
+<div id="consent-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#111111;color:#fff;padding:.9rem 1.4rem;z-index:9999;font-size:.82rem;font-family:sans-serif;align-items:center;gap:.8rem;flex-wrap:wrap">
+  <span style="flex:1;min-width:200px">この無料サービスの維持のためGoogle AdSenseを使用しています。広告クッキーを受け入れますか？</span>
+  <button id="consent-accept" style="background:#c8392b;color:#fff;border:none;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">同意する</button>
+  <button id="consent-decline" style="background:transparent;color:#aaa;border:1px solid #555;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">同意せずに続ける</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>日付の日数計算 2026 – 無料の日数計算ツール</title>
+<meta name="robots" content="index, follow">
+<meta name="description" content="2つの日付の間の正確な日数を計算します。週、月、年も表示 — 無料、登録不要。">
+<link rel="canonical" href="https://datecalc.app/ja/hidzuke-no-nissuu/">
+<link rel="alternate" hreflang="en" href="https://datecalc.app/days-between-dates/">
+<link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/jours-entre-deux-dates/">
+<link rel="alternate" hreflang="es" href="https://datecalc.app/es/dias-entre-fechas/">
+<link rel="alternate" hreflang="pt" href="https://datecalc.app/pt/dias-entre-datas/">
+<link rel="alternate" hreflang="de" href="https://datecalc.app/de/tage-zwischen-datumen/">
+<link rel="alternate" hreflang="it" href="https://datecalc.app/it/giorni-tra-date/">
+<link rel="alternate" hreflang="pl" href="https://datecalc.app/pl/dni-miedzy-datami/">
+<link rel="alternate" hreflang="x-default" href="https://datecalc.app/days-between-dates/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="日付の日数計算 2026 – 無料の日数計算ツール">
+<meta property="og:description" content="2つの日付の間の正確な日数を計算します。週、月、年も表示 — 無料、登録不要。">
+<meta property="og:url" content="https://datecalc.app/ja/hidzuke-no-nissuu/">
+<meta property="og:site_name" content="DateCalc.app">
+<meta property="og:image" content="https://datecalc.app/og.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="日付の日数計算 2026 – 無料の日数計算ツール">
+<meta name="twitter:description" content="2つの日付の間の正確な日数を計算します。週、月、年も表示 — 無料、登録不要。">
+<meta name="twitter:image" content="https://datecalc.app/og.png">
+<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/playfair-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/style.css">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="shortcut icon" href="/favicon.svg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "2つの日付の間は何日ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "上のフィールドに開始日と終了日を入力して「計算する」をクリックしてください。結果には週数・月数・年数の換算とともに、2つの日付間の正確な暦日数が表示されます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "誕生日まで何日ありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "最後の誕生日を開始日、次の誕生日を終了日として入力してください。毎年の計算には今年の誕生日を開始日、来年の誕生日を終了日にすると、結果は常に365日（閏年は366日）になります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "平日と暦日の違いは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "暦日は週末と祝日を含むすべての日を数えます。平日は月〜金のみを数えます。この計算ツールは両方を表示します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "締め切りまで何日ありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "今日を開始日、締め切りを終了日として入力し「計算する」をクリックしてください。暦日数と平日数の両方が表示されます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "計算ツールは開始日・終了日を含みますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "計算ツールは2つの日付間の完全な24時間の日数を数えます。1月1日〜3日は2日です。両端を含む場合は結果に1を足してください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "特定の2年間は何日ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "最初の年の1月1日を開始日、最後の年の12月31日を終了日として入力し、包括的なカウントのために1を加えてください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "サポートされる最大の日付範囲は何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "この計算ツールは1900年〜2100年の任意の日付をサポートし、73,000日以上の範囲に対応します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "平日のみを数えるにはどうすればよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "結果の「平日」フィールドは土日を除外します。祝日も除外するには、当社の平日計算ツールをご利用ください。"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "日付の日数計算 2026",
+  "description": "2つの日付の間の正確な日数を計算します。週、月、年も表示 — 無料、登録不要。",
+  "url": "https://datecalc.app/ja/hidzuke-no-nissuu/",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Web",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"DateCalc.app","url":"https://datecalc.app","logo":"https://datecalc.app/og.png","contactPoint":{"@type":"ContactPoint","email":"hello@datecalc.app","contactType":"customer support"}}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<noscript><div style="background:#c8392b;color:#fff;text-align:center;padding:.6rem;font-family:sans-serif;font-size:.9rem">This calculator requires JavaScript. Please enable it in your browser.</div></noscript>
+
+<header>
+<div class="masthead">
+  <a href="/ja/" class="masthead-brand">DateCalc<span>.</span>app</a>
+  <div class="masthead-meta" id="todayMeta"></div>
+</div>
+</header>
+
+<div class="lang-strip">
+  <a href="/days-between-dates/" class="lang-btn">EN</a>
+  <a href="/fr/jours-entre-deux-dates/" class="lang-btn">FR</a>
+  <a href="/es/dias-entre-fechas/" class="lang-btn">ES</a>
+  <a href="/pt/dias-entre-datas/" class="lang-btn">PT</a>
+  <a href="/de/tage-zwischen-datumen/" class="lang-btn">DE</a>
+  <a href="/it/giorni-tra-date/" class="lang-btn">IT</a>
+  <a href="/pl/dni-miedzy-datami/" class="lang-btn">PL</a>
+  <a href="undefined" class="lang-btn active">JA</a>
+  <a href="undefined" class="lang-btn">KO</a>
+  <a href="undefined" class="lang-btn">NL</a>
+</div>
+
+<div class="page">
+
+  <div class="headline-block">
+    <div class="kicker">日付の日数</div>
+    <h1 class="headline">2つの日付の<em>間の</em> <br>日数</h1>
+    <p class="subhead">開始日と終了日を入力すると、日数・週数・月数・年数の正確な差が即座にわかります。</p>
+  </div>
+
+  <div class="form-grid">
+    <div class="form-col">
+      <div class="field-label">開始日</div>
+      <div class="date-row">
+        <input type="number" id="d1" placeholder="DD" min="1" max="31" inputmode="numeric" oninput="clamp(this,1,31)">
+        <span>/</span>
+        <input type="number" id="m1" placeholder="MM" min="1" max="12" inputmode="numeric" oninput="clamp(this,1,12)">
+        <span>/</span>
+        <input type="number" id="y1" placeholder="YYYY" min="1900" max="2100" inputmode="numeric" oninput="clamp(this,1900,2100)">
+      </div>
+      <div class="field-label" style="margin-top:1.5rem">終了日 <button type="button" onclick="setToday()" style="background:none;border:none;font-family:'Space Mono',monospace;font-size:.6rem;color:var(--accent);cursor:pointer;letter-spacing:.05em;text-transform:uppercase;padding:0 .4rem">今日</button></div>
+      <div class="date-row">
+        <input type="number" id="d2" placeholder="DD" min="1" max="31" inputmode="numeric" oninput="clamp(this,1,31)">
+        <span>/</span>
+        <input type="number" id="m2" placeholder="MM" min="1" max="12" inputmode="numeric" oninput="clamp(this,1,12)">
+        <span>/</span>
+        <input type="number" id="y2" placeholder="YYYY" min="1900" max="2100" inputmode="numeric" oninput="clamp(this,1900,2100)">
+      </div>
+      <div class="error-line" id="errorLine"></div>
+      <button class="calc-btn" onclick="calculate()">→ 計算する</button>
+    </div>
+    <div class="form-col">
+      <p class="tip-text">"人生は2つの日付の間にあるものだ。その間に何ページ書いたか？"</p>
+      <ul class="example-list">
+        <li onclick="fillExample(0)">2000年1月1日 → 今日 →</li>
+        <li onclick="fillExample(1)">誕生日 → 今日 →</li>
+        <li onclick="fillExample(2)">年始 → 今日 →</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="results-section" id="results" aria-live="polite">
+    <div class="results-header">日付の差</div>
+    <div class="age-display">
+      <span class="age-number" id="heroDays">—</span>
+      <span class="age-suffix">日</span>
+    </div>
+    <div class="stats-strip cols-3">
+      <div class="stat-item"><div class="stat-num" id="statWeeks">—</div><div class="stat-lbl">週</div></div>
+      <div class="stat-item"><div class="stat-num" id="statMonths">—</div><div class="stat-lbl">ヶ月</div></div>
+      <div class="stat-item"><div class="stat-num" id="statYears">—</div><div class="stat-lbl">年</div></div>
+    </div>
+    <div class="facts-row">
+      <div class="fact-item"><div class="fact-key">開始日（曜日）</div><div class="fact-val" id="ffStart">—</div></div>
+      <div class="fact-item"><div class="fact-key">終了日（曜日）</div><div class="fact-val" id="ffEnd">—</div></div>
+      <div class="fact-item"><div class="fact-key">週末</div><div class="fact-val" id="ffWeekends">—</div></div>
+      <div class="fact-item"><div class="fact-key">平日</div><div class="fact-val" id="ffWorkdays">—</div></div>
+    </div>
+  </div>
+
+  <nav aria-label="Tools">
+  <div class="tool-nav">
+    <div class="nav-group"><span class="nav-cat">年齢</span><div class="nav-links"><a href="/ja/nenrei-keisanki/">年齢計算機</a><span class="nav-sep">·</span><a href="/ja/jikan-nenrei/">時系列年齢</a><span class="nav-sep">·</span><a href="/ja/akachan-nenrei/">赤ちゃん年齢</a><span class="nav-sep">·</span><a href="/ja/inu-nenrei/">犬の年齢</a><span class="nav-sep">·</span><a href="/ja/neko-nenrei/">猫の年齢</a></div></div>
+    <div class="nav-group"><span class="nav-cat">日付</span><div class="nav-links"><a href="/ja/hidzuke-no-nissuu/" aria-current="page">日付の間の日数</a><span class="nav-sep">·</span><a href="/ja/hidzuke-keisanki/">日付計算機</a><span class="nav-sep">·</span><a href="/ja/kyou-wa-nannichi/">今日は何日</a><span class="nav-sep">·</span><a href="/ja/shuu-bangou/">週番号</a><span class="nav-sep">·</span><a href="/ja/eigyounichu/">営業日計算機</a></div></div>
+    <div class="nav-group"><span class="nav-cat">カウントダウン</span><div class="nav-links"><a href="/ja/kurisumasu-made/">クリスマスまで</a><span class="nav-sep">·</span><a href="/ja/shinnen-made/">新年まで</a><span class="nav-sep">·</span><a href="/ja/harouin-made/">ハロウィンまで</a><span class="nav-sep">·</span><a href="/ja/iisutaa-made/">イースターまで</a><span class="nav-sep">·</span><a href="/ja/kauntodaun/">カウントダウン</a></div></div>
+    <div class="nav-group"><span class="nav-cat">世界</span><div class="nav-links"><a href="/ja/taimuzon-henkan/">タイムゾーン変換</a></div></div>
+    <div class="nav-group"><span class="nav-cat">生まれ年</span><div class="nav-links"><a href="/ja/umareta-1990/">1990年生まれ</a><span class="nav-sep">·</span><a href="/ja/umareta-1980/">1980年生まれ</a><span class="nav-sep">·</span><a href="/ja/umareta-2000/">2000年生まれ</a></div></div>
+    <div class="nav-group"><span class="nav-cat">年間レビュー</span><div class="nav-links"><a href="/ja/nani-ga-okita-2000/">2000年に何があった</a><span class="nav-sep">·</span><a href="/ja/nani-ga-okita-1990/">1990年に何があった</a><span class="nav-sep">·</span><a href="/ja/nani-ga-okita-1980/">1980年に何があった</a></div></div>
+    <div class="nav-group"><span class="nav-cat">カレンダー</span><div class="nav-links"><a href="/ja/shuu-bangou/2025/">2025年週番号</a><span class="nav-sep">·</span><a href="/ja/shuu-bangou/2026/">2026年週番号</a><span class="nav-sep">·</span><a href="/ja/shuu-bangou/2027/">2027年週番号</a></div></div>
+  </div>
+  </nav>
+
+<main id="main-content">
+  <div class="seo-block">
+    <div><h2>2つの日付の間の日数はどう計算しますか？</h2><p>2つの日付の間の日数を計算するには、早い日付を遅い日付から引きます。24時間ごとに1日としてカウントします。短い期間では単純ですが、月の境目や年をまたぐ場合は複雑になります。2月は28日または29日、月によって28〜31日があり、4年ごとに閏年が1日追加されます。この計算ツールはそれらを自動で処理します。開始日と終了日を入力するだけで、日数・週数・月数・年数の正確な差が表示されます。</p></div>
+    <div><h2>日付差計算ツールの一般的な用途</h2><p>日数計算は最も一般的な日付計算の一つです。プロジェクトマネージャーは期間の計算やマイルストーン間の間隔確認に使用します。人事部門は給付資格や退職期間のために在職日数を計算します。学生は試験や出願期限までの日数を数えます。弁護士や会計士は契約上の締め切りを追跡します。旅行者はビザや税務上の居住確認のために海外滞在日数を計算します。</p></div>
+  </div>
+  <div class="faq-block">
+    <h2>よくある質問</h2>
+    <div class="faq-item"><h3>2つの日付の間は何日ですか？</h3><p>上のフィールドに開始日と終了日を入力して「計算する」をクリックしてください。結果には週数・月数・年数の換算とともに、2つの日付間の正確な暦日数が表示されます。</p></div>
+    <div class="faq-item"><h3>誕生日まで何日ありますか？</h3><p>最後の誕生日を開始日、次の誕生日を終了日として入力してください。毎年の計算には今年の誕生日を開始日、来年の誕生日を終了日にすると、結果は常に365日（閏年は366日）になります。</p></div>
+    <div class="faq-item"><h3>平日と暦日の違いは何ですか？</h3><p>暦日は週末と祝日を含むすべての日を数えます。平日は月〜金のみを数えます。この計算ツールは両方を表示します。</p></div>
+    <div class="faq-item"><h3>締め切りまで何日ありますか？</h3><p>今日を開始日、締め切りを終了日として入力し「計算する」をクリックしてください。暦日数と平日数の両方が表示されます。</p></div>
+    <div class="faq-item"><h3>計算ツールは開始日・終了日を含みますか？</h3><p>計算ツールは2つの日付間の完全な24時間の日数を数えます。1月1日〜3日は2日です。両端を含む場合は結果に1を足してください。</p></div>
+    <div class="faq-item"><h3>特定の2年間は何日ですか？</h3><p>最初の年の1月1日を開始日、最後の年の12月31日を終了日として入力し、包括的なカウントのために1を加えてください。</p></div>
+    <div class="faq-item"><h3>サポートされる最大の日付範囲は何ですか？</h3><p>この計算ツールは1900年〜2100年の任意の日付をサポートし、73,000日以上の範囲に対応します。</p></div>
+    <div class="faq-item"><h3>平日のみを数えるにはどうすればよいですか？</h3><p>結果の「平日」フィールドは土日を除外します。祝日も除外するには、当社の平日計算ツールをご利用ください。</p></div>
+  </div>
+
+  <div class="source-block">
+    <span class="source-lbl">Source</span>
+    <a href="https://www.timeanddate.com/date/duration.html" target="_blank" rel="noopener noreferrer">Time and Date – 日付差計算ツール</a>
+  </div>
+</main>
+  <footer>
+  <nav class="footer-nav" aria-label="Site links">
+<div class="footer-col"><strong>年齢</strong>
+<a href="/ja/nenrei-keisanki/">年齢計算機</a>
+<a href="/ja/jikan-nenrei/">時系列年齢</a>
+<a href="/ja/akachan-nenrei/">赤ちゃん年齢</a>
+<a href="/ja/inu-nenrei/">犬の年齢</a>
+<a href="/ja/neko-nenrei/">猫の年齢</a></div>
+<div class="footer-col"><strong>日付</strong>
+<a href="/ja/hidzuke-no-nissuu/">日付の間の日数</a>
+<a href="/ja/hidzuke-keisanki/">日付計算機</a>
+<a href="/ja/kyou-wa-nannichi/">今日は何日</a>
+<a href="/ja/shuu-bangou/">週番号</a>
+<a href="/ja/eigyounichu/">営業日計算機</a></div>
+<div class="footer-col"><strong>カウントダウン</strong>
+<a href="/ja/kurisumasu-made/">クリスマスまで</a>
+<a href="/ja/shinnen-made/">新年まで</a>
+<a href="/ja/harouin-made/">ハロウィンまで</a>
+<a href="/ja/iisutaa-made/">イースターまで</a>
+<a href="/ja/kauntodaun/">カウントダウン</a></div>
+<div class="footer-col"><strong>世界</strong>
+<a href="/ja/taimuzon-henkan/">タイムゾーン変換</a></div>
+<div class="footer-col"><strong>生まれ年</strong>
+<a href="/ja/umareta-1990/">1990年生まれ</a>
+<a href="/ja/umareta-1980/">1980年生まれ</a>
+<a href="/ja/umareta-2000/">2000年生まれ</a></div>
+<div class="footer-col"><strong>年間レビュー</strong>
+<a href="/ja/nani-ga-okita-2000/">2000年に何があった</a>
+<a href="/ja/nani-ga-okita-1990/">1990年に何があった</a>
+<a href="/ja/nani-ga-okita-1980/">1980年に何があった</a></div>
+<div class="footer-col"><strong>カレンダー</strong>
+<a href="/ja/shuu-bangou/2025/">2025年週番号</a>
+<a href="/ja/shuu-bangou/2026/">2026年週番号</a>
+<a href="/ja/shuu-bangou/2027/">2027年週番号</a></div>
+  </nav>
+  <div class="footer-copy">© 2026 DateCalc.app — 無料オンライン日付・時刻計算機 · <a href="/ja/about/">このサイトについて</a> · <a href="/ja/privacy/">プライバシー</a></div>
+</footer>
+</div>
+
+<script>
+(function(){
+  var now = new Date();
+  var opts = {weekday:'long',year:'numeric',month:'long',day:'numeric'};
+  document.getElementById('todayMeta').innerHTML =
+    now.toLocaleDateString('ja-JP', opts) + '<br>無料日付計算機';
+})();
+// Shared input guard: strip non-digits, truncate to max digit length, clamp to hi
+function clamp(el, lo, hi) {
+  var maxLen = String(hi).length;
+  var s = el.value.replace(/\D/g, '').slice(0, maxLen);
+  var n = parseInt(s, 10);
+  if (!isNaN(n) && n > hi) s = String(hi);
+  el.value = s;
+}
+// Auto-scroll to results when they become visible
+(function(){
+  var r=document.getElementById('results');
+  if(!r||r.classList.contains('auto-show'))return;
+  var obs=new MutationObserver(function(){
+    if(r.classList.contains('show')){
+      r.scrollIntoView({behavior:'smooth',block:'start'});
+      obs.disconnect();
+    }
+  });
+  obs.observe(r,{attributes:true,attributeFilter:['class']});
+})();
+// Enter key submits calculator
+(function(){
+  var fg=document.querySelector('.form-grid');
+  if(!fg)return;
+  fg.addEventListener('keydown',function(e){
+    if(e.key==='Enter'&&typeof calculate==='function')calculate();
+  });
+})();
+// AdSense: load only with consent
+(function(){
+  var ADS_SRC='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4020973443671350';
+  function loadAds(){
+    var s=document.createElement('script');
+    s.src=ADS_SRC;s.async=true;s.crossOrigin='anonymous';
+    document.head.appendChild(s);
+  }
+  if(localStorage.getItem('ads-ok')==='1')return loadAds();
+  if(localStorage.getItem('ads-ok')==='0')return;
+  var b=document.getElementById('consent-banner');
+  if(b)b.style.display='flex';
+  document.getElementById('consent-accept')&&document.getElementById('consent-accept').addEventListener('click',function(){
+    localStorage.setItem('ads-ok','1');b.style.display='none';loadAds();
+  });
+  document.getElementById('consent-decline')&&document.getElementById('consent-decline').addEventListener('click',function(){
+    localStorage.setItem('ads-ok','0');b.style.display='none';
+  });
+})();
+</script>
+<script>
+
+var D = {"errInvalid":"→ 無効な日付です。入力を確認してください。","errOrder":"→ 終了日は開始日より後にしてください。","weekDays":["日曜日","月曜日","火曜日","水曜日","木曜日","金曜日","土曜日"]};
+function fmt(n){return n.toLocaleString();}
+
+function setToday(){
+  var now=new Date();
+  document.getElementById('d2').value=now.getDate();
+  document.getElementById('m2').value=now.getMonth()+1;
+  document.getElementById('y2').value=now.getFullYear();
+}
+
+function fillExample(idx){
+  var now=new Date();
+  if(idx===0){
+    document.getElementById('d1').value=1; document.getElementById('m1').value=1; document.getElementById('y1').value=2000;
+  } else if(idx===1){
+    document.getElementById('d1').value=15; document.getElementById('m1').value=6; document.getElementById('y1').value=1990;
+  } else {
+    document.getElementById('d1').value=1; document.getElementById('m1').value=1; document.getElementById('y1').value=now.getFullYear();
+  }
+  setToday(); calculate();
+}
+
+function parseDate(d,m,y){
+  if(!d||!m||!y) return null;
+  var dt=new Date(y,m-1,d);
+  return (dt.getDate()===d)?dt:null;
+}
+
+function calculate(){
+  var d1=parseInt(document.getElementById('d1').value);
+  var m1=parseInt(document.getElementById('m1').value);
+  var y1=parseInt(document.getElementById('y1').value);
+  var d2=parseInt(document.getElementById('d2').value);
+  var m2=parseInt(document.getElementById('m2').value);
+  var y2=parseInt(document.getElementById('y2').value);
+  var err=document.getElementById('errorLine');
+  var res=document.getElementById('results');
+  err.classList.remove('show'); res.classList.remove('show');
+
+  var date1=parseDate(d1,m1,y1);
+  var date2=parseDate(d2,m2,y2);
+  if(!date1||!date2){err.textContent=D.errInvalid; err.classList.add('show'); return;}
+  if(date2<date1){err.textContent=D.errOrder; err.classList.add('show'); return;}
+
+  var totalDays=Math.round((date2-date1)/86400000);
+  var totalWeeks=Math.floor(totalDays/7);
+
+  // months diff
+  var mDiff=(date2.getFullYear()-date1.getFullYear())*12+(date2.getMonth()-date1.getMonth());
+  if(date2.getDate()<date1.getDate()) mDiff--;
+  var yDiff=Math.floor(mDiff/12);
+
+  // weekends & workdays
+  var weekends=0, workdays=0;
+  var cur=new Date(date1);
+  while(cur<=date2){
+    var day=cur.getDay();
+    if(day===0||day===6) weekends++; else workdays++;
+    cur.setDate(cur.getDate()+1);
+  }
+
+  document.getElementById('heroDays').textContent=fmt(totalDays);
+  document.getElementById('statWeeks').textContent=fmt(totalWeeks);
+  document.getElementById('statMonths').textContent=fmt(mDiff);
+  document.getElementById('statYears').textContent=fmt(yDiff);
+  document.getElementById('ffStart').textContent=D.weekDays[date1.getDay()];
+  document.getElementById('ffEnd').textContent=D.weekDays[date2.getDay()];
+  document.getElementById('ffWeekends').textContent=fmt(weekends);
+  document.getElementById('ffWorkdays').textContent=fmt(workdays);
+  res.classList.add('show');
+  res.scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+document.addEventListener('keydown',function(e){if(e.key==='Enter') calculate();});
+// Pre-fill end date with today
+setToday();
+
+</script>
+<div id="consent-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#111111;color:#fff;padding:.9rem 1.4rem;z-index:9999;font-size:.82rem;font-family:sans-serif;align-items:center;gap:.8rem;flex-wrap:wrap">
+  <span style="flex:1;min-width:200px">この無料サービスの維持のためGoogle AdSenseを使用しています。広告クッキーを受け入れますか？</span>
+  <button id="consent-accept" style="background:#c8392b;color:#fff;border:none;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">同意する</button>
+  <button id="consent-decline" style="background:transparent;color:#aaa;border:1px solid #555;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">同意せずに続ける</button>
+</div>
+</body>
+</html>

@@ -23,7 +23,7 @@ const tools = [
   require('./src/tools/year-events'),
 ];
 
-const LANGS = ['en', 'fr', 'es', 'pt', 'de', 'it', 'pl'];
+const LANGS = ['en', 'fr', 'es', 'pt', 'de', 'it', 'pl', 'ja', 'ko', 'nl'];
 const DIST = path.join(__dirname, 'dist');
 
 // ── TOOL NAV ──────────────────────────────────────────────
@@ -315,6 +315,129 @@ const NAV = {
       { label: 'Tygodnie 2027', href: '/pl/numer-tygodnia/2027/' },
     ]},
   ],
+  ja: [
+    { cat: '年齢', items: [
+      { label: '年齢計算機', href: '/ja/nenrei-keisanki/' },
+      { label: '時系列年齢', href: '/ja/jikan-nenrei/' },
+      { label: '赤ちゃん年齢', href: '/ja/akachan-nenrei/' },
+      { label: '犬の年齢', href: '/ja/inu-nenrei/' },
+      { label: '猫の年齢', href: '/ja/neko-nenrei/' },
+    ]},
+    { cat: '日付', items: [
+      { label: '日付の間の日数', href: '/ja/hidzuke-no-nissuu/' },
+      { label: '日付計算機', href: '/ja/hidzuke-keisanki/' },
+      { label: '今日は何日', href: '/ja/kyou-wa-nannichi/' },
+      { label: '週番号', href: '/ja/shuu-bangou/' },
+      { label: '営業日計算機', href: '/ja/eigyounichu/' },
+    ]},
+    { cat: 'カウントダウン', items: [
+      { label: 'クリスマスまで', href: '/ja/kurisumasu-made/' },
+      { label: '新年まで', href: '/ja/shinnen-made/' },
+      { label: 'ハロウィンまで', href: '/ja/harouin-made/' },
+      { label: 'イースターまで', href: '/ja/iisutaa-made/' },
+      { label: 'カウントダウン', href: '/ja/kauntodaun/' },
+    ]},
+    { cat: '世界', items: [
+      { label: 'タイムゾーン変換', href: '/ja/taimuzon-henkan/' },
+    ]},
+    { cat: '生まれ年', items: [
+      { label: '1990年生まれ', href: '/ja/umareta-1990/' },
+      { label: '1980年生まれ', href: '/ja/umareta-1980/' },
+      { label: '2000年生まれ', href: '/ja/umareta-2000/' },
+    ]},
+    { cat: '年間レビュー', items: [
+      { label: '2000年に何があった', href: '/ja/nani-ga-okita-2000/' },
+      { label: '1990年に何があった', href: '/ja/nani-ga-okita-1990/' },
+      { label: '1980年に何があった', href: '/ja/nani-ga-okita-1980/' },
+    ]},
+    { cat: 'カレンダー', items: [
+      { label: '2025年週番号', href: '/ja/shuu-bangou/2025/' },
+      { label: '2026年週番号', href: '/ja/shuu-bangou/2026/' },
+      { label: '2027年週番号', href: '/ja/shuu-bangou/2027/' },
+    ]},
+  ],
+  ko: [
+    { cat: '나이', items: [
+      { label: '나이 계산기', href: '/ko/nai-gyesan-gi/' },
+      { label: '시간 나이', href: '/ko/sigan-nai/' },
+      { label: '아기 나이', href: '/ko/agi-nai/' },
+      { label: '강아지 나이', href: '/ko/gae-nai/' },
+      { label: '고양이 나이', href: '/ko/goyang-i-nai/' },
+    ]},
+    { cat: '날짜', items: [
+      { label: '날짜 사이의 일수', href: '/ko/nal-jja-sayi/' },
+      { label: '날짜 계산기', href: '/ko/nal-jja-gyesan-gi/' },
+      { label: '오늘은 무슨 요일', href: '/ko/oneul-museun-yoil/' },
+      { label: '주 번호', href: '/ko/ju-beonho/' },
+      { label: '영업일 계산기', href: '/ko/yeongeopil-gyesan-gi/' },
+    ]},
+    { cat: '카운트다운', items: [
+      { label: '크리스마스까지', href: '/ko/keulliseumaseu-kkaji/' },
+      { label: '새해까지', href: '/ko/saehae-kkaji/' },
+      { label: '할로윈까지', href: '/ko/hallowin-kkaji/' },
+      { label: '부활절까지', href: '/ko/buhwarjeol-kkaji/' },
+      { label: '카운트다운', href: '/ko/kaunteu-daun/' },
+    ]},
+    { cat: '세계', items: [
+      { label: '시간대 변환기', href: '/ko/sigandag-byeonhwan/' },
+    ]},
+    { cat: '태어난 해', items: [
+      { label: '1990년생', href: '/ko/taeeona-1990/' },
+      { label: '1980년생', href: '/ko/taeeona-1980/' },
+      { label: '2000년생', href: '/ko/taeeona-2000/' },
+    ]},
+    { cat: '연간 리뷰', items: [
+      { label: '2000년에 무슨 일이', href: '/ko/museun-il-i-2000/' },
+      { label: '1990년에 무슨 일이', href: '/ko/museun-il-i-1990/' },
+      { label: '1980년에 무슨 일이', href: '/ko/museun-il-i-1980/' },
+    ]},
+    { cat: '달력', items: [
+      { label: '2025년 주 번호', href: '/ko/ju-beonho/2025/' },
+      { label: '2026년 주 번호', href: '/ko/ju-beonho/2026/' },
+      { label: '2027년 주 번호', href: '/ko/ju-beonho/2027/' },
+    ]},
+  ],
+  nl: [
+    { cat: 'Leeftijd', items: [
+      { label: 'Leeftijdscalculator', href: '/nl/leeftijdscalculator/' },
+      { label: 'Chronologische Leeftijd', href: '/nl/chronologische-leeftijd/' },
+      { label: 'Baby Leeftijd', href: '/nl/baby-leeftijd/' },
+      { label: 'Hond Leeftijd', href: '/nl/hond-leeftijd/' },
+      { label: 'Kat Leeftijd', href: '/nl/kat-leeftijd/' },
+    ]},
+    { cat: 'Datums', items: [
+      { label: 'Dagen Tussen Datums', href: '/nl/dagen-tussen-datums/' },
+      { label: 'Datumcalculator', href: '/nl/datum-calculator/' },
+      { label: 'Welke Dag Is Het', href: '/nl/welke-dag-is-het/' },
+      { label: 'Weeknummer', href: '/nl/weeknummer/' },
+      { label: 'Werkdagen Calculator', href: '/nl/werkdagen-calculator/' },
+    ]},
+    { cat: 'Aftellen', items: [
+      { label: 'Kerst', href: '/nl/dagen-tot-kerst/' },
+      { label: 'Nieuwjaar', href: '/nl/dagen-tot-nieuwjaar/' },
+      { label: 'Halloween', href: '/nl/dagen-tot-halloween/' },
+      { label: 'Pasen', href: '/nl/dagen-tot-pasen/' },
+      { label: 'Afteltimer', href: '/nl/aftellen/' },
+    ]},
+    { cat: 'Wereld', items: [
+      { label: 'Tijdzone Omzetter', href: '/nl/tijdzone-omzetter/' },
+    ]},
+    { cat: 'Geboren in', items: [
+      { label: 'Geboren in 1990', href: '/nl/geboren-in-1990/' },
+      { label: 'Geboren in 1980', href: '/nl/geboren-in-1980/' },
+      { label: 'Geboren in 2000', href: '/nl/geboren-in-2000/' },
+    ]},
+    { cat: 'Terugblik', items: [
+      { label: 'Wat gebeurde er in 2000', href: '/nl/wat-gebeurde-er-in-2000/' },
+      { label: 'Wat gebeurde er in 1990', href: '/nl/wat-gebeurde-er-in-1990/' },
+      { label: 'Wat gebeurde er in 1980', href: '/nl/wat-gebeurde-er-in-1980/' },
+    ]},
+    { cat: 'Kalenders', items: [
+      { label: 'Weeknummers 2025', href: '/nl/weeknummer/2025/' },
+      { label: 'Weeknummers 2026', href: '/nl/weeknummer/2026/' },
+      { label: 'Weeknummers 2027', href: '/nl/weeknummer/2027/' },
+    ]},
+  ],
 };
 
 const FOOTER = {
@@ -325,12 +448,15 @@ const FOOTER = {
   de: 'Kostenlose Online-Datums- und Zeitrechner',
   it: 'Calcolatori di data e ora gratuiti online',
   pl: 'Bezpłatne kalkulatory dat i czasu online',
+  ja: '無料オンライン日付・時刻計算機',
+  ko: '무료 온라인 날짜 및 시간 계산기',
+  nl: 'Gratis online datum- en tijdcalculatoren',
 };
 
-const PRIVACY_HREF = { en: '/privacy/', fr: '/fr/confidentialite/', es: '/es/privacidad/', pt: '/pt/privacidade/', de: '/de/datenschutz/', it: '/it/privacy/', pl: '/pl/prywatnosc/' };
-const PRIVACY_LBL  = { en: 'Privacy', fr: 'Confidentialité', es: 'Privacidad', pt: 'Privacidade', de: 'Datenschutz', it: 'Privacy', pl: 'Prywatność' };
-const ABOUT_HREF = { en: '/about/', fr: '/fr/a-propos/', es: '/es/acerca-de/', pt: '/pt/sobre/', de: '/de/ueber-uns/', it: '/it/chi-siamo/', pl: '/pl/o-nas/' };
-const ABOUT_LBL  = { en: 'About', fr: 'À propos', es: 'Acerca de', pt: 'Sobre', de: 'Über uns', it: 'Chi siamo', pl: 'O nas' };
+const PRIVACY_HREF = { en: '/privacy/', fr: '/fr/confidentialite/', es: '/es/privacidad/', pt: '/pt/privacidade/', de: '/de/datenschutz/', it: '/it/privacy/', pl: '/pl/prywatnosc/', ja: '/ja/privacy/', ko: '/ko/privacy/', nl: '/nl/privacy/' };
+const PRIVACY_LBL  = { en: 'Privacy', fr: 'Confidentialité', es: 'Privacidad', pt: 'Privacidade', de: 'Datenschutz', it: 'Privacy', pl: 'Prywatność', ja: 'プライバシー', ko: '개인정보', nl: 'Privacy' };
+const ABOUT_HREF = { en: '/about/', fr: '/fr/a-propos/', es: '/es/acerca-de/', pt: '/pt/sobre/', de: '/de/ueber-uns/', it: '/it/chi-siamo/', pl: '/pl/o-nas/', ja: '/ja/about/', ko: '/ko/about/', nl: '/nl/over-ons/' };
+const ABOUT_LBL  = { en: 'About', fr: 'À propos', es: 'Acerca de', pt: 'Sobre', de: 'Über uns', it: 'Chi siamo', pl: 'O nas', ja: 'このサイトについて', ko: '소개', nl: 'Over ons' };
 
 const MASTHEAD_LABEL = {
   en: 'Free date calculator',
@@ -340,10 +466,13 @@ const MASTHEAD_LABEL = {
   de: 'Kostenloser Datumsrechner',
   it: 'Calcolatore di date gratuito',
   pl: 'Bezpłatny kalkulator dat',
+  ja: '無料日付計算機',
+  ko: '무료 날짜 계산기',
+  nl: 'Gratis datumcalculator',
 };
 
-const DATE_LOCALE = { en: 'en-US', fr: 'fr-FR', es: 'es-ES', pt: 'pt-BR', de: 'de-DE', it: 'it-IT', pl: 'pl-PL' };
-const HOME_HREF = { en: '/', fr: '/fr/', es: '/es/', pt: '/pt/', de: '/de/', it: '/it/', pl: '/pl/' };
+const DATE_LOCALE = { en: 'en-US', fr: 'fr-FR', es: 'es-ES', pt: 'pt-BR', de: 'de-DE', it: 'it-IT', pl: 'pl-PL', ja: 'ja-JP', ko: 'ko-KR', nl: 'nl-NL' };
+const HOME_HREF = { en: '/', fr: '/fr/', es: '/es/', pt: '/pt/', de: '/de/', it: '/it/', pl: '/pl/', ja: '/ja/', ko: '/ko/', nl: '/nl/' };
 const BUILD_YEAR = new Date().getFullYear();
 
 const CONSENT = {
@@ -354,6 +483,9 @@ const CONSENT = {
   de: { text: 'Wir nutzen Google AdSense zur Finanzierung dieses kostenlosen Dienstes. Akzeptierst du Werbe-Cookies?', accept: 'Akzeptieren', decline: 'Weiter ohne' },
   it: { text: 'Utilizziamo Google AdSense per finanziare questo servizio gratuito. Accetti i cookie pubblicitari?', accept: 'Accetta', decline: 'Continua senza' },
   pl: { text: 'Używamy Google AdSense do finansowania tej bezpłatnej usługi. Czy akceptujesz ciasteczka reklamowe?', accept: 'Akceptuj', decline: 'Kontynuuj bez' },
+  ja: { text: 'この無料サービスの維持のためGoogle AdSenseを使用しています。広告クッキーを受け入れますか？', accept: '同意する', decline: '同意せずに続ける' },
+  ko: { text: '이 무료 서비스를 유지하기 위해 Google AdSense를 사용합니다. 광고 쿠키에 동의하시겠습니까?', accept: '동의', decline: '동의 없이 계속' },
+  nl: { text: 'Wij gebruiken Google AdSense om deze gratis service te financieren. Accepteert u advertentiecookies?', accept: 'Accepteren', decline: 'Doorgaan zonder' },
 };
 
 // ── LAYOUT ────────────────────────────────────────────────
@@ -1048,6 +1180,39 @@ const ABOUT_CONTENT = {
       { h: 'Kontakt', p: 'Pytania, sugestie lub opinie? Napisz do nas na <a href="mailto:hello@datecalc.app">hello@datecalc.app</a> — czytamy każdą wiadomość.' },
     ],
   },
+  ja: {
+    title: 'このサイトについて — DateCalc.app',
+    h1: 'DateCalc.appについて',
+    intro: 'DateCalc.appは、無料で即時に使える日付・時刻計算機のコレクションです。登録不要、広告なし、トラッキングなし — ブラウザ上で完全に動作する、高速で正確なツールです。',
+    sections: [
+      { h: '提供するツール', p: '年齢計算機、赤ちゃん年齢トラッカー、犬・猫の年齢変換、日数カウンター、週番号、営業日計算機、祝日カウントダウン、過去の年間レビュー — 10言語で利用可能：英語、フランス語、スペイン語、ポルトガル語、ドイツ語、イタリア語、ポーランド語、日本語、韓国語、オランダ語。' },
+      { h: '仕組み', p: 'すべての計算はJavaScriptを使用してブラウザ上で直接実行されます。データはサーバーに送信されません。入力した日付はお使いのデバイスに保存されます。' },
+      { h: '制作者について', p: 'DateCalc.appは、誰もが無料で使える信頼性の高い日付ツールを提供するために作られた独立プロジェクトです。有料会員登録なしで利用できることを大切にしています。' },
+      { h: 'お問い合わせ', p: 'ご質問、ご提案、フィードバックは <a href="mailto:hello@datecalc.app">hello@datecalc.app</a> までどうぞ — すべてのメッセージを読んでいます。' },
+    ],
+  },
+  ko: {
+    title: '소개 — DateCalc.app',
+    h1: 'DateCalc.app 소개',
+    intro: 'DateCalc.app은 무료로 즉시 사용할 수 있는 날짜 및 시간 계산기 모음입니다. 회원가입 불필요, 광고 없음, 추적 없음 — 브라우저에서 완전히 작동하는 빠르고 정확한 도구입니다.',
+    sections: [
+      { h: '제공 도구', p: '나이 계산기, 아기 나이 추적기, 강아지·고양이 나이 변환기, 일수 카운터, 주 번호, 영업일 계산기, 공휴일 카운트다운, 연간 회고 도구 — 10개 언어로 이용 가능: 영어, 프랑스어, 스페인어, 포르투갈어, 독일어, 이탈리아어, 폴란드어, 일본어, 한국어, 네덜란드어.' },
+      { h: '작동 방식', p: '모든 계산은 JavaScript를 사용하여 브라우저에서 직접 실행됩니다. 데이터는 서버로 전송되지 않습니다. 입력한 날짜는 사용자의 기기에 남습니다.' },
+      { h: '제작자', p: 'DateCalc.app은 모든 사람에게 무료로 신뢰할 수 있는 날짜 도구를 제공하기 위해 만들어진 독립 프로젝트입니다. 유료 구독이나 필수 계정 없이 누구나 사용할 수 있어야 한다고 믿습니다.' },
+      { h: '문의', p: '질문, 제안 또는 피드백이 있으신가요? <a href="mailto:hello@datecalc.app">hello@datecalc.app</a>으로 연락주세요 — 모든 메시지를 읽고 있습니다.' },
+    ],
+  },
+  nl: {
+    title: 'Over ons — DateCalc.app',
+    h1: 'Over DateCalc.app',
+    intro: 'DateCalc.app is een verzameling gratis en directe datum- en tijdcalculatoren. Geen registratie, geen advertenties, geen tracking — alleen snelle, nauwkeurige tools die volledig in uw browser werken.',
+    sections: [
+      { h: 'Wat wij bieden', p: 'Leeftijdscalculatoren, baby-leeftijdstracker, honden- en kattenleeftijdconverters, dagentellers, weeknummers, werkdagencalculatoren, feestdagaftellers en historische jaarstools — beschikbaar in 10 talen: Engels, Frans, Spaans, Portugees, Duits, Italiaans, Pools, Japans, Koreaans en Nederlands.' },
+      { h: 'Hoe het werkt', p: 'Elke berekening wordt direct in uw browser uitgevoerd met JavaScript. Er worden geen gegevens naar een server verzonden. De ingevoerde datums blijven op uw apparaat.' },
+      { h: 'Wie dit heeft gemaakt', p: 'DateCalc.app is een onafhankelijk project, gebouwd om betrouwbare en snelle datumtools voor iedereen gratis beschikbaar te stellen. Wij geloven dat nuttige hulpmiddelen toegankelijk moeten zijn zonder abonnementen of verplichte accounts.' },
+      { h: 'Contact', p: 'Vragen, suggesties of feedback? Stuur ons een bericht op <a href="mailto:hello@datecalc.app">hello@datecalc.app</a> — we lezen elk bericht.' },
+    ],
+  },
 };
 
 const hreflangAbout = [
@@ -1058,6 +1223,9 @@ const hreflangAbout = [
   '<link rel="alternate" hreflang="de" href="https://datecalc.app/de/ueber-uns/">',
   '<link rel="alternate" hreflang="it" href="https://datecalc.app/it/chi-siamo/">',
   '<link rel="alternate" hreflang="pl" href="https://datecalc.app/pl/o-nas/">',
+  '<link rel="alternate" hreflang="ja" href="https://datecalc.app/ja/about/">',
+  '<link rel="alternate" hreflang="ko" href="https://datecalc.app/ko/about/">',
+  '<link rel="alternate" hreflang="nl" href="https://datecalc.app/nl/over-ons/">',
   '<link rel="alternate" hreflang="x-default" href="https://datecalc.app/about/">',
 ].join('\n');
 

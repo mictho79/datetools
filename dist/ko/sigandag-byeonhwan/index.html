@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>시간대 변환 2026 – 무료, 25개 이상 시간대</title>
+<meta name="robots" content="index, follow">
+<meta name="description" content="임의의 시간대 사이의 시간을 즉시 변환합니다. UTC를 포함한 25개 이상의 시간대 지원. 현지 시간, UTC 오프셋, 시차 표시 — 무료.">
+<link rel="canonical" href="https://datecalc.app/ko/sigandag-byeonhwan/">
+<link rel="alternate" hreflang="en" href="https://datecalc.app/time-zone-converter/">
+<link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/convertisseur-fuseaux-horaires/">
+<link rel="alternate" hreflang="es" href="https://datecalc.app/es/conversor-zona-horaria/">
+<link rel="alternate" hreflang="pt" href="https://datecalc.app/pt/conversor-fuso-horario/">
+<link rel="alternate" hreflang="de" href="https://datecalc.app/de/zeitzonen-umrechner/">
+<link rel="alternate" hreflang="it" href="https://datecalc.app/it/convertitore-fuso-orario/">
+<link rel="alternate" hreflang="pl" href="https://datecalc.app/pl/przelicznik-stref-czasowych/">
+<link rel="alternate" hreflang="x-default" href="https://datecalc.app/time-zone-converter/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="시간대 변환 2026 – 무료, 25개 이상 시간대">
+<meta property="og:description" content="임의의 시간대 사이의 시간을 즉시 변환합니다. UTC를 포함한 25개 이상의 시간대 지원. 현지 시간, UTC 오프셋, 시차 표시 — 무료.">
+<meta property="og:url" content="https://datecalc.app/ko/sigandag-byeonhwan/">
+<meta property="og:site_name" content="DateCalc.app">
+<meta property="og:image" content="https://datecalc.app/og.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="시간대 변환 2026 – 무료, 25개 이상 시간대">
+<meta name="twitter:description" content="임의의 시간대 사이의 시간을 즉시 변환합니다. UTC를 포함한 25개 이상의 시간대 지원. 현지 시간, UTC 오프셋, 시차 표시 — 무료.">
+<meta name="twitter:image" content="https://datecalc.app/og.png">
+<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/playfair-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/style.css">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="shortcut icon" href="/favicon.svg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "뉴욕은 지금 몇 시인가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "뉴욕은 동부 시간을 사용합니다: 겨울에는 UTC−5(EST), 여름에는 UTC−4(EDT). 현재 뉴욕 시간을 확인하려면 변환 대상 시간대로 \"New York (EST/EDT)\"를 선택하고 현지 시간에서 변환하세요."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "UTC와 GMT의 차이는 무엇인가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "UTC(협정 세계시)는 원자 시계에 기반한 국제 시간 표준입니다. GMT(그리니치 표준시)는 런던의 본초 자오선을 중심으로 하는 시간대입니다. 일상적으로는 동일하지만 기술적으로 UTC는 일광 절약 시간에 조정되지 않는 반면, 영국은 여름에 BST를 사용합니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "세계에는 몇 개의 시간대가 있나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "15도 경도 대역에 기반한 24개의 표준 시간대가 있지만, 실제로 사용되는 민간 시간대는 약 38~40개입니다. 많은 국가가 30분 또는 15분의 비표준 오프셋을 사용하기 때문입니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "일광 절약 시간은 어떻게 작동하나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "일광 절약 시간(DST)은 봄에 시계를 1시간 앞당기는 관행으로, 저녁의 일조 시간을 늘립니다. 미국, 캐나다, 유럽 대부분은 일광 절약 시간을 준수하지만 날짜가 다릅니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "EST를 CET로 변환하려면?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "동부 표준시(EST)는 UTC−5입니다. 중앙 유럽 시간(CET)은 UTC+1입니다. 차이는 6시간입니다: EST 12:00는 CET 18:00입니다. 이 변환기를 사용하세요."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "도시 간 시차는 얼마인가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "대표적인 시차(표준시, 일광 절약 시간 없음): 뉴욕−런던=5시간, 뉴욕−파리=6시간, 런던−도쿄=9시간, 로스앤젤레스−뉴욕=3시간."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "시간대를 변환하려면 어떻게 하나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "원본 시간대의 날짜와 시간을 입력하고, 두 시간대를 선택한 후 계산하기를 클릭하세요. 결과는 일광 절약 시간을 고려한 대상 시간대의 동등한 시간을 표시합니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "UTC란 무엇인가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "UTC(협정 세계시)는 세계가 시계를 설정하는 주요 시간 표준입니다. 일광 절약 시간을 채택하지 않으며 다른 모든 시간대의 기준점으로 사용됩니다."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "시간대 변환 2026",
+  "description": "임의의 시간대 사이의 시간을 즉시 변환합니다. UTC를 포함한 25개 이상의 시간대 지원. 현지 시간, UTC 오프셋, 시차 표시 — 무료.",
+  "url": "https://datecalc.app/ko/sigandag-byeonhwan/",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Web",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"DateCalc.app","url":"https://datecalc.app","logo":"https://datecalc.app/og.png","contactPoint":{"@type":"ContactPoint","email":"hello@datecalc.app","contactType":"customer support"}}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<noscript><div style="background:#c8392b;color:#fff;text-align:center;padding:.6rem;font-family:sans-serif;font-size:.9rem">This calculator requires JavaScript. Please enable it in your browser.</div></noscript>
+
+<header>
+<div class="masthead">
+  <a href="/ko/" class="masthead-brand">DateCalc<span>.</span>app</a>
+  <div class="masthead-meta" id="todayMeta"></div>
+</div>
+</header>
+
+<div class="lang-strip">
+  <a href="/time-zone-converter/" class="lang-btn">EN</a>
+  <a href="/fr/convertisseur-fuseaux-horaires/" class="lang-btn">FR</a>
+  <a href="/es/conversor-zona-horaria/" class="lang-btn">ES</a>
+  <a href="/pt/conversor-fuso-horario/" class="lang-btn">PT</a>
+  <a href="/de/zeitzonen-umrechner/" class="lang-btn">DE</a>
+  <a href="/it/convertitore-fuso-orario/" class="lang-btn">IT</a>
+  <a href="/pl/przelicznik-stref-czasowych/" class="lang-btn">PL</a>
+  <a href="undefined" class="lang-btn">JA</a>
+  <a href="undefined" class="lang-btn active">KO</a>
+  <a href="undefined" class="lang-btn">NL</a>
+</div>
+
+<div class="page">
+
+  <div class="headline-block">
+    <div class="kicker">시간대 변환기</div>
+    <h1 class="headline"><em>시간대</em> <br>변환하기</h1>
+    <p class="subhead">25개 이상의 시간대 사이에서 임의의 날짜와 시간을 즉시 변환합니다.</p>
+  </div>
+
+  <div class="form-grid">
+    <div class="form-col">
+      <div class="field-label">변환 원본 시간대</div>
+      <select id="fromZone" class="calc-select">
+        <option value="Pacific/Honolulu">Honolulu (HST)</option>
+        <option value="America/Anchorage">Anchorage (AKST)</option>
+        <option value="America/Los_Angeles">Los Angeles (PST/PDT)</option>
+        <option value="America/Denver">Denver (MST/MDT)</option>
+        <option value="America/Chicago">Chicago (CST/CDT)</option>
+        <option value="America/New_York">New York (EST/EDT)</option>
+        <option value="America/Sao_Paulo">São Paulo (BRT)</option>
+        <option value="America/Argentina/Buenos_Aires">Buenos Aires (ART)</option>
+        <option value="Atlantic/Azores">Azores (AZOT)</option>
+        <option value="Europe/London">London (GMT/BST)</option>
+        <option value="Europe/Paris">Paris (CET/CEST)</option>
+        <option value="Europe/Berlin">Berlin (CET/CEST)</option>
+        <option value="Europe/Helsinki">Helsinki (EET/EEST)</option>
+        <option value="Europe/Istanbul">Istanbul (TRT)</option>
+        <option value="Asia/Dubai">Dubai (GST)</option>
+        <option value="Asia/Karachi">Karachi (PKT)</option>
+        <option value="Asia/Kolkata">India (IST)</option>
+        <option value="Asia/Dhaka">Dhaka (BST)</option>
+        <option value="Asia/Bangkok">Bangkok (ICT)</option>
+        <option value="Asia/Singapore">Singapore (SGT)</option>
+        <option value="Asia/Shanghai">Beijing/Shanghai (CST)</option>
+        <option value="Asia/Tokyo">Tokyo (JST)</option>
+        <option value="Australia/Adelaide">Adelaide (ACST)</option>
+        <option value="Australia/Sydney">Sydney (AEST/AEDT)</option>
+        <option value="Pacific/Auckland">Auckland (NZST/NZDT)</option>
+        <option value="UTC">UTC</option>
+      </select>
+      <div class="field-label" style="margin-top:1rem">변환 대상 시간대</div>
+      <select id="toZone" class="calc-select">
+        <option value="Pacific/Honolulu">Honolulu (HST)</option>
+        <option value="America/Anchorage">Anchorage (AKST)</option>
+        <option value="America/Los_Angeles">Los Angeles (PST/PDT)</option>
+        <option value="America/Denver">Denver (MST/MDT)</option>
+        <option value="America/Chicago">Chicago (CST/CDT)</option>
+        <option value="America/New_York">New York (EST/EDT)</option>
+        <option value="America/Sao_Paulo">São Paulo (BRT)</option>
+        <option value="America/Argentina/Buenos_Aires">Buenos Aires (ART)</option>
+        <option value="Atlantic/Azores">Azores (AZOT)</option>
+        <option value="Europe/London">London (GMT/BST)</option>
+        <option value="Europe/Paris">Paris (CET/CEST)</option>
+        <option value="Europe/Berlin">Berlin (CET/CEST)</option>
+        <option value="Europe/Helsinki">Helsinki (EET/EEST)</option>
+        <option value="Europe/Istanbul">Istanbul (TRT)</option>
+        <option value="Asia/Dubai">Dubai (GST)</option>
+        <option value="Asia/Karachi">Karachi (PKT)</option>
+        <option value="Asia/Kolkata">India (IST)</option>
+        <option value="Asia/Dhaka">Dhaka (BST)</option>
+        <option value="Asia/Bangkok">Bangkok (ICT)</option>
+        <option value="Asia/Singapore">Singapore (SGT)</option>
+        <option value="Asia/Shanghai">Beijing/Shanghai (CST)</option>
+        <option value="Asia/Tokyo">Tokyo (JST)</option>
+        <option value="Australia/Adelaide">Adelaide (ACST)</option>
+        <option value="Australia/Sydney">Sydney (AEST/AEDT)</option>
+        <option value="Pacific/Auckland">Auckland (NZST/NZDT)</option>
+        <option value="UTC">UTC</option>
+      </select>
+      <button class="swap-btn" onclick="swapZones()" style="margin-top:.8rem;background:none;border:1px solid var(--accent);color:var(--accent);padding:.4rem 1rem;cursor:pointer;font-family:inherit;font-size:.9rem">⇄ 시간대 교체</button>
+      <div class="field-label" style="margin-top:1rem">날짜</div>
+      <div class="date-row">
+        <input type="number" id="day" placeholder="DD" min="1" max="31" inputmode="numeric" oninput="clamp(this,1,31)">
+        <span>/</span>
+        <input type="number" id="month" placeholder="MM" min="1" max="12" inputmode="numeric" oninput="clamp(this,1,12)">
+        <span>/</span>
+        <input type="number" id="year" placeholder="YYYY" min="1900" max="2100" inputmode="numeric" oninput="clamp(this,1900,2100)">
+      </div>
+      <div class="field-label" style="margin-top:.8rem">시간</div>
+      <div class="date-row">
+        <input type="number" id="hour" placeholder="HH" min="0" max="23" inputmode="numeric" oninput="clamp(this,0,23)">
+        <span>:</span>
+        <input type="number" id="minute" placeholder="MM" min="0" max="59" inputmode="numeric" oninput="clamp(this,0,59)">
+      </div>
+      <div class="error-line" id="errorLine"></div>
+      <button class="calc-btn" onclick="calculate()">→ 계산하기</button>
+    </div>
+    <div class="form-col auto-info">
+      <p class="tip-text">"세계는 24개의 다른 시계로 작동합니다. 이 도구로 모두 읽을 수 있습니다."</p>
+    </div>
+  </div>
+
+  <div class="results-section" id="results" aria-live="polite">
+    <div class="results-header">변환된 시간</div>
+    <div class="age-display">
+      <span class="age-number" id="heroTime" style="font-size:clamp(2rem,8vw,4rem)">—</span>
+    </div>
+    <div class="facts-row">
+      <div class="fact-item"><div class="fact-key">원본 시간</div><div class="fact-val" id="ffFrom">—</div></div>
+      <div class="fact-item"><div class="fact-key">변환된 시간</div><div class="fact-val" id="ffTo">—</div></div>
+      <div class="fact-item"><div class="fact-key">UTC 오프셋 (원본)</div><div class="fact-val" id="ffFromOff">—</div></div>
+      <div class="fact-item"><div class="fact-key">UTC 오프셋 (대상)</div><div class="fact-val" id="ffToOff">—</div></div>
+      <div class="fact-item"><div class="fact-key">시차</div><div class="fact-val" id="ffDiff">—</div></div>
+    </div>
+  </div>
+
+  <nav aria-label="Tools">
+  <div class="tool-nav">
+    <div class="nav-group"><span class="nav-cat">나이</span><div class="nav-links"><a href="/ko/nai-gyesan-gi/">나이 계산기</a><span class="nav-sep">·</span><a href="/ko/sigan-nai/">시간 나이</a><span class="nav-sep">·</span><a href="/ko/agi-nai/">아기 나이</a><span class="nav-sep">·</span><a href="/ko/gae-nai/">강아지 나이</a><span class="nav-sep">·</span><a href="/ko/goyang-i-nai/">고양이 나이</a></div></div>
+    <div class="nav-group"><span class="nav-cat">날짜</span><div class="nav-links"><a href="/ko/nal-jja-sayi/">날짜 사이의 일수</a><span class="nav-sep">·</span><a href="/ko/nal-jja-gyesan-gi/">날짜 계산기</a><span class="nav-sep">·</span><a href="/ko/oneul-museun-yoil/">오늘은 무슨 요일</a><span class="nav-sep">·</span><a href="/ko/ju-beonho/">주 번호</a><span class="nav-sep">·</span><a href="/ko/yeongeopil-gyesan-gi/">영업일 계산기</a></div></div>
+    <div class="nav-group"><span class="nav-cat">카운트다운</span><div class="nav-links"><a href="/ko/keulliseumaseu-kkaji/">크리스마스까지</a><span class="nav-sep">·</span><a href="/ko/saehae-kkaji/">새해까지</a><span class="nav-sep">·</span><a href="/ko/hallowin-kkaji/">할로윈까지</a><span class="nav-sep">·</span><a href="/ko/buhwarjeol-kkaji/">부활절까지</a><span class="nav-sep">·</span><a href="/ko/kaunteu-daun/">카운트다운</a></div></div>
+    <div class="nav-group"><span class="nav-cat">세계</span><div class="nav-links"><a href="/ko/sigandag-byeonhwan/" aria-current="page">시간대 변환기</a></div></div>
+    <div class="nav-group"><span class="nav-cat">태어난 해</span><div class="nav-links"><a href="/ko/taeeona-1990/">1990년생</a><span class="nav-sep">·</span><a href="/ko/taeeona-1980/">1980년생</a><span class="nav-sep">·</span><a href="/ko/taeeona-2000/">2000년생</a></div></div>
+    <div class="nav-group"><span class="nav-cat">연간 리뷰</span><div class="nav-links"><a href="/ko/museun-il-i-2000/">2000년에 무슨 일이</a><span class="nav-sep">·</span><a href="/ko/museun-il-i-1990/">1990년에 무슨 일이</a><span class="nav-sep">·</span><a href="/ko/museun-il-i-1980/">1980년에 무슨 일이</a></div></div>
+    <div class="nav-group"><span class="nav-cat">달력</span><div class="nav-links"><a href="/ko/ju-beonho/2025/">2025년 주 번호</a><span class="nav-sep">·</span><a href="/ko/ju-beonho/2026/">2026년 주 번호</a><span class="nav-sep">·</span><a href="/ko/ju-beonho/2027/">2027년 주 번호</a></div></div>
+  </div>
+  </nav>
+
+<main id="main-content">
+  <div class="seo-block">
+    <div><h2>시간대는 어떻게 작동하나요?</h2><p>세계는 24개의 주요 시간대로 나뉘어 있으며, 각각 약 15도의 경도에 해당합니다. 이는 지구가 1시간에 자전하는 각도입니다. 대부분의 시간대는 협정 세계시(UTC)에서 정수 시간만큼 차이가 있지만, 일부 국가는 분수 오프셋을 사용합니다: 인도는 UTC+5:30, 네팔은 UTC+5:45, 이란은 UTC+3:30입니다. IANA 시간대 데이터베이스(tz 데이터베이스라고도 함)는 시간대 정의의 권위 있는 세계 표준입니다.</p></div>
+    <div><h2>UTC 오프셋이란 무엇인가요?</h2><p>UTC 오프셋은 특정 시간대와 협정 세계시(UTC, 그리니치 표준시 GMT의 후계자) 사이의 부호가 있는 차이입니다. 뉴욕의 겨울은 UTC−5(EST), 여름은 UTC−4(EDT)입니다. 파리의 겨울은 UTC+1(CET), 여름은 UTC+2(CEST)입니다. UTC와 GMT의 주요 차이점은 UTC는 원자 시계에 기반한 시간 표준으로 일광 절약 시간에 조정되지 않는 반면, GMT는 기술적으로 시간대라는 점입니다.</p></div>
+  </div>
+  <div class="faq-block">
+    <h2>자주 묻는 질문</h2>
+    <div class="faq-item"><h3>뉴욕은 지금 몇 시인가요?</h3><p>뉴욕은 동부 시간을 사용합니다: 겨울에는 UTC−5(EST), 여름에는 UTC−4(EDT). 현재 뉴욕 시간을 확인하려면 변환 대상 시간대로 "New York (EST/EDT)"를 선택하고 현지 시간에서 변환하세요.</p></div>
+    <div class="faq-item"><h3>UTC와 GMT의 차이는 무엇인가요?</h3><p>UTC(협정 세계시)는 원자 시계에 기반한 국제 시간 표준입니다. GMT(그리니치 표준시)는 런던의 본초 자오선을 중심으로 하는 시간대입니다. 일상적으로는 동일하지만 기술적으로 UTC는 일광 절약 시간에 조정되지 않는 반면, 영국은 여름에 BST를 사용합니다.</p></div>
+    <div class="faq-item"><h3>세계에는 몇 개의 시간대가 있나요?</h3><p>15도 경도 대역에 기반한 24개의 표준 시간대가 있지만, 실제로 사용되는 민간 시간대는 약 38~40개입니다. 많은 국가가 30분 또는 15분의 비표준 오프셋을 사용하기 때문입니다.</p></div>
+    <div class="faq-item"><h3>일광 절약 시간은 어떻게 작동하나요?</h3><p>일광 절약 시간(DST)은 봄에 시계를 1시간 앞당기는 관행으로, 저녁의 일조 시간을 늘립니다. 미국, 캐나다, 유럽 대부분은 일광 절약 시간을 준수하지만 날짜가 다릅니다.</p></div>
+    <div class="faq-item"><h3>EST를 CET로 변환하려면?</h3><p>동부 표준시(EST)는 UTC−5입니다. 중앙 유럽 시간(CET)은 UTC+1입니다. 차이는 6시간입니다: EST 12:00는 CET 18:00입니다. 이 변환기를 사용하세요.</p></div>
+    <div class="faq-item"><h3>도시 간 시차는 얼마인가요?</h3><p>대표적인 시차(표준시, 일광 절약 시간 없음): 뉴욕−런던=5시간, 뉴욕−파리=6시간, 런던−도쿄=9시간, 로스앤젤레스−뉴욕=3시간.</p></div>
+    <div class="faq-item"><h3>시간대를 변환하려면 어떻게 하나요?</h3><p>원본 시간대의 날짜와 시간을 입력하고, 두 시간대를 선택한 후 계산하기를 클릭하세요. 결과는 일광 절약 시간을 고려한 대상 시간대의 동등한 시간을 표시합니다.</p></div>
+    <div class="faq-item"><h3>UTC란 무엇인가요?</h3><p>UTC(협정 세계시)는 세계가 시계를 설정하는 주요 시간 표준입니다. 일광 절약 시간을 채택하지 않으며 다른 모든 시간대의 기준점으로 사용됩니다.</p></div>
+  </div>
+
+  <div class="source-block">
+    <span class="source-lbl">Source</span>
+    <a href="https://www.iana.org/time-zones" target="_blank" rel="noopener noreferrer">IANA 시간대 데이터베이스</a>
+  </div>
+</main>
+  <footer>
+  <nav class="footer-nav" aria-label="Site links">
+<div class="footer-col"><strong>나이</strong>
+<a href="/ko/nai-gyesan-gi/">나이 계산기</a>
+<a href="/ko/sigan-nai/">시간 나이</a>
+<a href="/ko/agi-nai/">아기 나이</a>
+<a href="/ko/gae-nai/">강아지 나이</a>
+<a href="/ko/goyang-i-nai/">고양이 나이</a></div>
+<div class="footer-col"><strong>날짜</strong>
+<a href="/ko/nal-jja-sayi/">날짜 사이의 일수</a>
+<a href="/ko/nal-jja-gyesan-gi/">날짜 계산기</a>
+<a href="/ko/oneul-museun-yoil/">오늘은 무슨 요일</a>
+<a href="/ko/ju-beonho/">주 번호</a>
+<a href="/ko/yeongeopil-gyesan-gi/">영업일 계산기</a></div>
+<div class="footer-col"><strong>카운트다운</strong>
+<a href="/ko/keulliseumaseu-kkaji/">크리스마스까지</a>
+<a href="/ko/saehae-kkaji/">새해까지</a>
+<a href="/ko/hallowin-kkaji/">할로윈까지</a>
+<a href="/ko/buhwarjeol-kkaji/">부활절까지</a>
+<a href="/ko/kaunteu-daun/">카운트다운</a></div>
+<div class="footer-col"><strong>세계</strong>
+<a href="/ko/sigandag-byeonhwan/">시간대 변환기</a></div>
+<div class="footer-col"><strong>태어난 해</strong>
+<a href="/ko/taeeona-1990/">1990년생</a>
+<a href="/ko/taeeona-1980/">1980년생</a>
+<a href="/ko/taeeona-2000/">2000년생</a></div>
+<div class="footer-col"><strong>연간 리뷰</strong>
+<a href="/ko/museun-il-i-2000/">2000년에 무슨 일이</a>
+<a href="/ko/museun-il-i-1990/">1990년에 무슨 일이</a>
+<a href="/ko/museun-il-i-1980/">1980년에 무슨 일이</a></div>
+<div class="footer-col"><strong>달력</strong>
+<a href="/ko/ju-beonho/2025/">2025년 주 번호</a>
+<a href="/ko/ju-beonho/2026/">2026년 주 번호</a>
+<a href="/ko/ju-beonho/2027/">2027년 주 번호</a></div>
+  </nav>
+  <div class="footer-copy">© 2026 DateCalc.app — 무료 온라인 날짜 및 시간 계산기 · <a href="/ko/about/">소개</a> · <a href="/ko/privacy/">개인정보</a></div>
+</footer>
+</div>
+
+<script>
+(function(){
+  var now = new Date();
+  var opts = {weekday:'long',year:'numeric',month:'long',day:'numeric'};
+  document.getElementById('todayMeta').innerHTML =
+    now.toLocaleDateString('ko-KR', opts) + '<br>무료 날짜 계산기';
+})();
+// Shared input guard: strip non-digits, truncate to max digit length, clamp to hi
+function clamp(el, lo, hi) {
+  var maxLen = String(hi).length;
+  var s = el.value.replace(/\D/g, '').slice(0, maxLen);
+  var n = parseInt(s, 10);
+  if (!isNaN(n) && n > hi) s = String(hi);
+  el.value = s;
+}
+// Auto-scroll to results when they become visible
+(function(){
+  var r=document.getElementById('results');
+  if(!r||r.classList.contains('auto-show'))return;
+  var obs=new MutationObserver(function(){
+    if(r.classList.contains('show')){
+      r.scrollIntoView({behavior:'smooth',block:'start'});
+      obs.disconnect();
+    }
+  });
+  obs.observe(r,{attributes:true,attributeFilter:['class']});
+})();
+// Enter key submits calculator
+(function(){
+  var fg=document.querySelector('.form-grid');
+  if(!fg)return;
+  fg.addEventListener('keydown',function(e){
+    if(e.key==='Enter'&&typeof calculate==='function')calculate();
+  });
+})();
+// AdSense: load only with consent
+(function(){
+  var ADS_SRC='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4020973443671350';
+  function loadAds(){
+    var s=document.createElement('script');
+    s.src=ADS_SRC;s.async=true;s.crossOrigin='anonymous';
+    document.head.appendChild(s);
+  }
+  if(localStorage.getItem('ads-ok')==='1')return loadAds();
+  if(localStorage.getItem('ads-ok')==='0')return;
+  var b=document.getElementById('consent-banner');
+  if(b)b.style.display='flex';
+  document.getElementById('consent-accept')&&document.getElementById('consent-accept').addEventListener('click',function(){
+    localStorage.setItem('ads-ok','1');b.style.display='none';loadAds();
+  });
+  document.getElementById('consent-decline')&&document.getElementById('consent-decline').addEventListener('click',function(){
+    localStorage.setItem('ads-ok','0');b.style.display='none';
+  });
+})();
+</script>
+<script>
+
+var D = {"errInvalid":"→ 유효하지 않은 날짜 또는 시간입니다. 입력을 확인하세요.","defaultFrom":"America/New_York","defaultTo":"Europe/London"};
+
+// Pre-select default zones
+document.getElementById('fromZone').value = D.defaultFrom;
+document.getElementById('toZone').value = D.defaultTo;
+
+// Pre-fill current date/time
+(function(){
+  var now = new Date();
+  document.getElementById('day').value = now.getDate();
+  document.getElementById('month').value = now.getMonth()+1;
+  document.getElementById('year').value = now.getFullYear();
+  document.getElementById('hour').value = now.getHours();
+  document.getElementById('minute').value = now.getMinutes();
+})();
+
+function swapZones(){
+  var f = document.getElementById('fromZone').value;
+  var t = document.getElementById('toZone').value;
+  document.getElementById('fromZone').value = t;
+  document.getElementById('toZone').value = f;
+}
+
+function getUtcOffset(tzId, date){
+  // Get UTC offset in minutes for tzId at given Date
+  var utcStr = date.toLocaleString('en-US', {timeZone:'UTC', hour12:false,
+    year:'numeric', month:'2-digit', day:'2-digit', hour:'2-digit', minute:'2-digit', second:'2-digit'});
+  var tzStr  = date.toLocaleString('en-US', {timeZone:tzId,  hour12:false,
+    year:'numeric', month:'2-digit', day:'2-digit', hour:'2-digit', minute:'2-digit', second:'2-digit'});
+  function parse(s){
+    var m=s.match(/(\d+)\/(\d+)\/(\d+),\s*(\d+):(\d+):(\d+)/);
+    if(!m) return NaN;
+    return Date.UTC(+m[3],+m[1]-1,+m[2],+m[4]===24?0:+m[4],+m[5],+m[6]);
+  }
+  return (parse(tzStr)-parse(utcStr))/60000;
+}
+
+function fmtOffset(mins){
+  var sign = mins>=0?'+':'-';
+  var abs=Math.abs(mins);
+  var h=Math.floor(abs/60);
+  var m=abs%60;
+  return 'UTC'+sign+pad2(h)+(m?':'+pad2(m):'');
+}
+
+function pad2(n){return n<10?'0'+n:''+n;}
+
+function fmtTimeInZone(date, tzId){
+  return date.toLocaleString('en-GB', {
+    timeZone: tzId,
+    year:'numeric', month:'short', day:'numeric',
+    hour:'2-digit', minute:'2-digit', hour12:false
+  });
+}
+
+function fmtDiff(diffMin){
+  var abs=Math.abs(diffMin);
+  var h=Math.floor(abs/60);
+  var m=abs%60;
+  var sign=diffMin>=0?'+':'-';
+  if(m) return sign+h+'h '+pad2(m)+'min';
+  return sign+h+'h';
+}
+
+function calculate(){
+  var dv=parseInt(document.getElementById('day').value);
+  var mv=parseInt(document.getElementById('month').value);
+  var yv=parseInt(document.getElementById('year').value);
+  var hv=parseInt(document.getElementById('hour').value);
+  var minv=parseInt(document.getElementById('minute').value||'0');
+  var fromZone=document.getElementById('fromZone').value;
+  var toZone=document.getElementById('toZone').value;
+  var err=document.getElementById('errorLine');
+  var res=document.getElementById('results');
+  err.classList.remove('show');
+  res.classList.remove('show');
+
+  if(!dv||!mv||!yv||isNaN(hv)||hv<0||hv>23||minv<0||minv>59){
+    err.textContent=D.errInvalid; err.classList.add('show'); return;
+  }
+
+  // Build a UTC timestamp for the given local time in fromZone
+  // Strategy: find the UTC time such that in fromZone it reads yv/mv/dv hv:minv
+  // Approximation: use offset at noon on that day
+  var approx=new Date(Date.UTC(yv,mv-1,dv,12,0,0));
+  var fromOff=getUtcOffset(fromZone, approx);
+  var utcMs=Date.UTC(yv,mv-1,dv,hv,minv,0) - fromOff*60000;
+  var utcDate=new Date(utcMs);
+
+  var fromOffFinal=getUtcOffset(fromZone, utcDate);
+  var toOffFinal=getUtcOffset(toZone, utcDate);
+  var diff=toOffFinal-fromOffFinal;
+
+  var toTimeStr=fmtTimeInZone(utcDate, toZone);
+  var fromTimeStr=fmtTimeInZone(utcDate, fromZone);
+
+  // Hero: just the time portion in target zone
+  var heroStr=utcDate.toLocaleString('en-GB',{timeZone:toZone,hour:'2-digit',minute:'2-digit',hour12:false});
+
+  document.getElementById('heroTime').textContent=heroStr;
+  document.getElementById('ffFrom').textContent=fromTimeStr;
+  document.getElementById('ffTo').textContent=toTimeStr;
+  document.getElementById('ffFromOff').textContent=fmtOffset(fromOffFinal);
+  document.getElementById('ffToOff').textContent=fmtOffset(toOffFinal);
+  document.getElementById('ffDiff').textContent=fmtDiff(diff);
+
+  res.classList.add('show');
+  res.scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+document.addEventListener('keydown',function(e){if(e.key==='Enter') calculate();});
+calculate();
+
+</script>
+<div id="consent-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#111111;color:#fff;padding:.9rem 1.4rem;z-index:9999;font-size:.82rem;font-family:sans-serif;align-items:center;gap:.8rem;flex-wrap:wrap">
+  <span style="flex:1;min-width:200px">이 무료 서비스를 유지하기 위해 Google AdSense를 사용합니다. 광고 쿠키에 동의하시겠습니까?</span>
+  <button id="consent-accept" style="background:#c8392b;color:#fff;border:none;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">동의</button>
+  <button id="consent-decline" style="background:transparent;color:#aaa;border:1px solid #555;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">동의 없이 계속</button>
+</div>
+</body>
+</html>

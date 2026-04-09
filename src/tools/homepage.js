@@ -276,7 +276,124 @@ const TOOLS_PL = [
   },
 ];
 
-const TOOLS_BY_LANG = { en: TOOLS_EN, fr: TOOLS_FR, es: TOOLS_ES, pt: TOOLS_PT, de: TOOLS_DE, it: TOOLS_IT, pl: TOOLS_PL };
+const TOOLS_JA = [
+  {
+    cat: '年齢',
+    items: [
+      { label: '年齢計算機', href: '/ja/nenrei-keisanki/', desc: '年・月・日・秒で正確な年齢' },
+      { label: '時系列年齢', href: '/ja/jikan-nenrei/', desc: '二つの日付の間の年齢' },
+      { label: '赤ちゃん年齢', href: '/ja/akachan-nenrei/', desc: '週と月で赤ちゃんの年齢' },
+      { label: '犬の年齢', href: '/ja/inu-nenrei/', desc: '犬の年齢を人間の年齢に換算' },
+      { label: '猫の年齢', href: '/ja/neko-nenrei/', desc: '猫の年齢を人間の年齢に換算' },
+    ],
+  },
+  {
+    cat: '日付',
+    items: [
+      { label: '日付の間の日数', href: '/ja/hidzuke-no-nissuu/', desc: '二つの日付の間の日数' },
+      { label: '日付計算機', href: '/ja/hidzuke-keisanki/', desc: '日数を加算または減算' },
+      { label: '今日は何日', href: '/ja/kyou-wa-nannichi/', desc: '今日の日付と週番号' },
+      { label: '週番号', href: '/ja/shuu-bangou/', desc: 'ISO週番号を調べる' },
+      { label: '営業日計算機', href: '/ja/eigyounichu/', desc: '営業日数を計算' },
+    ],
+  },
+  {
+    cat: 'カウントダウン',
+    items: [
+      { label: 'クリスマスまで', href: '/ja/kurisumasu-made/', desc: '12月25日まで' },
+      { label: '新年まで', href: '/ja/shinnen-made/', desc: '1月1日まで' },
+      { label: 'ハロウィンまで', href: '/ja/harouin-made/', desc: '10月31日まで' },
+      { label: 'イースターまで', href: '/ja/iisutaa-made/', desc: '復活祭まで' },
+      { label: 'カウントダウン', href: '/ja/kauntodaun/', desc: '任意の日付へのカウントダウン' },
+    ],
+  },
+  {
+    cat: '世界',
+    items: [
+      { label: 'タイムゾーン変換', href: '/ja/taimuzon-henkan/', desc: 'タイムゾーンを変換' },
+    ],
+  },
+];
+
+const TOOLS_KO = [
+  {
+    cat: '나이',
+    items: [
+      { label: '나이 계산기', href: '/ko/nai-gyesan-gi/', desc: '연·월·일·초 단위 정확한 나이' },
+      { label: '시간 나이', href: '/ko/sigan-nai/', desc: '두 날짜 사이의 나이' },
+      { label: '아기 나이', href: '/ko/agi-nai/', desc: '주와 월로 아기 나이 추적' },
+      { label: '강아지 나이', href: '/ko/gae-nai/', desc: '개의 나이를 인간 나이로 환산' },
+      { label: '고양이 나이', href: '/ko/goyang-i-nai/', desc: '고양이 나이를 인간 나이로 환산' },
+    ],
+  },
+  {
+    cat: '날짜',
+    items: [
+      { label: '날짜 사이의 일수', href: '/ko/nal-jja-sayi/', desc: '두 날짜 사이의 일수' },
+      { label: '날짜 계산기', href: '/ko/nal-jja-gyesan-gi/', desc: '날짜에 일수를 더하거나 빼기' },
+      { label: '오늘은 무슨 요일', href: '/ko/oneul-museun-yoil/', desc: '오늘의 날짜와 주 번호' },
+      { label: '주 번호', href: '/ko/ju-beonho/', desc: 'ISO 주 번호 찾기' },
+      { label: '영업일 계산기', href: '/ko/yeongeopil-gyesan-gi/', desc: '영업일 수 계산' },
+    ],
+  },
+  {
+    cat: '카운트다운',
+    items: [
+      { label: '크리스마스까지', href: '/ko/keulliseumaseu-kkaji/', desc: '12월 25일까지' },
+      { label: '새해까지', href: '/ko/saehae-kkaji/', desc: '1월 1일까지' },
+      { label: '할로윈까지', href: '/ko/hallowin-kkaji/', desc: '10월 31일까지' },
+      { label: '부활절까지', href: '/ko/buhwarjeol-kkaji/', desc: '다음 부활절까지' },
+      { label: '카운트다운', href: '/ko/kaunteu-daun/', desc: '임의 날짜까지 카운트다운' },
+    ],
+  },
+  {
+    cat: '세계',
+    items: [
+      { label: '시간대 변환기', href: '/ko/sigandag-byeonhwan/', desc: '시간대 변환' },
+    ],
+  },
+];
+
+const TOOLS_NL = [
+  {
+    cat: 'Leeftijd',
+    items: [
+      { label: 'Leeftijdscalculator', href: '/nl/leeftijdscalculator/', desc: 'Exacte leeftijd in jaren, maanden en dagen' },
+      { label: 'Chronologische Leeftijd', href: '/nl/chronologische-leeftijd/', desc: 'Verschil tussen twee datums' },
+      { label: 'Baby Leeftijd', href: '/nl/baby-leeftijd/', desc: 'Leeftijd in weken en maanden' },
+      { label: 'Hond Leeftijd', href: '/nl/hond-leeftijd/', desc: 'Hondenjaren in mensenjaren' },
+      { label: 'Kat Leeftijd', href: '/nl/kat-leeftijd/', desc: 'Kattenjaren in mensenjaren' },
+    ],
+  },
+  {
+    cat: 'Datums',
+    items: [
+      { label: 'Dagen Tussen Datums', href: '/nl/dagen-tussen-datums/', desc: 'Verschil in dagen en weken' },
+      { label: 'Datumcalculator', href: '/nl/datum-calculator/', desc: 'Dagen optellen of aftrekken' },
+      { label: 'Welke Dag Is Het', href: '/nl/welke-dag-is-het/', desc: 'Huidige datum en week' },
+      { label: 'Weeknummer', href: '/nl/weeknummer/', desc: 'Huidig ISO-weeknummer' },
+      { label: 'Werkdagen Calculator', href: '/nl/werkdagen-calculator/', desc: 'Werkdagen tellen' },
+    ],
+  },
+  {
+    cat: 'Aftellen',
+    items: [
+      { label: 'Kerst', href: '/nl/dagen-tot-kerst/', desc: 'Dagen tot 25 december' },
+      { label: 'Nieuwjaar', href: '/nl/dagen-tot-nieuwjaar/', desc: 'Dagen tot 1 januari' },
+      { label: 'Halloween', href: '/nl/dagen-tot-halloween/', desc: 'Dagen tot 31 oktober' },
+      { label: 'Pasen', href: '/nl/dagen-tot-pasen/', desc: 'Dagen tot Pasen' },
+      { label: 'Afteltimer', href: '/nl/aftellen/', desc: 'Aftellen naar elke datum' },
+    ],
+  },
+  {
+    cat: 'Wereld',
+    items: [
+      { label: 'Tijdzone Omzetter', href: '/nl/tijdzone-omzetter/', desc: 'Tijdzones omzetten' },
+    ],
+  },
+];
+
+const TOOLS_BY_LANG = { en: TOOLS_EN, fr: TOOLS_FR, es: TOOLS_ES, pt: TOOLS_PT, de: TOOLS_DE, it: TOOLS_IT, pl: TOOLS_PL, ja: TOOLS_JA, ko: TOOLS_KO, nl: TOOLS_NL };
 
 function buildGrid(tools) {
   const cats = tools.map(group => {
@@ -461,6 +578,45 @@ const T = {
       { label: 'Strefy Czasowe', href: '/pl/przelicznik-stref-czasowych/', desc: 'Przeliczanie stref czasowych' },
     ],
   },
+  ja: {
+    title: 'DateCalc.app – 無料の日付・時刻計算機 2026',
+    metaDesc: '無料の日付・時刻計算ツール集。年齢計算、日付の差、カウントダウン、タイムゾーン変換など — 無料・登録不要。',
+    kicker: '日付計算ツール',
+    headline: '無料の<br><em>日付・時刻</em><br>計算ツール',
+    subhead: '日付に関するすべての計算に対応するシンプルで正確なツール',
+    faqTitle: 'よくある質問',
+    faqs: [
+      { q: '年齢はどのように計算しますか？', a: '年齢計算機を使用してください：生年月日を入力すると、年・月・日・秒単位で正確な年齢が表示されます。' },
+      { q: '二つの日付の間の日数は？', a: '「日付の間の日数」ツールを使用してください：開始日と終了日を入力すると、日数・週数・月数の差が表示されます。' },
+      { q: 'タイムゾーンを変換するには？', a: 'タイムゾーン変換ツールを使用してください：変換元と変換先のタイムゾーンを選択し、時刻を入力すると即座に変換されます。' },
+    ],
+  },
+  ko: {
+    title: 'DateCalc.app – 무료 날짜·시간 계산기 2026',
+    metaDesc: '무료 날짜·시간 계산 도구 모음. 나이 계산, 날짜 차이, 카운트다운, 시간대 변환 등 — 무료, 회원가입 불필요.',
+    kicker: '날짜 계산 도구',
+    headline: '무료<br><em>날짜·시간</em><br>계산기',
+    subhead: '모든 날짜 계산을 위한 간단하고 정확한 도구',
+    faqTitle: '자주 묻는 질문',
+    faqs: [
+      { q: '나이를 어떻게 계산하나요?', a: '나이 계산기를 사용하세요: 생년월일을 입력하면 연, 월, 일, 초 단위로 정확한 나이가 표시됩니다.' },
+      { q: '두 날짜 사이의 일수는?', a: '날짜 사이의 일수 도구를 사용하세요: 시작일과 종료일을 입력하면 일, 주, 월 단위 차이가 표시됩니다.' },
+      { q: '시간대를 변환하려면?', a: '시간대 변환기를 사용하세요: 원본 및 대상 시간대를 선택하고 시간을 입력하면 즉시 변환됩니다.' },
+    ],
+  },
+  nl: {
+    title: 'DateCalc.app – Gratis Datum- en Tijdcalculators 2026',
+    metaDesc: 'Gratis datum- en tijdcalculators. Bereken leeftijd, dagen tussen datums, afteltimers, tijdzones en meer — gratis, zonder aanmelding.',
+    kicker: 'Datumcalculators',
+    headline: 'Gratis<br><em>Datum- &amp; Tijd-<br>calculators</em>',
+    subhead: 'Eenvoudige en nauwkeurige tools voor al je datumberekeningen',
+    faqTitle: 'Veelgestelde vragen',
+    faqs: [
+      { q: 'Hoe bereken ik mijn exacte leeftijd?', a: 'Gebruik onze leeftijdscalculator: voer je geboortedatum in en krijg je leeftijd in jaren, maanden, dagen en seconden.' },
+      { q: 'Hoe bereken ik dagen tussen twee datums?', a: 'Gebruik de Dagen Tussen Datums calculator: voer beide datums in en krijg het verschil in dagen, weken en maanden.' },
+      { q: 'Hoe zet ik tijdzones om?', a: 'Gebruik de tijdzone omzetter: kies de bron- en doeltijdzone en voer de tijd in voor directe omzetting.' },
+    ],
+  },
 };
 
 module.exports = {
@@ -468,7 +624,7 @@ module.exports = {
     {
       id: 'home-en',
       isHomepage: true,
-      slugs: { en: '', fr: 'fr', es: 'es', pt: 'pt', de: 'de', it: 'it', pl: 'pl' },
+      slugs: { en: '', fr: 'fr', es: 'es', pt: 'pt', de: 'de', it: 'it', pl: 'pl', ja: 'ja', ko: 'ko', nl: 'nl' },
     },
   ],
 

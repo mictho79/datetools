@@ -8,6 +8,9 @@ const EVENTS_PT = require('../data/events_pt.json');
 const EVENTS_DE = require('../data/events_de.json');
 const EVENTS_IT = require('../data/events_it.json');
 const EVENTS_PL = require('../data/events_pl.json');
+const EVENTS_JA = require('../data/events_ja.json');
+const EVENTS_KO = require('../data/events_ko.json');
+const EVENTS_NL = require('../data/events_nl.json');
 
 // Year images — populated by: node scripts/fetch-year-images.js
 const YEAR_IMAGES = (() => {
@@ -237,6 +240,99 @@ const T = {
     weekDays: ['Niedziela','Poniedziałek','Wtorek','Środa','Czwartek','Piątek','Sobota'],
     genRanges: [{y:1928,n:'Ciche Pokolenie'},{y:1946,n:'Baby Boomer'},{y:1965,n:'Pokolenie X'},{y:1981,n:'Millennial'},{y:1997,n:'Pokolenie Z'},{y:2013,n:'Pokolenie Alpha'}],
   },
+  ja: {
+    titleTpl: '{year}年生まれ: 2026年で何歳？— {age1}歳',
+    metaDescTpl: '{year}年生まれ？2026年に{age}歳または{age1}歳です。{year}年から2026年まで{age1}年。正確な年齢を計算しましょう。',
+    kicker: '生まれ年別年齢',
+    headlineTpl: '{year}年<br><em>生まれ</em>',
+    subheadTpl: '{year}年生まれは2026年に何歳？',
+    resultsHeader: '2026年でのあなたの年齢',
+    heroTpl: '{age}<span class="hero-or"> または </span>{age1}',
+    heroSuffix: '歳',
+    explainTpl: '{year}年生まれの場合、2026年に{age1}歳になります。誕生日前は{age}歳です。',
+    exactCta: '→ 正確な年齢を計算する',
+    exactHref: '/ja/nenrei-keisanki/',
+    wTitle: '{year}年の世界',
+    wLblEvents: '出来事', wLblMusic: '音楽', wLblFilm: '映画', wLblTech: 'テクノロジー', wLblPrices: '物価',
+    wLblBread: 'パン', wLblGas: 'ガソリン', wLblHouse: '住宅',
+    seoH2aTpl: '{year}年生まれは何歳ですか？',
+    seoP1Tpl: '{year}年生まれの場合、2026年の大部分は{age}歳で、誕生日に{age1}歳になります。{year}年生まれは{gen}に属します。',
+    seoH2bTpl: '{year}年生まれはどの世代ですか？',
+    seoP2Tpl: '{year}年生まれは{gen}に属します。上の計算機を使って、年・月・週・日単位での正確な年齢を調べてください。',
+    faqTitle: 'よくある質問',
+    source: { url: 'https://www.ssa.gov/oact/population/longevity.html', label: '米国社会保障局 – 平均余命計算機' },
+    faqsTpl: [
+      { q: '{year}年生まれは何歳ですか？', a: '{year}年生まれの場合、2026年に{age}歳または{age1}歳です。2026年の誕生日に{age1}歳になります。' },
+      { q: '{year}年から2026年は何年？', a: '{year}年から2026年は{age1}年です。2026年にまだ誕生日が来ていない場合は{age}歳です。' },
+      { q: '{year}年生まれの誕生日は何曜日？', a: '曜日は正確な生年月日によって異なります。年齢計算機に完全な生年月日を入力して確認してください。' },
+      { q: '{year}年生まれは何日生きていますか？', a: '{year}年1月1日生まれの人は2026年1月1日までに約{days}日生きています。計算機に生年月日を入力して正確な数を確認してください。' },
+      { q: '{year}年生まれはどの世代ですか？', a: '{year}年生まれは{gen}に属します。' },
+    ],
+    weekDays: ['日曜日','月曜日','火曜日','水曜日','木曜日','金曜日','土曜日'],
+    genRanges: [{y:1928,n:'沈黙の世代'},{y:1946,n:'ベビーブーマー'},{y:1965,n:'X世代'},{y:1981,n:'ミレニアル世代'},{y:1997,n:'Z世代'},{y:2013,n:'アルファ世代'}],
+  },
+  ko: {
+    titleTpl: '{year}년생: 2026년에 몇 살? — {age1}세',
+    metaDescTpl: '{year}년생? 2026년에 {age}세 또는 {age1}세입니다. {year}년부터 2026년까지 {age1}년. 정확한 나이를 계산하세요.',
+    kicker: '출생연도별 나이',
+    headlineTpl: '{year}년<br><em>생</em>',
+    subheadTpl: '{year}년생은 2026년에 몇 살인가요?',
+    resultsHeader: '2026년 나이',
+    heroTpl: '{age}<span class="hero-or"> 또는 </span>{age1}',
+    heroSuffix: '세',
+    explainTpl: '{year}년생이라면 2026년에 {age1}세가 됩니다. 생일 전에는 {age}세입니다.',
+    exactCta: '→ 정확한 나이 계산하기',
+    exactHref: '/ko/nai-gyesan-gi/',
+    wTitle: '{year}년의 세상',
+    wLblEvents: '사건', wLblMusic: '음악', wLblFilm: '영화', wLblTech: '기술', wLblPrices: '물가',
+    wLblBread: '빵', wLblGas: '휘발유', wLblHouse: '주택',
+    seoH2aTpl: '{year}년생은 몇 살인가요?',
+    seoP1Tpl: '{year}년생이라면 2026년 대부분 {age}세이며 생일에 {age1}세가 됩니다. {year}년생은 {gen}에 속합니다.',
+    seoH2bTpl: '{year}년생은 어느 세대인가요?',
+    seoP2Tpl: '{year}년생은 {gen}에 속합니다. 위 계산기를 사용해 연·월·주·일 단위 정확한 나이를 확인하세요.',
+    faqTitle: '자주 묻는 질문',
+    source: { url: 'https://www.ssa.gov/oact/population/longevity.html', label: '미국 사회보장청 – 기대수명 계산기' },
+    faqsTpl: [
+      { q: '{year}년생은 몇 살인가요?', a: '{year}년생이라면 2026년에 {age}세 또는 {age1}세입니다. 2026년 생일에 {age1}세가 됩니다.' },
+      { q: '{year}년부터 2026년까지 몇 년인가요?', a: '{year}년부터 2026년까지 {age1}년입니다. 2026년 생일이 아직 지나지 않았다면 {age}세입니다.' },
+      { q: '{year}년생의 생일은 무슨 요일인가요?', a: '요일은 정확한 생년월일에 따라 다릅니다. 나이 계산기에 전체 생년월일을 입력해 확인하세요.' },
+      { q: '{year}년생은 며칠 살았나요?', a: '{year}년 1월 1일생은 2026년 1월 1일까지 약 {days}일을 살았습니다. 계산기에 생년월일을 입력해 정확한 수를 확인하세요.' },
+      { q: '{year}년생은 어느 세대인가요?', a: '{year}년생은 {gen}에 속합니다.' },
+    ],
+    weekDays: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일'],
+    genRanges: [{y:1928,n:'침묵의 세대'},{y:1946,n:'베이비붐 세대'},{y:1965,n:'X세대'},{y:1981,n:'밀레니얼 세대'},{y:1997,n:'Z세대'},{y:2013,n:'알파 세대'}],
+  },
+  nl: {
+    titleTpl: 'Geboren in {year}: Hoe Oud Ben Ik? — {age1} Jaar in 2026',
+    metaDescTpl: 'Geboren in {year}? Je bent {age} of {age1} jaar in 2026. Van {year} tot 2026 is {age1} jaar. Bereken je exacte leeftijd.',
+    kicker: 'Leeftijd per Geboortejaar',
+    headlineTpl: 'Geboren in<br><em>{year}</em>',
+    subheadTpl: 'Hoe oud ben je in 2026 als je geboren bent in {year}?',
+    resultsHeader: 'Jouw leeftijd in 2026',
+    heroTpl: '{age}<span class="hero-or"> of </span>{age1}',
+    heroSuffix: 'jaar',
+    explainTpl: 'Als je geboren bent in {year}, word je {age1} jaar in 2026. Vóór je verjaardag ben je nog {age} jaar.',
+    exactCta: '→ Bereken je exacte leeftijd',
+    exactHref: '/nl/leeftijdscalculator/',
+    wTitle: 'De Wereld in {year}',
+    wLblEvents: 'Gebeurtenissen', wLblMusic: 'Muziek', wLblFilm: 'Film', wLblTech: 'Technologie', wLblPrices: 'Prijzen',
+    wLblBread: 'Brood', wLblGas: 'Benzine', wLblHouse: 'Huis',
+    seoH2aTpl: 'Hoe oud ben ik als ik geboren ben in {year}?',
+    seoP1Tpl: 'Als je geboren bent in {year}, ben je het grootste deel van 2026 {age} jaar en word je {age1} jaar op je verjaardag. Mensen geboren in {year} behoren tot de {gen}.',
+    seoH2bTpl: 'Tot welke generatie behoren mensen geboren in {year}?',
+    seoP2Tpl: 'Mensen geboren in {year} behoren tot de {gen}. Gebruik de calculator hierboven om je exacte leeftijd in jaren, maanden, weken en dagen te vinden.',
+    faqTitle: 'Veelgestelde vragen',
+    source: { url: 'https://www.ssa.gov/oact/population/longevity.html', label: 'U.S. Social Security Administration – Levensverwachtingscalculator' },
+    faqsTpl: [
+      { q: 'Hoe oud ben ik als ik geboren ben in {year}?', a: 'Als je geboren bent in {year}, ben je {age} of {age1} jaar in 2026. Je wordt {age1} jaar op je verjaardag in 2026.' },
+      { q: 'Hoeveel jaar is het van {year} tot 2026?', a: 'Van {year} tot 2026 is {age1} jaar. Als je verjaardag nog niet is geweest in 2026, ben je nog {age} jaar.' },
+      { q: 'Op welke dag van de week ben ik geboren in {year}?', a: 'De dag van de week hangt af van je exacte geboortedatum. Gebruik de leeftijdscalculator met je volledige geboortedatum om dit te controleren.' },
+      { q: 'Hoeveel dagen heb ik geleefd als ik geboren ben in {year}?', a: 'Iemand geboren op 1 januari {year} heeft tot 1 januari 2026 ongeveer {days} dagen geleefd. Voer je geboortedatum in de calculator in voor het exacte getal.' },
+      { q: 'Tot welke generatie behoor ik als ik geboren ben in {year}?', a: 'Mensen geboren in {year} behoren tot de {gen}.' },
+    ],
+    weekDays: ['Zondag','Maandag','Dinsdag','Woensdag','Donderdag','Vrijdag','Zaterdag'],
+    genRanges: [{y:1928,n:'Stille Generatie'},{y:1946,n:'Babyboomers'},{y:1965,n:'Generatie X'},{y:1981,n:'Millennials'},{y:1997,n:'Generatie Z'},{y:2013,n:'Generatie Alpha'}],
+  },
 };
 
 // Helper: replace all template tokens in a string
@@ -273,6 +369,9 @@ const SEO_H2C = {
   de: 'Aufwachsen in den {decade}er Jahren',
   it: 'Crescere negli anni {decade}',
   pl: 'Dorastanie w latach {decade}.',
+  ja: '{decade}年代に育つ',
+  ko: '{decade}년대에 성장하다',
+  nl: 'Opgroeien in de jaren {decade}',
 };
 
 const DECADE_P3 = {
@@ -360,11 +459,47 @@ const DECADE_P3 = {
     2010: 'Lata dziesiąte XXI wieku były kształtowane przez rewolucję smartfonów, dominację mediów społecznościowych i rosnącą świadomość klimatyczną. Streaming zastąpił nośniki fizyczne, a treści na żądanie stały się normą. Urodzeni w tej dekadzie dorastają w najbardziej połączonym świecie w historii, z niezwykłymi możliwościami i wielkimi globalnymi wyzwaniami.',
     2020: 'Urodzeni w latach dwudziestych XXI wieku wkroczyli na świat przekształcony przez pandemię COVID-19, najszybszy w historii rozwój szczepionek i przyspieszoną rewolucję sztucznej inteligencji. Praca zdalna, edukacja cyfrowa i szybka transformacja technologiczna definiują tę dekadę. To pokolenie będzie dorastać w świecie zmieniającym się w bezprecedensowym tempie.',
   },
+  ja: {
+    1930: '1930年代に育つことは、現代史上最も深刻な経済危機のひとつである世界大恐慌を生き抜くことを意味しました。広まった苦難にもかかわらず、この10年は映画、ラジオ放送の台頭と卓越した文化的成果をもたらしました。1930年代に生まれた人々はその後、20世紀の多くを目撃し形作ることになりました。',
+    1940: '1940年代は第二次世界大戦とその余波によって定義され、世界秩序全体を再形成しました。この10年に生まれた人々は、国連創設、冷戦の始まり、戦後復興が日常生活を変える中で育ちました。10年代はテレビの夜明けとともに楽観主義の波で締めくくられました。',
+    1950: '1950年代に生まれた方は、西洋の戦後繁栄と慎重な楽観主義の世界に来ました。この10年はロックンロールの誕生、初期の宇宙探査、家庭へのテレビ普及をもたらしました。冷戦の緊張が政治を形作り、消費文化と郊外生活が新しい規範となりました。',
+    1960: '1960年代は20世紀最も変革的な10年のひとつでした — 公民権運動、宇宙競争、文化革命が同時に展開しました。この10年に生まれた人々はベトナム戦争、ビートルズ、社会規範への根本的な挑戦の中で育ちました。政治、文化、個人のアイデンティティを永遠に変えた時代でした。',
+    1970: '1970年代は石油危機、ベトナム戦争の終結、ウォーターゲートを含む政治的混乱をもたらしました。この10年に生まれた人々にとって、幼少期はパーソナルコンピューターの夜明け、ディスコとパンクの台頭、環境意識の高まりと重なりました。1970年代はその後の技術革命の基礎を静かに築きました。',
+    1980: '1980年代に生まれた人々は劇的な政治変化の中で育ちました — ベルリンの壁崩壊、冷戦終結、パーソナルコンピューターの台頭。MTVが音楽文化を変革し、ビデオゲームがリビングルームに入り、インターネットの最初の種が蒔かれました。この世代はデジタル世界が形を取り始めるまさにその時に成熟しました。',
+    1990: '1990年代はインターネットが一般化し、携帯電話が個人デバイスとなり、ポップカルチャーがグローバルに爆発しました。この10年に生まれた人々はビデオゲーム、ワールドワイドウェブ、グランジからヒップホップにまたがる黄金時代とともに育ちました。冷戦の終結は相対的な楽観主義の時代をもたらしましたが、新たな課題も生まれました。',
+    2000: '2000年代に生まれた方はデジタルミレニアムの始まりに世界に来ました。9月11日、ソーシャルメディアの台頭、スマートフォンの登場がこの10年を深く定義しました。真のデジタルネイティブである2000年代生まれは、インターネット、ストリーミング、接続デバイスを日常の子供時代の現実として育ちました。',
+    2010: '2010年代はスマートフォン革命、ソーシャルメディアの支配、加速する気候意識によって形作られました。ストリーミングが物理メディアに取って代わり、オンデマンドコンテンツが世界標準となりました。この10年に生まれた人々は史上最も接続された世界で育ち、並外れた機会と重大なグローバル課題の両方に直面しています。',
+    2020: '2020年代に生まれた人々はCOVID-19パンデミック、史上最速のワクチン開発、加速するAI革命によって再形成された世界に入りました。リモートワーク、デジタルファーストの教育、急速な技術変革がこの10年を定義します。この世代はかつてないスピードで変化をナビゲートしながら育っていきます。',
+  },
+  ko: {
+    1930: '1930년대에 성장한다는 것은 현대사에서 가장 심각한 경제 위기 중 하나인 대공황을 살아내는 것을 의미했습니다. 광범위한 어려움에도 불구하고 이 10년은 영화, 라디오 방송의 부상과 놀라운 문화적 성취를 가져왔습니다. 1930년대에 태어난 사람들은 이후 20세기의 많은 부분을 목격하고 형성하게 됩니다.',
+    1940: '1940년대는 제2차 세계대전과 그 여파로 정의되어 전체 세계 질서를 재편했습니다. 이 10년에 태어난 사람들은 유엔 창설, 냉전 시작, 전후 재건이 일상을 변화시키는 가운데 성장했습니다. 10년은 텔레비전의 여명과 함께 낙관주의의 물결로 마무리되었습니다.',
+    1950: '1950년대에 태어난 분은 서방 세계의 전후 번영과 조심스러운 낙관주의 세계에 왔습니다. 이 10년은 로큰롤의 탄생, 초기 우주 탐사, 가정의 텔레비전 보급을 가져왔습니다. 냉전 긴장이 정치를 형성했으며, 소비 문화와 교외 생활이 새로운 규범이 되었습니다.',
+    1960: '1960년대는 20세기에서 가장 변혁적인 10년 중 하나였습니다 — 민권 운동, 우주 경쟁, 문화 혁명이 동시에 펼쳐졌습니다. 이 10년에 태어난 사람들은 베트남 전쟁, 비틀즈, 사회 규범에 대한 근본적인 도전 속에서 성장했습니다. 정치, 문화, 개인 정체성을 영구히 바꾼 시대였습니다.',
+    1970: '1970년대는 석유 위기, 베트남 전쟁의 종료, 워터게이트를 포함한 정치적 격동을 가져왔습니다. 이 10년에 태어난 사람들의 유년기는 개인용 컴퓨터의 여명, 디스코와 펑크의 부상, 환경 의식의 성장과 겹쳤습니다. 1970년대는 이후의 기술 혁명의 기반을 조용히 마련했습니다.',
+    1980: '1980년대에 태어난 사람들은 극적인 정치 변화 속에서 성장했습니다 — 베를린 장벽 붕괴, 냉전 종식, 개인용 컴퓨터의 부상. MTV가 음악 문화를 변혁했고, 비디오 게임이 거실에 들어왔으며, 인터넷의 첫 씨앗이 심어졌습니다. 이 세대는 디지털 세계가 형태를 갖추기 시작한 바로 그때 성숙했습니다.',
+    1990: '1990년대는 인터넷이 대중화되고 휴대폰이 개인 기기가 되었으며 팝 문화가 전 세계적으로 폭발했습니다. 이 10년에 태어난 사람들은 비디오 게임, 월드와이드웹, 그런지부터 힙합까지 아우르는 황금기와 함께 성장했습니다. 냉전의 종식은 상대적 낙관주의의 시기를 가져왔지만 새로운 도전도 등장했습니다.',
+    2000: '2000년대에 태어난 분은 디지털 밀레니엄의 시작에 세상에 왔습니다. 9.11, 소셜 미디어의 부상, 스마트폰의 등장이 이 10년을 깊이 정의했습니다. 진정한 디지털 원주민인 2000년대 생은 인터넷, 스트리밍, 연결 기기를 일상적인 어린 시절 현실로 성장했습니다.',
+    2010: '2010년대는 스마트폰 혁명, 소셜 미디어의 지배, 가속화되는 기후 인식으로 형성되었습니다. 스트리밍이 물리적 미디어를 대체했고 온디맨드 콘텐츠가 전 세계 표준이 되었습니다. 이 10년에 태어난 사람들은 역사상 가장 연결된 세계에서 성장하며 비범한 기회와 중대한 전 세계 도전 모두에 직면하고 있습니다.',
+    2020: '2020년대에 태어난 사람들은 COVID-19 팬데믹, 역사상 가장 빠른 백신 개발, 가속화하는 AI 혁명으로 재편된 세계에 왔습니다. 원격 근무, 디지털 우선 교육, 빠른 기술 변혁이 이 10년을 정의합니다. 이 세대는 전례 없는 속도로 변화를 헤쳐 나가며 성장할 것입니다.',
+  },
+  nl: {
+    1930: 'Opgroeien in de jaren dertig betekende de Grote Depressie meemaken, een van de ernstigste economische crises in de moderne geschiedenis. Ondanks wijdverspreide ontberingen kende het decennium de opkomst van cinema, radio-uitzendingen en opmerkelijke culturele prestaties. Degenen die in de jaren dertig werden geboren, zouden een groot deel van de twintigste eeuw getuige zijn en vormgeven.',
+    1940: 'De jaren veertig werden bepaald door de Tweede Wereldoorlog en zijn nasleep, die de gehele wereldorde opnieuw vormgaven. Degenen die in dit decennium werden geboren, groeiden op terwijl de VN werd opgericht, de Koude Oorlog begon en de wederopbouw na de oorlog het dagelijks leven transformeerde. Het decennium eindigde met een golf van optimisme en het aanbreken van de televisie.',
+    1950: 'Geboren in de jaren vijftig, kwam je in een wereld van naoorlogse welvaart en voorzichtig optimisme in het Westen. Het decennium zag de geboorte van rock-\'n-roll, vroege ruimteverkenning en televisie die introk in huiskamers. Koude Oorlog-spanningen bepaalden de politiek, terwijl consumptiecultuur en buitenwijk-leven de nieuwe norm werden.',
+    1960: 'De jaren zestig waren een van de meest transformatieve decennia van de twintigste eeuw — de burgerrechtenbeweging, de ruimtewedloop en een culturele revolutie ontvouwden zich tegelijk. Degenen die in dit decennium werden geboren, groeiden op met de Vietnamoorlog, de Beatles en fundamentele uitdagingen aan sociale normen. Een tijdperk dat politiek, cultuur en identiteit permanent veranderde.',
+    1970: 'De jaren zeventig brachten de oliecrisis, het einde van de Vietnamoorlog en politieke omwentelingen waaronder Watergate. Voor degenen die in dit decennium werden geboren, viel de kindertijd samen met het begin van de persoonlijke computer, de opkomst van disco en punk, en een groeiend milieubewustzijn. De jaren zeventig legden stilletjes de grondslag voor de technologische revolutie die volgde.',
+    1980: 'Degenen die in de jaren tachtig werden geboren, groeiden op in een tijd van dramatische politieke veranderingen — de val van de Berlijnse Muur, het einde van de Koude Oorlog en de opkomst van de personal computer. MTV transformeerde de muziekcultuur, videogames deden hun intrede in de huiskamer en de eerste zaden van het internet werden geplant. Deze generatie werd volwassen precies toen de digitale wereld vorm aannam.',
+    1990: 'De jaren negentig zagen internet mainstream worden, de mobiele telefoon persoonlijk worden en de popcultuur wereldwijd exploderen. Degenen die in dit decennium werden geboren, groeiden op met videogames, het World Wide Web en een gouden tijdperk dat van grunge tot hiphop reikte. Het einde van de Koude Oorlog bracht een periode van relatief optimisme, ook al doken nieuwe uitdagingen op.',
+    2000: 'Geboren in de jaren 2000, betrad je de wereld aan het begin van het digitale millennium. 11 september, de opkomst van sociale media en de introductie van de smartphone hebben dit decennium diepgaand bepaald. Echte digital natives, geboren in de jaren 2000, groeiden op met internet, streaming en verbonden apparaten als dagelijkse kindertijdrealiteiten.',
+    2010: 'De jaren 2010 werden gevormd door de smartphonerevolutie, de dominantie van sociale media en een groeiend klimaatbewustzijn. Streaming verving fysieke media en on-demand content werd wereldwijd de norm. Degenen die in dit decennium werden geboren, groeien op in de meest verbonden wereld in de geschiedenis, met buitengewone kansen en grote mondiale uitdagingen.',
+    2020: 'Degenen die in de jaren 2020 werden geboren, kwamen in een wereld die is herschapen door de COVID-19-pandemie, de snelste vaccinontwikkeling in de geschiedenis en een versnellende AI-revolutie. Thuiswerken, digitaal-eerst onderwijs en snelle technologische transformatie bepalen dit decennium. Deze generatie zal opgroeien in een wereld die verandert in een tempo zoals nooit tevoren.',
+  },
 };
 
 // Helper: build world events block HTML from EVENTS data
 function buildWorldBlock(year, t, lang) {
-  const evSrc = lang === 'fr' ? EVENTS_FR : lang === 'es' ? EVENTS_ES : lang === 'pt' ? EVENTS_PT : lang === 'de' ? EVENTS_DE : lang === 'it' ? EVENTS_IT : lang === 'pl' ? EVENTS_PL : EVENTS;
+  const evSrc = lang === 'fr' ? EVENTS_FR : lang === 'es' ? EVENTS_ES : lang === 'pt' ? EVENTS_PT : lang === 'de' ? EVENTS_DE : lang === 'it' ? EVENTS_IT : lang === 'pl' ? EVENTS_PL : lang === 'ja' ? EVENTS_JA : lang === 'ko' ? EVENTS_KO : lang === 'nl' ? EVENTS_NL : EVENTS;
   const ev = evSrc[String(year)] || EVENTS[String(year)]; // fallback to EN
   const evEn = EVENTS[String(year)]; // always use English for music, film, prices
   if (!evEn) return '';
@@ -419,6 +554,9 @@ module.exports = {
       de: `de/geboren-in-${y}`,
       it: `it/nato-nel-${y}`,
       pl: `pl/urodzony-w-${y}`,
+      ja: `ja/umareta-${y}`,
+      ko: `ko/taeeona-${y}`,
+      nl: `nl/geboren-in-${y}`,
     },
   })),
 
@@ -446,6 +584,9 @@ module.exports = {
       de: 'Geboren {year}? Du bist {age1} Jahre alt 2026 — Altersrechner',
       it: 'Nato nel {year}? Hai {age1} anni nel 2026 — Calcolo Età',
       pl: 'Urodzony w {year}? Masz {age1} lat w 2026 — Kalkulator Wieku',
+      ja: '{year}年生まれ？2026年に{age1}歳 — 年齢計算機',
+      ko: '{year}년생? 2026년에 {age1}세 — 나이 계산기',
+      nl: 'Geboren in {year}? Je bent {age1} jaar in 2026 — Leeftijdscalculator',
     };
     const OPT_DESC = {
       en: 'Born in {year}? You are {age} or {age1} years old in 2026. Calculate your exact age in years, months and days — free, instant, no sign-up.',
@@ -455,6 +596,9 @@ module.exports = {
       de: 'Geboren {year}? Du bist {age} oder {age1} Jahre alt im Jahr 2026. Berechne dein genaues Alter in Jahren, Monaten und Tagen — kostenlos, sofort, ohne Anmeldung.',
       it: 'Nato nel {year}? Hai {age} o {age1} anni nel 2026. Calcola la tua età esatta in anni, mesi e giorni — gratis, immediato, senza registrazione.',
       pl: 'Urodzony w {year}? Masz {age} lub {age1} lat w 2026 roku. Oblicz swój dokładny wiek w latach, miesiącach i dniach — za darmo, natychmiast, bez rejestracji.',
+      ja: '{year}年生まれ？2026年に{age}歳または{age1}歳。年・月・日単位で正確な年齢を計算 — 無料・即時・登録不要。',
+      ko: '{year}년생? 2026년에 {age}세 또는 {age1}세입니다. 연·월·일 단위로 정확한 나이를 계산하세요 — 무료, 즉시, 회원가입 불필요.',
+      nl: 'Geboren in {year}? Je bent {age} of {age1} jaar in 2026. Bereken je exacte leeftijd in jaren, maanden en dagen — gratis, direct, geen registratie.',
     };
 
     // Resolve all template strings
@@ -485,7 +629,7 @@ module.exports = {
         </div>` : '';
 
     // Prev/next year navigation
-    const slugPfx = { en: 'born-in-', fr: 'fr/ne-en-', es: 'es/nacido-en-', pt: 'pt/nascido-em-', de: 'de/geboren-in-', it: 'it/nato-nel-', pl: 'pl/urodzony-w-' };
+    const slugPfx = { en: 'born-in-', fr: 'fr/ne-en-', es: 'es/nacido-en-', pt: 'pt/nascido-em-', de: 'de/geboren-in-', it: 'it/nato-nel-', pl: 'pl/urodzony-w-', ja: 'ja/umareta-', ko: 'ko/taeeona-', nl: 'nl/geboren-in-' };
     const pfx = slugPfx[lang] || slugPfx.en;
     const prevHref = year > 1930 ? `/${pfx}${year - 1}/` : null;
     const nextHref = year < 2024 ? `/${pfx}${year + 1}/` : null;

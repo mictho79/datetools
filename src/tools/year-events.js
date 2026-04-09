@@ -8,6 +8,9 @@ const EVENTS_PT = require('../data/events_pt.json');
 const EVENTS_DE = require('../data/events_de.json');
 const EVENTS_IT = require('../data/events_it.json');
 const EVENTS_PL = require('../data/events_pl.json');
+const EVENTS_JA = require('../data/events_ja.json');
+const EVENTS_KO = require('../data/events_ko.json');
+const EVENTS_NL = require('../data/events_nl.json');
 
 const EVENT_YEARS = [];
 for (let y = 1905; y <= 2025; y++) EVENT_YEARS.push(y);
@@ -227,6 +230,99 @@ const T = {
     bornInHrefTpl: '/pl/urodzony-w-{year}/',
     source: null,
   },
+  ja: {
+    titleTpl:    '{year}年に何があった？出来事・音楽・映画 | DateCalc',
+    metaDescTpl: '{year}年の主要な出来事を発見しよう：世界の歴史、音楽、映画、技術の節目と物価。{year}年の完全な年間レビュー。',
+    kicker:      '年間レビュー',
+    headlineTpl: '{year}年に<br>何が<br><em>あった？</em>',
+    subheadTpl:  '{year}年の主要な出来事・文化・トリビア',
+    wTitle:      '{year}年の世界',
+    wLblEvents:  '出来事',
+    wLblMusic:   '音楽',
+    wLblFilm:    '映画',
+    wLblTech:    'テクノロジー',
+    wLblPrices:  '物価',
+    wLblBread:   'パン',
+    wLblGas:     'ガソリン',
+    wLblHouse:   '住宅',
+    seoH2aTpl:   '{year}年の主な出来事は？',
+    seoP1Tpl:    '{year}年は歴史を形作った重要な世界的出来事の年でした。政治的転換から文化的節目まで、この年は社会に永続的な跡を残しました。{year}年のヒットチャート、映画、技術の景観はその時代の独自の性格を反映しています。',
+    seoH2bTpl:   '{year}年はなぜ歴史的に重要なのか？',
+    seoP2Tpl:    'どの年にも独自の転換点と文化的な参照点があります。{year}年は20世紀・21世紀の歴史にユニークな章を刻みました。{year}年を生きた方も研究する方も、当時の出来事・芸術・技術・日常の費用が豊かな時代の肖像を描きます。',
+    faqTitle:    'よくある質問',
+    faqsTpl: [
+      { q: '{year}年の主な出来事は？', a: '{year}年の主要な世界的出来事：{events}。' },
+      { q: '{year}年に人気だった音楽は？', a: '{year}年の大ヒット曲のひとつ：{music}。' },
+      { q: '{year}年のヒット映画は？', a: '{year}年の主要な映画のひとつ：{film}。' },
+      { q: '{year}年の物価は？', a: '{year}年のパンの価格は約{bread}、ガソリンは{gas}、住宅は{house}でした（米ドル価格）。' },
+      { q: '{year}年生まれは2026年で何歳？', a: '{year}年生まれの場合、2026年に{age}歳または{age1}歳です。上のリンクをクリックして正確な年齢を計算してください。' },
+    ],
+    bornInCtaTpl:  '{year}年生まれ？正確な年齢を計算する →',
+    bornInHrefTpl: '/ja/umareta-{year}/',
+    source: null,
+  },
+  ko: {
+    titleTpl:    '{year}년에 무슨 일이 있었나? 사건·음악·영화 | DateCalc',
+    metaDescTpl: '{year}년에 일어난 일을 알아보세요: 세계 역사, 음악, 영화, 기술 이정표 및 물가. {year}년 완전한 연간 리뷰.',
+    kicker:      '연간 리뷰',
+    headlineTpl: '{year}년에<br>무슨 일이<br><em>있었나?</em>',
+    subheadTpl:  '{year}년의 주요 사건·문화·트리비아',
+    wTitle:      '{year}년의 세상',
+    wLblEvents:  '사건',
+    wLblMusic:   '음악',
+    wLblFilm:    '영화',
+    wLblTech:    '기술',
+    wLblPrices:  '물가',
+    wLblBread:   '빵',
+    wLblGas:     '휘발유',
+    wLblHouse:   '주택',
+    seoH2aTpl:   '{year}년의 주요 사건은 무엇인가요?',
+    seoP1Tpl:    '{year}년은 역사를 형성한 중요한 세계적 사건들의 해였습니다. 정치적 변화부터 문화적 이정표까지, 이 해는 사회에 지속적인 흔적을 남겼습니다. {year}년의 음악 차트, 영화, 기술 환경은 그 시대의 독특한 특성을 반영합니다.',
+    seoH2bTpl:   '{year}년이 역사적으로 중요한 이유는?',
+    seoP2Tpl:    '모든 해는 각자의 전환점과 문화적 참조점을 가지고 있습니다. {year}년은 20세기·21세기 역사에 독특한 장을 더했습니다. {year}년을 살았든 연구하는 중이든, 당시의 사건, 예술, 기술, 일상 비용이 풍부한 시대적 초상화를 만듭니다.',
+    faqTitle:    '자주 묻는 질문',
+    faqsTpl: [
+      { q: '{year}년의 주요 사건은?', a: '{year}년의 주요 세계적 사건: {events}.' },
+      { q: '{year}년에 인기 있던 음악은?', a: '{year}년의 큰 음악 히트 중 하나: {music}.' },
+      { q: '{year}년의 히트 영화는?', a: '{year}년의 주요 영화 중 하나: {film}.' },
+      { q: '{year}년 물가는?', a: '{year}년 빵 가격은 약 {bread}, 휘발유는 {gas}, 주택은 {house}였습니다(미국 달러 기준).' },
+      { q: '{year}년생은 2026년에 몇 살?', a: '{year}년생이라면 2026년에 {age}세 또는 {age1}세입니다. 위 링크를 클릭해 정확한 나이를 계산하세요.' },
+    ],
+    bornInCtaTpl:  '{year}년생? 정확한 나이 계산하기 →',
+    bornInHrefTpl: '/ko/taeeona-{year}/',
+    source: null,
+  },
+  nl: {
+    titleTpl:    'Wat gebeurde er in {year}? Gebeurtenissen, Muziek, Film | DateCalc',
+    metaDescTpl: 'Ontdek wat er gebeurde in {year}: belangrijke wereldgebeurtenissen, #1-hits, topfilms, technologie en dagelijkse prijzen. Een compleet jaar in review voor {year}.',
+    kicker:      'Jaaroverzicht',
+    headlineTpl: 'Wat Gebeurde<br>er in <em>{year}</em>?',
+    subheadTpl:  'Belangrijke gebeurtenissen, cultuur en weetjes uit {year}',
+    wTitle:      'De Wereld in {year}',
+    wLblEvents:  'Gebeurtenissen',
+    wLblMusic:   'Muziek',
+    wLblFilm:    'Film',
+    wLblTech:    'Technologie',
+    wLblPrices:  'Prijzen',
+    wLblBread:   'Brood',
+    wLblGas:     'Benzine',
+    wLblHouse:   'Huis',
+    seoH2aTpl:   'Wat waren de belangrijkste gebeurtenissen van {year}?',
+    seoP1Tpl:    '{year} was een jaar van belangrijke wereldgebeurtenissen die de geschiedenis hebben gevormd. Van politieke omwentelingen tot culturele mijlpalen, dit jaar liet een blijvende indruk na op de samenleving. De hitlijsten, bioscoopschermen en het technologische landschap van {year} weerspiegelen het unieke karakter van dat tijdperk.',
+    seoH2bTpl:   'Waarom is {year} historisch belangrijk?',
+    seoP2Tpl:    'Elk jaar heeft zijn eigen keerpunten en culturele referentiepunten. {year} voegde unieke hoofdstukken toe aan de geschiedenis van de 20e en 21e eeuw. Of je {year} hebt meegemaakt of het onderzoekt, de gebeurtenissen, kunst, technologie en dagelijkse kosten van dat jaar vormen een rijk beeld van het leven van toen.',
+    faqTitle:    'Veelgestelde vragen',
+    faqsTpl: [
+      { q: 'Wat waren de belangrijkste gebeurtenissen in {year}?', a: 'De belangrijkste wereldgebeurtenissen van {year}: {events}.' },
+      { q: 'Welke muziek was populair in {year}?', a: 'Een grote muziekhit uit {year}: {music}.' },
+      { q: 'Welke film was een hit in {year}?', a: 'Een van de belangrijkste films uit {year}: {film}.' },
+      { q: 'Wat kostten dingen in {year}?', a: 'In {year} kostte brood ongeveer {bread}, benzine {gas} en een huis {house} (prijzen in Amerikaanse dollars).' },
+      { q: 'Geboren in {year}, hoe oud ben ik in 2026?', a: 'Als je geboren bent in {year}, ben je {age} of {age1} jaar in 2026. Klik op de bovenstaande link om je exacte leeftijd te berekenen.' },
+    ],
+    bornInCtaTpl:  'Geboren in {year}? Bereken je exacte leeftijd →',
+    bornInHrefTpl: '/nl/geboren-in-{year}/',
+    source: null,
+  },
 };
 
 // Helper: replace {token} placeholders in a string
@@ -248,7 +344,7 @@ function tplDeep(val, vars) {
 
 // Build the world events HTML block (reuses same CSS classes as born-in.js)
 function buildWorldBlock(year, t, lang) {
-  const evSrc = lang === 'fr' ? EVENTS_FR : lang === 'es' ? EVENTS_ES : lang === 'pt' ? EVENTS_PT : lang === 'de' ? EVENTS_DE : lang === 'it' ? EVENTS_IT : lang === 'pl' ? EVENTS_PL : EVENTS;
+  const evSrc = lang === 'fr' ? EVENTS_FR : lang === 'es' ? EVENTS_ES : lang === 'pt' ? EVENTS_PT : lang === 'de' ? EVENTS_DE : lang === 'it' ? EVENTS_IT : lang === 'pl' ? EVENTS_PL : lang === 'ja' ? EVENTS_JA : lang === 'ko' ? EVENTS_KO : lang === 'nl' ? EVENTS_NL : EVENTS;
   const ev    = evSrc[String(year)] || EVENTS[String(year)]; // translated, fallback to EN
   const evEn  = EVENTS[String(year)];                         // always EN for music/film/prices
   if (!evEn) return '';
@@ -303,6 +399,9 @@ module.exports = {
       de: `de/was-geschah-${y}`,
       it: `it/cosa-e-successo-nel-${y}`,
       pl: `pl/co-sie-wydarzylo-w-${y}`,
+      ja: `ja/nani-ga-okita-${y}`,
+      ko: `ko/museun-il-i-${y}`,
+      nl: `nl/wat-gebeurde-er-in-${y}`,
     },
   })),
 
@@ -312,7 +411,7 @@ module.exports = {
     const vars = { year };
 
     // Gather real event data for FAQs and SEO text
-    const evSrc = lang === 'fr' ? EVENTS_FR : lang === 'es' ? EVENTS_ES : lang === 'pt' ? EVENTS_PT : lang === 'de' ? EVENTS_DE : lang === 'it' ? EVENTS_IT : lang === 'pl' ? EVENTS_PL : EVENTS;
+    const evSrc = lang === 'fr' ? EVENTS_FR : lang === 'es' ? EVENTS_ES : lang === 'pt' ? EVENTS_PT : lang === 'de' ? EVENTS_DE : lang === 'it' ? EVENTS_IT : lang === 'pl' ? EVENTS_PL : lang === 'ja' ? EVENTS_JA : lang === 'ko' ? EVENTS_KO : lang === 'nl' ? EVENTS_NL : EVENTS;
     const ev    = evSrc[String(year)] || EVENTS[String(year)];
     const evEn  = EVENTS[String(year)];
     let allEvents = [];

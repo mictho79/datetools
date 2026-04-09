@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>고양이 나이 계산기 – 고양이 나이를 인간 나이로 변환 | DateCalc.app</title>
+<meta name="robots" content="index, follow">
+<meta name="description" content="우리 고양이는 인간 나이로 몇 살? 고양이 나이를 입력하면 수의학 가이드라인에 기반한 정확한 환산값을 알 수 있습니다.">
+<link rel="canonical" href="https://datecalc.app/ko/goyang-i-nai/">
+<link rel="alternate" hreflang="en" href="https://datecalc.app/cat-age-calculator/">
+<link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/calculateur-age-chat/">
+<link rel="alternate" hreflang="es" href="https://datecalc.app/es/calculadora-edad-gato/">
+<link rel="alternate" hreflang="pt" href="https://datecalc.app/pt/calculadora-idade-gato/">
+<link rel="alternate" hreflang="de" href="https://datecalc.app/de/katze-alter-rechner/">
+<link rel="alternate" hreflang="it" href="https://datecalc.app/it/calcolatore-eta-gatto/">
+<link rel="alternate" hreflang="pl" href="https://datecalc.app/pl/wiek-kota/">
+<link rel="alternate" hreflang="x-default" href="https://datecalc.app/cat-age-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="고양이 나이 계산기 – 고양이 나이를 인간 나이로 변환 | DateCalc.app">
+<meta property="og:description" content="우리 고양이는 인간 나이로 몇 살? 고양이 나이를 입력하면 수의학 가이드라인에 기반한 정확한 환산값을 알 수 있습니다.">
+<meta property="og:url" content="https://datecalc.app/ko/goyang-i-nai/">
+<meta property="og:site_name" content="DateCalc.app">
+<meta property="og:image" content="https://datecalc.app/og.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="고양이 나이 계산기 – 고양이 나이를 인간 나이로 변환 | DateCalc.app">
+<meta name="twitter:description" content="우리 고양이는 인간 나이로 몇 살? 고양이 나이를 입력하면 수의학 가이드라인에 기반한 정확한 환산값을 알 수 있습니다.">
+<meta name="twitter:image" content="https://datecalc.app/og.png">
+<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/playfair-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/style.css">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="shortcut icon" href="/favicon.svg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "우리 고양이는 인간 나이로 몇 살인가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "수의학적 공식을 사용하세요: 1년차=15 인간 연도, 2년차는 9 추가(합계 24), 그 후 매년 4 추가. 3살 고양이는 약 28 인간 연도, 7살은 44세, 12살은 64세입니다. 위에 고양이 나이를 입력하여 즉시 환산값을 받으세요."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "\"고양이 1년=인간 7년\"이 맞나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "아니요—그것은 일반적인 미신입니다. 1살 고양이는 약 15 인간 연도에 해당하며, 7년이 아닙니다. 고양이는 처음 2년 동안 매우 빠르게 발달합니다. 1:7 비율은 평생에 걸친 대략적인 평균이며 특정 나이에서는 부정확합니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "고양이는 언제 시니어로 간주되나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "International Cat Care에 따르면 고양이는 11세부터 시니어로 간주됩니다. 이는 약 60세 인간에 해당합니다. 이 단계에서 수의사들은 신부전, 갑상선 기능 항진증, 관절염 등 노화 관련 질병의 조기 발견을 위해 6개월마다 건강 검진을 권장합니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "고양이의 평균 수명은 얼마인가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "평균적인 집고양이는 12~18년 삽니다. 실내 고양이는 이 범위의 상한선 이상에 도달하는 경우가 많지만, 야외 고양이는 평균 10~14년입니다. 텍사스주 오스틴의 크림 퍼프(Creme Puff)는 38년 3일(1967~2005년) 살아 기록상 가장 오래 산 고양이입니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "실내 고양이가 야외 고양이보다 더 오래 사나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "네. 실내 고양이는 일반적으로 12~18년 살지만, 야외 고양이는 교통사고, 포식자, 질병 노출로 인해 평균 10~14년입니다. 차이는 4~8년에 달할 수 있습니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "품종별 고양이 기대 수명은?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "샴 고양이와 버마 고양이는 특히 장수하는 것으로 알려져 15~20년에 자주 도달합니다. 메인쿠운과 래그돌은 보통 12~15년 삽니다. 잡종 고양이는 유전적 다양성 덕분에 15년 이상 사는 경우가 많습니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "10살 고양이는 인간 나이로 몇 살인가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "10살 고양이는 표준 공식(24+8×4=56)에 따르면 약 56 인간 연도입니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "기록상 가장 오래 산 고양이는?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "기록상 가장 오래 산 고양이는 텍사스주 오스틴의 크림 퍼프(Creme Puff)로 38년 3일(1967~2005년) 살았으며, 기네스 세계기록에 인증되었습니다."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "고양이 나이 계산기",
+  "description": "우리 고양이는 인간 나이로 몇 살? 고양이 나이를 입력하면 수의학 가이드라인에 기반한 정확한 환산값을 알 수 있습니다.",
+  "url": "https://datecalc.app/ko/goyang-i-nai/",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Web",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"DateCalc.app","url":"https://datecalc.app","logo":"https://datecalc.app/og.png","contactPoint":{"@type":"ContactPoint","email":"hello@datecalc.app","contactType":"customer support"}}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<noscript><div style="background:#c8392b;color:#fff;text-align:center;padding:.6rem;font-family:sans-serif;font-size:.9rem">This calculator requires JavaScript. Please enable it in your browser.</div></noscript>
+
+<header>
+<div class="masthead">
+  <a href="/ko/" class="masthead-brand">DateCalc<span>.</span>app</a>
+  <div class="masthead-meta" id="todayMeta"></div>
+</div>
+</header>
+
+<div class="lang-strip">
+  <a href="/cat-age-calculator/" class="lang-btn">EN</a>
+  <a href="/fr/calculateur-age-chat/" class="lang-btn">FR</a>
+  <a href="/es/calculadora-edad-gato/" class="lang-btn">ES</a>
+  <a href="/pt/calculadora-idade-gato/" class="lang-btn">PT</a>
+  <a href="/de/katze-alter-rechner/" class="lang-btn">DE</a>
+  <a href="/it/calcolatore-eta-gatto/" class="lang-btn">IT</a>
+  <a href="/pl/wiek-kota/" class="lang-btn">PL</a>
+  <a href="undefined" class="lang-btn">JA</a>
+  <a href="undefined" class="lang-btn active">KO</a>
+  <a href="undefined" class="lang-btn">NL</a>
+</div>
+
+<div class="page">
+
+  <div class="headline-block">
+    <div class="kicker">고양이 나이 계산기</div>
+    <h1 class="headline">우리 <em>고양이</em>는 <br>몇 살인가요?</h1>
+    <p class="subhead">수의학적 공식을 사용하여 고양이의 나이를 인간의 나이로 변환합니다.</p>
+  </div>
+
+  <div class="form-grid">
+    <div class="form-col">
+      <div class="field-label">고양이 나이 (세)</div>
+      <div class="date-row">
+        <input type="number" id="catAge" placeholder="0" min="0" max="30" inputmode="numeric" oninput="clamp(this,0,30)" style="width:4ch">
+      </div>
+      <div class="error-line" id="errorLine"></div>
+      <button class="calc-btn" onclick="calculate()">→ 계산하기</button>
+    </div>
+    <div class="form-col">
+      <p class="tip-text">"고양이는 아홉 개의 목숨을 사는 게 아니다. 한 개의 목숨을 아홉 개의 개성으로 산다."</p>
+      <ul class="example-list">
+        <li onclick="fillExample(1)">새끼 고양이, 1살 →</li>
+        <li onclick="fillExample(5)">성체 고양이, 5살 →</li>
+        <li onclick="fillExample(12)">노령 고양이, 12살 →</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="results-section" id="results" aria-live="polite">
+    <div class="results-header">우리 고양이의 나이</div>
+    <div class="age-display">
+      <span class="age-number" id="heroAge">—</span>
+      <span class="age-suffix">인간 나이</span>
+    </div>
+    <div class="facts-row">
+      <div class="fact-item"><div class="fact-key">고양이 나이</div><div class="fact-val" id="ffCatYears">—</div></div>
+      <div class="fact-item"><div class="fact-key">생애 단계</div><div class="fact-val" id="ffStage">—</div></div>
+      <div class="fact-item"><div class="fact-key">사용된 공식</div><div class="fact-val" id="ffFormula">—</div></div>
+    </div>
+  </div>
+
+  <nav aria-label="Tools">
+  <div class="tool-nav">
+    <div class="nav-group"><span class="nav-cat">나이</span><div class="nav-links"><a href="/ko/nai-gyesan-gi/">나이 계산기</a><span class="nav-sep">·</span><a href="/ko/sigan-nai/">시간 나이</a><span class="nav-sep">·</span><a href="/ko/agi-nai/">아기 나이</a><span class="nav-sep">·</span><a href="/ko/gae-nai/">강아지 나이</a><span class="nav-sep">·</span><a href="/ko/goyang-i-nai/" aria-current="page">고양이 나이</a></div></div>
+    <div class="nav-group"><span class="nav-cat">날짜</span><div class="nav-links"><a href="/ko/nal-jja-sayi/">날짜 사이의 일수</a><span class="nav-sep">·</span><a href="/ko/nal-jja-gyesan-gi/">날짜 계산기</a><span class="nav-sep">·</span><a href="/ko/oneul-museun-yoil/">오늘은 무슨 요일</a><span class="nav-sep">·</span><a href="/ko/ju-beonho/">주 번호</a><span class="nav-sep">·</span><a href="/ko/yeongeopil-gyesan-gi/">영업일 계산기</a></div></div>
+    <div class="nav-group"><span class="nav-cat">카운트다운</span><div class="nav-links"><a href="/ko/keulliseumaseu-kkaji/">크리스마스까지</a><span class="nav-sep">·</span><a href="/ko/saehae-kkaji/">새해까지</a><span class="nav-sep">·</span><a href="/ko/hallowin-kkaji/">할로윈까지</a><span class="nav-sep">·</span><a href="/ko/buhwarjeol-kkaji/">부활절까지</a><span class="nav-sep">·</span><a href="/ko/kaunteu-daun/">카운트다운</a></div></div>
+    <div class="nav-group"><span class="nav-cat">세계</span><div class="nav-links"><a href="/ko/sigandag-byeonhwan/">시간대 변환기</a></div></div>
+    <div class="nav-group"><span class="nav-cat">태어난 해</span><div class="nav-links"><a href="/ko/taeeona-1990/">1990년생</a><span class="nav-sep">·</span><a href="/ko/taeeona-1980/">1980년생</a><span class="nav-sep">·</span><a href="/ko/taeeona-2000/">2000년생</a></div></div>
+    <div class="nav-group"><span class="nav-cat">연간 리뷰</span><div class="nav-links"><a href="/ko/museun-il-i-2000/">2000년에 무슨 일이</a><span class="nav-sep">·</span><a href="/ko/museun-il-i-1990/">1990년에 무슨 일이</a><span class="nav-sep">·</span><a href="/ko/museun-il-i-1980/">1980년에 무슨 일이</a></div></div>
+    <div class="nav-group"><span class="nav-cat">달력</span><div class="nav-links"><a href="/ko/ju-beonho/2025/">2025년 주 번호</a><span class="nav-sep">·</span><a href="/ko/ju-beonho/2026/">2026년 주 번호</a><span class="nav-sep">·</span><a href="/ko/ju-beonho/2027/">2027년 주 번호</a></div></div>
+  </div>
+  </nav>
+
+<main id="main-content">
+  <div class="seo-block">
+    <div><h2>고양이 나이를 인간 나이로 환산하는 방법은?</h2><p>널리 사용되는 수의학적 공식은 3단계로 작동합니다. 고양이의 첫 번째 해는 약 15 인간 연도에 해당합니다. 이 기간 동안 새끼 고양이는 무력한 신생아에서 성적 성숙에 달하고 완전히 협응된 젊은 성체로 성장합니다. 2년차는 9년을 더하고(합계 24), 그 후의 각 해는 약 4 인간 연도를 추가합니다. 따라서 5살 고양이는 약 36 인간 연도, 10살은 56세, 15살은 76세가 됩니다.</p></div>
+    <div><h2>우리 고양이는 어떤 생애 단계에 있나요?</h2><p>고양이는 International Cat Care가 정의한 6개의 생애 단계를 거칩니다. 새끼 고양이(0~6개월): 빠른 성장과 사회화. 주니어(7개월~2세): 완전한 크기로의 지속적인 발달. 성체(3~6세): 최고의 건강과 활동성. 성숙기(7~10세): 중년기에 해당. 시니어(11~14세): 질병에 더 취약하여 정기적인 수의사 방문 권장. 노령기(15세 이상): 특별한 식이 및 의료적 주의 필요.</p></div>
+  </div>
+  <div class="faq-block">
+    <h2>자주 묻는 질문</h2>
+    <div class="faq-item"><h3>우리 고양이는 인간 나이로 몇 살인가요?</h3><p>수의학적 공식을 사용하세요: 1년차=15 인간 연도, 2년차는 9 추가(합계 24), 그 후 매년 4 추가. 3살 고양이는 약 28 인간 연도, 7살은 44세, 12살은 64세입니다. 위에 고양이 나이를 입력하여 즉시 환산값을 받으세요.</p></div>
+    <div class="faq-item"><h3>"고양이 1년=인간 7년"이 맞나요?</h3><p>아니요—그것은 일반적인 미신입니다. 1살 고양이는 약 15 인간 연도에 해당하며, 7년이 아닙니다. 고양이는 처음 2년 동안 매우 빠르게 발달합니다. 1:7 비율은 평생에 걸친 대략적인 평균이며 특정 나이에서는 부정확합니다.</p></div>
+    <div class="faq-item"><h3>고양이는 언제 시니어로 간주되나요?</h3><p>International Cat Care에 따르면 고양이는 11세부터 시니어로 간주됩니다. 이는 약 60세 인간에 해당합니다. 이 단계에서 수의사들은 신부전, 갑상선 기능 항진증, 관절염 등 노화 관련 질병의 조기 발견을 위해 6개월마다 건강 검진을 권장합니다.</p></div>
+    <div class="faq-item"><h3>고양이의 평균 수명은 얼마인가요?</h3><p>평균적인 집고양이는 12~18년 삽니다. 실내 고양이는 이 범위의 상한선 이상에 도달하는 경우가 많지만, 야외 고양이는 평균 10~14년입니다. 텍사스주 오스틴의 크림 퍼프(Creme Puff)는 38년 3일(1967~2005년) 살아 기록상 가장 오래 산 고양이입니다.</p></div>
+    <div class="faq-item"><h3>실내 고양이가 야외 고양이보다 더 오래 사나요?</h3><p>네. 실내 고양이는 일반적으로 12~18년 살지만, 야외 고양이는 교통사고, 포식자, 질병 노출로 인해 평균 10~14년입니다. 차이는 4~8년에 달할 수 있습니다.</p></div>
+    <div class="faq-item"><h3>품종별 고양이 기대 수명은?</h3><p>샴 고양이와 버마 고양이는 특히 장수하는 것으로 알려져 15~20년에 자주 도달합니다. 메인쿠운과 래그돌은 보통 12~15년 삽니다. 잡종 고양이는 유전적 다양성 덕분에 15년 이상 사는 경우가 많습니다.</p></div>
+    <div class="faq-item"><h3>10살 고양이는 인간 나이로 몇 살인가요?</h3><p>10살 고양이는 표준 공식(24+8×4=56)에 따르면 약 56 인간 연도입니다.</p></div>
+    <div class="faq-item"><h3>기록상 가장 오래 산 고양이는?</h3><p>기록상 가장 오래 산 고양이는 텍사스주 오스틴의 크림 퍼프(Creme Puff)로 38년 3일(1967~2005년) 살았으며, 기네스 세계기록에 인증되었습니다.</p></div>
+  </div>
+
+  <div class="source-block">
+    <span class="source-lbl">Source</span>
+    <a href="https://icatcare.org/advice/how-old-is-my-cat-in-human-years/" target="_blank" rel="noopener noreferrer">International Cat Care – 인간 나이로 보는 고양이 나이</a>
+  </div>
+</main>
+  <footer>
+  <nav class="footer-nav" aria-label="Site links">
+<div class="footer-col"><strong>나이</strong>
+<a href="/ko/nai-gyesan-gi/">나이 계산기</a>
+<a href="/ko/sigan-nai/">시간 나이</a>
+<a href="/ko/agi-nai/">아기 나이</a>
+<a href="/ko/gae-nai/">강아지 나이</a>
+<a href="/ko/goyang-i-nai/">고양이 나이</a></div>
+<div class="footer-col"><strong>날짜</strong>
+<a href="/ko/nal-jja-sayi/">날짜 사이의 일수</a>
+<a href="/ko/nal-jja-gyesan-gi/">날짜 계산기</a>
+<a href="/ko/oneul-museun-yoil/">오늘은 무슨 요일</a>
+<a href="/ko/ju-beonho/">주 번호</a>
+<a href="/ko/yeongeopil-gyesan-gi/">영업일 계산기</a></div>
+<div class="footer-col"><strong>카운트다운</strong>
+<a href="/ko/keulliseumaseu-kkaji/">크리스마스까지</a>
+<a href="/ko/saehae-kkaji/">새해까지</a>
+<a href="/ko/hallowin-kkaji/">할로윈까지</a>
+<a href="/ko/buhwarjeol-kkaji/">부활절까지</a>
+<a href="/ko/kaunteu-daun/">카운트다운</a></div>
+<div class="footer-col"><strong>세계</strong>
+<a href="/ko/sigandag-byeonhwan/">시간대 변환기</a></div>
+<div class="footer-col"><strong>태어난 해</strong>
+<a href="/ko/taeeona-1990/">1990년생</a>
+<a href="/ko/taeeona-1980/">1980년생</a>
+<a href="/ko/taeeona-2000/">2000년생</a></div>
+<div class="footer-col"><strong>연간 리뷰</strong>
+<a href="/ko/museun-il-i-2000/">2000년에 무슨 일이</a>
+<a href="/ko/museun-il-i-1990/">1990년에 무슨 일이</a>
+<a href="/ko/museun-il-i-1980/">1980년에 무슨 일이</a></div>
+<div class="footer-col"><strong>달력</strong>
+<a href="/ko/ju-beonho/2025/">2025년 주 번호</a>
+<a href="/ko/ju-beonho/2026/">2026년 주 번호</a>
+<a href="/ko/ju-beonho/2027/">2027년 주 번호</a></div>
+  </nav>
+  <div class="footer-copy">© 2026 DateCalc.app — 무료 온라인 날짜 및 시간 계산기 · <a href="/ko/about/">소개</a> · <a href="/ko/privacy/">개인정보</a></div>
+</footer>
+</div>
+
+<script>
+(function(){
+  var now = new Date();
+  var opts = {weekday:'long',year:'numeric',month:'long',day:'numeric'};
+  document.getElementById('todayMeta').innerHTML =
+    now.toLocaleDateString('ko-KR', opts) + '<br>무료 날짜 계산기';
+})();
+// Shared input guard: strip non-digits, truncate to max digit length, clamp to hi
+function clamp(el, lo, hi) {
+  var maxLen = String(hi).length;
+  var s = el.value.replace(/\D/g, '').slice(0, maxLen);
+  var n = parseInt(s, 10);
+  if (!isNaN(n) && n > hi) s = String(hi);
+  el.value = s;
+}
+// Auto-scroll to results when they become visible
+(function(){
+  var r=document.getElementById('results');
+  if(!r||r.classList.contains('auto-show'))return;
+  var obs=new MutationObserver(function(){
+    if(r.classList.contains('show')){
+      r.scrollIntoView({behavior:'smooth',block:'start'});
+      obs.disconnect();
+    }
+  });
+  obs.observe(r,{attributes:true,attributeFilter:['class']});
+})();
+// Enter key submits calculator
+(function(){
+  var fg=document.querySelector('.form-grid');
+  if(!fg)return;
+  fg.addEventListener('keydown',function(e){
+    if(e.key==='Enter'&&typeof calculate==='function')calculate();
+  });
+})();
+// AdSense: load only with consent
+(function(){
+  var ADS_SRC='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4020973443671350';
+  function loadAds(){
+    var s=document.createElement('script');
+    s.src=ADS_SRC;s.async=true;s.crossOrigin='anonymous';
+    document.head.appendChild(s);
+  }
+  if(localStorage.getItem('ads-ok')==='1')return loadAds();
+  if(localStorage.getItem('ads-ok')==='0')return;
+  var b=document.getElementById('consent-banner');
+  if(b)b.style.display='flex';
+  document.getElementById('consent-accept')&&document.getElementById('consent-accept').addEventListener('click',function(){
+    localStorage.setItem('ads-ok','1');b.style.display='none';loadAds();
+  });
+  document.getElementById('consent-decline')&&document.getElementById('consent-decline').addEventListener('click',function(){
+    localStorage.setItem('ads-ok','0');b.style.display='none';
+  });
+})();
+</script>
+<script>
+
+var D = {"errInvalid":"→ 유효한 고양이 나이(1~30)를 입력하세요.","stages":["새끼 고양이","주니어","성체","성숙기","시니어","노령기"],"stageYears":[0,1,3,7,11,15]};
+
+function catToHuman(age) {
+  if (age <= 0) return 0;
+  if (age === 1) return 15;
+  if (age === 2) return 24;
+  return 24 + (age - 2) * 4;
+}
+
+function getStage(age) {
+  var yrs = D.stageYears;
+  for (var i = yrs.length - 1; i >= 0; i--) if (age >= yrs[i]) return D.stages[i];
+  return D.stages[0];
+}
+
+function getFormula(age) {
+  if (age === 1) return '= 15';
+  if (age === 2) return '15 + 9 = 24';
+  return '24 + (' + age + ' − 2) × 4 = ' + catToHuman(age);
+}
+
+function fillExample(age) {
+  document.getElementById('catAge').value = age;
+  calculate();
+}
+
+function calculate() {
+  var age = parseInt(document.getElementById('catAge').value);
+  var err = document.getElementById('errorLine');
+  var res = document.getElementById('results');
+  err.classList.remove('show'); res.classList.remove('show');
+
+  if (!age || age < 1 || age > 30) { err.textContent = D.errInvalid; err.classList.add('show'); return; }
+
+  var human = catToHuman(age);
+  document.getElementById('heroAge').textContent = human;
+  document.getElementById('ffCatYears').textContent = age;
+  document.getElementById('ffStage').textContent = getStage(age);
+  document.getElementById('ffFormula').textContent = getFormula(age);
+  res.classList.add('show');
+  res.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+document.addEventListener('keydown', function(e){ if(e.key==='Enter') calculate(); });
+
+</script>
+<div id="consent-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#111111;color:#fff;padding:.9rem 1.4rem;z-index:9999;font-size:.82rem;font-family:sans-serif;align-items:center;gap:.8rem;flex-wrap:wrap">
+  <span style="flex:1;min-width:200px">이 무료 서비스를 유지하기 위해 Google AdSense를 사용합니다. 광고 쿠키에 동의하시겠습니까?</span>
+  <button id="consent-accept" style="background:#c8392b;color:#fff;border:none;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">동의</button>
+  <button id="consent-decline" style="background:transparent;color:#aaa;border:1px solid #555;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">동의 없이 계속</button>
+</div>
+</body>
+</html>
