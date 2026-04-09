@@ -965,13 +965,14 @@ footer {
 }
 
 .np-age-col .hero-or {
+  display: block;
   font-family: 'Space Mono', monospace;
-  font-size: .22em;
+  font-size: .18em;
   font-weight: 400;
-  letter-spacing: .12em;
+  letter-spacing: .18em;
   text-transform: uppercase;
-  vertical-align: middle;
   color: var(--muted);
+  margin: -.2em 0;
 }
 
 .np-world-col {
