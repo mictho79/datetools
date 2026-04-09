@@ -888,11 +888,13 @@ footer {
 }
 
 .np-front .headline {
-  font-size: clamp(3.5rem, 16vw, 9rem);
-  line-height: .9;
+  font-size: clamp(2.8rem, 12vw, 8rem);
+  line-height: 1;
   letter-spacing: -.03em;
-  margin: .1rem 0 .4rem;
+  margin: .1rem 0 1rem;
   overflow-wrap: break-word;
+  word-break: break-word;
+  width: 100%;
 }
 
 .np-front .subhead {
