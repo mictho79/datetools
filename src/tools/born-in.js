@@ -9,6 +9,11 @@ const EVENTS_DE = require('../data/events_de.json');
 const EVENTS_IT = require('../data/events_it.json');
 const EVENTS_PL = require('../data/events_pl.json');
 
+// Year images — populated by: node scripts/fetch-year-images.js
+const YEAR_IMAGES = (() => {
+  try { return require('../data/year-images.json'); } catch(e) { return {}; }
+})();
+
 const BIRTH_YEARS = [];
 for (let y = 1930; y <= 2024; y++) BIRTH_YEARS.push(y);
 
@@ -456,7 +461,6 @@ module.exports = {
     const title = tpl(OPT_YEARS ? OPT_TITLE[lang] : t.titleTpl, vars);
     const metaDesc = tpl(OPT_YEARS ? OPT_DESC[lang] : t.metaDescTpl, vars);
     const headlineHtml = tpl(t.headlineTpl, vars);
-    const subheadHtml = tpl(t.subheadTpl, vars);
     const heroText = tpl(t.heroTpl, vars);
     const explainText = tpl(t.explainTpl, vars);
     const seoH2a = tpl(t.seoH2aTpl, vars);
@@ -474,6 +478,13 @@ module.exports = {
     const worldBlock = buildWorldBlock(year, t, lang);
 
     // Blocks — newspaper front page layout
+    const yearImg = YEAR_IMAGES[year];
+    const imgBlock = yearImg ? `
+    <div class="np-photo-wrap">
+      <img src="${yearImg.src}" alt="${yearImg.alt}" class="np-photo" width="900" height="500" loading="lazy">
+      <p class="np-photo-caption">${yearImg.caption}</p>
+    </div>` : '';
+
     const headlineBlock = `  <div class="headline-block np-front">
     <div class="np-gazette-hdr">
       <div class="np-rule-top"></div>
@@ -484,7 +495,7 @@ module.exports = {
     </div>
     <div class="kicker">${t.kicker}</div>
     <h1 class="headline">${headlineHtml}</h1>
-    <p class="subhead">${subheadHtml}</p>
+    ${imgBlock}
   </div>`;
 
     // No form — results auto-show
