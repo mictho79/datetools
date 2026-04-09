@@ -329,6 +329,8 @@ const FOOTER = {
 
 const PRIVACY_HREF = { en: '/privacy/', fr: '/fr/confidentialite/', es: '/es/privacidad/', pt: '/pt/privacidade/', de: '/de/datenschutz/', it: '/it/privacy/', pl: '/pl/prywatnosc/' };
 const PRIVACY_LBL  = { en: 'Privacy', fr: 'Confidentialité', es: 'Privacidad', pt: 'Privacidade', de: 'Datenschutz', it: 'Privacy', pl: 'Prywatność' };
+const ABOUT_HREF = { en: '/about/', fr: '/fr/a-propos/', es: '/es/acerca-de/', pt: '/pt/sobre/', de: '/de/ueber-uns/', it: '/it/chi-siamo/', pl: '/pl/o-nas/' };
+const ABOUT_LBL  = { en: 'About', fr: 'À propos', es: 'Acerca de', pt: 'Sobre', de: 'Über uns', it: 'Chi siamo', pl: 'O nas' };
 
 const MASTHEAD_LABEL = {
   en: 'Free date calculator',
@@ -516,7 +518,7 @@ ${sourceBlock}
   <nav class="footer-nav" aria-label="Site links">
 ${footerCols}
   </nav>
-  <div class="footer-copy">© ${BUILD_YEAR} DateCalc.app — ${FOOTER[lang]} · <a href="${PRIVACY_HREF[lang]}">${PRIVACY_LBL[lang]}</a></div>
+  <div class="footer-copy">© ${BUILD_YEAR} DateCalc.app — ${FOOTER[lang]} · <a href="${ABOUT_HREF[lang]}">${ABOUT_LBL[lang]}</a> · <a href="${PRIVACY_HREF[lang]}">${PRIVACY_LBL[lang]}</a></div>
 </footer>
 </div>
 
@@ -939,7 +941,158 @@ ${sectionsHtml}
 .privacy-sections p{line-height:1.7;color:#333;margin-bottom:.5rem}
 .privacy-sections a{color:var(--accent)}
 </style>
-  <footer>© ${BUILD_YEAR} DateCalc.app · <a href="${PRIVACY_HREF[lang]}">${PRIVACY_LBL[lang]}</a></footer>
+  <footer>© ${BUILD_YEAR} DateCalc.app · <a href="${ABOUT_HREF[lang]}">${ABOUT_LBL[lang]}</a> · <a href="${PRIVACY_HREF[lang]}">${PRIVACY_LBL[lang]}</a></footer>
+</div>
+</body>
+</html>`;
+  fs.writeFileSync(path.join(outDir, 'index.html'), html, 'utf8');
+  console.log(`  ✓ /${slug}/`);
+}
+
+// ── ABOUT PAGES ───────────────────────────────────────────
+const ABOUT_PAGES = [
+  { lang: 'en', slug: 'about',            canonical: 'https://datecalc.app/about/' },
+  { lang: 'fr', slug: 'fr/a-propos',      canonical: 'https://datecalc.app/fr/a-propos/' },
+  { lang: 'es', slug: 'es/acerca-de',     canonical: 'https://datecalc.app/es/acerca-de/' },
+  { lang: 'pt', slug: 'pt/sobre',         canonical: 'https://datecalc.app/pt/sobre/' },
+  { lang: 'de', slug: 'de/ueber-uns',     canonical: 'https://datecalc.app/de/ueber-uns/' },
+  { lang: 'it', slug: 'it/chi-siamo',     canonical: 'https://datecalc.app/it/chi-siamo/' },
+  { lang: 'pl', slug: 'pl/o-nas',         canonical: 'https://datecalc.app/pl/o-nas/' },
+];
+
+const ABOUT_CONTENT = {
+  en: {
+    title: 'About — DateCalc.app',
+    h1: 'About DateCalc.app',
+    intro: 'DateCalc.app is a collection of free, instant date and time calculators. No sign-up, no ads, no tracking — just fast, accurate tools that work entirely in your browser.',
+    sections: [
+      { h: 'What we offer', p: 'Age calculators, baby age trackers, dog & cat age converters, day counters, week numbers, business day calculators, holiday countdowns, and historical year tools — all available in 7 languages: English, French, Spanish, Portuguese, German, Italian, and Polish.' },
+      { h: 'How it works', p: 'Every calculation runs directly in your browser using JavaScript. No data is ever sent to a server. The dates you enter stay on your device.' },
+      { h: 'Who made this', p: 'DateCalc.app is an independent project built to provide reliable, fast date tools to everyone, for free. We believe useful utilities should be accessible without paywalls or forced accounts.' },
+      { h: 'Contact', p: 'Questions, suggestions, or feedback? Reach us at <a href="mailto:hello@datecalc.app">hello@datecalc.app</a> — we read every message.' },
+    ],
+  },
+  fr: {
+    title: 'À propos — DateCalc.app',
+    h1: 'À propos de DateCalc.app',
+    intro: 'DateCalc.app est une collection de calculateurs de date et d\'heure gratuits et instantanés. Sans inscription, sans pub, sans tracking — des outils rapides et précis qui fonctionnent entièrement dans votre navigateur.',
+    sections: [
+      { h: 'Ce que nous proposons', p: 'Calculateurs d\'âge, suivi de l\'âge bébé, convertisseurs d\'âge pour chiens et chats, compteurs de jours, numéros de semaine, calculateurs de jours ouvrés, comptes à rebours des fêtes, et outils d\'histoire par année — disponibles en 7 langues : anglais, français, espagnol, portugais, allemand, italien et polonais.' },
+      { h: 'Comment ça fonctionne', p: 'Chaque calcul s\'effectue directement dans votre navigateur via JavaScript. Aucune donnée n\'est envoyée à un serveur. Les dates que vous saisissez restent sur votre appareil.' },
+      { h: 'Qui a créé ce site', p: 'DateCalc.app est un projet indépendant conçu pour offrir des outils de date fiables et rapides à tous, gratuitement. Nous pensons que les outils utiles doivent être accessibles sans abonnement ni compte obligatoire.' },
+      { h: 'Contact', p: 'Questions, suggestions ou retours ? Écrivez-nous à <a href="mailto:hello@datecalc.app">hello@datecalc.app</a> — nous lisons chaque message.' },
+    ],
+  },
+  es: {
+    title: 'Acerca de — DateCalc.app',
+    h1: 'Acerca de DateCalc.app',
+    intro: 'DateCalc.app es una colección de calculadoras de fecha y hora gratuitas e instantáneas. Sin registro, sin anuncios, sin rastreo — solo herramientas rápidas y precisas que funcionan completamente en tu navegador.',
+    sections: [
+      { h: 'Qué ofrecemos', p: 'Calculadoras de edad, seguimiento de edad de bebés, conversores de edad para perros y gatos, contadores de días, números de semana, calculadoras de días hábiles, cuentas regresivas de fiestas y herramientas históricas por año — disponibles en 7 idiomas: inglés, francés, español, portugués, alemán, italiano y polaco.' },
+      { h: 'Cómo funciona', p: 'Cada cálculo se ejecuta directamente en tu navegador con JavaScript. Ningún dato se envía a un servidor. Las fechas que introduces permanecen en tu dispositivo.' },
+      { h: 'Quién lo creó', p: 'DateCalc.app es un proyecto independiente creado para ofrecer herramientas de fecha confiables y rápidas a todos, de forma gratuita. Creemos que las utilidades útiles deben ser accesibles sin suscripciones ni cuentas obligatorias.' },
+      { h: 'Contacto', p: '¿Preguntas, sugerencias o comentarios? Escríbenos a <a href="mailto:hello@datecalc.app">hello@datecalc.app</a> — leemos cada mensaje.' },
+    ],
+  },
+  pt: {
+    title: 'Sobre — DateCalc.app',
+    h1: 'Sobre o DateCalc.app',
+    intro: 'DateCalc.app é uma coleção de calculadoras de data e hora gratuitas e instantâneas. Sem cadastro, sem anúncios, sem rastreamento — apenas ferramentas rápidas e precisas que funcionam inteiramente no seu navegador.',
+    sections: [
+      { h: 'O que oferecemos', p: 'Calculadoras de idade, rastreador de idade de bebês, conversores de idade para cães e gatos, contadores de dias, números de semana, calculadoras de dias úteis, contagens regressivas de feriados e ferramentas históricas por ano — disponíveis em 7 idiomas: inglês, francês, espanhol, português, alemão, italiano e polonês.' },
+      { h: 'Como funciona', p: 'Cada cálculo é executado diretamente no seu navegador usando JavaScript. Nenhum dado é enviado a um servidor. As datas que você insere ficam no seu dispositivo.' },
+      { h: 'Quem criou', p: 'DateCalc.app é um projeto independente criado para oferecer ferramentas de data confiáveis e rápidas a todos, gratuitamente. Acreditamos que utilitários úteis devem ser acessíveis sem assinaturas ou contas obrigatórias.' },
+      { h: 'Contato', p: 'Dúvidas, sugestões ou comentários? Escreva para <a href="mailto:hello@datecalc.app">hello@datecalc.app</a> — lemos cada mensagem.' },
+    ],
+  },
+  de: {
+    title: 'Über uns — DateCalc.app',
+    h1: 'Über DateCalc.app',
+    intro: 'DateCalc.app ist eine Sammlung kostenloser und sofortiger Datums- und Zeitrechner. Keine Anmeldung, keine Werbung, kein Tracking — nur schnelle, präzise Werkzeuge, die vollständig in deinem Browser funktionieren.',
+    sections: [
+      { h: 'Was wir anbieten', p: 'Altersrechner, Baby-Alters-Tracker, Hunde- und Katzenalter-Konverter, Tageszähler, Wochennummern, Arbeitstage-Rechner, Feiertags-Countdowns und historische Jahres-Tools — in 7 Sprachen verfügbar: Englisch, Französisch, Spanisch, Portugiesisch, Deutsch, Italienisch und Polnisch.' },
+      { h: 'Wie es funktioniert', p: 'Jede Berechnung läuft direkt in deinem Browser mit JavaScript. Es werden keine Daten an einen Server gesendet. Die eingegebenen Daten bleiben auf deinem Gerät.' },
+      { h: 'Wer dahintersteckt', p: 'DateCalc.app ist ein unabhängiges Projekt, das entwickelt wurde, um zuverlässige und schnelle Datums-Tools für alle kostenlos bereitzustellen. Wir glauben, dass nützliche Werkzeuge ohne Abonnements oder Pflichtkonten zugänglich sein sollten.' },
+      { h: 'Kontakt', p: 'Fragen, Vorschläge oder Feedback? Schreib uns an <a href="mailto:hello@datecalc.app">hello@datecalc.app</a> — wir lesen jede Nachricht.' },
+    ],
+  },
+  it: {
+    title: 'Chi siamo — DateCalc.app',
+    h1: 'Chi siamo — DateCalc.app',
+    intro: 'DateCalc.app è una raccolta di calcolatori di data e ora gratuiti e istantanei. Senza registrazione, senza pubblicità, senza tracciamento — solo strumenti veloci e precisi che funzionano interamente nel tuo browser.',
+    sections: [
+      { h: 'Cosa offriamo', p: 'Calcolatori di età, tracker dell\'età del bambino, convertitori di età per cani e gatti, contatori di giorni, numeri di settimana, calcolatori di giorni lavorativi, conto alla rovescia delle festività e strumenti storici per anno — disponibili in 7 lingue: inglese, francese, spagnolo, portoghese, tedesco, italiano e polacco.' },
+      { h: 'Come funziona', p: 'Ogni calcolo viene eseguito direttamente nel tuo browser tramite JavaScript. Nessun dato viene inviato a un server. Le date che inserisci rimangono sul tuo dispositivo.' },
+      { h: 'Chi lo ha creato', p: 'DateCalc.app è un progetto indipendente creato per offrire strumenti di data affidabili e veloci a tutti, gratuitamente. Crediamo che le utility utili debbano essere accessibili senza abbonamenti o account obbligatori.' },
+      { h: 'Contatto', p: 'Domande, suggerimenti o feedback? Scrivici a <a href="mailto:hello@datecalc.app">hello@datecalc.app</a> — leggiamo ogni messaggio.' },
+    ],
+  },
+  pl: {
+    title: 'O nas — DateCalc.app',
+    h1: 'O DateCalc.app',
+    intro: 'DateCalc.app to kolekcja bezpłatnych i natychmiastowych kalkulatorów daty i czasu. Bez rejestracji, bez reklam, bez śledzenia — tylko szybkie i dokładne narzędzia działające całkowicie w Twojej przeglądarce.',
+    sections: [
+      { h: 'Co oferujemy', p: 'Kalkulatory wieku, tracker wieku niemowląt, konwertery wieku psów i kotów, liczniki dni, numery tygodni, kalkulatory dni roboczych, odliczanie do świąt i narzędzia historyczne według roku — dostępne w 7 językach: angielskim, francuskim, hiszpańskim, portugalskim, niemieckim, włoskim i polskim.' },
+      { h: 'Jak to działa', p: 'Każde obliczenie jest wykonywane bezpośrednio w Twojej przeglądarce za pomocą JavaScript. Żadne dane nie są wysyłane na serwer. Wprowadzone daty pozostają na Twoim urządzeniu.' },
+      { h: 'Kto to stworzył', p: 'DateCalc.app to niezależny projekt stworzony, aby zapewnić niezawodne i szybkie narzędzia do dat dla wszystkich, bezpłatnie. Wierzymy, że przydatne narzędzia powinny być dostępne bez subskrypcji ani obowiązkowych kont.' },
+      { h: 'Kontakt', p: 'Pytania, sugestie lub opinie? Napisz do nas na <a href="mailto:hello@datecalc.app">hello@datecalc.app</a> — czytamy każdą wiadomość.' },
+    ],
+  },
+};
+
+const hreflangAbout = [
+  '<link rel="alternate" hreflang="en" href="https://datecalc.app/about/">',
+  '<link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/a-propos/">',
+  '<link rel="alternate" hreflang="es" href="https://datecalc.app/es/acerca-de/">',
+  '<link rel="alternate" hreflang="pt" href="https://datecalc.app/pt/sobre/">',
+  '<link rel="alternate" hreflang="de" href="https://datecalc.app/de/ueber-uns/">',
+  '<link rel="alternate" hreflang="it" href="https://datecalc.app/it/chi-siamo/">',
+  '<link rel="alternate" hreflang="pl" href="https://datecalc.app/pl/o-nas/">',
+  '<link rel="alternate" hreflang="x-default" href="https://datecalc.app/about/">',
+].join('\n');
+
+for (const { lang, slug, canonical } of ABOUT_PAGES) {
+  const p = ABOUT_CONTENT[lang];
+  const outDir = path.join(DIST, slug);
+  fs.mkdirSync(outDir, { recursive: true });
+  const sectionsHtml = p.sections.map(s =>
+    `<h2>${s.h}</h2><p>${s.p}</p>`).join('\n');
+  const html = `<!doctype html>
+<html lang="${lang}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>${p.title}</title>
+<meta name="description" content="${p.intro.slice(0, 155)}">
+<link rel="canonical" href="${canonical}">
+${hreflangAbout}
+<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/playfair-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/style.css">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header>
+<div class="masthead">
+  <a href="${HOME_HREF[lang]}" class="masthead-brand">DateCalc<span>.</span>app</a>
+</div>
+</header>
+<div class="page">
+<main id="main-content" style="max-width:680px;margin:3rem auto;padding:0 1.5rem">
+  <h1 style="font-family:'Playfair Display',serif;font-size:2rem;margin-bottom:2rem">${p.h1}</h1>
+  <p style="margin-bottom:2rem;line-height:1.7">${p.intro}</p>
+  <div class="about-sections">
+${sectionsHtml}
+  </div>
+</main>
+<style>
+.about-sections h2{font-size:1rem;font-weight:600;margin:1.8rem 0 .4rem;text-transform:uppercase;letter-spacing:.05em}
+.about-sections p{line-height:1.7;color:#333;margin-bottom:.5rem}
+.about-sections a{color:var(--accent)}
+</style>
+  <footer>© ${BUILD_YEAR} DateCalc.app · <a href="${ABOUT_HREF[lang]}">${ABOUT_LBL[lang]}</a> · <a href="${PRIVACY_HREF[lang]}">${PRIVACY_LBL[lang]}</a></footer>
 </div>
 </body>
 </html>`;
