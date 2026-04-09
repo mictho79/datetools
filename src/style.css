@@ -840,6 +840,133 @@ footer {
 }
 .footer-copy a { color: inherit; text-decoration: underline; }
 
+/* ── NEWSPAPER FRONT PAGE (born-in pages) ── */
+.np-front {
+  padding-bottom: 0;
+  text-align: center;
+}
+
+.np-gazette-hdr {
+  margin-bottom: 1rem;
+}
+
+.np-rule-top {
+  border-top: 4px solid var(--ink);
+  margin-bottom: .45rem;
+}
+
+.np-gazette-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.3rem, 4.5vw, 2.2rem);
+  font-weight: 900;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  padding: .1rem 0;
+}
+
+.np-rule-double {
+  border-top: 3px double var(--ink);
+  margin: .35rem 0;
+}
+
+.np-edition {
+  font-family: 'Space Mono', monospace;
+  font-size: .58rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: .25rem 0;
+}
+
+.np-rule-bottom {
+  border-top: 1px solid var(--ink);
+  margin-top: .35rem;
+}
+
+.np-front .kicker {
+  margin: .8rem 0 .2rem;
+}
+
+.np-front .headline {
+  font-size: clamp(5rem, 24vw, 13rem);
+  line-height: .85;
+  letter-spacing: -.03em;
+  margin: .1rem 0 .4rem;
+}
+
+.np-front .subhead {
+  font-style: italic;
+  max-width: 50ch;
+  margin: 0 auto .6rem;
+}
+
+/* Two-column layout: age left, world events right */
+.np-results {
+  padding: 0;
+  border-bottom: 1px solid var(--ink);
+}
+
+.np-two-col {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.np-age-col {
+  padding: 2rem 1.5rem 2rem 0;
+  border-right: 1px solid var(--ink);
+}
+
+.np-age-col .age-display {
+  flex-direction: column;
+  gap: .2rem;
+  align-items: flex-start;
+}
+
+.np-world-col {
+  padding: 2rem 0 2rem 1.5rem;
+}
+
+.np-world-col .world-when {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.np-world-col .world-when-title {
+  text-align: left;
+  margin-bottom: 1.2rem;
+  font-size: .65rem;
+  letter-spacing: .22em;
+}
+
+/* Column rules between world-rows — newspaper style */
+.np-world-col .world-row {
+  padding-bottom: .6rem;
+  margin-bottom: .6rem;
+  border-bottom: 1px solid rgba(0,0,0,.12);
+}
+
+.np-world-col .world-row:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 620px) {
+  .np-two-col {
+    grid-template-columns: 1fr;
+  }
+  .np-age-col {
+    border-right: none;
+    border-bottom: 1px solid var(--ink);
+    padding: 1.5rem 0;
+  }
+  .np-world-col {
+    padding: 1.5rem 0;
+  }
+  .np-front .headline {
+    font-size: clamp(4.5rem, 22vw, 8rem);
+  }
+}
+
 /* ── ANIMATIONS ── */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(8px); }

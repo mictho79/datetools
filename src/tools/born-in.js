@@ -473,8 +473,15 @@ module.exports = {
     // World events block
     const worldBlock = buildWorldBlock(year, t, lang);
 
-    // Blocks
-    const headlineBlock = `  <div class="headline-block">
+    // Blocks — newspaper front page layout
+    const headlineBlock = `  <div class="headline-block np-front">
+    <div class="np-gazette-hdr">
+      <div class="np-rule-top"></div>
+      <div class="np-gazette-title">The DateCalc Gazette</div>
+      <div class="np-rule-double"></div>
+      <div class="np-edition">Est. ${year} &nbsp;·&nbsp; Vol. ${age1} &nbsp;·&nbsp; ${BUILD_YEAR} Edition</div>
+      <div class="np-rule-bottom"></div>
+    </div>
     <div class="kicker">${t.kicker}</div>
     <h1 class="headline">${headlineHtml}</h1>
     <p class="subhead">${subheadHtml}</p>
@@ -483,17 +490,21 @@ module.exports = {
     // No form — results auto-show
     const formGrid = '';
 
-    const resultsSection = `  <div class="results-section auto-show" id="results">
-    <div class="results-header">${t.resultsHeader}</div>
-    <div class="age-display">
-      <span class="age-number">${heroText}</span>
-      <span class="age-suffix">${t.heroSuffix}</span>
+    const resultsSection = `  <div class="results-section auto-show np-results" id="results">
+    <div class="np-two-col">
+      <div class="np-age-col">
+        <div class="results-header">${t.resultsHeader}</div>
+        <div class="age-display">
+          <span class="age-number">${heroText}</span>
+          <span class="age-suffix">${t.heroSuffix}</span>
+        </div>
+        <p style="color:var(--muted);font-size:.9rem;margin:.5rem 0 1.5rem">${explainText}</p>
+        <a href="${t.exactHref}" class="calc-btn" style="display:inline-block;text-decoration:none">${t.exactCta}</a>
+      </div>
+      <div class="np-world-col">
+        ${worldBlock}
+      </div>
     </div>
-    <p style="text-align:center;color:var(--muted);font-size:.9rem;margin:.5rem 0 1.5rem">${explainText}</p>
-    <div style="text-align:center;margin-bottom:1rem">
-      <a href="${t.exactHref}" class="calc-btn" style="display:inline-block;text-decoration:none">${t.exactCta}</a>
-    </div>
-    ${worldBlock}
   </div>`;
 
     const faqHTML = faqs.map(f =>
