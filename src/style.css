@@ -1068,3 +1068,27 @@ footer {
   .fact-item { min-width: 120px; }
   .world-row { grid-template-columns: 1.4rem 3.5rem 1fr; font-size: .85rem; }
 }
+
+/* ── ARTICLE LAYOUT ─────────────────────────────────────── */
+.article-main { max-width: 740px; margin: 0 auto; padding: 0 1rem 3rem; }
+.article-intro { font-size: 1.1rem; color: #555; margin: .5rem 0 2rem; line-height: 1.6; }
+.article-main h2 { font-size: 1.4rem; margin: 2rem 0 .6rem; color: #1a1a1a; }
+.article-body { line-height: 1.75; color: #333; }
+.article-body p { margin: 0 0 1rem; }
+.article-body ol, .article-body ul { margin: 0 0 1rem 1.5rem; line-height: 1.75; }
+.article-table-wrap { overflow-x: auto; margin: 1rem 0 1.5rem; }
+.article-table-wrap table { border-collapse: collapse; width: 100%; font-size: .9rem; }
+.article-table-wrap th { background: #f5f0eb; padding: .5rem .8rem; text-align: left; border-bottom: 2px solid #ddd; }
+.article-table-wrap td { padding: .45rem .8rem; border-bottom: 1px solid #eee; }
+.article-faq { margin-top: 2.5rem; }
+.article-faq h2 { font-size: 1.3rem; margin-bottom: 1rem; }
+.article-faq details { border-bottom: 1px solid #eee; padding: .7rem 0; }
+.article-faq summary { cursor: pointer; font-weight: 600; font-size: 1rem; list-style: none; }
+.article-faq summary::-webkit-details-marker { display: none; }
+.article-faq details p { margin: .5rem 0 0; color: #444; line-height: 1.7; }
+.article-related { margin: 2rem 0 1rem; font-size: .9rem; color: #666; }
+.article-related a { color: #c8392b; text-decoration: none; }
+.article-related a:hover { text-decoration: underline; }
+.article-cta { margin: 2rem 0; }
+.cta-btn { display: inline-block; background: #c8392b; color: #fff; padding: .7rem 1.4rem; border-radius: 4px; text-decoration: none; font-weight: 600; font-size: 1rem; }
+.cta-btn:hover { background: #a93226; }

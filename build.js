@@ -23,6 +23,11 @@ const tools = [
   require('./src/tools/year-events'),
 ];
 
+// ── ARTICLE CLUSTERS ──────────────────────────────────────
+const articles = [
+  // clusters added in subsequent tasks
+];
+
 const LANGS = ['en', 'fr', 'es', 'pt', 'de', 'it', 'pl', 'ja', 'ko', 'nl'];
 const DIST = path.join(__dirname, 'dist');
 
@@ -724,6 +729,157 @@ ${script}
 </html>`;
 }
 
+// ── ARTICLE LAYOUT ────────────────────────────────────────
+function renderArticleLayout(data, lang) {
+  const { title, metaDesc, canonical, hreflang, kicker, h1, intro, sections, faqs, pillar, related } = data;
+
+  const faqSchema = faqs && faqs.length ? `
+<script type="application/ld+json">
+${JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map(f => ({
+    "@type": "Question",
+    "name": f.q,
+    "acceptedAnswer": { "@type": "Answer", "text": f.a }
+  }))
+}, null, 2)}
+</script>` : '';
+
+  const articleSchema = `
+<script type="application/ld+json">
+${JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": h1,
+  "description": metaDesc,
+  "url": `https://datecalc.app${canonical}`,
+  "publisher": { "@type": "Organization", "name": "DateCalc.app", "url": "https://datecalc.app" }
+}, null, 2)}
+</script>`;
+
+  const orgSchema = `
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"DateCalc.app","url":"https://datecalc.app","logo":"https://datecalc.app/og.png","contactPoint":{"@type":"ContactPoint","email":"hello@datecalc.app","contactType":"customer support"}}
+</script>`;
+
+  const langBtns = LANGS.map(l => {
+    const href = hreflang[l];
+    const active = l === lang ? ' active' : '';
+    return `  <a href="${href}" class="lang-btn${active}">${l.toUpperCase()}</a>`;
+  }).join('\n');
+
+  const navLinks = NAV[lang].map(group => {
+    const links = group.items.map((item, i) => {
+      const active = item.href === canonical ? ' aria-current="page"' : '';
+      const sep = i < group.items.length - 1 ? '<span class="nav-sep">·</span>' : '';
+      return `<a href="${item.href}"${active}>${item.label}</a>${sep}`;
+    }).join('');
+    return `    <div class="nav-group"><span class="nav-cat">${group.cat}</span><div class="nav-links">${links}</div></div>`;
+  }).join('\n');
+
+  const footerCols = NAV[lang].map(group => {
+    const fLinks = group.items.map(item => `<a href="${item.href}">${item.label}</a>`).join('\n');
+    return `<div class="footer-col"><strong>${group.cat}</strong>\n${fLinks}</div>`;
+  }).join('\n');
+
+  const sectionsHTML = (sections || []).map(s => {
+    const tableBlock = s.table ? `<div class="article-table-wrap">${s.table}</div>` : '';
+    return `<section><h2>${s.h2}</h2><div class="article-body">${s.body}</div>${tableBlock}</section>`;
+  }).join('\n');
+
+  const faqHTML = faqs && faqs.length ? `<section class="article-faq"><h2>FAQ</h2>${faqs.map(f => `<details><summary>${f.q}</summary><p>${f.a}</p></details>`).join('')}</section>` : '';
+
+  const relatedHTML = related && related.length ? `<div class="article-related"><strong>Related:</strong> ${related.map(r => `<a href="${r.href}">${r.label}</a>`).join(' · ')}</div>` : '';
+
+  const pillarCTA = pillar ? `<div class="article-cta"><a href="${pillar.href}" class="cta-btn">${pillar.label} →</a></div>` : '';
+
+  return `<!DOCTYPE html>
+<html lang="${lang}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>${title}</title>
+<meta name="robots" content="index, follow">
+<meta name="description" content="${metaDesc}">
+<link rel="canonical" href="https://datecalc.app${canonical}">
+<link rel="alternate" hreflang="en" href="https://datecalc.app${hreflang.en}">
+<link rel="alternate" hreflang="fr" href="https://datecalc.app${hreflang.fr}">
+<link rel="alternate" hreflang="es" href="https://datecalc.app${hreflang.es}">
+<link rel="alternate" hreflang="pt" href="https://datecalc.app${hreflang.pt}">
+<link rel="alternate" hreflang="de" href="https://datecalc.app${hreflang.de}">
+<link rel="alternate" hreflang="it" href="https://datecalc.app${hreflang.it}">
+<link rel="alternate" hreflang="pl" href="https://datecalc.app${hreflang.pl}">
+<link rel="alternate" hreflang="ja" href="https://datecalc.app${hreflang.ja}">
+<link rel="alternate" hreflang="ko" href="https://datecalc.app${hreflang.ko}">
+<link rel="alternate" hreflang="nl" href="https://datecalc.app${hreflang.nl}">
+<link rel="alternate" hreflang="x-default" href="https://datecalc.app${hreflang.en}">
+<meta property="og:type" content="article">
+<meta property="og:title" content="${title}">
+<meta property="og:description" content="${metaDesc}">
+<meta property="og:url" content="https://datecalc.app${canonical}">
+<meta property="og:site_name" content="DateCalc.app">
+<meta property="og:image" content="https://datecalc.app/og.png">
+<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/playfair-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/style.css">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="shortcut icon" href="/favicon.svg">
+${faqSchema}${articleSchema}${orgSchema}
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header>
+<div class="masthead">
+  <a href="${HOME_HREF[lang]}" class="masthead-brand">DateCalc<span>.</span>app</a>
+  <div class="masthead-meta" id="todayMeta"></div>
+</div>
+</header>
+<div class="lang-strip">
+${langBtns}
+</div>
+<div class="page">
+<div class="headline-block">
+  <p class="kicker">${kicker}</p>
+  <h1>${h1}</h1>
+  <p class="article-intro">${intro}</p>
+</div>
+<nav aria-label="Tools">
+<div class="tool-nav">
+${navLinks}
+</div>
+</nav>
+<main id="main-content" class="article-main">
+${sectionsHTML}
+${faqHTML}
+${relatedHTML}
+${pillarCTA}
+</main>
+<footer>
+<nav class="footer-nav" aria-label="Site links">
+${footerCols}
+</nav>
+<div class="footer-copy">© ${BUILD_YEAR} DateCalc.app — ${FOOTER[lang]} · <a href="${ABOUT_HREF[lang]}">${ABOUT_LBL[lang]}</a> · <a href="${PRIVACY_HREF[lang]}">${PRIVACY_LBL[lang]}</a></div>
+</footer>
+</div>
+<script>
+(function(){
+  var now = new Date();
+  var opts = {weekday:'long',year:'numeric',month:'long',day:'numeric'};
+  document.getElementById('todayMeta').innerHTML =
+    now.toLocaleDateString('${DATE_LOCALE[lang]}', opts) + '<br>${MASTHEAD_LABEL[lang]}';
+})();
+</script>
+<div id="consent-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#111111;color:#fff;padding:.9rem 1.4rem;z-index:9999;font-size:.82rem;font-family:sans-serif;align-items:center;gap:.8rem;flex-wrap:wrap">
+  <span style="flex:1;min-width:200px">${CONSENT[lang].text}</span>
+  <button id="consent-accept" style="background:#c8392b;color:#fff;border:none;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">${CONSENT[lang].accept}</button>
+  <button id="consent-decline" style="background:transparent;color:#aaa;border:1px solid #555;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">${CONSENT[lang].decline}</button>
+</div>
+</body>
+</html>`;
+}
+
 // ── HELPERS ───────────────────────────────────────────────
 function ensureDir(p) { fs.mkdirSync(p, { recursive: true }); }
 
@@ -809,6 +965,36 @@ for (const tool of tools) {
 }
 
 console.log(`\nBuilt ${count} pages → dist/`);
+
+// ── ARTICLE BUILD ─────────────────────────────────────────
+let articleCount = 0;
+const ARTICLE_LANGS = ['en', 'fr', 'es'];
+for (const cluster of articles) {
+  for (const page of cluster.pages) {
+    for (const lang of ARTICLE_LANGS) {
+      const slug = page.slugs[lang];
+      const canonical = `/${slug}/`;
+      const data = cluster.render(page.id, lang);
+      data.canonical = canonical;
+      data.hreflang = {
+        en: `/${page.slugs.en}/`,
+        fr: `/${page.slugs.fr}/`,
+        es: `/${page.slugs.es}/`,
+        pt: `/${page.slugs.en}/`,
+        de: `/${page.slugs.en}/`,
+        it: `/${page.slugs.en}/`,
+        pl: `/${page.slugs.en}/`,
+        ja: `/${page.slugs.en}/`,
+        ko: `/${page.slugs.en}/`,
+        nl: `/${page.slugs.en}/`,
+      };
+      const html = renderArticleLayout(data, lang);
+      writePage(`${slug}/index.html`, html);
+      articleCount++;
+    }
+  }
+}
+if (articleCount > 0) console.log(`Built ${articleCount} article pages → dist/`);
 
 // ── REDIRECTS ─────────────────────────────────────────────
 const REDIRECTS = [
