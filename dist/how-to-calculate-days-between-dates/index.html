@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Calculate the Number of Days Between Two Dates</title>
+<meta name="robots" content="index, follow">
+<meta name="description" content="Step-by-step guide to calculating the number of days between two dates. Includes formula, worked examples, and how to handle leap years.">
+<link rel="canonical" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<link rel="alternate" hreflang="en" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/comment-calculer-jours-entre-deux-dates/">
+<link rel="alternate" hreflang="es" href="https://datecalc.app/es/como-calcular-dias-entre-dos-fechas/">
+<link rel="alternate" hreflang="pt" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<link rel="alternate" hreflang="de" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<link rel="alternate" hreflang="it" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<link rel="alternate" hreflang="pl" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<link rel="alternate" hreflang="ja" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<link rel="alternate" hreflang="ko" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<link rel="alternate" hreflang="nl" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<link rel="alternate" hreflang="x-default" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Calculate the Number of Days Between Two Dates">
+<meta property="og:description" content="Step-by-step guide to calculating the number of days between two dates. Includes formula, worked examples, and how to handle leap years.">
+<meta property="og:url" content="https://datecalc.app/how-to-calculate-days-between-dates/">
+<meta property="og:site_name" content="DateCalc.app">
+<meta property="og:image" content="https://datecalc.app/og.png">
+<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/playfair-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/style.css">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="shortcut icon" href="/favicon.svg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How many days are between January 1 and December 31?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "364 days separate January 1 and December 31 (not counting the first day). The full year from January 1 to January 1 of the next year is 365 days (or 366 in a leap year)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I calculate the number of days between two dates in Excel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In Excel, subtract the two date cells directly: =B1-A1. Format the result cell as a number (not a date). Excel stores dates as numbers, so subtraction gives the exact number of days."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the calculation include both the start and end date?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on the convention. Most calculators count the gap between dates (not including either endpoint), so January 1 to January 5 = 4 days. If you need to include both days (e.g., for a rental period), add 1 to the result."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many days between two dates that span a leap year?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If the date range includes February 29 of a leap year, add 1 extra day compared to a non-leap-year calculation. For example, January 1, 2024 to January 1, 2025 = 366 days (2024 is a leap year)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the fastest way to calculate days between dates?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use an online date calculator (like the one on this site). Enter the two dates and the calculator instantly returns the number of days, weeks, months, and years between them."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How to Calculate the Number of Days Between Two Dates",
+  "description": "Step-by-step guide to calculating the number of days between two dates. Includes formula, worked examples, and how to handle leap years.",
+  "url": "https://datecalc.app/how-to-calculate-days-between-dates/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "DateCalc.app",
+    "url": "https://datecalc.app"
+  }
+}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"DateCalc.app","url":"https://datecalc.app","logo":"https://datecalc.app/og.png","contactPoint":{"@type":"ContactPoint","email":"hello@datecalc.app","contactType":"customer support"}}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header>
+<div class="masthead">
+  <a href="/" class="masthead-brand">DateCalc<span>.</span>app</a>
+  <div class="masthead-meta" id="todayMeta"></div>
+</div>
+</header>
+<div class="lang-strip">
+  <a href="/how-to-calculate-days-between-dates/" class="lang-btn active">EN</a>
+  <a href="/fr/comment-calculer-jours-entre-deux-dates/" class="lang-btn">FR</a>
+  <a href="/es/como-calcular-dias-entre-dos-fechas/" class="lang-btn">ES</a>
+  <a href="/how-to-calculate-days-between-dates/" class="lang-btn">PT</a>
+  <a href="/how-to-calculate-days-between-dates/" class="lang-btn">DE</a>
+  <a href="/how-to-calculate-days-between-dates/" class="lang-btn">IT</a>
+  <a href="/how-to-calculate-days-between-dates/" class="lang-btn">PL</a>
+  <a href="/how-to-calculate-days-between-dates/" class="lang-btn">JA</a>
+  <a href="/how-to-calculate-days-between-dates/" class="lang-btn">KO</a>
+  <a href="/how-to-calculate-days-between-dates/" class="lang-btn">NL</a>
+</div>
+<div class="page">
+<div class="headline-block">
+  <p class="kicker">DATE CALCULATION GUIDE</p>
+  <h1>How to Calculate the Number of Days Between Two Dates</h1>
+  <p class="article-intro">To calculate the number of days between two dates, subtract the earlier date from the later date. There are several methods to do this accurately, depending on whether you are calculating by hand, using a spreadsheet, or using a formula.</p>
+</div>
+<nav aria-label="Tools">
+<div class="tool-nav">
+    <div class="nav-group"><span class="nav-cat">Age</span><div class="nav-links"><a href="/age-calculator/">Age Calculator</a><span class="nav-sep">·</span><a href="/chronological-age-calculator/">Chronological Age</a><span class="nav-sep">·</span><a href="/baby-age-calculator/">Baby Age</a><span class="nav-sep">·</span><a href="/dog-age-calculator/">Dog Age</a><span class="nav-sep">·</span><a href="/cat-age-calculator/">Cat Age</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Dates</span><div class="nav-links"><a href="/days-between-dates/">Days Between Dates</a><span class="nav-sep">·</span><a href="/date-calculator/">Date Calculator</a><span class="nav-sep">·</span><a href="/what-day-is-it-today/">What Day Is It</a><span class="nav-sep">·</span><a href="/week-number/">Week Number</a><span class="nav-sep">·</span><a href="/business-days-calculator/">Business Days</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Countdowns</span><div class="nav-links"><a href="/days-until-christmas/">Christmas</a><span class="nav-sep">·</span><a href="/days-until-new-year/">New Year</a><span class="nav-sep">·</span><a href="/days-until-halloween/">Halloween</a><span class="nav-sep">·</span><a href="/days-until-easter/">Easter</a><span class="nav-sep">·</span><a href="/countdown-timer/">Countdown Timer</a></div></div>
+    <div class="nav-group"><span class="nav-cat">World</span><div class="nav-links"><a href="/time-zone-converter/">Time Zone Converter</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Born In</span><div class="nav-links"><a href="/born-in-1990/">Born in 1990</a><span class="nav-sep">·</span><a href="/born-in-1980/">Born in 1980</a><span class="nav-sep">·</span><a href="/born-in-2000/">Born in 2000</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Year in Review</span><div class="nav-links"><a href="/what-happened-in-2000/">What Happened in 2000</a><span class="nav-sep">·</span><a href="/what-happened-in-1990/">What Happened in 1990</a><span class="nav-sep">·</span><a href="/what-happened-in-1980/">What Happened in 1980</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Calendars</span><div class="nav-links"><a href="/week-number/2025/">Week Numbers 2025</a><span class="nav-sep">·</span><a href="/week-number/2026/">Week Numbers 2026</a><span class="nav-sep">·</span><a href="/week-number/2027/">Week Numbers 2027</a></div></div>
+</div>
+</nav>
+<main id="main-content" class="article-main">
+<section><h2>Method 1: Count calendar days directly</h2><div class="article-body"><p>The simplest approach: start from the earlier date and count forward to the later date, one day at a time. This is practical for short ranges (a few weeks) but impractical for longer ones.</p>
+<p><strong>Example:</strong> How many days from April 1 to April 15?<br>
+April 1 → April 15 = <strong>14 days</strong>.</p></div></section>
+<section><h2>Method 2: Subtract day-of-year numbers</h2><div class="article-body"><p>Each day of the year has a number from 1 (January 1) to 365 (December 31). To find days between two dates in the same year, subtract the day numbers.</p>
+<p><strong>Example:</strong> How many days from March 10 to November 20, 2025?</p>
+<ol>
+<li>March 10 = day 69 of the year</li>
+<li>November 20 = day 324 of the year</li>
+<li>324 − 69 = <strong>255 days</strong></li>
+</ol></div><div class="article-table-wrap"><table>
+<tr><th>Month</th><th>Day of year (first day)</th><th>Days in month</th></tr>
+<tr><td>January</td><td>1</td><td>31</td></tr>
+<tr><td>February</td><td>32</td><td>28 (or 29 in a leap year)</td></tr>
+<tr><td>March</td><td>60 (61 in leap year)</td><td>31</td></tr>
+<tr><td>April</td><td>91 (92)</td><td>30</td></tr>
+<tr><td>May</td><td>121 (122)</td><td>31</td></tr>
+<tr><td>June</td><td>152 (153)</td><td>30</td></tr>
+<tr><td>July</td><td>182 (183)</td><td>31</td></tr>
+<tr><td>August</td><td>213 (214)</td><td>31</td></tr>
+<tr><td>September</td><td>244 (245)</td><td>30</td></tr>
+<tr><td>October</td><td>274 (275)</td><td>31</td></tr>
+<tr><td>November</td><td>305 (306)</td><td>30</td></tr>
+<tr><td>December</td><td>335 (336)</td><td>31</td></tr>
+</table></div></section>
+<section><h2>Method 3: Count across years</h2><div class="article-body"><p>When dates span multiple years, add up the remaining days in the first year, the full days in complete middle years, and the days elapsed in the final year.</p>
+<p><strong>Example:</strong> Days from June 15, 2020 to March 10, 2024:</p>
+<ol>
+<li>June 15 to Dec 31, 2020: 199 days remaining in 2020</li>
+<li>Full year 2021: 365 days</li>
+<li>Full year 2022: 365 days</li>
+<li>Full year 2023: 365 days</li>
+<li>Jan 1 to Mar 10, 2024: 70 days (2024 is a leap year)</li>
+<li>Total: 199 + 365 + 365 + 365 + 70 = <strong>1,364 days</strong></li>
+</ol></div></section>
+<section><h2>How leap years affect the calculation</h2><div class="article-body"><p>A leap year has 366 days instead of 365. When your date range includes February 29 of a leap year, add 1 extra day. Leap years occur every 4 years: 2020, 2024, 2028, 2032…</p>
+<p>If you are calculating by hand across multiple years, check whether each year in the range is a leap year and use 366 instead of 365 for those years.</p></div></section>
+<section class="article-faq"><h2>FAQ</h2><details><summary>How many days are between January 1 and December 31?</summary><p>364 days separate January 1 and December 31 (not counting the first day). The full year from January 1 to January 1 of the next year is 365 days (or 366 in a leap year).</p></details><details><summary>How do I calculate the number of days between two dates in Excel?</summary><p>In Excel, subtract the two date cells directly: =B1-A1. Format the result cell as a number (not a date). Excel stores dates as numbers, so subtraction gives the exact number of days.</p></details><details><summary>Does the calculation include both the start and end date?</summary><p>It depends on the convention. Most calculators count the gap between dates (not including either endpoint), so January 1 to January 5 = 4 days. If you need to include both days (e.g., for a rental period), add 1 to the result.</p></details><details><summary>How many days between two dates that span a leap year?</summary><p>If the date range includes February 29 of a leap year, add 1 extra day compared to a non-leap-year calculation. For example, January 1, 2024 to January 1, 2025 = 366 days (2024 is a leap year).</p></details><details><summary>What is the fastest way to calculate days between dates?</summary><p>Use an online date calculator (like the one on this site). Enter the two dates and the calculator instantly returns the number of days, weeks, months, and years between them.</p></details></section>
+<div class="article-related"><strong>Related:</strong> <a href="/how-many-days-in-each-month/">Days in each month</a> · <a href="/business-days-vs-calendar-days/">Business days vs calendar days</a> · <a href="/how-many-weeks-in-a-year/">Weeks in a year</a></div>
+<div class="article-cta"><a href="/days-between-dates/" class="cta-btn">Calculate days between dates — free tool →</a></div>
+</main>
+<footer>
+<nav class="footer-nav" aria-label="Site links">
+<div class="footer-col"><strong>Age</strong>
+<a href="/age-calculator/">Age Calculator</a>
+<a href="/chronological-age-calculator/">Chronological Age</a>
+<a href="/baby-age-calculator/">Baby Age</a>
+<a href="/dog-age-calculator/">Dog Age</a>
+<a href="/cat-age-calculator/">Cat Age</a></div>
+<div class="footer-col"><strong>Dates</strong>
+<a href="/days-between-dates/">Days Between Dates</a>
+<a href="/date-calculator/">Date Calculator</a>
+<a href="/what-day-is-it-today/">What Day Is It</a>
+<a href="/week-number/">Week Number</a>
+<a href="/business-days-calculator/">Business Days</a></div>
+<div class="footer-col"><strong>Countdowns</strong>
+<a href="/days-until-christmas/">Christmas</a>
+<a href="/days-until-new-year/">New Year</a>
+<a href="/days-until-halloween/">Halloween</a>
+<a href="/days-until-easter/">Easter</a>
+<a href="/countdown-timer/">Countdown Timer</a></div>
+<div class="footer-col"><strong>World</strong>
+<a href="/time-zone-converter/">Time Zone Converter</a></div>
+<div class="footer-col"><strong>Born In</strong>
+<a href="/born-in-1990/">Born in 1990</a>
+<a href="/born-in-1980/">Born in 1980</a>
+<a href="/born-in-2000/">Born in 2000</a></div>
+<div class="footer-col"><strong>Year in Review</strong>
+<a href="/what-happened-in-2000/">What Happened in 2000</a>
+<a href="/what-happened-in-1990/">What Happened in 1990</a>
+<a href="/what-happened-in-1980/">What Happened in 1980</a></div>
+<div class="footer-col"><strong>Calendars</strong>
+<a href="/week-number/2025/">Week Numbers 2025</a>
+<a href="/week-number/2026/">Week Numbers 2026</a>
+<a href="/week-number/2027/">Week Numbers 2027</a></div>
+</nav>
+<div class="footer-copy">© 2026 DateCalc.app — Free online date &amp; time calculators · <a href="/about/">About</a> · <a href="/privacy/">Privacy</a></div>
+</footer>
+</div>
+<script>
+(function(){
+  var now = new Date();
+  var opts = {weekday:'long',year:'numeric',month:'long',day:'numeric'};
+  document.getElementById('todayMeta').innerHTML =
+    now.toLocaleDateString('en-US', opts) + '<br>Free date calculator';
+})();
+</script>
+<div id="consent-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#111111;color:#fff;padding:.9rem 1.4rem;z-index:9999;font-size:.82rem;font-family:sans-serif;align-items:center;gap:.8rem;flex-wrap:wrap">
+  <span style="flex:1;min-width:200px">We use Google AdSense to fund this free service. Do you accept advertising cookies?</span>
+  <button id="consent-accept" style="background:#c8392b;color:#fff;border:none;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Accept</button>
+  <button id="consent-decline" style="background:transparent;color:#aaa;border:1px solid #555;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Continue without</button>
+</div>
+</body>
+</html>
