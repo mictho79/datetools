@@ -1,1 +1,970 @@
-{}
+{
+  "1905": {
+    "periods": {
+      "1": ["Het bloedbad op Bloedige Zondag ontketent de Russische Revolutie van 1905 (22 jan.)", "Japan verslaat Rusland in de Slag bij Mukden (maart)"],
+      "2": ["De Russische vloot wordt vernietigd in de Slag bij Tsushima (27 mei)", "Einstein publiceert de speciale relativiteitstheorie (juni)"],
+      "3": ["Het Verdrag van Portsmouth beëindigt de Russisch-Japanse Oorlog (5 sept.)", "Noorwegen verbreekt zijn unie met Zweden en wordt onafhankelijk (okt.)"]
+    },
+    "tech": "Albert Einstein publiceert de speciale relativiteitstheorie en E=mc²"
+  },
+  "1906": {
+    "periods": {
+      "1": ["De aardbeving en brand in San Francisco doden meer dan 3.000 mensen (18 apr.)", "De Conferentie van Algeciras lost de Marokkocrisis op (jan.–apr.)"],
+      "2": ["HMS Dreadnought te water gelaten, revolutioneert de marine (feb.)", "De Simplontunnel opent als langste spoortunnel ter wereld (juni)"],
+      "3": ["Roosevelt ondertekent de Amerikaanse wet op voedsel en geneesmiddelen (30 juni)", "De Dreyfus-affaire eindigt; Dreyfus volledig gerehabiliteerd (12 juli)"]
+    },
+    "tech": "Reginald Fessenden verzorgt op Kerstavond de eerste spraak-AM-radio-uitzending"
+  },
+  "1907": {
+    "periods": {
+      "1": ["Oklahoma wordt de 46e Amerikaanse staat (16 nov.)", "Groot-Brittannië, Frankrijk en Rusland vormen de Triple Entente (aug.)"],
+      "2": ["Baden-Powell organiseert het eerste padvinderskamp op Brownsea Island (aug.)", "De financiële paniek van 1907 treft de VS (okt.)"],
+      "3": ["Nieuw-Zeeland wordt het eerste autonome dominion (26 sept.)", "JP Morgan organiseert een bankredding om de paniek te beëindigen (nov.)"]
+    },
+    "tech": "De gebroeders Lumière introduceren de Autochrome, het eerste kleurenfotografieproces"
+  },
+  "1908": {
+    "periods": {
+      "1": ["De Toengoeskaexplosie verwoest 2.000 km² in Siberië (30 juni)", "De Jonge Turkenrevolutie hervormt het Ottomaanse Rijk (juli)"],
+      "2": ["Ford introduceert de Ford Model T (1 okt.)", "De Olympische Spelen in Londen eindigen; de VS winnen de meeste medailles (okt.)"],
+      "3": ["Bulgarije verklaart onafhankelijkheid van het Ottomaanse Rijk (5 okt.)", "Oostenrijk-Hongarije annexeert Bosnië-Herzegovina (6 okt.)"]
+    },
+    "tech": "Henry Ford introduceert de Model T en maakt de auto bereikbaar voor het grote publiek"
+  },
+  "1909": {
+    "periods": {
+      "1": ["Robert Peary beweert de Noordpool te hebben bereikt (6 apr.)", "William Howard Taft ingezworen als 27e Amerikaanse president (4 maart)"],
+      "2": ["Blériot voltooit de eerste vliegtuigoversteek van het Kanaal (25 juli)", "De NAACP opgericht ter verdediging van rechten van zwarte Amerikanen (12 feb.)"],
+      "3": ["De voorloper van de NFL opgericht (aug.)", "Sigmund Freud geeft lezingen in de VS (sept.)"]
+    },
+    "tech": "Louis Blériot voltooit de eerste vliegtuigoversteek van het Kanaal"
+  },
+  "1910": {
+    "periods": {
+      "1": ["De Mexicaanse Revolutie begint na de val van Díaz (20 nov.)", "De Zuid-Afrikaanse Unie wordt een Brits dominion (31 mei)"],
+      "2": ["De Boy Scouts of America officieel opgericht (8 feb.)", "Vaderdag voor het eerst gevierd in de VS (19 juni)"],
+      "3": ["Koning Edward VII overlijdt; George V bestijgt de troon (6 mei)", "Portugal wordt na de revolutie een republiek (5 okt.)"]
+    },
+    "tech": "De eerste neonlampen worden door Georges Claude in Parijs gedemonstreerd"
+  },
+  "1911": {
+    "periods": {
+      "1": ["De brand bij Triangle Shirtwaist doodt 146 werkneemsters (25 maart)", "Roald Amundsens team bereikt als eerste de Zuidpool (14 dec.)"],
+      "2": ["Italië valt Libië binnen in de Italiaans-Turkse Oorlog (29 sept.)", "De Mona Lisa wordt gestolen uit het Louvre in Parijs (21 aug.)"],
+      "3": ["De Chinese Revolutie omverwerpt de Qing-dynastie (10 okt.)", "Standard Oil wordt door het Hooggerechtshof van de VS ontmanteld (15 mei)"]
+    },
+    "tech": "Charles Kettering vindt de elektrische startmotor voor auto's uit"
+  },
+  "1912": {
+    "periods": {
+      "1": ["RMS Titanic zinkt op haar maidentrip; 1.517 doden (15 apr.)", "New Mexico en Arizona worden de 47e en 48e Amerikaanse staten (jan.–feb.)"],
+      "2": ["Woodrow Wilson wint de Democratische presidentsverkiezing (juli)", "De Olympische Spelen in Stockholm openen met 28 naties (5 mei)"],
+      "3": ["Woodrow Wilson verkozen als 28e president van de VS (5 nov.)", "De Eerste Balkanoorlog begint in oktober"]
+    },
+    "tech": "De tragedie van de Titanic leidt tot verplichte noodradioprotocoollen"
+  },
+  "1913": {
+    "periods": {
+      "1": ["Woodrow Wilson ingezworen als 28e president van de VS (4 maart)", "Het 16e Amendement voert de federale inkomstenbelasting in (3 feb.)"],
+      "2": ["Het 17e Amendement voorziet in directe verkiezing van senatoren (8 apr.)", "De Tweede Balkanoorlog begint (29 juni)"],
+      "3": ["Henry Ford introduceert de lopende band in oktober", "De Armory Show presenteert moderne kunst aan Amerikanen (feb.–maart)"]
+    },
+    "tech": "Henry Ford introduceert de lopende band en revolutioneert de industrie"
+  },
+  "1914": {
+    "periods": {
+      "1": ["Aartshertog Franz Ferdinand vermoord in Sarajevo (28 juni)", "Oostenrijk-Hongarije verklaart Servië de oorlog (28 juli)"],
+      "2": ["Duitsland verklaart Frankrijk de oorlog en marcheert België binnen (3 aug.)", "Groot-Brittannië verklaart Duitsland de oorlog (4 aug.)"],
+      "3": ["De Eerste Slag aan de Marne stopt de Duitse opmars (sept.)", "Kerstwapenstilstand: geallieerde en Duitse soldaten broederlijk bijeen (25 dec.)"]
+    },
+    "tech": "Het Panamakanaal wordt geopend en verbindt de Atlantische en Stille Oceaan"
+  },
+  "1915": {
+    "periods": {
+      "1": ["Een Duits U-boot zinkt de RMS Lusitania en doodt 1.198 mensen (7 mei)", "De geallieerde Gallipoli-campagne wordt gelanceerd tegen de Ottomanen (apr.)"],
+      "2": ["Italië treedt toe aan de zijde van de geallieerden in de Eerste Wereldoorlog (23 mei)", "Duitse zeppelins bombarderen Londen (mei)"],
+      "3": ["Bulgarije treedt toe aan de kant van Duitsland in WO I (14 okt.)", "Albert Einstein voltooit de algemene relativiteitstheorie (nov.)"]
+    },
+    "tech": "Albert Einstein voltooit zijn algemene relativiteitstheorie"
+  },
+  "1916": {
+    "periods": {
+      "1": ["De Slag bij Verdun begint — de bloedigste van WO I (21 feb.)", "De Paasopstand: Ierse republikeinen komen in opstand in Dublin (24 apr.)"],
+      "2": ["De Slag aan de Somme begint met 57.000 Britse verliezen (1 juli)", "Woodrow Wilson herkozen als Amerikaans president (7 nov.)"],
+      "3": ["De Slag bij Jutland: grootste zeeslag van WO I (31 mei)", "Tanks worden voor het eerst ingezet in gevecht (15 sept.)"]
+    },
+    "tech": "De militaire tank wordt ingezet in de Slag aan de Somme"
+  },
+  "1917": {
+    "periods": {
+      "1": ["De VS treden toe aan WO I na de onbeperkte duikbootoolog (6 apr.)", "De Februarirevolutie omverwerpt de tsaar in Rusland (maart)"],
+      "2": ["De Bolsjewistische Oktoberrevolutie grijpt de macht in Rusland (7 nov.)", "De Derde Slag bij Ieper (Passendale) begint (juli)"],
+      "3": ["De Balfour-Verklaring steunt een Joods thuisland in Palestina (2 nov.)", "De VS beginnen met de dienstplicht via de Selective Service Act (mei)"]
+    },
+    "tech": "Het eerste operationele sonarsysteem wordt ontwikkeld voor anti-duikbootoorlog"
+  },
+  "1918": {
+    "periods": {
+      "1": ["Duitsland lanceert het Lenteooffensief — laatste grote opmars (21 maart)", "Tsaar Nicolaas II en zijn familie geëxecuteerd door de Bolsjewieken (17 juli)"],
+      "2": ["Het Honderd Dagen Offensief van de geallieerden doorbreekt de Duitse linies (8 aug.)", "De Spaanse grieppandemie doodt tot 50 miljoen mensen (1918–19)"],
+      "3": ["Het wapenstilstand beëindigt de Eerste Wereldoorlog op 11 november om 11 uur", "Kaiser Wilhelm II doet troonsafstand; de republiek wordt uitgeroepen (9 nov.)"]
+    },
+    "tech": "Een reguliere luchtpostdienst wordt ingesteld in de Verenigde Staten"
+  },
+  "1919": {
+    "periods": {
+      "1": ["Het Verdrag van Versailles wordt ondertekend en beëindigt de Eerste Wereldoorlog (28 juni)", "De Parijse Vredesconferentie opent in Versailles (jan.)"],
+      "2": ["Alcock en Brown voltooien de eerste non-stop transatlantische vlucht (juni)", "Het Handvest van de Volkenbond wordt in Parijs aangenomen (apr.)"],
+      "3": ["De Amerikaanse Senaat verwerpt het Verdrag van Versailles en de Volkenbond (nov.)", "Het 18e Amendement dat drooglegging instelt wordt geratificeerd (16 jan.)"]
+    },
+    "tech": "John Alcock en Arthur Whitten Brown voltooien de eerste non-stop transatlantische vlucht"
+  },
+  "1920": {
+    "periods": {
+      "1": ["De Drooglegging begint in de VS (17 jan.)", "De Volkenbond houdt zijn eerste vergadering (10 jan.)"],
+      "2": ["Het 19e Amendement geeft vrouwen stemrecht (18 aug.)", "De Olympische Spelen in Antwerpen openen (20 apr.)"],
+      "3": ["Warren Harding wint de Amerikaanse presidentsverkiezing (2 nov.)", "De Wall Street-bomaanslag doodt 38 mensen in New York (16 sept.)"]
+    },
+    "tech": "Het eerste commerciële radiostation KDKA begint met reguliere uitzendingen in Pittsburgh"
+  },
+  "1921": {
+    "periods": {
+      "1": ["Warren Harding ingezworen als 29e president van de VS (4 maart)", "Het bloedbad van Tulsa verwoest de Black Wall Street-wijk (31 mei)"],
+      "2": ["De VS sluiten aparte vredesverdragen met Duitsland en Oostenrijk (aug.)", "Ierland wordt verdeeld; de Ierse Vrijstaat wordt opgericht (dec.)"],
+      "3": ["Insuline wordt voor het eerst gebruikt om een diabetespatiënt te behandelen (okt.)", "De Washingtondse Vlootconferentie voor wapenbeheersing opent (12 nov.)"]
+    },
+    "tech": "Frederick Banting en Charles Best ontdekken insuline als behandeling voor diabetes"
+  },
+  "1922": {
+    "periods": {
+      "1": ["Mussolini's fascisten marcheren op Rome en grijpen de macht (okt.)", "Howard Carter ontdekt het graf van Toetanchamon (4 nov.)"],
+      "2": ["De Sovjet-Unie wordt officieel opgericht (30 dec.)", "De Ierse Burgeroorlog begint na het verdrag (juni)"],
+      "3": ["De BBC begint met dagelijkse uitzendingen in Londen (14 nov.)", "Turkije schrapt het Ottomaanse sultanaat (1 nov.)"]
+    },
+    "tech": "De BBC begint met reguliere uitzendingen vanuit Londen"
+  },
+  "1923": {
+    "periods": {
+      "1": ["President Harding overlijdt; Calvin Coolidge wordt president (2 aug.)", "De Duitse hyperinflatie bereikt haar hoogtepunt (nov.)"],
+      "2": ["Hitlers putschpoging mislukt in München (8 nov.)", "Franse en Belgische troepen bezetten het Ruhrgebied (jan.)"],
+      "3": ["De Grote Kantō-aardbeving verwoest Tokio en Yokohama (1 sept.)", "Time Magazine verschijnt voor het eerst (3 maart)"]
+    },
+    "tech": "De Iconoscoop, een televisiecamerabuisje, wordt gepatenteerd door Vladimir Zworykin"
+  },
+  "1924": {
+    "periods": {
+      "1": ["Lenin overlijdt; Stalin begint zijn machtsopbouw in de USSR (21 jan.)", "J. Edgar Hoover wordt FBI-directeur (10 mei)"],
+      "2": ["De Olympische Spelen in Parijs openen met 44 naties (5 juli)", "Het Dawesplan helpt de Duitse economie te stabiliseren (aug.)"],
+      "3": ["Calvin Coolidge wint de presidentsverkiezing (4 nov.)", "Eerste non-stop Amerikaans transcontinentale vlucht (juni)"]
+    },
+    "tech": "Wetenschappers van Bell Labs demonstreren de draadloze overdracht van televisiebeelden"
+  },
+  "1925": {
+    "periods": {
+      "1": ["Het Scopes-proces over het onderwijzen van evolutie (juli)", "F. Scott Fitzgerald publiceert The Great Gatsby (10 apr.)"],
+      "2": ["Het Grote Serumrace: een hondenslede levert difterie-serum aan Nome (feb.)", "De Ku Klux Klan marcheert met 50.000 man in Washington (8 aug.)"],
+      "3": ["De Verdragen van Locarno stabiliseren de Europese naoorlogse grenzen (okt.)", "Hirohito wordt keizer van Japan (25 dec.)"]
+    },
+    "tech": "John Logie Baird demonstreert televisie voor het eerst publiekelijk"
+  },
+  "1926": {
+    "periods": {
+      "1": ["De algemene staking verlamdert Groot-Brittannië negen dagen lang (3–12 mei)", "Robert Goddard lanceert de eerste vloeibare brandstofraket (16 maart)"],
+      "2": ["Hirohito officieel ingehuldigd als keizer van Japan (25 nov.)", "Gertrude Ederle wordt de eerste vrouw die het Kanaal doorzwom (aug.)"],
+      "3": ["Ernest Hemingway publiceert The Sun Also Rises (okt.)", "Libanon wordt onder Frans mandaat een republiek uitgeroepen (23 mei)"]
+    },
+    "tech": "Robert Goddard lanceert de eerste vloeibare brandstofraket in Auburn, Massachusetts"
+  },
+  "1927": {
+    "periods": {
+      "1": ["Charles Lindbergh voltooit de eerste solo-oversteek van de Atlantische Oceaan (21 mei)", "The Jazz Singer, de eerste geluidsfilm, gaat in première (6 okt.)"],
+      "2": ["Sacco en Vanzetti geëxecuteerd ondanks wijdverbreide protesten (23 aug.)", "De Internationale Astronomische Unie wordt opgericht (juli)"],
+      "3": ["Chiang Kai-shek vestigt een nationalistische regering in China (apr.)", "De Mississippi-overstromingen verdrijven 700.000 Amerikanen (apr.)"]
+    },
+    "tech": "Charles Lindbergh voltooit de eerste non-stop solo-oversteek van de Atlantische Oceaan in de Spirit of St. Louis"
+  },
+  "1928": {
+    "periods": {
+      "1": ["Alexander Fleming ontdekt penicilline (28 sept.)", "Amelia Earhart wordt de eerste vrouw die de Atlantische Oceaan per vliegtuig oversteekt (juni)"],
+      "2": ["Herbert Hoover wint de Amerikaanse presidentsverkiezing (6 nov.)", "De Olympische Spelen in Amsterdam openen (17 mei)"],
+      "3": ["Stalin lanceert het eerste Vijfjarenplan in de USSR (okt.)", "Het Briand-Kellogg-pakt ter verbod van oorlog wordt ondertekend door 15 naties (27 aug.)"]
+    },
+    "tech": "Alexander Fleming ontdekt penicilline en luidt het tijdperk van antibiotica in"
+  },
+  "1929": {
+    "periods": {
+      "1": ["De beurskrach op Wall Street ontketent de Grote Depressie (24–29 okt.)", "Het Valentijnsdag-bloedbad: zeven gangsters doodgeschoten (14 feb.)"],
+      "2": ["Herbert Hoover ingezworen als 31e president van de VS (4 maart)", "Het Verdrag van Lateranen vestigt de Vaticaanstad als soevereine staat (feb.)"],
+      "3": ["De aandelenmarkt bereikt haar piek en crasht dan (sept.–okt.)", "Joegoslavië wordt onder koning Alexander een koninklijke dictatuur (jan.)"]
+    },
+    "tech": "De eerste film aan boord van een vliegtuig wordt vertoond op een vlucht van Transcontinental Air Transport"
+  },
+  "1930": {
+    "periods": {
+      "1": ["De Smoot-Hawley-tariefwet verergert de Grote Depressie (17 juni)", "Gandhi leidt de Zoutmars tegen de Britse heerschappij (12 maart)"],
+      "2": ["Clyde Tombaugh ontdekt Pluto aan het Lowell Observatory (18 feb.)", "Uruguay wint het eerste WK voetbal (30 juli)"],
+      "3": ["Haile Selassie wordt gekroond tot keizer van Ethiopië (2 nov.)", "Bankfaillissementen razen door de VS (dec.)"]
+    },
+    "tech": "Clyde Tombaugh ontdekt Pluto aan het Lowell Observatory in Arizona"
+  },
+  "1931": {
+    "periods": {
+      "1": ["Japan marcheert Mantsjoerije binnen en trotseert de Volkenbond (18 sept.)", "De werkloosheid in de VS bereikt 16% tijdens de Depressie (maart)"],
+      "2": ["Het Empire State Building opent als hoogste gebouw ter wereld (1 mei)", "Al Capone veroordeeld voor belastingontduiking (17 okt.)"],
+      "3": ["Spanje wordt een republiek na de vlucht van koning Alfonso XIII (14 apr.)", "The Star-Spangled Banner officieel aangenomen als Amerikaans volkslied (maart)"]
+    },
+    "tech": "Het Empire State Building opent als hoogste wolkenkrabber ter wereld (443 m)"
+  },
+  "1932": {
+    "periods": {
+      "1": ["Franklin D. Roosevelt wint de Amerikaanse presidentsverkiezing (8 nov.)", "Amelia Earhart voltooit de eerste solo-oversteek van de Atlantische Oceaan (20 mei)"],
+      "2": ["De baby van Lindbergh ontvoerd en vermoord (maart–mei)", "De Olympische Spelen in Los Angeles openen (30 juli)"],
+      "3": ["De Bonusmarsen worden door het Amerikaanse leger uit Washington verdreven (juli)", "De hongersnood in de Sovjet-Oekraïne doodt miljoenen (1932–33)"]
+    },
+    "tech": "Het neutron wordt ontdekt door James Chadwick in het Cavendish Laboratory"
+  },
+  "1933": {
+    "periods": {
+      "1": ["Hitler benoemd tot Rijkskanselier (30 jan.)", "Roosevelt treedt aan; roept bankfeestdag uit om bankfaillissementen te stoppen (4 maart)"],
+      "2": ["De Rijksdagbrand stelt Hitler in staat noodmaatregelen te nemen (27 feb.)", "New Deal-programma's lanceren hulpmaatregelen in de VS (juni)"],
+      "3": ["De Drooglegging wordt beëindigd door het 21e Amendement (5 dec.)", "Duitsland trekt zich terug uit de Volkenbond (14 okt.)"]
+    },
+    "tech": "Edwin Armstrong vindt FM-radio uit en verbetert de uitzendkwaliteit aanzienlijk"
+  },
+  "1934": {
+    "periods": {
+      "1": ["Hitler wordt alleenheerser na de dood van Hindenburg (2 aug.)", "Stofstormen verwoesten boerderijen op de Great Plains (apr.)"],
+      "2": ["Mao Zedong begint de Lange Mars met communistische troepen (okt.)", "Bonnie en Clyde worden door politie doodgeschoten in Louisiana (23 mei)"],
+      "3": ["De Nacht van de Lange Messen: Hitler zuivert zijn rivalen (30 juni)", "De Dionne-vijfling geboren in Canada — eerste overlevenden (28 mei)"]
+    },
+    "tech": "Wallace Carothers vindt nylon uit, de eerste volledig synthetische vezel"
+  },
+  "1935": {
+    "periods": {
+      "1": ["Italië valt Ethiopië binnen; de Volkenbond slaagt er niet in dit in te dammen (okt.)", "De Social Security Act ondertekend door president Roosevelt (14 aug.)"],
+      "2": ["Duitsland herinvoert de dienstplicht (16 maart)", "De Neurenbergwetten ontnemen Duitse Joden hun burgerschap (15 sept.)"],
+      "3": ["Huey Long neergeschoten in het Louisiana State Capitol (8 sept.)", "Het eerste radarsysteem gedemonstreerd in Groot-Brittannië (26 feb.)"]
+    },
+    "tech": "Robert Watson-Watt demonstreert het eerste praktische radarsysteem"
+  },
+  "1936": {
+    "periods": {
+      "1": ["De Spaanse Burgeroorlog begint na Francos coup (17 juli)", "Jesse Owens wint vier gouden medailles op de Berlijnse Olympische Spelen (aug.)"],
+      "2": ["Hitler remilitariseert het Rijnland (7 maart)", "De Olympische Spelen in Berlijn openen (1 aug.)"],
+      "3": ["FDR herkozen in een aardverschuivingsoverwinning voor zijn tweede termijn (3 nov.)", "Eduard VIII doet troonsafstand om Wallis Simpson te huwen (11 dec.)"]
+    },
+    "tech": "Alan Turing publiceert zijn essay over de theoretische rekenmachine"
+  },
+  "1937": {
+    "periods": {
+      "1": ["Het luchtschip Hindenburg explodeert in Lakehurst, New Jersey (6 mei)", "Japan lanceert een grootschalige invasie van China (7 juli)"],
+      "2": ["Amelia Earhart verdwijnt boven de Stille Oceaan (2 juli)", "De Golden Gate Bridge wordt ingehuldigd in San Francisco (27 mei)"],
+      "3": ["Het Bloedbad van Nanjing: Japanse troepen doden 200.000 Chinezen (dec.)", "FDR's plan voor hervorming van het Hooggerechtshof mislukt in de Senaat (juli)"]
+    },
+    "tech": "Het eerste straalvliegtuigmotor wordt door Frank Whittle in Engeland succesvol getest"
+  },
+  "1938": {
+    "periods": {
+      "1": ["Duitsland annexeert Oostenrijk bij de Anschluss (13 maart)", "Kristallnacht: pogrom tegen Joden in Duitsland (9 nov.)"],
+      "2": ["Het Verdrag van München: de geallieerden geven toe aan Hitlers eisen (30 sept.)", "Orson Welles' hoorspel War of the Worlds veroorzaakt paniek in de VS (30 okt.)"],
+      "3": ["Duitsland bezet het Sudetenland met Brits-Franse instemming (okt.)", "Howard Hughes omzweeft de wereld in recordtijd van 91 uur (juli)"]
+    },
+    "tech": "Otto Hahn en Fritz Strassmann voeren de eerste kernsplijting van uranium uit"
+  },
+  "1939": {
+    "periods": {
+      "1": ["Duitsland marcheert Polen binnen; de Tweede Wereldoorlog begint (1 sept.)", "Groot-Brittannië en Frankrijk verklaren Duitsland de oorlog (3 sept.)"],
+      "2": ["De USSR valt Finland binnen (Winteroorlog) (30 nov.)", "Duitsland en de USSR ondertekenen het Molotov-Ribbentroppact (23 aug.)"],
+      "3": ["De Spaanse Burgeroorlog eindigt met Francos overwinning (1 apr.)", "FDR ondertekent de Neutraliteitswet en houdt de VS buiten de oorlog (4 nov.)"]
+    },
+    "tech": "Igor Sikorsky vliegt de eerste praktische helikopter, de VS-300"
+  },
+  "1940": {
+    "periods": {
+      "1": ["Duitsland marcheert Denemarken en Noorwegen binnen (9 apr.)", "Finland sluit een vredesverdrag met de USSR (13 maart)"],
+      "2": ["Duitsland marcheert Frankrijk, België en Nederland binnen (10 mei)", "De evacuatie van Duinkerken redt 338.000 soldaten (mei–juni)"],
+      "3": ["De Slag om Engeland begint (aug.)", "Japan, Duitsland en Italië ondertekenen het Driemagtenverbond (sept.)"]
+    },
+    "tech": "De eerste elektronenmicroscoop wordt in de VS gepresenteerd"
+  },
+  "1941": {
+    "periods": {
+      "1": ["Duitsland valt de Sovjet-Unie binnen: Operatie Barbarossa (22 juni)", "Het Atlantisch Handvest ondertekend door Roosevelt en Churchill (14 aug.)"],
+      "2": ["Japan valt Pearl Harbor aan; de VS treden toe aan de Tweede Wereldoorlog (7 dec.)", "Duitsland verklaart de VS de oorlog (11 dec.)"],
+      "3": ["Het Beleg van Leningrad begint; het duurt 872 dagen (8 sept.)", "De Leen- en Pachtwet stuurt Amerikaanse hulp naar Groot-Brittannië en de geallieerden (11 maart)"]
+    },
+    "tech": "De eerste programmeerbare elektronische computer Colossus wordt ontwikkeld in Bletchley Park"
+  },
+  "1942": {
+    "periods": {
+      "1": ["De Slag bij Midway: beslissende Amerikaanse zegeoverwinning (4–7 juni)", "Japans-Amerikaanse burgers geïnterneerd door Uitvoerend Besluit 9066 (feb.)"],
+      "2": ["De Tweede Slag bij El Alamein: de geallieerden verslaan Rommel in Noord-Afrika (okt.)", "De Slag om Stalingrad begint; keerpunt aan het oostfront (aug.)"],
+      "3": ["De geallieerden landen in Noord-Afrika: Operatie Toorts (8 nov.)", "Het Manhattanproject officieel gestart om de atoombom te ontwikkelen (13 aug.)"]
+    },
+    "tech": "Enrico Fermi realiseert de eerste zelfonderhoudende kernkettenreactie in Chicago"
+  },
+  "1943": {
+    "periods": {
+      "1": ["Het 6e Leger capituleert bij Stalingrad (2 feb.)", "De geallieerden landen op Sicilië; Mussolini ten val gebracht (juli)"],
+      "2": ["De Conferentie van Teheran: Roosevelt, Churchill en Stalin ontmoeten elkaar (nov.–dec.)", "Italië capituleert voor de geallieerden (8 sept.)"],
+      "3": ["De Opstand in het Warschause Getto: Joods verzet tegen de nazi's (apr.)", "De Slag bij Koersk — grootste pantserggevecht uit de geschiedenis (juli)"]
+    },
+    "tech": "Colossus, de eerste programmeerbare elektronische computer, wordt voltooid in Bletchley Park"
+  },
+  "1944": {
+    "periods": {
+      "1": ["D-Day: geallieerde invasie van Normandië (6 juni)", "Rome bevrijd door geallieerde troepen (4 juni)"],
+      "2": ["Parijs bevrijd door de geallieerden en Vrije Franse troepen (25 aug.)", "De Slag in de Filipijnse Zee: de VS verslaan de Japanse marine (juni)"],
+      "3": ["De Ardennenoffensief: laatste grote Duitse offensief (16 dec.)", "Het Bretton Woods-monetaire stelsel wordt ingesteld (1 juli)"]
+    },
+    "tech": "De eerste operationele ballistische raket, de V-2, wordt ingezet in de strijd"
+  },
+  "1945": {
+    "periods": {
+      "1": ["Duitsland capituleert; V-E-dag wordt gevierd in Europa (8 mei)", "President Roosevelt overlijdt; Truman wordt president (12 apr.)"],
+      "2": ["De VS gooien atoombommen op Hiroshima en Nagasaki (6 en 9 aug.)", "Japan capituleert; de Tweede Wereldoorlog eindigt (15 aug.)"],
+      "3": ["Het VN-Handvest wordt ondertekend in San Francisco (26 juni)", "De Neurenbergse oorlogsmisdaadprocessen beginnen (20 nov.)"]
+    },
+    "tech": "De eerste atoombom wordt tot ontploffing gebracht op de Trinity-testlocatie in New Mexico"
+  },
+  "1946": {
+    "periods": {
+      "1": ["Winston Churchill houdt zijn IJzeren Gordijn-toespraak (5 maart)", "De Volkenbond wordt officieel ontbonden (18 apr.)"],
+      "2": ["Eerste vergadering van de VN-Algemene Vergadering in Londen (10 jan.)", "Atoomtests op het Bikini-atol worden uitgevoerd door de VS (juli)"],
+      "3": ["De Neurenbergse processen eindigen met 12 doodvonnissen (okt.)", "Eerste vergadering van de VN-Veiligheidsraad (17 jan.)"]
+    },
+    "tech": "De ENIAC, de eerste elektronische computers voor algemeen gebruik, wordt gepresenteerd in Penn"
+  },
+  "1947": {
+    "periods": {
+      "1": ["India en Pakistan verkrijgen onafhankelijkheid van Groot-Brittannië (15 aug.)", "De Trumandoctrine verbindt de VS tegen het communisme (12 maart)"],
+      "2": ["Het Marshallplan voorgesteld voor de wederopbouw van het oorlogsverwoeste Europa (5 juni)", "De Dode Zeerollen ontdekt in grotten nabij Qumran (feb.)"],
+      "3": ["Chuck Yeager doorbreekt de geluidsbarrière in de Bell X-1 (14 okt.)", "De VN stemt voor de verdeling van Palestina in Arabische en Joodse staten (29 nov.)"]
+    },
+    "tech": "Chuck Yeager doorbreekt als eerste de geluidsbarrière in de Bell X-1"
+  },
+  "1948": {
+    "periods": {
+      "1": ["Israël verklaart de onafhankelijkheid; de Arabisch-Israëlische Oorlog begint (14 mei)", "Mahatma Gandhi vermoord in New Delhi (30 jan.)"],
+      "2": ["De Berlijnse Blokkade begint; de Amerikaanse luchtbrug bevoorraadt West-Berlijn (24 juni)", "Een communistische coup neemt de macht over in Tsjecho-Slowakije (feb.)"],
+      "3": ["Truman wint verrassend de presidentsverkiezing (2 nov.)", "De Universele Verklaring van de Rechten van de Mens aangenomen (10 dec.)"]
+    },
+    "tech": "Wetenschappers van Bell Labs vinden de transistor uit en transformeren de elektronica"
+  },
+  "1949": {
+    "periods": {
+      "1": ["De NAVO opgericht door 12 westerse naties (4 apr.)", "De Volksrepubliek China afgekondigd door Mao Zedong (1 okt.)"],
+      "2": ["De Sovjet-Unie test haar eerste atoombom (29 aug.)", "De Berlijnse Blokkade opgeheven na 11 maanden (12 mei)"],
+      "3": ["West-Duitsland (BRD) opgericht als onafhankelijke staat (23 mei)", "Orwell publiceert 1984 (8 juni)"]
+    },
+    "tech": "De Sovjet-Unie doet haar eerste atoombomproef en luidt de nucleaire wapenwedloop in"
+  },
+  "1950": {
+    "periods": {
+      "1": ["Noord-Korea valt Zuid-Korea binnen op 25 juni — begin van de oorlog", "De VN-Veiligheidsraad keurt het gebruik van geweld in Korea goed"],
+      "2": ["Amerikaanse troepen landen in een gewaagde amfibische aanval bij Inchon", "Noord-Koreaanse troepen dringen VN-troepen terug naar het Pusan-perimeter"],
+      "3": ["China treedt toe aan de Koreaanse Oorlog met 300.000 soldaten", "VN-troepen trekken zich terug voor het Chinese offensief"]
+    },
+    "tech": "De UNIVAC I, eerste commerciële computer in de VS, geleverd aan het Census Bureau"
+  },
+  "1951": {
+    "periods": {
+      "1": ["Generaal MacArthur ontslagen door Truman wegens ongehoorzaamheid", "Wapenstilstandsonderhandelingen in de Koreaanse Oorlog beginnen in Kaesong in juli"],
+      "2": ["Eerste Amerikaans atoomtest in Nevada (jan.–apr.)", "Julius en Ethel Rosenberg ter dood veroordeeld voor spionage"],
+      "3": ["Vredesverdrag met Japan ondertekend in San Francisco (8 sept.)", "Kleurentelevisie maakt zijn debuut in de VS"]
+    },
+    "tech": "De UNIVAC I voorspelt de verkiezingen van 1952 en demonstreert de kracht van computers"
+  },
+  "1952": {
+    "periods": {
+      "1": ["Groot-Brittannië test zijn eerste atoombom op de Monte Bello-eilanden in Australië", "Eisenhower wint de New Hampshire-voorverkiezingen als write-in kandidaat"],
+      "2": ["Eisenhower wint de Republikeinse presidentiële nominatie", "De Olympische Spelen in Helsinki openen met 69 naties"],
+      "3": ["Eisenhower gekozen als 34e president van de VS in een aardverschuivingsoverwinning", "De Grote Smog van Londen doodt in december duizenden"]
+    },
+    "tech": "De VS doen de eerste waterstofbomproef"
+  },
+  "1953": {
+    "periods": {
+      "1": ["Stalin overlijdt op 5 maart; Chroesjtsjov begint zijn machtsconsolidatie", "Eisenhower treedt aan als 34e president van de VS in januari"],
+      "2": ["Edmund Hillary en Tenzing Norgay bereiken de top van de Everest (29 mei)", "Watson en Crick publiceren hun artikel over de DNA-dubbele helix (25 apr.)"],
+      "3": ["Het Koreaanse wapenstilstandsakkoord wordt ondertekend op 27 juli", "De Sovjet-Unie test de waterstofbom in augustus"]
+    },
+    "tech": "Watson en Crick ontdekken de dubbelhelixstructuur van DNA"
+  },
+  "1954": {
+    "periods": {
+      "1": ["De Army-McCarthy-hoorzittingen beginnen en stellen senator McCarthy bloot", "De VS doen de Castle Bravo waterstofbomproef (1 maart)"],
+      "2": ["Het Hooggerechtshof verklaart rassenscheiding in scholen ongrondwettig (17 mei)", "De eerste kerncentrale geopend in Obninsk, USSR"],
+      "3": ["Vietnam verdeeld op de 17e breedtegraad na de Franse nederlaag", "Orkaan Hazel doodt duizenden in Haïti en de VS"]
+    },
+    "tech": "De eerste zonnecel wordt ontwikkeld door Bell Laboratories"
+  },
+  "1955": {
+    "periods": {
+      "1": ["West-Duitsland treedt toe tot de NAVO (5 mei)", "Albert Einstein overlijdt in Princeton op 18 april"],
+      "2": ["Disneyland opent in Anaheim, Californië, op 17 juli", "Het Warschaupact ondertekend als Sovjet-militair bondgenootschap in mei"],
+      "3": ["Rosa Parks weigert haar zitplaats in de bus op te geven (1 dec.)", "Het Busboycot van Montgomery begint na de arrestatie van Parks"]
+    },
+    "tech": "Jonas Salks poliovaccin goedgekeurd voor algemeen gebruik"
+  },
+  "1956": {
+    "periods": {
+      "1": ["Chroesjtsjov houdt zijn geheime toespraak over Stalins misdaden (25 feb.)", "Pakistan wordt de eerste Islamitische Republiek (23 maart)"],
+      "2": ["Egypte nationaliseert het Suezkanaal (26 juli)", "De Olympische Spelen openen in Melbourne, Australië (22 nov.)"],
+      "3": ["De Hongaarse Revolutie neergeslagen door Sovjet-troepen in november", "Suezcrisis: Groot-Brittannië, Frankrijk en Israël vallen Egypte binnen (29 okt.)"]
+    },
+    "tech": "IBM introduceert de eerste commerciële harde schijf, de RAMAC 305"
+  },
+  "1957": {
+    "periods": {
+      "1": ["De Eisenhowerdoctrine afgekondigd voor het Midden-Oosten (jan.)", "Ghana verkrijgt onafhankelijkheid — eerste natie van Sub-Saharaans Afrika"],
+      "2": ["Het Internationale Geofysisch Jaar begint op 1 juli", "De Sovjet-Unie test hun eerste ICBM in augustus"],
+      "3": ["De Sovjet-Unie lanceert Spoetnik 1 op 4 oktober", "De Civil Rights Act van 1957 ondertekend door Eisenhower"]
+    },
+    "tech": "De Sovjet-Unie lanceert Spoetnik 1, de eerste kunstmatige aardsatelliet"
+  },
+  "1958": {
+    "periods": {
+      "1": ["De VS lanceren Explorer 1, hun eerste satelliet (31 jan.)", "NASA opgericht door het Congres (maart)"],
+      "2": ["De Grote Sprong Voorwaarts begint in China onder Mao (mei)", "De eerste Amerikaans nucleaire onderzeeër USS Nautilus steekt de Noordpool over"],
+      "3": ["Charles de Gaulle wordt premier van Frankrijk (sept.)", "Jack Kilby presenteert het eerste geïntegreerde circuit (sept.)"]
+    },
+    "tech": "Jack Kilby vindt het geïntegreerde circuit uit bij Texas Instruments"
+  },
+  "1959": {
+    "periods": {
+      "1": ["Fidel Castro grijpt de macht op Cuba op 1 januari", "Alaska wordt op 3 januari de 49e Amerikaanse staat"],
+      "2": ["Hawaï wordt op 21 augustus de 50e Amerikaanse staat", "De Sovjetse sonde Luna 2 wordt het eerste ruimtevaartuig dat de maan bereikt"],
+      "3": ["Chroesjtsjov bezoekt de VS in september", "Het Antarctisaverdrag ondertekend in december door 12 naties"]
+    },
+    "tech": "De eerste commerciële kopieermachine, de Xerox 914, wordt geïntroduceerd"
+  },
+  "1960": {
+    "periods": {
+      "1": ["Een Amerikaans U-2-spionagevliegtuig neergeschoten boven de USSR (1 mei)", "Zeventien Afrikaanse naties verkrijgen onafhankelijkheid dit jaar"],
+      "2": ["De Olympische Spelen in Rome openen op 25 augustus", "Spoetnik 5 brengt de honden Belka en Strelka in een aardbaan"],
+      "3": ["John F. Kennedy gekozen als 35e president van de VS (8 nov.)", "Chubby Checkers Twist ontketent een danstrend"]
+    },
+    "tech": "De eerste weersatelliet TIROS-1 gelanceerd door de VS"
+  },
+  "1961": {
+    "periods": {
+      "1": ["Kennedy treedt aan; 'Vraag niet wat uw land voor u kan doen' (20 jan.)", "De VS verbreken de diplomatieke betrekkingen met Cuba (3 jan.)"],
+      "2": ["De invasie in de Varkensbaai op Cuba mislukt rampzalig (17 apr.)", "Joeri Gagarin wordt de eerste mens in de ruimte (12 apr.)"],
+      "3": ["De bouw van de Berlijnse Muur begint op 13 augustus", "Alan Shepard wordt de eerste Amerikaan in de ruimte (5 mei)"]
+    },
+    "tech": "Alan Shepard wordt de eerste Amerikaan in de ruimte"
+  },
+  "1962": {
+    "periods": {
+      "1": ["John Glenn wordt de eerste Amerikaan die de aarde omcirkelt (20 feb.)", "De VS beginnen met geheime militaire operaties in Zuid-Vietnam"],
+      "2": ["Algerije verkrijgt onafhankelijkheid van Frankrijk (5 juli)", "Marilyn Monroe zingt 'Happy Birthday' voor JFK (19 mei)"],
+      "3": ["De Cubacrisis brengt de wereld aan de rand van een nucleaire oorlog (okt.)", "Het Tweede Vaticaans Concilie geopend onder paus Johannes XXIII (11 okt.)"]
+    },
+    "tech": "Telstar 1, de eerste actieve communicatiesatelliet, gelanceerd"
+  },
+  "1963": {
+    "periods": {
+      "1": ["Betty Friedan publiceert The Feminine Mystique (feb.)", "Martin Luther King schrijft zijn 'Brief uit de gevangenis van Birmingham' (apr.)"],
+      "2": ["Martin Luther King houdt zijn 'I Have a Dream'-toespraak (28 aug.)", "Het Kernstopverdrag ondertekend (5 aug.)"],
+      "3": ["President Kennedy vermoord in Dallas (22 nov.)", "Lee Harvey Oswald neergeschoten door Jack Ruby live op televisie (24 nov.)"]
+    },
+    "tech": "De druktoetstelefoon geïntroduceerd door Bell System"
+  },
+  "1964": {
+    "periods": {
+      "1": ["De Beatles komen naar Amerika voor de Ed Sullivan Show (9 feb.)", "Het 24e Amendement ter afschaffing van de kiesbelasting geratificeerd (23 jan.)"],
+      "2": ["De Civil Rights Act ondertekend door LBJ (2 juli)", "Het Golf van Tonkin-incident escaleert de Amerikaanse rol in Vietnam (aug.)"],
+      "3": ["De Warren-Commissie concludeert dat Oswald alleen handelde (27 sept.)", "Chroesjtsjov afgezet; Brezjnev wordt Sovjet-leider (okt.)"]
+    },
+    "tech": "IBM introduceert de System/360-mainframecomputerfamilie"
+  },
+  "1965": {
+    "periods": {
+      "1": ["De VS lanceren Operatie Rolling Thunder boven Noord-Vietnam", "Malcolm X vermoord in New York (21 feb.)"],
+      "2": ["De VS sturen hun eerste gevechtstroepen naar Vietnam (8 maart)", "De Voting Rights Act ondertekend door LBJ (6 aug.)"],
+      "3": ["De Watts-rellen in Los Angeles eisen 34 doden (aug.)", "De laatste Beatles-tournee omvat het Shea Stadium (aug.)"]
+    },
+    "tech": "Gordon Moore publiceert de Wet van Moore en voorspelt transistorgroei"
+  },
+  "1966": {
+    "periods": {
+      "1": ["Indira Gandhi wordt premier van India (19 jan.)", "De Culturele Revolutie gelanceerd door Mao Zedong (16 mei)"],
+      "2": ["De Nationale Organisatie voor Vrouwen (NOW) opgericht (30 juni)", "Medicare- en Medicaid-programma's treden in werking (1 juli)"],
+      "3": ["De Black Panther Party opgericht in Oakland, Californië (okt.)", "Lunar Orbiter 1 maakt de eerste foto van de aarde vanuit de maan (aug.)"]
+    },
+    "tech": "De eerste computermuis gedemonstreerd door Douglas Engelbart"
+  },
+  "1967": {
+    "periods": {
+      "1": ["De Apollo 1-brand doodt drie astronauten tijdens een grondtest (27 jan.)", "Thurgood Marshall genomineerd voor het Hooggerechtshof (juni)"],
+      "2": ["Israël wint de Zesdaagse Oorlog tegen zijn Arabische buren (5–10 juni)", "Summer of Love: 100.000 mensen verzamelen in San Francisco"],
+      "3": ["Eerste harttransplantatie door dr. Christiaan Barnard (3 dec.)", "Che Guevara gevangen genomen en gedood in Bolivia (9 okt.)"]
+    },
+    "tech": "De eerste rekenmachine ontwikkeld door Texas Instruments"
+  },
+  "1968": {
+    "periods": {
+      "1": ["Het Tet-offensief schokt Amerikanen met de omvang van de Vietnamoorlog (jan.)", "Martin Luther King Jr. vermoord in Memphis (4 apr.)"],
+      "2": ["Robert Kennedy vermoord in Los Angeles (5 juni)", "Praagse Lente: Sovjet-tanks pletten Tsjechische hervormingen (aug.)"],
+      "3": ["Richard Nixon wint de Amerikaanse presidentsverkiezing (5 nov.)", "De Olympische Spelen in Mexico-Stad openen; het Black Power-salut schokt de wereld"]
+    },
+    "tech": "Douglas Engelbart presenteert publiekelijk de eerste computermuis en hypertekst"
+  },
+  "1969": {
+    "periods": {
+      "1": ["Nixon treedt aan; begint geheime vredesonderhandelingen in Vietnam", "Yasser Arafat gekozen als PLO-voorzitter (feb.)"],
+      "2": ["Neil Armstrong betreedt de maan (20 juli)", "Het Woodstock Festival trekt 400.000 mensen in de staat New York (aug.)"],
+      "3": ["Ho Chi Minh overlijdt; Noord-Vietnamese leiding wisselt (2 sept.)", "Eerste Amerikaanse troepen trekken zich terug uit Vietnam (sept.)"]
+    },
+    "tech": "Het ARPANET, voorloper van het internet, wordt gelanceerd"
+  },
+  "1970": {
+    "periods": {
+      "1": ["De VS marcheren Cambodja binnen en verbreden de Vietnamoorlog (30 apr.)", "De eerste Earth Day gevierd (22 apr.)"],
+      "2": ["Kent State-schietpartij: vier studenten gedood (4 mei)", "De Beatles splitsen officieel (aug.)"],
+      "3": ["Anwar Sadat wordt president van Egypte (15 okt.)", "Salvador Allende gekozen als president van Chili (4 nov.)"]
+    },
+    "tech": "IBM introduceert de floppy disk voor gegevensopslag"
+  },
+  "1971": {
+    "periods": {
+      "1": ["Het 26e Amendement verlaagt de stemgerechtigde leeftijd in de VS naar 18 (geratificeerd juli)", "De Pentagon Papers gepubliceerd door de New York Times (13 juni)"],
+      "2": ["Apollo 15 landt op de maan; astronauten rijden in de maanwagen (juli)", "Bangladesh verklaart onafhankelijkheid van Pakistan (26 maart)"],
+      "3": ["Nixon legt loon- en prijscontroles op om inflatie te bestrijden (aug.)", "De Volksrepubliek China toegelaten tot de Verenigde Naties"]
+    },
+    "tech": "Intel brengt de 4004 op de markt, 's werelds eerste commerciële microprocessor"
+  },
+  "1972": {
+    "periods": {
+      "1": ["Nixon bezoekt China en opent diplomatieke betrekkingen (21 feb.)", "Bloody Sunday: Britse soldaten doden 14 mensen in Noord-Ierland (jan.)"],
+      "2": ["Watergate-inbrekers gearresteerd in het DNC-hoofdkwartier (17 juni)", "Nixon bezoekt de USSR; het SALT I-wapenakkoord ondertekend (mei)"],
+      "3": ["Nixon herkozen in een aardverschuivingsoverwinning (7 nov.)", "Het München Olympisch bloedbad doodt 11 Israëlische atleten (sept.)"]
+    },
+    "tech": "De eerste thuisgameconsole, de Magnavox Odyssey, op de markt gebracht"
+  },
+  "1973": {
+    "periods": {
+      "1": ["Roe v. Wade legaliseert abortus in de VS (22 jan.)", "De Akkoorden van Parijs ondertekend; de VS trekken zich terug uit Vietnam (27 jan.)"],
+      "2": ["Senaatshoorzittingen over Watergate nationaal op televisie uitgezonden (mei)", "De Jom Kipoer-Oorlog: Egypte en Syrië vallen Israël aan (okt.)"],
+      "3": ["Het Arabisch olie-embargo veroorzaakt een energiecrisis in het Westen (okt.)", "Vicepresident Spiro Agnew treedt af onder corruptieaantijgingen (okt.)"]
+    },
+    "tech": "Motorola-ingenieur Martin Cooper pleegt het eerste mobiele telefoongesprek"
+  },
+  "1974": {
+    "periods": {
+      "1": ["De Rechterlijke Commissie van het Huis opent afzettingszittingen (feb.)", "Hank Aaron verbreekt Babe Ruths homerun-record (8 apr.)"],
+      "2": ["Nixons afzettingsartikelen aangenomen door de Huiscommissie (juli)", "Patricia Hearst ontvoerd door het Symbionese Bevrijdingsleger (feb.)"],
+      "3": ["Nixon treedt af; Ford wordt president (9 aug.)", "Ford verleent Nixon een onvoorwaardelijk pardon (8 sept.)"]
+    },
+    "tech": "De Altair 8800-computerbouwset geïntroduceerd en luidt het pc-tijdperk in"
+  },
+  "1975": {
+    "periods": {
+      "1": ["De Zuid-Vietnamese regering stort in; Saigon valt (30 apr.)", "De Rode Khmer grijpen de macht in Cambodja (17 apr.)"],
+      "2": ["Microsoft opgericht door Bill Gates en Paul Allen (4 apr.)", "De Helsinki-akkoorden over mensenrechten ondertekend (1 aug.)"],
+      "3": ["Francisco Franco overlijdt; Spanje gaat over naar democratie (nov.)", "Angola verkrijgt onafhankelijkheid van Portugal (11 nov.)"]
+    },
+    "tech": "De Altair 8800 geïntroduceerd en inspireert Gates en Allen tot oprichting van Microsoft"
+  },
+  "1976": {
+    "periods": {
+      "1": ["De Amerikaanse tweehonderdjarige vieringen beginnen door het land", "Jimmy Carter wint de Democratische presidentiële nominatie"],
+      "2": ["Viking 1 landt op Mars en stuurt beelden van het oppervlak (20 juli)", "De Olympische Spelen in Montreal openen (17 juli)"],
+      "3": ["Jimmy Carter gekozen als president van de VS (2 nov.)", "Mao Zedong overlijdt na decennialange leiding van China (9 sept.)"]
+    },
+    "tech": "Apple Computer opgericht en de Apple I verkocht"
+  },
+  "1977": {
+    "periods": {
+      "1": ["Jimmy Carter treedt aan als 39e president van de VS (20 jan.)", "Star Wars uitgebracht en wordt een cultureel fenomeen (25 mei)"],
+      "2": ["Elvis Presley overlijdt op 42-jarige leeftijd in Memphis (16 aug.)", "De stroomstoring in New York ontketent wijdverbreide plundering (13 juli)"],
+      "3": ["De Egyptische president Sadat brengt een historisch bezoek aan Israël (nov.)", "De eerste Apple II-computers te koop aangeboden (5 juni)"]
+    },
+    "tech": "De Apple II, de Commodore PET en de TRS-80 geïntroduceerd in hetzelfde jaar"
+  },
+  "1978": {
+    "periods": {
+      "1": ["De Camp David-onderhandelingen tussen Egypte en Israël beginnen", "Het eerste reageerbaby Louise Brown geboren in Engeland (25 juli)"],
+      "2": ["De Camp David-akkoorden ondertekend door Carter, Sadat en Begin (17 sept.)", "Paus Johannes Paulus I overlijdt na 33 dagen; Johannes Paulus II gekozen"],
+      "3": ["De massale zelfmoord in Jonestown doodt 918 mensen (18 nov.)", "Dominica verkrijgt onafhankelijkheid van het Verenigd Koninkrijk (3 nov.)"]
+    },
+    "tech": "De eerste spam-e-mail verzonden via het ARPANET naar honderden gebruikers"
+  },
+  "1979": {
+    "periods": {
+      "1": ["De Sjah van Iran vlucht; de Islamitische Revolutie neemt de macht over (11 feb.)", "VS en China nemen volledige diplomatieke betrekkingen op (1 jan.)"],
+      "2": ["Het nucleaire ongeluk bij Three Mile Island in Pennsylvania (28 maart)", "Margaret Thatcher wordt eerste vrouwelijke premier van het Verenigd Koninkrijk (mei)"],
+      "3": ["De Sovjet-Unie marcheert Afghanistan binnen (24 dec.)", "De gijzelingscrisis in Iran begint; de Amerikaanse ambassade overgenomen (4 nov.)"]
+    },
+    "tech": "Motorola introduceert het eerste commerciële mobiele telefoonnetwerk in Japan"
+  },
+  "1980": {
+    "periods": {
+      "1": ["De VS boycotten de Olympische Spelen in Moskou vanwege de Sovjet-invasie", "De Mount St. Helens barst catastrofaal uit in de staat Washington (18 mei)"],
+      "2": ["De Irak-Iranoorlog begint als Irak Iran binnenvalt (22 sept.)", "De Poolse vakbond Solidariteit opgericht door Lech Wałęsa (31 aug.)"],
+      "3": ["Ronald Reagan gekozen als 40e president van de VS (4 nov.)", "John Lennon neergeschoten en gedood in New York (8 dec.)"]
+    },
+    "tech": "Pac-Man uitgebracht in speelzalen en wordt een wereldwijd fenomeen"
+  },
+  "1981": {
+    "periods": {
+      "1": ["De Amerikaanse gijzelaars in Iran vrijgelaten na 444 dagen (20 jan.)", "Reagan treedt aan; een moordaanslag verwondt hem (30 maart)"],
+      "2": ["IBM brengt zijn eerste personal computer op de markt (12 aug.)", "Prins Charles en Diana trouwen in Londen (29 juli)"],
+      "3": ["AIDS officieel erkend als epidemie door de CDC (dec.)", "Anwar Sadat vermoord in Caïro (6 okt.)"]
+    },
+    "tech": "IBM brengt zijn eerste personal computer, de IBM PC 5150, op de markt"
+  },
+  "1982": {
+    "periods": {
+      "1": ["Falklandoorlog: Argentinië bezet de eilanden; Groot-Brittannië stuurt een strijdmacht (apr.)", "E.T. de Buitenaardse wordt een kassucces (juni)"],
+      "2": ["Israël valt Libanon binnen om de PLO te verdrijven (6 juni)", "De Falklandoorlog eindigt met de Argentijnse capitulatie (14 juni)"],
+      "3": ["De compact disc (cd) commercieel geïntroduceerd in de VS (okt.)", "Massamoord in Sabra en Shatila in Libanese vluchtelingenkampen (sept.)"]
+    },
+    "tech": "De compact disc (cd) commercieel geïntroduceerd in Japan en de VS"
+  },
+  "1983": {
+    "periods": {
+      "1": ["Reagan stelt de Strategic Defense Initiative voor (23 maart)", "De Amerikaanse ambassade in Beiroet gebombardeerd, 63 doden (18 apr.)"],
+      "2": ["VS-Sovjet-crisis rond vlucht KAL 007 (sept.)", "De aanslag op de Beiroet-kazerne doodt 241 Amerikaanse mariniers (23 okt.)"],
+      "3": ["De VS marcheren Grenada binnen (25 okt.)", "Het internet ontstaat als het ARPANET TCP/IP overneemt op 1 jan."]
+    },
+    "tech": "Het internet ontstaat als het ARPANET het TCP/IP-protocolpakket overneemt"
+  },
+  "1984": {
+    "periods": {
+      "1": ["Apple brengt de Macintosh-computer op de markt (24 jan.)", "Indira Gandhi vermoord door haar lijfwachten (31 okt.)"],
+      "2": ["De Olympische Zomerspelen in Los Angeles openen (28 juli)", "De Ethiopische hongersnood begint miljoenen te verwoesten"],
+      "3": ["Reagan herkozen in 49 staten in een aardverschuivingsoverwinning (6 nov.)", "De Bhopalramp doodt duizenden in India (3 dec.)"]
+    },
+    "tech": "Apple brengt de Macintosh op de markt en populariseert de grafische gebruikersinterface"
+  },
+  "1985": {
+    "periods": {
+      "1": ["Mikhail Gorbatsjov wordt Sovjet-leider (11 maart)", "Reagan en Gorbatsjov ontmoeten elkaar op de Geneefse top (nov.)"],
+      "2": ["De Live Aid-concerten zamelen 127 miljoen dollar in voor Ethiopië (13 juli)", "Het Greenpeace-schip Rainbow Warrior opgeblazen door Frankrijk (10 juli)"],
+      "3": ["Palestijnse piraten kapen het cruiseschip Achille Lauro (okt.)", "De aardbeving in Mexico-Stad doodt 9.000 mensen (19 sept.)"]
+    },
+    "tech": "Microsoft Windows 1.0 beschikbaar gesteld voor het publiek"
+  },
+  "1986": {
+    "periods": {
+      "1": ["De Space Shuttle Challenger explodeert 73 seconden na de lancering (28 jan.)", "Ferdinand Marcos afgezet op de Filippijnen door de People Power-revolutie (feb.)"],
+      "2": ["De nucleaire ramp in Tsjernobyl in de Sovjet-Oekraïne (26 apr.)", "De VS bombarderen Libië als vergelding voor terrorisme (15 apr.)"],
+      "3": ["Het Iran-Contra-schandaal onthuld door de Reagan-administratie (nov.)", "De Reykjavik-top: Reagan en Gorbatsjov dicht bij een wapenakkoord (okt.)"]
+    },
+    "tech": "De eerste versie van het Internet Domain Name System (DNS) gaat live"
+  },
+  "1987": {
+    "periods": {
+      "1": ["Reagans toespraak 'Rip deze muur neer' in Berlijn (12 juni)", "Klaus Barbie veroordeeld voor misdaden tegen de menselijkheid in WO II"],
+      "2": ["Zwarte Maandag: mondiale aandelenmarkten dalen met 22% (19 okt.)", "Het INF-Verdrag ondertekend om nucleaire raketten te elimineren (8 dec.)"],
+      "3": ["De eerste Palestijnse Intifada begint in Gaza (9 dec.)", "De eerste wegwerpcamera geïntroduceerd door Fujifilm (juli)"]
+    },
+    "tech": "De programmeertaal Perl gepubliceerd door Larry Wall"
+  },
+  "1988": {
+    "periods": {
+      "1": ["De Sovjet-Unie begint de terugtrekking uit Afghanistan (15 mei)", "George H.W. Bush wint de Republikeinse presidentiële nominatie"],
+      "2": ["De Olympische Spelen in Seoul, Zuid-Korea, openen (17 sept.)", "Iran Air vlucht 655 neergeschoten door de Amerikaanse marine (3 juli)"],
+      "3": ["Pan Am vlucht 103 opgeblazen boven Lockerbie, Schotland (21 dec.)", "George H.W. Bush gekozen als 41e president van de VS (8 nov.)"]
+    },
+    "tech": "De Morris-worm, een van de eerste computerwurmen, verspreidt zich door netwerken"
+  },
+  "1989": {
+    "periods": {
+      "1": ["George H.W. Bush treedt aan als 41e president van de VS (20 jan.)", "Irans ayatollah Khomeini vaardigt een fatwa uit tegen Salman Rushdie"],
+      "2": ["De Tiananmenplein-protesten worden neergeslagen door het Chinese leger (4 juni)", "Polen houdt zijn eerste vrije verkiezingen sinds de Tweede Wereldoorlog (4 juni)"],
+      "3": ["De Berlijnse Muur valt op 9 november", "De Roemeense dictator Ceaușescu afgezet en geëxecuteerd (dec.)"]
+    },
+    "tech": "Tim Berners-Lee stelt het World Wide Web voor bij CERN"
+  },
+  "1990": {
+    "periods": {
+      "1": ["Nelson Mandela vrijgelaten na 27 jaar gevangenis (11 feb.)", "Namibië verkrijgt onafhankelijkheid van Zuid-Afrika (21 maart)"],
+      "2": ["Irak marcheert Koeweit binnen op 2 augustus", "Het verdrag over de Duitse hereniging ondertekend (31 aug.)"],
+      "3": ["De Duitse hereniging voltooid op 3 oktober", "Margaret Thatcher treedt af als Britse premier (22 nov.)"]
+    },
+    "tech": "Het World Wide Web gaat online met de eerste internetpagina"
+  },
+  "1991": {
+    "periods": {
+      "1": ["Golfoorlog: de Amerikaans geleide coalitie bevrijdt Koeweit in 100 uur (feb.)", "Boris Jeltsin gekozen als president van de Russische Republiek (juni)"],
+      "2": ["Een putschpoging tegen Gorbatsjov mislukt in augustus", "De Baltische staten herkrijgen onafhankelijkheid van de Sovjet-Unie (aug.–sept.)"],
+      "3": ["De Sovjet-Unie wordt officieel ontbonden op 25 december", "Joegoslavië begint uiteen te vallen; Kroatië en Slovenië worden onafhankelijk"]
+    },
+    "tech": "De Linux-kernel gemaakt en gepubliceerd door Linus Torvalds"
+  },
+  "1992": {
+    "periods": {
+      "1": ["Bosnië verklaart onafhankelijkheid; het Beleg van Sarajevo begint (apr.)", "Amerikaanse strijdkrachten arriveren voor een humanitaire missie in Somalië (dec.)"],
+      "2": ["De Los Angeles-rellen breken uit na het Rodney King-vonnis (29 apr.)", "De Olympische Spelen in Barcelona openen (25 juli)"],
+      "3": ["Bill Clinton gekozen als 42e president van de VS (3 nov.)", "Orkaan Andrew verwoest Zuid-Florida (24 aug.)"]
+    },
+    "tech": "Het eerste sms-bericht verzonden in een mobiel netwerk"
+  },
+  "1993": {
+    "periods": {
+      "1": ["Het World Trade Center gebombardeerd door terroristen (26 feb.)", "Clinton treedt aan als 42e president van de VS (20 jan.)"],
+      "2": ["De Oslo-akkoorden ondertekend tussen Israël en de PLO (13 sept.)", "Ruth Bader Ginsburg bevestigd bij het Hooggerechtshof (3 aug.)"],
+      "3": ["Het Verdrag van Maastricht schept de Europese Unie (1 nov.)", "NAFTA ondertekend door Clinton (8 dec.)"]
+    },
+    "tech": "De Mosaic-browser maakt het internet toegankelijk voor het grote publiek"
+  },
+  "1994": {
+    "periods": {
+      "1": ["De Northridge-aardbeving verwoest Los Angeles (17 jan.)", "De genocide in Rwanda begint; 800.000 doden in 100 dagen (apr.)"],
+      "2": ["Nelson Mandela gekozen als eerste zwarte president van Zuid-Afrika (mei)", "De Kanaaltunnel tussen Groot-Brittannië en Frankrijk opent (6 mei)"],
+      "3": ["O.J. Simpson gearresteerd voor de moord op Nicole Brown (juni)", "De Republikeinen winnen het Congres met het 'Contract met Amerika' (nov.)"]
+    },
+    "tech": "Netscape Navigator geïntroduceerd en stuwt de explosieve groei van het internet"
+  },
+  "1995": {
+    "periods": {
+      "1": ["De bomaanslag in Oklahoma City doodt 168 mensen (19 apr.)", "De Kobe-aardbeving doodt 6.434 mensen in Japan (17 jan.)"],
+      "2": ["O.J. Simpson vrijgesproken van moord (3 okt.)", "Het Srebrenica-bloedbad doodt 8.000 Bosnische moslims (juli)"],
+      "3": ["Rabin vermoord op een vredesbijeenkomst in Tel Aviv (4 nov.)", "Het Verdrag van Dayton beëindigt de Bosniëoorlog (21 nov.)"]
+    },
+    "tech": "Amazon en eBay beide gelanceerd en luiden de e-commercerevolutie in"
+  },
+  "1996": {
+    "periods": {
+      "1": ["Schaap Dolly gekloond — aangekondigd in feb. 1997 (juli 1996)", "Unabomber Ted Kaczynski gearresteerd in Montana (3 apr.)"],
+      "2": ["TWA vlucht 800 stort neer voor Long Island en doodt 230 (17 juli)", "Bomaanslag in het Olympisch Park in Atlanta doodt 2 mensen (27 juli)"],
+      "3": ["Clinton herkozen tegen Bob Dole (5 nov.)", "De Taliban nemen Kabul in en nemen de controle over Afghanistan over (sept.)"]
+    },
+    "tech": "BackRub, voorloper van Google, ontwikkeld door Page en Brin aan Stanford"
+  },
+  "1997": {
+    "periods": {
+      "1": ["Hongkong teruggegeven door het Verenigd Koninkrijk aan China (1 juli)", "De massale zelfmoord van de Heaven's Gate-sekte doodt 39 mensen (26 maart)"],
+      "2": ["Prinses Diana overlijdt bij een auto-ongeluk in Parijs (31 aug.)", "Pathfinder landt op Mars; de rover Sojourner verkent (4 juli)"],
+      "3": ["Moeder Teresa overlijdt in Calcutta (5 sept.)", "Het Kyotoprotocol inzake klimaatverandering aangenomen (11 dec.)"]
+    },
+    "tech": "IBMs Deep Blue verslaat schaakwereldkampioen Garry Kasparov"
+  },
+  "1998": {
+    "periods": {
+      "1": ["Clinton ontkent een affaire met Monica Lewinsky (26 jan.)", "India en Pakistan voeren nucleaire wapentests uit (mei)"],
+      "2": ["De Amerikaanse ambassades in Kenia en Tanzania gebombardeerd (7 aug.)", "Google opgericht door Larry Page en Sergey Brin (4 sept.)"],
+      "3": ["Clinton afgezet door het Huis (19 dec.)", "Orkaan Mitch doodt 11.000 mensen in Midden-Amerika (okt.)"]
+    },
+    "tech": "Google opgericht en begint zijn opkomst als zoekmachine"
+  },
+  "1999": {
+    "periods": {
+      "1": ["De NAVO begint met het bombarderen van Joegoslavië vanwege Kosovo (24 maart)", "Clinton vrijgesproken door de Senaat in het afzettingsproces (12 feb.)"],
+      "2": ["Het Columbine-bloedbad doodt 13 mensen (20 apr.)", "JFK Jr. overlijdt bij een vliegtuigcrash voor Martha's Vineyard (16 juli)"],
+      "3": ["Y2K-angsten grijpen de wereld (dec.)", "Protesten tegen de WTO breken uit in Seattle (30 nov.)"]
+    },
+    "tech": "Napster gelanceerd en revolutioneert het online uitwisselen van muziek"
+  },
+  "2000": {
+    "periods": {
+      "1": ["Het jaar-2000-probleem veroorzaakt geen noemenswaardige computerstoringen (1 jan.)", "De dotcomzeepbel begint te leeglopen op de NASDAQ (maart)"],
+      "2": ["De USS Cole gebombardeerd in de haven van Aden en doodt 17 matrozen (okt.)", "De Olympische Zomerspelen openen in Sydney, Australië (15 sept.)"],
+      "3": ["George W. Bush gekozen als president in een omstreden Florida-stemming (nov.)", "De Florida-hertellingen beslist door het Hooggerechtshof (12 dec.)"]
+    },
+    "tech": "De dotcomzeepbel barst en beëindigt de internetboom van de jaren 90"
+  },
+  "2001": {
+    "periods": {
+      "1": ["George W. Bush treedt aan als 43e president van de VS (20 jan.)", "Wikipedia publiekelijk gelanceerd op 15 januari"],
+      "2": ["De aanslagen van 11 september doden bijna 3.000 mensen (11 sept.)", "De VS marcheren Afghanistan binnen (7 okt.)"],
+      "3": ["De USA PATRIOT Act in werking gesteld (26 okt.)", "Antrax-brieven doden 5 mensen in de VS (okt.)"]
+    },
+    "tech": "Apple introduceert de iPod en iTunes en transformeert de muziekindustrie"
+  },
+  "2002": {
+    "periods": {
+      "1": ["Eurobankbiljetten en -munten in omloop in 12 landen (jan.)", "Bush bestempelt Irak, Iran en Noord-Korea als 'As van het Kwaad' (29 jan.)"],
+      "2": ["Het Ministerie van Binnenlandse Veiligheid opgericht (25 nov.)", "Bomaanslagen op Bali doden 202 toeristen (12 okt.)"],
+      "3": ["De Washington D.C.-sluipschutter doodt 10 mensen in Virginia en Maryland (okt.)", "VN-wapeninspecteurs keren terug naar Irak (nov.)"]
+    },
+    "tech": "De eerste cameratelefoons op de markt gebracht in de VS"
+  },
+  "2003": {
+    "periods": {
+      "1": ["De Space Shuttle Columbia desintegreert bij terugkeer (1 feb.)", "De VS marcheren Irak binnen; Saddams regime valt (20 maart)"],
+      "2": ["Amerikaanse president verklaart 'Mission Accomplished' in Irak (1 mei)", "SARS-epidemie verspreidt zich wereldwijd en doodt 774 mensen"],
+      "3": ["Saddam Hoessein gevonden in een kuil (13 dec.)", "Arnold Schwarzenegger gekozen als gouverneur van Californië (okt.)"]
+    },
+    "tech": "MySpace en LinkedIn beide gelanceerd als pioniers van sociale netwerken"
+  },
+  "2004": {
+    "periods": {
+      "1": ["Facebook gelanceerd in Harvard als 'TheFacebook' (4 feb.)", "Bomaanslagen in Madrid doden 191 mensen (11 maart)"],
+      "2": ["Het Abu Ghraib-folterscandaal komt aan het licht (apr.)", "De Olympische Spelen in Athene openen (13 aug.)"],
+      "3": ["George W. Bush herkozen (2 nov.)", "De tsunami in de Indische Oceaan doodt 227.898 mensen (26 dec.)"]
+    },
+    "tech": "Facebook opgericht en gelanceerd als 'TheFacebook' in Harvard"
+  },
+  "2005": {
+    "periods": {
+      "1": ["YouTube opgericht door drie voormalige PayPal-medewerkers (14 feb.)", "Paus Johannes Paulus II overlijdt; Benedictus XVI gekozen (apr.)"],
+      "2": ["Orkaan Katrina verwoest New Orleans (29 aug.)", "Bomaanslagen in de Londense metro doden 52 mensen (7 juli)"],
+      "3": ["Harriet Miers genomineerd en trekt dan haar kandidatuur voor het Hooggerechtshof terug (okt.)", "Angela Merkel wordt eerste vrouwelijke bondskanselier van Duitsland (nov.)"]
+    },
+    "tech": "YouTube opgericht en verandert fundamenteel hoe video's worden gedeeld"
+  },
+  "2006": {
+    "periods": {
+      "1": ["Twitter gelanceerd en Jack Dorsey verstuurt de eerste tweet (21 maart)", "Hamas wint de Palestijnse parlementsverkiezingen (25 jan.)"],
+      "2": ["De Israël-Libanon-oorlog breekt uit na de ontvoering van soldaten door Hezbollah (juli)", "Noord-Korea test ballistische raketten (5 juli)"],
+      "3": ["Noord-Korea voert zijn eerste kernproef uit (9 okt.)", "Saddam Hoessein ter dood veroordeeld (5 nov.)"]
+    },
+    "tech": "Twitter gelanceerd en Jack Dorsey verstuurt de eerste tweet"
+  },
+  "2007": {
+    "periods": {
+      "1": ["Apple presenteert het originele iPhone op de Macworld (9 jan.)", "De schietpartij op Virginia Tech doodt 32 mensen (16 apr.)"],
+      "2": ["De iPhone voor het eerst verkocht (29 juni)", "Barry Bonds verbreekt Hank Aarons carrière-homeruns-record (aug.)"],
+      "3": ["De instorting van de Amerikaanse huizenmarkt ontketent een mondiale kredietcrisis (sept.)", "Benazir Bhutto keert terug naar Pakistan; een aanslagpoging mislukt"]
+    },
+    "tech": "Apple brengt de eerste iPhone op de markt en herdefiniëert de smartphoneindustrie"
+  },
+  "2008": {
+    "periods": {
+      "1": ["Bear Stearns instorten; de Fed regelt overname door JPMorgan (maart)", "Protesten in Tibet breken uit voor de Olympische Spelen in Peking (maart)"],
+      "2": ["De Olympische Spelen in Peking openen met een recordshow (8 aug.)", "Rusland valt Georgië binnen in een vijfdaagse oorlog (8 aug.)"],
+      "3": ["Lehman Brothers instorten en ontketent de financiële crisis (15 sept.)", "Barack Obama gekozen als eerste zwarte president van de VS (4 nov.)"]
+    },
+    "tech": "Google brengt het Android-besturingssysteem en de eerste Android-telefoon op de markt"
+  },
+  "2009": {
+    "periods": {
+      "1": ["Barack Obama treedt aan als 44e president van de VS (20 jan.)", "US Airways vlucht 1549 landt op de Hudson River (15 jan.)"],
+      "2": ["De H1N1-grieppandemie afgeroepen door de WHO (11 juni)", "Michael Jackson overlijdt plotseling in Los Angeles (25 juni)"],
+      "3": ["Obama ontvangt de Nobelprijs voor de Vrede (9 okt.)", "De schietpartij op Fort Hood doodt 13 soldaten (5 nov.)"]
+    },
+    "tech": "Bitcoin geïntroduceerd door het pseudoniem Satoshi Nakamoto"
+  },
+  "2010": {
+    "periods": {
+      "1": ["De aardbeving op Haïti doodt meer dan 230.000 mensen (12 jan.)", "Apple brengt de eerste iPad op de markt (3 apr.)"],
+      "2": ["BP's Deepwater Horizon-olieramp begint (20 apr.)", "Het WK voetbal opent in Zuid-Afrika — voor het eerst op Afrikaanse bodem (juni)"],
+      "3": ["Chileense mijnwerkers gered na 69 dagen onder de grond (13 okt.)", "Amerikaanse tussentijdse verkiezingen leveren Republikeinen grote winsten (nov.)"]
+    },
+    "tech": "Apple brengt de eerste iPad op de markt en luidt het moderne tijdperk van tablets in"
+  },
+  "2011": {
+    "periods": {
+      "1": ["Arabische Lente: Tunesische en Egyptische regeringen vallen (jan.–feb.)", "Aardbeving en tsunami in Japan doden 15.897 mensen (11 maart)"],
+      "2": ["Osama bin Laden gedood door Amerikaanse Navy SEALs (2 mei)", "Casey Anthony vrijgesproken van moord (5 juli)"],
+      "3": ["Muammar Gaddafi gedood tijdens de Libische revolutie (20 okt.)", "Steve Jobs overlijdt op 56-jarige leeftijd na jarenlange ziekte (5 okt.)"]
+    },
+    "tech": "Apple onthult Siri, de eerste AI-spraakassistent voor het grote publiek"
+  },
+  "2012": {
+    "periods": {
+      "1": ["Trayvon Martin neergeschoten door George Zimmerman (26 feb.)", "Noord-Korea lanceert in april een langeafstandsraket"],
+      "2": ["De Olympische Spelen in Londen openen (27 juli)", "Het Higgs-boson bevestigd bij CERN (4 juli)"],
+      "3": ["Obama herkozen als president van de VS (6 nov.)", "Het Sandy Hook-schoolbloedbad doodt 20 kinderen (14 dec.)"]
+    },
+    "tech": "SpaceX wordt het eerste private bedrijf dat aanmeert bij het ruimtestation"
+  },
+  "2013": {
+    "periods": {
+      "1": ["Obama ingezworen voor een tweede termijn (21 jan.)", "De bomaanslag bij de Boston Marathon verwondt honderden (15 apr.)"],
+      "2": ["Edward Snowden onthult de mondiale NSA-surveillance (juni)", "George Zimmerman vrijgesproken in de zaak Trayvon Martin (juli)"],
+      "3": ["De Amerikaanse regering 16 dagen lang gesloten (1–16 okt.)", "Tyfoon Haiyan op de Filipijnen doodt 6.300 mensen (8 nov.)"]
+    },
+    "tech": "Snowdens onthullingen leggen de enorme omvang van NSA-surveillance bloot"
+  },
+  "2014": {
+    "periods": {
+      "1": ["Rusland annexeert de Krim van Oekraïne (18 maart)", "Malaysia Airlines vlucht MH370 verdwijnt met 239 mensen aan boord (8 maart)"],
+      "2": ["Islamitische Staat roept een kalifaat uit in Irak en Syrië (29 juni)", "Het WK voetbal opent te midden van protesten in Brazilië (12 juni)"],
+      "3": ["De ebolaepidemie verspreidt zich snel in West-Afrika (sept.)", "De Paraplubeweging voor democratie in Hongkong begint (sept.)"]
+    },
+    "tech": "Amazon brengt de Echo op de markt en introduceert Alexa als eerste slimme thuisbox"
+  },
+  "2015": {
+    "periods": {
+      "1": ["De aanslag op Charlie Hebdo doodt 12 mensen in Parijs (7 jan.)", "Saudi-Arabië en zijn bondgenoten beginnen met het bombarderen van Jemen (26 maart)"],
+      "2": ["Het homohuwelijk gelegaliseerd in alle VS (26 juni)", "De Griekse schuldencrisis bereikt een kritiek punt (juli)"],
+      "3": ["De Parijse aanslagen doden 130 mensen in de Bataclan en restaurants (13 nov.)", "De Syrische vluchtelingencrisis bereikt haar hoogtepunt met meer dan een miljoen aankomsten in de EU"]
+    },
+    "tech": "De Apple Watch geïntroduceerd en populariseert het moderne smartwatch"
+  },
+  "2016": {
+    "periods": {
+      "1": ["Het Zika-virus door de WHO uitgeroepen tot mondiale gezondheidscrisis (1 feb.)", "David Bowie en Prince overlijden beiden binnen enkele maanden"],
+      "2": ["Brexit: het Verenigd Koninkrijk stemt voor vertrek uit de EU (23 juni)", "De Olympische Spelen in Rio de Janeiro openen in Brazilië (5 aug.)"],
+      "3": ["Donald Trump gekozen als 45e president van de VS (8 nov.)", "Aleppo valt aan Syrische regeringstroepen (dec.)"]
+    },
+    "tech": "Pokémon Go uitgebracht en wordt een mondiale augmented reality-hype"
+  },
+  "2017": {
+    "periods": {
+      "1": ["Trump treedt aan; de Women's March verzamelt miljoenen (jan.)", "Chemische aanval in Khan Shaykhun in Syrië (4 apr.)"],
+      "2": ["Aanslagen op London Bridge en de Manchester Arena (mei–juni)", "G20-top; Trump en Poetin ontmoeten elkaar voor het eerst (juli)"],
+      "3": ["Het bloedbad in Las Vegas doodt 60 mensen — het ergste in de Amerikaanse geschiedenis (1 okt.)", "De #MeToo-beweging gaat viraal na beschuldigingen tegen Weinstein (okt.)"]
+    },
+    "tech": "De Bitcoin-koers overtreft voor het eerst 10.000 dollar"
+  },
+  "2018": {
+    "periods": {
+      "1": ["De Parkland-aanslag doodt 17 mensen; de March For Our Lives (feb.–maart)", "Het Cambridge Analytica-schandaal onthult Facebook-datamisbruik (maart)"],
+      "2": ["De leiders van Noord- en Zuid-Korea ontmoeten elkaar op een historische top (27 apr.)", "Het WK voetbal opent in Rusland (14 juni)"],
+      "3": ["Jamal Khashoggi vermoord in het Saoedische consulaat (2 okt.)", "Amerikaanse tussentijdse verkiezingen: Democraten nemen het Huis over (nov.)"]
+    },
+    "tech": "De AVG treedt in werking in Europa en verandert mondiale privacynormen"
+  },
+  "2019": {
+    "periods": {
+      "1": ["De Notre-Dame-kathedraal in Parijs zwaar beschadigd door brand (15 apr.)", "Moskee-aanslagen in Nieuw-Zeeland doden 51 mensen (15 maart)"],
+      "2": ["Protesten in Hongkong verzamelen miljoenen tegen Peking (juni–aug.)", "Jeffrey Epstein gearresteerd voor mensenhandel (6 juli)"],
+      "3": ["Het Britse parlement geschorst tijdens de Brexitcrisis (sept.)", "Een afzettingsonderzoek tegen Trump ingezet door het Huis (24 sept.)"]
+    },
+    "tech": "5G-netwerken commercieel gelanceerd in meerdere landen"
+  },
+  "2020": {
+    "periods": {
+      "1": ["De COVID-19-pandemie door de WHO uitgeroepen (11 maart)", "Kobe Bryant komt om bij een helikoptercrash (26 jan.)"],
+      "2": ["George Floyd vermoord; Black Lives Matter-protesten schudden de VS (mei–juni)", "SpaceX lanceert zijn eerste bemande missie vanaf Amerikaans grondgebied sinds 2011"],
+      "3": ["Biden gekozen als 46e president van de VS (3 nov.)", "COVID-19-vaccins goedgekeurd; eerste doses toegediend (dec.)"]
+    },
+    "tech": "mRNA-COVID-19-vaccins in recordtijd ontwikkeld en goedgekeurd"
+  },
+  "2021": {
+    "periods": {
+      "1": ["Bestorming van het Capitool op 6 januari: Trump-aanhangers bestormen het Congres (6 jan.)", "Biden treedt aan; Harris wordt eerste vrouwelijke vicepresident (20 jan.)"],
+      "2": ["De Olympische Spelen in Tokio gehouden zonder toeschouwers (23 juli)", "Het Israël-Gaza-conflict eist 250 doden in 11 dagen (mei)"],
+      "3": ["De VS trekken zich terug uit Afghanistan; de Taliban nemen Kabul in (15 aug.)", "Facebook, Instagram en WhatsApp ondervinden een mondiale storing (4 okt.)"]
+    },
+    "tech": "NFT's exploderen in populariteit met Beeples 69 miljoen dollar kunstverkoop"
+  },
+  "2022": {
+    "periods": {
+      "1": ["Rusland lanceert een grootschalige invasie van Oekraïne (24 feb.)", "De aanslag op de Robb Elementary School doodt 19 kinderen (24 mei)"],
+      "2": ["Roe v. Wade vernietigd door het Hooggerechtshof van de VS (24 juni)", "De NAVO breidt zich uit met aanvragen van Finland en Zweden (mei)"],
+      "3": ["Koningin Elizabeth II overlijdt na 70 jaar regeren (8 sept.)", "Elon Musk sluit de overname van Twitter af (27 okt.)"]
+    },
+    "tech": "ChatGPT gelanceerd door OpenAI en ontketent een mondiale AI-revolutie"
+  },
+  "2023": {
+    "periods": {
+      "1": ["ChatGPT bereikt 100 miljoen gebruikers — de snelst groeiende app ooit (jan.)", "De aardbeving in Turkije en Syrië doodt 50.000 mensen (6 feb.)"],
+      "2": ["De Wagner Groep-opstand marcheert kort op Moskou (23 juni)", "Het Titan-onderzeeër implodeert nabij de Titanic-wrakstukken (18 juni)"],
+      "3": ["Hamas valt Israël aan; de Gaza-oorlog begint (7 okt.)", "Sam Altman kort ontslagen en daarna herbenoemd bij OpenAI (nov.)"]
+    },
+    "tech": "Generatieve AI wordt mainstream met ChatGPT dat 100 miljoen gebruikers overstijgt"
+  },
+  "2024": {
+    "periods": {
+      "1": ["De Haïtiaanse regering instort onder bendegeweld (maart)", "Een totale zonsverduistering trekt over Noord-Amerika (8 apr.)"],
+      "2": ["De Olympische Spelen in Parijs openen (26 juli)", "Biden trekt zich terug uit de presidentsrace (21 juli)"],
+      "3": ["Donald Trump herkozen als 47e president van de VS (5 nov.)", "COP29 over klimaatbescherming gehouden in Bakoe, Azerbeidzjan (nov.)"]
+    },
+    "tech": "De Apple Vision Pro geïntroduceerd en brengt spatial computing voor consumenten"
+  },
+  "2025": {
+    "periods": {
+      "1": ["Trump treedt aan voor zijn tweede termijn (20 jan.)", "De Los Angeles-branden verwoesten duizenden woningen (jan.)"],
+      "2": ["Paus Franciscus overlijdt; een nieuwe paus gekozen (apr.)", "De VS leggen brede tarieven op aan hun handelspartners (apr.)"],
+      "3": ["AI-agenten beginnen complexe taken in veel sectoren te automatiseren", "Humanoïde robots worden commercieel ingezet in fabrieken"]
+    },
+    "tech": "Humanoïde robots beginnen met hun commerciële inzet in fabrieken wereldwijd"
+  }
+}
