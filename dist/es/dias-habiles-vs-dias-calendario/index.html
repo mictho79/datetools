@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Días hábiles vs días calendario: ¿cuál es la diferencia?</title>
+<meta name="robots" content="index, follow">
+<meta name="description" content="Días hábiles contra días calendario explicados. Aprende la diferencia clave, ve un ejemplo de cálculo y entiende cuándo aplica cada tipo de conteo.">
+<link rel="canonical" href="https://datecalc.app/es/dias-habiles-vs-dias-calendario/">
+<link rel="alternate" hreflang="en" href="https://datecalc.app/business-days-vs-calendar-days/">
+<link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/jours-ouvrables-vs-jours-calendaires/">
+<link rel="alternate" hreflang="es" href="https://datecalc.app/es/dias-habiles-vs-dias-calendario/">
+<link rel="alternate" hreflang="pt" href="https://datecalc.app/business-days-vs-calendar-days/">
+<link rel="alternate" hreflang="de" href="https://datecalc.app/business-days-vs-calendar-days/">
+<link rel="alternate" hreflang="it" href="https://datecalc.app/business-days-vs-calendar-days/">
+<link rel="alternate" hreflang="pl" href="https://datecalc.app/business-days-vs-calendar-days/">
+<link rel="alternate" hreflang="ja" href="https://datecalc.app/business-days-vs-calendar-days/">
+<link rel="alternate" hreflang="ko" href="https://datecalc.app/business-days-vs-calendar-days/">
+<link rel="alternate" hreflang="nl" href="https://datecalc.app/business-days-vs-calendar-days/">
+<link rel="alternate" hreflang="x-default" href="https://datecalc.app/business-days-vs-calendar-days/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Días hábiles vs días calendario: ¿cuál es la diferencia?">
+<meta property="og:description" content="Días hábiles contra días calendario explicados. Aprende la diferencia clave, ve un ejemplo de cálculo y entiende cuándo aplica cada tipo de conteo.">
+<meta property="og:url" content="https://datecalc.app/es/dias-habiles-vs-dias-calendario/">
+<meta property="og:site_name" content="DateCalc.app">
+<meta property="og:image" content="https://datecalc.app/og.png">
+<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/playfair-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/style.css">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="shortcut icon" href="/favicon.svg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿El sábado es un día hábil?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. En la mayoría de los países, el sábado y el domingo no son días hábiles. Los días hábiles son de lunes a viernes, excluyendo días festivos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Son iguales los días hábiles en todo el mundo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No exactamente. En algunos países (como Israel o Arabia Saudí), la semana laboral va de domingo a jueves. La mayoría de los países occidentales usan de lunes a viernes como días hábiles."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo cuento 10 días hábiles desde hoy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Empieza desde mañana y cuenta hacia adelante, saltando cada sábado y domingo. Por cada día festivo que caiga en la ventana, añade un día calendario adicional al final."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿\"En 5 días hábiles\" incluye el día de inicio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Depende de la redacción. \"En 5 días hábiles\" normalmente significa 5 días hábiles completos después de la fecha de inicio — sin contar el día 0. Clarifica siempre si el lenguaje es ambiguo."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Días hábiles vs días calendario: ¿cuál es la diferencia?",
+  "description": "Días hábiles contra días calendario explicados. Aprende la diferencia clave, ve un ejemplo de cálculo y entiende cuándo aplica cada tipo de conteo.",
+  "url": "https://datecalc.app/es/dias-habiles-vs-dias-calendario/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "DateCalc.app",
+    "url": "https://datecalc.app"
+  }
+}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"DateCalc.app","url":"https://datecalc.app","logo":"https://datecalc.app/og.png","contactPoint":{"@type":"ContactPoint","email":"hello@datecalc.app","contactType":"customer support"}}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header>
+<div class="masthead">
+  <a href="/es/" class="masthead-brand">DateCalc<span>.</span>app</a>
+  <div class="masthead-meta" id="todayMeta"></div>
+</div>
+</header>
+<div class="lang-strip">
+  <a href="/business-days-vs-calendar-days/" class="lang-btn">EN</a>
+  <a href="/fr/jours-ouvrables-vs-jours-calendaires/" class="lang-btn">FR</a>
+  <a href="/es/dias-habiles-vs-dias-calendario/" class="lang-btn active">ES</a>
+  <a href="/business-days-vs-calendar-days/" class="lang-btn">PT</a>
+  <a href="/business-days-vs-calendar-days/" class="lang-btn">DE</a>
+  <a href="/business-days-vs-calendar-days/" class="lang-btn">IT</a>
+  <a href="/business-days-vs-calendar-days/" class="lang-btn">PL</a>
+  <a href="/business-days-vs-calendar-days/" class="lang-btn">JA</a>
+  <a href="/business-days-vs-calendar-days/" class="lang-btn">KO</a>
+  <a href="/business-days-vs-calendar-days/" class="lang-btn">NL</a>
+</div>
+<div class="page">
+<div class="headline-block">
+  <p class="kicker">GUÍA DE FECHAS</p>
+  <h1>Días hábiles vs días calendario: ¿cuál es la diferencia?</h1>
+  <p class="article-intro">Cuando un plazo dice "5 días hábiles", significa algo muy diferente a "5 días calendario". Entender la distinción puede evitarte perder contratos, envíos y plazos legales.</p>
+</div>
+<nav aria-label="Tools">
+<div class="tool-nav">
+    <div class="nav-group"><span class="nav-cat">Edad</span><div class="nav-links"><a href="/es/calculadora-edad/">Calculadora de edad</a><span class="nav-sep">·</span><a href="/es/edad-cronologica/">Edad cronológica</a><span class="nav-sep">·</span><a href="/es/calculadora-edad-bebe/">Edad del bebé</a><span class="nav-sep">·</span><a href="/es/calculadora-edad-perro/">Edad del perro</a><span class="nav-sep">·</span><a href="/es/calculadora-edad-gato/">Edad del gato</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Fechas</span><div class="nav-links"><a href="/es/dias-entre-fechas/">Días entre fechas</a><span class="nav-sep">·</span><a href="/es/calculadora-fechas/">Calculadora de fechas</a><span class="nav-sep">·</span><a href="/es/que-dia-es-hoy/">¿Qué día es hoy?</a><span class="nav-sep">·</span><a href="/es/numero-semana/">Número de semana</a><span class="nav-sep">·</span><a href="/es/calculadora-dias-habiles/">Días hábiles</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Cuentas</span><div class="nav-links"><a href="/es/dias-para-navidad/">Navidad</a><span class="nav-sep">·</span><a href="/es/dias-para-ano-nuevo/">Año Nuevo</a><span class="nav-sep">·</span><a href="/es/dias-para-halloween/">Halloween</a><span class="nav-sep">·</span><a href="/es/dias-para-pascua/">Pascua</a><span class="nav-sep">·</span><a href="/es/cuenta-regresiva/">Cuenta regresiva</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Mundo</span><div class="nav-links"><a href="/es/conversor-zona-horaria/">Zona horaria</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Nacido en</span><div class="nav-links"><a href="/es/nacido-en-1990/">Nacido en 1990</a><span class="nav-sep">·</span><a href="/es/nacido-en-1980/">Nacido en 1980</a><span class="nav-sep">·</span><a href="/es/nacido-en-2000/">Nacido en 2000</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Resumen del año</span><div class="nav-links"><a href="/es/que-paso-en-2000/">¿Qué pasó en 2000?</a><span class="nav-sep">·</span><a href="/es/que-paso-en-1990/">¿Qué pasó en 1990?</a><span class="nav-sep">·</span><a href="/es/que-paso-en-1980/">¿Qué pasó en 1980?</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Calendarios</span><div class="nav-links"><a href="/es/numero-semana/2025/">Semanas 2025</a><span class="nav-sep">·</span><a href="/es/numero-semana/2026/">Semanas 2026</a><span class="nav-sep">·</span><a href="/es/numero-semana/2027/">Semanas 2027</a></div></div>
+</div>
+</nav>
+<main id="main-content" class="article-main">
+<section><h2>Definiciones clave</h2><div class="article-body"><p><strong>Los días calendario</strong> cuentan todos los días de la semana — de lunes a domingo, incluyendo fines de semana y festivos. Si cuentas 7 días calendario desde un lunes, llegas al lunes siguiente.</p>
+<p><strong>Los días hábiles</strong> (también llamados días laborables) cuentan solo de lunes a viernes, <em>excluyendo</em> los días festivos. Si una empresa está cerrada un día festivo, ese día no cuenta.</p>
+<ul>
+<li><strong>Día calendario:</strong> cualquier día de la semana (lun–dom), incluidos fines de semana y festivos.</li>
+<li><strong>Día hábil:</strong> de lunes a viernes, excluyendo días festivos.</li>
+</ul></div></section>
+<section><h2>Ejemplo de cálculo</h2><div class="article-body"><p>Supongamos que un contrato establece la entrega en <strong>5 días hábiles desde el lunes 7 de abril</strong>. Contando solo días laborables, eso significa entrega el viernes 11 de abril como máximo — sábado y domingo se saltan por completo.</p></div><div class="article-table-wrap"><table>
+<tr><th>Día</th><th>Día calendario</th><th>Día hábil</th></tr>
+<tr><td>Lunes 7 abr.</td><td>Día 1</td><td>Día 1</td></tr>
+<tr><td>Martes 8 abr.</td><td>Día 2</td><td>Día 2</td></tr>
+<tr><td>Miércoles 9 abr.</td><td>Día 3</td><td>Día 3</td></tr>
+<tr><td>Jueves 10 abr.</td><td>Día 4</td><td>Día 4</td></tr>
+<tr><td>Viernes 11 abr.</td><td>Día 5</td><td>Día 5 ✓</td></tr>
+<tr><td>Sábado 12 abr.</td><td>Día 6</td><td>— (fin de semana)</td></tr>
+<tr><td>Domingo 13 abr.</td><td>Día 7</td><td>— (fin de semana)</td></tr>
+<tr><td>Lunes 14 abr.</td><td>Día 8</td><td>Día 6 (si necesario)</td></tr>
+</table></div></section>
+<section><h2>¿Cuándo importa la diferencia?</h2><div class="article-body"><p>La distinción entre días hábiles y días calendario es crítica en varios contextos del mundo real:</p>
+<ul>
+<li><strong>Contratos y plazos legales:</strong> los tribunales y contratos suelen usar días hábiles para los plazos de respuesta, ventanas de apelación y períodos de preaviso.</li>
+<li><strong>Envíos y entregas:</strong> los servicios de mensajería suelen cotizar tiempos de entrega en días hábiles. Un envío de "3 días hábiles" pedido el viernes puede no llegar hasta el miércoles.</li>
+<li><strong>Nómina:</strong> algunos ciclos de nómina cuentan días hábiles quincenales, lo que afecta cuándo se acreditan los depósitos.</li>
+<li><strong>Banca:</strong> las transferencias de fondos y el cobro de cheques se miden en días hábiles, no en días calendario.</li>
+</ul></div></section>
+<section><h2>Días festivos</h2><div class="article-body"><p>Los días festivos varían significativamente según el país, el estado e incluso la industria. En España, existen festivos nacionales, autonómicos y locales que pueden reducir el número de días hábiles en un período determinado.</p>
+<p>Al contar días hábiles para un plazo, comprueba siempre si hay días festivos dentro de la ventana temporal — cada uno añade un día calendario adicional al recuento total. Algunos contratos definen explícitamente qué calendario de festivos aplica.</p></div></section>
+<section class="article-faq"><h2>FAQ</h2><details><summary>¿El sábado es un día hábil?</summary><p>No. En la mayoría de los países, el sábado y el domingo no son días hábiles. Los días hábiles son de lunes a viernes, excluyendo días festivos.</p></details><details><summary>¿Son iguales los días hábiles en todo el mundo?</summary><p>No exactamente. En algunos países (como Israel o Arabia Saudí), la semana laboral va de domingo a jueves. La mayoría de los países occidentales usan de lunes a viernes como días hábiles.</p></details><details><summary>¿Cómo cuento 10 días hábiles desde hoy?</summary><p>Empieza desde mañana y cuenta hacia adelante, saltando cada sábado y domingo. Por cada día festivo que caiga en la ventana, añade un día calendario adicional al final.</p></details><details><summary>¿"En 5 días hábiles" incluye el día de inicio?</summary><p>Depende de la redacción. "En 5 días hábiles" normalmente significa 5 días hábiles completos después de la fecha de inicio — sin contar el día 0. Clarifica siempre si el lenguaje es ambiguo.</p></details></section>
+<div class="article-related"><strong>Related:</strong> <a href="/es/cuantos-dias-tiene-cada-mes/">Cuántos días tiene cada mes</a> · <a href="/es/dias-entre-fechas/">Calculadora de días entre fechas</a></div>
+<div class="article-cta"><a href="/es/calculadora-dias-habiles/" class="cta-btn">Calcular días hábiles entre fechas →</a></div>
+</main>
+<footer>
+<nav class="footer-nav" aria-label="Site links">
+<div class="footer-col"><strong>Edad</strong>
+<a href="/es/calculadora-edad/">Calculadora de edad</a>
+<a href="/es/edad-cronologica/">Edad cronológica</a>
+<a href="/es/calculadora-edad-bebe/">Edad del bebé</a>
+<a href="/es/calculadora-edad-perro/">Edad del perro</a>
+<a href="/es/calculadora-edad-gato/">Edad del gato</a></div>
+<div class="footer-col"><strong>Fechas</strong>
+<a href="/es/dias-entre-fechas/">Días entre fechas</a>
+<a href="/es/calculadora-fechas/">Calculadora de fechas</a>
+<a href="/es/que-dia-es-hoy/">¿Qué día es hoy?</a>
+<a href="/es/numero-semana/">Número de semana</a>
+<a href="/es/calculadora-dias-habiles/">Días hábiles</a></div>
+<div class="footer-col"><strong>Cuentas</strong>
+<a href="/es/dias-para-navidad/">Navidad</a>
+<a href="/es/dias-para-ano-nuevo/">Año Nuevo</a>
+<a href="/es/dias-para-halloween/">Halloween</a>
+<a href="/es/dias-para-pascua/">Pascua</a>
+<a href="/es/cuenta-regresiva/">Cuenta regresiva</a></div>
+<div class="footer-col"><strong>Mundo</strong>
+<a href="/es/conversor-zona-horaria/">Zona horaria</a></div>
+<div class="footer-col"><strong>Nacido en</strong>
+<a href="/es/nacido-en-1990/">Nacido en 1990</a>
+<a href="/es/nacido-en-1980/">Nacido en 1980</a>
+<a href="/es/nacido-en-2000/">Nacido en 2000</a></div>
+<div class="footer-col"><strong>Resumen del año</strong>
+<a href="/es/que-paso-en-2000/">¿Qué pasó en 2000?</a>
+<a href="/es/que-paso-en-1990/">¿Qué pasó en 1990?</a>
+<a href="/es/que-paso-en-1980/">¿Qué pasó en 1980?</a></div>
+<div class="footer-col"><strong>Calendarios</strong>
+<a href="/es/numero-semana/2025/">Semanas 2025</a>
+<a href="/es/numero-semana/2026/">Semanas 2026</a>
+<a href="/es/numero-semana/2027/">Semanas 2027</a></div>
+</nav>
+<div class="footer-copy">© 2026 DateCalc.app — Calculadoras de fecha y hora gratuitas en línea · <a href="/es/acerca-de/">Acerca de</a> · <a href="/es/privacidad/">Privacidad</a></div>
+</footer>
+</div>
+<script>
+(function(){
+  var now = new Date();
+  var opts = {weekday:'long',year:'numeric',month:'long',day:'numeric'};
+  document.getElementById('todayMeta').innerHTML =
+    now.toLocaleDateString('es-ES', opts) + '<br>Calculadora de fechas gratuita';
+})();
+</script>
+<div id="consent-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#111111;color:#fff;padding:.9rem 1.4rem;z-index:9999;font-size:.82rem;font-family:sans-serif;align-items:center;gap:.8rem;flex-wrap:wrap">
+  <span style="flex:1;min-width:200px">Usamos Google AdSense para financiar este servicio gratuito. ¿Acepta las cookies publicitarias?</span>
+  <button id="consent-accept" style="background:#c8392b;color:#fff;border:none;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Aceptar</button>
+  <button id="consent-decline" style="background:transparent;color:#aaa;border:1px solid #555;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Continuar sin</button>
+</div>
+</body>
+</html>
