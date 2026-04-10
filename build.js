@@ -1022,6 +1022,14 @@ for (const tool of tools) {
     }
   }
 }
+for (const cluster of articles) {
+  for (const page of cluster.pages) {
+    for (const lang of ['en', 'fr', 'es']) {
+      const s = page.slugs[lang];
+      if (s) allSlugs.push(`/${s}/`);
+    }
+  }
+}
 
 const today = new Date().toISOString().split('T')[0];
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
