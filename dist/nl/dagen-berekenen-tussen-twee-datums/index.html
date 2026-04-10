@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hoe het aantal dagen tussen twee datums te berekenen</title>
+<meta name="robots" content="index, follow">
+<meta name="description" content="Stap-voor-stap handleiding voor het berekenen van het aantal dagen tussen twee datums. Inclusief formule, uitgewerkte voorbeelden en omgang met schrikkeljaren.">
+<link rel="canonical" href="https://datecalc.app/nl/dagen-berekenen-tussen-twee-datums/">
+<link rel="alternate" hreflang="en" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/comment-calculer-jours-entre-deux-dates/">
+<link rel="alternate" hreflang="es" href="https://datecalc.app/es/como-calcular-dias-entre-dos-fechas/">
+<link rel="alternate" hreflang="pt" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<link rel="alternate" hreflang="de" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<link rel="alternate" hreflang="it" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<link rel="alternate" hreflang="pl" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<link rel="alternate" hreflang="ja" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<link rel="alternate" hreflang="ko" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<link rel="alternate" hreflang="nl" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<link rel="alternate" hreflang="x-default" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hoe het aantal dagen tussen twee datums te berekenen">
+<meta property="og:description" content="Stap-voor-stap handleiding voor het berekenen van het aantal dagen tussen twee datums. Inclusief formule, uitgewerkte voorbeelden en omgang met schrikkeljaren.">
+<meta property="og:url" content="https://datecalc.app/nl/dagen-berekenen-tussen-twee-datums/">
+<meta property="og:site_name" content="DateCalc.app">
+<meta property="og:image" content="https://datecalc.app/og.png">
+<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/playfair-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/style.css">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="shortcut icon" href="/favicon.svg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Hoeveel dagen zijn er tussen 1 januari en 31 december?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "364 dagen scheiden 1 januari van 31 december (zonder de eerste dag mee te tellen). Het volledige jaar van 1 januari tot 1 januari van het volgende jaar is 365 dagen (of 366 in een schrikkeljaar)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe bereken ik het aantal dagen tussen twee datums in Excel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Trek in Excel de twee datumcellen direct van elkaar af: =B1-A1. Formatteer de resultaatcel als getal (niet als datum). Excel slaat datums op als getallen, dus aftrekken geeft het exacte aantal dagen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Zijn zowel de begin- als einddatum inbegrepen in de berekening?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dat hangt van de conventie af. De meeste rekenmachines tellen het verschil tussen datums (zonder de eindpunten mee te tellen), dus 1 januari tot 5 januari = 4 dagen. Als u beide dagen moet mee tellen (bijv. voor een huurperiode), voeg dan 1 toe aan het resultaat."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoeveel dagen zijn er tussen twee datums die een schrikkeljaar omspannen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Als het datumbereik 29 februari van een schrikkeljaar omvat, voeg dan 1 extra dag toe vergeleken met een berekening zonder schrikkeljaar. Bijvoorbeeld: 1 januari 2024 tot 1 januari 2025 = 366 dagen (2024 is een schrikkeljaar)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is de snelste manier om dagen tussen datums te berekenen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gebruik een online datumcalculator (zoals die op deze site). Voer de twee datums in en de calculator geeft direct het aantal dagen, weken, maanden en jaren daartussen."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Hoe het aantal dagen tussen twee datums te berekenen",
+  "description": "Stap-voor-stap handleiding voor het berekenen van het aantal dagen tussen twee datums. Inclusief formule, uitgewerkte voorbeelden en omgang met schrikkeljaren.",
+  "url": "https://datecalc.app/nl/dagen-berekenen-tussen-twee-datums/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "DateCalc.app",
+    "url": "https://datecalc.app"
+  }
+}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"DateCalc.app","url":"https://datecalc.app","logo":"https://datecalc.app/og.png","contactPoint":{"@type":"ContactPoint","email":"hello@datecalc.app","contactType":"customer support"}}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header>
+<div class="masthead">
+  <a href="/nl/" class="masthead-brand">DateCalc<span>.</span>app</a>
+  <div class="masthead-meta" id="todayMeta"></div>
+</div>
+</header>
+<div class="lang-strip">
+  <a href="/how-to-calculate-days-between-dates/" class="lang-btn">EN</a>
+  <a href="/fr/comment-calculer-jours-entre-deux-dates/" class="lang-btn">FR</a>
+  <a href="/es/como-calcular-dias-entre-dos-fechas/" class="lang-btn">ES</a>
+  <a href="/how-to-calculate-days-between-dates/" class="lang-btn">PT</a>
+  <a href="/how-to-calculate-days-between-dates/" class="lang-btn">DE</a>
+  <a href="/how-to-calculate-days-between-dates/" class="lang-btn">IT</a>
+  <a href="/how-to-calculate-days-between-dates/" class="lang-btn">PL</a>
+  <a href="/how-to-calculate-days-between-dates/" class="lang-btn">JA</a>
+  <a href="/how-to-calculate-days-between-dates/" class="lang-btn">KO</a>
+  <a href="/how-to-calculate-days-between-dates/" class="lang-btn active">NL</a>
+</div>
+<div class="page">
+<div class="headline-block">
+  <p class="kicker">DATUM BEREKENINGS GIDS</p>
+  <h1>Hoe het aantal dagen tussen twee datums te berekenen</h1>
+  <p class="article-intro">Om het aantal dagen tussen twee datums te berekenen, trekt u de vroegste datum af van de laatste. Er zijn verschillende methoden om dit nauwkeurig te doen, afhankelijk of u met de hand, een spreadsheet of een formule rekent.</p>
+</div>
+<nav aria-label="Tools">
+<div class="tool-nav">
+    <div class="nav-group"><span class="nav-cat">Leeftijd</span><div class="nav-links"><a href="/nl/leeftijdscalculator/">Leeftijdscalculator</a><span class="nav-sep">·</span><a href="/nl/chronologische-leeftijd/">Chronologische Leeftijd</a><span class="nav-sep">·</span><a href="/nl/baby-leeftijd/">Baby Leeftijd</a><span class="nav-sep">·</span><a href="/nl/hond-leeftijd/">Hond Leeftijd</a><span class="nav-sep">·</span><a href="/nl/kat-leeftijd/">Kat Leeftijd</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Datums</span><div class="nav-links"><a href="/nl/dagen-tussen-datums/">Dagen Tussen Datums</a><span class="nav-sep">·</span><a href="/nl/datum-calculator/">Datumcalculator</a><span class="nav-sep">·</span><a href="/nl/welke-dag-is-het/">Welke Dag Is Het</a><span class="nav-sep">·</span><a href="/nl/weeknummer/">Weeknummer</a><span class="nav-sep">·</span><a href="/nl/werkdagen-calculator/">Werkdagen Calculator</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Aftellen</span><div class="nav-links"><a href="/nl/dagen-tot-kerst/">Kerst</a><span class="nav-sep">·</span><a href="/nl/dagen-tot-nieuwjaar/">Nieuwjaar</a><span class="nav-sep">·</span><a href="/nl/dagen-tot-halloween/">Halloween</a><span class="nav-sep">·</span><a href="/nl/dagen-tot-pasen/">Pasen</a><span class="nav-sep">·</span><a href="/nl/aftellen/">Afteltimer</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Wereld</span><div class="nav-links"><a href="/nl/tijdzone-omzetter/">Tijdzone Omzetter</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Geboren in</span><div class="nav-links"><a href="/nl/geboren-in-1990/">Geboren in 1990</a><span class="nav-sep">·</span><a href="/nl/geboren-in-1980/">Geboren in 1980</a><span class="nav-sep">·</span><a href="/nl/geboren-in-2000/">Geboren in 2000</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Terugblik</span><div class="nav-links"><a href="/nl/wat-gebeurde-er-in-2000/">Wat gebeurde er in 2000</a><span class="nav-sep">·</span><a href="/nl/wat-gebeurde-er-in-1990/">Wat gebeurde er in 1990</a><span class="nav-sep">·</span><a href="/nl/wat-gebeurde-er-in-1980/">Wat gebeurde er in 1980</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Kalenders</span><div class="nav-links"><a href="/nl/weeknummer/2025/">Weeknummers 2025</a><span class="nav-sep">·</span><a href="/nl/weeknummer/2026/">Weeknummers 2026</a><span class="nav-sep">·</span><a href="/nl/weeknummer/2027/">Weeknummers 2027</a></div></div>
+</div>
+</nav>
+<main id="main-content" class="article-main">
+<section><h2>Methode 1: kalenderdagen direct tellen</h2><div class="article-body"><p>De eenvoudigste aanpak: begin bij de vroegste datum en tel naar de laatste datum, één dag tegelijk. Dit is praktisch voor korte periodes (een paar weken), maar niet voor langere periodes.</p>
+<p><strong>Voorbeeld:</strong> Hoeveel dagen van 1 april tot 15 april?<br>
+1 april → 15 april = <strong>14 dagen</strong>.</p></div></section>
+<section><h2>Methode 2: dagnummers in het jaar aftrekken</h2><div class="article-body"><p>Elke dag van het jaar heeft een nummer van 1 (1 januari) tot 365 (31 december). Om dagen tussen twee datums in hetzelfde jaar te vinden, trekt u de dagnummers af.</p>
+<p><strong>Voorbeeld:</strong> Hoeveel dagen van 10 maart tot 20 november 2025?</p>
+<ol>
+<li>10 maart = dag 69 van het jaar</li>
+<li>20 november = dag 324 van het jaar</li>
+<li>324 − 69 = <strong>255 dagen</strong></li>
+</ol></div><div class="article-table-wrap"><table>
+<tr><th>Maand</th><th>Dag van het jaar (eerste dag)</th><th>Dagen in de maand</th></tr>
+<tr><td>Januari</td><td>1</td><td>31</td></tr>
+<tr><td>Februari</td><td>32</td><td>28 (of 29 in een schrikkeljaar)</td></tr>
+<tr><td>Maart</td><td>60 (61 in schrikkeljaar)</td><td>31</td></tr>
+<tr><td>April</td><td>91 (92)</td><td>30</td></tr>
+<tr><td>Mei</td><td>121 (122)</td><td>31</td></tr>
+<tr><td>Juni</td><td>152 (153)</td><td>30</td></tr>
+<tr><td>Juli</td><td>182 (183)</td><td>31</td></tr>
+<tr><td>Augustus</td><td>213 (214)</td><td>31</td></tr>
+<tr><td>September</td><td>244 (245)</td><td>30</td></tr>
+<tr><td>Oktober</td><td>274 (275)</td><td>31</td></tr>
+<tr><td>November</td><td>305 (306)</td><td>30</td></tr>
+<tr><td>December</td><td>335 (336)</td><td>31</td></tr>
+</table></div></section>
+<section><h2>Methode 3: tellen over meerdere jaren</h2><div class="article-body"><p>Als datums meerdere jaren beslaan, tel dan de resterende dagen in het eerste jaar op bij de volledige dagen van complete tussenjaren en de verstreken dagen in het laatste jaar.</p>
+<p><strong>Voorbeeld:</strong> Dagen van 15 juni 2020 tot 10 maart 2024:</p>
+<ol>
+<li>15 juni tot 31 december 2020: 199 resterende dagen in 2020</li>
+<li>Volledig jaar 2021: 365 dagen</li>
+<li>Volledig jaar 2022: 365 dagen</li>
+<li>Volledig jaar 2023: 365 dagen</li>
+<li>1 januari tot 10 maart 2024: 70 dagen (2024 is een schrikkeljaar)</li>
+<li>Totaal: 199 + 365 + 365 + 365 + 70 = <strong>1.364 dagen</strong></li>
+</ol></div></section>
+<section><h2>Hoe schrikkeljaren de berekening beïnvloeden</h2><div class="article-body"><p>Een schrikkeljaar heeft 366 dagen in plaats van 365. Als uw datumbereik 29 februari van een schrikkeljaar omvat, voeg dan 1 dag extra toe. Schrikkeljaren komen elke 4 jaar voor: 2020, 2024, 2028, 2032…</p>
+<p>Als u met de hand over meerdere jaren rekent, controleer dan of elk jaar in het bereik een schrikkeljaar is en gebruik 366 in plaats van 365 voor die jaren.</p></div></section>
+<section class="article-faq"><h2>FAQ</h2><details><summary>Hoeveel dagen zijn er tussen 1 januari en 31 december?</summary><p>364 dagen scheiden 1 januari van 31 december (zonder de eerste dag mee te tellen). Het volledige jaar van 1 januari tot 1 januari van het volgende jaar is 365 dagen (of 366 in een schrikkeljaar).</p></details><details><summary>Hoe bereken ik het aantal dagen tussen twee datums in Excel?</summary><p>Trek in Excel de twee datumcellen direct van elkaar af: =B1-A1. Formatteer de resultaatcel als getal (niet als datum). Excel slaat datums op als getallen, dus aftrekken geeft het exacte aantal dagen.</p></details><details><summary>Zijn zowel de begin- als einddatum inbegrepen in de berekening?</summary><p>Dat hangt van de conventie af. De meeste rekenmachines tellen het verschil tussen datums (zonder de eindpunten mee te tellen), dus 1 januari tot 5 januari = 4 dagen. Als u beide dagen moet mee tellen (bijv. voor een huurperiode), voeg dan 1 toe aan het resultaat.</p></details><details><summary>Hoeveel dagen zijn er tussen twee datums die een schrikkeljaar omspannen?</summary><p>Als het datumbereik 29 februari van een schrikkeljaar omvat, voeg dan 1 extra dag toe vergeleken met een berekening zonder schrikkeljaar. Bijvoorbeeld: 1 januari 2024 tot 1 januari 2025 = 366 dagen (2024 is een schrikkeljaar).</p></details><details><summary>Wat is de snelste manier om dagen tussen datums te berekenen?</summary><p>Gebruik een online datumcalculator (zoals die op deze site). Voer de twee datums in en de calculator geeft direct het aantal dagen, weken, maanden en jaren daartussen.</p></details></section>
+<div class="article-related"><strong>Related:</strong> <a href="/nl/dagen-per-maand/">Dagen per maand</a> · <a href="/nl/werkdagen-vs-kalenderdagen/">Werkdagen vs kalenderdagen</a> · <a href="/nl/weken-per-jaar/">Weken per jaar</a></div>
+<div class="article-cta"><a href="/nl/dagen-berekenen-tussen-datums/" class="cta-btn">Dagen berekenen tussen datums — gratis tool →</a></div>
+</main>
+<footer>
+<nav class="footer-nav" aria-label="Site links">
+<div class="footer-col"><strong>Leeftijd</strong>
+<a href="/nl/leeftijdscalculator/">Leeftijdscalculator</a>
+<a href="/nl/chronologische-leeftijd/">Chronologische Leeftijd</a>
+<a href="/nl/baby-leeftijd/">Baby Leeftijd</a>
+<a href="/nl/hond-leeftijd/">Hond Leeftijd</a>
+<a href="/nl/kat-leeftijd/">Kat Leeftijd</a></div>
+<div class="footer-col"><strong>Datums</strong>
+<a href="/nl/dagen-tussen-datums/">Dagen Tussen Datums</a>
+<a href="/nl/datum-calculator/">Datumcalculator</a>
+<a href="/nl/welke-dag-is-het/">Welke Dag Is Het</a>
+<a href="/nl/weeknummer/">Weeknummer</a>
+<a href="/nl/werkdagen-calculator/">Werkdagen Calculator</a></div>
+<div class="footer-col"><strong>Aftellen</strong>
+<a href="/nl/dagen-tot-kerst/">Kerst</a>
+<a href="/nl/dagen-tot-nieuwjaar/">Nieuwjaar</a>
+<a href="/nl/dagen-tot-halloween/">Halloween</a>
+<a href="/nl/dagen-tot-pasen/">Pasen</a>
+<a href="/nl/aftellen/">Afteltimer</a></div>
+<div class="footer-col"><strong>Wereld</strong>
+<a href="/nl/tijdzone-omzetter/">Tijdzone Omzetter</a></div>
+<div class="footer-col"><strong>Geboren in</strong>
+<a href="/nl/geboren-in-1990/">Geboren in 1990</a>
+<a href="/nl/geboren-in-1980/">Geboren in 1980</a>
+<a href="/nl/geboren-in-2000/">Geboren in 2000</a></div>
+<div class="footer-col"><strong>Terugblik</strong>
+<a href="/nl/wat-gebeurde-er-in-2000/">Wat gebeurde er in 2000</a>
+<a href="/nl/wat-gebeurde-er-in-1990/">Wat gebeurde er in 1990</a>
+<a href="/nl/wat-gebeurde-er-in-1980/">Wat gebeurde er in 1980</a></div>
+<div class="footer-col"><strong>Kalenders</strong>
+<a href="/nl/weeknummer/2025/">Weeknummers 2025</a>
+<a href="/nl/weeknummer/2026/">Weeknummers 2026</a>
+<a href="/nl/weeknummer/2027/">Weeknummers 2027</a></div>
+</nav>
+<div class="footer-copy">© 2026 DateCalc.app — Gratis online datum- en tijdcalculatoren · <a href="/nl/over-ons/">Over ons</a> · <a href="/nl/privacy/">Privacy</a></div>
+</footer>
+</div>
+<script>
+(function(){
+  var now = new Date();
+  var opts = {weekday:'long',year:'numeric',month:'long',day:'numeric'};
+  document.getElementById('todayMeta').innerHTML =
+    now.toLocaleDateString('nl-NL', opts) + '<br>Gratis datumcalculator';
+})();
+</script>
+<div id="consent-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#111111;color:#fff;padding:.9rem 1.4rem;z-index:9999;font-size:.82rem;font-family:sans-serif;align-items:center;gap:.8rem;flex-wrap:wrap">
+  <span style="flex:1;min-width:200px">Wij gebruiken Google AdSense om deze gratis service te financieren. Accepteert u advertentiecookies?</span>
+  <button id="consent-accept" style="background:#c8392b;color:#fff;border:none;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Accepteren</button>
+  <button id="consent-decline" style="background:transparent;color:#aaa;border:1px solid #555;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Doorgaan zonder</button>
+</div>
+</body>
+</html>

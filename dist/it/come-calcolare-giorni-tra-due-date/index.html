@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Come calcolare il numero di giorni tra due date</title>
+<meta name="robots" content="index, follow">
+<meta name="description" content="Guida passo dopo passo per calcolare il numero di giorni tra due date. Include formula, esempi pratici e come gestire gli anni bisestili.">
+<link rel="canonical" href="https://datecalc.app/it/come-calcolare-giorni-tra-due-date/">
+<link rel="alternate" hreflang="en" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/comment-calculer-jours-entre-deux-dates/">
+<link rel="alternate" hreflang="es" href="https://datecalc.app/es/como-calcular-dias-entre-dos-fechas/">
+<link rel="alternate" hreflang="pt" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<link rel="alternate" hreflang="de" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<link rel="alternate" hreflang="it" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<link rel="alternate" hreflang="pl" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<link rel="alternate" hreflang="ja" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<link rel="alternate" hreflang="ko" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<link rel="alternate" hreflang="nl" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<link rel="alternate" hreflang="x-default" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Come calcolare il numero di giorni tra due date">
+<meta property="og:description" content="Guida passo dopo passo per calcolare il numero di giorni tra due date. Include formula, esempi pratici e come gestire gli anni bisestili.">
+<meta property="og:url" content="https://datecalc.app/it/come-calcolare-giorni-tra-due-date/">
+<meta property="og:site_name" content="DateCalc.app">
+<meta property="og:image" content="https://datecalc.app/og.png">
+<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/playfair-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/style.css">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="shortcut icon" href="/favicon.svg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Quanti giorni ci sono tra il 1 gennaio e il 31 dicembre?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "364 giorni separano il 1 gennaio dal 31 dicembre (senza contare il primo giorno). L'anno completo dal 1 gennaio al 1 gennaio dell'anno successivo è di 365 giorni (o 366 in un anno bisestile)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Come calcolare il numero di giorni tra due date in Excel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In Excel, sottrai direttamente le due celle data: =B1-A1. Formatta la cella del risultato come numero (non come data). Excel memorizza le date come numeri, quindi la sottrazione fornisce il numero esatto di giorni."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Il calcolo include sia la data di inizio che quella di fine?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dipende dalla convenzione. La maggior parte delle calcolatrici conta il divario tra le date (senza includere gli estremi), quindi dal 1 al 5 gennaio = 4 giorni. Se devi includere entrambi i giorni (ad esempio per un periodo di affitto), aggiungi 1 al risultato."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quanti giorni ci sono tra due date che attraversano un anno bisestile?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Se l'intervallo include il 29 febbraio di un anno bisestile, aggiungi 1 giorno in più rispetto a un calcolo senza anno bisestile. Ad esempio, dal 1 gennaio 2024 al 1 gennaio 2025 = 366 giorni (2024 è anno bisestile)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual è il modo più veloce per calcolare i giorni tra date?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Usa una calcolatrice di date online (come quella su questo sito). Inserisci le due date e la calcolatrice restituisce istantaneamente il numero di giorni, settimane, mesi e anni tra di esse."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Come calcolare il numero di giorni tra due date",
+  "description": "Guida passo dopo passo per calcolare il numero di giorni tra due date. Include formula, esempi pratici e come gestire gli anni bisestili.",
+  "url": "https://datecalc.app/it/come-calcolare-giorni-tra-due-date/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "DateCalc.app",
+    "url": "https://datecalc.app"
+  }
+}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"DateCalc.app","url":"https://datecalc.app","logo":"https://datecalc.app/og.png","contactPoint":{"@type":"ContactPoint","email":"hello@datecalc.app","contactType":"customer support"}}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header>
+<div class="masthead">
+  <a href="/it/" class="masthead-brand">DateCalc<span>.</span>app</a>
+  <div class="masthead-meta" id="todayMeta"></div>
+</div>
+</header>
+<div class="lang-strip">
+  <a href="/how-to-calculate-days-between-dates/" class="lang-btn">EN</a>
+  <a href="/fr/comment-calculer-jours-entre-deux-dates/" class="lang-btn">FR</a>
+  <a href="/es/como-calcular-dias-entre-dos-fechas/" class="lang-btn">ES</a>
+  <a href="/how-to-calculate-days-between-dates/" class="lang-btn">PT</a>
+  <a href="/how-to-calculate-days-between-dates/" class="lang-btn">DE</a>
+  <a href="/how-to-calculate-days-between-dates/" class="lang-btn active">IT</a>
+  <a href="/how-to-calculate-days-between-dates/" class="lang-btn">PL</a>
+  <a href="/how-to-calculate-days-between-dates/" class="lang-btn">JA</a>
+  <a href="/how-to-calculate-days-between-dates/" class="lang-btn">KO</a>
+  <a href="/how-to-calculate-days-between-dates/" class="lang-btn">NL</a>
+</div>
+<div class="page">
+<div class="headline-block">
+  <p class="kicker">GUIDA AL CALCOLO DATE</p>
+  <h1>Come calcolare il numero di giorni tra due date</h1>
+  <p class="article-intro">Per calcolare il numero di giorni tra due date, sottrai la data più antica da quella più recente. Esistono diversi metodi per farlo con precisione, a seconda che tu stia calcolando a mano, con un foglio di calcolo o con una formula.</p>
+</div>
+<nav aria-label="Tools">
+<div class="tool-nav">
+    <div class="nav-group"><span class="nav-cat">Età</span><div class="nav-links"><a href="/it/calcolo-eta/">Calcolo Età</a><span class="nav-sep">·</span><a href="/it/eta-cronologica/">Età Cronologica</a><span class="nav-sep">·</span><a href="/it/calcolatore-eta-neonato/">Età Neonato</a><span class="nav-sep">·</span><a href="/it/calcolatore-eta-cane/">Età del Cane</a><span class="nav-sep">·</span><a href="/it/calcolatore-eta-gatto/">Età del Gatto</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Date</span><div class="nav-links"><a href="/it/giorni-tra-date/">Giorni Tra Date</a><span class="nav-sep">·</span><a href="/it/calcolatore-data/">Calcolatore Data</a><span class="nav-sep">·</span><a href="/it/che-giorno-e-oggi/">Che Giorno È Oggi</a><span class="nav-sep">·</span><a href="/it/numero-settimana/">Numero Settimana</a><span class="nav-sep">·</span><a href="/it/calcolatore-giorni-lavorativi/">Giorni Lavorativi</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Countdown</span><div class="nav-links"><a href="/it/giorni-a-natale/">Natale</a><span class="nav-sep">·</span><a href="/it/giorni-a-capodanno/">Capodanno</a><span class="nav-sep">·</span><a href="/it/giorni-a-halloween/">Halloween</a><span class="nav-sep">·</span><a href="/it/giorni-a-pasqua/">Pasqua</a><span class="nav-sep">·</span><a href="/it/conto-alla-rovescia/">Conto alla Rovescia</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Mondo</span><div class="nav-links"><a href="/it/convertitore-fuso-orario/">Fuso Orario</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Nato nel</span><div class="nav-links"><a href="/it/nato-nel-1990/">Nato nel 1990</a><span class="nav-sep">·</span><a href="/it/nato-nel-1980/">Nato nel 1980</a><span class="nav-sep">·</span><a href="/it/nato-nel-2000/">Nato nel 2000</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Retrospettiva</span><div class="nav-links"><a href="/it/cosa-e-successo-nel-2000/">Cosa è successo nel 2000</a><span class="nav-sep">·</span><a href="/it/cosa-e-successo-nel-1990/">Cosa è successo nel 1990</a><span class="nav-sep">·</span><a href="/it/cosa-e-successo-nel-1980/">Cosa è successo nel 1980</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Calendari</span><div class="nav-links"><a href="/it/numero-settimana/2025/">Settimane 2025</a><span class="nav-sep">·</span><a href="/it/numero-settimana/2026/">Settimane 2026</a><span class="nav-sep">·</span><a href="/it/numero-settimana/2027/">Settimane 2027</a></div></div>
+</div>
+</nav>
+<main id="main-content" class="article-main">
+<section><h2>Metodo 1: contare i giorni del calendario direttamente</h2><div class="article-body"><p>L'approccio più semplice: inizia dalla data più antica e conta fino alla data più recente, un giorno alla volta. È pratico per periodi brevi (qualche settimana), ma poco utile per intervalli più lunghi.</p>
+<p><strong>Esempio:</strong> Quanti giorni dal 1 al 15 aprile?<br>
+1 aprile → 15 aprile = <strong>14 giorni</strong>.</p></div></section>
+<section><h2>Metodo 2: sottrarre i numeri del giorno dell'anno</h2><div class="article-body"><p>Ogni giorno dell'anno ha un numero da 1 (1 gennaio) a 365 (31 dicembre). Per trovare i giorni tra due date nello stesso anno, sottrai quei numeri.</p>
+<p><strong>Esempio:</strong> Quanti giorni dal 10 marzo al 20 novembre 2025?</p>
+<ol>
+<li>10 marzo = giorno 69 dell'anno</li>
+<li>20 novembre = giorno 324 dell'anno</li>
+<li>324 − 69 = <strong>255 giorni</strong></li>
+</ol></div><div class="article-table-wrap"><table>
+<tr><th>Mese</th><th>Giorno dell'anno (primo giorno)</th><th>Giorni nel mese</th></tr>
+<tr><td>Gennaio</td><td>1</td><td>31</td></tr>
+<tr><td>Febbraio</td><td>32</td><td>28 (o 29 in anno bisestile)</td></tr>
+<tr><td>Marzo</td><td>60 (61 in anno bisestile)</td><td>31</td></tr>
+<tr><td>Aprile</td><td>91 (92)</td><td>30</td></tr>
+<tr><td>Maggio</td><td>121 (122)</td><td>31</td></tr>
+<tr><td>Giugno</td><td>152 (153)</td><td>30</td></tr>
+<tr><td>Luglio</td><td>182 (183)</td><td>31</td></tr>
+<tr><td>Agosto</td><td>213 (214)</td><td>31</td></tr>
+<tr><td>Settembre</td><td>244 (245)</td><td>30</td></tr>
+<tr><td>Ottobre</td><td>274 (275)</td><td>31</td></tr>
+<tr><td>Novembre</td><td>305 (306)</td><td>30</td></tr>
+<tr><td>Dicembre</td><td>335 (336)</td><td>31</td></tr>
+</table></div></section>
+<section><h2>Metodo 3: contare su più anni</h2><div class="article-body"><p>Quando le date coprono più anni, somma i giorni rimanenti nel primo anno, i giorni completi degli anni intermedi e i giorni trascorsi nell'ultimo anno.</p>
+<p><strong>Esempio:</strong> Giorni dal 15 giugno 2020 al 10 marzo 2024:</p>
+<ol>
+<li>Dal 15 giugno al 31 dicembre 2020: 199 giorni rimanenti nel 2020</li>
+<li>Anno completo 2021: 365 giorni</li>
+<li>Anno completo 2022: 365 giorni</li>
+<li>Anno completo 2023: 365 giorni</li>
+<li>Dal 1 gennaio al 10 marzo 2024: 70 giorni (2024 è anno bisestile)</li>
+<li>Totale: 199 + 365 + 365 + 365 + 70 = <strong>1.364 giorni</strong></li>
+</ol></div></section>
+<section><h2>Come gli anni bisestili influenzano il calcolo</h2><div class="article-body"><p>Un anno bisestile ha 366 giorni invece di 365. Se il tuo intervallo include il 29 febbraio di un anno bisestile, aggiungi 1 giorno in più. Gli anni bisestili si verificano ogni 4 anni: 2020, 2024, 2028, 2032…</p>
+<p>Se calcoli a mano su più anni, verifica se ogni anno dell'intervallo è bisestile e usa 366 invece di 365 per quegli anni.</p></div></section>
+<section class="article-faq"><h2>FAQ</h2><details><summary>Quanti giorni ci sono tra il 1 gennaio e il 31 dicembre?</summary><p>364 giorni separano il 1 gennaio dal 31 dicembre (senza contare il primo giorno). L'anno completo dal 1 gennaio al 1 gennaio dell'anno successivo è di 365 giorni (o 366 in un anno bisestile).</p></details><details><summary>Come calcolare il numero di giorni tra due date in Excel?</summary><p>In Excel, sottrai direttamente le due celle data: =B1-A1. Formatta la cella del risultato come numero (non come data). Excel memorizza le date come numeri, quindi la sottrazione fornisce il numero esatto di giorni.</p></details><details><summary>Il calcolo include sia la data di inizio che quella di fine?</summary><p>Dipende dalla convenzione. La maggior parte delle calcolatrici conta il divario tra le date (senza includere gli estremi), quindi dal 1 al 5 gennaio = 4 giorni. Se devi includere entrambi i giorni (ad esempio per un periodo di affitto), aggiungi 1 al risultato.</p></details><details><summary>Quanti giorni ci sono tra due date che attraversano un anno bisestile?</summary><p>Se l'intervallo include il 29 febbraio di un anno bisestile, aggiungi 1 giorno in più rispetto a un calcolo senza anno bisestile. Ad esempio, dal 1 gennaio 2024 al 1 gennaio 2025 = 366 giorni (2024 è anno bisestile).</p></details><details><summary>Qual è il modo più veloce per calcolare i giorni tra date?</summary><p>Usa una calcolatrice di date online (come quella su questo sito). Inserisci le due date e la calcolatrice restituisce istantaneamente il numero di giorni, settimane, mesi e anni tra di esse.</p></details></section>
+<div class="article-related"><strong>Related:</strong> <a href="/it/giorni-in-ogni-mese/">Giorni in ogni mese</a> · <a href="/it/giorni-lavorativi-vs-giorni-calendario/">Giorni lavorativi vs giorni calendario</a> · <a href="/it/settimane-in-un-anno/">Settimane in un anno</a></div>
+<div class="article-cta"><a href="/it/calcola-giorni-tra-date/" class="cta-btn">Calcola giorni tra date — strumento gratuito →</a></div>
+</main>
+<footer>
+<nav class="footer-nav" aria-label="Site links">
+<div class="footer-col"><strong>Età</strong>
+<a href="/it/calcolo-eta/">Calcolo Età</a>
+<a href="/it/eta-cronologica/">Età Cronologica</a>
+<a href="/it/calcolatore-eta-neonato/">Età Neonato</a>
+<a href="/it/calcolatore-eta-cane/">Età del Cane</a>
+<a href="/it/calcolatore-eta-gatto/">Età del Gatto</a></div>
+<div class="footer-col"><strong>Date</strong>
+<a href="/it/giorni-tra-date/">Giorni Tra Date</a>
+<a href="/it/calcolatore-data/">Calcolatore Data</a>
+<a href="/it/che-giorno-e-oggi/">Che Giorno È Oggi</a>
+<a href="/it/numero-settimana/">Numero Settimana</a>
+<a href="/it/calcolatore-giorni-lavorativi/">Giorni Lavorativi</a></div>
+<div class="footer-col"><strong>Countdown</strong>
+<a href="/it/giorni-a-natale/">Natale</a>
+<a href="/it/giorni-a-capodanno/">Capodanno</a>
+<a href="/it/giorni-a-halloween/">Halloween</a>
+<a href="/it/giorni-a-pasqua/">Pasqua</a>
+<a href="/it/conto-alla-rovescia/">Conto alla Rovescia</a></div>
+<div class="footer-col"><strong>Mondo</strong>
+<a href="/it/convertitore-fuso-orario/">Fuso Orario</a></div>
+<div class="footer-col"><strong>Nato nel</strong>
+<a href="/it/nato-nel-1990/">Nato nel 1990</a>
+<a href="/it/nato-nel-1980/">Nato nel 1980</a>
+<a href="/it/nato-nel-2000/">Nato nel 2000</a></div>
+<div class="footer-col"><strong>Retrospettiva</strong>
+<a href="/it/cosa-e-successo-nel-2000/">Cosa è successo nel 2000</a>
+<a href="/it/cosa-e-successo-nel-1990/">Cosa è successo nel 1990</a>
+<a href="/it/cosa-e-successo-nel-1980/">Cosa è successo nel 1980</a></div>
+<div class="footer-col"><strong>Calendari</strong>
+<a href="/it/numero-settimana/2025/">Settimane 2025</a>
+<a href="/it/numero-settimana/2026/">Settimane 2026</a>
+<a href="/it/numero-settimana/2027/">Settimane 2027</a></div>
+</nav>
+<div class="footer-copy">© 2026 DateCalc.app — Calcolatori di data e ora gratuiti online · <a href="/it/chi-siamo/">Chi siamo</a> · <a href="/it/privacy/">Privacy</a></div>
+</footer>
+</div>
+<script>
+(function(){
+  var now = new Date();
+  var opts = {weekday:'long',year:'numeric',month:'long',day:'numeric'};
+  document.getElementById('todayMeta').innerHTML =
+    now.toLocaleDateString('it-IT', opts) + '<br>Calcolatore di date gratuito';
+})();
+</script>
+<div id="consent-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#111111;color:#fff;padding:.9rem 1.4rem;z-index:9999;font-size:.82rem;font-family:sans-serif;align-items:center;gap:.8rem;flex-wrap:wrap">
+  <span style="flex:1;min-width:200px">Utilizziamo Google AdSense per finanziare questo servizio gratuito. Accetti i cookie pubblicitari?</span>
+  <button id="consent-accept" style="background:#c8392b;color:#fff;border:none;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Accetta</button>
+  <button id="consent-decline" style="background:transparent;color:#aaa;border:1px solid #555;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Continua senza</button>
+</div>
+</body>
+</html>

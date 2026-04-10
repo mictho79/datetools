@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dias úteis vs dias corridos: qual é a diferença?</title>
+<meta name="robots" content="index, follow">
+<meta name="description" content="Dias úteis versus dias corridos explicados. Aprenda as diferenças principais, veja um exemplo de cálculo e entenda quando cada tipo de contagem importa.">
+<link rel="canonical" href="https://datecalc.app/pt/dias-uteis-vs-dias-corridos/">
+<link rel="alternate" hreflang="en" href="https://datecalc.app/business-days-vs-calendar-days/">
+<link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/jours-ouvrables-vs-jours-calendaires/">
+<link rel="alternate" hreflang="es" href="https://datecalc.app/es/dias-habiles-vs-dias-calendario/">
+<link rel="alternate" hreflang="pt" href="https://datecalc.app/business-days-vs-calendar-days/">
+<link rel="alternate" hreflang="de" href="https://datecalc.app/business-days-vs-calendar-days/">
+<link rel="alternate" hreflang="it" href="https://datecalc.app/business-days-vs-calendar-days/">
+<link rel="alternate" hreflang="pl" href="https://datecalc.app/business-days-vs-calendar-days/">
+<link rel="alternate" hreflang="ja" href="https://datecalc.app/business-days-vs-calendar-days/">
+<link rel="alternate" hreflang="ko" href="https://datecalc.app/business-days-vs-calendar-days/">
+<link rel="alternate" hreflang="nl" href="https://datecalc.app/business-days-vs-calendar-days/">
+<link rel="alternate" hreflang="x-default" href="https://datecalc.app/business-days-vs-calendar-days/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Dias úteis vs dias corridos: qual é a diferença?">
+<meta property="og:description" content="Dias úteis versus dias corridos explicados. Aprenda as diferenças principais, veja um exemplo de cálculo e entenda quando cada tipo de contagem importa.">
+<meta property="og:url" content="https://datecalc.app/pt/dias-uteis-vs-dias-corridos/">
+<meta property="og:site_name" content="DateCalc.app">
+<meta property="og:image" content="https://datecalc.app/og.png">
+<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/playfair-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/style.css">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="shortcut icon" href="/favicon.svg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Sábado é dia útil?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Não. Na maioria dos países, sábado e domingo não são dias úteis. Dias úteis são de segunda a sexta, excluindo feriados."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Os dias úteis são iguais em todo o mundo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Não exatamente. Em alguns países (como Israel ou Arábia Saudita), a semana de trabalho vai de domingo a quinta. A maioria dos países ocidentais usa de segunda a sexta como dias úteis."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Como conto 10 dias úteis a partir de hoje?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Comece a partir de amanhã e conte para frente, pulando cada sábado e domingo. Para cada feriado que cair no período, adicione mais um dia corrido ao final."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "\"Em 5 dias úteis\" inclui o dia de início?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Depende da redação. \"Em 5 dias úteis\" geralmente significa 5 dias úteis completos após a data de início — sem contar o Dia 0. Sempre esclareça se a linguagem for ambígua."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Dias úteis vs dias corridos: qual é a diferença?",
+  "description": "Dias úteis versus dias corridos explicados. Aprenda as diferenças principais, veja um exemplo de cálculo e entenda quando cada tipo de contagem importa.",
+  "url": "https://datecalc.app/pt/dias-uteis-vs-dias-corridos/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "DateCalc.app",
+    "url": "https://datecalc.app"
+  }
+}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"DateCalc.app","url":"https://datecalc.app","logo":"https://datecalc.app/og.png","contactPoint":{"@type":"ContactPoint","email":"hello@datecalc.app","contactType":"customer support"}}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header>
+<div class="masthead">
+  <a href="/pt/" class="masthead-brand">DateCalc<span>.</span>app</a>
+  <div class="masthead-meta" id="todayMeta"></div>
+</div>
+</header>
+<div class="lang-strip">
+  <a href="/business-days-vs-calendar-days/" class="lang-btn">EN</a>
+  <a href="/fr/jours-ouvrables-vs-jours-calendaires/" class="lang-btn">FR</a>
+  <a href="/es/dias-habiles-vs-dias-calendario/" class="lang-btn">ES</a>
+  <a href="/business-days-vs-calendar-days/" class="lang-btn active">PT</a>
+  <a href="/business-days-vs-calendar-days/" class="lang-btn">DE</a>
+  <a href="/business-days-vs-calendar-days/" class="lang-btn">IT</a>
+  <a href="/business-days-vs-calendar-days/" class="lang-btn">PL</a>
+  <a href="/business-days-vs-calendar-days/" class="lang-btn">JA</a>
+  <a href="/business-days-vs-calendar-days/" class="lang-btn">KO</a>
+  <a href="/business-days-vs-calendar-days/" class="lang-btn">NL</a>
+</div>
+<div class="page">
+<div class="headline-block">
+  <p class="kicker">GUIA DE DATAS</p>
+  <h1>Dias úteis vs dias corridos: qual é a diferença?</h1>
+  <p class="article-intro">Quando um prazo diz "5 dias úteis", significa algo muito diferente de "5 dias corridos". Entender a distinção pode evitar que você perca contratos, entregas e prazos legais.</p>
+</div>
+<nav aria-label="Tools">
+<div class="tool-nav">
+    <div class="nav-group"><span class="nav-cat">Idade</span><div class="nav-links"><a href="/pt/calculadora-de-idade/">Calculadora de Idade</a><span class="nav-sep">·</span><a href="/pt/idade-cronologica/">Idade Cronológica</a><span class="nav-sep">·</span><a href="/pt/calculadora-idade-bebe/">Idade do Bebê</a><span class="nav-sep">·</span><a href="/pt/calculadora-idade-cachorro/">Idade do Cachorro</a><span class="nav-sep">·</span><a href="/pt/calculadora-idade-gato/">Idade do Gato</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Datas</span><div class="nav-links"><a href="/pt/dias-entre-datas/">Dias Entre Datas</a><span class="nav-sep">·</span><a href="/pt/calculadora-de-data/">Calculadora de Data</a><span class="nav-sep">·</span><a href="/pt/que-dia-e-hoje/">Que Dia É Hoje</a><span class="nav-sep">·</span><a href="/pt/numero-da-semana/">Número da Semana</a><span class="nav-sep">·</span><a href="/pt/calculadora-dias-uteis/">Dias Úteis</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Contagens</span><div class="nav-links"><a href="/pt/dias-para-o-natal/">Natal</a><span class="nav-sep">·</span><a href="/pt/dias-para-ano-novo/">Ano Novo</a><span class="nav-sep">·</span><a href="/pt/dias-para-o-halloween/">Halloween</a><span class="nav-sep">·</span><a href="/pt/dias-para-a-pascoa/">Páscoa</a><span class="nav-sep">·</span><a href="/pt/temporizador-regressivo/">Temporizador</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Mundo</span><div class="nav-links"><a href="/pt/conversor-fuso-horario/">Fuso Horário</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Nascido em</span><div class="nav-links"><a href="/pt/nascido-em-1990/">Nascido em 1990</a><span class="nav-sep">·</span><a href="/pt/nascido-em-1980/">Nascido em 1980</a><span class="nav-sep">·</span><a href="/pt/nascido-em-2000/">Nascido em 2000</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Retrospectiva</span><div class="nav-links"><a href="/pt/o-que-aconteceu-em-2000/">O que aconteceu em 2000</a><span class="nav-sep">·</span><a href="/pt/o-que-aconteceu-em-1990/">O que aconteceu em 1990</a><span class="nav-sep">·</span><a href="/pt/o-que-aconteceu-em-1980/">O que aconteceu em 1980</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Calendários</span><div class="nav-links"><a href="/pt/numero-da-semana/2025/">Semanas 2025</a><span class="nav-sep">·</span><a href="/pt/numero-da-semana/2026/">Semanas 2026</a><span class="nav-sep">·</span><a href="/pt/numero-da-semana/2027/">Semanas 2027</a></div></div>
+</div>
+</nav>
+<main id="main-content" class="article-main">
+<section><h2>Definições principais</h2><div class="article-body"><p><strong>Dias corridos</strong> contam todos os dias da semana — de segunda a domingo, incluindo fins de semana e feriados. Quando você conta 7 dias corridos a partir de uma segunda-feira, chega à segunda-feira seguinte.</p>
+<p><strong>Dias úteis</strong> (também chamados de dias de trabalho) contam apenas de segunda a sexta, <em>excluindo</em> feriados. Se uma empresa estiver fechada num feriado, esse dia não conta.</p>
+<ul>
+<li><strong>Dia corrido:</strong> qualquer dia da semana (seg–dom), incluindo fins de semana e feriados.</li>
+<li><strong>Dia útil:</strong> de segunda a sexta, excluindo feriados.</li>
+</ul></div></section>
+<section><h2>Exemplo de cálculo</h2><div class="article-body"><p>Suponha que um contrato preveja entrega em <strong>5 dias úteis a partir de segunda-feira, 7 de abril</strong>. Contando apenas dias úteis, isso significa entrega até sexta-feira, 11 de abril — sábado e domingo são ignorados.</p></div><div class="article-table-wrap"><table>
+<tr><th>Dia</th><th>Dia corrido</th><th>Dia útil</th></tr>
+<tr><td>Segunda, 7 abr.</td><td>Dia 1</td><td>Dia 1</td></tr>
+<tr><td>Terça, 8 abr.</td><td>Dia 2</td><td>Dia 2</td></tr>
+<tr><td>Quarta, 9 abr.</td><td>Dia 3</td><td>Dia 3</td></tr>
+<tr><td>Quinta, 10 abr.</td><td>Dia 4</td><td>Dia 4</td></tr>
+<tr><td>Sexta, 11 abr.</td><td>Dia 5</td><td>Dia 5 ✓</td></tr>
+<tr><td>Sábado, 12 abr.</td><td>Dia 6</td><td>— (fim de semana)</td></tr>
+<tr><td>Domingo, 13 abr.</td><td>Dia 7</td><td>— (fim de semana)</td></tr>
+<tr><td>Segunda, 14 abr.</td><td>Dia 8</td><td>Dia 6 (se necessário)</td></tr>
+</table></div></section>
+<section><h2>Quando isso importa?</h2><div class="article-body"><p>A distinção entre dias úteis e dias corridos é crítica em vários contextos do mundo real:</p>
+<ul>
+<li><strong>Contratos e prazos legais:</strong> tribunais e contratos geralmente usam dias úteis para prazos de resposta, janelas de recurso e períodos de aviso prévio.</li>
+<li><strong>Envio e entrega:</strong> serviços de courier frequentemente cotam prazos de entrega em dias úteis. Um envio de "3 dias úteis" feito na sexta pode não chegar até a quarta.</li>
+<li><strong>Folha de pagamento:</strong> alguns ciclos de pagamento contam dias úteis quinzenais, afetando quando os depósitos são compensados.</li>
+<li><strong>Banco:</strong> transferências de fundos e compensações de cheques são medidas em dias úteis, não em dias corridos.</li>
+</ul></div></section>
+<section><h2>Feriados</h2><div class="article-body"><p>Os feriados variam significativamente por país, estado e até setor. No Brasil, há feriados nacionais, estaduais e municipais que podem reduzir o número de dias úteis em um período.</p>
+<p>Ao contar dias úteis para um prazo, verifique sempre se há feriados dentro do período — cada um adiciona um dia corrido extra ao total. Alguns contratos definem explicitamente qual calendário de feriados se aplica.</p></div></section>
+<section class="article-faq"><h2>FAQ</h2><details><summary>Sábado é dia útil?</summary><p>Não. Na maioria dos países, sábado e domingo não são dias úteis. Dias úteis são de segunda a sexta, excluindo feriados.</p></details><details><summary>Os dias úteis são iguais em todo o mundo?</summary><p>Não exatamente. Em alguns países (como Israel ou Arábia Saudita), a semana de trabalho vai de domingo a quinta. A maioria dos países ocidentais usa de segunda a sexta como dias úteis.</p></details><details><summary>Como conto 10 dias úteis a partir de hoje?</summary><p>Comece a partir de amanhã e conte para frente, pulando cada sábado e domingo. Para cada feriado que cair no período, adicione mais um dia corrido ao final.</p></details><details><summary>"Em 5 dias úteis" inclui o dia de início?</summary><p>Depende da redação. "Em 5 dias úteis" geralmente significa 5 dias úteis completos após a data de início — sem contar o Dia 0. Sempre esclareça se a linguagem for ambígua.</p></details></section>
+<div class="article-related"><strong>Related:</strong> <a href="/pt/quantos-dias-tem-cada-mes/">Quantos dias tem cada mês</a> · <a href="/pt/dias-entre-datas/">Calculadora de dias entre datas</a></div>
+<div class="article-cta"><a href="/pt/calculadora-dias-uteis/" class="cta-btn">Calcular dias úteis entre datas →</a></div>
+</main>
+<footer>
+<nav class="footer-nav" aria-label="Site links">
+<div class="footer-col"><strong>Idade</strong>
+<a href="/pt/calculadora-de-idade/">Calculadora de Idade</a>
+<a href="/pt/idade-cronologica/">Idade Cronológica</a>
+<a href="/pt/calculadora-idade-bebe/">Idade do Bebê</a>
+<a href="/pt/calculadora-idade-cachorro/">Idade do Cachorro</a>
+<a href="/pt/calculadora-idade-gato/">Idade do Gato</a></div>
+<div class="footer-col"><strong>Datas</strong>
+<a href="/pt/dias-entre-datas/">Dias Entre Datas</a>
+<a href="/pt/calculadora-de-data/">Calculadora de Data</a>
+<a href="/pt/que-dia-e-hoje/">Que Dia É Hoje</a>
+<a href="/pt/numero-da-semana/">Número da Semana</a>
+<a href="/pt/calculadora-dias-uteis/">Dias Úteis</a></div>
+<div class="footer-col"><strong>Contagens</strong>
+<a href="/pt/dias-para-o-natal/">Natal</a>
+<a href="/pt/dias-para-ano-novo/">Ano Novo</a>
+<a href="/pt/dias-para-o-halloween/">Halloween</a>
+<a href="/pt/dias-para-a-pascoa/">Páscoa</a>
+<a href="/pt/temporizador-regressivo/">Temporizador</a></div>
+<div class="footer-col"><strong>Mundo</strong>
+<a href="/pt/conversor-fuso-horario/">Fuso Horário</a></div>
+<div class="footer-col"><strong>Nascido em</strong>
+<a href="/pt/nascido-em-1990/">Nascido em 1990</a>
+<a href="/pt/nascido-em-1980/">Nascido em 1980</a>
+<a href="/pt/nascido-em-2000/">Nascido em 2000</a></div>
+<div class="footer-col"><strong>Retrospectiva</strong>
+<a href="/pt/o-que-aconteceu-em-2000/">O que aconteceu em 2000</a>
+<a href="/pt/o-que-aconteceu-em-1990/">O que aconteceu em 1990</a>
+<a href="/pt/o-que-aconteceu-em-1980/">O que aconteceu em 1980</a></div>
+<div class="footer-col"><strong>Calendários</strong>
+<a href="/pt/numero-da-semana/2025/">Semanas 2025</a>
+<a href="/pt/numero-da-semana/2026/">Semanas 2026</a>
+<a href="/pt/numero-da-semana/2027/">Semanas 2027</a></div>
+</nav>
+<div class="footer-copy">© 2026 DateCalc.app — Calculadoras de data e hora gratuitas online · <a href="/pt/sobre/">Sobre</a> · <a href="/pt/privacidade/">Privacidade</a></div>
+</footer>
+</div>
+<script>
+(function(){
+  var now = new Date();
+  var opts = {weekday:'long',year:'numeric',month:'long',day:'numeric'};
+  document.getElementById('todayMeta').innerHTML =
+    now.toLocaleDateString('pt-BR', opts) + '<br>Calculadora de datas gratuita';
+})();
+</script>
+<div id="consent-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#111111;color:#fff;padding:.9rem 1.4rem;z-index:9999;font-size:.82rem;font-family:sans-serif;align-items:center;gap:.8rem;flex-wrap:wrap">
+  <span style="flex:1;min-width:200px">Usamos Google AdSense para financiar este serviço gratuito. Você aceita cookies de publicidade?</span>
+  <button id="consent-accept" style="background:#c8392b;color:#fff;border:none;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Aceitar</button>
+  <button id="consent-decline" style="background:transparent;color:#aaa;border:1px solid #555;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Continuar sem</button>
+</div>
+</body>
+</html>

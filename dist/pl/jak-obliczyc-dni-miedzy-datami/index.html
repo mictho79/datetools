@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jak obliczyć liczbę dni między dwiema datami</title>
+<meta name="robots" content="index, follow">
+<meta name="description" content="Przewodnik krok po kroku do obliczania liczby dni między dwiema datami. Zawiera wzór, przykłady i obsługę lat przestępnych.">
+<link rel="canonical" href="https://datecalc.app/pl/jak-obliczyc-dni-miedzy-datami/">
+<link rel="alternate" hreflang="en" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/comment-calculer-jours-entre-deux-dates/">
+<link rel="alternate" hreflang="es" href="https://datecalc.app/es/como-calcular-dias-entre-dos-fechas/">
+<link rel="alternate" hreflang="pt" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<link rel="alternate" hreflang="de" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<link rel="alternate" hreflang="it" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<link rel="alternate" hreflang="pl" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<link rel="alternate" hreflang="ja" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<link rel="alternate" hreflang="ko" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<link rel="alternate" hreflang="nl" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<link rel="alternate" hreflang="x-default" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Jak obliczyć liczbę dni między dwiema datami">
+<meta property="og:description" content="Przewodnik krok po kroku do obliczania liczby dni między dwiema datami. Zawiera wzór, przykłady i obsługę lat przestępnych.">
+<meta property="og:url" content="https://datecalc.app/pl/jak-obliczyc-dni-miedzy-datami/">
+<meta property="og:site_name" content="DateCalc.app">
+<meta property="og:image" content="https://datecalc.app/og.png">
+<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/playfair-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/style.css">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="shortcut icon" href="/favicon.svg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Ile dni jest między 1 stycznia a 31 grudnia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "364 dni dzielą 1 stycznia od 31 grudnia (bez liczenia pierwszego dnia). Pełny rok od 1 stycznia do 1 stycznia następnego roku to 365 dni (lub 366 w roku przestępnym)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jak obliczyć liczbę dni między dwiema datami w Excelu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "W Excelu odejmij bezpośrednio dwie komórki z datami: =B1-A1. Sformatuj komórkę z wynikiem jako liczbę (nie jako datę). Excel przechowuje daty jako liczby, więc odejmowanie daje dokładną liczbę dni."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Czy obliczenie uwzględnia zarówno datę początkową, jak i końcową?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zależy to od konwencji. Większość kalkulatorów liczy odstęp między datami (nie uwzględniając żadnego z końców), więc od 1 do 5 stycznia = 4 dni. Jeśli musisz uwzględnić oba dni (np. dla okresu wynajmu), dodaj 1 do wyniku."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ile dni jest między dwiema datami obejmującymi rok przestępny?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Jeśli przedział dat obejmuje 29 lutego roku przestępnego, dodaj 1 dodatkowy dzień w porównaniu z obliczeniem bez roku przestępnego. Na przykład: od 1 stycznia 2024 do 1 stycznia 2025 = 366 dni (2024 to rok przestępny)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jaki jest najszybszy sposób obliczania dni między datami?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Użyj internetowego kalkulatora dat (takiego jak ten na tej stronie). Wpisz dwie daty, a kalkulator natychmiast zwróci liczbę dni, tygodni, miesięcy i lat między nimi."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Jak obliczyć liczbę dni między dwiema datami",
+  "description": "Przewodnik krok po kroku do obliczania liczby dni między dwiema datami. Zawiera wzór, przykłady i obsługę lat przestępnych.",
+  "url": "https://datecalc.app/pl/jak-obliczyc-dni-miedzy-datami/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "DateCalc.app",
+    "url": "https://datecalc.app"
+  }
+}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"DateCalc.app","url":"https://datecalc.app","logo":"https://datecalc.app/og.png","contactPoint":{"@type":"ContactPoint","email":"hello@datecalc.app","contactType":"customer support"}}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header>
+<div class="masthead">
+  <a href="/pl/" class="masthead-brand">DateCalc<span>.</span>app</a>
+  <div class="masthead-meta" id="todayMeta"></div>
+</div>
+</header>
+<div class="lang-strip">
+  <a href="/how-to-calculate-days-between-dates/" class="lang-btn">EN</a>
+  <a href="/fr/comment-calculer-jours-entre-deux-dates/" class="lang-btn">FR</a>
+  <a href="/es/como-calcular-dias-entre-dos-fechas/" class="lang-btn">ES</a>
+  <a href="/how-to-calculate-days-between-dates/" class="lang-btn">PT</a>
+  <a href="/how-to-calculate-days-between-dates/" class="lang-btn">DE</a>
+  <a href="/how-to-calculate-days-between-dates/" class="lang-btn">IT</a>
+  <a href="/how-to-calculate-days-between-dates/" class="lang-btn active">PL</a>
+  <a href="/how-to-calculate-days-between-dates/" class="lang-btn">JA</a>
+  <a href="/how-to-calculate-days-between-dates/" class="lang-btn">KO</a>
+  <a href="/how-to-calculate-days-between-dates/" class="lang-btn">NL</a>
+</div>
+<div class="page">
+<div class="headline-block">
+  <p class="kicker">PRZEWODNIK OBLICZANIA DAT</p>
+  <h1>Jak obliczyć liczbę dni między dwiema datami</h1>
+  <p class="article-intro">Aby obliczyć liczbę dni między dwiema datami, odejmij wcześniejszą datę od późniejszej. Istnieje kilka metod, aby zrobić to dokładnie — w zależności od tego, czy liczysz ręcznie, używasz arkusza kalkulacyjnego, czy wzoru.</p>
+</div>
+<nav aria-label="Tools">
+<div class="tool-nav">
+    <div class="nav-group"><span class="nav-cat">Wiek</span><div class="nav-links"><a href="/pl/kalkulator-wieku/">Kalkulator Wieku</a><span class="nav-sep">·</span><a href="/pl/wiek-chronologiczny/">Wiek Chronologiczny</a><span class="nav-sep">·</span><a href="/pl/wiek-niemowlecia/">Wiek Niemowlęcia</a><span class="nav-sep">·</span><a href="/pl/wiek-psa/">Wiek Psa</a><span class="nav-sep">·</span><a href="/pl/wiek-kota/">Wiek Kota</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Daty</span><div class="nav-links"><a href="/pl/dni-miedzy-datami/">Dni Między Datami</a><span class="nav-sep">·</span><a href="/pl/kalkulator-daty/">Kalkulator Daty</a><span class="nav-sep">·</span><a href="/pl/jaki-dzis-dzien/">Jaki Dziś Dzień</a><span class="nav-sep">·</span><a href="/pl/numer-tygodnia/">Numer Tygodnia</a><span class="nav-sep">·</span><a href="/pl/kalkulator-dni-roboczych/">Dni Robocze</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Odliczanie</span><div class="nav-links"><a href="/pl/ile-dni-do-bozego-narodzenia/">Boże Narodzenie</a><span class="nav-sep">·</span><a href="/pl/ile-dni-do-nowego-roku/">Nowy Rok</a><span class="nav-sep">·</span><a href="/pl/ile-dni-do-halloween/">Halloween</a><span class="nav-sep">·</span><a href="/pl/ile-dni-do-wielkanocy/">Wielkanoc</a><span class="nav-sep">·</span><a href="/pl/odliczanie/">Odliczanie</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Świat</span><div class="nav-links"><a href="/pl/przelicznik-stref-czasowych/">Strefy Czasowe</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Urodzony w</span><div class="nav-links"><a href="/pl/urodzony-w-1990/">Urodzony w 1990</a><span class="nav-sep">·</span><a href="/pl/urodzony-w-1980/">Urodzony w 1980</a><span class="nav-sep">·</span><a href="/pl/urodzony-w-2000/">Urodzony w 2000</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Podsumowanie</span><div class="nav-links"><a href="/pl/co-sie-wydarzylo-w-2000/">Co się wydarzyło w 2000</a><span class="nav-sep">·</span><a href="/pl/co-sie-wydarzylo-w-1990/">Co się wydarzyło w 1990</a><span class="nav-sep">·</span><a href="/pl/co-sie-wydarzylo-w-1980/">Co się wydarzyło w 1980</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Kalendarze</span><div class="nav-links"><a href="/pl/numer-tygodnia/2025/">Tygodnie 2025</a><span class="nav-sep">·</span><a href="/pl/numer-tygodnia/2026/">Tygodnie 2026</a><span class="nav-sep">·</span><a href="/pl/numer-tygodnia/2027/">Tygodnie 2027</a></div></div>
+</div>
+</nav>
+<main id="main-content" class="article-main">
+<section><h2>Metoda 1: bezpośrednie liczenie dni kalendarzowych</h2><div class="article-body"><p>Najprostsza metoda: zacznij od wcześniejszej daty i licz do późniejszej, jeden dzień na raz. Jest praktyczna dla krótkich przedziałów (kilka tygodni), ale niepraktyczna dla dłuższych.</p>
+<p><strong>Przykład:</strong> Ile dni jest od 1 do 15 kwietnia?<br>
+1 kwietnia → 15 kwietnia = <strong>14 dni</strong>.</p></div></section>
+<section><h2>Metoda 2: odejmowanie numerów dni w roku</h2><div class="article-body"><p>Każdy dzień roku ma numer od 1 (1 stycznia) do 365 (31 grudnia). Aby znaleźć dni między dwiema datami w tym samym roku, odejmij te numery.</p>
+<p><strong>Przykład:</strong> Ile dni od 10 marca do 20 listopada 2025?</p>
+<ol>
+<li>10 marca = dzień 69 roku</li>
+<li>20 listopada = dzień 324 roku</li>
+<li>324 − 69 = <strong>255 dni</strong></li>
+</ol></div><div class="article-table-wrap"><table>
+<tr><th>Miesiąc</th><th>Dzień roku (pierwszy dzień)</th><th>Dni w miesiącu</th></tr>
+<tr><td>Styczeń</td><td>1</td><td>31</td></tr>
+<tr><td>Luty</td><td>32</td><td>28 (lub 29 w roku przestępnym)</td></tr>
+<tr><td>Marzec</td><td>60 (61 w roku przestępnym)</td><td>31</td></tr>
+<tr><td>Kwiecień</td><td>91 (92)</td><td>30</td></tr>
+<tr><td>Maj</td><td>121 (122)</td><td>31</td></tr>
+<tr><td>Czerwiec</td><td>152 (153)</td><td>30</td></tr>
+<tr><td>Lipiec</td><td>182 (183)</td><td>31</td></tr>
+<tr><td>Sierpień</td><td>213 (214)</td><td>31</td></tr>
+<tr><td>Wrzesień</td><td>244 (245)</td><td>30</td></tr>
+<tr><td>Październik</td><td>274 (275)</td><td>31</td></tr>
+<tr><td>Listopad</td><td>305 (306)</td><td>30</td></tr>
+<tr><td>Grudzień</td><td>335 (336)</td><td>31</td></tr>
+</table></div></section>
+<section><h2>Metoda 3: liczenie przez kilka lat</h2><div class="article-body"><p>Gdy daty obejmują kilka lat, zsumuj pozostałe dni w pierwszym roku, pełne dni w całych latach pośrednich i dni upłynięte w ostatnim roku.</p>
+<p><strong>Przykład:</strong> Dni od 15 czerwca 2020 do 10 marca 2024:</p>
+<ol>
+<li>Od 15 czerwca do 31 grudnia 2020: 199 pozostałych dni w 2020</li>
+<li>Pełny rok 2021: 365 dni</li>
+<li>Pełny rok 2022: 365 dni</li>
+<li>Pełny rok 2023: 365 dni</li>
+<li>Od 1 stycznia do 10 marca 2024: 70 dni (2024 to rok przestępny)</li>
+<li>Łącznie: 199 + 365 + 365 + 365 + 70 = <strong>1364 dni</strong></li>
+</ol></div></section>
+<section><h2>Jak lata przestępne wpływają na obliczenia</h2><div class="article-body"><p>Rok przestępny ma 366 dni zamiast 365. Jeśli Twój przedział dat obejmuje 29 lutego roku przestępnego, dodaj 1 dodatkowy dzień. Lata przestępne występują co 4 lata: 2020, 2024, 2028, 2032…</p>
+<p>Jeśli liczysz ręcznie przez kilka lat, sprawdź, czy każdy rok w przedziale jest przestępny i użyj 366 zamiast 365 dla tych lat.</p></div></section>
+<section class="article-faq"><h2>FAQ</h2><details><summary>Ile dni jest między 1 stycznia a 31 grudnia?</summary><p>364 dni dzielą 1 stycznia od 31 grudnia (bez liczenia pierwszego dnia). Pełny rok od 1 stycznia do 1 stycznia następnego roku to 365 dni (lub 366 w roku przestępnym).</p></details><details><summary>Jak obliczyć liczbę dni między dwiema datami w Excelu?</summary><p>W Excelu odejmij bezpośrednio dwie komórki z datami: =B1-A1. Sformatuj komórkę z wynikiem jako liczbę (nie jako datę). Excel przechowuje daty jako liczby, więc odejmowanie daje dokładną liczbę dni.</p></details><details><summary>Czy obliczenie uwzględnia zarówno datę początkową, jak i końcową?</summary><p>Zależy to od konwencji. Większość kalkulatorów liczy odstęp między datami (nie uwzględniając żadnego z końców), więc od 1 do 5 stycznia = 4 dni. Jeśli musisz uwzględnić oba dni (np. dla okresu wynajmu), dodaj 1 do wyniku.</p></details><details><summary>Ile dni jest między dwiema datami obejmującymi rok przestępny?</summary><p>Jeśli przedział dat obejmuje 29 lutego roku przestępnego, dodaj 1 dodatkowy dzień w porównaniu z obliczeniem bez roku przestępnego. Na przykład: od 1 stycznia 2024 do 1 stycznia 2025 = 366 dni (2024 to rok przestępny).</p></details><details><summary>Jaki jest najszybszy sposób obliczania dni między datami?</summary><p>Użyj internetowego kalkulatora dat (takiego jak ten na tej stronie). Wpisz dwie daty, a kalkulator natychmiast zwróci liczbę dni, tygodni, miesięcy i lat między nimi.</p></details></section>
+<div class="article-related"><strong>Related:</strong> <a href="/pl/dni-w-kazdym-miesiacu/">Dni w każdym miesiącu</a> · <a href="/pl/dni-robocze-vs-dni-kalendarzowe/">Dni robocze vs dni kalendarzowe</a> · <a href="/pl/tygodnie-w-roku/">Tygodnie w roku</a></div>
+<div class="article-cta"><a href="/pl/kalkulator-dni-miedzy-datami/" class="cta-btn">Oblicz dni między datami — darmowe narzędzie →</a></div>
+</main>
+<footer>
+<nav class="footer-nav" aria-label="Site links">
+<div class="footer-col"><strong>Wiek</strong>
+<a href="/pl/kalkulator-wieku/">Kalkulator Wieku</a>
+<a href="/pl/wiek-chronologiczny/">Wiek Chronologiczny</a>
+<a href="/pl/wiek-niemowlecia/">Wiek Niemowlęcia</a>
+<a href="/pl/wiek-psa/">Wiek Psa</a>
+<a href="/pl/wiek-kota/">Wiek Kota</a></div>
+<div class="footer-col"><strong>Daty</strong>
+<a href="/pl/dni-miedzy-datami/">Dni Między Datami</a>
+<a href="/pl/kalkulator-daty/">Kalkulator Daty</a>
+<a href="/pl/jaki-dzis-dzien/">Jaki Dziś Dzień</a>
+<a href="/pl/numer-tygodnia/">Numer Tygodnia</a>
+<a href="/pl/kalkulator-dni-roboczych/">Dni Robocze</a></div>
+<div class="footer-col"><strong>Odliczanie</strong>
+<a href="/pl/ile-dni-do-bozego-narodzenia/">Boże Narodzenie</a>
+<a href="/pl/ile-dni-do-nowego-roku/">Nowy Rok</a>
+<a href="/pl/ile-dni-do-halloween/">Halloween</a>
+<a href="/pl/ile-dni-do-wielkanocy/">Wielkanoc</a>
+<a href="/pl/odliczanie/">Odliczanie</a></div>
+<div class="footer-col"><strong>Świat</strong>
+<a href="/pl/przelicznik-stref-czasowych/">Strefy Czasowe</a></div>
+<div class="footer-col"><strong>Urodzony w</strong>
+<a href="/pl/urodzony-w-1990/">Urodzony w 1990</a>
+<a href="/pl/urodzony-w-1980/">Urodzony w 1980</a>
+<a href="/pl/urodzony-w-2000/">Urodzony w 2000</a></div>
+<div class="footer-col"><strong>Podsumowanie</strong>
+<a href="/pl/co-sie-wydarzylo-w-2000/">Co się wydarzyło w 2000</a>
+<a href="/pl/co-sie-wydarzylo-w-1990/">Co się wydarzyło w 1990</a>
+<a href="/pl/co-sie-wydarzylo-w-1980/">Co się wydarzyło w 1980</a></div>
+<div class="footer-col"><strong>Kalendarze</strong>
+<a href="/pl/numer-tygodnia/2025/">Tygodnie 2025</a>
+<a href="/pl/numer-tygodnia/2026/">Tygodnie 2026</a>
+<a href="/pl/numer-tygodnia/2027/">Tygodnie 2027</a></div>
+</nav>
+<div class="footer-copy">© 2026 DateCalc.app — Bezpłatne kalkulatory dat i czasu online · <a href="/pl/o-nas/">O nas</a> · <a href="/pl/prywatnosc/">Prywatność</a></div>
+</footer>
+</div>
+<script>
+(function(){
+  var now = new Date();
+  var opts = {weekday:'long',year:'numeric',month:'long',day:'numeric'};
+  document.getElementById('todayMeta').innerHTML =
+    now.toLocaleDateString('pl-PL', opts) + '<br>Bezpłatny kalkulator dat';
+})();
+</script>
+<div id="consent-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#111111;color:#fff;padding:.9rem 1.4rem;z-index:9999;font-size:.82rem;font-family:sans-serif;align-items:center;gap:.8rem;flex-wrap:wrap">
+  <span style="flex:1;min-width:200px">Używamy Google AdSense do finansowania tej bezpłatnej usługi. Czy akceptujesz ciasteczka reklamowe?</span>
+  <button id="consent-accept" style="background:#c8392b;color:#fff;border:none;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Akceptuj</button>
+  <button id="consent-decline" style="background:transparent;color:#aaa;border:1px solid #555;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Kontynuuj bez</button>
+</div>
+</body>
+</html>

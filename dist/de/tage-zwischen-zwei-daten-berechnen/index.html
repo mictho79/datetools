@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wie man die Anzahl der Tage zwischen zwei Daten berechnet</title>
+<meta name="robots" content="index, follow">
+<meta name="description" content="Schritt-für-Schritt-Anleitung zur Berechnung der Tage zwischen zwei Daten. Mit Formel, Rechenbeispielen und Hinweisen zu Schaltjahren.">
+<link rel="canonical" href="https://datecalc.app/de/tage-zwischen-zwei-daten-berechnen/">
+<link rel="alternate" hreflang="en" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/comment-calculer-jours-entre-deux-dates/">
+<link rel="alternate" hreflang="es" href="https://datecalc.app/es/como-calcular-dias-entre-dos-fechas/">
+<link rel="alternate" hreflang="pt" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<link rel="alternate" hreflang="de" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<link rel="alternate" hreflang="it" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<link rel="alternate" hreflang="pl" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<link rel="alternate" hreflang="ja" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<link rel="alternate" hreflang="ko" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<link rel="alternate" hreflang="nl" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<link rel="alternate" hreflang="x-default" href="https://datecalc.app/how-to-calculate-days-between-dates/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Wie man die Anzahl der Tage zwischen zwei Daten berechnet">
+<meta property="og:description" content="Schritt-für-Schritt-Anleitung zur Berechnung der Tage zwischen zwei Daten. Mit Formel, Rechenbeispielen und Hinweisen zu Schaltjahren.">
+<meta property="og:url" content="https://datecalc.app/de/tage-zwischen-zwei-daten-berechnen/">
+<meta property="og:site_name" content="DateCalc.app">
+<meta property="og:image" content="https://datecalc.app/og.png">
+<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/playfair-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/style.css">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="shortcut icon" href="/favicon.svg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wie viele Tage liegen zwischen dem 1. Januar und dem 31. Dezember?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "364 Tage trennen den 1. Januar vom 31. Dezember (ohne den ersten Tag zu zählen). Das vollständige Jahr vom 1. Januar bis zum 1. Januar des Folgejahres umfasst 365 Tage (oder 366 in einem Schaltjahr)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie berechne ich die Anzahl der Tage zwischen zwei Daten in Excel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Subtrahieren Sie in Excel die beiden Datumszellen direkt: =B1-A1. Formatieren Sie die Ergebniszelle als Zahl (nicht als Datum). Excel speichert Datumsangaben als Zahlen, daher liefert die Subtraktion die genaue Tagesanzahl."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Werden bei der Berechnung sowohl das Start- als auch das Enddatum mitgezählt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Das hängt von der Konvention ab. Die meisten Rechner zählen den Abstand zwischen den Daten (ohne die Endpunkte einzuschließen), sodass vom 1. bis zum 5. Januar = 4 Tage. Wenn Sie beide Tage einschließen müssen (z. B. für einen Mietzeitraum), addieren Sie 1 zum Ergebnis."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie viele Tage liegen zwischen zwei Daten, die ein Schaltjahr umspannen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wenn der Zeitraum den 29. Februar eines Schaltjahres enthält, addieren Sie im Vergleich zu einer Berechnung ohne Schaltjahr 1 zusätzlichen Tag. Zum Beispiel: 1. Januar 2024 bis 1. Januar 2025 = 366 Tage (2024 ist ein Schaltjahr)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was ist der schnellste Weg, Tage zwischen Daten zu berechnen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Verwenden Sie einen Online-Datumsrechner (wie den auf dieser Seite). Geben Sie die zwei Daten ein, und der Rechner liefert sofort die Anzahl der Tage, Wochen, Monate und Jahre dazwischen."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Wie man die Anzahl der Tage zwischen zwei Daten berechnet",
+  "description": "Schritt-für-Schritt-Anleitung zur Berechnung der Tage zwischen zwei Daten. Mit Formel, Rechenbeispielen und Hinweisen zu Schaltjahren.",
+  "url": "https://datecalc.app/de/tage-zwischen-zwei-daten-berechnen/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "DateCalc.app",
+    "url": "https://datecalc.app"
+  }
+}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"DateCalc.app","url":"https://datecalc.app","logo":"https://datecalc.app/og.png","contactPoint":{"@type":"ContactPoint","email":"hello@datecalc.app","contactType":"customer support"}}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header>
+<div class="masthead">
+  <a href="/de/" class="masthead-brand">DateCalc<span>.</span>app</a>
+  <div class="masthead-meta" id="todayMeta"></div>
+</div>
+</header>
+<div class="lang-strip">
+  <a href="/how-to-calculate-days-between-dates/" class="lang-btn">EN</a>
+  <a href="/fr/comment-calculer-jours-entre-deux-dates/" class="lang-btn">FR</a>
+  <a href="/es/como-calcular-dias-entre-dos-fechas/" class="lang-btn">ES</a>
+  <a href="/how-to-calculate-days-between-dates/" class="lang-btn">PT</a>
+  <a href="/how-to-calculate-days-between-dates/" class="lang-btn active">DE</a>
+  <a href="/how-to-calculate-days-between-dates/" class="lang-btn">IT</a>
+  <a href="/how-to-calculate-days-between-dates/" class="lang-btn">PL</a>
+  <a href="/how-to-calculate-days-between-dates/" class="lang-btn">JA</a>
+  <a href="/how-to-calculate-days-between-dates/" class="lang-btn">KO</a>
+  <a href="/how-to-calculate-days-between-dates/" class="lang-btn">NL</a>
+</div>
+<div class="page">
+<div class="headline-block">
+  <p class="kicker">DATUM-BERECHNUNGS-GUIDE</p>
+  <h1>Wie man die Anzahl der Tage zwischen zwei Daten berechnet</h1>
+  <p class="article-intro">Um die Anzahl der Tage zwischen zwei Daten zu berechnen, subtrahieren Sie das frühere Datum vom späteren. Je nachdem, ob Sie von Hand, mit einer Tabellenkalkulation oder mit einer Formel rechnen, gibt es verschiedene Methoden.</p>
+</div>
+<nav aria-label="Tools">
+<div class="tool-nav">
+    <div class="nav-group"><span class="nav-cat">Alter</span><div class="nav-links"><a href="/de/altersrechner/">Altersrechner</a><span class="nav-sep">·</span><a href="/de/chronologisches-alter/">Chronologisches Alter</a><span class="nav-sep">·</span><a href="/de/baby-alter-rechner/">Baby-Altersrechner</a><span class="nav-sep">·</span><a href="/de/hund-alter-rechner/">Hund Altersrechner</a><span class="nav-sep">·</span><a href="/de/katze-alter-rechner/">Katze Altersrechner</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Daten</span><div class="nav-links"><a href="/de/tage-zwischen-datumen/">Tage zwischen Daten</a><span class="nav-sep">·</span><a href="/de/datumsrechner/">Datumsrechner</a><span class="nav-sep">·</span><a href="/de/welcher-tag-ist-heute/">Welcher Tag ist heute</a><span class="nav-sep">·</span><a href="/de/kalenderwoche/">Kalenderwoche</a><span class="nav-sep">·</span><a href="/de/arbeitstage-rechner/">Arbeitstage Rechner</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Countdowns</span><div class="nav-links"><a href="/de/tage-bis-weihnachten/">Weihnachten</a><span class="nav-sep">·</span><a href="/de/tage-bis-neujahr/">Neujahr</a><span class="nav-sep">·</span><a href="/de/tage-bis-halloween/">Halloween</a><span class="nav-sep">·</span><a href="/de/tage-bis-ostern/">Ostern</a><span class="nav-sep">·</span><a href="/de/countdown-timer/">Countdown-Timer</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Welt</span><div class="nav-links"><a href="/de/zeitzonen-umrechner/">Zeitzonen-Umrechner</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Geboren in</span><div class="nav-links"><a href="/de/geboren-in-1990/">Geboren 1990</a><span class="nav-sep">·</span><a href="/de/geboren-in-1980/">Geboren 1980</a><span class="nav-sep">·</span><a href="/de/geboren-in-2000/">Geboren 2000</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Jahresrückblick</span><div class="nav-links"><a href="/de/was-geschah-2000/">Was geschah 2000</a><span class="nav-sep">·</span><a href="/de/was-geschah-1990/">Was geschah 1990</a><span class="nav-sep">·</span><a href="/de/was-geschah-1980/">Was geschah 1980</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Kalender</span><div class="nav-links"><a href="/de/kalenderwoche/2025/">KW 2025</a><span class="nav-sep">·</span><a href="/de/kalenderwoche/2026/">KW 2026</a><span class="nav-sep">·</span><a href="/de/kalenderwoche/2027/">KW 2027</a></div></div>
+</div>
+</nav>
+<main id="main-content" class="article-main">
+<section><h2>Methode 1: Kalendertage direkt zählen</h2><div class="article-body"><p>Der einfachste Ansatz: Beginnen Sie beim früheren Datum und zählen Sie bis zum späteren Datum, einen Tag nach dem anderen. Dies ist bei kurzen Zeiträumen (ein paar Wochen) praktisch, bei längeren jedoch unpraktisch.</p>
+<p><strong>Beispiel:</strong> Wie viele Tage liegen zwischen dem 1. und dem 15. April?<br>
+1. April → 15. April = <strong>14 Tage</strong>.</p></div></section>
+<section><h2>Methode 2: Tagesnummern im Jahr subtrahieren</h2><div class="article-body"><p>Jeder Tag des Jahres hat eine Nummer von 1 (1. Januar) bis 365 (31. Dezember). Um Tage zwischen zwei Daten im selben Jahr zu finden, subtrahieren Sie die Tagesnummern.</p>
+<p><strong>Beispiel:</strong> Wie viele Tage liegen zwischen dem 10. März und dem 20. November 2025?</p>
+<ol>
+<li>10. März = Tag 69 des Jahres</li>
+<li>20. November = Tag 324 des Jahres</li>
+<li>324 − 69 = <strong>255 Tage</strong></li>
+</ol></div><div class="article-table-wrap"><table>
+<tr><th>Monat</th><th>Tag des Jahres (erster Tag)</th><th>Tage im Monat</th></tr>
+<tr><td>Januar</td><td>1</td><td>31</td></tr>
+<tr><td>Februar</td><td>32</td><td>28 (oder 29 im Schaltjahr)</td></tr>
+<tr><td>März</td><td>60 (61 im Schaltjahr)</td><td>31</td></tr>
+<tr><td>April</td><td>91 (92)</td><td>30</td></tr>
+<tr><td>Mai</td><td>121 (122)</td><td>31</td></tr>
+<tr><td>Juni</td><td>152 (153)</td><td>30</td></tr>
+<tr><td>Juli</td><td>182 (183)</td><td>31</td></tr>
+<tr><td>August</td><td>213 (214)</td><td>31</td></tr>
+<tr><td>September</td><td>244 (245)</td><td>30</td></tr>
+<tr><td>Oktober</td><td>274 (275)</td><td>31</td></tr>
+<tr><td>November</td><td>305 (306)</td><td>30</td></tr>
+<tr><td>Dezember</td><td>335 (336)</td><td>31</td></tr>
+</table></div></section>
+<section><h2>Methode 3: Über mehrere Jahre hinweg zählen</h2><div class="article-body"><p>Wenn die Daten mehrere Jahre umspannen, addieren Sie die verbleibenden Tage im ersten Jahr, die vollen Tage der kompletten Zwischenjahre und die abgelaufenen Tage im letzten Jahr.</p>
+<p><strong>Beispiel:</strong> Tage vom 15. Juni 2020 bis zum 10. März 2024:</p>
+<ol>
+<li>15. Juni bis 31. Dezember 2020: 199 verbleibende Tage in 2020</li>
+<li>Volles Jahr 2021: 365 Tage</li>
+<li>Volles Jahr 2022: 365 Tage</li>
+<li>Volles Jahr 2023: 365 Tage</li>
+<li>1. Januar bis 10. März 2024: 70 Tage (2024 ist ein Schaltjahr)</li>
+<li>Gesamt: 199 + 365 + 365 + 365 + 70 = <strong>1.364 Tage</strong></li>
+</ol></div></section>
+<section><h2>Wie Schaltjahre die Berechnung beeinflussen</h2><div class="article-body"><p>Ein Schaltjahr hat 366 statt 365 Tage. Wenn Ihr Zeitraum den 29. Februar eines Schaltjahres umfasst, addieren Sie 1 zusätzlichen Tag. Schaltjahre treten alle 4 Jahre auf: 2020, 2024, 2028, 2032…</p>
+<p>Wenn Sie von Hand über mehrere Jahre rechnen, prüfen Sie, ob jedes Jahr im Zeitraum ein Schaltjahr ist, und verwenden Sie für diese Jahre 366 statt 365.</p></div></section>
+<section class="article-faq"><h2>FAQ</h2><details><summary>Wie viele Tage liegen zwischen dem 1. Januar und dem 31. Dezember?</summary><p>364 Tage trennen den 1. Januar vom 31. Dezember (ohne den ersten Tag zu zählen). Das vollständige Jahr vom 1. Januar bis zum 1. Januar des Folgejahres umfasst 365 Tage (oder 366 in einem Schaltjahr).</p></details><details><summary>Wie berechne ich die Anzahl der Tage zwischen zwei Daten in Excel?</summary><p>Subtrahieren Sie in Excel die beiden Datumszellen direkt: =B1-A1. Formatieren Sie die Ergebniszelle als Zahl (nicht als Datum). Excel speichert Datumsangaben als Zahlen, daher liefert die Subtraktion die genaue Tagesanzahl.</p></details><details><summary>Werden bei der Berechnung sowohl das Start- als auch das Enddatum mitgezählt?</summary><p>Das hängt von der Konvention ab. Die meisten Rechner zählen den Abstand zwischen den Daten (ohne die Endpunkte einzuschließen), sodass vom 1. bis zum 5. Januar = 4 Tage. Wenn Sie beide Tage einschließen müssen (z. B. für einen Mietzeitraum), addieren Sie 1 zum Ergebnis.</p></details><details><summary>Wie viele Tage liegen zwischen zwei Daten, die ein Schaltjahr umspannen?</summary><p>Wenn der Zeitraum den 29. Februar eines Schaltjahres enthält, addieren Sie im Vergleich zu einer Berechnung ohne Schaltjahr 1 zusätzlichen Tag. Zum Beispiel: 1. Januar 2024 bis 1. Januar 2025 = 366 Tage (2024 ist ein Schaltjahr).</p></details><details><summary>Was ist der schnellste Weg, Tage zwischen Daten zu berechnen?</summary><p>Verwenden Sie einen Online-Datumsrechner (wie den auf dieser Seite). Geben Sie die zwei Daten ein, und der Rechner liefert sofort die Anzahl der Tage, Wochen, Monate und Jahre dazwischen.</p></details></section>
+<div class="article-related"><strong>Related:</strong> <a href="/de/tage-pro-monat/">Tage pro Monat</a> · <a href="/de/arbeitstage-vs-kalendertage/">Arbeitstage vs Kalendertage</a> · <a href="/de/wochen-im-jahr/">Wochen im Jahr</a></div>
+<div class="article-cta"><a href="/de/tage-zwischen-daten-rechner/" class="cta-btn">Tage zwischen Daten berechnen — kostenloses Tool →</a></div>
+</main>
+<footer>
+<nav class="footer-nav" aria-label="Site links">
+<div class="footer-col"><strong>Alter</strong>
+<a href="/de/altersrechner/">Altersrechner</a>
+<a href="/de/chronologisches-alter/">Chronologisches Alter</a>
+<a href="/de/baby-alter-rechner/">Baby-Altersrechner</a>
+<a href="/de/hund-alter-rechner/">Hund Altersrechner</a>
+<a href="/de/katze-alter-rechner/">Katze Altersrechner</a></div>
+<div class="footer-col"><strong>Daten</strong>
+<a href="/de/tage-zwischen-datumen/">Tage zwischen Daten</a>
+<a href="/de/datumsrechner/">Datumsrechner</a>
+<a href="/de/welcher-tag-ist-heute/">Welcher Tag ist heute</a>
+<a href="/de/kalenderwoche/">Kalenderwoche</a>
+<a href="/de/arbeitstage-rechner/">Arbeitstage Rechner</a></div>
+<div class="footer-col"><strong>Countdowns</strong>
+<a href="/de/tage-bis-weihnachten/">Weihnachten</a>
+<a href="/de/tage-bis-neujahr/">Neujahr</a>
+<a href="/de/tage-bis-halloween/">Halloween</a>
+<a href="/de/tage-bis-ostern/">Ostern</a>
+<a href="/de/countdown-timer/">Countdown-Timer</a></div>
+<div class="footer-col"><strong>Welt</strong>
+<a href="/de/zeitzonen-umrechner/">Zeitzonen-Umrechner</a></div>
+<div class="footer-col"><strong>Geboren in</strong>
+<a href="/de/geboren-in-1990/">Geboren 1990</a>
+<a href="/de/geboren-in-1980/">Geboren 1980</a>
+<a href="/de/geboren-in-2000/">Geboren 2000</a></div>
+<div class="footer-col"><strong>Jahresrückblick</strong>
+<a href="/de/was-geschah-2000/">Was geschah 2000</a>
+<a href="/de/was-geschah-1990/">Was geschah 1990</a>
+<a href="/de/was-geschah-1980/">Was geschah 1980</a></div>
+<div class="footer-col"><strong>Kalender</strong>
+<a href="/de/kalenderwoche/2025/">KW 2025</a>
+<a href="/de/kalenderwoche/2026/">KW 2026</a>
+<a href="/de/kalenderwoche/2027/">KW 2027</a></div>
+</nav>
+<div class="footer-copy">© 2026 DateCalc.app — Kostenlose Online-Datums- und Zeitrechner · <a href="/de/ueber-uns/">Über uns</a> · <a href="/de/datenschutz/">Datenschutz</a></div>
+</footer>
+</div>
+<script>
+(function(){
+  var now = new Date();
+  var opts = {weekday:'long',year:'numeric',month:'long',day:'numeric'};
+  document.getElementById('todayMeta').innerHTML =
+    now.toLocaleDateString('de-DE', opts) + '<br>Kostenloser Datumsrechner';
+})();
+</script>
+<div id="consent-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#111111;color:#fff;padding:.9rem 1.4rem;z-index:9999;font-size:.82rem;font-family:sans-serif;align-items:center;gap:.8rem;flex-wrap:wrap">
+  <span style="flex:1;min-width:200px">Wir nutzen Google AdSense zur Finanzierung dieses kostenlosen Dienstes. Akzeptierst du Werbe-Cookies?</span>
+  <button id="consent-accept" style="background:#c8392b;color:#fff;border:none;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Akzeptieren</button>
+  <button id="consent-decline" style="background:transparent;color:#aaa;border:1px solid #555;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Weiter ohne</button>
+</div>
+</body>
+</html>

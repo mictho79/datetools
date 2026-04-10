@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>日付・時間FAQ — よくある質問15選に回答</title>
+<meta name="robots" content="index, follow">
+<meta name="description" content="日付と時間の計算に関するよくある質問への回答：うるう年、各月の日数、週番号、年齢計算、タイムゾーンなど。">
+<link rel="canonical" href="https://datecalc.app/ja/hizuke-jikan-faq/">
+<link rel="alternate" hreflang="en" href="https://datecalc.app/date-time-faq/">
+<link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/faq-date-heure/">
+<link rel="alternate" hreflang="es" href="https://datecalc.app/es/preguntas-frecuentes-fecha-hora/">
+<link rel="alternate" hreflang="pt" href="https://datecalc.app/date-time-faq/">
+<link rel="alternate" hreflang="de" href="https://datecalc.app/date-time-faq/">
+<link rel="alternate" hreflang="it" href="https://datecalc.app/date-time-faq/">
+<link rel="alternate" hreflang="pl" href="https://datecalc.app/date-time-faq/">
+<link rel="alternate" hreflang="ja" href="https://datecalc.app/date-time-faq/">
+<link rel="alternate" hreflang="ko" href="https://datecalc.app/date-time-faq/">
+<link rel="alternate" hreflang="nl" href="https://datecalc.app/date-time-faq/">
+<link rel="alternate" hreflang="x-default" href="https://datecalc.app/date-time-faq/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="日付・時間FAQ — よくある質問15選に回答">
+<meta property="og:description" content="日付と時間の計算に関するよくある質問への回答：うるう年、各月の日数、週番号、年齢計算、タイムゾーンなど。">
+<meta property="og:url" content="https://datecalc.app/ja/hizuke-jikan-faq/">
+<meta property="og:site_name" content="DateCalc.app">
+<meta property="og:image" content="https://datecalc.app/og.png">
+<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/playfair-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/style.css">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="shortcut icon" href="/favicon.svg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "1年は何日ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "通常の年は365日です。うるう年は366日です。カレンダーは平均して年間365.25日で、4年ごとにうるう日（2月29日）を追加することで補正されます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "1年は何週間ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "通常の年は52週と1日余りです。うるう年は52週と2日余りです。ISO週番号では、53週ある年もあります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "現在の週番号は何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "現在のISO週番号は毎週月曜日に変わります。このサイトの週番号計算機を使って、任意の年の今日の週番号を確認してください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "日数を月数に変換するには？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "日数を30.44（1ヶ月の平均日数）で割ると大まかな結果が得られます。正確な変換には、各月の実際の長さを考慮した日付計算機を使ってください。"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "日付・時間FAQ — よくある質問に回答",
+  "description": "日付と時間の計算に関するよくある質問への回答：うるう年、各月の日数、週番号、年齢計算、タイムゾーンなど。",
+  "url": "https://datecalc.app/ja/hizuke-jikan-faq/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "DateCalc.app",
+    "url": "https://datecalc.app"
+  }
+}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"DateCalc.app","url":"https://datecalc.app","logo":"https://datecalc.app/og.png","contactPoint":{"@type":"ContactPoint","email":"hello@datecalc.app","contactType":"customer support"}}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header>
+<div class="masthead">
+  <a href="/ja/" class="masthead-brand">DateCalc<span>.</span>app</a>
+  <div class="masthead-meta" id="todayMeta"></div>
+</div>
+</header>
+<div class="lang-strip">
+  <a href="/date-time-faq/" class="lang-btn">EN</a>
+  <a href="/fr/faq-date-heure/" class="lang-btn">FR</a>
+  <a href="/es/preguntas-frecuentes-fecha-hora/" class="lang-btn">ES</a>
+  <a href="/date-time-faq/" class="lang-btn">PT</a>
+  <a href="/date-time-faq/" class="lang-btn">DE</a>
+  <a href="/date-time-faq/" class="lang-btn">IT</a>
+  <a href="/date-time-faq/" class="lang-btn">PL</a>
+  <a href="/date-time-faq/" class="lang-btn active">JA</a>
+  <a href="/date-time-faq/" class="lang-btn">KO</a>
+  <a href="/date-time-faq/" class="lang-btn">NL</a>
+</div>
+<div class="page">
+<div class="headline-block">
+  <p class="kicker">HIZUKE FAQ</p>
+  <h1>日付・時間FAQ — よくある質問に回答</h1>
+  <p class="article-intro">日付、時間、年齢、カレンダー計算に関するよくある質問への直接的な回答をまとめました。</p>
+</div>
+<nav aria-label="Tools">
+<div class="tool-nav">
+    <div class="nav-group"><span class="nav-cat">年齢</span><div class="nav-links"><a href="/ja/nenrei-keisanki/">年齢計算機</a><span class="nav-sep">·</span><a href="/ja/jikan-nenrei/">時系列年齢</a><span class="nav-sep">·</span><a href="/ja/akachan-nenrei/">赤ちゃん年齢</a><span class="nav-sep">·</span><a href="/ja/inu-nenrei/">犬の年齢</a><span class="nav-sep">·</span><a href="/ja/neko-nenrei/">猫の年齢</a></div></div>
+    <div class="nav-group"><span class="nav-cat">日付</span><div class="nav-links"><a href="/ja/hidzuke-no-nissuu/">日付の間の日数</a><span class="nav-sep">·</span><a href="/ja/hidzuke-keisanki/">日付計算機</a><span class="nav-sep">·</span><a href="/ja/kyou-wa-nannichi/">今日は何日</a><span class="nav-sep">·</span><a href="/ja/shuu-bangou/">週番号</a><span class="nav-sep">·</span><a href="/ja/eigyounichu/">営業日計算機</a></div></div>
+    <div class="nav-group"><span class="nav-cat">カウントダウン</span><div class="nav-links"><a href="/ja/kurisumasu-made/">クリスマスまで</a><span class="nav-sep">·</span><a href="/ja/shinnen-made/">新年まで</a><span class="nav-sep">·</span><a href="/ja/harouin-made/">ハロウィンまで</a><span class="nav-sep">·</span><a href="/ja/iisutaa-made/">イースターまで</a><span class="nav-sep">·</span><a href="/ja/kauntodaun/">カウントダウン</a></div></div>
+    <div class="nav-group"><span class="nav-cat">世界</span><div class="nav-links"><a href="/ja/taimuzon-henkan/">タイムゾーン変換</a></div></div>
+    <div class="nav-group"><span class="nav-cat">生まれ年</span><div class="nav-links"><a href="/ja/umareta-1990/">1990年生まれ</a><span class="nav-sep">·</span><a href="/ja/umareta-1980/">1980年生まれ</a><span class="nav-sep">·</span><a href="/ja/umareta-2000/">2000年生まれ</a></div></div>
+    <div class="nav-group"><span class="nav-cat">年間レビュー</span><div class="nav-links"><a href="/ja/nani-ga-okita-2000/">2000年に何があった</a><span class="nav-sep">·</span><a href="/ja/nani-ga-okita-1990/">1990年に何があった</a><span class="nav-sep">·</span><a href="/ja/nani-ga-okita-1980/">1980年に何があった</a></div></div>
+    <div class="nav-group"><span class="nav-cat">カレンダー</span><div class="nav-links"><a href="/ja/shuu-bangou/2025/">2025年週番号</a><span class="nav-sep">·</span><a href="/ja/shuu-bangou/2026/">2026年週番号</a><span class="nav-sep">·</span><a href="/ja/shuu-bangou/2027/">2027年週番号</a></div></div>
+</div>
+</nav>
+<main id="main-content" class="article-main">
+<section><h2>カレンダーに関する質問</h2><div class="article-body"><dl>
+<dt><strong>1年は何日ありますか？</strong></dt>
+<dd>通常の年は<strong>365日</strong>です。うるう年は<strong>366日</strong>です。平均すると1年は365.25日で、4年ごとにうるう日を1日追加するのはそのためです。</dd>
+
+<dt><strong>1年は何週間ありますか？</strong></dt>
+<dd>通常の年は<strong>52週と1日</strong>です。うるう年は<strong>52週と2日</strong>です。1月1日が木曜日の場合、ISO暦で53週になる年もあります。</dd>
+
+<dt><strong>各月は何日ありますか？</strong></dt>
+<dd>1月: 31 · 2月: 28（うるう年は29）· 3月: 31 · 4月: 30 · 5月: 31 · 6月: 30 · 7月: 31 · 8月: 31 · 9月: 30 · 10月: 31 · 11月: 30 · 12月: 31</dd>
+
+<dt><strong>うるう年とは何ですか？</strong></dt>
+<dd>うるう年とは4で割り切れる年のことです — ただし、世紀年（100年ごとの年）は400で割り切れる必要があります。そのため2000年はうるう年でしたが、1900年はそうではありませんでした。2024年の次のうるう年は<strong>2028年</strong>です。</dd>
+
+<dt><strong>ISO週番号とは何ですか？</strong></dt>
+<dd>ISO週番号は規格（ISO 8601）で、年の週を1〜52または53と番号付けします。第1週はその年の最初の木曜日を含む週として定義されます。月曜日がISO週の最初の日です。</dd>
+</dl></div></section>
+<section><h2>年齢計算に関する質問</h2><div class="article-body"><dl>
+<dt><strong>年齢の計算方法は？</strong></dt>
+<dd>現在の年から生まれ年を引きます。今年の誕生日がまだ来ていない場合は1を引きます。例：1990年生まれ、現在2026年、誕生日未経過 → 年齢 = 35歳。</dd>
+
+<dt><strong>1990年生まれは何歳ですか？</strong></dt>
+<dd>1990年生まれの人は<strong>2026年に35歳または36歳</strong>です。誕生日が過ぎているかどうかによります。</dd>
+
+<dt><strong>2000年生まれは何歳ですか？</strong></dt>
+<dd>2000年生まれの人は<strong>2026年に25歳または26歳</strong>です。誕生日が過ぎているかどうかによります。</dd>
+
+<dt><strong>年齢計算ツールと暦年齢計算ツールの違いは何ですか？</strong></dt>
+<dd>年齢計算ツールは生年月日から今日までの年齢を計算します。暦年齢計算ツールも同じことをしますが、医療や教育の場で発達評価のために正確な経過時間（年・月・日）を測定する目的で特に使われます。</dd>
+</dl></div></section>
+<section><h2>日数・営業日に関する質問</h2><div class="article-body"><dl>
+<dt><strong>暦日と営業日の違いは何ですか？</strong></dt>
+<dd>暦日は週7日すべてを数えます。営業日（稼働日）は祝日を除いた月曜日から金曜日のみを数えます。月曜日から5営業日の期限は金曜日；月曜日から5暦日の期限は土曜日です。</dd>
+
+<dt><strong>1ヶ月に営業日は何日ありますか？</strong></dt>
+<dd>ほとんどの月は<strong>20〜23営業日</strong>です。月や週末の数によって異なります。2月が最も少なく（18〜20日）、月曜日か火曜日から始まる31日の月が最も多くなります（23日）。</dd>
+
+<dt><strong>クリスマスまで何日ありますか？</strong></dt>
+<dd>クリスマスは12月25日です。日数は今日の日付によって変わります — このサイトのカウントダウン計算機で正確な日数を確認できます。</dd>
+</dl></div></section>
+<section><h2>タイムゾーンに関する質問</h2><div class="article-body"><dl>
+<dt><strong>UTCとは何ですか？</strong></dt>
+<dd>UTC（協定世界時）は世界の主要な時間標準です。夏時間を採用しません。他のすべてのタイムゾーンはUTCからのオフセットで表されます（例：UTC+1、UTC−5）。</dd>
+
+<dt><strong>GMTとUTCの違いは何ですか？</strong></dt>
+<dd>日常的な目的では、GMTとUTCは同じです。GMT（グリニッジ標準時）はタイムゾーンであり、UTCは時間標準です。現在の時刻は同じですが、UTCは公式な計時に使われる精密な科学的標準です。</dd>
+
+<dt><strong>タイムゾーンは何個ありますか？</strong></dt>
+<dd><strong>38の標準UTCオフセット</strong>があり、UTC−12:00からUTC+14:00までの範囲です。複数のタイムゾーンにまたがる国もあります — ロシアは11、米国は6（領土除く）、フランスは12（海外領土含む）です。</dd>
+</dl></div></section>
+<section class="article-faq"><h2>FAQ</h2><details><summary>1年は何日ですか？</summary><p>通常の年は365日です。うるう年は366日です。カレンダーは平均して年間365.25日で、4年ごとにうるう日（2月29日）を追加することで補正されます。</p></details><details><summary>1年は何週間ですか？</summary><p>通常の年は52週と1日余りです。うるう年は52週と2日余りです。ISO週番号では、53週ある年もあります。</p></details><details><summary>現在の週番号は何ですか？</summary><p>現在のISO週番号は毎週月曜日に変わります。このサイトの週番号計算機を使って、任意の年の今日の週番号を確認してください。</p></details><details><summary>日数を月数に変換するには？</summary><p>日数を30.44（1ヶ月の平均日数）で割ると大まかな結果が得られます。正確な変換には、各月の実際の長さを考慮した日付計算機を使ってください。</p></details></section>
+<div class="article-related"><strong>Related:</strong> <a href="/ja/futari-no-hi-zuke-no-aida-no-hi-su/">2つの日付の間の日数</a> · <a href="/ja/seikaku-na-nenrei-no-keisan-hoho/">正確な年齢の計算方法</a> · <a href="/ja/sekai-no-koyomi-shisutemu/">世界のカレンダーシステム</a></div>
+<div class="article-cta"><a href="/ja/hi-zuke-keisanki/" class="cta-btn">日付計算機 →</a></div>
+</main>
+<footer>
+<nav class="footer-nav" aria-label="Site links">
+<div class="footer-col"><strong>年齢</strong>
+<a href="/ja/nenrei-keisanki/">年齢計算機</a>
+<a href="/ja/jikan-nenrei/">時系列年齢</a>
+<a href="/ja/akachan-nenrei/">赤ちゃん年齢</a>
+<a href="/ja/inu-nenrei/">犬の年齢</a>
+<a href="/ja/neko-nenrei/">猫の年齢</a></div>
+<div class="footer-col"><strong>日付</strong>
+<a href="/ja/hidzuke-no-nissuu/">日付の間の日数</a>
+<a href="/ja/hidzuke-keisanki/">日付計算機</a>
+<a href="/ja/kyou-wa-nannichi/">今日は何日</a>
+<a href="/ja/shuu-bangou/">週番号</a>
+<a href="/ja/eigyounichu/">営業日計算機</a></div>
+<div class="footer-col"><strong>カウントダウン</strong>
+<a href="/ja/kurisumasu-made/">クリスマスまで</a>
+<a href="/ja/shinnen-made/">新年まで</a>
+<a href="/ja/harouin-made/">ハロウィンまで</a>
+<a href="/ja/iisutaa-made/">イースターまで</a>
+<a href="/ja/kauntodaun/">カウントダウン</a></div>
+<div class="footer-col"><strong>世界</strong>
+<a href="/ja/taimuzon-henkan/">タイムゾーン変換</a></div>
+<div class="footer-col"><strong>生まれ年</strong>
+<a href="/ja/umareta-1990/">1990年生まれ</a>
+<a href="/ja/umareta-1980/">1980年生まれ</a>
+<a href="/ja/umareta-2000/">2000年生まれ</a></div>
+<div class="footer-col"><strong>年間レビュー</strong>
+<a href="/ja/nani-ga-okita-2000/">2000年に何があった</a>
+<a href="/ja/nani-ga-okita-1990/">1990年に何があった</a>
+<a href="/ja/nani-ga-okita-1980/">1980年に何があった</a></div>
+<div class="footer-col"><strong>カレンダー</strong>
+<a href="/ja/shuu-bangou/2025/">2025年週番号</a>
+<a href="/ja/shuu-bangou/2026/">2026年週番号</a>
+<a href="/ja/shuu-bangou/2027/">2027年週番号</a></div>
+</nav>
+<div class="footer-copy">© 2026 DateCalc.app — 無料オンライン日付・時刻計算機 · <a href="/ja/about/">このサイトについて</a> · <a href="/ja/privacy/">プライバシー</a></div>
+</footer>
+</div>
+<script>
+(function(){
+  var now = new Date();
+  var opts = {weekday:'long',year:'numeric',month:'long',day:'numeric'};
+  document.getElementById('todayMeta').innerHTML =
+    now.toLocaleDateString('ja-JP', opts) + '<br>無料日付計算機';
+})();
+</script>
+<div id="consent-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#111111;color:#fff;padding:.9rem 1.4rem;z-index:9999;font-size:.82rem;font-family:sans-serif;align-items:center;gap:.8rem;flex-wrap:wrap">
+  <span style="flex:1;min-width:200px">この無料サービスの維持のためGoogle AdSenseを使用しています。広告クッキーを受け入れますか？</span>
+  <button id="consent-accept" style="background:#c8392b;color:#fff;border:none;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">同意する</button>
+  <button id="consent-decline" style="background:transparent;color:#aaa;border:1px solid #555;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">同意せずに続ける</button>
+</div>
+</body>
+</html>

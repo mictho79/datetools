@@ -972,7 +972,7 @@ console.log(`\nBuilt ${count} pages → dist/`);
 
 // ── ARTICLE BUILD ─────────────────────────────────────────
 let articleCount = 0;
-const ARTICLE_LANGS = ['en', 'fr', 'es'];
+const ARTICLE_LANGS = ['en', 'fr', 'es', 'pt', 'de', 'it', 'pl', 'ja', 'ko', 'nl'];
 for (const cluster of articles) {
   for (const page of cluster.pages) {
     for (const lang of ARTICLE_LANGS) {
@@ -1024,7 +1024,7 @@ for (const tool of tools) {
 }
 for (const cluster of articles) {
   for (const page of cluster.pages) {
-    for (const lang of ['en', 'fr', 'es']) {
+    for (const lang of ARTICLE_LANGS) {
       const s = page.slugs[lang];
       if (s) allSlugs.push(`/${s}/`);
     }
