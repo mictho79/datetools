@@ -27,6 +27,7 @@ const tools = [
 const articles = [
   require('./src/articles/age-cluster'),
   require('./src/articles/born-in-cluster'),
+  require('./src/articles/days-cluster'),
 ];
 
 const LANGS = ['en', 'fr', 'es', 'pt', 'de', 'it', 'pl', 'ja', 'ko', 'nl'];
