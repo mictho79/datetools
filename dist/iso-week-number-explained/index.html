@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ISO Week Number Explained — How Week Numbering Works</title>
+<meta name="robots" content="index, follow">
+<meta name="description" content="What is an ISO week number? How ISO 8601 week numbering works, how week 1 is defined, and why some years have 53 weeks.">
+<link rel="canonical" href="https://datecalc.app/iso-week-number-explained/">
+<link rel="alternate" hreflang="en" href="https://datecalc.app/iso-week-number-explained/">
+<link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/explication-numero-semaine-iso/">
+<link rel="alternate" hreflang="es" href="https://datecalc.app/es/explicacion-numero-semana-iso/">
+<link rel="alternate" hreflang="pt" href="https://datecalc.app/iso-week-number-explained/">
+<link rel="alternate" hreflang="de" href="https://datecalc.app/iso-week-number-explained/">
+<link rel="alternate" hreflang="it" href="https://datecalc.app/iso-week-number-explained/">
+<link rel="alternate" hreflang="pl" href="https://datecalc.app/iso-week-number-explained/">
+<link rel="alternate" hreflang="ja" href="https://datecalc.app/iso-week-number-explained/">
+<link rel="alternate" hreflang="ko" href="https://datecalc.app/iso-week-number-explained/">
+<link rel="alternate" hreflang="nl" href="https://datecalc.app/iso-week-number-explained/">
+<link rel="alternate" hreflang="x-default" href="https://datecalc.app/iso-week-number-explained/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ISO Week Number Explained — How Week Numbering Works">
+<meta property="og:description" content="What is an ISO week number? How ISO 8601 week numbering works, how week 1 is defined, and why some years have 53 weeks.">
+<meta property="og:url" content="https://datecalc.app/iso-week-number-explained/">
+<meta property="og:site_name" content="DateCalc.app">
+<meta property="og:image" content="https://datecalc.app/og.png">
+<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/playfair-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/style.css">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="shortcut icon" href="/favicon.svg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What week number is it today?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use the week number calculator on this site — it shows the current ISO week number updated in real time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does week 1 always start on January 1?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. ISO week 1 starts on Monday of the week containing January 4. January 1 can fall in week 52 or 53 of the previous year if it is a Friday, Saturday, or Sunday."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many weeks are in 2025?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "2025 has 52 ISO weeks. Week 1 of 2025 started on Monday, December 30, 2024. Week 52 ends on Sunday, December 28, 2025."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many weeks are in 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "2026 has 53 ISO weeks, because January 1, 2026 falls on a Thursday. Week 53 of 2026 contains December 28–January 3, 2027."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between week number and calendar week?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "\"Week number\" and \"calendar week\" (KW in German, CW in English) both refer to ISO week numbers — they are the same thing. The term \"calendar week\" is common in German-speaking countries and business contexts."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "ISO Week Number Explained",
+  "description": "What is an ISO week number? How ISO 8601 week numbering works, how week 1 is defined, and why some years have 53 weeks.",
+  "url": "https://datecalc.app/iso-week-number-explained/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "DateCalc.app",
+    "url": "https://datecalc.app"
+  }
+}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"DateCalc.app","url":"https://datecalc.app","logo":"https://datecalc.app/og.png","contactPoint":{"@type":"ContactPoint","email":"hello@datecalc.app","contactType":"customer support"}}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header>
+<div class="masthead">
+  <a href="/" class="masthead-brand">DateCalc<span>.</span>app</a>
+  <div class="masthead-meta" id="todayMeta"></div>
+</div>
+</header>
+<div class="lang-strip">
+  <a href="/iso-week-number-explained/" class="lang-btn active">EN</a>
+  <a href="/fr/explication-numero-semaine-iso/" class="lang-btn">FR</a>
+  <a href="/es/explicacion-numero-semana-iso/" class="lang-btn">ES</a>
+  <a href="/iso-week-number-explained/" class="lang-btn">PT</a>
+  <a href="/iso-week-number-explained/" class="lang-btn">DE</a>
+  <a href="/iso-week-number-explained/" class="lang-btn">IT</a>
+  <a href="/iso-week-number-explained/" class="lang-btn">PL</a>
+  <a href="/iso-week-number-explained/" class="lang-btn">JA</a>
+  <a href="/iso-week-number-explained/" class="lang-btn">KO</a>
+  <a href="/iso-week-number-explained/" class="lang-btn">NL</a>
+</div>
+<div class="page">
+<div class="headline-block">
+  <p class="kicker">WEEK NUMBER GUIDE</p>
+  <h1>ISO Week Number Explained</h1>
+  <p class="article-intro">An ISO week number is a standardized way to number the weeks of the year, defined by the ISO 8601 international standard. Week 1 is the week containing the first Thursday of the year — and every week runs Monday to Sunday.</p>
+</div>
+<nav aria-label="Tools">
+<div class="tool-nav">
+    <div class="nav-group"><span class="nav-cat">Age</span><div class="nav-links"><a href="/age-calculator/">Age Calculator</a><span class="nav-sep">·</span><a href="/chronological-age-calculator/">Chronological Age</a><span class="nav-sep">·</span><a href="/baby-age-calculator/">Baby Age</a><span class="nav-sep">·</span><a href="/dog-age-calculator/">Dog Age</a><span class="nav-sep">·</span><a href="/cat-age-calculator/">Cat Age</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Dates</span><div class="nav-links"><a href="/days-between-dates/">Days Between Dates</a><span class="nav-sep">·</span><a href="/date-calculator/">Date Calculator</a><span class="nav-sep">·</span><a href="/what-day-is-it-today/">What Day Is It</a><span class="nav-sep">·</span><a href="/week-number/">Week Number</a><span class="nav-sep">·</span><a href="/business-days-calculator/">Business Days</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Countdowns</span><div class="nav-links"><a href="/days-until-christmas/">Christmas</a><span class="nav-sep">·</span><a href="/days-until-new-year/">New Year</a><span class="nav-sep">·</span><a href="/days-until-halloween/">Halloween</a><span class="nav-sep">·</span><a href="/days-until-easter/">Easter</a><span class="nav-sep">·</span><a href="/countdown-timer/">Countdown Timer</a></div></div>
+    <div class="nav-group"><span class="nav-cat">World</span><div class="nav-links"><a href="/time-zone-converter/">Time Zone Converter</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Born In</span><div class="nav-links"><a href="/born-in-1990/">Born in 1990</a><span class="nav-sep">·</span><a href="/born-in-1980/">Born in 1980</a><span class="nav-sep">·</span><a href="/born-in-2000/">Born in 2000</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Year in Review</span><div class="nav-links"><a href="/what-happened-in-2000/">What Happened in 2000</a><span class="nav-sep">·</span><a href="/what-happened-in-1990/">What Happened in 1990</a><span class="nav-sep">·</span><a href="/what-happened-in-1980/">What Happened in 1980</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Calendars</span><div class="nav-links"><a href="/week-number/2025/">Week Numbers 2025</a><span class="nav-sep">·</span><a href="/week-number/2026/">Week Numbers 2026</a><span class="nav-sep">·</span><a href="/week-number/2027/">Week Numbers 2027</a></div></div>
+</div>
+</nav>
+<main id="main-content" class="article-main">
+<section><h2>What is an ISO week number?</h2><div class="article-body"><p>ISO week numbering assigns a number from 1 to 52 (or 53) to each week of the year. It is defined by the <strong>ISO 8601</strong> standard, used in business, logistics, and government across Europe and internationally.</p>
+<p>Key rules:</p>
+<ul>
+<li>Weeks run <strong>Monday to Sunday</strong></li>
+<li>Week 1 is the week containing the first Thursday of January</li>
+<li>Most years have 52 weeks; some have 53</li>
+<li>The week year and the calendar year can differ by 1–3 days at year boundaries</li>
+</ul></div></section>
+<section><h2>How is week 1 defined?</h2><div class="article-body"><p>Week 1 is the week that contains <strong>January 4</strong>. This is equivalent to saying: the week containing the first Thursday of the year.</p>
+<p>This means January 1 is sometimes in week 52 or 53 of the <em>previous</em> year. For example:</p>
+<ul>
+<li>January 1, 2016 was a Friday → it belonged to week 53 of <strong>2015</strong></li>
+<li>January 1, 2018 was a Monday → week 1 of <strong>2018</strong> started that day</li>
+</ul>
+<p>Conversely, late December days can fall in week 1 of the <em>next</em> year. December 31, 2018 was a Monday — it was in week 1 of <strong>2019</strong>.</p></div></section>
+<section><h2>Why do some years have 53 weeks?</h2><div class="article-body"><p>A regular year has 52 weeks and 1 extra day. A leap year has 52 weeks and 2 extra days. When January 1 falls on a <strong>Thursday</strong>, the year has 53 ISO weeks. Leap years that start on a <strong>Wednesday</strong> also get 53 weeks.</p>
+<p>Recent years with 53 ISO weeks: 2015, 2020, 2026, 2032.</p></div></section>
+<section><h2>ISO week numbering vs US week numbering</h2><div class="article-body"></div><div class="article-table-wrap"><table>
+<tr><th></th><th>ISO 8601 (international)</th><th>US / Canada</th></tr>
+<tr><td>First day of week</td><td>Monday</td><td>Sunday</td></tr>
+<tr><td>Week 1 definition</td><td>Contains January 4 (first Thursday)</td><td>Contains January 1</td></tr>
+<tr><td>Used in</td><td>Europe, business, logistics</td><td>USA, Canada, Japan</td></tr>
+<tr><td>Years with 53 weeks</td><td>Years starting on Thu (or Wed in leap)</td><td>Years starting on Sun (or Sat in leap)</td></tr>
+</table></div></section>
+<section class="article-faq"><h2>FAQ</h2><details><summary>What week number is it today?</summary><p>Use the week number calculator on this site — it shows the current ISO week number updated in real time.</p></details><details><summary>Does week 1 always start on January 1?</summary><p>No. ISO week 1 starts on Monday of the week containing January 4. January 1 can fall in week 52 or 53 of the previous year if it is a Friday, Saturday, or Sunday.</p></details><details><summary>How many weeks are in 2025?</summary><p>2025 has 52 ISO weeks. Week 1 of 2025 started on Monday, December 30, 2024. Week 52 ends on Sunday, December 28, 2025.</p></details><details><summary>How many weeks are in 2026?</summary><p>2026 has 53 ISO weeks, because January 1, 2026 falls on a Thursday. Week 53 of 2026 contains December 28–January 3, 2027.</p></details><details><summary>What is the difference between week number and calendar week?</summary><p>"Week number" and "calendar week" (KW in German, CW in English) both refer to ISO week numbers — they are the same thing. The term "calendar week" is common in German-speaking countries and business contexts.</p></details></section>
+<div class="article-related"><strong>Related:</strong> <a href="/how-many-weeks-in-a-year/">How many weeks in a year?</a> · <a href="/week-numbers-2025-calendar/">Week numbers 2025 calendar</a> · <a href="/what-week-number-is-it/">What week number is it?</a></div>
+<div class="article-cta"><a href="/week-number/" class="cta-btn">Week Number Calculator →</a></div>
+</main>
+<footer>
+<nav class="footer-nav" aria-label="Site links">
+<div class="footer-col"><strong>Age</strong>
+<a href="/age-calculator/">Age Calculator</a>
+<a href="/chronological-age-calculator/">Chronological Age</a>
+<a href="/baby-age-calculator/">Baby Age</a>
+<a href="/dog-age-calculator/">Dog Age</a>
+<a href="/cat-age-calculator/">Cat Age</a></div>
+<div class="footer-col"><strong>Dates</strong>
+<a href="/days-between-dates/">Days Between Dates</a>
+<a href="/date-calculator/">Date Calculator</a>
+<a href="/what-day-is-it-today/">What Day Is It</a>
+<a href="/week-number/">Week Number</a>
+<a href="/business-days-calculator/">Business Days</a></div>
+<div class="footer-col"><strong>Countdowns</strong>
+<a href="/days-until-christmas/">Christmas</a>
+<a href="/days-until-new-year/">New Year</a>
+<a href="/days-until-halloween/">Halloween</a>
+<a href="/days-until-easter/">Easter</a>
+<a href="/countdown-timer/">Countdown Timer</a></div>
+<div class="footer-col"><strong>World</strong>
+<a href="/time-zone-converter/">Time Zone Converter</a></div>
+<div class="footer-col"><strong>Born In</strong>
+<a href="/born-in-1990/">Born in 1990</a>
+<a href="/born-in-1980/">Born in 1980</a>
+<a href="/born-in-2000/">Born in 2000</a></div>
+<div class="footer-col"><strong>Year in Review</strong>
+<a href="/what-happened-in-2000/">What Happened in 2000</a>
+<a href="/what-happened-in-1990/">What Happened in 1990</a>
+<a href="/what-happened-in-1980/">What Happened in 1980</a></div>
+<div class="footer-col"><strong>Calendars</strong>
+<a href="/week-number/2025/">Week Numbers 2025</a>
+<a href="/week-number/2026/">Week Numbers 2026</a>
+<a href="/week-number/2027/">Week Numbers 2027</a></div>
+</nav>
+<div class="footer-copy">© 2026 DateCalc.app — Free online date &amp; time calculators · <a href="/about/">About</a> · <a href="/privacy/">Privacy</a></div>
+</footer>
+</div>
+<script>
+(function(){
+  var now = new Date();
+  var opts = {weekday:'long',year:'numeric',month:'long',day:'numeric'};
+  document.getElementById('todayMeta').innerHTML =
+    now.toLocaleDateString('en-US', opts) + '<br>Free date calculator';
+})();
+</script>
+<div id="consent-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#111111;color:#fff;padding:.9rem 1.4rem;z-index:9999;font-size:.82rem;font-family:sans-serif;align-items:center;gap:.8rem;flex-wrap:wrap">
+  <span style="flex:1;min-width:200px">We use Google AdSense to fund this free service. Do you accept advertising cookies?</span>
+  <button id="consent-accept" style="background:#c8392b;color:#fff;border:none;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Accept</button>
+  <button id="consent-decline" style="background:transparent;color:#aaa;border:1px solid #555;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Continue without</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welche Kalenderwoche ist heute? — Aktuelle Wochennummer finden</title>
+<meta name="robots" content="index, follow">
+<meta name="description" content="Herausfinden, welche Kalenderwoche heute ist. Wie man die aktuelle ISO-Wochennummer selbst berechnet, plus schnelle Referenz für 2025 und 2026.">
+<link rel="canonical" href="https://datecalc.app/de/welche-kalenderwoche-ist-heute/">
+<link rel="alternate" hreflang="en" href="https://datecalc.app/what-week-number-is-it/">
+<link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/quel-est-le-numero-de-semaine/">
+<link rel="alternate" hreflang="es" href="https://datecalc.app/es/que-numero-de-semana-es/">
+<link rel="alternate" hreflang="pt" href="https://datecalc.app/what-week-number-is-it/">
+<link rel="alternate" hreflang="de" href="https://datecalc.app/what-week-number-is-it/">
+<link rel="alternate" hreflang="it" href="https://datecalc.app/what-week-number-is-it/">
+<link rel="alternate" hreflang="pl" href="https://datecalc.app/what-week-number-is-it/">
+<link rel="alternate" hreflang="ja" href="https://datecalc.app/what-week-number-is-it/">
+<link rel="alternate" hreflang="ko" href="https://datecalc.app/what-week-number-is-it/">
+<link rel="alternate" hreflang="nl" href="https://datecalc.app/what-week-number-is-it/">
+<link rel="alternate" hreflang="x-default" href="https://datecalc.app/what-week-number-is-it/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Welche Kalenderwoche ist heute? — Aktuelle Wochennummer finden">
+<meta property="og:description" content="Herausfinden, welche Kalenderwoche heute ist. Wie man die aktuelle ISO-Wochennummer selbst berechnet, plus schnelle Referenz für 2025 und 2026.">
+<meta property="og:url" content="https://datecalc.app/de/welche-kalenderwoche-ist-heute/">
+<meta property="og:site_name" content="DateCalc.app">
+<meta property="og:image" content="https://datecalc.app/og.png">
+<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/playfair-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/style.css">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="shortcut icon" href="/favicon.svg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Was ist die aktuelle Kalenderwoche?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nutzen Sie das Kalenderwochen-Tool auf dieser Website für eine Live-Antwort. Als Referenz: Woche 1 von 2026 beginnt am 29. Dezember 2025."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie finde ich die Wochennummer in Excel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Verwenden Sie die Funktion ISOWEEKNUM: =ISOWEEKNUM(A1), wobei A1 Ihr Datum enthält. Das gibt die ISO 8601 Wochennummer zurück."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "In welcher Woche liegt mein Geburtstag 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Geben Sie Ihren Geburtstag in den Kalenderwochen-Rechner auf dieser Website ein und er zeigt Ihnen die ISO-Wochennummer für jedes Datum."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ist Woche 1 immer der 1. Januar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nein. ISO-Woche 1 ist die Woche, die den 4. Januar enthält. Der 1. Januar kann in Woche 52 oder 53 des Vorjahres liegen, wenn er auf einen Freitag, Samstag oder Sonntag fällt."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Welche Kalenderwoche ist heute?",
+  "description": "Herausfinden, welche Kalenderwoche heute ist. Wie man die aktuelle ISO-Wochennummer selbst berechnet, plus schnelle Referenz für 2025 und 2026.",
+  "url": "https://datecalc.app/de/welche-kalenderwoche-ist-heute/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "DateCalc.app",
+    "url": "https://datecalc.app"
+  }
+}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"DateCalc.app","url":"https://datecalc.app","logo":"https://datecalc.app/og.png","contactPoint":{"@type":"ContactPoint","email":"hello@datecalc.app","contactType":"customer support"}}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header>
+<div class="masthead">
+  <a href="/de/" class="masthead-brand">DateCalc<span>.</span>app</a>
+  <div class="masthead-meta" id="todayMeta"></div>
+</div>
+</header>
+<div class="lang-strip">
+  <a href="/what-week-number-is-it/" class="lang-btn">EN</a>
+  <a href="/fr/quel-est-le-numero-de-semaine/" class="lang-btn">FR</a>
+  <a href="/es/que-numero-de-semana-es/" class="lang-btn">ES</a>
+  <a href="/what-week-number-is-it/" class="lang-btn">PT</a>
+  <a href="/what-week-number-is-it/" class="lang-btn active">DE</a>
+  <a href="/what-week-number-is-it/" class="lang-btn">IT</a>
+  <a href="/what-week-number-is-it/" class="lang-btn">PL</a>
+  <a href="/what-week-number-is-it/" class="lang-btn">JA</a>
+  <a href="/what-week-number-is-it/" class="lang-btn">KO</a>
+  <a href="/what-week-number-is-it/" class="lang-btn">NL</a>
+</div>
+<div class="page">
+<div class="headline-block">
+  <p class="kicker">LEITFADEN KALENDERWOCHE</p>
+  <h1>Welche Kalenderwoche ist heute?</h1>
+  <p class="article-intro">Um die aktuelle Kalenderwoche zu ermitteln, nutzen Sie den Kalenderwochen-Rechner auf dieser Website — er zeigt die ISO 8601 Wochennummer in Echtzeit an. Sie können sie auch manuell mit den untenstehenden Regeln berechnen.</p>
+</div>
+<nav aria-label="Tools">
+<div class="tool-nav">
+    <div class="nav-group"><span class="nav-cat">Alter</span><div class="nav-links"><a href="/de/altersrechner/">Altersrechner</a><span class="nav-sep">·</span><a href="/de/chronologisches-alter/">Chronologisches Alter</a><span class="nav-sep">·</span><a href="/de/baby-alter-rechner/">Baby-Altersrechner</a><span class="nav-sep">·</span><a href="/de/hund-alter-rechner/">Hund Altersrechner</a><span class="nav-sep">·</span><a href="/de/katze-alter-rechner/">Katze Altersrechner</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Daten</span><div class="nav-links"><a href="/de/tage-zwischen-datumen/">Tage zwischen Daten</a><span class="nav-sep">·</span><a href="/de/datumsrechner/">Datumsrechner</a><span class="nav-sep">·</span><a href="/de/welcher-tag-ist-heute/">Welcher Tag ist heute</a><span class="nav-sep">·</span><a href="/de/kalenderwoche/">Kalenderwoche</a><span class="nav-sep">·</span><a href="/de/arbeitstage-rechner/">Arbeitstage Rechner</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Countdowns</span><div class="nav-links"><a href="/de/tage-bis-weihnachten/">Weihnachten</a><span class="nav-sep">·</span><a href="/de/tage-bis-neujahr/">Neujahr</a><span class="nav-sep">·</span><a href="/de/tage-bis-halloween/">Halloween</a><span class="nav-sep">·</span><a href="/de/tage-bis-ostern/">Ostern</a><span class="nav-sep">·</span><a href="/de/countdown-timer/">Countdown-Timer</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Welt</span><div class="nav-links"><a href="/de/zeitzonen-umrechner/">Zeitzonen-Umrechner</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Geboren in</span><div class="nav-links"><a href="/de/geboren-in-1990/">Geboren 1990</a><span class="nav-sep">·</span><a href="/de/geboren-in-1980/">Geboren 1980</a><span class="nav-sep">·</span><a href="/de/geboren-in-2000/">Geboren 2000</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Jahresrückblick</span><div class="nav-links"><a href="/de/was-geschah-2000/">Was geschah 2000</a><span class="nav-sep">·</span><a href="/de/was-geschah-1990/">Was geschah 1990</a><span class="nav-sep">·</span><a href="/de/was-geschah-1980/">Was geschah 1980</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Kalender</span><div class="nav-links"><a href="/de/kalenderwoche/2025/">KW 2025</a><span class="nav-sep">·</span><a href="/de/kalenderwoche/2026/">KW 2026</a><span class="nav-sep">·</span><a href="/de/kalenderwoche/2027/">KW 2027</a></div></div>
+</div>
+</nav>
+<main id="main-content" class="article-main">
+<section><h2>Wie berechnet man die Wochennummer eines beliebigen Datums?</h2><div class="article-body"><p>Die ISO-Wochennummer eines beliebigen Datums lässt sich in 3 Schritten ermitteln:</p>
+<ol>
+<li>Finden Sie den Donnerstag derselben Woche wie Ihr Datum (Montag = Wochenanfang)</li>
+<li>Zählen Sie, der wievielte Donnerstag es im Jahr ist — das ist die Wochennummer</li>
+<li>Fällt der Donnerstag in den Januar des nächsten Jahres, gehört die Woche zum nächsten Jahr</li>
+</ol>
+<p><strong>Beispiel:</strong> In welcher Woche liegt der 10. April 2026?<br>
+Der 10. April 2026 ist ein Freitag. Der Donnerstag dieser Woche ist der 9. April. Der 9. April ist der 99. Tag des Jahres 2026 → Donnerstagnummer: ⌈99/7⌉ = 15. <strong>Woche 15</strong>.</p></div></section>
+<section><h2>Schnellreferenz: erste Woche jedes Monats 2025–2026</h2><div class="article-body"></div><div class="article-table-wrap"><table>
+<tr><th>Monat</th><th>Erster Montag</th><th>ISO-KW</th><th>Jahr</th></tr>
+<tr><td>Januar 2025</td><td>30. Dez. 2024</td><td>KW01</td><td>2025</td></tr>
+<tr><td>Februar 2025</td><td>3. Feb.</td><td>KW06</td><td>2025</td></tr>
+<tr><td>März 2025</td><td>3. Mär.</td><td>KW10</td><td>2025</td></tr>
+<tr><td>April 2025</td><td>31. Mär.</td><td>KW14</td><td>2025</td></tr>
+<tr><td>Mai 2025</td><td>5. Mai</td><td>KW19</td><td>2025</td></tr>
+<tr><td>Juni 2025</td><td>2. Jun.</td><td>KW23</td><td>2025</td></tr>
+<tr><td>Juli 2025</td><td>30. Jun.</td><td>KW27</td><td>2025</td></tr>
+<tr><td>August 2025</td><td>4. Aug.</td><td>KW32</td><td>2025</td></tr>
+<tr><td>September 2025</td><td>1. Sep.</td><td>KW36</td><td>2025</td></tr>
+<tr><td>Oktober 2025</td><td>6. Okt.</td><td>KW41</td><td>2025</td></tr>
+<tr><td>November 2025</td><td>3. Nov.</td><td>KW45</td><td>2025</td></tr>
+<tr><td>Dezember 2025</td><td>1. Dez.</td><td>KW49</td><td>2025</td></tr>
+<tr><td>Januar 2026</td><td>29. Dez. 2025</td><td>KW01</td><td>2026</td></tr>
+</table></div></section>
+<section><h2>In Excel oder Google Sheets</h2><div class="article-body"><p>Um die ISO-Wochennummer einer beliebigen Datumszelle (z. B. A1) in einer Tabellenkalkulation zu ermitteln:</p>
+<ul>
+<li><strong>Excel:</strong> <code>=ISOKALENDERWOCHE(A1)</code> oder <code>=ISOWEEKNUM(A1)</code></li>
+<li><strong>Google Sheets:</strong> <code>=ISOWEEKNUM(A1)</code></li>
+</ul>
+<p>Beide Funktionen geben direkt die ISO 8601 Wochennummer zurück.</p></div></section>
+<section class="article-faq"><h2>FAQ</h2><details><summary>Was ist die aktuelle Kalenderwoche?</summary><p>Nutzen Sie das Kalenderwochen-Tool auf dieser Website für eine Live-Antwort. Als Referenz: Woche 1 von 2026 beginnt am 29. Dezember 2025.</p></details><details><summary>Wie finde ich die Wochennummer in Excel?</summary><p>Verwenden Sie die Funktion ISOWEEKNUM: =ISOWEEKNUM(A1), wobei A1 Ihr Datum enthält. Das gibt die ISO 8601 Wochennummer zurück.</p></details><details><summary>In welcher Woche liegt mein Geburtstag 2026?</summary><p>Geben Sie Ihren Geburtstag in den Kalenderwochen-Rechner auf dieser Website ein und er zeigt Ihnen die ISO-Wochennummer für jedes Datum.</p></details><details><summary>Ist Woche 1 immer der 1. Januar?</summary><p>Nein. ISO-Woche 1 ist die Woche, die den 4. Januar enthält. Der 1. Januar kann in Woche 52 oder 53 des Vorjahres liegen, wenn er auf einen Freitag, Samstag oder Sonntag fällt.</p></details></section>
+<div class="article-related"><strong>Related:</strong> <a href="/de/iso-kalenderwoche-erklaert/">ISO Kalenderwoche erklärt</a> · <a href="/de/kalenderwochen-2025/">Kalenderwochen 2025 — vollständiger Kalender</a> · <a href="/de/wie-viele-wochen-hat-ein-jahr/">Wie viele Wochen hat ein Jahr?</a></div>
+<div class="article-cta"><a href="/week-number/" class="cta-btn">Kalenderwochen-Rechner — aktuelle Woche →</a></div>
+</main>
+<footer>
+<nav class="footer-nav" aria-label="Site links">
+<div class="footer-col"><strong>Alter</strong>
+<a href="/de/altersrechner/">Altersrechner</a>
+<a href="/de/chronologisches-alter/">Chronologisches Alter</a>
+<a href="/de/baby-alter-rechner/">Baby-Altersrechner</a>
+<a href="/de/hund-alter-rechner/">Hund Altersrechner</a>
+<a href="/de/katze-alter-rechner/">Katze Altersrechner</a></div>
+<div class="footer-col"><strong>Daten</strong>
+<a href="/de/tage-zwischen-datumen/">Tage zwischen Daten</a>
+<a href="/de/datumsrechner/">Datumsrechner</a>
+<a href="/de/welcher-tag-ist-heute/">Welcher Tag ist heute</a>
+<a href="/de/kalenderwoche/">Kalenderwoche</a>
+<a href="/de/arbeitstage-rechner/">Arbeitstage Rechner</a></div>
+<div class="footer-col"><strong>Countdowns</strong>
+<a href="/de/tage-bis-weihnachten/">Weihnachten</a>
+<a href="/de/tage-bis-neujahr/">Neujahr</a>
+<a href="/de/tage-bis-halloween/">Halloween</a>
+<a href="/de/tage-bis-ostern/">Ostern</a>
+<a href="/de/countdown-timer/">Countdown-Timer</a></div>
+<div class="footer-col"><strong>Welt</strong>
+<a href="/de/zeitzonen-umrechner/">Zeitzonen-Umrechner</a></div>
+<div class="footer-col"><strong>Geboren in</strong>
+<a href="/de/geboren-in-1990/">Geboren 1990</a>
+<a href="/de/geboren-in-1980/">Geboren 1980</a>
+<a href="/de/geboren-in-2000/">Geboren 2000</a></div>
+<div class="footer-col"><strong>Jahresrückblick</strong>
+<a href="/de/was-geschah-2000/">Was geschah 2000</a>
+<a href="/de/was-geschah-1990/">Was geschah 1990</a>
+<a href="/de/was-geschah-1980/">Was geschah 1980</a></div>
+<div class="footer-col"><strong>Kalender</strong>
+<a href="/de/kalenderwoche/2025/">KW 2025</a>
+<a href="/de/kalenderwoche/2026/">KW 2026</a>
+<a href="/de/kalenderwoche/2027/">KW 2027</a></div>
+</nav>
+<div class="footer-copy">© 2026 DateCalc.app — Kostenlose Online-Datums- und Zeitrechner · <a href="/de/ueber-uns/">Über uns</a> · <a href="/de/datenschutz/">Datenschutz</a></div>
+</footer>
+</div>
+<script>
+(function(){
+  var now = new Date();
+  var opts = {weekday:'long',year:'numeric',month:'long',day:'numeric'};
+  document.getElementById('todayMeta').innerHTML =
+    now.toLocaleDateString('de-DE', opts) + '<br>Kostenloser Datumsrechner';
+})();
+</script>
+<div id="consent-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#111111;color:#fff;padding:.9rem 1.4rem;z-index:9999;font-size:.82rem;font-family:sans-serif;align-items:center;gap:.8rem;flex-wrap:wrap">
+  <span style="flex:1;min-width:200px">Wir nutzen Google AdSense zur Finanzierung dieses kostenlosen Dienstes. Akzeptierst du Werbe-Cookies?</span>
+  <button id="consent-accept" style="background:#c8392b;color:#fff;border:none;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Akzeptieren</button>
+  <button id="consent-decline" style="background:transparent;color:#aaa;border:1px solid #555;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Weiter ohne</button>
+</div>
+</body>
+</html>

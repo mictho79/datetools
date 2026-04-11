@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ISO 주 번호 설명 — 주 번호 체계 작동 방식</title>
+<meta name="robots" content="index, follow">
+<meta name="description" content="ISO 주 번호란 무엇인가요? ISO 8601 주 번호 체계 작동 방식, 1주차 정의 방법, 일부 연도에 53주가 있는 이유를 알아보세요.">
+<link rel="canonical" href="https://datecalc.app/ko/iso-ju-beon-ho-seol-myeong/">
+<link rel="alternate" hreflang="en" href="https://datecalc.app/iso-week-number-explained/">
+<link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/explication-numero-semaine-iso/">
+<link rel="alternate" hreflang="es" href="https://datecalc.app/es/explicacion-numero-semana-iso/">
+<link rel="alternate" hreflang="pt" href="https://datecalc.app/iso-week-number-explained/">
+<link rel="alternate" hreflang="de" href="https://datecalc.app/iso-week-number-explained/">
+<link rel="alternate" hreflang="it" href="https://datecalc.app/iso-week-number-explained/">
+<link rel="alternate" hreflang="pl" href="https://datecalc.app/iso-week-number-explained/">
+<link rel="alternate" hreflang="ja" href="https://datecalc.app/iso-week-number-explained/">
+<link rel="alternate" hreflang="ko" href="https://datecalc.app/iso-week-number-explained/">
+<link rel="alternate" hreflang="nl" href="https://datecalc.app/iso-week-number-explained/">
+<link rel="alternate" hreflang="x-default" href="https://datecalc.app/iso-week-number-explained/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ISO 주 번호 설명 — 주 번호 체계 작동 방식">
+<meta property="og:description" content="ISO 주 번호란 무엇인가요? ISO 8601 주 번호 체계 작동 방식, 1주차 정의 방법, 일부 연도에 53주가 있는 이유를 알아보세요.">
+<meta property="og:url" content="https://datecalc.app/ko/iso-ju-beon-ho-seol-myeong/">
+<meta property="og:site_name" content="DateCalc.app">
+<meta property="og:image" content="https://datecalc.app/og.png">
+<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/playfair-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/style.css">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="shortcut icon" href="/favicon.svg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "오늘은 몇 주차인가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "이 사이트의 주 번호 계산기를 사용하세요 — 실시간으로 업데이트된 현재 ISO 주 번호를 보여줍니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "1주차는 항상 1월 1일에 시작하나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "아니요. ISO 1주차는 1월 4일이 포함된 주의 월요일에 시작합니다. 1월 1일이 금요일, 토요일 또는 일요일이면 전년도 52주차 또는 53주차에 속할 수 있습니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "2025년은 몇 주인가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "2025년은 ISO 52주입니다. 2025년 1주차는 2024년 12월 30일 월요일에 시작되었습니다. 52주차는 2025년 12월 28일 일요일에 끝납니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "2026년은 몇 주인가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "2026년 1월 1일이 목요일이기 때문에 2026년은 ISO 53주입니다. 2026년 53주차는 12월 28일부터 2027년 1월 3일까지입니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "주 번호와 달력 주의 차이점은 무엇인가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "\"주 번호\"와 \"달력 주(KW)\"는 모두 ISO 주 번호를 가리킵니다. \"달력 주\"라는 용어는 독일어권 국가와 비즈니스 맥락에서 자주 사용됩니다."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "ISO 주 번호 설명",
+  "description": "ISO 주 번호란 무엇인가요? ISO 8601 주 번호 체계 작동 방식, 1주차 정의 방법, 일부 연도에 53주가 있는 이유를 알아보세요.",
+  "url": "https://datecalc.app/ko/iso-ju-beon-ho-seol-myeong/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "DateCalc.app",
+    "url": "https://datecalc.app"
+  }
+}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"DateCalc.app","url":"https://datecalc.app","logo":"https://datecalc.app/og.png","contactPoint":{"@type":"ContactPoint","email":"hello@datecalc.app","contactType":"customer support"}}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header>
+<div class="masthead">
+  <a href="/ko/" class="masthead-brand">DateCalc<span>.</span>app</a>
+  <div class="masthead-meta" id="todayMeta"></div>
+</div>
+</header>
+<div class="lang-strip">
+  <a href="/iso-week-number-explained/" class="lang-btn">EN</a>
+  <a href="/fr/explication-numero-semaine-iso/" class="lang-btn">FR</a>
+  <a href="/es/explicacion-numero-semana-iso/" class="lang-btn">ES</a>
+  <a href="/iso-week-number-explained/" class="lang-btn">PT</a>
+  <a href="/iso-week-number-explained/" class="lang-btn">DE</a>
+  <a href="/iso-week-number-explained/" class="lang-btn">IT</a>
+  <a href="/iso-week-number-explained/" class="lang-btn">PL</a>
+  <a href="/iso-week-number-explained/" class="lang-btn">JA</a>
+  <a href="/iso-week-number-explained/" class="lang-btn active">KO</a>
+  <a href="/iso-week-number-explained/" class="lang-btn">NL</a>
+</div>
+<div class="page">
+<div class="headline-block">
+  <p class="kicker">주 번호 가이드</p>
+  <h1>ISO 주 번호 설명</h1>
+  <p class="article-intro">ISO 주 번호는 국제 표준 ISO 8601에 따라 정의된 연간 주를 번호로 매기는 표준화된 방법입니다. 1주차는 해당 연도의 첫 번째 목요일이 포함된 주이며, 각 주는 월요일부터 일요일까지 이어집니다.</p>
+</div>
+<nav aria-label="Tools">
+<div class="tool-nav">
+    <div class="nav-group"><span class="nav-cat">나이</span><div class="nav-links"><a href="/ko/nai-gyesan-gi/">나이 계산기</a><span class="nav-sep">·</span><a href="/ko/sigan-nai/">시간 나이</a><span class="nav-sep">·</span><a href="/ko/agi-nai/">아기 나이</a><span class="nav-sep">·</span><a href="/ko/gae-nai/">강아지 나이</a><span class="nav-sep">·</span><a href="/ko/goyang-i-nai/">고양이 나이</a></div></div>
+    <div class="nav-group"><span class="nav-cat">날짜</span><div class="nav-links"><a href="/ko/nal-jja-sayi/">날짜 사이의 일수</a><span class="nav-sep">·</span><a href="/ko/nal-jja-gyesan-gi/">날짜 계산기</a><span class="nav-sep">·</span><a href="/ko/oneul-museun-yoil/">오늘은 무슨 요일</a><span class="nav-sep">·</span><a href="/ko/ju-beonho/">주 번호</a><span class="nav-sep">·</span><a href="/ko/yeongeopil-gyesan-gi/">영업일 계산기</a></div></div>
+    <div class="nav-group"><span class="nav-cat">카운트다운</span><div class="nav-links"><a href="/ko/keulliseumaseu-kkaji/">크리스마스까지</a><span class="nav-sep">·</span><a href="/ko/saehae-kkaji/">새해까지</a><span class="nav-sep">·</span><a href="/ko/hallowin-kkaji/">할로윈까지</a><span class="nav-sep">·</span><a href="/ko/buhwarjeol-kkaji/">부활절까지</a><span class="nav-sep">·</span><a href="/ko/kaunteu-daun/">카운트다운</a></div></div>
+    <div class="nav-group"><span class="nav-cat">세계</span><div class="nav-links"><a href="/ko/sigandag-byeonhwan/">시간대 변환기</a></div></div>
+    <div class="nav-group"><span class="nav-cat">태어난 해</span><div class="nav-links"><a href="/ko/taeeona-1990/">1990년생</a><span class="nav-sep">·</span><a href="/ko/taeeona-1980/">1980년생</a><span class="nav-sep">·</span><a href="/ko/taeeona-2000/">2000년생</a></div></div>
+    <div class="nav-group"><span class="nav-cat">연간 리뷰</span><div class="nav-links"><a href="/ko/museun-il-i-2000/">2000년에 무슨 일이</a><span class="nav-sep">·</span><a href="/ko/museun-il-i-1990/">1990년에 무슨 일이</a><span class="nav-sep">·</span><a href="/ko/museun-il-i-1980/">1980년에 무슨 일이</a></div></div>
+    <div class="nav-group"><span class="nav-cat">달력</span><div class="nav-links"><a href="/ko/ju-beonho/2025/">2025년 주 번호</a><span class="nav-sep">·</span><a href="/ko/ju-beonho/2026/">2026년 주 번호</a><span class="nav-sep">·</span><a href="/ko/ju-beonho/2027/">2027년 주 번호</a></div></div>
+</div>
+</nav>
+<main id="main-content" class="article-main">
+<section><h2>ISO 주 번호란 무엇인가요?</h2><div class="article-body"><p>ISO 주 번호는 연간 각 주에 1에서 52(또는 53)까지의 번호를 부여합니다. <strong>ISO 8601</strong> 표준에 의해 정의되며 유럽 및 국제적으로 비즈니스, 물류, 정부 기관에서 사용됩니다.</p>
+<p>주요 규칙:</p>
+<ul>
+<li>주는 <strong>월요일부터 일요일</strong>까지</li>
+<li>1주차는 1월의 첫 번째 목요일이 포함된 주</li>
+<li>대부분의 연도는 52주이며 일부는 53주</li>
+<li>주 연도와 달력 연도는 연도 경계에서 1~3일 차이날 수 있음</li>
+</ul></div></section>
+<section><h2>1주차는 어떻게 정의되나요?</h2><div class="article-body"><p>1주차는 <strong>1월 4일</strong>이 포함된 주입니다. 이는 "해당 연도의 첫 번째 목요일이 포함된 주"와 동일한 의미입니다.</p>
+<p>즉, 1월 1일이 <em>전년도</em>의 52주차 또는 53주차에 속할 수 있습니다. 예를 들어:</p>
+<ul>
+<li>2016년 1월 1일은 금요일 → <strong>2015년</strong> 53주차에 속함</li>
+<li>2018년 1월 1일은 월요일 → <strong>2018년</strong> 1주차가 그날 시작됨</li>
+</ul>
+<p>반대로, 12월 말일이 <em>다음 해</em>의 1주차에 속할 수 있습니다. 2018년 12월 31일은 월요일이었고 — <strong>2019년</strong> 1주차에 속했습니다.</p></div></section>
+<section><h2>일부 연도에는 왜 53주가 있나요?</h2><div class="article-body"><p>일반적인 해는 52주와 하루가 남습니다. 윤년은 52주와 이틀이 남습니다. 1월 1일이 <strong>목요일</strong>인 해는 ISO 53주차가 생깁니다. <strong>수요일</strong>로 시작하는 윤년도 53주가 됩니다.</p>
+<p>53주가 있는 최근 연도: 2015년, 2020년, 2026년, 2032년.</p></div></section>
+<section><h2>ISO 주 번호 vs 미국 주 번호</h2><div class="article-body"></div><div class="article-table-wrap"><table>
+<tr><th></th><th>ISO 8601 (국제)</th><th>미국 / 캐나다</th></tr>
+<tr><td>주 시작 요일</td><td>월요일</td><td>일요일</td></tr>
+<tr><td>1주차 정의</td><td>1월 4일 포함 (첫 번째 목요일)</td><td>1월 1일 포함</td></tr>
+<tr><td>사용 지역</td><td>유럽, 비즈니스, 물류</td><td>미국, 캐나다, 일본</td></tr>
+<tr><td>53주인 연도</td><td>목요일로 시작하는 해 (윤년은 수요일)</td><td>일요일로 시작하는 해 (윤년은 토요일)</td></tr>
+</table></div></section>
+<section class="article-faq"><h2>FAQ</h2><details><summary>오늘은 몇 주차인가요?</summary><p>이 사이트의 주 번호 계산기를 사용하세요 — 실시간으로 업데이트된 현재 ISO 주 번호를 보여줍니다.</p></details><details><summary>1주차는 항상 1월 1일에 시작하나요?</summary><p>아니요. ISO 1주차는 1월 4일이 포함된 주의 월요일에 시작합니다. 1월 1일이 금요일, 토요일 또는 일요일이면 전년도 52주차 또는 53주차에 속할 수 있습니다.</p></details><details><summary>2025년은 몇 주인가요?</summary><p>2025년은 ISO 52주입니다. 2025년 1주차는 2024년 12월 30일 월요일에 시작되었습니다. 52주차는 2025년 12월 28일 일요일에 끝납니다.</p></details><details><summary>2026년은 몇 주인가요?</summary><p>2026년 1월 1일이 목요일이기 때문에 2026년은 ISO 53주입니다. 2026년 53주차는 12월 28일부터 2027년 1월 3일까지입니다.</p></details><details><summary>주 번호와 달력 주의 차이점은 무엇인가요?</summary><p>"주 번호"와 "달력 주(KW)"는 모두 ISO 주 번호를 가리킵니다. "달력 주"라는 용어는 독일어권 국가와 비즈니스 맥락에서 자주 사용됩니다.</p></details></section>
+<div class="article-related"><strong>Related:</strong> <a href="/ko/il-nyeon-ui-ju-su/">1년은 몇 주인가요?</a> · <a href="/ko/2025-nyeon-ju-beon-ho/">2025년 주 번호 캘린더</a> · <a href="/ko/hyeon-jae-myeot-jju-il-kka/">지금은 몇 주차인가요?</a></div>
+<div class="article-cta"><a href="/week-number/" class="cta-btn">주 번호 계산기 →</a></div>
+</main>
+<footer>
+<nav class="footer-nav" aria-label="Site links">
+<div class="footer-col"><strong>나이</strong>
+<a href="/ko/nai-gyesan-gi/">나이 계산기</a>
+<a href="/ko/sigan-nai/">시간 나이</a>
+<a href="/ko/agi-nai/">아기 나이</a>
+<a href="/ko/gae-nai/">강아지 나이</a>
+<a href="/ko/goyang-i-nai/">고양이 나이</a></div>
+<div class="footer-col"><strong>날짜</strong>
+<a href="/ko/nal-jja-sayi/">날짜 사이의 일수</a>
+<a href="/ko/nal-jja-gyesan-gi/">날짜 계산기</a>
+<a href="/ko/oneul-museun-yoil/">오늘은 무슨 요일</a>
+<a href="/ko/ju-beonho/">주 번호</a>
+<a href="/ko/yeongeopil-gyesan-gi/">영업일 계산기</a></div>
+<div class="footer-col"><strong>카운트다운</strong>
+<a href="/ko/keulliseumaseu-kkaji/">크리스마스까지</a>
+<a href="/ko/saehae-kkaji/">새해까지</a>
+<a href="/ko/hallowin-kkaji/">할로윈까지</a>
+<a href="/ko/buhwarjeol-kkaji/">부활절까지</a>
+<a href="/ko/kaunteu-daun/">카운트다운</a></div>
+<div class="footer-col"><strong>세계</strong>
+<a href="/ko/sigandag-byeonhwan/">시간대 변환기</a></div>
+<div class="footer-col"><strong>태어난 해</strong>
+<a href="/ko/taeeona-1990/">1990년생</a>
+<a href="/ko/taeeona-1980/">1980년생</a>
+<a href="/ko/taeeona-2000/">2000년생</a></div>
+<div class="footer-col"><strong>연간 리뷰</strong>
+<a href="/ko/museun-il-i-2000/">2000년에 무슨 일이</a>
+<a href="/ko/museun-il-i-1990/">1990년에 무슨 일이</a>
+<a href="/ko/museun-il-i-1980/">1980년에 무슨 일이</a></div>
+<div class="footer-col"><strong>달력</strong>
+<a href="/ko/ju-beonho/2025/">2025년 주 번호</a>
+<a href="/ko/ju-beonho/2026/">2026년 주 번호</a>
+<a href="/ko/ju-beonho/2027/">2027년 주 번호</a></div>
+</nav>
+<div class="footer-copy">© 2026 DateCalc.app — 무료 온라인 날짜 및 시간 계산기 · <a href="/ko/about/">소개</a> · <a href="/ko/privacy/">개인정보</a></div>
+</footer>
+</div>
+<script>
+(function(){
+  var now = new Date();
+  var opts = {weekday:'long',year:'numeric',month:'long',day:'numeric'};
+  document.getElementById('todayMeta').innerHTML =
+    now.toLocaleDateString('ko-KR', opts) + '<br>무료 날짜 계산기';
+})();
+</script>
+<div id="consent-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#111111;color:#fff;padding:.9rem 1.4rem;z-index:9999;font-size:.82rem;font-family:sans-serif;align-items:center;gap:.8rem;flex-wrap:wrap">
+  <span style="flex:1;min-width:200px">이 무료 서비스를 유지하기 위해 Google AdSense를 사용합니다. 광고 쿠키에 동의하시겠습니까?</span>
+  <button id="consent-accept" style="background:#c8392b;color:#fff;border:none;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">동의</button>
+  <button id="consent-decline" style="background:transparent;color:#aaa;border:1px solid #555;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">동의 없이 계속</button>
+</div>
+</body>
+</html>

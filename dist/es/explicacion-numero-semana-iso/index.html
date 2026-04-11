@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Número de semana ISO explicado — Cómo funciona la numeración de semanas</title>
+<meta name="robots" content="index, follow">
+<meta name="description" content="¿Qué es un número de semana ISO? Cómo funciona la numeración de semanas ISO 8601, cómo se define la semana 1 y por qué algunos años tienen 53 semanas.">
+<link rel="canonical" href="https://datecalc.app/es/explicacion-numero-semana-iso/">
+<link rel="alternate" hreflang="en" href="https://datecalc.app/iso-week-number-explained/">
+<link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/explication-numero-semaine-iso/">
+<link rel="alternate" hreflang="es" href="https://datecalc.app/es/explicacion-numero-semana-iso/">
+<link rel="alternate" hreflang="pt" href="https://datecalc.app/iso-week-number-explained/">
+<link rel="alternate" hreflang="de" href="https://datecalc.app/iso-week-number-explained/">
+<link rel="alternate" hreflang="it" href="https://datecalc.app/iso-week-number-explained/">
+<link rel="alternate" hreflang="pl" href="https://datecalc.app/iso-week-number-explained/">
+<link rel="alternate" hreflang="ja" href="https://datecalc.app/iso-week-number-explained/">
+<link rel="alternate" hreflang="ko" href="https://datecalc.app/iso-week-number-explained/">
+<link rel="alternate" hreflang="nl" href="https://datecalc.app/iso-week-number-explained/">
+<link rel="alternate" hreflang="x-default" href="https://datecalc.app/iso-week-number-explained/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Número de semana ISO explicado — Cómo funciona la numeración de semanas">
+<meta property="og:description" content="¿Qué es un número de semana ISO? Cómo funciona la numeración de semanas ISO 8601, cómo se define la semana 1 y por qué algunos años tienen 53 semanas.">
+<meta property="og:url" content="https://datecalc.app/es/explicacion-numero-semana-iso/">
+<meta property="og:site_name" content="DateCalc.app">
+<meta property="og:image" content="https://datecalc.app/og.png">
+<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/playfair-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/style.css">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="shortcut icon" href="/favicon.svg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué número de semana es hoy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Usa la calculadora de número de semana en este sitio — muestra el número de semana ISO actual actualizado en tiempo real."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿La semana 1 siempre empieza el 1 de enero?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. La semana ISO 1 comienza el lunes de la semana que contiene el 4 de enero. El 1 de enero puede caer en la semana 52 o 53 del año anterior si es viernes, sábado o domingo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuántas semanas tiene 2025?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "2025 tiene 52 semanas ISO. La semana 1 de 2025 comenzó el lunes 30 de diciembre de 2024. La semana 52 termina el domingo 28 de diciembre de 2025."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuántas semanas tiene 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "2026 tiene 53 semanas ISO, porque el 1 de enero de 2026 cae en jueves. La semana 53 de 2026 comprende del 28 de diciembre al 3 de enero de 2027."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuál es la diferencia entre número de semana y semana calendario?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "\"Número de semana\" y \"semana calendario\" (KW en alemán, CW en inglés) hacen referencia a los mismos números de semana ISO. El término \"semana calendario\" es común en los países de habla alemana y en contextos empresariales."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Número de semana ISO explicado",
+  "description": "¿Qué es un número de semana ISO? Cómo funciona la numeración de semanas ISO 8601, cómo se define la semana 1 y por qué algunos años tienen 53 semanas.",
+  "url": "https://datecalc.app/es/explicacion-numero-semana-iso/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "DateCalc.app",
+    "url": "https://datecalc.app"
+  }
+}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"DateCalc.app","url":"https://datecalc.app","logo":"https://datecalc.app/og.png","contactPoint":{"@type":"ContactPoint","email":"hello@datecalc.app","contactType":"customer support"}}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header>
+<div class="masthead">
+  <a href="/es/" class="masthead-brand">DateCalc<span>.</span>app</a>
+  <div class="masthead-meta" id="todayMeta"></div>
+</div>
+</header>
+<div class="lang-strip">
+  <a href="/iso-week-number-explained/" class="lang-btn">EN</a>
+  <a href="/fr/explication-numero-semaine-iso/" class="lang-btn">FR</a>
+  <a href="/es/explicacion-numero-semana-iso/" class="lang-btn active">ES</a>
+  <a href="/iso-week-number-explained/" class="lang-btn">PT</a>
+  <a href="/iso-week-number-explained/" class="lang-btn">DE</a>
+  <a href="/iso-week-number-explained/" class="lang-btn">IT</a>
+  <a href="/iso-week-number-explained/" class="lang-btn">PL</a>
+  <a href="/iso-week-number-explained/" class="lang-btn">JA</a>
+  <a href="/iso-week-number-explained/" class="lang-btn">KO</a>
+  <a href="/iso-week-number-explained/" class="lang-btn">NL</a>
+</div>
+<div class="page">
+<div class="headline-block">
+  <p class="kicker">GUÍA NÚMERO DE SEMANA</p>
+  <h1>Número de semana ISO explicado</h1>
+  <p class="article-intro">Un número de semana ISO es una forma estandarizada de numerar las semanas del año, definida por la norma internacional ISO 8601. La semana 1 es la semana que contiene el primer jueves del año — y cada semana va de lunes a domingo.</p>
+</div>
+<nav aria-label="Tools">
+<div class="tool-nav">
+    <div class="nav-group"><span class="nav-cat">Edad</span><div class="nav-links"><a href="/es/calculadora-edad/">Calculadora de edad</a><span class="nav-sep">·</span><a href="/es/edad-cronologica/">Edad cronológica</a><span class="nav-sep">·</span><a href="/es/calculadora-edad-bebe/">Edad del bebé</a><span class="nav-sep">·</span><a href="/es/calculadora-edad-perro/">Edad del perro</a><span class="nav-sep">·</span><a href="/es/calculadora-edad-gato/">Edad del gato</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Fechas</span><div class="nav-links"><a href="/es/dias-entre-fechas/">Días entre fechas</a><span class="nav-sep">·</span><a href="/es/calculadora-fechas/">Calculadora de fechas</a><span class="nav-sep">·</span><a href="/es/que-dia-es-hoy/">¿Qué día es hoy?</a><span class="nav-sep">·</span><a href="/es/numero-semana/">Número de semana</a><span class="nav-sep">·</span><a href="/es/calculadora-dias-habiles/">Días hábiles</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Cuentas</span><div class="nav-links"><a href="/es/dias-para-navidad/">Navidad</a><span class="nav-sep">·</span><a href="/es/dias-para-ano-nuevo/">Año Nuevo</a><span class="nav-sep">·</span><a href="/es/dias-para-halloween/">Halloween</a><span class="nav-sep">·</span><a href="/es/dias-para-pascua/">Pascua</a><span class="nav-sep">·</span><a href="/es/cuenta-regresiva/">Cuenta regresiva</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Mundo</span><div class="nav-links"><a href="/es/conversor-zona-horaria/">Zona horaria</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Nacido en</span><div class="nav-links"><a href="/es/nacido-en-1990/">Nacido en 1990</a><span class="nav-sep">·</span><a href="/es/nacido-en-1980/">Nacido en 1980</a><span class="nav-sep">·</span><a href="/es/nacido-en-2000/">Nacido en 2000</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Resumen del año</span><div class="nav-links"><a href="/es/que-paso-en-2000/">¿Qué pasó en 2000?</a><span class="nav-sep">·</span><a href="/es/que-paso-en-1990/">¿Qué pasó en 1990?</a><span class="nav-sep">·</span><a href="/es/que-paso-en-1980/">¿Qué pasó en 1980?</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Calendarios</span><div class="nav-links"><a href="/es/numero-semana/2025/">Semanas 2025</a><span class="nav-sep">·</span><a href="/es/numero-semana/2026/">Semanas 2026</a><span class="nav-sep">·</span><a href="/es/numero-semana/2027/">Semanas 2027</a></div></div>
+</div>
+</nav>
+<main id="main-content" class="article-main">
+<section><h2>¿Qué es un número de semana ISO?</h2><div class="article-body"><p>La numeración ISO de semanas asigna un número del 1 al 52 (o 53) a cada semana del año. Está definida por la norma <strong>ISO 8601</strong>, utilizada en empresas, logística y administraciones en Europa e internacionalmente.</p>
+<p>Reglas principales:</p>
+<ul>
+<li>Las semanas van de <strong>lunes a domingo</strong></li>
+<li>La semana 1 es la semana que contiene el primer jueves de enero</li>
+<li>La mayoría de los años tienen 52 semanas; algunos tienen 53</li>
+<li>El año-semana y el año calendario pueden diferir entre 1 y 3 días en los límites del año</li>
+</ul></div></section>
+<section><h2>¿Cómo se define la semana 1?</h2><div class="article-body"><p>La semana 1 es la semana que contiene el <strong>4 de enero</strong>. Esto equivale a decir: la semana que contiene el primer jueves del año.</p>
+<p>Esto significa que el 1 de enero a veces cae en la semana 52 o 53 del año <em>anterior</em>. Por ejemplo:</p>
+<ul>
+<li>El 1 de enero de 2016 era viernes → pertenecía a la semana 53 de <strong>2015</strong></li>
+<li>El 1 de enero de 2018 era lunes → la semana 1 de <strong>2018</strong> comenzó ese día</li>
+</ul>
+<p>Por el contrario, los últimos días de diciembre pueden caer en la semana 1 del año <em>siguiente</em>. El 31 de diciembre de 2018 era lunes — estaba en la semana 1 de <strong>2019</strong>.</p></div></section>
+<section><h2>¿Por qué algunos años tienen 53 semanas?</h2><div class="article-body"><p>Un año regular tiene 52 semanas y 1 día extra. Un año bisiesto tiene 52 semanas y 2 días extra. Cuando el 1 de enero cae en <strong>jueves</strong>, el año tiene 53 semanas ISO. Los años bisiestos que comienzan en <strong>miércoles</strong> también tienen 53 semanas.</p>
+<p>Años recientes con 53 semanas ISO: 2015, 2020, 2026, 2032.</p></div></section>
+<section><h2>Numeración ISO vs numeración estadounidense</h2><div class="article-body"></div><div class="article-table-wrap"><table>
+<tr><th></th><th>ISO 8601 (internacional)</th><th>EE.UU. / Canadá</th></tr>
+<tr><td>Primer día de la semana</td><td>Lunes</td><td>Domingo</td></tr>
+<tr><td>Definición de semana 1</td><td>Contiene el 4 de enero (primer jueves)</td><td>Contiene el 1 de enero</td></tr>
+<tr><td>Usado en</td><td>Europa, empresas, logística</td><td>EE.UU., Canadá, Japón</td></tr>
+<tr><td>Años con 53 semanas</td><td>Años que empiezan en jue. (o mié. en bisiesto)</td><td>Años que empiezan en dom. (o sáb. en bisiesto)</td></tr>
+</table></div></section>
+<section class="article-faq"><h2>FAQ</h2><details><summary>¿Qué número de semana es hoy?</summary><p>Usa la calculadora de número de semana en este sitio — muestra el número de semana ISO actual actualizado en tiempo real.</p></details><details><summary>¿La semana 1 siempre empieza el 1 de enero?</summary><p>No. La semana ISO 1 comienza el lunes de la semana que contiene el 4 de enero. El 1 de enero puede caer en la semana 52 o 53 del año anterior si es viernes, sábado o domingo.</p></details><details><summary>¿Cuántas semanas tiene 2025?</summary><p>2025 tiene 52 semanas ISO. La semana 1 de 2025 comenzó el lunes 30 de diciembre de 2024. La semana 52 termina el domingo 28 de diciembre de 2025.</p></details><details><summary>¿Cuántas semanas tiene 2026?</summary><p>2026 tiene 53 semanas ISO, porque el 1 de enero de 2026 cae en jueves. La semana 53 de 2026 comprende del 28 de diciembre al 3 de enero de 2027.</p></details><details><summary>¿Cuál es la diferencia entre número de semana y semana calendario?</summary><p>"Número de semana" y "semana calendario" (KW en alemán, CW en inglés) hacen referencia a los mismos números de semana ISO. El término "semana calendario" es común en los países de habla alemana y en contextos empresariales.</p></details></section>
+<div class="article-related"><strong>Related:</strong> <a href="/how-many-weeks-in-a-year/">¿Cuántas semanas tiene un año?</a> · <a href="/week-numbers-2025-calendar/">Calendario números de semana 2025</a> · <a href="/what-week-number-is-it/">¿Qué número de semana es?</a></div>
+<div class="article-cta"><a href="/week-number/" class="cta-btn">Calculadora de número de semana →</a></div>
+</main>
+<footer>
+<nav class="footer-nav" aria-label="Site links">
+<div class="footer-col"><strong>Edad</strong>
+<a href="/es/calculadora-edad/">Calculadora de edad</a>
+<a href="/es/edad-cronologica/">Edad cronológica</a>
+<a href="/es/calculadora-edad-bebe/">Edad del bebé</a>
+<a href="/es/calculadora-edad-perro/">Edad del perro</a>
+<a href="/es/calculadora-edad-gato/">Edad del gato</a></div>
+<div class="footer-col"><strong>Fechas</strong>
+<a href="/es/dias-entre-fechas/">Días entre fechas</a>
+<a href="/es/calculadora-fechas/">Calculadora de fechas</a>
+<a href="/es/que-dia-es-hoy/">¿Qué día es hoy?</a>
+<a href="/es/numero-semana/">Número de semana</a>
+<a href="/es/calculadora-dias-habiles/">Días hábiles</a></div>
+<div class="footer-col"><strong>Cuentas</strong>
+<a href="/es/dias-para-navidad/">Navidad</a>
+<a href="/es/dias-para-ano-nuevo/">Año Nuevo</a>
+<a href="/es/dias-para-halloween/">Halloween</a>
+<a href="/es/dias-para-pascua/">Pascua</a>
+<a href="/es/cuenta-regresiva/">Cuenta regresiva</a></div>
+<div class="footer-col"><strong>Mundo</strong>
+<a href="/es/conversor-zona-horaria/">Zona horaria</a></div>
+<div class="footer-col"><strong>Nacido en</strong>
+<a href="/es/nacido-en-1990/">Nacido en 1990</a>
+<a href="/es/nacido-en-1980/">Nacido en 1980</a>
+<a href="/es/nacido-en-2000/">Nacido en 2000</a></div>
+<div class="footer-col"><strong>Resumen del año</strong>
+<a href="/es/que-paso-en-2000/">¿Qué pasó en 2000?</a>
+<a href="/es/que-paso-en-1990/">¿Qué pasó en 1990?</a>
+<a href="/es/que-paso-en-1980/">¿Qué pasó en 1980?</a></div>
+<div class="footer-col"><strong>Calendarios</strong>
+<a href="/es/numero-semana/2025/">Semanas 2025</a>
+<a href="/es/numero-semana/2026/">Semanas 2026</a>
+<a href="/es/numero-semana/2027/">Semanas 2027</a></div>
+</nav>
+<div class="footer-copy">© 2026 DateCalc.app — Calculadoras de fecha y hora gratuitas en línea · <a href="/es/acerca-de/">Acerca de</a> · <a href="/es/privacidad/">Privacidad</a></div>
+</footer>
+</div>
+<script>
+(function(){
+  var now = new Date();
+  var opts = {weekday:'long',year:'numeric',month:'long',day:'numeric'};
+  document.getElementById('todayMeta').innerHTML =
+    now.toLocaleDateString('es-ES', opts) + '<br>Calculadora de fechas gratuita';
+})();
+</script>
+<div id="consent-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#111111;color:#fff;padding:.9rem 1.4rem;z-index:9999;font-size:.82rem;font-family:sans-serif;align-items:center;gap:.8rem;flex-wrap:wrap">
+  <span style="flex:1;min-width:200px">Usamos Google AdSense para financiar este servicio gratuito. ¿Acepta las cookies publicitarias?</span>
+  <button id="consent-accept" style="background:#c8392b;color:#fff;border:none;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Aceptar</button>
+  <button id="consent-decline" style="background:transparent;color:#aaa;border:1px solid #555;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Continuar sin</button>
+</div>
+</body>
+</html>

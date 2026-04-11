@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ISO Weeknummer Uitgelegd — Hoe de Weeknummering Werkt</title>
+<meta name="robots" content="index, follow">
+<meta name="description" content="Wat is een ISO weeknummer? Hoe de ISO 8601 weeknummering werkt, hoe week 1 wordt gedefinieerd en waarom sommige jaren 53 weken hebben.">
+<link rel="canonical" href="https://datecalc.app/nl/iso-weeknummer-uitgelegd/">
+<link rel="alternate" hreflang="en" href="https://datecalc.app/iso-week-number-explained/">
+<link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/explication-numero-semaine-iso/">
+<link rel="alternate" hreflang="es" href="https://datecalc.app/es/explicacion-numero-semana-iso/">
+<link rel="alternate" hreflang="pt" href="https://datecalc.app/iso-week-number-explained/">
+<link rel="alternate" hreflang="de" href="https://datecalc.app/iso-week-number-explained/">
+<link rel="alternate" hreflang="it" href="https://datecalc.app/iso-week-number-explained/">
+<link rel="alternate" hreflang="pl" href="https://datecalc.app/iso-week-number-explained/">
+<link rel="alternate" hreflang="ja" href="https://datecalc.app/iso-week-number-explained/">
+<link rel="alternate" hreflang="ko" href="https://datecalc.app/iso-week-number-explained/">
+<link rel="alternate" hreflang="nl" href="https://datecalc.app/iso-week-number-explained/">
+<link rel="alternate" hreflang="x-default" href="https://datecalc.app/iso-week-number-explained/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ISO Weeknummer Uitgelegd — Hoe de Weeknummering Werkt">
+<meta property="og:description" content="Wat is een ISO weeknummer? Hoe de ISO 8601 weeknummering werkt, hoe week 1 wordt gedefinieerd en waarom sommige jaren 53 weken hebben.">
+<meta property="og:url" content="https://datecalc.app/nl/iso-weeknummer-uitgelegd/">
+<meta property="og:site_name" content="DateCalc.app">
+<meta property="og:image" content="https://datecalc.app/og.png">
+<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/playfair-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/style.css">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="shortcut icon" href="/favicon.svg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wat is het huidige weeknummer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gebruik de weeknummerberekening op deze site — het toont het huidige ISO weeknummer live bijgewerkt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Begint week 1 altijd op 1 januari?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nee. ISO week 1 begint op de maandag van de week die 4 januari bevat. 1 januari kan in week 52 of 53 van het vorige jaar vallen als het een vrijdag, zaterdag of zondag is."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoeveel weken heeft 2025?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "2025 heeft 52 ISO-weken. Week 1 van 2025 begon op maandag 30 december 2024. Week 52 eindigt op zondag 28 december 2025."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoeveel weken heeft 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "2026 heeft 53 ISO-weken, omdat 1 januari 2026 op een donderdag valt. Week 53 van 2026 omvat 28 december tot 3 januari 2027."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is het verschil tussen weeknummer en kalenderweek?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "\"Weeknummer\" en \"kalenderweek\" (KW in het Duits) verwijzen beide naar ISO weeknummers — ze zijn hetzelfde. De term \"kalenderweek\" is gebruikelijk in Duitstalige landen en in zakelijke contexten."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "ISO Weeknummer Uitgelegd",
+  "description": "Wat is een ISO weeknummer? Hoe de ISO 8601 weeknummering werkt, hoe week 1 wordt gedefinieerd en waarom sommige jaren 53 weken hebben.",
+  "url": "https://datecalc.app/nl/iso-weeknummer-uitgelegd/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "DateCalc.app",
+    "url": "https://datecalc.app"
+  }
+}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"DateCalc.app","url":"https://datecalc.app","logo":"https://datecalc.app/og.png","contactPoint":{"@type":"ContactPoint","email":"hello@datecalc.app","contactType":"customer support"}}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header>
+<div class="masthead">
+  <a href="/nl/" class="masthead-brand">DateCalc<span>.</span>app</a>
+  <div class="masthead-meta" id="todayMeta"></div>
+</div>
+</header>
+<div class="lang-strip">
+  <a href="/iso-week-number-explained/" class="lang-btn">EN</a>
+  <a href="/fr/explication-numero-semaine-iso/" class="lang-btn">FR</a>
+  <a href="/es/explicacion-numero-semana-iso/" class="lang-btn">ES</a>
+  <a href="/iso-week-number-explained/" class="lang-btn">PT</a>
+  <a href="/iso-week-number-explained/" class="lang-btn">DE</a>
+  <a href="/iso-week-number-explained/" class="lang-btn">IT</a>
+  <a href="/iso-week-number-explained/" class="lang-btn">PL</a>
+  <a href="/iso-week-number-explained/" class="lang-btn">JA</a>
+  <a href="/iso-week-number-explained/" class="lang-btn">KO</a>
+  <a href="/iso-week-number-explained/" class="lang-btn active">NL</a>
+</div>
+<div class="page">
+<div class="headline-block">
+  <p class="kicker">WEEKNUMMER GIDS</p>
+  <h1>ISO Weeknummer Uitgelegd</h1>
+  <p class="article-intro">Een ISO weeknummer is een gestandaardiseerde manier om de weken van het jaar te nummeren, gedefinieerd door de internationale norm ISO 8601. Week 1 is de week die de eerste donderdag van het jaar bevat — elke week loopt van maandag tot zondag.</p>
+</div>
+<nav aria-label="Tools">
+<div class="tool-nav">
+    <div class="nav-group"><span class="nav-cat">Leeftijd</span><div class="nav-links"><a href="/nl/leeftijdscalculator/">Leeftijdscalculator</a><span class="nav-sep">·</span><a href="/nl/chronologische-leeftijd/">Chronologische Leeftijd</a><span class="nav-sep">·</span><a href="/nl/baby-leeftijd/">Baby Leeftijd</a><span class="nav-sep">·</span><a href="/nl/hond-leeftijd/">Hond Leeftijd</a><span class="nav-sep">·</span><a href="/nl/kat-leeftijd/">Kat Leeftijd</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Datums</span><div class="nav-links"><a href="/nl/dagen-tussen-datums/">Dagen Tussen Datums</a><span class="nav-sep">·</span><a href="/nl/datum-calculator/">Datumcalculator</a><span class="nav-sep">·</span><a href="/nl/welke-dag-is-het/">Welke Dag Is Het</a><span class="nav-sep">·</span><a href="/nl/weeknummer/">Weeknummer</a><span class="nav-sep">·</span><a href="/nl/werkdagen-calculator/">Werkdagen Calculator</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Aftellen</span><div class="nav-links"><a href="/nl/dagen-tot-kerst/">Kerst</a><span class="nav-sep">·</span><a href="/nl/dagen-tot-nieuwjaar/">Nieuwjaar</a><span class="nav-sep">·</span><a href="/nl/dagen-tot-halloween/">Halloween</a><span class="nav-sep">·</span><a href="/nl/dagen-tot-pasen/">Pasen</a><span class="nav-sep">·</span><a href="/nl/aftellen/">Afteltimer</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Wereld</span><div class="nav-links"><a href="/nl/tijdzone-omzetter/">Tijdzone Omzetter</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Geboren in</span><div class="nav-links"><a href="/nl/geboren-in-1990/">Geboren in 1990</a><span class="nav-sep">·</span><a href="/nl/geboren-in-1980/">Geboren in 1980</a><span class="nav-sep">·</span><a href="/nl/geboren-in-2000/">Geboren in 2000</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Terugblik</span><div class="nav-links"><a href="/nl/wat-gebeurde-er-in-2000/">Wat gebeurde er in 2000</a><span class="nav-sep">·</span><a href="/nl/wat-gebeurde-er-in-1990/">Wat gebeurde er in 1990</a><span class="nav-sep">·</span><a href="/nl/wat-gebeurde-er-in-1980/">Wat gebeurde er in 1980</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Kalenders</span><div class="nav-links"><a href="/nl/weeknummer/2025/">Weeknummers 2025</a><span class="nav-sep">·</span><a href="/nl/weeknummer/2026/">Weeknummers 2026</a><span class="nav-sep">·</span><a href="/nl/weeknummer/2027/">Weeknummers 2027</a></div></div>
+</div>
+</nav>
+<main id="main-content" class="article-main">
+<section><h2>Wat is een ISO weeknummer?</h2><div class="article-body"><p>ISO weeknummering kent elk week van het jaar een nummer toe van 1 tot 52 (of 53). Het is gedefinieerd door de norm <strong>ISO 8601</strong> en wordt gebruikt in het bedrijfsleven, de logistiek en overheid in Europa en internationaal.</p>
+<p>Belangrijkste regels:</p>
+<ul>
+<li>Weken lopen van <strong>maandag tot zondag</strong></li>
+<li>Week 1 is de week die de eerste donderdag van januari bevat</li>
+<li>De meeste jaren hebben 52 weken; sommige hebben er 53</li>
+<li>Het weekjaar en het kalenderjaar kunnen aan de jaargrenzen 1–3 dagen van elkaar afwijken</li>
+</ul></div></section>
+<section><h2>Hoe wordt week 1 gedefinieerd?</h2><div class="article-body"><p>Week 1 is de week die <strong>4 januari</strong> bevat. Dit is gelijk aan: de week die de eerste donderdag van het jaar bevat.</p>
+<p>Dit betekent dat 1 januari soms in week 52 of 53 van het <em>vorige</em> jaar valt. Bijvoorbeeld:</p>
+<ul>
+<li>1 januari 2016 was een vrijdag → het viel in week 53 van <strong>2015</strong></li>
+<li>1 januari 2018 was een maandag → week 1 van <strong>2018</strong> begon die dag</li>
+</ul>
+<p>Omgekeerd kunnen late decemberdagen in week 1 van het <em>volgende</em> jaar vallen. 31 december 2018 was een maandag — het viel in week 1 van <strong>2019</strong>.</p></div></section>
+<section><h2>Waarom hebben sommige jaren 53 weken?</h2><div class="article-body"><p>Een gewoon jaar heeft 52 weken en 1 extra dag. Een schrikkeljaar heeft 52 weken en 2 extra dagen. Als 1 januari op een <strong>donderdag</strong> valt, heeft het jaar 53 ISO-weken. Schrikkeljaren die op een <strong>woensdag</strong> beginnen, krijgen ook 53 weken.</p>
+<p>Recente jaren met 53 ISO-weken: 2015, 2020, 2026, 2032.</p></div></section>
+<section><h2>ISO weeknummering vs Amerikaanse weeknummering</h2><div class="article-body"></div><div class="article-table-wrap"><table>
+<tr><th></th><th>ISO 8601 (internationaal)</th><th>VS / Canada</th></tr>
+<tr><td>Eerste dag van de week</td><td>Maandag</td><td>Zondag</td></tr>
+<tr><td>Definitie week 1</td><td>Bevat 4 januari (eerste donderdag)</td><td>Bevat 1 januari</td></tr>
+<tr><td>Gebruikt in</td><td>Europa, bedrijven, logistiek</td><td>VS, Canada, Japan</td></tr>
+<tr><td>Jaren met 53 weken</td><td>Jaren die beginnen op do. (of wo. in schrikkeljaar)</td><td>Jaren die beginnen op zo. (of za. in schrikkeljaar)</td></tr>
+</table></div></section>
+<section class="article-faq"><h2>FAQ</h2><details><summary>Wat is het huidige weeknummer?</summary><p>Gebruik de weeknummerberekening op deze site — het toont het huidige ISO weeknummer live bijgewerkt.</p></details><details><summary>Begint week 1 altijd op 1 januari?</summary><p>Nee. ISO week 1 begint op de maandag van de week die 4 januari bevat. 1 januari kan in week 52 of 53 van het vorige jaar vallen als het een vrijdag, zaterdag of zondag is.</p></details><details><summary>Hoeveel weken heeft 2025?</summary><p>2025 heeft 52 ISO-weken. Week 1 van 2025 begon op maandag 30 december 2024. Week 52 eindigt op zondag 28 december 2025.</p></details><details><summary>Hoeveel weken heeft 2026?</summary><p>2026 heeft 53 ISO-weken, omdat 1 januari 2026 op een donderdag valt. Week 53 van 2026 omvat 28 december tot 3 januari 2027.</p></details><details><summary>Wat is het verschil tussen weeknummer en kalenderweek?</summary><p>"Weeknummer" en "kalenderweek" (KW in het Duits) verwijzen beide naar ISO weeknummers — ze zijn hetzelfde. De term "kalenderweek" is gebruikelijk in Duitstalige landen en in zakelijke contexten.</p></details></section>
+<div class="article-related"><strong>Related:</strong> <a href="/nl/hoeveel-weken-heeft-een-jaar/">Hoeveel weken heeft een jaar?</a> · <a href="/nl/weeknummers-2025-kalender/">Weeknummers 2025 kalender</a> · <a href="/nl/welk-weeknummer-is-het/">Welk weeknummer is het?</a></div>
+<div class="article-cta"><a href="/week-number/" class="cta-btn">Weeknummer Berekenen →</a></div>
+</main>
+<footer>
+<nav class="footer-nav" aria-label="Site links">
+<div class="footer-col"><strong>Leeftijd</strong>
+<a href="/nl/leeftijdscalculator/">Leeftijdscalculator</a>
+<a href="/nl/chronologische-leeftijd/">Chronologische Leeftijd</a>
+<a href="/nl/baby-leeftijd/">Baby Leeftijd</a>
+<a href="/nl/hond-leeftijd/">Hond Leeftijd</a>
+<a href="/nl/kat-leeftijd/">Kat Leeftijd</a></div>
+<div class="footer-col"><strong>Datums</strong>
+<a href="/nl/dagen-tussen-datums/">Dagen Tussen Datums</a>
+<a href="/nl/datum-calculator/">Datumcalculator</a>
+<a href="/nl/welke-dag-is-het/">Welke Dag Is Het</a>
+<a href="/nl/weeknummer/">Weeknummer</a>
+<a href="/nl/werkdagen-calculator/">Werkdagen Calculator</a></div>
+<div class="footer-col"><strong>Aftellen</strong>
+<a href="/nl/dagen-tot-kerst/">Kerst</a>
+<a href="/nl/dagen-tot-nieuwjaar/">Nieuwjaar</a>
+<a href="/nl/dagen-tot-halloween/">Halloween</a>
+<a href="/nl/dagen-tot-pasen/">Pasen</a>
+<a href="/nl/aftellen/">Afteltimer</a></div>
+<div class="footer-col"><strong>Wereld</strong>
+<a href="/nl/tijdzone-omzetter/">Tijdzone Omzetter</a></div>
+<div class="footer-col"><strong>Geboren in</strong>
+<a href="/nl/geboren-in-1990/">Geboren in 1990</a>
+<a href="/nl/geboren-in-1980/">Geboren in 1980</a>
+<a href="/nl/geboren-in-2000/">Geboren in 2000</a></div>
+<div class="footer-col"><strong>Terugblik</strong>
+<a href="/nl/wat-gebeurde-er-in-2000/">Wat gebeurde er in 2000</a>
+<a href="/nl/wat-gebeurde-er-in-1990/">Wat gebeurde er in 1990</a>
+<a href="/nl/wat-gebeurde-er-in-1980/">Wat gebeurde er in 1980</a></div>
+<div class="footer-col"><strong>Kalenders</strong>
+<a href="/nl/weeknummer/2025/">Weeknummers 2025</a>
+<a href="/nl/weeknummer/2026/">Weeknummers 2026</a>
+<a href="/nl/weeknummer/2027/">Weeknummers 2027</a></div>
+</nav>
+<div class="footer-copy">© 2026 DateCalc.app — Gratis online datum- en tijdcalculatoren · <a href="/nl/over-ons/">Over ons</a> · <a href="/nl/privacy/">Privacy</a></div>
+</footer>
+</div>
+<script>
+(function(){
+  var now = new Date();
+  var opts = {weekday:'long',year:'numeric',month:'long',day:'numeric'};
+  document.getElementById('todayMeta').innerHTML =
+    now.toLocaleDateString('nl-NL', opts) + '<br>Gratis datumcalculator';
+})();
+</script>
+<div id="consent-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#111111;color:#fff;padding:.9rem 1.4rem;z-index:9999;font-size:.82rem;font-family:sans-serif;align-items:center;gap:.8rem;flex-wrap:wrap">
+  <span style="flex:1;min-width:200px">Wij gebruiken Google AdSense om deze gratis service te financieren. Accepteert u advertentiecookies?</span>
+  <button id="consent-accept" style="background:#c8392b;color:#fff;border:none;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Accepteren</button>
+  <button id="consent-decline" style="background:transparent;color:#aaa;border:1px solid #555;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Doorgaan zonder</button>
+</div>
+</body>
+</html>

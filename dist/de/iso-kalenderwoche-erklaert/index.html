@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ISO Kalenderwoche erklärt — Wie die Wochennummerierung funktioniert</title>
+<meta name="robots" content="index, follow">
+<meta name="description" content="Was ist eine ISO Kalenderwoche? Wie die ISO 8601 Wochennummerierung funktioniert, wie Woche 1 definiert wird und warum manche Jahre 53 Wochen haben.">
+<link rel="canonical" href="https://datecalc.app/de/iso-kalenderwoche-erklaert/">
+<link rel="alternate" hreflang="en" href="https://datecalc.app/iso-week-number-explained/">
+<link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/explication-numero-semaine-iso/">
+<link rel="alternate" hreflang="es" href="https://datecalc.app/es/explicacion-numero-semana-iso/">
+<link rel="alternate" hreflang="pt" href="https://datecalc.app/iso-week-number-explained/">
+<link rel="alternate" hreflang="de" href="https://datecalc.app/iso-week-number-explained/">
+<link rel="alternate" hreflang="it" href="https://datecalc.app/iso-week-number-explained/">
+<link rel="alternate" hreflang="pl" href="https://datecalc.app/iso-week-number-explained/">
+<link rel="alternate" hreflang="ja" href="https://datecalc.app/iso-week-number-explained/">
+<link rel="alternate" hreflang="ko" href="https://datecalc.app/iso-week-number-explained/">
+<link rel="alternate" hreflang="nl" href="https://datecalc.app/iso-week-number-explained/">
+<link rel="alternate" hreflang="x-default" href="https://datecalc.app/iso-week-number-explained/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ISO Kalenderwoche erklärt — Wie die Wochennummerierung funktioniert">
+<meta property="og:description" content="Was ist eine ISO Kalenderwoche? Wie die ISO 8601 Wochennummerierung funktioniert, wie Woche 1 definiert wird und warum manche Jahre 53 Wochen haben.">
+<meta property="og:url" content="https://datecalc.app/de/iso-kalenderwoche-erklaert/">
+<meta property="og:site_name" content="DateCalc.app">
+<meta property="og:image" content="https://datecalc.app/og.png">
+<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/playfair-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/style.css">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="shortcut icon" href="/favicon.svg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Welche Kalenderwoche haben wir heute?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nutzen Sie den Kalenderwochen-Rechner auf dieser Website — er zeigt die aktuelle ISO-Kalenderwoche in Echtzeit an."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Beginnt Woche 1 immer am 1. Januar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nein. ISO-Woche 1 beginnt am Montag der Woche, die den 4. Januar enthält. Der 1. Januar kann in Woche 52 oder 53 des Vorjahres fallen, wenn er auf einen Freitag, Samstag oder Sonntag fällt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie viele Wochen hat 2025?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "2025 hat 52 ISO-Wochen. Woche 1 von 2025 begann am Montag, 30. Dezember 2024. Woche 52 endet am Sonntag, 28. Dezember 2025."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie viele Wochen hat 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "2026 hat 53 ISO-Wochen, weil der 1. Januar 2026 auf einen Donnerstag fällt. Woche 53 von 2026 umfasst den 28. Dezember bis 3. Januar 2027."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was ist der Unterschied zwischen Wochennummer und Kalenderwoche?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "\"Wochennummer\" und \"Kalenderwoche\" (KW) bezeichnen beide ISO-Wochennummern — sie sind dasselbe. Der Begriff \"Kalenderwoche\" ist in deutschsprachigen Ländern und im Geschäftsumfeld üblich."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "ISO Kalenderwoche erklärt",
+  "description": "Was ist eine ISO Kalenderwoche? Wie die ISO 8601 Wochennummerierung funktioniert, wie Woche 1 definiert wird und warum manche Jahre 53 Wochen haben.",
+  "url": "https://datecalc.app/de/iso-kalenderwoche-erklaert/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "DateCalc.app",
+    "url": "https://datecalc.app"
+  }
+}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"DateCalc.app","url":"https://datecalc.app","logo":"https://datecalc.app/og.png","contactPoint":{"@type":"ContactPoint","email":"hello@datecalc.app","contactType":"customer support"}}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header>
+<div class="masthead">
+  <a href="/de/" class="masthead-brand">DateCalc<span>.</span>app</a>
+  <div class="masthead-meta" id="todayMeta"></div>
+</div>
+</header>
+<div class="lang-strip">
+  <a href="/iso-week-number-explained/" class="lang-btn">EN</a>
+  <a href="/fr/explication-numero-semaine-iso/" class="lang-btn">FR</a>
+  <a href="/es/explicacion-numero-semana-iso/" class="lang-btn">ES</a>
+  <a href="/iso-week-number-explained/" class="lang-btn">PT</a>
+  <a href="/iso-week-number-explained/" class="lang-btn active">DE</a>
+  <a href="/iso-week-number-explained/" class="lang-btn">IT</a>
+  <a href="/iso-week-number-explained/" class="lang-btn">PL</a>
+  <a href="/iso-week-number-explained/" class="lang-btn">JA</a>
+  <a href="/iso-week-number-explained/" class="lang-btn">KO</a>
+  <a href="/iso-week-number-explained/" class="lang-btn">NL</a>
+</div>
+<div class="page">
+<div class="headline-block">
+  <p class="kicker">LEITFADEN KALENDERWOCHE</p>
+  <h1>ISO Kalenderwoche erklärt</h1>
+  <p class="article-intro">Eine ISO Kalenderwoche ist eine standardisierte Methode zur Nummerierung der Wochen des Jahres, definiert durch die internationale Norm ISO 8601. Woche 1 ist die Woche, die den ersten Donnerstag des Jahres enthält — jede Woche läuft von Montag bis Sonntag.</p>
+</div>
+<nav aria-label="Tools">
+<div class="tool-nav">
+    <div class="nav-group"><span class="nav-cat">Alter</span><div class="nav-links"><a href="/de/altersrechner/">Altersrechner</a><span class="nav-sep">·</span><a href="/de/chronologisches-alter/">Chronologisches Alter</a><span class="nav-sep">·</span><a href="/de/baby-alter-rechner/">Baby-Altersrechner</a><span class="nav-sep">·</span><a href="/de/hund-alter-rechner/">Hund Altersrechner</a><span class="nav-sep">·</span><a href="/de/katze-alter-rechner/">Katze Altersrechner</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Daten</span><div class="nav-links"><a href="/de/tage-zwischen-datumen/">Tage zwischen Daten</a><span class="nav-sep">·</span><a href="/de/datumsrechner/">Datumsrechner</a><span class="nav-sep">·</span><a href="/de/welcher-tag-ist-heute/">Welcher Tag ist heute</a><span class="nav-sep">·</span><a href="/de/kalenderwoche/">Kalenderwoche</a><span class="nav-sep">·</span><a href="/de/arbeitstage-rechner/">Arbeitstage Rechner</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Countdowns</span><div class="nav-links"><a href="/de/tage-bis-weihnachten/">Weihnachten</a><span class="nav-sep">·</span><a href="/de/tage-bis-neujahr/">Neujahr</a><span class="nav-sep">·</span><a href="/de/tage-bis-halloween/">Halloween</a><span class="nav-sep">·</span><a href="/de/tage-bis-ostern/">Ostern</a><span class="nav-sep">·</span><a href="/de/countdown-timer/">Countdown-Timer</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Welt</span><div class="nav-links"><a href="/de/zeitzonen-umrechner/">Zeitzonen-Umrechner</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Geboren in</span><div class="nav-links"><a href="/de/geboren-in-1990/">Geboren 1990</a><span class="nav-sep">·</span><a href="/de/geboren-in-1980/">Geboren 1980</a><span class="nav-sep">·</span><a href="/de/geboren-in-2000/">Geboren 2000</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Jahresrückblick</span><div class="nav-links"><a href="/de/was-geschah-2000/">Was geschah 2000</a><span class="nav-sep">·</span><a href="/de/was-geschah-1990/">Was geschah 1990</a><span class="nav-sep">·</span><a href="/de/was-geschah-1980/">Was geschah 1980</a></div></div>
+    <div class="nav-group"><span class="nav-cat">Kalender</span><div class="nav-links"><a href="/de/kalenderwoche/2025/">KW 2025</a><span class="nav-sep">·</span><a href="/de/kalenderwoche/2026/">KW 2026</a><span class="nav-sep">·</span><a href="/de/kalenderwoche/2027/">KW 2027</a></div></div>
+</div>
+</nav>
+<main id="main-content" class="article-main">
+<section><h2>Was ist eine ISO Kalenderwoche?</h2><div class="article-body"><p>Die ISO-Wochennummerierung weist jeder Woche des Jahres eine Nummer von 1 bis 52 (oder 53) zu. Sie ist durch die Norm <strong>ISO 8601</strong> definiert und wird in Unternehmen, Logistik und Behörden in Europa und weltweit verwendet.</p>
+<p>Wichtige Regeln:</p>
+<ul>
+<li>Wochen laufen von <strong>Montag bis Sonntag</strong></li>
+<li>Woche 1 ist die Woche, die den ersten Donnerstag im Januar enthält</li>
+<li>Die meisten Jahre haben 52 Wochen; manche haben 53</li>
+<li>Das Wochenjahr und das Kalenderjahr können an Jahresgrenzen um 1–3 Tage abweichen</li>
+</ul></div></section>
+<section><h2>Wie wird Woche 1 definiert?</h2><div class="article-body"><p>Woche 1 ist die Woche, die den <strong>4. Januar</strong> enthält. Das entspricht der Aussage: die Woche mit dem ersten Donnerstag des Jahres.</p>
+<p>Das bedeutet, der 1. Januar liegt manchmal in Woche 52 oder 53 des <em>Vorjahres</em>. Zum Beispiel:</p>
+<ul>
+<li>1. Januar 2016 war ein Freitag → gehörte zu Woche 53 von <strong>2015</strong></li>
+<li>1. Januar 2018 war ein Montag → Woche 1 von <strong>2018</strong> begann an diesem Tag</li>
+</ul>
+<p>Umgekehrt können späte Dezembertage in Woche 1 des <em>nächsten</em> Jahres fallen. Der 31. Dezember 2018 war ein Montag — er lag in Woche 1 von <strong>2019</strong>.</p></div></section>
+<section><h2>Warum haben manche Jahre 53 Wochen?</h2><div class="article-body"><p>Ein normales Jahr hat 52 Wochen und 1 Extratag. Ein Schaltjahr hat 52 Wochen und 2 Extratage. Wenn der 1. Januar auf einen <strong>Donnerstag</strong> fällt, hat das Jahr 53 ISO-Wochen. Schaltjahre, die an einem <strong>Mittwoch</strong> beginnen, erhalten ebenfalls 53 Wochen.</p>
+<p>Aktuelle Jahre mit 53 ISO-Wochen: 2015, 2020, 2026, 2032.</p></div></section>
+<section><h2>ISO-Wochennummerierung vs. US-Wochennummerierung</h2><div class="article-body"></div><div class="article-table-wrap"><table>
+<tr><th></th><th>ISO 8601 (international)</th><th>USA / Kanada</th></tr>
+<tr><td>Erster Wochentag</td><td>Montag</td><td>Sonntag</td></tr>
+<tr><td>Definition Woche 1</td><td>Enthält den 4. Januar (erster Donnerstag)</td><td>Enthält den 1. Januar</td></tr>
+<tr><td>Verwendet in</td><td>Europa, Unternehmen, Logistik</td><td>USA, Kanada, Japan</td></tr>
+<tr><td>Jahre mit 53 Wochen</td><td>Jahre, die mit Do. beginnen (oder Mi. im Schaltjahr)</td><td>Jahre, die mit So. beginnen (oder Sa. im Schaltjahr)</td></tr>
+</table></div></section>
+<section class="article-faq"><h2>FAQ</h2><details><summary>Welche Kalenderwoche haben wir heute?</summary><p>Nutzen Sie den Kalenderwochen-Rechner auf dieser Website — er zeigt die aktuelle ISO-Kalenderwoche in Echtzeit an.</p></details><details><summary>Beginnt Woche 1 immer am 1. Januar?</summary><p>Nein. ISO-Woche 1 beginnt am Montag der Woche, die den 4. Januar enthält. Der 1. Januar kann in Woche 52 oder 53 des Vorjahres fallen, wenn er auf einen Freitag, Samstag oder Sonntag fällt.</p></details><details><summary>Wie viele Wochen hat 2025?</summary><p>2025 hat 52 ISO-Wochen. Woche 1 von 2025 begann am Montag, 30. Dezember 2024. Woche 52 endet am Sonntag, 28. Dezember 2025.</p></details><details><summary>Wie viele Wochen hat 2026?</summary><p>2026 hat 53 ISO-Wochen, weil der 1. Januar 2026 auf einen Donnerstag fällt. Woche 53 von 2026 umfasst den 28. Dezember bis 3. Januar 2027.</p></details><details><summary>Was ist der Unterschied zwischen Wochennummer und Kalenderwoche?</summary><p>"Wochennummer" und "Kalenderwoche" (KW) bezeichnen beide ISO-Wochennummern — sie sind dasselbe. Der Begriff "Kalenderwoche" ist in deutschsprachigen Ländern und im Geschäftsumfeld üblich.</p></details></section>
+<div class="article-related"><strong>Related:</strong> <a href="/de/wie-viele-wochen-hat-ein-jahr/">Wie viele Wochen hat ein Jahr?</a> · <a href="/de/kalenderwochen-2025/">Kalenderwochen 2025</a> · <a href="/de/welche-kalenderwoche-ist-heute/">Welche Kalenderwoche ist heute?</a></div>
+<div class="article-cta"><a href="/week-number/" class="cta-btn">Kalenderwochen-Rechner →</a></div>
+</main>
+<footer>
+<nav class="footer-nav" aria-label="Site links">
+<div class="footer-col"><strong>Alter</strong>
+<a href="/de/altersrechner/">Altersrechner</a>
+<a href="/de/chronologisches-alter/">Chronologisches Alter</a>
+<a href="/de/baby-alter-rechner/">Baby-Altersrechner</a>
+<a href="/de/hund-alter-rechner/">Hund Altersrechner</a>
+<a href="/de/katze-alter-rechner/">Katze Altersrechner</a></div>
+<div class="footer-col"><strong>Daten</strong>
+<a href="/de/tage-zwischen-datumen/">Tage zwischen Daten</a>
+<a href="/de/datumsrechner/">Datumsrechner</a>
+<a href="/de/welcher-tag-ist-heute/">Welcher Tag ist heute</a>
+<a href="/de/kalenderwoche/">Kalenderwoche</a>
+<a href="/de/arbeitstage-rechner/">Arbeitstage Rechner</a></div>
+<div class="footer-col"><strong>Countdowns</strong>
+<a href="/de/tage-bis-weihnachten/">Weihnachten</a>
+<a href="/de/tage-bis-neujahr/">Neujahr</a>
+<a href="/de/tage-bis-halloween/">Halloween</a>
+<a href="/de/tage-bis-ostern/">Ostern</a>
+<a href="/de/countdown-timer/">Countdown-Timer</a></div>
+<div class="footer-col"><strong>Welt</strong>
+<a href="/de/zeitzonen-umrechner/">Zeitzonen-Umrechner</a></div>
+<div class="footer-col"><strong>Geboren in</strong>
+<a href="/de/geboren-in-1990/">Geboren 1990</a>
+<a href="/de/geboren-in-1980/">Geboren 1980</a>
+<a href="/de/geboren-in-2000/">Geboren 2000</a></div>
+<div class="footer-col"><strong>Jahresrückblick</strong>
+<a href="/de/was-geschah-2000/">Was geschah 2000</a>
+<a href="/de/was-geschah-1990/">Was geschah 1990</a>
+<a href="/de/was-geschah-1980/">Was geschah 1980</a></div>
+<div class="footer-col"><strong>Kalender</strong>
+<a href="/de/kalenderwoche/2025/">KW 2025</a>
+<a href="/de/kalenderwoche/2026/">KW 2026</a>
+<a href="/de/kalenderwoche/2027/">KW 2027</a></div>
+</nav>
+<div class="footer-copy">© 2026 DateCalc.app — Kostenlose Online-Datums- und Zeitrechner · <a href="/de/ueber-uns/">Über uns</a> · <a href="/de/datenschutz/">Datenschutz</a></div>
+</footer>
+</div>
+<script>
+(function(){
+  var now = new Date();
+  var opts = {weekday:'long',year:'numeric',month:'long',day:'numeric'};
+  document.getElementById('todayMeta').innerHTML =
+    now.toLocaleDateString('de-DE', opts) + '<br>Kostenloser Datumsrechner';
+})();
+</script>
+<div id="consent-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#111111;color:#fff;padding:.9rem 1.4rem;z-index:9999;font-size:.82rem;font-family:sans-serif;align-items:center;gap:.8rem;flex-wrap:wrap">
+  <span style="flex:1;min-width:200px">Wir nutzen Google AdSense zur Finanzierung dieses kostenlosen Dienstes. Akzeptierst du Werbe-Cookies?</span>
+  <button id="consent-accept" style="background:#c8392b;color:#fff;border:none;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Akzeptieren</button>
+  <button id="consent-decline" style="background:transparent;color:#aaa;border:1px solid #555;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">Weiter ohne</button>
+</div>
+</body>
+</html>

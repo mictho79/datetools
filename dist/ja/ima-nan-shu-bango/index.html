@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今は何週目？ — 現在の週番号の調べ方</title>
+<meta name="robots" content="index, follow">
+<meta name="description" content="今日が何週目かを調べる方法。現在のISO週番号を自分で計算する方法と、2025年・2026年のクイックリファレンスをご紹介します。">
+<link rel="canonical" href="https://datecalc.app/ja/ima-nan-shu-bango/">
+<link rel="alternate" hreflang="en" href="https://datecalc.app/what-week-number-is-it/">
+<link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/quel-est-le-numero-de-semaine/">
+<link rel="alternate" hreflang="es" href="https://datecalc.app/es/que-numero-de-semana-es/">
+<link rel="alternate" hreflang="pt" href="https://datecalc.app/what-week-number-is-it/">
+<link rel="alternate" hreflang="de" href="https://datecalc.app/what-week-number-is-it/">
+<link rel="alternate" hreflang="it" href="https://datecalc.app/what-week-number-is-it/">
+<link rel="alternate" hreflang="pl" href="https://datecalc.app/what-week-number-is-it/">
+<link rel="alternate" hreflang="ja" href="https://datecalc.app/what-week-number-is-it/">
+<link rel="alternate" hreflang="ko" href="https://datecalc.app/what-week-number-is-it/">
+<link rel="alternate" hreflang="nl" href="https://datecalc.app/what-week-number-is-it/">
+<link rel="alternate" hreflang="x-default" href="https://datecalc.app/what-week-number-is-it/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="今は何週目？ — 現在の週番号の調べ方">
+<meta property="og:description" content="今日が何週目かを調べる方法。現在のISO週番号を自分で計算する方法と、2025年・2026年のクイックリファレンスをご紹介します。">
+<meta property="og:url" content="https://datecalc.app/ja/ima-nan-shu-bango/">
+<meta property="og:site_name" content="DateCalc.app">
+<meta property="og:image" content="https://datecalc.app/og.png">
+<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/playfair-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/style.css">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="shortcut icon" href="/favicon.svg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "現在の週番号は何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "このサイトの週番号ツールでリアルタイムの答えを確認できます。参考として：2026年の第1週は2025年12月29日から始まります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Excelで週番号を調べる方法は？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ISOWEEKNUM関数を使います：=ISOWEEKNUM(A1)（A1に日付が入力されている場合）。これがISO 8601の週番号を返します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "2026年の誕生日は何週目ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "このサイトの週番号計算ツールに誕生日を入力すると、任意の日付のISO週番号が表示されます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "第1週は常に1月1日から始まりますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "いいえ。ISO第1週は1月4日を含む週です。1月1日が金曜日、土曜日、または日曜日の場合、前年の第52週または第53週に含まれることがあります。"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "今は何週目？",
+  "description": "今日が何週目かを調べる方法。現在のISO週番号を自分で計算する方法と、2025年・2026年のクイックリファレンスをご紹介します。",
+  "url": "https://datecalc.app/ja/ima-nan-shu-bango/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "DateCalc.app",
+    "url": "https://datecalc.app"
+  }
+}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"DateCalc.app","url":"https://datecalc.app","logo":"https://datecalc.app/og.png","contactPoint":{"@type":"ContactPoint","email":"hello@datecalc.app","contactType":"customer support"}}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header>
+<div class="masthead">
+  <a href="/ja/" class="masthead-brand">DateCalc<span>.</span>app</a>
+  <div class="masthead-meta" id="todayMeta"></div>
+</div>
+</header>
+<div class="lang-strip">
+  <a href="/what-week-number-is-it/" class="lang-btn">EN</a>
+  <a href="/fr/quel-est-le-numero-de-semaine/" class="lang-btn">FR</a>
+  <a href="/es/que-numero-de-semana-es/" class="lang-btn">ES</a>
+  <a href="/what-week-number-is-it/" class="lang-btn">PT</a>
+  <a href="/what-week-number-is-it/" class="lang-btn">DE</a>
+  <a href="/what-week-number-is-it/" class="lang-btn">IT</a>
+  <a href="/what-week-number-is-it/" class="lang-btn">PL</a>
+  <a href="/what-week-number-is-it/" class="lang-btn active">JA</a>
+  <a href="/what-week-number-is-it/" class="lang-btn">KO</a>
+  <a href="/what-week-number-is-it/" class="lang-btn">NL</a>
+</div>
+<div class="page">
+<div class="headline-block">
+  <p class="kicker">週番号ガイド</p>
+  <h1>今は何週目？</h1>
+  <p class="article-intro">現在の週番号を調べるには、このサイトの週番号計算ツールをご利用ください — ISO 8601の週番号がリアルタイムで更新されます。下記のルールに従って手動で計算することもできます。</p>
+</div>
+<nav aria-label="Tools">
+<div class="tool-nav">
+    <div class="nav-group"><span class="nav-cat">年齢</span><div class="nav-links"><a href="/ja/nenrei-keisanki/">年齢計算機</a><span class="nav-sep">·</span><a href="/ja/jikan-nenrei/">時系列年齢</a><span class="nav-sep">·</span><a href="/ja/akachan-nenrei/">赤ちゃん年齢</a><span class="nav-sep">·</span><a href="/ja/inu-nenrei/">犬の年齢</a><span class="nav-sep">·</span><a href="/ja/neko-nenrei/">猫の年齢</a></div></div>
+    <div class="nav-group"><span class="nav-cat">日付</span><div class="nav-links"><a href="/ja/hidzuke-no-nissuu/">日付の間の日数</a><span class="nav-sep">·</span><a href="/ja/hidzuke-keisanki/">日付計算機</a><span class="nav-sep">·</span><a href="/ja/kyou-wa-nannichi/">今日は何日</a><span class="nav-sep">·</span><a href="/ja/shuu-bangou/">週番号</a><span class="nav-sep">·</span><a href="/ja/eigyounichu/">営業日計算機</a></div></div>
+    <div class="nav-group"><span class="nav-cat">カウントダウン</span><div class="nav-links"><a href="/ja/kurisumasu-made/">クリスマスまで</a><span class="nav-sep">·</span><a href="/ja/shinnen-made/">新年まで</a><span class="nav-sep">·</span><a href="/ja/harouin-made/">ハロウィンまで</a><span class="nav-sep">·</span><a href="/ja/iisutaa-made/">イースターまで</a><span class="nav-sep">·</span><a href="/ja/kauntodaun/">カウントダウン</a></div></div>
+    <div class="nav-group"><span class="nav-cat">世界</span><div class="nav-links"><a href="/ja/taimuzon-henkan/">タイムゾーン変換</a></div></div>
+    <div class="nav-group"><span class="nav-cat">生まれ年</span><div class="nav-links"><a href="/ja/umareta-1990/">1990年生まれ</a><span class="nav-sep">·</span><a href="/ja/umareta-1980/">1980年生まれ</a><span class="nav-sep">·</span><a href="/ja/umareta-2000/">2000年生まれ</a></div></div>
+    <div class="nav-group"><span class="nav-cat">年間レビュー</span><div class="nav-links"><a href="/ja/nani-ga-okita-2000/">2000年に何があった</a><span class="nav-sep">·</span><a href="/ja/nani-ga-okita-1990/">1990年に何があった</a><span class="nav-sep">·</span><a href="/ja/nani-ga-okita-1980/">1980年に何があった</a></div></div>
+    <div class="nav-group"><span class="nav-cat">カレンダー</span><div class="nav-links"><a href="/ja/shuu-bangou/2025/">2025年週番号</a><span class="nav-sep">·</span><a href="/ja/shuu-bangou/2026/">2026年週番号</a><span class="nav-sep">·</span><a href="/ja/shuu-bangou/2027/">2027年週番号</a></div></div>
+</div>
+</nav>
+<main id="main-content" class="article-main">
+<section><h2>任意の日付の週番号を調べる方法</h2><div class="article-body"><p>任意の日付のISO週番号は3ステップで求められます：</p>
+<ol>
+<li>その日付と同じ週の木曜日を見つける（月曜日 = 週の始まり）</li>
+<li>それがその年の何番目の木曜日かを数える — それが週番号</li>
+<li>木曜日が翌年の1月に入る場合、その週は翌年に属する</li>
+</ol>
+<p><strong>例：</strong> 2026年4月10日は何週目か？<br>
+2026年4月10日は金曜日です。その週の木曜日は4月9日。4月9日は2026年の第99日 → 木曜日の番号：⌈99/7⌉ = 15。<strong>第15週</strong>。</p></div></section>
+<section><h2>クイックリファレンス：2025〜2026年の各月の第1週</h2><div class="article-body"></div><div class="article-table-wrap"><table>
+<tr><th>月</th><th>最初の月曜日</th><th>ISO週</th><th>年</th></tr>
+<tr><td>2025年1月</td><td>2024年12月30日</td><td>第1週</td><td>2025</td></tr>
+<tr><td>2025年2月</td><td>2月3日</td><td>第6週</td><td>2025</td></tr>
+<tr><td>2025年3月</td><td>3月3日</td><td>第10週</td><td>2025</td></tr>
+<tr><td>2025年4月</td><td>3月31日</td><td>第14週</td><td>2025</td></tr>
+<tr><td>2025年5月</td><td>5月5日</td><td>第19週</td><td>2025</td></tr>
+<tr><td>2025年6月</td><td>6月2日</td><td>第23週</td><td>2025</td></tr>
+<tr><td>2025年7月</td><td>6月30日</td><td>第27週</td><td>2025</td></tr>
+<tr><td>2025年8月</td><td>8月4日</td><td>第32週</td><td>2025</td></tr>
+<tr><td>2025年9月</td><td>9月1日</td><td>第36週</td><td>2025</td></tr>
+<tr><td>2025年10月</td><td>10月6日</td><td>第41週</td><td>2025</td></tr>
+<tr><td>2025年11月</td><td>11月3日</td><td>第45週</td><td>2025</td></tr>
+<tr><td>2025年12月</td><td>12月1日</td><td>第49週</td><td>2025</td></tr>
+<tr><td>2026年1月</td><td>2025年12月29日</td><td>第1週</td><td>2026</td></tr>
+</table></div></section>
+<section><h2>ExcelまたはGoogleスプレッドシートで使う方法</h2><div class="article-body"><p>スプレッドシートで任意の日付セル（例：A1）のISO週番号を取得するには：</p>
+<ul>
+<li><strong>Excel：</strong> <code>=ISOWEEKNUM(A1)</code></li>
+<li><strong>Googleスプレッドシート：</strong> <code>=ISOWEEKNUM(A1)</code></li>
+</ul>
+<p>どちらの関数もISO 8601の週番号を直接返します。</p></div></section>
+<section class="article-faq"><h2>FAQ</h2><details><summary>現在の週番号は何ですか？</summary><p>このサイトの週番号ツールでリアルタイムの答えを確認できます。参考として：2026年の第1週は2025年12月29日から始まります。</p></details><details><summary>Excelで週番号を調べる方法は？</summary><p>ISOWEEKNUM関数を使います：=ISOWEEKNUM(A1)（A1に日付が入力されている場合）。これがISO 8601の週番号を返します。</p></details><details><summary>2026年の誕生日は何週目ですか？</summary><p>このサイトの週番号計算ツールに誕生日を入力すると、任意の日付のISO週番号が表示されます。</p></details><details><summary>第1週は常に1月1日から始まりますか？</summary><p>いいえ。ISO第1週は1月4日を含む週です。1月1日が金曜日、土曜日、または日曜日の場合、前年の第52週または第53週に含まれることがあります。</p></details></section>
+<div class="article-related"><strong>Related:</strong> <a href="/ja/iso-shu-bango-kaisetsu/">ISO週番号の解説</a> · <a href="/ja/2025-nen-shu-bango/">2025年週番号 — 完全カレンダー</a> · <a href="/ja/ichi-nen-no-shu-su/">1年は何週ですか？</a></div>
+<div class="article-cta"><a href="/week-number/" class="cta-btn">週番号計算ツール — 今の週 →</a></div>
+</main>
+<footer>
+<nav class="footer-nav" aria-label="Site links">
+<div class="footer-col"><strong>年齢</strong>
+<a href="/ja/nenrei-keisanki/">年齢計算機</a>
+<a href="/ja/jikan-nenrei/">時系列年齢</a>
+<a href="/ja/akachan-nenrei/">赤ちゃん年齢</a>
+<a href="/ja/inu-nenrei/">犬の年齢</a>
+<a href="/ja/neko-nenrei/">猫の年齢</a></div>
+<div class="footer-col"><strong>日付</strong>
+<a href="/ja/hidzuke-no-nissuu/">日付の間の日数</a>
+<a href="/ja/hidzuke-keisanki/">日付計算機</a>
+<a href="/ja/kyou-wa-nannichi/">今日は何日</a>
+<a href="/ja/shuu-bangou/">週番号</a>
+<a href="/ja/eigyounichu/">営業日計算機</a></div>
+<div class="footer-col"><strong>カウントダウン</strong>
+<a href="/ja/kurisumasu-made/">クリスマスまで</a>
+<a href="/ja/shinnen-made/">新年まで</a>
+<a href="/ja/harouin-made/">ハロウィンまで</a>
+<a href="/ja/iisutaa-made/">イースターまで</a>
+<a href="/ja/kauntodaun/">カウントダウン</a></div>
+<div class="footer-col"><strong>世界</strong>
+<a href="/ja/taimuzon-henkan/">タイムゾーン変換</a></div>
+<div class="footer-col"><strong>生まれ年</strong>
+<a href="/ja/umareta-1990/">1990年生まれ</a>
+<a href="/ja/umareta-1980/">1980年生まれ</a>
+<a href="/ja/umareta-2000/">2000年生まれ</a></div>
+<div class="footer-col"><strong>年間レビュー</strong>
+<a href="/ja/nani-ga-okita-2000/">2000年に何があった</a>
+<a href="/ja/nani-ga-okita-1990/">1990年に何があった</a>
+<a href="/ja/nani-ga-okita-1980/">1980年に何があった</a></div>
+<div class="footer-col"><strong>カレンダー</strong>
+<a href="/ja/shuu-bangou/2025/">2025年週番号</a>
+<a href="/ja/shuu-bangou/2026/">2026年週番号</a>
+<a href="/ja/shuu-bangou/2027/">2027年週番号</a></div>
+</nav>
+<div class="footer-copy">© 2026 DateCalc.app — 無料オンライン日付・時刻計算機 · <a href="/ja/about/">このサイトについて</a> · <a href="/ja/privacy/">プライバシー</a></div>
+</footer>
+</div>
+<script>
+(function(){
+  var now = new Date();
+  var opts = {weekday:'long',year:'numeric',month:'long',day:'numeric'};
+  document.getElementById('todayMeta').innerHTML =
+    now.toLocaleDateString('ja-JP', opts) + '<br>無料日付計算機';
+})();
+</script>
+<div id="consent-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#111111;color:#fff;padding:.9rem 1.4rem;z-index:9999;font-size:.82rem;font-family:sans-serif;align-items:center;gap:.8rem;flex-wrap:wrap">
+  <span style="flex:1;min-width:200px">この無料サービスの維持のためGoogle AdSenseを使用しています。広告クッキーを受け入れますか？</span>
+  <button id="consent-accept" style="background:#c8392b;color:#fff;border:none;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">同意する</button>
+  <button id="consent-decline" style="background:transparent;color:#aaa;border:1px solid #555;padding:.4rem 1rem;cursor:pointer;border-radius:3px;font-size:.82rem">同意せずに続ける</button>
+</div>
+</body>
+</html>
