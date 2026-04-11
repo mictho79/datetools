@@ -470,6 +470,243 @@ const PRIVACY_LBL  = { en: 'Privacy', fr: 'Confidentialité', es: 'Privacidad', 
 const ABOUT_HREF = { en: '/about/', fr: '/fr/a-propos/', es: '/es/acerca-de/', pt: '/pt/sobre/', de: '/de/ueber-uns/', it: '/it/chi-siamo/', pl: '/pl/o-nas/', ja: '/ja/about/', ko: '/ko/about/', nl: '/nl/over-ons/' };
 const ABOUT_LBL  = { en: 'About', fr: 'À propos', es: 'Acerca de', pt: 'Sobre', de: 'Über uns', it: 'Chi siamo', pl: 'O nas', ja: 'このサイトについて', ko: '소개', nl: 'Over ons' };
 
+const RELATED_ARTICLES_TITLE = {
+  en: 'Related articles',
+  fr: 'Articles liés',
+  es: 'Artículos relacionados',
+  pt: 'Artigos relacionados',
+  de: 'Verwandte Artikel',
+  it: 'Articoli correlati',
+  pl: 'Powiązane artykuły',
+  ja: '関連記事',
+  ko: '관련 기사',
+  nl: 'Gerelateerde artikelen',
+};
+
+const TOOL_ARTICLES = {
+  '': null,
+  'age-calculator': {
+    en: [
+      { href: '/what-generation-am-i/', label: 'What generation am I?' },
+      { href: '/how-to-calculate-age-in-months/', label: 'How to calculate age in months' },
+      { href: '/legal-drinking-age-by-country/', label: 'Legal drinking age by country' },
+      { href: '/how-to-calculate-exact-age/', label: 'How to calculate your exact age' },
+    ],
+    fr: [
+      { href: '/fr/quelle-generation-suis-je/', label: 'Quelle génération suis-je ?' },
+      { href: '/fr/calculer-age-en-mois/', label: 'Calculer son âge en mois' },
+      { href: '/fr/age-legal-alcool-par-pays/', label: "Âge légal pour l'alcool par pays" },
+      { href: '/fr/comment-calculer-son-age-exact/', label: 'Comment calculer son âge exact' },
+    ],
+    es: [
+      { href: '/es/que-generacion-soy/', label: '¿Qué generación soy?' },
+      { href: '/es/calcular-edad-en-meses/', label: 'Calcular edad en meses' },
+      { href: '/es/edad-legal-alcohol-por-pais/', label: 'Edad legal para el alcohol por país' },
+      { href: '/es/como-calcular-edad-exacta/', label: 'Cómo calcular tu edad exacta' },
+    ],
+    pt: [
+      { href: '/pt/que-geracao-sou/', label: 'Que geração sou eu?' },
+      { href: '/pt/calcular-idade-em-meses/', label: 'Calcular idade em meses' },
+      { href: '/pt/idade-legal-para-beber-por-pais/', label: 'Idade legal para beber por país' },
+      { href: '/pt/como-calcular-idade-exata/', label: 'Como calcular sua idade exata' },
+    ],
+    de: [
+      { href: '/de/welche-generation-bin-ich/', label: 'Welcher Generation gehöre ich an?' },
+      { href: '/de/alter-in-monaten-berechnen/', label: 'Alter in Monaten berechnen' },
+      { href: '/de/legales-trinkalter-nach-land/', label: 'Legales Trinkalter nach Land' },
+      { href: '/de/genaues-alter-berechnen/', label: 'Genaues Alter berechnen' },
+    ],
+    it: [
+      { href: '/it/che-generazione-sono/', label: 'Di che generazione sono?' },
+      { href: '/it/calcolare-eta-in-mesi/', label: "Calcolare l'età in mesi" },
+      { href: '/it/eta-legale-per-bere-per-paese/', label: 'Età legale per bere per paese' },
+      { href: '/it/come-calcolare-eta-esatta/', label: 'Come calcolare la tua età esatta' },
+    ],
+    pl: [
+      { href: '/pl/do-jakiego-pokolenia-naleze/', label: 'Do jakiego pokolenia należę?' },
+      { href: '/pl/obliczanie-wieku-w-miesiacach/', label: 'Obliczanie wieku w miesiącach' },
+      { href: '/pl/legalny-wiek-do-picia-wedlug-kraju/', label: 'Legalny wiek do picia według kraju' },
+      { href: '/pl/jak-obliczyc-dokladny-wiek/', label: 'Jak obliczyć dokładny wiek' },
+    ],
+    ja: [
+      { href: '/ja/watashi-no-sedai-wa/', label: '私の世代は？' },
+      { href: '/ja/nenrei-wo-tsuki-de-keisan-suru/', label: '年齢を月で計算する' },
+      { href: '/ja/kuni-betsu-legal-drinking-age/', label: '国別の飲酒法定年齢' },
+      { href: '/ja/seikaku-na-nenrei-no-keisan-hoho/', label: '正確な年齢の計算方法' },
+    ],
+    ko: [
+      { href: '/ko/nae-sedae-neun/', label: '나의 세대는?' },
+      { href: '/ko/nayi-reul-dal-ro-gyesan/', label: '나이를 달로 계산' },
+      { href: '/ko/nara-byeol-eumju-heogyong-yeonryeong/', label: '나라별 음주 허용 연령' },
+      { href: '/ko/jeong-hwa-han-na-yi-gyesan-bang-beob/', label: '정확한 나이 계산 방법' },
+    ],
+    nl: [
+      { href: '/nl/welke-generatie-ben-ik/', label: 'Welke generatie ben ik?' },
+      { href: '/nl/leeftijd-berekenen-in-maanden/', label: 'Leeftijd berekenen in maanden' },
+      { href: '/nl/legale-drinkleeftijd-per-land/', label: 'Legale drinkleeftijd per land' },
+      { href: '/nl/exacte-leeftijd-berekenen/', label: 'Exacte leeftijd berekenen' },
+    ],
+  },
+  'days-between-dates': {
+    en: [
+      { href: '/how-many-days-in-each-month/', label: 'How many days in each month?' },
+      { href: '/business-days-vs-calendar-days/', label: 'Business days vs calendar days' },
+      { href: '/how-many-weeks-in-a-year/', label: 'How many weeks in a year?' },
+      { href: '/how-to-calculate-days-between-dates/', label: 'How to calculate days between dates' },
+    ],
+    fr: [
+      { href: '/fr/combien-de-jours-par-mois/', label: 'Combien de jours par mois ?' },
+      { href: '/fr/jours-ouvrables-vs-jours-calendaires/', label: 'Jours ouvrables vs calendaires' },
+      { href: '/fr/combien-de-semaines-dans-une-annee/', label: 'Combien de semaines dans une année ?' },
+      { href: '/fr/comment-calculer-jours-entre-deux-dates/', label: 'Comment calculer les jours entre deux dates' },
+    ],
+    es: [
+      { href: '/es/cuantos-dias-tiene-cada-mes/', label: '¿Cuántos días tiene cada mes?' },
+      { href: '/es/dias-habiles-vs-dias-calendario/', label: 'Días hábiles vs días calendario' },
+      { href: '/es/cuantas-semanas-tiene-un-ano/', label: '¿Cuántas semanas tiene un año?' },
+      { href: '/es/como-calcular-dias-entre-dos-fechas/', label: 'Cómo calcular los días entre dos fechas' },
+    ],
+    pt: [
+      { href: '/pt/quantos-dias-tem-cada-mes/', label: 'Quantos dias tem cada mês?' },
+      { href: '/pt/dias-uteis-vs-dias-corridos/', label: 'Dias úteis vs dias corridos' },
+      { href: '/pt/quantas-semanas-tem-um-ano/', label: 'Quantas semanas tem um ano?' },
+      { href: '/pt/como-calcular-dias-entre-duas-datas/', label: 'Como calcular os dias entre duas datas' },
+    ],
+    de: [
+      { href: '/de/wie-viele-tage-hat-jeder-monat/', label: 'Wie viele Tage hat jeder Monat?' },
+      { href: '/de/werktage-vs-kalendertage/', label: 'Werktage vs. Kalendertage' },
+      { href: '/de/wie-viele-wochen-hat-ein-jahr/', label: 'Wie viele Wochen hat ein Jahr?' },
+      { href: '/de/tage-zwischen-zwei-daten-berechnen/', label: 'Tage zwischen zwei Daten berechnen' },
+    ],
+    it: [
+      { href: '/it/quanti-giorni-ha-ogni-mese/', label: 'Quanti giorni ha ogni mese?' },
+      { href: '/it/giorni-lavorativi-vs-giorni-calendario/', label: 'Giorni lavorativi vs giorni calendario' },
+      { href: '/it/quante-settimane-ha-un-anno/', label: 'Quante settimane ha un anno?' },
+      { href: '/it/come-calcolare-giorni-tra-due-date/', label: 'Come calcolare i giorni tra due date' },
+    ],
+    pl: [
+      { href: '/pl/ile-dni-ma-kazdy-miesiac/', label: 'Ile dni ma każdy miesiąc?' },
+      { href: '/pl/dni-robocze-vs-dni-kalendarzowe/', label: 'Dni robocze vs dni kalendarzowe' },
+      { href: '/pl/ile-tygodni-ma-rok/', label: 'Ile tygodni ma rok?' },
+      { href: '/pl/jak-obliczyc-dni-miedzy-datami/', label: 'Jak obliczyć dni między datami' },
+    ],
+    ja: [
+      { href: '/ja/tsuki-goto-no-nichi-su/', label: '月ごとの日数' },
+      { href: '/ja/eigyo-bi-vs-karendar-bi/', label: '営業日 vs カレンダー日' },
+      { href: '/ja/ichi-nen-no-shu-su/', label: '1年の週数' },
+      { href: '/ja/futari-no-hi-zuke-no-aida-no-hi-su/', label: '2つの日付の間の日数' },
+    ],
+    ko: [
+      { href: '/ko/wol-byeol-il-su/', label: '월별 일수' },
+      { href: '/ko/yeong-eop-il-vs-dal-ryeok-il/', label: '영업일 vs 달력일' },
+      { href: '/ko/il-nyeon-ui-ju-su/', label: '1년의 주수' },
+      { href: '/ko/du-nal-jja-sa-i-il-su-gyesan/', label: '두 날짜 사이 일수 계산' },
+    ],
+    nl: [
+      { href: '/nl/hoeveel-dagen-heeft-elke-maand/', label: 'Hoeveel dagen heeft elke maand?' },
+      { href: '/nl/werkdagen-vs-kalenderdagen/', label: 'Werkdagen vs kalenderdagen' },
+      { href: '/nl/hoeveel-weken-heeft-een-jaar/', label: 'Hoeveel weken heeft een jaar?' },
+      { href: '/nl/dagen-berekenen-tussen-twee-datums/', label: 'Dagen berekenen tussen twee datums' },
+    ],
+  },
+  'week-number': {
+    en: [
+      { href: '/iso-week-number-explained/', label: 'ISO week number explained' },
+      { href: '/week-numbers-2025-calendar/', label: 'Week numbers 2025 calendar' },
+      { href: '/what-week-number-is-it/', label: 'What week number is it?' },
+    ],
+    fr: [
+      { href: '/fr/explication-numero-semaine-iso/', label: 'Numéro de semaine ISO expliqué' },
+      { href: '/fr/calendrier-numeros-semaine-2025/', label: 'Numéros de semaine 2025' },
+      { href: '/fr/quel-est-le-numero-de-semaine/', label: 'Quel est le numéro de semaine ?' },
+    ],
+    es: [
+      { href: '/es/explicacion-numero-semana-iso/', label: 'Número de semana ISO explicado' },
+      { href: '/es/calendario-numeros-semana-2025/', label: 'Calendario números de semana 2025' },
+      { href: '/es/que-numero-de-semana-es/', label: '¿Qué número de semana es?' },
+    ],
+    pt: [{ href: '/pt/explicacao-numero-semana-iso/', label: 'Número de semana ISO explicado' }, { href: '/pt/calendario-numeros-semana-2025/', label: 'Calendário semanas 2025' }, { href: '/pt/qual-e-o-numero-da-semana/', label: 'Qual é o número da semana?' }],
+    de: [{ href: '/de/iso-kalenderwoche-erklaert/', label: 'ISO-Kalenderwoche erklärt' }, { href: '/de/kalenderwochen-2025/', label: 'Kalenderwochen 2025' }, { href: '/de/welche-kalenderwoche-ist-heute/', label: 'Welche Kalenderwoche ist heute?' }],
+    it: [{ href: '/it/numero-settimana-iso-spiegato/', label: 'Numero settimana ISO spiegato' }, { href: '/it/calendario-numeri-settimana-2025/', label: 'Numeri settimana 2025' }, { href: '/it/che-numero-di-settimana-e/', label: 'Che numero di settimana è?' }],
+    pl: [{ href: '/pl/numer-tygodnia-iso-wyjasniony/', label: 'Numer tygodnia ISO wyjaśniony' }, { href: '/pl/kalendarz-numerow-tygodni-2025/', label: 'Numery tygodni 2025' }, { href: '/pl/ktory-tydzien-roku-jest-teraz/', label: 'Który tydzień roku jest teraz?' }],
+    ja: [{ href: '/ja/iso-shu-bango-kaisetsu/', label: 'ISO週番号の解説' }, { href: '/ja/2025-nen-shu-bango/', label: '2025年の週番号' }, { href: '/ja/ima-nan-shu-bango/', label: '今は何週目？' }],
+    ko: [{ href: '/ko/iso-ju-beon-ho-seol-myeong/', label: 'ISO 주 번호 설명' }, { href: '/ko/2025-nyeon-ju-beon-ho/', label: '2025년 주 번호' }, { href: '/ko/hyeon-jae-myeot-jju-il-kka/', label: '현재 몇 주일까?' }],
+    nl: [{ href: '/nl/iso-weeknummer-uitgelegd/', label: 'ISO-weeknummer uitgelegd' }, { href: '/nl/weeknummers-2025-kalender/', label: 'Weeknummers 2025 kalender' }, { href: '/nl/welk-weeknummer-is-het/', label: 'Welk weeknummer is het?' }],
+  },
+  'what-day': {
+    en: [
+      { href: '/what-day-of-the-week-was-i-born/', label: 'What day of the week was I born?' },
+      { href: '/days-of-the-week-names-origin/', label: 'Days of the week: name origins' },
+      { href: '/does-the-week-start-on-sunday-or-monday/', label: 'Does the week start on Sunday or Monday?' },
+    ],
+    fr: [
+      { href: '/fr/quel-jour-de-la-semaine-suis-je-ne/', label: 'Quel jour de la semaine suis-je né ?' },
+      { href: '/fr/origine-noms-jours-de-la-semaine/', label: 'Origine des noms des jours de la semaine' },
+      { href: '/fr/la-semaine-commence-dimanche-ou-lundi/', label: 'La semaine commence dimanche ou lundi ?' },
+    ],
+    es: [
+      { href: '/es/que-dia-de-la-semana-naci/', label: '¿Qué día de la semana nací?' },
+      { href: '/es/origen-nombres-dias-semana/', label: 'Origen de los nombres de los días' },
+      { href: '/es/empieza-la-semana-el-domingo-o-el-lunes/', label: '¿Empieza la semana el domingo o lunes?' },
+    ],
+    pt: [{ href: '/pt/que-dia-da-semana-nasci/', label: 'Que dia da semana nasci?' }, { href: '/pt/origem-nomes-dias-semana/', label: 'Origem dos nomes dos dias' }, { href: '/pt/a-semana-comeca-no-domingo-ou-segunda/', label: 'A semana começa no domingo ou segunda?' }],
+    de: [{ href: '/de/an-welchem-wochentag-bin-ich-geboren/', label: 'An welchem Wochentag bin ich geboren?' }, { href: '/de/herkunft-wochentagsnamen/', label: 'Herkunft der Wochentagsnamen' }, { href: '/de/beginnt-die-woche-am-sonntag-oder-montag/', label: 'Beginnt die Woche am Sonntag oder Montag?' }],
+    it: [{ href: '/it/che-giorno-della-settimana-sono-nato/', label: 'Che giorno della settimana sono nato?' }, { href: '/it/origine-nomi-giorni-settimana/', label: 'Origine dei nomi dei giorni' }, { href: '/it/la-settimana-inizia-domenica-o-lunedi/', label: 'La settimana inizia domenica o lunedì?' }],
+    pl: [{ href: '/pl/w-jaki-dzien-tygodnia-sie-urodzilam/', label: 'W jaki dzień tygodnia się urodziłam?' }, { href: '/pl/pochodzenie-nazw-dni-tygodnia/', label: 'Pochodzenie nazw dni tygodnia' }, { href: '/pl/czy-tydzien-zaczyna-sie-w-niedziele-czy-poniedzialek/', label: 'Tydzień: niedziela czy poniedziałek?' }],
+    ja: [{ href: '/ja/umareta-youbi-wa/', label: '生まれた曜日は？' }, { href: '/ja/youbi-no-namae-no-yurai/', label: '曜日の名前の由来' }, { href: '/ja/isshu-wa-nichiyobi-ka-getsuyobi-ka/', label: '週の始まりは日曜日か月曜日か？' }],
+    ko: [{ href: '/ko/nae-saengil-yo-il-eun/', label: '내 생일 요일은?' }, { href: '/ko/yo-il-i-reum-ui-yu-rae/', label: '요일 이름의 유래' }, { href: '/ko/ju-ga-il-yo-il-si-jak-i-il-kka-wol-yo-il-si-jak-i-il-kka/', label: '주는 일요일부터? 월요일부터?' }],
+    nl: [{ href: '/nl/op-welke-dag-van-de-week-ben-ik-geboren/', label: 'Op welke dag van de week ben ik geboren?' }, { href: '/nl/oorsprong-namen-dagen-van-de-week/', label: 'Oorsprong namen dagen van de week' }, { href: '/nl/begint-de-week-op-zondag-of-maandag/', label: 'Begint de week op zondag of maandag?' }],
+  },
+  'days-until-christmas': {
+    en: [
+      { href: '/how-many-days-until-new-year/', label: "How many days until New Year's?" },
+      { href: '/when-is-christmas-2025/', label: 'When is Christmas 2025?' },
+      { href: '/christmas-dates-around-the-world/', label: 'Christmas dates around the world' },
+    ],
+    fr: [
+      { href: '/fr/combien-de-jours-avant-le-nouvel-an/', label: 'Combien de jours avant le Nouvel An ?' },
+      { href: '/fr/quand-est-noel-2025/', label: 'Quand est Noël 2025 ?' },
+      { href: '/fr/dates-de-noel-dans-le-monde/', label: 'Dates de Noël dans le monde' },
+    ],
+    es: [
+      { href: '/es/cuantos-dias-faltan-para-el-ano-nuevo/', label: '¿Cuántos días faltan para Año Nuevo?' },
+      { href: '/es/cuando-es-navidad-2025/', label: '¿Cuándo es Navidad 2025?' },
+      { href: '/es/fechas-navidad-en-el-mundo/', label: 'Fechas de Navidad en el mundo' },
+    ],
+    pt: [{ href: '/pt/quantos-dias-faltam-para-o-ano-novo/', label: 'Quantos dias faltam para o Ano Novo?' }, { href: '/pt/quando-e-o-natal-2025/', label: 'Quando é o Natal 2025?' }, { href: '/pt/datas-natal-ao-redor-do-mundo/', label: 'Datas do Natal ao redor do mundo' }],
+    de: [{ href: '/de/wie-viele-tage-bis-neujahr/', label: 'Wie viele Tage bis Neujahr?' }, { href: '/de/wann-ist-weihnachten-2025/', label: 'Wann ist Weihnachten 2025?' }, { href: '/de/weihnachtsdaten-weltweit/', label: 'Weihnachtsdaten weltweit' }],
+    it: [{ href: '/it/quanti-giorni-mancano-a-capodanno/', label: 'Quanti giorni mancano a Capodanno?' }, { href: '/it/quando-e-natale-2025/', label: 'Quando è Natale 2025?' }, { href: '/it/date-natale-nel-mondo/', label: 'Date del Natale nel mondo' }],
+    pl: [{ href: '/pl/ile-dni-do-nowego-roku/', label: 'Ile dni do Nowego Roku?' }, { href: '/pl/kiedy-jest-boze-narodzenie-2025/', label: 'Kiedy jest Boże Narodzenie 2025?' }, { href: '/pl/daty-bozego-narodzenia-na-swiecie/', label: 'Daty Bożego Narodzenia na świecie' }],
+    ja: [{ href: '/ja/oshogatsu-made-ato-nan-nichi/', label: 'お正月まであと何日？' }, { href: '/ja/2025-kurisumasu-wa-itsu/', label: '2025年クリスマスはいつ？' }, { href: '/ja/sekai-no-kurisumasu-hi/', label: '世界のクリスマスの日付' }],
+    ko: [{ href: '/ko/sae-hae-kka-ji-myeot-il/', label: '새해까지 며칠?' }, { href: '/ko/2025-nyeon-keu-ri-seu-ma-seu-eon-je/', label: '2025년 크리스마스 언제?' }, { href: '/ko/se-gye-keu-ri-seu-ma-seu-nal-jja/', label: '세계 크리스마스 날짜' }],
+    nl: [{ href: '/nl/hoeveel-dagen-tot-nieuwjaar/', label: 'Hoeveel dagen tot Nieuwjaar?' }, { href: '/nl/wanneer-is-kerst-2025/', label: 'Wanneer is Kerst 2025?' }, { href: '/nl/kerstdata-over-de-hele-wereld/', label: 'Kerstdata over de hele wereld' }],
+  },
+  'date-calculator': {
+    en: [
+      { href: '/gregorian-calendar-adoption-by-country/', label: 'Gregorian calendar adoption by country' },
+      { href: '/world-calendar-systems/', label: 'World calendar systems' },
+      { href: '/date-time-faq/', label: 'Date & time FAQ' },
+    ],
+    fr: [
+      { href: '/fr/adoption-calendrier-gregorien-par-pays/', label: 'Adoption du calendrier grégorien par pays' },
+      { href: '/fr/systemes-de-calendrier-du-monde/', label: 'Systèmes de calendrier du monde' },
+      { href: '/fr/faq-date-heure/', label: 'FAQ date et heure' },
+    ],
+    es: [
+      { href: '/es/adopcion-calendario-gregoriano-por-pais/', label: 'Adopción del calendario gregoriano por país' },
+      { href: '/es/sistemas-de-calendario-del-mundo/', label: 'Sistemas de calendario del mundo' },
+      { href: '/es/preguntas-frecuentes-fecha-hora/', label: 'Preguntas frecuentes fecha y hora' },
+    ],
+    pt: [{ href: '/pt/adocao-calendario-gregoriano-por-pais/', label: 'Adoção do calendário gregoriano por país' }, { href: '/pt/sistemas-de-calendario-do-mundo/', label: 'Sistemas de calendário do mundo' }, { href: '/pt/perguntas-frequentes-data-hora/', label: 'FAQ data e hora' }],
+    de: [{ href: '/de/gregorianischer-kalender-einfuehrung-nach-land/', label: 'Gregorianischer Kalender: Einführung nach Land' }, { href: '/de/kalender-systeme-der-welt/', label: 'Kalendersysteme der Welt' }, { href: '/de/datum-uhrzeit-faq/', label: 'Datum & Uhrzeit FAQ' }],
+    it: [{ href: '/it/adozione-calendario-gregoriano-per-paese/', label: 'Adozione calendario gregoriano per paese' }, { href: '/it/sistemi-di-calendario-del-mondo/', label: 'Sistemi di calendario del mondo' }, { href: '/it/domande-frequenti-data-ora/', label: 'FAQ data e ora' }],
+    pl: [{ href: '/pl/przyjecie-kalendarza-gregorianskiego-przez-kraje/', label: 'Przyjęcie kalendarza gregoriańskiego' }, { href: '/pl/systemy-kalendarzy-swiata/', label: 'Systemy kalendarzy świata' }, { href: '/pl/czesto-zadawane-pytania-data-czas/', label: 'FAQ data i czas' }],
+    ja: [{ href: '/ja/gureguorio-reki-saiyo-kuni-betsu/', label: 'グレゴリオ暦の採用（国別）' }, { href: '/ja/sekai-no-koyomi-shisutemu/', label: '世界の暦システム' }, { href: '/ja/hizuke-jikan-faq/', label: '日付・時間FAQ' }],
+    ko: [{ href: '/ko/gregor-ryeok-chae-taek-nara-byeol/', label: '그레고리력 채택 (나라별)' }, { href: '/ko/se-gye-ui-dal-ryeok-che-gye/', label: '세계의 달력 체계' }, { href: '/ko/nal-jja-si-gan-faq/', label: '날짜·시간 FAQ' }],
+    nl: [{ href: '/nl/gregoriaanse-kalender-invoering-per-land/', label: 'Gregoriaanse kalender: invoering per land' }, { href: '/nl/kalender-systemen-van-de-wereld/', label: 'Kalendersystemen van de wereld' }, { href: '/nl/datum-tijd-veelgestelde-vragen/', label: 'Datum & tijd: veelgestelde vragen' }],
+  },
+};
+
 const MASTHEAD_LABEL = {
   en: 'Free date calculator',
   fr: 'Calculateur de dates gratuit',
@@ -509,6 +746,14 @@ function renderLayout(data, lang) {
     <span class="source-lbl">Source</span>
     <a href="${source.url}" target="_blank" rel="noopener noreferrer">${source.label}</a>
   </div>` : '';
+
+  const relatedArticlesBlock = data.relatedArticles && data.relatedArticles.length ? `
+<section class="related-articles" aria-label="Related articles">
+  <h2 class="related-articles-title">${data.relatedArticlesTitle || 'Related articles'}</h2>
+  <ul class="related-articles-list">
+${data.relatedArticles.map(a => `    <li><a href="${a.href}">${a.label}</a></li>`).join('\n')}
+  </ul>
+</section>` : '';
 
   // Schema.org FAQPage
   const faqSchema = faqs && faqs.length ? `
@@ -660,6 +905,7 @@ ${navLinks}
 <main id="main-content">
 ${seoBlock}
 ${sourceBlock}
+${relatedArticlesBlock}
 </main>
   <footer>
   <nav class="footer-nav" aria-label="Site links">
@@ -944,6 +1190,14 @@ for (const tool of tools) {
         ko: page.slugs.ko === '' ? '/' : `/${page.slugs.ko}/`,
         nl: page.slugs.nl === '' ? '/' : `/${page.slugs.nl}/`,
       };
+
+      // Inject related articles for matching tool keys
+      const enSlug = page.slugs.en === '' ? '' : page.slugs.en.split('/').pop();
+      const toolKey = Object.keys(TOOL_ARTICLES).find(k => k !== '' && enSlug.includes(k)) || (enSlug === '' ? '' : null);
+      if (toolKey !== null && toolKey !== undefined && TOOL_ARTICLES[toolKey] && TOOL_ARTICLES[toolKey][lang]) {
+        data.relatedArticles = TOOL_ARTICLES[toolKey][lang];
+        data.relatedArticlesTitle = RELATED_ARTICLES_TITLE[lang];
+      }
 
       const html = renderLayout(data, lang);
       const relPath = slug === '' ? 'index.html' : `${slug}/index.html`;

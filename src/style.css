@@ -1092,3 +1092,35 @@ footer {
 .article-cta { margin: 2rem 0; }
 .cta-btn { display: inline-block; background: #c8392b; color: #fff; padding: .7rem 1.4rem; border-radius: 4px; text-decoration: none; font-weight: 600; font-size: 1rem; }
 .cta-btn:hover { background: #a93226; }
+
+.related-articles {
+  margin: 2rem 0 1rem;
+  padding: 1.25rem 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 3px solid #2563eb;
+}
+.related-articles-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #64748b;
+  margin: 0 0 0.75rem;
+}
+.related-articles-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+}
+.related-articles-list a {
+  color: #2563eb;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.related-articles-list a:hover {
+  text-decoration: underline;
+}
