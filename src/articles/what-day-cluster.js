@@ -360,7 +360,7 @@ T['days-of-the-week-names-origin'] = {
     faqs: [
       { q: '¿Por qué "Wednesday" se escribe con una "d" que no se pronuncia?', a: "Wednesday viene de «Woden's day» (inglés antiguo: Wōdnesdæg). La «d» se pronunciaba en inglés antiguo pero desapareció del habla con el tiempo, mientras que la ortografía se conservó." },
       { q: "¿Por qué Saturday tiene un nombre romano y los demás no?", a: "Saturno no tenía un equivalente claro en la mitología nórdica, por lo que las tribus germánicas conservaron el nombre romano. Todos los demás días de la semana fueron adaptados a dioses nórdicos." },
-      { q: 'Por qué Saturday es "Sabbath" en las lenguas romances?', a: "Las lenguas romances (francés, español, italiano, portugués) tomaron la palabra del hebreo «Shabbat» a través del latín «Sabbatum». El inglés, en cambio, conservó el germánico «día de Saturno»." },
+      { q: '¿Por qué Saturday es "Sabbath" en las lenguas romances?', a: "Las lenguas romances (francés, español, italiano, portugués) tomaron la palabra del hebreo «Shabbat» a través del latín «Sabbatum». El inglés, en cambio, conservó el germánico «día de Saturno»." },
       { q: "¿Qué significa Sunday?", a: "Sunday significa «día del Sol» — del inglés antiguo «Sunnandæg». En las lenguas romances, el domingo se convirtió en el «Día del Señor» (dies Dominica): dimanche, domingo, domenica." },
     ],
     pillar: { href: '/what-day-is-it-today/', label: "¿Qué día es hoy?" },
