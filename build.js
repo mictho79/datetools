@@ -633,7 +633,7 @@ const TOOL_ARTICLES = {
     ko: [{ href: '/ko/iso-ju-beon-ho-seol-myeong/', label: 'ISO 주 번호 설명' }, { href: '/ko/2025-nyeon-ju-beon-ho/', label: '2025년 주 번호' }, { href: '/ko/hyeon-jae-myeot-jju-il-kka/', label: '현재 몇 주일까?' }],
     nl: [{ href: '/nl/iso-weeknummer-uitgelegd/', label: 'ISO-weeknummer uitgelegd' }, { href: '/nl/weeknummers-2025-kalender/', label: 'Weeknummers 2025 kalender' }, { href: '/nl/welk-weeknummer-is-het/', label: 'Welk weeknummer is het?' }],
   },
-  'what-day': {
+  'what-day-is-it-today': {
     en: [
       { href: '/what-day-of-the-week-was-i-born/', label: 'What day of the week was I born?' },
       { href: '/days-of-the-week-names-origin/', label: 'Days of the week: name origins' },
@@ -1193,7 +1193,7 @@ for (const tool of tools) {
 
       // Inject related articles for matching tool keys
       const enSlug = page.slugs.en === '' ? '' : page.slugs.en.split('/').pop();
-      const toolKey = Object.keys(TOOL_ARTICLES).find(k => k !== '' && enSlug.includes(k)) || (enSlug === '' ? '' : null);
+      const toolKey = enSlug === '' ? null : (Object.keys(TOOL_ARTICLES).find(k => enSlug === k) ?? null);
       if (toolKey !== null && toolKey !== undefined && TOOL_ARTICLES[toolKey] && TOOL_ARTICLES[toolKey][lang]) {
         data.relatedArticles = TOOL_ARTICLES[toolKey][lang];
         data.relatedArticlesTitle = RELATED_ARTICLES_TITLE[lang];
