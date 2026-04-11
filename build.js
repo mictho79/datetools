@@ -32,6 +32,7 @@ const articles = [
   require('./src/articles/ai-visibility-cluster'),
   require('./src/articles/week-number-cluster'),
   require('./src/articles/what-day-cluster'),
+  require('./src/articles/christmas-cluster'),
 ];
 
 const LANGS = ['en', 'fr', 'es', 'pt', 'de', 'it', 'pl', 'ja', 'ko', 'nl'];
