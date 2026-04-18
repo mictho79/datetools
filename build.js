@@ -1241,13 +1241,13 @@ for (const cluster of articles) {
         en: `/${page.slugs.en}/`,
         fr: `/${page.slugs.fr}/`,
         es: `/${page.slugs.es}/`,
-        pt: `/${page.slugs.en}/`,
-        de: `/${page.slugs.en}/`,
-        it: `/${page.slugs.en}/`,
-        pl: `/${page.slugs.en}/`,
-        ja: `/${page.slugs.en}/`,
-        ko: `/${page.slugs.en}/`,
-        nl: `/${page.slugs.en}/`,
+        pt: `/${page.slugs.pt}/`,
+        de: `/${page.slugs.de}/`,
+        it: `/${page.slugs.it}/`,
+        pl: `/${page.slugs.pl}/`,
+        ja: `/${page.slugs.ja}/`,
+        ko: `/${page.slugs.ko}/`,
+        nl: `/${page.slugs.nl}/`,
       };
       const html = renderArticleLayout(data, lang);
       writePage(`${slug}/index.html`, html);
@@ -1268,38 +1268,6 @@ const REDIRECTS = [
 const redirectsFile = REDIRECTS.map(r => `${r.from} ${r.to} 301`).join('\n') + '\n';
 fs.writeFileSync(path.join(DIST, '_redirects'), redirectsFile, 'utf8');
 console.log('  ✓ /_redirects');
-
-// ── SITEMAP ───────────────────────────────────────────────
-const allSlugs = [];
-for (const tool of tools) {
-  for (const page of tool.pages) {
-    for (const lang of LANGS) {
-      const s = page.slugs[lang];
-      allSlugs.push(s === '' ? '/' : `/${s}/`);
-    }
-  }
-}
-for (const cluster of articles) {
-  for (const page of cluster.pages) {
-    for (const lang of ARTICLE_LANGS) {
-      const s = page.slugs[lang];
-      if (s) allSlugs.push(`/${s}/`);
-    }
-  }
-}
-
-const today = new Date().toISOString().split('T')[0];
-const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${allSlugs.map(s => `  <url>
-    <loc>https://datecalc.app${s}</loc>
-    <lastmod>${today}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>${s === '/' ? '1.0' : '0.8'}</priority>
-  </url>`).join('\n')}
-</urlset>`;
-fs.writeFileSync(path.join(DIST, 'sitemap.xml'), sitemap, 'utf8');
-console.log('  ✓ /sitemap.xml');
 
 // ── ROBOTS.TXT ────────────────────────────────────────────
 const robots = `User-agent: *\nAllow: /\nSitemap: https://datecalc.app/sitemap.xml\n`;
@@ -1561,6 +1529,9 @@ const ABOUT_PAGES = [
   { lang: 'de', slug: 'de/ueber-uns',     canonical: 'https://datecalc.app/de/ueber-uns/' },
   { lang: 'it', slug: 'it/chi-siamo',     canonical: 'https://datecalc.app/it/chi-siamo/' },
   { lang: 'pl', slug: 'pl/o-nas',         canonical: 'https://datecalc.app/pl/o-nas/' },
+  { lang: 'ja', slug: 'ja/about',         canonical: 'https://datecalc.app/ja/about/' },
+  { lang: 'ko', slug: 'ko/about',         canonical: 'https://datecalc.app/ko/about/' },
+  { lang: 'nl', slug: 'nl/over-ons',      canonical: 'https://datecalc.app/nl/over-ons/' },
 ];
 
 const ABOUT_CONTENT = {
@@ -1738,3 +1709,63 @@ ${sectionsHtml}
   fs.writeFileSync(path.join(outDir, 'index.html'), html, 'utf8');
   console.log(`  ✓ /${slug}/`);
 }
+
+// ── SITEMAP (with xhtml:link hreflang alternates) ─────────
+// Each group is an array of { lang, path } — siblings are alternates of each other.
+const urlGroups = [];
+
+for (const tool of tools) {
+  for (const page of tool.pages) {
+    const group = [];
+    for (const lang of LANGS) {
+      const s = page.slugs[lang];
+      if (s !== undefined) group.push({ lang, path: s === '' ? '/' : `/${s}/` });
+    }
+    if (group.length) urlGroups.push(group);
+  }
+}
+for (const cluster of articles) {
+  for (const page of cluster.pages) {
+    const group = [];
+    for (const lang of ARTICLE_LANGS) {
+      const s = page.slugs[lang];
+      if (s) group.push({ lang, path: `/${s}/` });
+    }
+    if (group.length) urlGroups.push(group);
+  }
+}
+urlGroups.push(ABOUT_PAGES.map(p => ({ lang: p.lang, path: `/${p.slug}/` })));
+urlGroups.push(PRIVACY_PAGES.map(p => ({ lang: p.lang, path: `/${p.slug}/` })));
+
+const sitemapToday = new Date().toISOString().split('T')[0];
+
+function renderSitemapUrl(url, group) {
+  const alternates = group.map(u =>
+    `    <xhtml:link rel="alternate" hreflang="${u.lang}" href="https://datecalc.app${u.path}"/>`
+  ).join('\n');
+  const enUrl = group.find(u => u.lang === 'en');
+  const xDefault = enUrl
+    ? `\n    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app${enUrl.path}"/>`
+    : '';
+  return `  <url>
+    <loc>https://datecalc.app${url.path}</loc>
+    <lastmod>${sitemapToday}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>${url.path === '/' ? '1.0' : '0.8'}</priority>
+${alternates}${xDefault}
+  </url>`;
+}
+
+const sitemapUrlEntries = urlGroups.flatMap(group =>
+  group.map(url => renderSitemapUrl(url, group))
+);
+
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+${sitemapUrlEntries.join('\n')}
+</urlset>`;
+fs.writeFileSync(path.join(DIST, 'sitemap.xml'), sitemap, 'utf8');
+console.log('  ✓ /sitemap.xml');
+
+// ── HREFLANG VALIDATION ───────────────────────────────────
+require('./scripts/validate-hreflang');
