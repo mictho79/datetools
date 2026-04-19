@@ -1,6 +1,7 @@
 // Born In — Age by Birth Year (1930–2024)
 // Generates one static page per birth year × 3 languages = 285 pages
 
+const hubs = require('./hubs');
 const EVENTS = require('../data/events.json');
 const EVENTS_FR = require('../data/events_fr.json');
 const EVENTS_ES = require('../data/events_es.json');
@@ -682,13 +683,16 @@ module.exports = {
   <div class="faq-block">
     <h2>${t.faqTitle}</h2>
 ${faqHTML}
-  </div>`;
+  </div>
+${hubs.seeAllLink('birth', lang)}`;
 
     // No interactive form — page is fully static
     const script = `
 // No interactive form — page is fully static
 `;
 
-    return { title, metaDesc, headlineBlock, formGrid, resultsSection, seoBlock, script, faqs, source: t.source };
+    const breadcrumbLD = hubs.breadcrumbJsonLdString('birth', lang, year);
+
+    return { title, metaDesc, headlineBlock, formGrid, resultsSection, seoBlock, script, faqs, source: t.source, breadcrumbLD };
   },
 };

@@ -1,6 +1,7 @@
 // Year Events — "What Happened in YEAR" pages
 // Generates one static page per year (1905–2025) × 3 languages = 363 pages
 
+const hubs = require('./hubs');
 const EVENTS    = require('../data/events.json');
 const EVENTS_FR = require('../data/events_fr.json');
 const EVENTS_ES = require('../data/events_es.json');
@@ -478,12 +479,15 @@ ${ctaBlock}
   <div class="faq-block">
     <h2>${t.faqTitle}</h2>
 ${faqHTML}
-  </div>`;
+  </div>
+${hubs.seeAllLink('event', lang)}`;
 
     const source = {
       url:   `https://en.wikipedia.org/wiki/${year}`,
       label: `Wikipedia \u2013 ${year}`,
     };
+
+    const breadcrumbLD = hubs.breadcrumbJsonLdString('event', lang, year);
 
     return {
       title,
@@ -495,6 +499,7 @@ ${faqHTML}
       script: '',
       faqs,
       source,
+      breadcrumbLD,
     };
   },
 };

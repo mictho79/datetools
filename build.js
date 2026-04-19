@@ -38,6 +38,9 @@ const articles = [
 const LANGS = ['en', 'fr', 'es', 'pt', 'de', 'it', 'pl', 'ja', 'ko', 'nl'];
 const DIST = path.join(__dirname, 'dist');
 
+// Hub pages (birth-years, year-in-history) — see src/tools/hubs.js
+const hubs = require('./src/tools/hubs');
+
 // ── TOOL NAV ──────────────────────────────────────────────
 const NAV = {
   en: [
@@ -739,7 +742,12 @@ const CONSENT = {
 
 // ── LAYOUT ────────────────────────────────────────────────
 function renderLayout(data, lang) {
-  const { title, metaDesc, canonical, hreflang, headlineBlock, formGrid, resultsSection, seoBlock, script, faqs, source, howto } = data;
+  const { title, metaDesc, canonical, hreflang, headlineBlock, formGrid, resultsSection, seoBlock, script, faqs, source, howto, breadcrumbLD } = data;
+
+  const breadcrumbSchema = breadcrumbLD ? `
+<script type="application/ld+json">
+${breadcrumbLD}
+</script>` : '';
 
   const sourceBlock = source ? `
   <div class="source-block">
@@ -833,7 +841,7 @@ ${JSON.stringify({
   const footerCols = NAV[lang].map(group => {
     const fLinks = group.items.map(item => `<a href="${item.href}">${item.label}</a>`).join('\n');
     return `<div class="footer-col"><strong>${group.cat}</strong>\n${fLinks}</div>`;
-  }).join('\n');
+  }).join('\n') + '\n' + hubs.footerExploreBlock(lang);
   return `<!DOCTYPE html>
 <html lang="${lang}">
 <head>
@@ -870,7 +878,7 @@ ${JSON.stringify({
 <link rel="sitemap" type="application/xml" href="/sitemap.xml">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="shortcut icon" href="/favicon.svg">
-${faqSchema}${howtoSchema}${appSchema}${orgSchema}
+${faqSchema}${howtoSchema}${appSchema}${orgSchema}${breadcrumbSchema}
 </head>
 <body>
 
@@ -984,7 +992,12 @@ ${script}
 
 // ── ARTICLE LAYOUT ────────────────────────────────────────
 function renderArticleLayout(data, lang) {
-  const { title, metaDesc, canonical, hreflang, kicker, h1, intro, sections, faqs, pillar, related } = data;
+  const { title, metaDesc, canonical, hreflang, kicker, h1, intro, sections, faqs, pillar, related, breadcrumbLD, extraHead, extraBodyTop } = data;
+
+  const breadcrumbSchema = breadcrumbLD ? `
+<script type="application/ld+json">
+${breadcrumbLD}
+</script>` : '';
 
   const faqSchema = faqs && faqs.length ? `
 <script type="application/ld+json">
@@ -1034,7 +1047,7 @@ ${JSON.stringify({
   const footerCols = NAV[lang].map(group => {
     const fLinks = group.items.map(item => `<a href="${item.href}">${item.label}</a>`).join('\n');
     return `<div class="footer-col"><strong>${group.cat}</strong>\n${fLinks}</div>`;
-  }).join('\n');
+  }).join('\n') + '\n' + hubs.footerExploreBlock(lang);
 
   const sectionsHTML = (sections || []).map(s => {
     const tableBlock = s.table ? `<div class="article-table-wrap">${s.table}</div>` : '';
@@ -1079,7 +1092,7 @@ ${JSON.stringify({
 <link rel="sitemap" type="application/xml" href="/sitemap.xml">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="shortcut icon" href="/favicon.svg">
-${faqSchema}${articleSchema}${orgSchema}
+${faqSchema}${articleSchema}${orgSchema}${breadcrumbSchema}${extraHead || ''}
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -1093,6 +1106,7 @@ ${faqSchema}${articleSchema}${orgSchema}
 ${langBtns}
 </div>
 <div class="page">
+${extraBodyTop || ''}
 <div class="headline-block">
   <p class="kicker">${kicker}</p>
   <h1>${h1}</h1>
@@ -1177,6 +1191,9 @@ for (const tool of tools) {
       const canonical = slug === '' ? '/' : `/${slug}/`;
 
       const data = tool.render(page.id, lang);
+      if (page.isHomepage) {
+        data.seoBlock = hubs.homepageBrowseSection(lang) + '\n' + (data.seoBlock || '');
+      }
       data.canonical = canonical;
       data.hreflang = {
         en: page.slugs.en === '' ? '/' : `/${page.slugs.en}/`,
@@ -1256,6 +1273,55 @@ for (const cluster of articles) {
   }
 }
 if (articleCount > 0) console.log(`Built ${articleCount} article pages → dist/`);
+
+// ── HUB PAGES (birth-years, year-in-history) ──────────────
+let hubCount = 0;
+const HUB_CSS = `
+<style>
+.hub-decades{display:flex;flex-direction:column;gap:1.4rem;margin:.8rem 0}
+.hub-decade-row{display:flex;flex-direction:column;gap:.4rem;border-top:1px solid #e5e5e5;padding-top:.8rem}
+.hub-decade-label{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:600;color:#111}
+.hub-year-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(72px,1fr));gap:.35rem}
+.hub-year{display:inline-block;padding:.4rem .55rem;border:1px solid #ddd;border-radius:3px;text-decoration:none;color:#111;font-family:'Space Mono',monospace;font-size:.88rem;text-align:center;transition:border-color .12s,background .12s}
+.hub-year:hover{border-color:var(--accent);background:#fafafa}
+.see-all-link{margin:1.2rem 0;font-family:'Space Mono',monospace;font-size:.9rem}
+.see-all-link a{color:var(--accent);text-decoration:none;border-bottom:1px solid currentColor}
+.browse-by-year{margin:2rem 0}
+.browse-by-year h2{font-family:'Playfair Display',serif;font-size:1.4rem;margin-bottom:.8rem}
+.browse-by-year-list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
+.browse-by-year-list a{display:block;padding:1rem;border:1px solid #ddd;border-radius:4px;text-decoration:none;color:#111;transition:border-color .12s}
+.browse-by-year-list a:hover{border-color:var(--accent)}
+.browse-by-year-list strong{display:block;font-family:'Playfair Display',serif;font-size:1.05rem;margin-bottom:.2rem}
+.browse-by-year-list span{display:block;font-size:.85rem;color:#666}
+@media(max-width:600px){.browse-by-year-list{grid-template-columns:1fr}}
+</style>`;
+
+for (const hubType of ['birth', 'event']) {
+  for (const lang of LANGS) {
+    const h = hubs.renderHub(hubType, lang);
+    const data = {
+      title: h.title,
+      metaDesc: h.metaDesc,
+      canonical: h.canonical,
+      hreflang: h.hreflang,
+      kicker: h.kicker,
+      h1: h.h1,
+      intro: h.intro,
+      sections: [
+        { h2: h.pickDecade, body: h.decadeGrid },
+      ],
+      faqs: null,
+      pillar: null,
+      related: null,
+      breadcrumbLD: h.breadcrumbLD,
+      extraHead: HUB_CSS,
+    };
+    const html = renderArticleLayout(data, lang);
+    writePage(`${hubs.HUB_SLUGS[hubType][lang]}/index.html`, html);
+    hubCount++;
+  }
+}
+console.log(`Built ${hubCount} hub pages → dist/`);
 
 // ── REDIRECTS ─────────────────────────────────────────────
 const REDIRECTS = [
@@ -1547,7 +1613,7 @@ ${sectionsHtml}
 .privacy-sections p{line-height:1.7;color:#333;margin-bottom:.5rem}
 .privacy-sections a{color:var(--accent)}
 </style>
-  <footer>© ${BUILD_YEAR} DateCalc.app · <a href="${ABOUT_HREF[lang]}">${ABOUT_LBL[lang]}</a> · <a href="${PRIVACY_HREF[lang]}">${PRIVACY_LBL[lang]}</a></footer>
+  <footer>© ${BUILD_YEAR} DateCalc.app · <a href="${ABOUT_HREF[lang]}">${ABOUT_LBL[lang]}</a> · <a href="${PRIVACY_HREF[lang]}">${PRIVACY_LBL[lang]}</a> · <a href="/${hubs.HUB_SLUGS.birth[lang]}/">${hubs.I18N.birth[lang].self}</a> · <a href="/${hubs.HUB_SLUGS.event[lang]}/">${hubs.I18N.event[lang].self}</a></footer>
 </div>
 </body>
 </html>`;
@@ -1737,7 +1803,7 @@ ${sectionsHtml}
 .about-sections p{line-height:1.7;color:#333;margin-bottom:.5rem}
 .about-sections a{color:var(--accent)}
 </style>
-  <footer>© ${BUILD_YEAR} DateCalc.app · <a href="${ABOUT_HREF[lang]}">${ABOUT_LBL[lang]}</a> · <a href="${PRIVACY_HREF[lang]}">${PRIVACY_LBL[lang]}</a></footer>
+  <footer>© ${BUILD_YEAR} DateCalc.app · <a href="${ABOUT_HREF[lang]}">${ABOUT_LBL[lang]}</a> · <a href="${PRIVACY_HREF[lang]}">${PRIVACY_LBL[lang]}</a> · <a href="/${hubs.HUB_SLUGS.birth[lang]}/">${hubs.I18N.birth[lang].self}</a> · <a href="/${hubs.HUB_SLUGS.event[lang]}/">${hubs.I18N.event[lang].self}</a></footer>
 </div>
 </body>
 </html>`;
@@ -1771,6 +1837,8 @@ for (const cluster of articles) {
 }
 urlGroups.push(ABOUT_PAGES.map(p => ({ lang: p.lang, path: `/${p.slug}/` })));
 urlGroups.push(PRIVACY_PAGES.map(p => ({ lang: p.lang, path: `/${p.slug}/` })));
+// Hub pages (birth-years, year-in-history) — each hub is one group of 10 langs (mutual alternates)
+for (const group of hubs.sitemapGroups()) urlGroups.push(group);
 
 const sitemapToday = new Date().toISOString().split('T')[0];
 
