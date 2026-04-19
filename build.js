@@ -1727,7 +1727,7 @@ const ABOUT_CONTENT = {
     h1: 'About DateCalc.app',
     intro: 'DateCalc.app is a collection of free, instant date and time calculators. No sign-up, no ads, no tracking — just fast, accurate tools that work entirely in your browser.',
     sections: [
-      { h: 'What we offer', p: 'Age calculators, baby age trackers, dog & cat age converters, day counters, week numbers, business day calculators, holiday countdowns, and historical year tools — all available in 7 languages: English, French, Spanish, Portuguese, German, Italian, and Polish.' },
+      { h: 'What we offer', p: 'Age calculators, baby age trackers, dog &amp; cat age converters, day counters, week numbers, business day calculators, holiday countdowns, and historical year tools — all available in 10 languages: English, French, Spanish, Portuguese, German, Italian, Polish, Japanese, Korean, and Dutch.' },
       { h: 'How it works', p: 'Every calculation runs directly in your browser using JavaScript. No data is ever sent to a server. The dates you enter stay on your device.' },
       { h: 'Who made this', p: 'DateCalc.app is an independent project built to provide reliable, fast date tools to everyone, for free. We believe useful utilities should be accessible without paywalls or forced accounts.' },
       { h: 'Contact', p: 'Questions, suggestions, or feedback? Reach us at <a href="mailto:hello@datecalc.app">hello@datecalc.app</a> — we read every message.' },
@@ -1738,7 +1738,7 @@ const ABOUT_CONTENT = {
     h1: 'À propos de DateCalc.app',
     intro: 'DateCalc.app est une collection de calculateurs de date et d\'heure gratuits et instantanés. Sans inscription, sans pub, sans tracking — des outils rapides et précis qui fonctionnent entièrement dans votre navigateur.',
     sections: [
-      { h: 'Ce que nous proposons', p: 'Calculateurs d\'âge, suivi de l\'âge bébé, convertisseurs d\'âge pour chiens et chats, compteurs de jours, numéros de semaine, calculateurs de jours ouvrés, comptes à rebours des fêtes, et outils d\'histoire par année — disponibles en 7 langues : anglais, français, espagnol, portugais, allemand, italien et polonais.' },
+      { h: 'Ce que nous proposons', p: 'Calculateurs d\'âge, suivi de l\'âge bébé, convertisseurs d\'âge pour chiens et chats, compteurs de jours, numéros de semaine, calculateurs de jours ouvrés, comptes à rebours des fêtes, et outils d\'histoire par année — disponibles en 10 langues : anglais, français, espagnol, portugais, allemand, italien, polonais, japonais, coréen et néerlandais.' },
       { h: 'Comment ça fonctionne', p: 'Chaque calcul s\'effectue directement dans votre navigateur via JavaScript. Aucune donnée n\'est envoyée à un serveur. Les dates que vous saisissez restent sur votre appareil.' },
       { h: 'Qui a créé ce site', p: 'DateCalc.app est un projet indépendant conçu pour offrir des outils de date fiables et rapides à tous, gratuitement. Nous pensons que les outils utiles doivent être accessibles sans abonnement ni compte obligatoire.' },
       { h: 'Contact', p: 'Questions, suggestions ou retours ? Écrivez-nous à <a href="mailto:hello@datecalc.app">hello@datecalc.app</a> — nous lisons chaque message.' },
@@ -1749,7 +1749,7 @@ const ABOUT_CONTENT = {
     h1: 'Acerca de DateCalc.app',
     intro: 'DateCalc.app es una colección de calculadoras de fecha y hora gratuitas e instantáneas. Sin registro, sin anuncios, sin rastreo — solo herramientas rápidas y precisas que funcionan completamente en tu navegador.',
     sections: [
-      { h: 'Qué ofrecemos', p: 'Calculadoras de edad, seguimiento de edad de bebés, conversores de edad para perros y gatos, contadores de días, números de semana, calculadoras de días hábiles, cuentas regresivas de fiestas y herramientas históricas por año — disponibles en 7 idiomas: inglés, francés, español, portugués, alemán, italiano y polaco.' },
+      { h: 'Qué ofrecemos', p: 'Calculadoras de edad, seguimiento de edad de bebés, conversores de edad para perros y gatos, contadores de días, números de semana, calculadoras de días hábiles, cuentas regresivas de fiestas y herramientas históricas por año — disponibles en 10 idiomas: inglés, francés, español, portugués, alemán, italiano, polaco, japonés, coreano y neerlandés.' },
       { h: 'Cómo funciona', p: 'Cada cálculo se ejecuta directamente en tu navegador con JavaScript. Ningún dato se envía a un servidor. Las fechas que introduces permanecen en tu dispositivo.' },
       { h: 'Quién lo creó', p: 'DateCalc.app es un proyecto independiente creado para ofrecer herramientas de fecha confiables y rápidas a todos, de forma gratuita. Creemos que las utilidades útiles deben ser accesibles sin suscripciones ni cuentas obligatorias.' },
       { h: 'Contacto', p: '¿Preguntas, sugerencias o comentarios? Escríbenos a <a href="mailto:hello@datecalc.app">hello@datecalc.app</a> — leemos cada mensaje.' },
@@ -1760,7 +1760,7 @@ const ABOUT_CONTENT = {
     h1: 'Sobre o DateCalc.app',
     intro: 'DateCalc.app é uma coleção de calculadoras de data e hora gratuitas e instantâneas. Sem cadastro, sem anúncios, sem rastreamento — apenas ferramentas rápidas e precisas que funcionam inteiramente no seu navegador.',
     sections: [
-      { h: 'O que oferecemos', p: 'Calculadoras de idade, rastreador de idade de bebês, conversores de idade para cães e gatos, contadores de dias, números de semana, calculadoras de dias úteis, contagens regressivas de feriados e ferramentas históricas por ano — disponíveis em 7 idiomas: inglês, francês, espanhol, português, alemão, italiano e polonês.' },
+      { h: 'O que oferecemos', p: 'Calculadoras de idade, rastreador de idade de bebês, conversores de idade para cães e gatos, contadores de dias, números de semana, calculadoras de dias úteis, contagens regressivas de feriados e ferramentas históricas por ano — disponíveis em 10 idiomas: inglês, francês, espanhol, português, alemão, italiano, polonês, japonês, coreano e holandês.' },
       { h: 'Como funciona', p: 'Cada cálculo é executado diretamente no seu navegador usando JavaScript. Nenhum dado é enviado a um servidor. As datas que você insere ficam no seu dispositivo.' },
       { h: 'Quem criou', p: 'DateCalc.app é um projeto independente criado para oferecer ferramentas de data confiáveis e rápidas a todos, gratuitamente. Acreditamos que utilitários úteis devem ser acessíveis sem assinaturas ou contas obrigatórias.' },
       { h: 'Contato', p: 'Dúvidas, sugestões ou comentários? Escreva para <a href="mailto:hello@datecalc.app">hello@datecalc.app</a> — lemos cada mensagem.' },
@@ -1771,7 +1771,7 @@ const ABOUT_CONTENT = {
     h1: 'Über DateCalc.app',
     intro: 'DateCalc.app ist eine Sammlung kostenloser und sofortiger Datums- und Zeitrechner. Keine Anmeldung, keine Werbung, kein Tracking — nur schnelle, präzise Werkzeuge, die vollständig in deinem Browser funktionieren.',
     sections: [
-      { h: 'Was wir anbieten', p: 'Altersrechner, Baby-Alters-Tracker, Hunde- und Katzenalter-Konverter, Tageszähler, Wochennummern, Arbeitstage-Rechner, Feiertags-Countdowns und historische Jahres-Tools — in 7 Sprachen verfügbar: Englisch, Französisch, Spanisch, Portugiesisch, Deutsch, Italienisch und Polnisch.' },
+      { h: 'Was wir anbieten', p: 'Altersrechner, Baby-Alters-Tracker, Hunde- und Katzenalter-Konverter, Tageszähler, Wochennummern, Arbeitstage-Rechner, Feiertags-Countdowns und historische Jahres-Tools — in 10 Sprachen verfügbar: Englisch, Französisch, Spanisch, Portugiesisch, Deutsch, Italienisch, Polnisch, Japanisch, Koreanisch und Niederländisch.' },
       { h: 'Wie es funktioniert', p: 'Jede Berechnung läuft direkt in deinem Browser mit JavaScript. Es werden keine Daten an einen Server gesendet. Die eingegebenen Daten bleiben auf deinem Gerät.' },
       { h: 'Wer dahintersteckt', p: 'DateCalc.app ist ein unabhängiges Projekt, das entwickelt wurde, um zuverlässige und schnelle Datums-Tools für alle kostenlos bereitzustellen. Wir glauben, dass nützliche Werkzeuge ohne Abonnements oder Pflichtkonten zugänglich sein sollten.' },
       { h: 'Kontakt', p: 'Fragen, Vorschläge oder Feedback? Schreib uns an <a href="mailto:hello@datecalc.app">hello@datecalc.app</a> — wir lesen jede Nachricht.' },
@@ -1782,7 +1782,7 @@ const ABOUT_CONTENT = {
     h1: 'Chi siamo — DateCalc.app',
     intro: 'DateCalc.app è una raccolta di calcolatori di data e ora gratuiti e istantanei. Senza registrazione, senza pubblicità, senza tracciamento — solo strumenti veloci e precisi che funzionano interamente nel tuo browser.',
     sections: [
-      { h: 'Cosa offriamo', p: 'Calcolatori di età, tracker dell\'età del bambino, convertitori di età per cani e gatti, contatori di giorni, numeri di settimana, calcolatori di giorni lavorativi, conto alla rovescia delle festività e strumenti storici per anno — disponibili in 7 lingue: inglese, francese, spagnolo, portoghese, tedesco, italiano e polacco.' },
+      { h: 'Cosa offriamo', p: 'Calcolatori di età, tracker dell\'età del bambino, convertitori di età per cani e gatti, contatori di giorni, numeri di settimana, calcolatori di giorni lavorativi, conto alla rovescia delle festività e strumenti storici per anno — disponibili in 10 lingue: inglese, francese, spagnolo, portoghese, tedesco, italiano, polacco, giapponese, coreano e olandese.' },
       { h: 'Come funziona', p: 'Ogni calcolo viene eseguito direttamente nel tuo browser tramite JavaScript. Nessun dato viene inviato a un server. Le date che inserisci rimangono sul tuo dispositivo.' },
       { h: 'Chi lo ha creato', p: 'DateCalc.app è un progetto indipendente creato per offrire strumenti di data affidabili e veloci a tutti, gratuitamente. Crediamo che le utility utili debbano essere accessibili senza abbonamenti o account obbligatori.' },
       { h: 'Contatto', p: 'Domande, suggerimenti o feedback? Scrivici a <a href="mailto:hello@datecalc.app">hello@datecalc.app</a> — leggiamo ogni messaggio.' },
@@ -1793,7 +1793,7 @@ const ABOUT_CONTENT = {
     h1: 'O DateCalc.app',
     intro: 'DateCalc.app to kolekcja bezpłatnych i natychmiastowych kalkulatorów daty i czasu. Bez rejestracji, bez reklam, bez śledzenia — tylko szybkie i dokładne narzędzia działające całkowicie w Twojej przeglądarce.',
     sections: [
-      { h: 'Co oferujemy', p: 'Kalkulatory wieku, tracker wieku niemowląt, konwertery wieku psów i kotów, liczniki dni, numery tygodni, kalkulatory dni roboczych, odliczanie do świąt i narzędzia historyczne według roku — dostępne w 7 językach: angielskim, francuskim, hiszpańskim, portugalskim, niemieckim, włoskim i polskim.' },
+      { h: 'Co oferujemy', p: 'Kalkulatory wieku, tracker wieku niemowląt, konwertery wieku psów i kotów, liczniki dni, numery tygodni, kalkulatory dni roboczych, odliczanie do świąt i narzędzia historyczne według roku — dostępne w 10 językach: angielskim, francuskim, hiszpańskim, portugalskim, niemieckim, włoskim, polskim, japońskim, koreańskim i niderlandzkim.' },
       { h: 'Jak to działa', p: 'Każde obliczenie jest wykonywane bezpośrednio w Twojej przeglądarce za pomocą JavaScript. Żadne dane nie są wysyłane na serwer. Wprowadzone daty pozostają na Twoim urządzeniu.' },
       { h: 'Kto to stworzył', p: 'DateCalc.app to niezależny projekt stworzony, aby zapewnić niezawodne i szybkie narzędzia do dat dla wszystkich, bezpłatnie. Wierzymy, że przydatne narzędzia powinny być dostępne bez subskrypcji ani obowiązkowych kont.' },
       { h: 'Kontakt', p: 'Pytania, sugestie lub opinie? Napisz do nas na <a href="mailto:hello@datecalc.app">hello@datecalc.app</a> — czytamy każdą wiadomość.' },
