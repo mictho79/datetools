@@ -729,6 +729,7 @@ const MASTHEAD_LABEL = {
 };
 
 const DATE_LOCALE = { en: 'en-US', fr: 'fr-FR', es: 'es-ES', pt: 'pt-BR', de: 'de-DE', it: 'it-IT', pl: 'pl-PL', ja: 'ja-JP', ko: 'ko-KR', nl: 'nl-NL' };
+const OG_LOCALE   = { en: 'en_US', fr: 'fr_FR', es: 'es_ES', pt: 'pt_BR', de: 'de_DE', it: 'it_IT', pl: 'pl_PL', ja: 'ja_JP', ko: 'ko_KR', nl: 'nl_NL' };
 const HOME_HREF = { en: '/', fr: '/fr/', es: '/es/', pt: '/pt/', de: '/de/', it: '/it/', pl: '/pl/', ja: '/ja/', ko: '/ko/', nl: '/nl/' };
 const BUILD_YEAR = new Date().getFullYear();
 
@@ -872,8 +873,12 @@ ${JSON.stringify({
 <meta property="og:description" content="${metaDesc}">
 <meta property="og:url" content="https://datecalc.app${canonical}">
 <meta property="og:site_name" content="DateCalc.app">
+<meta property="og:locale" content="${OG_LOCALE[lang]}">
+${LANGS.filter(l => l !== lang).map(l => `<meta property="og:locale:alternate" content="${OG_LOCALE[l]}">`).join('\n')}
 <meta property="og:image" content="https://datecalc.app/og.png">
-<meta name="twitter:card" content="summary">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${title}">
 <meta name="twitter:description" content="${metaDesc}">
 <meta name="twitter:image" content="https://datecalc.app/og.png">
@@ -1095,7 +1100,15 @@ ${JSON.stringify({
 <meta property="og:description" content="${metaDesc}">
 <meta property="og:url" content="https://datecalc.app${canonical}">
 <meta property="og:site_name" content="DateCalc.app">
+<meta property="og:locale" content="${OG_LOCALE[lang]}">
+${LANGS.filter(l => l !== lang).map(l => `<meta property="og:locale:alternate" content="${OG_LOCALE[l]}">`).join('\n')}
 <meta property="og:image" content="https://datecalc.app/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="${title}">
+<meta name="twitter:description" content="${metaDesc}">
+<meta name="twitter:image" content="https://datecalc.app/og.png">
 <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/playfair-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/style.css">
