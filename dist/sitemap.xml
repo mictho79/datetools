@@ -45220,4 +45220,344 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://datecalc.app/nl/gebeurtenissen-per-jaar/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/year-in-history/"/>
   </url>
+  <url>
+    <loc>https://datecalc.app/tools/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://datecalc.app/tools/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/outils/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/herramientas/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://datecalc.app/pt/ferramentas/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://datecalc.app/de/tools/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://datecalc.app/it/strumenti/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://datecalc.app/pl/narzedzia/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://datecalc.app/ja/tools/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://datecalc.app/ko/dogu/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://datecalc.app/nl/tools/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/tools/"/>
+  </url>
+  <url>
+    <loc>https://datecalc.app/fr/outils/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://datecalc.app/tools/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/outils/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/herramientas/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://datecalc.app/pt/ferramentas/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://datecalc.app/de/tools/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://datecalc.app/it/strumenti/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://datecalc.app/pl/narzedzia/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://datecalc.app/ja/tools/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://datecalc.app/ko/dogu/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://datecalc.app/nl/tools/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/tools/"/>
+  </url>
+  <url>
+    <loc>https://datecalc.app/es/herramientas/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://datecalc.app/tools/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/outils/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/herramientas/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://datecalc.app/pt/ferramentas/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://datecalc.app/de/tools/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://datecalc.app/it/strumenti/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://datecalc.app/pl/narzedzia/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://datecalc.app/ja/tools/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://datecalc.app/ko/dogu/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://datecalc.app/nl/tools/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/tools/"/>
+  </url>
+  <url>
+    <loc>https://datecalc.app/pt/ferramentas/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://datecalc.app/tools/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/outils/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/herramientas/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://datecalc.app/pt/ferramentas/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://datecalc.app/de/tools/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://datecalc.app/it/strumenti/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://datecalc.app/pl/narzedzia/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://datecalc.app/ja/tools/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://datecalc.app/ko/dogu/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://datecalc.app/nl/tools/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/tools/"/>
+  </url>
+  <url>
+    <loc>https://datecalc.app/de/tools/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://datecalc.app/tools/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/outils/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/herramientas/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://datecalc.app/pt/ferramentas/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://datecalc.app/de/tools/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://datecalc.app/it/strumenti/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://datecalc.app/pl/narzedzia/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://datecalc.app/ja/tools/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://datecalc.app/ko/dogu/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://datecalc.app/nl/tools/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/tools/"/>
+  </url>
+  <url>
+    <loc>https://datecalc.app/it/strumenti/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://datecalc.app/tools/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/outils/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/herramientas/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://datecalc.app/pt/ferramentas/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://datecalc.app/de/tools/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://datecalc.app/it/strumenti/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://datecalc.app/pl/narzedzia/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://datecalc.app/ja/tools/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://datecalc.app/ko/dogu/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://datecalc.app/nl/tools/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/tools/"/>
+  </url>
+  <url>
+    <loc>https://datecalc.app/pl/narzedzia/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://datecalc.app/tools/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/outils/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/herramientas/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://datecalc.app/pt/ferramentas/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://datecalc.app/de/tools/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://datecalc.app/it/strumenti/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://datecalc.app/pl/narzedzia/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://datecalc.app/ja/tools/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://datecalc.app/ko/dogu/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://datecalc.app/nl/tools/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/tools/"/>
+  </url>
+  <url>
+    <loc>https://datecalc.app/ja/tools/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://datecalc.app/tools/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/outils/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/herramientas/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://datecalc.app/pt/ferramentas/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://datecalc.app/de/tools/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://datecalc.app/it/strumenti/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://datecalc.app/pl/narzedzia/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://datecalc.app/ja/tools/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://datecalc.app/ko/dogu/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://datecalc.app/nl/tools/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/tools/"/>
+  </url>
+  <url>
+    <loc>https://datecalc.app/ko/dogu/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://datecalc.app/tools/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/outils/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/herramientas/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://datecalc.app/pt/ferramentas/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://datecalc.app/de/tools/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://datecalc.app/it/strumenti/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://datecalc.app/pl/narzedzia/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://datecalc.app/ja/tools/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://datecalc.app/ko/dogu/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://datecalc.app/nl/tools/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/tools/"/>
+  </url>
+  <url>
+    <loc>https://datecalc.app/nl/tools/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://datecalc.app/tools/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/outils/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/herramientas/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://datecalc.app/pt/ferramentas/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://datecalc.app/de/tools/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://datecalc.app/it/strumenti/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://datecalc.app/pl/narzedzia/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://datecalc.app/ja/tools/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://datecalc.app/ko/dogu/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://datecalc.app/nl/tools/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/tools/"/>
+  </url>
+  <url>
+    <loc>https://datecalc.app/articles/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://datecalc.app/articles/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/articles/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/articulos/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://datecalc.app/pt/artigos/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://datecalc.app/de/artikel/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://datecalc.app/it/articoli/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://datecalc.app/pl/artykuly/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://datecalc.app/ja/kiji/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://datecalc.app/ko/gisa/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://datecalc.app/nl/artikelen/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/articles/"/>
+  </url>
+  <url>
+    <loc>https://datecalc.app/fr/articles/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://datecalc.app/articles/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/articles/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/articulos/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://datecalc.app/pt/artigos/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://datecalc.app/de/artikel/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://datecalc.app/it/articoli/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://datecalc.app/pl/artykuly/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://datecalc.app/ja/kiji/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://datecalc.app/ko/gisa/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://datecalc.app/nl/artikelen/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/articles/"/>
+  </url>
+  <url>
+    <loc>https://datecalc.app/es/articulos/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://datecalc.app/articles/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/articles/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/articulos/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://datecalc.app/pt/artigos/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://datecalc.app/de/artikel/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://datecalc.app/it/articoli/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://datecalc.app/pl/artykuly/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://datecalc.app/ja/kiji/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://datecalc.app/ko/gisa/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://datecalc.app/nl/artikelen/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/articles/"/>
+  </url>
+  <url>
+    <loc>https://datecalc.app/pt/artigos/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://datecalc.app/articles/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/articles/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/articulos/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://datecalc.app/pt/artigos/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://datecalc.app/de/artikel/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://datecalc.app/it/articoli/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://datecalc.app/pl/artykuly/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://datecalc.app/ja/kiji/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://datecalc.app/ko/gisa/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://datecalc.app/nl/artikelen/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/articles/"/>
+  </url>
+  <url>
+    <loc>https://datecalc.app/de/artikel/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://datecalc.app/articles/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/articles/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/articulos/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://datecalc.app/pt/artigos/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://datecalc.app/de/artikel/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://datecalc.app/it/articoli/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://datecalc.app/pl/artykuly/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://datecalc.app/ja/kiji/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://datecalc.app/ko/gisa/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://datecalc.app/nl/artikelen/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/articles/"/>
+  </url>
+  <url>
+    <loc>https://datecalc.app/it/articoli/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://datecalc.app/articles/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/articles/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/articulos/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://datecalc.app/pt/artigos/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://datecalc.app/de/artikel/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://datecalc.app/it/articoli/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://datecalc.app/pl/artykuly/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://datecalc.app/ja/kiji/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://datecalc.app/ko/gisa/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://datecalc.app/nl/artikelen/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/articles/"/>
+  </url>
+  <url>
+    <loc>https://datecalc.app/pl/artykuly/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://datecalc.app/articles/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/articles/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/articulos/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://datecalc.app/pt/artigos/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://datecalc.app/de/artikel/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://datecalc.app/it/articoli/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://datecalc.app/pl/artykuly/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://datecalc.app/ja/kiji/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://datecalc.app/ko/gisa/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://datecalc.app/nl/artikelen/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/articles/"/>
+  </url>
+  <url>
+    <loc>https://datecalc.app/ja/kiji/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://datecalc.app/articles/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/articles/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/articulos/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://datecalc.app/pt/artigos/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://datecalc.app/de/artikel/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://datecalc.app/it/articoli/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://datecalc.app/pl/artykuly/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://datecalc.app/ja/kiji/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://datecalc.app/ko/gisa/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://datecalc.app/nl/artikelen/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/articles/"/>
+  </url>
+  <url>
+    <loc>https://datecalc.app/ko/gisa/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://datecalc.app/articles/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/articles/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/articulos/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://datecalc.app/pt/artigos/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://datecalc.app/de/artikel/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://datecalc.app/it/articoli/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://datecalc.app/pl/artykuly/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://datecalc.app/ja/kiji/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://datecalc.app/ko/gisa/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://datecalc.app/nl/artikelen/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/articles/"/>
+  </url>
+  <url>
+    <loc>https://datecalc.app/nl/artikelen/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://datecalc.app/articles/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/articles/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/articulos/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://datecalc.app/pt/artigos/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://datecalc.app/de/artikel/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://datecalc.app/it/articoli/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://datecalc.app/pl/artykuly/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://datecalc.app/ja/kiji/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://datecalc.app/ko/gisa/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://datecalc.app/nl/artikelen/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/articles/"/>
+  </url>
 </urlset>

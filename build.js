@@ -48,6 +48,9 @@ const DIST = path.join(__dirname, 'dist');
 // Hub pages (birth-years, year-in-history) — see src/tools/hubs.js
 const hubs = require('./src/tools/hubs');
 
+// Main navigation + /tools/ and /articles/ hubs — see src/tools/nav-hubs.js
+const navHubs = require('./src/tools/nav-hubs');
+
 // Default dates for Article JSON-LD (datePublished / dateModified).
 // Individual cluster pages can override via data.datePublished / data.dateModified.
 const ARTICLE_DEFAULT_PUBLISHED = '2026-04-01';
@@ -895,7 +898,7 @@ ${(lang === 'ja' || lang === 'ko') ? '' : `<link rel="preload" href="/fonts/inte
 <link rel="sitemap" type="application/xml" href="/sitemap.xml">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="shortcut icon" href="/favicon.svg">
-${faqSchema}${howtoSchema}${appSchema}${orgSchema}${breadcrumbSchema}
+${faqSchema}${howtoSchema}${appSchema}${orgSchema}${breadcrumbSchema}${navHubs.NAV_CSS}
 </head>
 <body>
 
@@ -909,6 +912,7 @@ ${faqSchema}${howtoSchema}${appSchema}${orgSchema}${breadcrumbSchema}
 </div>
 </header>
 
+${navHubs.mainNavHTML(lang, canonical)}
 <div class="lang-strip">
 ${langBtns}
 </div>
@@ -1122,7 +1126,7 @@ ${(lang === 'ja' || lang === 'ko') ? '' : `<link rel="preload" href="/fonts/inte
 <link rel="sitemap" type="application/xml" href="/sitemap.xml">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="shortcut icon" href="/favicon.svg">
-${faqSchema}${articleSchema}${orgSchema}${breadcrumbSchema}${extraHead || ''}
+${faqSchema}${articleSchema}${orgSchema}${breadcrumbSchema}${navHubs.NAV_CSS}${extraHead || ''}
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -1132,6 +1136,7 @@ ${faqSchema}${articleSchema}${orgSchema}${breadcrumbSchema}${extraHead || ''}
   <div class="masthead-meta" id="todayMeta"></div>
 </div>
 </header>
+${navHubs.mainNavHTML(lang, canonical)}
 <div class="lang-strip">
 ${langBtns}
 </div>
@@ -1352,6 +1357,23 @@ for (const hubType of ['birth', 'event']) {
   }
 }
 console.log(`Built ${hubCount} hub pages → dist/`);
+
+// ── NAV HUBS (/tools/ and /articles/) ─────────────────────
+let navHubCount = 0;
+for (const lang of LANGS) {
+  const toolsData = navHubs.buildToolsHub(lang, NAV);
+  toolsData.extraHead = navHubs.NAV_CSS;
+  const tHtml = renderArticleLayout(toolsData, lang);
+  writePage(`${navHubs.TOOLS_SLUGS[lang]}/index.html`, tHtml);
+  navHubCount++;
+
+  const articlesData = navHubs.buildArticlesHub(lang, articles);
+  articlesData.extraHead = navHubs.NAV_CSS;
+  const aHtml = renderArticleLayout(articlesData, lang);
+  writePage(`${navHubs.ARTICLES_SLUGS[lang]}/index.html`, aHtml);
+  navHubCount++;
+}
+console.log(`Built ${navHubCount} nav-hub pages → dist/`);
 
 // ── REDIRECTS ─────────────────────────────────────────────
 const REDIRECTS = [
@@ -1717,6 +1739,7 @@ ${(lang === 'ja' || lang === 'ko') ? '' : `<link rel="preload" href="/fonts/inte
 <link rel="preload" href="/fonts/playfair-normal-latin.woff2" as="font" type="font/woff2" crossorigin>`}
 <link rel="stylesheet" href="/style.css">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+${navHubs.NAV_CSS}
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -1725,6 +1748,7 @@ ${(lang === 'ja' || lang === 'ko') ? '' : `<link rel="preload" href="/fonts/inte
   <a href="${HOME_HREF[lang]}" class="masthead-brand">DateCalc<span>.</span>app</a>
 </div>
 </header>
+${navHubs.mainNavHTML(lang, canonical.replace('https://datecalc.app', ''))}
 <div class="page">
 <main id="main-content" style="max-width:680px;margin:3rem auto;padding:0 1.5rem">
   <h1 style="font-family:'Playfair Display',serif;font-size:2rem;margin-bottom:.5rem">${p.h1}</h1>
@@ -1930,6 +1954,7 @@ ${JSON.stringify({
   "sameAs": ["https://datecalc.app/about/"]
 }, null, 2)}
 </script>
+${navHubs.NAV_CSS}
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -1938,6 +1963,7 @@ ${JSON.stringify({
   <a href="${HOME_HREF[lang]}" class="masthead-brand">DateCalc<span>.</span>app</a>
 </div>
 </header>
+${navHubs.mainNavHTML(lang, canonical.replace('https://datecalc.app', ''))}
 <div class="page">
 <main id="main-content" style="max-width:680px;margin:3rem auto;padding:0 1.5rem">
   <h1 style="font-family:'Playfair Display',serif;font-size:2rem;margin-bottom:2rem">${p.h1}</h1>
@@ -2043,6 +2069,11 @@ for (const cluster of articles) {
 // Hub pages (birth-years, year-in-history) — each hub is one group of 10 langs (mutual alternates)
 for (const group of hubs.sitemapGroups()) {
   group.meta = { category: 'hub', lastmod: sitemapToday, changefreq: 'monthly', priority: '0.8' };
+  urlGroups.push(group);
+}
+// Nav hubs (/tools/, /articles/) — each hub is one group of 10 langs
+for (const group of navHubs.sitemapGroups()) {
+  group.meta = { category: 'hub', lastmod: sitemapToday, changefreq: 'weekly', priority: '0.8' };
   urlGroups.push(group);
 }
 

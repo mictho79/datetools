@@ -141,6 +141,18 @@
   ]
 }
 </script>
+<style>
+.main-nav{border-top:1px solid #ddd;border-bottom:1px solid #ddd;background:#fcfcfc}
+.main-nav-inner{max-width:900px;margin:0 auto;padding:.55rem 1.5rem;display:flex;gap:1.4rem;flex-wrap:wrap;justify-content:center;font-family:'Space Mono',monospace;font-size:.86rem}
+.main-nav a{color:#111;text-decoration:none;padding:.1rem 0;border-bottom:1px solid transparent;transition:border-color .12s,color .12s}
+.main-nav a:hover{border-bottom-color:var(--accent);color:var(--accent)}
+.main-nav a[aria-current="page"]{color:var(--accent);border-bottom-color:var(--accent);font-style:italic}
+@media(max-width:600px){.main-nav-inner{gap:.9rem;font-size:.78rem;padding:.45rem .8rem}}
+.hub-list{list-style:none;padding:0;margin:.5rem 0 1.2rem;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:.3rem .8rem}
+.hub-list li{border-bottom:1px dotted #e5e5e5;padding:.25rem 0}
+.hub-list a{color:#111;text-decoration:none}
+.hub-list a:hover{color:var(--accent)}
+</style>
 </head>
 <body>
 
@@ -154,6 +166,14 @@
 </div>
 </header>
 
+<nav class="main-nav" aria-label="Main">
+  <div class="main-nav-inner">
+    <a href="/pt/ferramentas/">Ferramentas</a>
+    <a href="/pt/artigos/">Artigos</a>
+    <a href="/pt/anos-de-nascimento/">Anos</a>
+    <a href="/pt/sobre/">Sobre</a>
+  </div>
+</nav>
 <div class="lang-strip">
   <a href="/what-happened-in-1955/" class="lang-btn">EN</a>
   <a href="/fr/que-s-est-il-passe-en-1955/" class="lang-btn">FR</a>
