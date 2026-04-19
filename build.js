@@ -1507,6 +1507,9 @@ const PRIVACY_PAGES = [
   { lang: 'de', slug: 'de/datenschutz',     canonical: 'https://datecalc.app/de/datenschutz/' },
   { lang: 'it', slug: 'it/privacy',         canonical: 'https://datecalc.app/it/privacy/' },
   { lang: 'pl', slug: 'pl/prywatnosc',      canonical: 'https://datecalc.app/pl/prywatnosc/' },
+  { lang: 'ja', slug: 'ja/privacy',         canonical: 'https://datecalc.app/ja/privacy/' },
+  { lang: 'ko', slug: 'ko/privacy',         canonical: 'https://datecalc.app/ko/privacy/' },
+  { lang: 'nl', slug: 'nl/privacy',         canonical: 'https://datecalc.app/nl/privacy/' },
 ];
 const PRIVACY_CONTENT = {
   en: {
@@ -1600,6 +1603,45 @@ const PRIVACY_CONTENT = {
       { h: 'Twoje prawa (RODO)', p: 'Nie przechowujemy żadnych Twoich danych osobowych, więc nie ma nic do uzyskania dostępu, poprawienia ani usunięcia. W razie pytań: <a href="mailto:hello@datecalc.app">hello@datecalc.app</a>.' },
     ],
   },
+  ja: {
+    title: 'プライバシーポリシー — DateCalc.app',
+    h1: 'プライバシーポリシー',
+    updated: '最終更新日：2026年1月1日',
+    intro: 'DateCalc.appは、完全にクライアントサイドで動作する無料の日付計算ツールです。すべての計算はお客様のブラウザ内で行われます。当サイトは、個人データを収集、保存、販売することは一切ありません。このページでは、当サイトを利用される際に関係する情報の取り扱いについて、可能なかぎり具体的に説明します。ご質問がある場合は、下記のメールアドレスまでお気軽にお問い合わせください。',
+    sections: [
+      { h: '当サイトが収集するデータ', p: 'DateCalc.appは、アカウント作成、ログイン、フォーム送信を一切必要としません。お客様が計算機に入力した日付や数値は、お客様の端末のメモリ上でのみ処理され、当サイトのサーバーに送信されることはありません。計算結果はページをリロードした時点で失われます。お問い合わせ用のメールアドレス以外に、お客様から個人情報を受け取る経路はありません。' },
+      { h: 'Google Fonts', p: '当サイトは読みやすさを確保するため、Google Fonts経由でPlayfair Display、Space Mono、Interの3書体を読み込みます。これにより、お客様のブラウザはGoogleのサーバーにリクエストを送信し、GoogleはそのIPアドレスを一時的に記録する場合があります。Googleによるデータ処理の詳細については、<a href="https://policies.google.com/privacy">Googleのプライバシーポリシー</a>をご覧ください。' },
+      { h: 'ホスティング（Cloudflare Pages）', p: '当サイトはCloudflare Pages上でホストされています。Cloudflareは、セキュリティおよびパフォーマンス上の目的で、IPアドレス、ブラウザの種類、リクエストされたページといった標準的なアクセスログを処理することがあります。これは当サイトを運用するうえで不可避な処理です。詳細は<a href="https://www.cloudflare.com/privacypolicy/">Cloudflareのプライバシーポリシー</a>をご確認ください。' },
+      { h: 'Cookieおよびトラッキング', p: '当サイトは、独自のCookieを一切使用しません。アクセス解析、広告トラッカー、サイト間トラッキングも導入していません。広告を表示する場合はユーザーの明示的な同意（オプトイン）のみでロードされ、同意しない場合は広告関連のスクリプトは読み込まれません。' },
+      { h: 'お客様の権利', p: '当サイトはお客様の個人データを保有していないため、アクセス、修正、削除を請求できるデータは存在しません。ご質問、ご要望、法的なお問い合わせは <a href="mailto:hello@datecalc.app">hello@datecalc.app</a> までお送りください。通常数日以内にご返信します。' },
+    ],
+  },
+  ko: {
+    title: '개인정보 보호정책 — DateCalc.app',
+    h1: '개인정보 보호정책',
+    updated: '최종 업데이트: 2026년 1월 1일',
+    intro: 'DateCalc.app은 전적으로 클라이언트 측에서 동작하는 무료 날짜 계산 도구입니다. 모든 계산은 사용자의 브라우저 안에서 이루어지며, 저희는 어떠한 개인정보도 수집, 저장, 판매하지 않습니다. 이 페이지에서는 DateCalc.app을 이용하실 때 관련된 정보의 처리 방식을 가능한 한 구체적으로 설명합니다. 문의사항이 있으시면 아래 이메일로 언제든지 연락 주십시오.',
+    sections: [
+      { h: '수집하는 데이터', p: '없습니다. DateCalc.app은 회원 가입, 로그인, 폼 제출이 필요하지 않습니다. 사용자가 계산기에 입력한 날짜나 숫자는 오직 사용자의 기기 메모리에서만 처리되며, 저희 서버로 전송되지 않습니다. 페이지를 새로 고치는 순간 계산 결과는 사라집니다. 문의용 이메일 외에 사용자의 개인정보를 받는 경로는 존재하지 않습니다.' },
+      { h: 'Google Fonts', p: '저희는 가독성을 위해 Google Fonts를 통해 Playfair Display, Space Mono, Inter 세 가지 글꼴을 불러옵니다. 이 과정에서 사용자의 브라우저가 Google 서버에 요청을 보내며, Google은 해당 IP 주소를 일시적으로 기록할 수 있습니다. Google의 데이터 처리 방식에 대한 자세한 내용은 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>을 참조해 주십시오.' },
+      { h: '호스팅(Cloudflare Pages)', p: '이 사이트는 Cloudflare Pages에서 호스팅됩니다. Cloudflare는 보안과 성능을 위해 IP 주소, 브라우저 종류, 요청된 페이지와 같은 표준 액세스 로그를 처리할 수 있으며, 이는 사이트 운영상 필수적인 과정입니다. 자세한 내용은 <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare 개인정보처리방침</a>을 확인하십시오.' },
+      { h: '쿠키 및 추적', p: '저희는 자체 쿠키를 일절 사용하지 않습니다. 분석 도구, 광고 추적기, 사이트 간 추적도 전혀 도입하지 않았습니다. 광고를 표시하는 경우에는 사용자의 명시적 동의(옵트인)가 있을 때에만 광고 스크립트를 로드하며, 동의하지 않는 경우 관련 스크립트는 로드되지 않습니다.' },
+      { h: '이용자의 권리', p: '저희는 사용자의 개인정보를 보유하지 않으므로 접근, 수정, 삭제를 요청할 데이터 자체가 존재하지 않습니다. 문의, 요청, 법적 사안은 <a href="mailto:hello@datecalc.app">hello@datecalc.app</a>으로 보내 주십시오. 보통 며칠 안에 답변 드립니다.' },
+    ],
+  },
+  nl: {
+    title: 'Privacybeleid — DateCalc.app',
+    h1: 'Privacybeleid',
+    updated: 'Laatst bijgewerkt: 1 januari 2026',
+    intro: 'DateCalc.app is een gratis datumcalculator die volledig aan de kant van de client draait. Alle berekeningen vinden plaats in je browser. We verzamelen, bewaren of verkopen geen enkel persoonsgegeven. Op deze pagina leggen we zo concreet mogelijk uit welke gegevens bij een bezoek aan DateCalc.app betrokken zijn en hoe ze worden behandeld. Heb je vragen, neem dan gerust contact met ons op via het e-mailadres onderaan deze pagina.',
+    sections: [
+      { h: 'Gegevens die we verzamelen', p: 'Geen. DateCalc.app vereist geen account, geen login en geen formulierverzending. De datums en getallen die je invoert in de rekenhulpmiddelen worden uitsluitend verwerkt in het geheugen van jouw apparaat en worden niet naar onze servers verzonden. Zodra je de pagina opnieuw laadt, verdwijnt de berekening. Behalve via het contact-e-mailadres is er geen enkele route waarlangs we persoonlijke informatie ontvangen.' },
+      { h: 'Google Fonts', p: 'We laden drie lettertypes (Playfair Display, Space Mono en Inter) via Google Fonts om de leesbaarheid te verzorgen. Daarbij doet je browser een verzoek aan de servers van Google, dat hierbij tijdelijk je IP-adres kan registreren. Meer informatie vind je in het <a href="https://policies.google.com/privacy">privacybeleid van Google</a>.' },
+      { h: 'Hosting (Cloudflare Pages)', p: 'Deze website draait op Cloudflare Pages. Cloudflare kan om veiligheids- en prestatieredenen standaard toegangslogboeken verwerken (IP-adres, browsertype, opgevraagde pagina). Dat is een onvermijdelijk onderdeel van het hosten van een publieke website. Zie het <a href="https://www.cloudflare.com/privacypolicy/">privacybeleid van Cloudflare</a> voor details.' },
+      { h: 'Cookies en tracking', p: 'We gebruiken geen eigen cookies. Er zit geen analytics-pakket op de site, geen advertentietrackers en geen cross-site tracking. Als er advertenties geladen worden, gebeurt dat alleen na jouw expliciete toestemming (opt-in); zonder toestemming worden er geen advertentiescripts geladen.' },
+      { h: 'Jouw rechten (AVG)', p: 'Omdat we geen persoonsgegevens van jou bewaren, is er ook niets om in te zien, te corrigeren of te wissen. Voor vragen, verzoeken of juridische kwesties kun je ons bereiken op <a href="mailto:hello@datecalc.app">hello@datecalc.app</a>. We reageren doorgaans binnen enkele dagen.' },
+    ],
+  },
 };
 const hreflangPrivacy = [
   '<link rel="alternate" hreflang="en" href="https://datecalc.app/privacy/">',
@@ -1609,6 +1651,9 @@ const hreflangPrivacy = [
   '<link rel="alternate" hreflang="de" href="https://datecalc.app/de/datenschutz/">',
   '<link rel="alternate" hreflang="it" href="https://datecalc.app/it/privacy/">',
   '<link rel="alternate" hreflang="pl" href="https://datecalc.app/pl/prywatnosc/">',
+  '<link rel="alternate" hreflang="ja" href="https://datecalc.app/ja/privacy/">',
+  '<link rel="alternate" hreflang="ko" href="https://datecalc.app/ko/privacy/">',
+  '<link rel="alternate" hreflang="nl" href="https://datecalc.app/nl/privacy/">',
   '<link rel="alternate" hreflang="x-default" href="https://datecalc.app/privacy/">',
 ].join('\n');
 
