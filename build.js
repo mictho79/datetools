@@ -51,6 +51,9 @@ const hubs = require('./src/tools/hubs');
 // Main navigation + /tools/ and /articles/ hubs — see src/tools/nav-hubs.js
 const navHubs = require('./src/tools/nav-hubs');
 
+// Author pages (/authors/mike/) + article author signature + footer tagline
+const authors = require('./src/tools/authors');
+
 // Default dates for Article JSON-LD (datePublished / dateModified).
 // Individual cluster pages can override via data.datePublished / data.dateModified.
 const ARTICLE_DEFAULT_PUBLISHED = '2026-04-01';
@@ -941,6 +944,7 @@ ${relatedArticlesBlock}
 ${footerCols}
   </nav>
   <div class="footer-copy">© ${BUILD_YEAR} DateCalc.app — ${FOOTER[lang]} · <a href="${ABOUT_HREF[lang]}">${ABOUT_LBL[lang]}</a> · <a href="${PRIVACY_HREF[lang]}">${PRIVACY_LBL[lang]}</a></div>
+  <div class="footer-tagline-wrap">${authors.footerTagline(lang)}</div>
 </footer>
 </div>
 
@@ -1043,7 +1047,7 @@ ${JSON.stringify({
   "url": `https://datecalc.app${canonical}`,
   "datePublished": data.datePublished || ARTICLE_DEFAULT_PUBLISHED,
   "dateModified": data.dateModified || ARTICLE_DEFAULT_MODIFIED,
-  "author": { "@type": "Organization", "name": "DateCalc.app", "url": "https://datecalc.app/" },
+  "author": { "@type": "Person", "name": "Mike", "url": `https://datecalc.app${authors.mikeAboutHref(lang)}` },
   "publisher": { "@type": "Organization", "name": "DateCalc.app", "url": "https://datecalc.app", "logo": { "@type": "ImageObject", "url": "https://datecalc.app/og.png" } },
   "image": "https://datecalc.app/og.png",
   "mainEntityOfPage": { "@type": "WebPage", "@id": `https://datecalc.app${canonical}` }
@@ -1157,12 +1161,14 @@ ${sectionsHTML}
 ${faqHTML}
 ${relatedHTML}
 ${pillarCTA}
+${authors.articleSignature(lang)}
 </main>
 <footer>
 <nav class="footer-nav" aria-label="Site links">
 ${footerCols}
 </nav>
 <div class="footer-copy">© ${BUILD_YEAR} DateCalc.app — ${FOOTER[lang]} · <a href="${ABOUT_HREF[lang]}">${ABOUT_LBL[lang]}</a> · <a href="${PRIVACY_HREF[lang]}">${PRIVACY_LBL[lang]}</a></div>
+<div class="footer-tagline-wrap">${authors.footerTagline(lang)}</div>
 </footer>
 </div>
 <script>
@@ -1374,6 +1380,14 @@ for (const lang of LANGS) {
   navHubCount++;
 }
 console.log(`Built ${navHubCount} nav-hub pages → dist/`);
+
+// ── AUTHOR PAGES (/authors/mike/ + 9 translations) ────────
+let authorCount = 0;
+for (const lang of LANGS) {
+  writePage(`${authors.MIKE_SLUGS[lang]}/index.html`, authors.renderAuthorHTML(lang));
+  authorCount++;
+}
+console.log(`Built ${authorCount} author pages → dist/`);
 
 // ── REDIRECTS ─────────────────────────────────────────────
 const REDIRECTS = [
@@ -2075,6 +2089,12 @@ for (const group of hubs.sitemapGroups()) {
 for (const group of navHubs.sitemapGroups()) {
   group.meta = { category: 'hub', lastmod: sitemapToday, changefreq: 'weekly', priority: '0.8' };
   urlGroups.push(group);
+}
+// Author page (/authors/mike/) — one group of 10 langs
+{
+  const g = authors.sitemapGroup();
+  g.meta = { category: 'static', lastmod: STATIC_LASTMOD, changefreq: 'yearly', priority: '0.3' };
+  urlGroups.push(g);
 }
 
 function renderSitemapUrl(url, group) {
