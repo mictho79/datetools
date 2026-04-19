@@ -41,6 +41,11 @@ const DIST = path.join(__dirname, 'dist');
 // Hub pages (birth-years, year-in-history) — see src/tools/hubs.js
 const hubs = require('./src/tools/hubs');
 
+// Default dates for Article JSON-LD (datePublished / dateModified).
+// Individual cluster pages can override via data.datePublished / data.dateModified.
+const ARTICLE_DEFAULT_PUBLISHED = '2026-04-01';
+const ARTICLE_DEFAULT_MODIFIED  = new Date().toISOString().split('T')[0];
+
 // ── TOOL NAV ──────────────────────────────────────────────
 const NAV = {
   en: [
@@ -1020,7 +1025,12 @@ ${JSON.stringify({
   "headline": h1,
   "description": metaDesc,
   "url": `https://datecalc.app${canonical}`,
-  "publisher": { "@type": "Organization", "name": "DateCalc.app", "url": "https://datecalc.app" }
+  "datePublished": data.datePublished || ARTICLE_DEFAULT_PUBLISHED,
+  "dateModified": data.dateModified || ARTICLE_DEFAULT_MODIFIED,
+  "author": { "@type": "Organization", "name": "DateCalc.app", "url": "https://datecalc.app/" },
+  "publisher": { "@type": "Organization", "name": "DateCalc.app", "url": "https://datecalc.app", "logo": { "@type": "ImageObject", "url": "https://datecalc.app/og.png" } },
+  "image": "https://datecalc.app/og.png",
+  "mainEntityOfPage": { "@type": "WebPage", "@id": `https://datecalc.app${canonical}` }
 }, null, 2)}
 </script>`;
 
