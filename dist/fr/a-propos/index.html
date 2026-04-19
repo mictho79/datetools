@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="index, follow">
 <title>À propos — DateCalc.app</title>
-<meta name="description" content="DateCalc.app est une collection de calculateurs de date et d'heure gratuits et instantanés. Sans inscription, sans pub, sans tracking — des outils rapides ">
+<meta name="description" content="DateCalc.app est un petit projet indépendant conçu par une équipe de deux personnes basée en France. Nous construisons les calculateurs de dates et d'heure">
 <link rel="canonical" href="https://datecalc.app/fr/a-propos/">
 <link rel="alternate" hreflang="en" href="https://datecalc.app/about/">
 <link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/a-propos/">
@@ -22,6 +22,26 @@
 <link rel="preload" href="/fonts/playfair-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/style.css">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "DateCalc.app",
+  "url": "https://datecalc.app/",
+  "email": "hello@datecalc.app",
+  "foundingLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "FR"
+    }
+  },
+  "description": "Free multilingual date and time calculators across 10 languages.",
+  "sameAs": [
+    "https://datecalc.app/about/"
+  ]
+}
+</script>
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -33,12 +53,13 @@
 <div class="page">
 <main id="main-content" style="max-width:680px;margin:3rem auto;padding:0 1.5rem">
   <h1 style="font-family:'Playfair Display',serif;font-size:2rem;margin-bottom:2rem">À propos de DateCalc.app</h1>
-  <p style="margin-bottom:2rem;line-height:1.7">DateCalc.app est une collection de calculateurs de date et d'heure gratuits et instantanés. Sans inscription, sans pub, sans tracking — des outils rapides et précis qui fonctionnent entièrement dans votre navigateur.</p>
+  <p style="margin-bottom:2rem;line-height:1.7">DateCalc.app est un petit projet indépendant conçu par une équipe de deux personnes basée en France. Nous construisons les calculateurs de dates et d'heures que nous aimerions utiliser nous-mêmes — sobres, rapides, sans dark patterns, justes dans les cas limites que les autres sites ratent. Le site est financé par Google AdSense, ce qui permet de le maintenir gratuit ; au-delà de cette fine couche publicitaire, il n'y a ni compte, ni newsletter, ni upsell.</p>
   <div class="about-sections">
-<h2>Ce que nous proposons</h2><p>Calculateurs d'âge, suivi de l'âge bébé, convertisseurs d'âge pour chiens et chats, compteurs de jours, numéros de semaine, calculateurs de jours ouvrés, comptes à rebours des fêtes, et outils d'histoire par année — disponibles en 10 langues : anglais, français, espagnol, portugais, allemand, italien, polonais, japonais, coréen et néerlandais.</p>
-<h2>Comment ça fonctionne</h2><p>Chaque calcul s'effectue directement dans votre navigateur via JavaScript. Aucune donnée n'est envoyée à un serveur. Les dates que vous saisissez restent sur votre appareil.</p>
-<h2>Qui a créé ce site</h2><p>DateCalc.app est un projet indépendant conçu pour offrir des outils de date fiables et rapides à tous, gratuitement. Nous pensons que les outils utiles doivent être accessibles sans abonnement ni compte obligatoire.</p>
-<h2>Contact</h2><p>Questions, suggestions ou retours ? Écrivez-nous à <a href="mailto:hello@datecalc.app">hello@datecalc.app</a> — nous lisons chaque message.</p>
+<h2>Ce que nous proposons</h2><p>Environ 265 pages de calculateurs et de références couvrant l'âge (y compris âge bébé, chien, chat), les jours entre dates, les jours ouvrés, les comptes à rebours vers les grandes fêtes, les numéros de semaine dans tous les formats (ISO, US, JP), la conversion de fuseau horaire, et des hubs année par année pour les naissances et les événements — tout cela en 10 langues : anglais, français, espagnol, portugais, allemand, italien, polonais, japonais, coréen et néerlandais.</p>
+<h2>Comment ça fonctionne</h2><p>Chaque calcul s'effectue directement dans votre navigateur en JavaScript. Il n'y a pas de base de données, pas de comptes, pas d'aller-retour réseau pour le calcul lui-même. Votre date de naissance, la date cible, le signe astrologique que vous venez de consulter — rien ne quitte votre appareil. Le navigateur télécharge uniquement le HTML statique, le CSS, quelques polices, et (si vous avez consenti) les scripts Google AdSense.</p>
+<h2>Comment on finance ça</h2><p>DateCalc.app est financé par Google AdSense. On n'adore pas les pubs non plus, mais c'est ce qui rend réaliste la maintenance d'un site gratuit dans 10 langues, sans paywall, sans « pro tier » et sans collecte d'e-mails. Les annonces ne sont chargées que si vous cliquez « Accepter » sur la bannière de consentement dans l'UE/UK ; hors de ces zones elles se chargent par défaut mais sans ciblage personnalisé sans consentement. Voir la <a href="/fr/confidentialite/">politique de confidentialité</a> pour le détail complet.</p>
+<h2>Qui est derrière ?</h2><p>DateCalc est développé par une petite équipe en France. Notre dev principal Mike est obsédé par les cas limites — du genre savoir si les numéros de semaine japonais doivent commencer le dimanche ou le lundi (spoiler : ça dépend du respect de la norme ISO, et on implémente les deux), comment gérer les anniversaires du 29 février en année non bissextile, ou si l'âge coréen traditionnel doit être activé par défaut pour les utilisateurs coréens (on a ajouté un toggle clair). Soigner les détails dans 10 langues, c'est environ 80 % du boulot.</p>
+<h2>Contact</h2><p>Retours, bugs, idées ou juste un bonjour — <a href="mailto:hello@datecalc.app">hello@datecalc.app</a>. On lit chaque message. Pour les demandes professionnelles (publicité, partenariats, licences) : même adresse, sujet « Business ».</p>
   </div>
 </main>
 <style>
