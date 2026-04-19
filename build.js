@@ -24,16 +24,23 @@ const tools = [
 ];
 
 // ── ARTICLE CLUSTERS ──────────────────────────────────────
-const articles = [
-  require('./src/articles/age-cluster'),
-  require('./src/articles/born-in-cluster'),
-  require('./src/articles/days-cluster'),
-  require('./src/articles/reference-cluster'),
-  require('./src/articles/ai-visibility-cluster'),
-  require('./src/articles/week-number-cluster'),
-  require('./src/articles/what-day-cluster'),
-  require('./src/articles/christmas-cluster'),
+// Each cluster pairs its module with its source file path so the sitemap can
+// read a per-cluster mtime for <lastmod>.
+const ARTICLE_CLUSTER_FILES = [
+  'src/articles/age-cluster.js',
+  'src/articles/born-in-cluster.js',
+  'src/articles/days-cluster.js',
+  'src/articles/reference-cluster.js',
+  'src/articles/ai-visibility-cluster.js',
+  'src/articles/week-number-cluster.js',
+  'src/articles/what-day-cluster.js',
+  'src/articles/christmas-cluster.js',
 ];
+const articles = ARTICLE_CLUSTER_FILES.map(f => {
+  const mod = require('./' + f);
+  mod.__sourceFile = f;
+  return mod;
+});
 
 const LANGS = ['en', 'fr', 'es', 'pt', 'de', 'it', 'pl', 'ja', 'ko', 'nl'];
 const DIST = path.join(__dirname, 'dist');
@@ -1847,34 +1854,90 @@ ${sectionsHtml}
 
 // ── SITEMAP (with xhtml:link hreflang alternates) ─────────
 // Each group is an array of { lang, path } — siblings are alternates of each other.
+// Each group carries a .meta = { category, lastmod, changefreq } for per-group sitemap settings.
 const urlGroups = [];
+const sitemapToday = new Date().toISOString().split('T')[0];
+
+// Helper: date YYYY-MM-DD of a source file's mtime (or fallback to today)
+function mtimeDate(relPath) {
+  try {
+    const stat = fs.statSync(path.join(__dirname, relPath));
+    return stat.mtime.toISOString().split('T')[0];
+  } catch (e) {
+    return sitemapToday;
+  }
+}
+
+// Categories: 'home' weekly, 'tool' weekly, 'dynamic' daily, 'article' monthly,
+// 'yearpage' monthly, 'hub' monthly, 'static' yearly.
+// Dynamic tool IDs (results change daily — the built HTML itself does not, but Google should recrawl frequently)
+const DYNAMIC_TOOL_IDS = new Set([
+  'what-day', 'what-day-is-it-today', 'countdown-timer', 'days-until-christmas',
+  'days-until-new-year', 'days-until-halloween', 'days-until-easter',
+  'days-until-thanksgiving',
+]);
+
+const BORN_IN_MTIME     = mtimeDate('src/tools/born-in.js');
+const YEAR_EVENTS_MTIME = mtimeDate('src/tools/year-events.js');
+const STATIC_LASTMOD    = '2026-01-01';
 
 for (const tool of tools) {
+  const toolFile = tool.__file || null; // not set; fallback to today for lastmod
   for (const page of tool.pages) {
     const group = [];
     for (const lang of LANGS) {
       const s = page.slugs[lang];
       if (s !== undefined) group.push({ lang, path: s === '' ? '/' : `/${s}/` });
     }
-    if (group.length) urlGroups.push(group);
+    if (!group.length) continue;
+
+    // Categorize
+    let meta;
+    if (page.isHomepage) {
+      meta = { category: 'home', lastmod: sitemapToday, changefreq: 'weekly', priority: '1.0' };
+    } else if (typeof page.id === 'string' && page.id.startsWith('born-in-')) {
+      meta = { category: 'yearpage', lastmod: BORN_IN_MTIME, changefreq: 'monthly', priority: '0.7' };
+    } else if (typeof page.id === 'string' && page.id.startsWith('what-happened-in-')) {
+      meta = { category: 'yearpage', lastmod: YEAR_EVENTS_MTIME, changefreq: 'monthly', priority: '0.7' };
+    } else if (DYNAMIC_TOOL_IDS.has(page.id) || (page.id && DYNAMIC_TOOL_IDS.has(page.id.replace(/-\d+$/, '')))) {
+      meta = { category: 'dynamic', lastmod: sitemapToday, changefreq: 'daily', priority: '0.9' };
+    } else {
+      meta = { category: 'tool', lastmod: sitemapToday, changefreq: 'weekly', priority: '0.8' };
+    }
+    group.meta = meta;
+    urlGroups.push(group);
   }
 }
 for (const cluster of articles) {
+  // Try to find the cluster source file mtime — clusters live in src/articles/
+  const clusterFile = cluster.__sourceFile || null;
+  const articleLastmod = clusterFile ? mtimeDate(clusterFile) : sitemapToday;
   for (const page of cluster.pages) {
     const group = [];
     for (const lang of ARTICLE_LANGS) {
       const s = page.slugs[lang];
       if (s) group.push({ lang, path: `/${s}/` });
     }
-    if (group.length) urlGroups.push(group);
+    if (!group.length) continue;
+    group.meta = { category: 'article', lastmod: articleLastmod, changefreq: 'monthly', priority: '0.6' };
+    urlGroups.push(group);
   }
 }
-urlGroups.push(ABOUT_PAGES.map(p => ({ lang: p.lang, path: `/${p.slug}/` })));
-urlGroups.push(PRIVACY_PAGES.map(p => ({ lang: p.lang, path: `/${p.slug}/` })));
+{
+  const g = ABOUT_PAGES.map(p => ({ lang: p.lang, path: `/${p.slug}/` }));
+  g.meta = { category: 'static', lastmod: STATIC_LASTMOD, changefreq: 'yearly', priority: '0.3' };
+  urlGroups.push(g);
+}
+{
+  const g = PRIVACY_PAGES.map(p => ({ lang: p.lang, path: `/${p.slug}/` }));
+  g.meta = { category: 'static', lastmod: STATIC_LASTMOD, changefreq: 'yearly', priority: '0.3' };
+  urlGroups.push(g);
+}
 // Hub pages (birth-years, year-in-history) — each hub is one group of 10 langs (mutual alternates)
-for (const group of hubs.sitemapGroups()) urlGroups.push(group);
-
-const sitemapToday = new Date().toISOString().split('T')[0];
+for (const group of hubs.sitemapGroups()) {
+  group.meta = { category: 'hub', lastmod: sitemapToday, changefreq: 'monthly', priority: '0.8' };
+  urlGroups.push(group);
+}
 
 function renderSitemapUrl(url, group) {
   const alternates = group.map(u =>
@@ -1884,11 +1947,12 @@ function renderSitemapUrl(url, group) {
   const xDefault = enUrl
     ? `\n    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app${enUrl.path}"/>`
     : '';
+  const m = group.meta || { lastmod: sitemapToday, changefreq: 'monthly', priority: '0.8' };
   return `  <url>
     <loc>https://datecalc.app${url.path}</loc>
-    <lastmod>${sitemapToday}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>${url.path === '/' ? '1.0' : '0.8'}</priority>
+    <lastmod>${m.lastmod}</lastmod>
+    <changefreq>${m.changefreq}</changefreq>
+    <priority>${url.path === '/' ? '1.0' : m.priority}</priority>
 ${alternates}${xDefault}
   </url>`;
 }
