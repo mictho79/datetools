@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>Mi edad — ¿Cuántos días he vivido? | DateCalc.app</title>
+<meta name="description" content="Tu edad en años, meses, días, horas y segundos — y comparte tu tarjeta. Pasa ?dob=AAAA-MM-DD para personalizar.">
+<link rel="canonical" href="https://datecalc.app/es/mi-edad/">
+<link rel="alternate" hreflang="en" href="https://datecalc.app/my-age/">
+<link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/mon-age/">
+<link rel="alternate" hreflang="es" href="https://datecalc.app/es/mi-edad/">
+<link rel="alternate" hreflang="pt" href="https://datecalc.app/pt/minha-idade/">
+<link rel="alternate" hreflang="de" href="https://datecalc.app/de/mein-alter/">
+<link rel="alternate" hreflang="it" href="https://datecalc.app/it/la-mia-eta/">
+<link rel="alternate" hreflang="pl" href="https://datecalc.app/pl/moj-wiek/">
+<link rel="alternate" hreflang="ja" href="https://datecalc.app/ja/watashi-no-nenrei/">
+<link rel="alternate" hreflang="ko" href="https://datecalc.app/ko/nae-nai/">
+<link rel="alternate" hreflang="nl" href="https://datecalc.app/nl/mijn-leeftijd/">
+<link rel="alternate" hreflang="x-default" href="https://datecalc.app/my-age/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mi edad — ¿Cuántos días he vivido? | DateCalc.app">
+<meta property="og:description" content="Tu edad en años, meses, días, horas y segundos — y comparte tu tarjeta. Pasa ?dob=AAAA-MM-DD para personalizar.">
+<meta property="og:url" content="https://datecalc.app/es/mi-edad/">
+<meta property="og:image" content="https://datecalc.app/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mi edad — ¿Cuántos días he vivido? | DateCalc.app">
+<meta name="twitter:description" content="Tu edad en años, meses, días, horas y segundos — y comparte tu tarjeta. Pasa ?dob=AAAA-MM-DD para personalizar.">
+<meta name="twitter:image" content="https://datecalc.app/og.png">
+<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/playfair-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/style.css">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header><div class="masthead"><a href="/es/" class="masthead-brand">DateCalc<span>.</span>app</a></div></header>
+<div class="page">
+<main id="main-content" class="my-age">
+  <p class="kicker">Tarjeta de edad</p>
+  <h1 id="my-age-h1">¿Cuántos días has vivido?</h1>
+
+  <div id="age-card" class="age-card" hidden>
+    <div class="ac-main"><span class="ac-num" id="ac-age">—</span><span class="ac-lbl" id="ac-age-label">años</span></div>
+    <div class="ac-sub"><span class="ac-num" id="ac-days">—</span><span class="ac-lbl" id="ac-days-label">días vividos</span></div>
+    <div class="ac-grid">
+      <div><span class="ac-chip-l" id="ac-zodiac-l">Signo</span><span class="ac-chip-v" id="ac-zodiac-v">—</span></div>
+      <div><span class="ac-chip-l" id="ac-gen-l">Generación</span><span class="ac-chip-v" id="ac-gen-v">—</span></div>
+      <div><span class="ac-chip-l" id="ac-bday-l">Próximo cumpleaños</span><span class="ac-chip-v" id="ac-bday-v">—</span></div>
+    </div>
+    <h2>Comparte tu tarjeta</h2>
+    <div class="share-row">
+      <a id="share-x" href="#" target="_blank" rel="noopener noreferrer">Compartir en X</a>
+      <a id="share-fb" href="#" target="_blank" rel="noopener noreferrer">Compartir en Facebook</a>
+      <a id="share-wa" href="#" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      <button id="share-copy" type="button">Copiar enlace</button>
+    </div>
+    <p class="my-age-cta"><a href="/es/calculadora-edad/">Calcular tu edad →</a></p>
+  </div>
+
+  <div id="no-dob" class="my-age-empty">
+    <p>Abre la calculadora de edad para generar tu propia tarjeta compartible.</p>
+    <p><a href="/es/calculadora-edad/" class="cta-btn">Calcular tu edad →</a></p>
+  </div>
+
+  <div id="invalid-dob" class="my-age-empty" hidden>
+    <p>La fecha en la URL no es válida. Prueba la calculadora de abajo.</p>
+    <p><a href="/es/calculadora-edad/" class="cta-btn">Calcular tu edad →</a></p>
+  </div>
+</main>
+<style>
+.my-age{max-width:680px;margin:2rem auto;padding:0 1.5rem}
+.my-age .kicker{color:var(--muted);text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;margin:0 0 .4rem;font-family:'Space Mono',monospace}
+.my-age h1{font-family:'Playfair Display',serif;font-size:2rem;margin:0 0 1.6rem}
+.age-card{border:1px solid #ddd;border-radius:6px;padding:1.8rem 1.4rem;background:#fafafa}
+.ac-main{display:flex;align-items:baseline;gap:.6rem;margin-bottom:.4rem}
+.ac-num{font-family:'Playfair Display',serif;font-size:3.2rem;line-height:1;color:var(--accent)}
+.ac-lbl{color:#333;font-size:1rem}
+.ac-sub{display:flex;align-items:baseline;gap:.5rem;margin-bottom:1.4rem;font-family:'Space Mono',monospace}
+.ac-sub .ac-num{font-size:1.4rem;color:#111}
+.ac-sub .ac-lbl{font-size:.88rem;color:#666}
+.ac-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin-bottom:1.6rem}
+.ac-grid>div{border:1px solid #e5e5e5;padding:.6rem .7rem;border-radius:3px;background:#fff}
+.ac-chip-l{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:#888;margin-bottom:.2rem}
+.ac-chip-v{display:block;font-family:'Playfair Display',serif;font-size:1.1rem;color:#111}
+.age-card h2{font-family:'Playfair Display',serif;font-size:1.1rem;margin:1.4rem 0 .6rem}
+.share-row{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1.2rem}
+.share-row a,.share-row button{display:inline-block;padding:.5rem .8rem;border:1px solid var(--accent);background:#fff;color:var(--accent);text-decoration:none;font-family:'Space Mono',monospace;font-size:.82rem;cursor:pointer;border-radius:3px}
+.share-row a:hover,.share-row button:hover{background:var(--accent);color:#fff}
+.my-age-cta{margin-top:1rem;font-family:'Space Mono',monospace;font-size:.88rem}
+.my-age-cta a{color:var(--accent)}
+.my-age-empty{margin:1rem 0 3rem;color:#333;line-height:1.6}
+.my-age-empty .cta-btn{display:inline-block;padding:.6rem 1rem;background:var(--accent);color:#fff;text-decoration:none;border-radius:3px;font-family:'Space Mono',monospace;font-size:.88rem;margin-top:.4rem}
+@media(max-width:600px){.ac-grid{grid-template-columns:1fr}.ac-num{font-size:2.5rem}}
+</style>
+<footer style="max-width:680px;margin:2rem auto;padding:0 1.5rem;font-size:.82rem;color:#888">© 2026 DateCalc.app · <a href="/es/" style="color:#888">About</a></footer>
+</div>
+<script>
+(function(){
+  var T = {"youAre":"Tienes","yearsOld":"años","daysLived":"días vividos","zodiac":"Signo","generation":"Generación","nextBirthday":"Próximo cumpleaños","shareX":"Compartir en X","copyLink":"Copiar enlace","copied":"¡Enlace copiado!","invalidDob":"La fecha en la URL no es válida. Prueba la calculadora de abajo."};
+  var tweetTpl = d => `He vivido ${d.days.toLocaleString('es-ES')} días en este planeta 🌍 Calcula los tuyos en datecalc.app/es/mi-edad/`;
+  var params = new URLSearchParams(location.search);
+  var dobRaw = params.get('dob') || '';
+  var m = dobRaw.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  var card = document.getElementById('age-card');
+  var noDob = document.getElementById('no-dob');
+  var invalid = document.getElementById('invalid-dob');
+  if (!m) { card.hidden = true; noDob.hidden = false; return; }
+  var year = +m[1], month = +m[2], day = +m[3];
+  var dob = new Date(year, month - 1, day);
+  if (isNaN(dob.getTime()) || dob.getFullYear() !== year) {
+    card.hidden = true; invalid.hidden = false; return;
+  }
+  var now = new Date();
+  var ageY = now.getFullYear() - year - ((now.getMonth() < month - 1 || (now.getMonth() === month - 1 && now.getDate() < day)) ? 1 : 0);
+  var msPerDay = 86400000;
+  var days = Math.floor((now - dob) / msPerDay);
+  var zodiacs = [
+    ['Capricorn', 1, 19], ['Aquarius', 2, 18], ['Pisces', 3, 20], ['Aries', 4, 19],
+    ['Taurus', 5, 20], ['Gemini', 6, 20], ['Cancer', 7, 22], ['Leo', 8, 22],
+    ['Virgo', 9, 22], ['Libra', 10, 22], ['Scorpio', 11, 21], ['Sagittarius', 12, 21], ['Capricorn', 12, 31]
+  ];
+  var z = 'Capricorn';
+  for (var i = 0; i < zodiacs.length; i++) { if (month < zodiacs[i][1] || (month === zodiacs[i][1] && day <= zodiacs[i][2])) { z = zodiacs[i][0]; break; } }
+  var gens = [
+    [1928, 'Silent'], [1946, 'Baby Boomer'], [1965, 'Gen X'],
+    [1981, 'Millennial'], [1997, 'Gen Z'], [2013, 'Gen Alpha'],
+  ];
+  var gen = 'Gen Alpha';
+  for (var j = 0; j < gens.length; j++) { if (year < gens[j][0]) { gen = j === 0 ? 'Lost' : gens[j-1][1]; break; } if (j === gens.length - 1) gen = gens[j][1]; }
+  var next = new Date(now.getFullYear(), month - 1, day);
+  if (next < now) next.setFullYear(next.getFullYear() + 1);
+  var daysUntilBday = Math.ceil((next - now) / msPerDay);
+  // Populate the DOM
+  document.getElementById('ac-age').textContent = ageY;
+  document.getElementById('ac-age-label').textContent = T.yearsOld;
+  document.getElementById('ac-days').textContent = days.toLocaleString('es-ES');
+  document.getElementById('ac-days-label').textContent = T.daysLived;
+  document.getElementById('ac-zodiac-v').textContent = z;
+  document.getElementById('ac-zodiac-l').textContent = T.zodiac;
+  document.getElementById('ac-gen-v').textContent = gen;
+  document.getElementById('ac-gen-l').textContent = T.generation;
+  document.getElementById('ac-bday-v').textContent = daysUntilBday;
+  document.getElementById('ac-bday-l').textContent = T.nextBirthday;
+  document.title = T.youAre + ' ' + ageY + ' ' + T.yearsOld + ' — DateCalc.app';
+  var desc = document.querySelector('meta[name="description"]');
+  if (desc) desc.content = T.youAre + ' ' + ageY + ' ' + T.yearsOld + ' · ' + days.toLocaleString() + ' ' + T.daysLived + ' · ' + gen;
+  // Share buttons
+  var shareUrl = location.href;
+  var tweet = tweetTpl({ year: year, age: ageY, days: days, gen: gen, zodiac: z });
+  var xBtn = document.getElementById('share-x');
+  if (xBtn) xBtn.href = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(tweet);
+  var fbBtn = document.getElementById('share-fb');
+  if (fbBtn) fbBtn.href = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(shareUrl);
+  var waBtn = document.getElementById('share-wa');
+  if (waBtn) waBtn.href = 'https://wa.me/?text=' + encodeURIComponent(tweet);
+  var copyBtn = document.getElementById('share-copy');
+  if (copyBtn) copyBtn.addEventListener('click', function(e){
+    e.preventDefault();
+    navigator.clipboard && navigator.clipboard.writeText(shareUrl).then(function(){
+      var o = copyBtn.textContent; copyBtn.textContent = T.copied;
+      setTimeout(function(){ copyBtn.textContent = o; }, 2000);
+    });
+  });
+})();</script>
+</body>
+</html>

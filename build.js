@@ -54,6 +54,9 @@ const navHubs = require('./src/tools/nav-hubs');
 // Author pages (/authors/mike/) + article author signature + footer tagline
 const authors = require('./src/tools/authors');
 
+// Shareable age-card page (/my-age/?dob=YYYY-MM-DD)
+const myAge = require('./src/tools/my-age');
+
 // Default dates for Article JSON-LD (datePublished / dateModified).
 // Individual cluster pages can override via data.datePublished / data.dateModified.
 const ARTICLE_DEFAULT_PUBLISHED = '2026-04-01';
@@ -1389,6 +1392,14 @@ for (const lang of LANGS) {
 }
 console.log(`Built ${authorCount} author pages → dist/`);
 
+// ── MY-AGE shareable page (/my-age/?dob=YYYY-MM-DD) ───────
+let myAgeCount = 0;
+for (const lang of LANGS) {
+  writePage(`${myAge.SLUGS[lang]}/index.html`, myAge.renderMyAgeHTML(lang));
+  myAgeCount++;
+}
+console.log(`Built ${myAgeCount} my-age pages → dist/`);
+
 // ── REDIRECTS ─────────────────────────────────────────────
 const REDIRECTS = [
   { from: '/how-old-am-i/*',      to: '/age-calculator/' },
@@ -2094,6 +2105,12 @@ for (const group of navHubs.sitemapGroups()) {
 {
   const g = authors.sitemapGroup();
   g.meta = { category: 'static', lastmod: STATIC_LASTMOD, changefreq: 'yearly', priority: '0.3' };
+  urlGroups.push(g);
+}
+// My-age shareable page — one group of 10 langs
+{
+  const g = myAge.sitemapGroup();
+  g.meta = { category: 'tool', lastmod: sitemapToday, changefreq: 'weekly', priority: '0.7' };
   urlGroups.push(g);
 }
 
