@@ -1264,10 +1264,45 @@ const REDIRECTS = [
   { from: '/es/que-edad-tengo/*', to: '/es/calculadora-edad/' },
 ];
 
-// Cloudflare Pages _redirects file (301)
-const redirectsFile = REDIRECTS.map(r => `${r.from} ${r.to} 301`).join('\n') + '\n';
+// Cloudflare Pages _redirects file (301 rules first, then catch-all 404 LAST)
+const redirectsFile =
+  REDIRECTS.map(r => `${r.from} ${r.to} 301`).join('\n') +
+  '\n' +
+  '/* /404.html 404\n';
 fs.writeFileSync(path.join(DIST, '_redirects'), redirectsFile, 'utf8');
 console.log('  ✓ /_redirects');
+
+// ── 404 PAGE ──────────────────────────────────────────────
+const notFoundHTML = `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, follow">
+<title>Page not found - DateCalc.app</title>
+<link rel="stylesheet" href="/style.css">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="shortcut icon" href="/favicon.svg">
+</head>
+<body>
+<header>
+<div class="masthead">
+  <a href="/" class="masthead-brand">DateCalc<span>.</span>app</a>
+</div>
+</header>
+<div class="page">
+<div class="headline-block">
+  <h1>404 &mdash; Page not found</h1>
+  <p class="article-intro">The page you were looking for doesn&rsquo;t exist or has moved. Try the homepage to find the calculator you need.</p>
+</div>
+<main id="main-content" style="text-align:center;padding:2rem 0">
+  <p><a href="/" class="cta-btn">Go to homepage</a></p>
+</main>
+</div>
+</body>
+</html>`;
+fs.writeFileSync(path.join(DIST, '404.html'), notFoundHTML, 'utf8');
+console.log('  ✓ /404.html');
 
 // ── ROBOTS.TXT ────────────────────────────────────────────
 const robots = `User-agent: *\nAllow: /\nSitemap: https://datecalc.app/sitemap.xml\n`;
