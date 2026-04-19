@@ -889,8 +889,8 @@ ${LANGS.filter(l => l !== lang).map(l => `<meta property="og:locale:alternate" c
 <meta name="twitter:title" content="${title}">
 <meta name="twitter:description" content="${metaDesc}">
 <meta name="twitter:image" content="https://datecalc.app/og.png">
-<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/fonts/playfair-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+${(lang === 'ja' || lang === 'ko') ? '' : `<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/playfair-normal-latin.woff2" as="font" type="font/woff2" crossorigin>`}
 <link rel="stylesheet" href="/style.css">
 <link rel="sitemap" type="application/xml" href="/sitemap.xml">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -1116,8 +1116,8 @@ ${LANGS.filter(l => l !== lang).map(l => `<meta property="og:locale:alternate" c
 <meta name="twitter:title" content="${title}">
 <meta name="twitter:description" content="${metaDesc}">
 <meta name="twitter:image" content="https://datecalc.app/og.png">
-<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/fonts/playfair-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+${(lang === 'ja' || lang === 'ko') ? '' : `<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/playfair-normal-latin.woff2" as="font" type="font/woff2" crossorigin>`}
 <link rel="stylesheet" href="/style.css">
 <link rel="sitemap" type="application/xml" href="/sitemap.xml">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -1628,8 +1628,8 @@ for (const { lang, slug, canonical } of PRIVACY_PAGES) {
 <meta name="description" content="${p.intro.slice(0, 155)}">
 <link rel="canonical" href="${canonical}">
 ${hreflangPrivacy}
-<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/fonts/playfair-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+${(lang === 'ja' || lang === 'ko') ? '' : `<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/playfair-normal-latin.woff2" as="font" type="font/woff2" crossorigin>`}
 <link rel="stylesheet" href="/style.css">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 </head>
@@ -1819,8 +1819,8 @@ for (const { lang, slug, canonical } of ABOUT_PAGES) {
 <meta name="description" content="${p.intro.slice(0, 155)}">
 <link rel="canonical" href="${canonical}">
 ${hreflangAbout}
-<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/fonts/playfair-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+${(lang === 'ja' || lang === 'ko') ? '' : `<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/playfair-normal-latin.woff2" as="font" type="font/woff2" crossorigin>`}
 <link rel="stylesheet" href="/style.css">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 </head>
