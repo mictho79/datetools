@@ -2132,16 +2132,44 @@ ${alternates}${xDefault}
   </url>`;
 }
 
-const sitemapUrlEntries = urlGroups.flatMap(group =>
-  group.map(url => renderSitemapUrl(url, group))
-);
+// Group every URL into its own-language bucket. Each URL still carries the full
+// xhtml:link alternate list (pointing to all languages of the same logical page).
+// Result: 10 per-language sitemap files + 1 sitemap-index. Enables parallel crawling.
+const perLangUrls = Object.fromEntries(LANGS.map(l => [l, []]));
+let totalUrlEntries = 0;
+for (const group of urlGroups) {
+  for (const url of group) {
+    if (perLangUrls[url.lang]) {
+      perLangUrls[url.lang].push(renderSitemapUrl(url, group));
+      totalUrlEntries++;
+    }
+  }
+}
 
-const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+for (const lang of LANGS) {
+  const entries = perLangUrls[lang];
+  if (!entries.length) continue;
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-${sitemapUrlEntries.join('\n')}
+${entries.join('\n')}
 </urlset>`;
-fs.writeFileSync(path.join(DIST, 'sitemap.xml'), sitemap, 'utf8');
-console.log('  ✓ /sitemap.xml');
+  fs.writeFileSync(path.join(DIST, `sitemap-${lang}.xml`), xml, 'utf8');
+  console.log(`  ✓ /sitemap-${lang}.xml (${entries.length} URLs)`);
+}
+
+// sitemap.xml is now the sitemap-index (same URL → no need to re-submit in GSC).
+const indexEntries = LANGS
+  .filter(l => perLangUrls[l].length > 0)
+  .map(l => `  <sitemap>
+    <loc>https://datecalc.app/sitemap-${l}.xml</loc>
+    <lastmod>${sitemapToday}</lastmod>
+  </sitemap>`).join('\n');
+const sitemapIndex = `<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${indexEntries}
+</sitemapindex>`;
+fs.writeFileSync(path.join(DIST, 'sitemap.xml'), sitemapIndex, 'utf8');
+console.log(`  ✓ /sitemap.xml (index → ${LANGS.filter(l => perLangUrls[l].length > 0).length} sub-sitemaps, ${totalUrlEntries} URLs total)`);
 
 // ── HREFLANG VALIDATION ───────────────────────────────────
 require('./scripts/validate-hreflang');
