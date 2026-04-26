@@ -43,6 +43,11 @@ const articles = ARTICLE_CLUSTER_FILES.map(f => {
 });
 
 const LANGS = ['en', 'fr', 'es', 'pt', 'de', 'it', 'pl', 'ja', 'ko', 'nl'];
+// Languages excluded from indexing after the April 2026 HCU-style demotion.
+// Pages still build (so existing links don't 404), but they get noindex,
+// are dropped from the sitemap, and removed from hreflang clusters.
+const NOINDEX_LANGS = new Set(['ja', 'ko', 'nl']);
+const INDEXABLE_LANGS = LANGS.filter(l => !NOINDEX_LANGS.has(l));
 const DIST = path.join(__dirname, 'dist');
 
 // Hub pages (birth-years, year-in-history) — see src/tools/hubs.js
@@ -870,19 +875,10 @@ ${JSON.stringify({
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>${title}</title>
-<meta name="robots" content="index, follow">
+<meta name="robots" content="${NOINDEX_LANGS.has(lang) ? 'noindex, follow' : 'index, follow'}">
 <meta name="description" content="${metaDesc}">
 <link rel="canonical" href="https://datecalc.app${canonical}">
-<link rel="alternate" hreflang="en" href="https://datecalc.app${hreflang.en}">
-<link rel="alternate" hreflang="fr" href="https://datecalc.app${hreflang.fr}">
-<link rel="alternate" hreflang="es" href="https://datecalc.app${hreflang.es}">
-<link rel="alternate" hreflang="pt" href="https://datecalc.app${hreflang.pt}">
-<link rel="alternate" hreflang="de" href="https://datecalc.app${hreflang.de}">
-<link rel="alternate" hreflang="it" href="https://datecalc.app${hreflang.it}">
-<link rel="alternate" hreflang="pl" href="https://datecalc.app${hreflang.pl}">
-<link rel="alternate" hreflang="ja" href="https://datecalc.app${hreflang.ja}">
-<link rel="alternate" hreflang="ko" href="https://datecalc.app${hreflang.ko}">
-<link rel="alternate" hreflang="nl" href="https://datecalc.app${hreflang.nl}">
+${INDEXABLE_LANGS.map(l => `<link rel="alternate" hreflang="${l}" href="https://datecalc.app${hreflang[l]}">`).join('\n')}
 <link rel="alternate" hreflang="x-default" href="https://datecalc.app${hreflang.en}">
 <meta property="og:type" content="website">
 <meta property="og:title" content="${title}">
@@ -1099,19 +1095,10 @@ ${JSON.stringify({
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>${title}</title>
-<meta name="robots" content="index, follow">
+<meta name="robots" content="${NOINDEX_LANGS.has(lang) ? 'noindex, follow' : 'index, follow'}">
 <meta name="description" content="${metaDesc}">
 <link rel="canonical" href="https://datecalc.app${canonical}">
-<link rel="alternate" hreflang="en" href="https://datecalc.app${hreflang.en}">
-<link rel="alternate" hreflang="fr" href="https://datecalc.app${hreflang.fr}">
-<link rel="alternate" hreflang="es" href="https://datecalc.app${hreflang.es}">
-<link rel="alternate" hreflang="pt" href="https://datecalc.app${hreflang.pt}">
-<link rel="alternate" hreflang="de" href="https://datecalc.app${hreflang.de}">
-<link rel="alternate" hreflang="it" href="https://datecalc.app${hreflang.it}">
-<link rel="alternate" hreflang="pl" href="https://datecalc.app${hreflang.pl}">
-<link rel="alternate" hreflang="ja" href="https://datecalc.app${hreflang.ja}">
-<link rel="alternate" hreflang="ko" href="https://datecalc.app${hreflang.ko}">
-<link rel="alternate" hreflang="nl" href="https://datecalc.app${hreflang.nl}">
+${INDEXABLE_LANGS.map(l => `<link rel="alternate" hreflang="${l}" href="https://datecalc.app${hreflang[l]}">`).join('\n')}
 <link rel="alternate" hreflang="x-default" href="https://datecalc.app${hreflang.en}">
 <meta property="og:type" content="article">
 <meta property="og:title" content="${title}">
@@ -1730,18 +1717,21 @@ const PRIVACY_CONTENT = {
     ],
   },
 };
+const PRIVACY_HREFLANG_HREF = {
+  en: 'https://datecalc.app/privacy/',
+  fr: 'https://datecalc.app/fr/confidentialite/',
+  es: 'https://datecalc.app/es/privacidad/',
+  pt: 'https://datecalc.app/pt/privacidade/',
+  de: 'https://datecalc.app/de/datenschutz/',
+  it: 'https://datecalc.app/it/privacy/',
+  pl: 'https://datecalc.app/pl/prywatnosc/',
+  ja: 'https://datecalc.app/ja/privacy/',
+  ko: 'https://datecalc.app/ko/privacy/',
+  nl: 'https://datecalc.app/nl/privacy/',
+};
 const hreflangPrivacy = [
-  '<link rel="alternate" hreflang="en" href="https://datecalc.app/privacy/">',
-  '<link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/confidentialite/">',
-  '<link rel="alternate" hreflang="es" href="https://datecalc.app/es/privacidad/">',
-  '<link rel="alternate" hreflang="pt" href="https://datecalc.app/pt/privacidade/">',
-  '<link rel="alternate" hreflang="de" href="https://datecalc.app/de/datenschutz/">',
-  '<link rel="alternate" hreflang="it" href="https://datecalc.app/it/privacy/">',
-  '<link rel="alternate" hreflang="pl" href="https://datecalc.app/pl/prywatnosc/">',
-  '<link rel="alternate" hreflang="ja" href="https://datecalc.app/ja/privacy/">',
-  '<link rel="alternate" hreflang="ko" href="https://datecalc.app/ko/privacy/">',
-  '<link rel="alternate" hreflang="nl" href="https://datecalc.app/nl/privacy/">',
-  '<link rel="alternate" hreflang="x-default" href="https://datecalc.app/privacy/">',
+  ...INDEXABLE_LANGS.map(l => `<link rel="alternate" hreflang="${l}" href="${PRIVACY_HREFLANG_HREF[l]}">`),
+  `<link rel="alternate" hreflang="x-default" href="${PRIVACY_HREFLANG_HREF.en}">`,
 ].join('\n');
 
 for (const { lang, slug, canonical } of PRIVACY_PAGES) {
@@ -1755,7 +1745,7 @@ for (const { lang, slug, canonical } of PRIVACY_PAGES) {
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="${NOINDEX_LANGS.has(lang) ? 'noindex, follow' : 'index, follow'}">
 <title>${p.title}</title>
 <meta name="description" content="${p.intro.slice(0, 155)}">
 <link rel="canonical" href="${canonical}">
@@ -1933,18 +1923,21 @@ const ABOUT_CONTENT = {
   },
 };
 
+const ABOUT_HREFLANG_HREF = {
+  en: 'https://datecalc.app/about/',
+  fr: 'https://datecalc.app/fr/a-propos/',
+  es: 'https://datecalc.app/es/acerca-de/',
+  pt: 'https://datecalc.app/pt/sobre/',
+  de: 'https://datecalc.app/de/ueber-uns/',
+  it: 'https://datecalc.app/it/chi-siamo/',
+  pl: 'https://datecalc.app/pl/o-nas/',
+  ja: 'https://datecalc.app/ja/about/',
+  ko: 'https://datecalc.app/ko/about/',
+  nl: 'https://datecalc.app/nl/over-ons/',
+};
 const hreflangAbout = [
-  '<link rel="alternate" hreflang="en" href="https://datecalc.app/about/">',
-  '<link rel="alternate" hreflang="fr" href="https://datecalc.app/fr/a-propos/">',
-  '<link rel="alternate" hreflang="es" href="https://datecalc.app/es/acerca-de/">',
-  '<link rel="alternate" hreflang="pt" href="https://datecalc.app/pt/sobre/">',
-  '<link rel="alternate" hreflang="de" href="https://datecalc.app/de/ueber-uns/">',
-  '<link rel="alternate" hreflang="it" href="https://datecalc.app/it/chi-siamo/">',
-  '<link rel="alternate" hreflang="pl" href="https://datecalc.app/pl/o-nas/">',
-  '<link rel="alternate" hreflang="ja" href="https://datecalc.app/ja/about/">',
-  '<link rel="alternate" hreflang="ko" href="https://datecalc.app/ko/about/">',
-  '<link rel="alternate" hreflang="nl" href="https://datecalc.app/nl/over-ons/">',
-  '<link rel="alternate" hreflang="x-default" href="https://datecalc.app/about/">',
+  ...INDEXABLE_LANGS.map(l => `<link rel="alternate" hreflang="${l}" href="${ABOUT_HREFLANG_HREF[l]}">`),
+  `<link rel="alternate" hreflang="x-default" href="${ABOUT_HREFLANG_HREF.en}">`,
 ].join('\n');
 
 for (const { lang, slug, canonical } of ABOUT_PAGES) {
@@ -1958,7 +1951,7 @@ for (const { lang, slug, canonical } of ABOUT_PAGES) {
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="${NOINDEX_LANGS.has(lang) ? 'noindex, follow' : 'index, follow'}">
 <title>${p.title}</title>
 <meta name="description" content="${p.intro.slice(0, 155)}">
 <link rel="canonical" href="${canonical}">
@@ -2115,9 +2108,11 @@ for (const group of navHubs.sitemapGroups()) {
 }
 
 function renderSitemapUrl(url, group) {
-  const alternates = group.map(u =>
-    `    <xhtml:link rel="alternate" hreflang="${u.lang}" href="https://datecalc.app${u.path}"/>`
-  ).join('\n');
+  const alternates = group
+    .filter(u => !NOINDEX_LANGS.has(u.lang))
+    .map(u =>
+      `    <xhtml:link rel="alternate" hreflang="${u.lang}" href="https://datecalc.app${u.path}"/>`
+    ).join('\n');
   const enUrl = group.find(u => u.lang === 'en');
   const xDefault = enUrl
     ? `\n    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app${enUrl.path}"/>`
@@ -2139,10 +2134,21 @@ const perLangUrls = Object.fromEntries(LANGS.map(l => [l, []]));
 let totalUrlEntries = 0;
 for (const group of urlGroups) {
   for (const url of group) {
+    if (NOINDEX_LANGS.has(url.lang)) continue;
     if (perLangUrls[url.lang]) {
       perLangUrls[url.lang].push(renderSitemapUrl(url, group));
       totalUrlEntries++;
     }
+  }
+}
+
+// Drop stale per-language sitemaps for noindex languages so the deploy doesn't
+// keep serving an old sitemap-ja.xml etc. that still lists indexable URLs.
+for (const lang of NOINDEX_LANGS) {
+  const stalePath = path.join(DIST, `sitemap-${lang}.xml`);
+  if (fs.existsSync(stalePath)) {
+    fs.unlinkSync(stalePath);
+    console.log(`  ✗ removed /sitemap-${lang}.xml (lang is noindex)`);
   }
 }
 
