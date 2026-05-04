@@ -1,5 +1,200 @@
 {
-  "_doc": "Per-year enriched ES content for /es/nacido-en-YYYY/ pages. Only verifiable facts. Add new years here to extend Phase B. Leave 'personalities' empty if you don't want to fabricate — section won't render.",
+  "_doc": "Per-year enriched ES content for /es/nacido-en-YYYY/ pages. Only verifiable facts. Add new years here to extend further; missing years fall back to the templated page. The 'personalities' key is intentionally omitted to avoid fabricated dates of birth — add it later (key: 'personalities', list of {name, role}) and the template will render it.",
+
+  "1960": {
+    "events": [
+      "El <strong>21 de abril</strong>, Brasil inauguró su nueva capital, Brasilia, diseñada por Oscar Niemeyer y Lúcio Costa — gesto urbanístico sin precedentes en América Latina.",
+      "El 8 de noviembre, <em>John F. Kennedy</em> ganó las elecciones presidenciales de Estados Unidos, inaugurando la era de la 'Nueva Frontera'.",
+      "Se celebraron los Juegos Olímpicos de Roma (25 de agosto - 11 de septiembre); la maratón fue ganada descalzo por el etíope Abebe Bikila.",
+      "España continuaba bajo el régimen de Franco, en plena fase del Plan de Estabilización (1959) que sentaría las bases del 'milagro económico' de los 60.",
+      "Francia detonó su primera bomba atómica el 13 de febrero en el Sáhara argelino, convirtiéndose en la cuarta potencia nuclear.",
+      "Alfred Hitchcock estrenó <em>Psicosis</em>, redefiniendo para siempre el cine de suspense."
+    ],
+    "lifeStage": "A los 66 años en 2026, eres <strong>Baby Boomer</strong> de pleno derecho. En España, te encuentras en la edad típica de jubilación (65-67 según cotización). Viviste tu infancia bajo el franquismo, tu adolescencia entre la Transición y la Movida, tu vida adulta en la entrada y consolidación europea, y has visto el paso completo de la peseta al euro y de la radio al smartphone.",
+    "decade": "Los años 60 españoles fueron la década del <em>desarrollismo</em>: turismo masivo costero, emigración a Alemania y Francia, primer Seat 600. En el resto del mundo, fue la década de la conquista espacial, los Beatles, Vietnam, Mayo del 68 y los movimientos por los derechos civiles."
+  },
+
+  "1965": {
+    "events": [
+      "El <strong>2 de marzo</strong>, comenzó oficialmente la Operación Rolling Thunder, intensificando la guerra de Vietnam — conflicto que marcaría toda la segunda mitad de los años 60.",
+      "El 8 de marzo, los Marines estadounidenses desembarcaron en Da Nang, primer despliegue terrestre de combate en Vietnam.",
+      "España firmó el primer convenio de colaboración con Estados Unidos sobre las bases militares (Torrejón, Rota, Zaragoza, Morón).",
+      "The Beatles publicaron los álbumes <em>Help!</em> (agosto) y <em>Rubber Soul</em> (diciembre), redefiniendo el pop-rock.",
+      "El 15 de septiembre, comenzó la Segunda Guerra Indo-Pakistaní por Cachemira (duraría hasta enero de 1966).",
+      "Robert Moog presentó el primer sintetizador comercial; nació la electrónica moderna en la música."
+    ],
+    "lifeStage": "A los 61 años en 2026, eres <strong>Baby Boomer</strong> en la antesala de la jubilación. Te formaste en plena Transición democrática española (1975-1982), llegaste al mercado laboral en los 80 con la modernización europea, viviste la consolidación de tu carrera con la entrada en la UE, el euro y la digitalización progresiva del trabajo.",
+    "decade": "Los años 60 españoles vieron el final del aislamiento internacional, la apertura al turismo y la emigración. Globalmente fueron la década de la contracultura, el rock, los movimientos juveniles, la llegada del hombre a la Luna y los grandes sueños emancipadores."
+  },
+
+  "1970": {
+    "events": [
+      "Del <strong>31 de mayo al 21 de junio</strong>, la Copa Mundial de Fútbol en México — Brasil ganó su tercer título con Pelé, Tostão y Jairzinho, considerada por muchos la mejor selección de la historia.",
+      "El <strong>3 de noviembre</strong>, el socialista <em>Salvador Allende</em> tomó posesión como presidente de Chile, primera vez que un marxista llegaba al poder por elecciones democráticas en América Latina.",
+      "El 11 de abril partió la misión <em>Apolo 13</em>; tras una explosión, el regreso milagroso de los astronautas (17 abril) se convirtió en epopeya espacial.",
+      "El 22 de abril se celebró el primer <em>Día de la Tierra</em>, marcando el nacimiento del movimiento ecologista moderno.",
+      "Los Beatles anunciaron su separación oficial el 10 de abril, fin de la era pop sesentera.",
+      "España: Franco aún en el poder; el régimen entraba en su última fase con la Ley General de Educación (agosto)."
+    ],
+    "lifeStage": "A los 56 años en 2026, eres <strong>Generación X</strong> (la primera cohorte). Naciste cuando el franquismo daba sus últimos coletazos, creciste durante la Transición, te formaste profesionalmente en la España de la apertura europea. Has vivido todas las grandes transformaciones tecnológicas: del fax al e-mail, del Walkman al streaming, del PC familiar al smartphone.",
+    "decade": "Los 70 fueron una década bisagra: crisis del petróleo (1973), final del franquismo (1975) e inicio de la Transición española, dictaduras y golpes en el Cono Sur (Pinochet, Videla), nacimiento del punk, Watergate y dimisión de Nixon. En España, fue la década de la Constitución (1978) y del primer paso hacia la democracia."
+  },
+
+  "1975": {
+    "events": [
+      "El <strong>20 de noviembre</strong>, falleció <em>Francisco Franco</em> tras 36 años de dictadura — punto de inflexión absoluto en la historia contemporánea de España e inicio de la Transición democrática.",
+      "El <strong>22 de noviembre</strong>, <em>Juan Carlos I</em> juró como Rey de España ante las Cortes franquistas, dos días después de la muerte de Franco.",
+      "El 30 de abril cayó Saigón en manos del Vietnam del Norte, fin de la Guerra de Vietnam tras 20 años de conflicto.",
+      "El 4 de abril, Bill Gates y Paul Allen fundaron <em>Microsoft</em> en Albuquerque, Nuevo México.",
+      "Steven Spielberg estrenó <em>Tiburón</em> el 20 de junio, primer 'blockbuster' de verano de la historia del cine.",
+      "Pol Pot y los Jemeres Rojos tomaron Phnom Penh el 17 de abril, iniciando el genocidio camboyano."
+    ],
+    "lifeStage": "A los 51 años en 2026, eres <strong>Generación X</strong> en plenitud profesional. Has acompañado la trayectoria democrática española desde tus primeros recuerdos hasta hoy. Probablemente combinas un trabajo consolidado con responsabilidades familiares; en España, la edad media de tener el primer hijo se ha desplazado, así que muchos a tu edad estáis criando adolescentes o jóvenes adultos.",
+    "decade": "Los años 70 españoles son los más densos del siglo XX: Carrero Blanco asesinado (1973), muerte de Franco (1975), legalización de los partidos (1977), Constitución de 1978, primeras elecciones democráticas. Internacionalmente, fue la década del shock petrolero, la guerra fría tardía, la disco music y el nacimiento del punk."
+  },
+
+  "1985": {
+    "events": [
+      "El <strong>12 de junio</strong>, España firmó el Tratado de Adhesión a las Comunidades Europeas en el Palacio Real de Madrid — efectivo el 1 de enero de 1986, momento fundacional de la España moderna.",
+      "El <strong>11 de marzo</strong>, <em>Mijail Gorbachov</em> llegó al poder en la URSS, dando inicio a la <em>Perestroika</em> y la <em>Glasnost</em>.",
+      "El <strong>19 de septiembre</strong>, un terremoto de 8,1 grados devastó Ciudad de México, causando más de 9 500 muertos y marcando profundamente a la sociedad mexicana.",
+      "El 13 de julio se celebraron los conciertos benéficos <em>Live Aid</em> entre Londres y Filadelfia, vistos por 1 900 millones de personas.",
+      "Microsoft lanzó <em>Windows 1.0</em> el 20 de noviembre, primer sistema operativo gráfico de masas.",
+      "Robert Zemeckis estrenó <em>Regreso al Futuro</em> el 3 de julio, película icónica de la generación."
+    ],
+    "lifeStage": "A los 41 años en 2026, eres <strong>millennial mayor</strong>. Creciste en la España que entraba en Europa, recuerdas los Juegos de Barcelona 92 desde la infancia, y entraste en la edad adulta justo cuando llegaba el euro y la banda ancha. Has vivido las crisis económicas de 2008 y 2012 en tus primeros años laborales — generación marcada por la precariedad relativa y el retraso en la emancipación.",
+    "decade": "Los años 80 españoles fueron la <em>Movida</em>, los Felipe-años socialistas, el ingreso en la OTAN y la CEE. Globalmente: Reagan-Thatcher, fin de la Guerra Fría, Chernóbil (1986), MTV y los grandes éxitos pop, primeros ordenadores domésticos."
+  },
+
+  "1988": {
+    "events": [
+      "Del <strong>17 de septiembre al 2 de octubre</strong>, los Juegos Olímpicos de Seúl — Ben Johnson dio positivo tras ganar los 100 metros, escándalo que cambió la lucha antidopaje.",
+      "El <strong>15 de mayo</strong>, la Unión Soviética inició su retirada de Afganistán tras casi una década de guerra (concluyó en febrero de 1989).",
+      "El 20 de agosto terminó la Guerra Irán-Irak tras ocho años, casi un millón de muertos.",
+      "El <strong>21 de diciembre</strong>, atentado de Lockerbie: el vuelo 103 de Pan Am explotó sobre Escocia, 270 muertos.",
+      "España: Felipe González gobernaba con segunda mayoría absoluta del PSOE; el 14 de diciembre se celebró la <em>huelga general 14-D</em>, paro masivo histórico.",
+      "Salman Rushdie publicó <em>Los versos satánicos</em>, novela que provocaría una fatwa de Jomeini en 1989."
+    ],
+    "lifeStage": "A los 38 años en 2026, eres <strong>millennial</strong> de pleno derecho. Estás en una etapa de consolidación profesional y personal — muchos de tu generación están comprando vivienda con dificultad, criando hijos pequeños, o aún en proyectos de emancipación. Conociste el cambio del Nokia al iPhone como adolescente, y ya eras adulto cuando llegaron las redes sociales modernas.",
+    "decade": "Los 80 fueron una década de transformación radical para España: democracia consolidada, modernización económica, integración europea (1986). En el mundo: caída del Muro de Berlín al final (1989), boom tecnológico (PC personales), MTV y videoclips, fin de la Guerra Fría."
+  },
+
+  "1990": {
+    "events": [
+      "El <strong>11 de febrero</strong>, <em>Nelson Mandela</em> fue liberado tras 27 años de prisión en Sudáfrica — momento histórico contra el apartheid.",
+      "El <strong>3 de octubre</strong>, Alemania se reunificó oficialmente, marcando el fin simbólico de la Guerra Fría tras la caída del Muro de Berlín en 1989.",
+      "Del <strong>8 de junio al 8 de julio</strong>, la Copa Mundial de Fútbol en Italia — España fue eliminada en octavos por Yugoslavia; Alemania Occidental ganó.",
+      "El <strong>2 de agosto</strong>, Irak invadió Kuwait, desencadenando la Guerra del Golfo (operación Tormenta del Desierto en enero de 1991).",
+      "<em>Tim Berners-Lee</em> escribió la primera propuesta de la <strong>World Wide Web</strong> en el CERN — diciembre de 1990.",
+      "El telescopio espacial <em>Hubble</em> fue lanzado el 24 de abril, abriendo una nueva era de la astronomía."
+    ],
+    "lifeStage": "A los 36 años en 2026, eres <strong>millennial</strong> en plena edad activa. Tu cohorte fue la primera en vivir internet desde la adolescencia, los smartphones desde la veintena, y la pandemia, la inflación y la crisis climática como adultos jóvenes. En España, tu generación se enfrenta al desafío del acceso a la vivienda y al retraso del proyecto de vida adulto comparado con tus padres.",
+    "decade": "Los años 90 fueron la 'década de la prosperidad' occidental: caída del comunismo (1991), Pacto de Maastricht (1992), boom tecnológico, primer auge de internet. En España: Juegos de Barcelona 92, Expo de Sevilla, llegada del AVE, victorias del PP de Aznar (1996, 2000)."
+  },
+
+  "1995": {
+    "events": [
+      "El <strong>1 de enero</strong>, entró en vigor la <em>Organización Mundial del Comercio</em> (OMC), reemplazando al GATT — pilar de la globalización moderna.",
+      "El <strong>4 de noviembre</strong>, el primer ministro israelí <em>Yitzhak Rabin</em> fue asesinado en Tel Aviv tras un acto por la paz.",
+      "El <strong>22 de noviembre</strong>, Pixar estrenó <em>Toy Story</em>, primera película de cine totalmente generada por ordenador.",
+      "Microsoft lanzó <em>Windows 95</em> el 24 de agosto — uno de los lanzamientos de software más mediáticos de la historia.",
+      "El <strong>19 de abril</strong>, atentado de Oklahoma City: 168 muertos, mayor ataque terrorista en suelo estadounidense hasta entonces.",
+      "España: continuaba el último gobierno de Felipe González, marcado por los casos GAL y Roldán; el PP de Aznar ganaría las elecciones del año siguiente."
+    ],
+    "lifeStage": "A los 31 años en 2026, eres <strong>millennial</strong> en su etapa de consolidación. Internet, las redes sociales y los smartphones han sido parte de tu vida desde la infancia o adolescencia. Probablemente combinas un trabajo activo con la búsqueda (o consolidación) de un proyecto vital — pareja, vivienda, hijos —, en una España donde la edad media para el primer hijo supera ya los 32 años.",
+    "decade": "Los 90 fueron la década de la globalización, el final de la Guerra Fría y el primer auge de internet. En España, fue la década de la consolidación democrática y europea, los Juegos de Barcelona 92, y la última fase del 'felipismo' culminada con la victoria del PP en 1996."
+  },
+
+  "2000": {
+    "events": [
+      "El <strong>1 de enero</strong>, el mundo cruzó el 'efecto 2000' (Y2K) sin los apocalipsis informáticos temidos — primer gran simulacro de fragilidad digital colectiva.",
+      "Del <strong>15 de septiembre al 1 de octubre</strong>, los Juegos Olímpicos de Sídney — primer JJOO del nuevo milenio; Australia se convirtió en el centro deportivo del planeta.",
+      "El <strong>7 de noviembre</strong>, las elecciones presidenciales estadounidenses entre George W. Bush y Al Gore terminaron en una crisis judicial sin precedentes; la Corte Suprema decidió a favor de Bush en diciembre.",
+      "<em>Vladimir Putin</em> fue elegido presidente de Rusia el 26 de marzo, iniciando una era que sigue condicionando la política mundial.",
+      "España: el <strong>12 de marzo</strong>, José María Aznar (PP) ganó las elecciones generales con mayoría absoluta.",
+      "Ridley Scott estrenó <em>Gladiator</em> el 5 de mayo, ganadora de cinco Oscar incluyendo Mejor Película."
+    ],
+    "lifeStage": "A los 26 años en 2026, eres <strong>Generación Z</strong> de pleno derecho — naciste en el cambio de milenio. Eres nativa o nativo digital — Facebook, YouTube e Instagram han sido siempre parte de tu paisaje. Estás en los primeros pasos sólidos de la vida laboral, en una España donde la edad media para emanciparse supera los 30 años; tu generación está reconfigurando lo que significa 'vida adulta'.",
+    "decade": "Los 2000 fueron la década post-11-S, el auge global de internet, las primeras redes sociales modernas (MySpace 2003, Facebook 2004 en universidades, 2006 abierto), YouTube (2005), iPhone (2007). En España: gobiernos de Aznar, atentados del 11-M (2004), llegada del PSOE de Zapatero, burbuja inmobiliaria y comienzo de la crisis."
+  },
+
+  "2005": {
+    "events": [
+      "El <strong>2 de abril</strong>, falleció el papa <em>Juan Pablo II</em> tras 26 años de pontificado; el <strong>19 de abril</strong>, Joseph Ratzinger fue elegido como Benedicto XVI.",
+      "El <strong>30 de junio</strong>, España aprobó la <strong>Ley del Matrimonio Igualitario</strong>, tercer país del mundo en legalizarlo (tras Países Bajos y Bélgica).",
+      "El <strong>14 de febrero</strong>, Steve Chen, Chad Hurley y Jawed Karim registraron <em>YouTube</em>; el primer video se subió el 23 de abril.",
+      "Del <strong>23 al 30 de agosto</strong>, el huracán <em>Katrina</em> devastó Nueva Orleans y la costa del Golfo, causando más de 1 800 muertos.",
+      "El <strong>7 de julio</strong>, atentados terroristas en el metro y bus de Londres causaron 56 muertos; respuesta directa al 11-M de Madrid (2004).",
+      "Mike Newell estrenó <em>Harry Potter y el cáliz de fuego</em>, cuarta entrega de la saga, fenómeno cultural global."
+    ],
+    "lifeStage": "A los 21 años en 2026, perteneces a la <strong>Generación Z</strong> y estás probablemente en plena formación universitaria o iniciando tu vida laboral. Eres nativo digital total — Instagram, TikTok, smartphones y plataformas de streaming han sido parte de tu vida desde siempre. La pandemia y la IA generativa han marcado tu entrada en la edad adulta.",
+    "decade": "Los 2000 fueron la década de la consolidación digital, el auge inmobiliario y, hacia el final, la crisis financiera global de 2008. En España: el atentado del 11-M, la legalización del matrimonio igualitario, la entrada del Estatuto catalán en debate, y el final de la 'belle époque' económica."
+  },
+
+  "2008": {
+    "events": [
+      "El <strong>15 de septiembre</strong>, la quiebra de <em>Lehman Brothers</em> desencadenó la <strong>crisis financiera global</strong> — punto de inflexión económico de toda una generación.",
+      "Del <strong>8 al 24 de agosto</strong>, los Juegos Olímpicos de Pekín — España logró 18 medallas; el equipo de baloncesto ganó la plata enfrentándose al <em>Dream Team</em> de Estados Unidos.",
+      "Del <strong>7 al 29 de junio</strong>, la <strong>Eurocopa 2008</strong> en Austria y Suiza — España ganó su primer gran título en 44 años (desde la Eurocopa de 1964), iniciando la era dorada del fútbol español.",
+      "El <strong>4 de noviembre</strong>, <em>Barack Obama</em> fue elegido primer presidente afroamericano de Estados Unidos.",
+      "Apple lanzó el <em>iPhone 3G</em> el 11 de julio, primer iPhone con App Store — momento fundacional de la economía móvil moderna.",
+      "España: el segundo gobierno de Zapatero comenzó a enfrentar la crisis económica con planes de estímulo (Plan E)."
+    ],
+    "lifeStage": "A los 18 años en 2026, has alcanzado la <strong>mayoría de edad legal</strong> en España y la mayoría de países hispanohablantes. Estás en la transición típica al Bachillerato o la universidad. Naciste en plena crisis económica, has crecido con TikTok, te ha tocado vivir la pandemia en la pubertad, y la IA generativa forma parte natural de tu vida estudiantil.",
+    "decade": "Los 2000 culminaron con la crisis financiera de 2008, marcador histórico que reordenó toda una década de auge económico. En España, fue el final de la 'fiesta inmobiliaria' y el inicio de una década difícil con paro juvenil masivo, recortes y el 15-M de 2011."
+  },
+
+  "2010": {
+    "events": [
+      "Del <strong>11 de junio al 11 de julio</strong>, la Copa Mundial de Fútbol en Sudáfrica — <em>España ganó su primer Mundial</em> con el gol de Iniesta en la prórroga ante Países Bajos (1-0).",
+      "El <strong>12 de enero</strong>, un terremoto de 7,0 grados devastó Haití, causando más de 200 000 muertos.",
+      "Del <strong>5 de agosto al 13 de octubre</strong>, los <strong>33 mineros chilenos</strong> permanecieron atrapados a 700 metros de profundidad en Copiapó; su rescate televisado fue seguido por más de mil millones de personas.",
+      "El <strong>6 de octubre</strong>, Kevin Systrom y Mike Krieger lanzaron <em>Instagram</em>, que cambiaría la fotografía social y el marketing digital.",
+      "El <strong>27 de enero</strong>, Apple presentó el primer <em>iPad</em>, inaugurando la categoría de los tablets modernos.",
+      "España: el gobierno de Zapatero anunció en mayo el primer gran paquete de recortes para hacer frente a la crisis de la deuda."
+    ],
+    "lifeStage": "A los 16 años en 2026, perteneces a la <strong>Generación Alpha</strong> según la mayoría de demógrafos (el corte habitual se sitúa precisamente en 2010). Estás cursando 4º de la ESO o 1º de Bachillerato en España, secundaria en México o Argentina. Has crecido sin conocer un mundo previo a las redes sociales, y la IA conversacional ha estado disponible desde tu infancia tardía.",
+    "decade": "Los 2010 fueron la década del smartphone, las redes sociales, el streaming, la cuarta revolución industrial y el cambio climático como tema político central. En España, fueron los años del 15-M (2011), el rescate bancario (2012), la abdicación del rey Juan Carlos (2014), Podemos y el fin del bipartidismo, y el procés catalán."
+  },
+
+  "2015": {
+    "events": [
+      "El <strong>7 de enero</strong>, el atentado contra la redacción de <em>Charlie Hebdo</em> en París causó 12 muertos.",
+      "El <strong>13 de noviembre</strong>, los <strong>atentados de París</strong> (Bataclan, Stade de France, terrazas) causaron 130 muertos; mayor atentado en suelo francés desde la Segunda Guerra Mundial.",
+      "España: el <strong>20 de diciembre</strong>, las elecciones generales acabaron con el bipartidismo PP-PSOE; <em>Podemos</em> y <em>Ciudadanos</em> entraron con fuerza en el Congreso.",
+      "Del <strong>30 de noviembre al 12 de diciembre</strong>, la <em>Conferencia COP21</em> de París adoptó el Acuerdo del Clima, primer pacto vinculante global sobre el calentamiento.",
+      "El <strong>17 de diciembre</strong>, J.J. Abrams estrenó <em>Star Wars: El despertar de la fuerza</em>, retorno comercial de la saga.",
+      "Microsoft lanzó <em>Windows 10</em> el 29 de julio."
+    ],
+    "lifeStage": "A los 11 años en 2026, eres <strong>Generación Alpha</strong> sin discusión. Cursas 6º de Primaria o 1º de la ESO en España, primaria-secundaria en México y Argentina. Eres parte de la primera generación que ha tenido la IA conversacional disponible desde la infancia, y para quien el smartphone, las videollamadas y los videojuegos online son tan básicos como lo fue la televisión para tus abuelos.",
+    "decade": "Los 2010 marcaron la maduración del internet móvil, la consolidación de las plataformas digitales como medios de comunicación dominantes, y la consciencia climática global. En España fueron los años del cambio político, la salida progresiva de la crisis económica, y el debate constitucional reabierto por el procés."
+  },
+
+  "2020": {
+    "events": [
+      "El <strong>11 de marzo</strong>, la Organización Mundial de la Salud declaró pandemia mundial por <strong>COVID-19</strong>; el <strong>14 de marzo</strong>, España decretó el estado de alarma con uno de los confinamientos más estrictos de Europa.",
+      "El <strong>31 de enero</strong>, el Reino Unido salió oficialmente de la Unión Europea (<em>Brexit</em>) tras casi cuatro años de negociación.",
+      "El <strong>25 de mayo</strong>, la muerte de <em>George Floyd</em> en Mineápolis desencadenó protestas globales del movimiento Black Lives Matter.",
+      "El <strong>3 de noviembre</strong>, <em>Joe Biden</em> ganó las elecciones presidenciales estadounidenses ante Donald Trump; el 6 de enero de 2021 hubo asalto al Capitolio.",
+      "Los Juegos Olímpicos de Tokio fueron <strong>aplazados</strong> al verano de 2021, primera vez desde la Segunda Guerra Mundial que se posponía un JJOO.",
+      "Aparecieron y se distribuyeron las primeras <strong>vacunas COVID</strong> a finales de año (Pfizer-BioNTech aprobada el 11 de diciembre)."
+    ],
+    "lifeStage": "A los 6 años en 2026, naciste justo al inicio de la pandemia. Estás cursando 1º de Primaria en España, primer ciclo de primaria en México o Argentina. Eres parte de una <strong>cohorte muy específica</strong>: los 'COVID babies', cuya primera infancia transcurrió en parte bajo confinamientos, mascarillas y distanciamiento social — efectos a largo plazo aún en estudio sociológico y educativo.",
+    "decade": "Los 2020 son hasta ahora la década de la pandemia (2020-2022), la guerra de Ucrania (desde febrero de 2022), el auge de la inteligencia artificial generativa (ChatGPT noviembre 2022), la inflación post-COVID, y la consolidación del trabajo remoto como modelo laboral mixto."
+  },
+
+  "2024": {
+    "events": [
+      "El <strong>5 de noviembre</strong>, <em>Donald Trump</em> ganó las elecciones presidenciales estadounidenses ante Kamala Harris, regreso histórico tras los cuatro años de Biden.",
+      "Del <strong>26 de julio al 11 de agosto</strong>, los Juegos Olímpicos de París — España logró 18 medallas; ceremonia de apertura en el Sena.",
+      "El <strong>1 de junio</strong>, <em>Claudia Sheinbaum</em> ganó las elecciones presidenciales de México, primera mujer presidenta del país.",
+      "El <strong>9 de junio</strong>, las elecciones europeas reordenaron el Parlamento Europeo, con avance de la extrema derecha en varios países.",
+      "<em>OpenAI</em> lanzó GPT-4o (mayo) y nuevos modelos de razonamiento; Anthropic publicó Claude 3.5 Sonnet (junio) y Claude 3.5 Sonnet (octubre): año clave en la consolidación de la IA generativa.",
+      "España: el gobierno de Pedro Sánchez (PSOE-Sumar) continuó con la legislatura iniciada tras las generales de julio de 2023."
+    ],
+    "lifeStage": "A los 2 años en 2026, naciste en plena consolidación de la IA generativa y de un nuevo orden geopolítico. Estás en la etapa preescolar en España (Primer Ciclo de Educación Infantil), guardería o jardín de infancia en México y Argentina. Eres parte de la cohorte más reciente de la <strong>Generación Alpha</strong>; algunos demógrafos comienzan ya a hablar de Generación Beta para los nacidos a partir de 2025.",
+    "decade": "Los 2020 son la década de la pandemia, las guerras (Ucrania desde 2022, Oriente Medio reactivado en 2023), la inflación y el auge de la IA generativa. España vive una legislatura compleja con investiduras difíciles, y un debate público polarizado entre progresismo y nuevas fuerzas conservadoras."
+  },
 
   "1980": {
     "events": [
@@ -10,8 +205,7 @@
       "España vivía aún la Transición democrática bajo Adolfo Suárez (UCD); faltaban dos años para la victoria del PSOE de Felipe González."
     ],
     "lifeStage": "A los 46 años en 2026, perteneces de pleno a la <strong>Generación X tardía</strong> o cúspide millennial. Eres parte de la primera generación española que creció con la democracia ya instaurada y vivió de adolescente la entrada de España en la CEE (1986). Probablemente recuerdas la peseta, el primer Mundial visto en color, y el cambio al euro como un punto de inflexión vital.",
-    "decade": "Los años 80 en España fueron la <em>Movida</em>: ruptura cultural, libertad estética, despegue del pop y el rock en castellano. Económicamente, fue una década de modernización acelerada hacia los estándares europeos.",
-    "milestone": "26 de febrero de 2027 cumpleaños de los 47 (si naciste en febrero); ajusta según tu mes."
+    "decade": "Los años 80 en España fueron la <em>Movida</em>: ruptura cultural, libertad estética, despegue del pop y el rock en castellano. Económicamente, fue una década de modernización acelerada hacia los estándares europeos."
   },
 
   "1982": {
@@ -24,8 +218,7 @@
       "El disco compacto (CD) se comercializó por primera vez en agosto, iniciando la transición digital de la música."
     ],
     "lifeStage": "A los 44 años en 2026, eres <strong>millennial mayor</strong>. Creciste con la peseta, la entrada de España en la UE, los Juegos de Barcelona 92 vistos de niño, y la llegada de internet en plena adolescencia. Has vivido de adulto las crisis de 2008, la pandemia y los cambios laborales hacia el trabajo remoto.",
-    "decade": "Los 80 fueron la década del <em>despegue</em> español: ingreso en la OTAN (1982), referéndum europeo, reconversión industrial. La cultura popular se consolidó en Movida, comedia madrileña y radio musical FM.",
-    "milestone": "Si naciste en 1982 y pasaste el cumpleaños, sumas 44 años cumplidos."
+    "decade": "Los 80 fueron la década del <em>despegue</em> español: ingreso en la OTAN (1982), referéndum europeo, reconversión industrial. La cultura popular se consolidó en Movida, comedia madrileña y radio musical FM."
   },
 
   "1997": {
@@ -38,8 +231,7 @@
       "ETA secuestró y asesinó al concejal de Ermua Miguel Ángel Blanco (10-12 julio), provocando el mayor movimiento ciudadano contra la banda terrorista en España."
     ],
     "lifeStage": "A los 29 años en 2026, eres <strong>millennial joven</strong> en plena consolidación profesional y, posiblemente, vital. Naciste justo antes de la era de internet doméstico, viste el cambio del Nokia 3310 al iPhone, y creciste con la crisis económica de 2008 marcando tus primeros años laborales.",
-    "decade": "Los 90 fueron una década de transformación: globalización, llegada de internet, expansión cultural anglosajona, primeras alarmas climáticas. En España, los Juegos de Barcelona 92 y la Expo de Sevilla simbolizaron la entrada en la modernidad.",
-    "milestone": "29 años en 2026: edad mediana entre el inicio profesional y la treintena."
+    "decade": "Los 90 fueron una década de transformación: globalización, llegada de internet, expansión cultural anglosajona, primeras alarmas climáticas. En España, los Juegos de Barcelona 92 y la Expo de Sevilla simbolizaron la entrada en la modernidad."
   },
 
   "2002": {
@@ -52,8 +244,7 @@
       "Tobey Maguire protagonizó la primera película moderna de <em>Spider-Man</em> (3 de mayo)."
     ],
     "lifeStage": "A los 24 años en 2026, eres <strong>Generación Z</strong> de pleno derecho. Eres nativa o nativo digital — el primer iPhone llegó cuando tenías 5 años, las redes sociales son tu lengua materna. Empiezas la vida laboral en plena era post-pandemia, con el trabajo remoto y la IA generativa como nuevas normalidades.",
-    "decade": "Los 2000 fueron la década del salto digital: banda ancha, blogs, YouTube (2005), Facebook abriendo al público (2006). En España, fue una década de auge económico, burbuja inmobiliaria, y la entrada de la UE de los 25 (2004).",
-    "milestone": "24 años en 2026: edad de finalización típica de estudios universitarios y primeros pasos laborales."
+    "decade": "Los 2000 fueron la década del salto digital: banda ancha, blogs, YouTube (2005), Facebook abriendo al público (2006). En España, fue una década de auge económico, burbuja inmobiliaria, y la entrada de la UE de los 25 (2004)."
   },
 
   "2012": {
@@ -67,7 +258,6 @@
       "España vivía el pico de la crisis económica: el rescate bancario fue aprobado el 9 de junio."
     ],
     "lifeStage": "A los 14 años en 2026, estás en plena <strong>Generación Alpha</strong> (nacidos a partir de 2010 según la mayoría de demógrafos, aunque hay quien considera 2012 como año cúspide entre Z y Alpha). Estás en 3º o 4º de la ESO en España, secundaria en México o Argentina. Has crecido con el smartphone como objeto cotidiano y la IA conversacional (ChatGPT, Claude, Gemini) ya formaba parte de tu paisaje desde tu primera adolescencia.",
-    "decade": "Los 2010 fueron la década del smartphone como dispositivo dominante, la consolidación de las redes sociales como espacio público, y el auge de los servicios de streaming (Netflix, Spotify). El cambio climático pasó de ser una preocupación abstracta a una realidad política central.",
-    "milestone": "14 años en 2026: paso a la educación secundaria postobligatoria en España (4º ESO o inicio de Bachillerato)."
+    "decade": "Los 2010 fueron la década del smartphone como dispositivo dominante, la consolidación de las redes sociales como espacio público, y el auge de los servicios de streaming (Netflix, Spotify). El cambio climático pasó de ser una preocupación abstracta a una realidad política central."
   }
 }
