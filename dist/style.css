@@ -669,44 +669,107 @@ select:focus { border-color: var(--accent); }
   line-height: 1.75;
 }
 
-/* Per-year ES enrichment blocks (HCU recovery: unique content on
-   /es/nacido-en-YYYY/ pages to differentiate from templated structure) */
-.enrich-events,
-.enrich-lifestage,
-.enrich-decade {
-  padding: 1.5rem 0;
-  border-top: 1px solid #eee;
-  margin-top: 1rem;
+/* Per-year ES editorial features — continues the Gazette aesthetic
+   from the headline block. Each section reads as a column in a
+   newspaper, not a UI chrome block. */
+.np-feature-wrap {
+  margin: 2.5rem 0 1rem;
 }
-.enrich-events h2,
-.enrich-lifestage h2,
-.enrich-decade h2 {
+.np-feature-banner {
+  text-align: center;
+  margin: 0 0 2rem;
+}
+.np-feature-banner-title {
   font-family: 'Playfair Display', serif;
-  font-size: 1.3rem;
+  font-style: italic;
+  font-size: clamp(1rem, 2.6vw, 1.35rem);
   font-weight: 700;
-  margin-bottom: .75rem;
-  color: #111;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  padding: .25rem 0;
+  color: var(--ink, #111);
 }
-.enrich-events p,
-.enrich-lifestage p,
-.enrich-decade p {
-  font-size: .9rem;
-  color: #333;
-  line-height: 1.75;
-  margin-bottom: .9rem;
+.np-feature {
+  margin: 0 0 2.5rem;
+  padding: 0;
 }
-.enrich-events-list {
+.np-feature-kicker {
+  font-family: 'Space Mono', monospace;
+  font-size: .68rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: .35rem;
+}
+.np-feature-h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+  font-weight: 800;
+  line-height: 1.15;
+  margin: 0 0 .5rem;
+  color: var(--ink, #111);
+}
+.np-feature-rule {
+  border-top: 1px solid #ccc;
+  width: 60px;
+  margin: 0 0 1.1rem;
+}
+.np-feature-lead {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: #1a1a1a;
+  margin: 0 0 1.2rem;
+}
+.np-dropcap {
+  float: left;
+  font-family: 'Playfair Display', serif;
+  font-size: 3.4rem;
+  line-height: .85;
+  font-weight: 900;
+  margin: .15rem .5rem -.1rem 0;
+  color: var(--accent);
+}
+.np-feature-list {
   margin: 0;
-  padding-left: 1.2rem;
+  padding: 0;
+  list-style: none;
+  column-count: 2;
+  column-gap: 2.2rem;
 }
-.enrich-events-list li {
-  font-size: .9rem;
-  color: #333;
+.np-feature-list li {
+  font-family: 'Inter', sans-serif;
+  font-size: .92rem;
   line-height: 1.7;
-  margin-bottom: .6rem;
+  color: #222;
+  margin: 0 0 .9rem;
+  padding-left: .9rem;
+  border-left: 2px solid var(--accent);
+  break-inside: avoid;
 }
-.enrich-events-list li strong { color: #111; }
-.enrich-events-list li em { font-style: italic; }
+.np-feature-list li strong { color: #111; font-weight: 700; }
+.np-feature-list li em { font-style: italic; }
+.np-feature-body {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #1a1a1a;
+  margin: 0 0 1rem;
+}
+.np-feature-signoff {
+  font-family: 'Space Mono', monospace;
+  font-size: .68rem;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: 1rem;
+  text-align: right;
+}
+@media (max-width: 720px) {
+  .np-feature-list { column-count: 1; }
+  .np-feature-h2 { font-size: 1.4rem; }
+  .np-dropcap { font-size: 2.8rem; }
+}
 
 /* FAQ */
 .faq-block {
