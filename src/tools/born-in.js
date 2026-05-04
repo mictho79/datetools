@@ -737,7 +737,7 @@ module.exports = {
     <div><h2>${seoH2a}</h2><p>${seoP1}</p></div>
     <div><h2>${seoH2b}</h2><p>${seoP2}</p></div>
     ${seoP3 ? `<div><h2>${seoH2c}</h2><p>${seoP3}</p></div>` : ''}
-  </div>${esEnrichedBlock}
+  </div>
   <div class="faq-block">
     <h2>${t.faqTitle}</h2>
 ${faqHTML}
@@ -751,6 +751,8 @@ ${hubs.seeAllLink('birth', lang)}`;
 
     const breadcrumbLD = hubs.breadcrumbJsonLdString('birth', lang, year);
 
-    return { title, metaDesc, headlineBlock, formGrid, resultsSection, seoBlock, script, faqs, source: t.source, breadcrumbLD };
+    // ES enrichment is rendered as a feature article right under the
+    // photo/results, before the tool nav — not inside seoBlock.
+    return { title, metaDesc, headlineBlock, formGrid, resultsSection, seoBlock, script, faqs, source: t.source, breadcrumbLD, extraAfterResults: esEnrichedBlock };
   },
 };

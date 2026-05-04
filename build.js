@@ -968,6 +968,8 @@ ${formGrid}
 
 ${liveResultsSection}
 
+${data.extraAfterResults || ''}
+
   <nav aria-label="Tools">
   <div class="tool-nav">
 ${navLinks}
