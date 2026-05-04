@@ -61,6 +61,19 @@ function isPrunedPage(pageId) {
   if (m && +m[1] < PRUNE_BORNIN_BEFORE) return true;
   return false;
 }
+
+// Identify links that point to noindex'd pages — used to strip them from
+// nav + footer so we stop sending internal link equity to pruned content.
+const NOINDEX_HREF_PATTERNS = [
+  // year-in-history (all langs)
+  /\/(?:[a-z]{2}\/)?(?:what-happened-in|que-s-est-il-passe-en|que-paso-en|o-que-aconteceu-em|was-geschah|cosa-e-successo-nel|co-sie-wydarzylo-w|nani-ga-okita|museun-il-i|wat-gebeurde-er-in)-\d{4}\/?$/,
+  // born-in 1930-1959 (all langs)
+  /\/(?:[a-z]{2}\/)?(?:born-in|ne-en|nacido-en|nascido-em|geboren-in|nato-nel|urodzony-w|umareta|taeeona|geboren-in)-19[3-5]\d\/?$/,
+];
+function linkIsNoindex(href) {
+  if (typeof href !== 'string') return false;
+  return NOINDEX_HREF_PATTERNS.some(re => re.test(href));
+}
 const DIST = path.join(__dirname, 'dist');
 
 // Hub pages (birth-years, year-in-history) — see src/tools/hubs.js
@@ -869,19 +882,23 @@ ${JSON.stringify({
   const liveResultsSection = resultsSection.replace(/id="results"/, 'id="results" aria-live="polite"');
 
   const navLinks = NAV[lang].map(group => {
-    const links = group.items.map((item, i) => {
+    const visibleItems = group.items.filter(it => !linkIsNoindex(it.href));
+    if (!visibleItems.length) return '';
+    const links = visibleItems.map((item, i) => {
       const active = item.href === canonical ? ' aria-current="page"' : '';
-      const sep = i < group.items.length - 1 ? '<span class="nav-sep">·</span>' : '';
+      const sep = i < visibleItems.length - 1 ? '<span class="nav-sep">·</span>' : '';
       return `<a href="${item.href}"${active}>${item.label}</a>${sep}`;
     }).join('');
     return `    <div class="nav-group"><span class="nav-cat">${group.cat}</span><div class="nav-links">${links}</div></div>`;
-  }).join('\n');
+  }).filter(Boolean).join('\n');
 
 
   const footerCols = NAV[lang].map(group => {
-    const fLinks = group.items.map(item => `<a href="${item.href}">${item.label}</a>`).join('\n');
+    const visibleItems = group.items.filter(it => !linkIsNoindex(it.href));
+    if (!visibleItems.length) return '';
+    const fLinks = visibleItems.map(item => `<a href="${item.href}">${item.label}</a>`).join('\n');
     return `<div class="footer-col"><strong>${group.cat}</strong>\n${fLinks}</div>`;
-  }).join('\n') + '\n' + hubs.footerExploreBlock(lang);
+  }).filter(Boolean).join('\n') + '\n' + hubs.footerExploreBlock(lang);
   return `<!DOCTYPE html>
 <html lang="${lang}">
 <head>
@@ -1078,18 +1095,22 @@ ${JSON.stringify({
   }).join('\n');
 
   const navLinks = NAV[lang].map(group => {
-    const links = group.items.map((item, i) => {
+    const visibleItems = group.items.filter(it => !linkIsNoindex(it.href));
+    if (!visibleItems.length) return '';
+    const links = visibleItems.map((item, i) => {
       const active = item.href === canonical ? ' aria-current="page"' : '';
-      const sep = i < group.items.length - 1 ? '<span class="nav-sep">·</span>' : '';
+      const sep = i < visibleItems.length - 1 ? '<span class="nav-sep">·</span>' : '';
       return `<a href="${item.href}"${active}>${item.label}</a>${sep}`;
     }).join('');
     return `    <div class="nav-group"><span class="nav-cat">${group.cat}</span><div class="nav-links">${links}</div></div>`;
-  }).join('\n');
+  }).filter(Boolean).join('\n');
 
   const footerCols = NAV[lang].map(group => {
-    const fLinks = group.items.map(item => `<a href="${item.href}">${item.label}</a>`).join('\n');
+    const visibleItems = group.items.filter(it => !linkIsNoindex(it.href));
+    if (!visibleItems.length) return '';
+    const fLinks = visibleItems.map(item => `<a href="${item.href}">${item.label}</a>`).join('\n');
     return `<div class="footer-col"><strong>${group.cat}</strong>\n${fLinks}</div>`;
-  }).join('\n') + '\n' + hubs.footerExploreBlock(lang);
+  }).filter(Boolean).join('\n') + '\n' + hubs.footerExploreBlock(lang);
 
   const sectionsHTML = (sections || []).map(s => {
     const tableBlock = s.table ? `<div class="article-table-wrap">${s.table}</div>` : '';

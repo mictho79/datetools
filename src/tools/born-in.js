@@ -575,8 +575,10 @@ module.exports = {
     // Token map used for all template substitutions
     const vars = { year, age, age1, days, lived, gen };
 
-    // Optimised title/desc for high-traffic years (1950–2017)
-    const OPT_YEARS = year >= 1950 && year <= 2017;
+    // Use the SEO-optimised title/desc pattern uniformly across all years.
+    // (Was previously gated on 1950–2017; left 2018–2024 with a longer legacy
+    // pattern, creating inconsistent titles flagged in HCU recovery audit.)
+    const OPT_YEARS = true;
     const OPT_TITLE = {
       en: 'Born in {year}? You\'re {age1} in 2026 — Exact Age Calculator',
       fr: 'Né en {year} : quel âge en 2026 ? — {age1} ans | DateCalc',
