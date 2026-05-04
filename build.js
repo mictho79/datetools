@@ -780,6 +780,17 @@ const OG_LOCALE   = { en: 'en_US', fr: 'fr_FR', es: 'es_ES', pt: 'pt_BR', de: 'd
 const HOME_HREF = { en: '/', fr: '/fr/', es: '/es/', pt: '/pt/', de: '/de/', it: '/it/', pl: '/pl/', ja: '/ja/', ko: '/ko/', nl: '/nl/' };
 const BUILD_YEAR = new Date().getFullYear();
 
+// Cache-buster suffix for /style.css and /favicon.svg references — content
+// hash of style.css. Changes whenever CSS changes, so Cloudflare/browser
+// cached old CSS doesn't keep rendering with stale rules after a deploy.
+const STYLE_CACHE_BUSTER = (() => {
+  try {
+    const css = fs.readFileSync(path.join(__dirname, 'src', 'style.css'));
+    return require('crypto').createHash('md5').update(css).digest('hex').slice(0, 8);
+  } catch (e) { return Date.now().toString(36); }
+})();
+const STYLE_HREF = `/style.css?v=${STYLE_CACHE_BUSTER}`;
+
 const CONSENT = {
   en: { text: 'We use Google AdSense to fund this free service. Do you accept advertising cookies?', accept: 'Accept', decline: 'Continue without' },
   fr: { text: 'Nous utilisons Google AdSense pour financer ce service gratuit. Acceptez-vous les cookies publicitaires\u00a0?', accept: 'Accepter', decline: 'Continuer sans' },
@@ -926,7 +937,7 @@ ${LANGS.filter(l => l !== lang).map(l => `<meta property="og:locale:alternate" c
 <meta name="twitter:image" content="https://datecalc.app/og.png">
 ${(lang === 'ja' || lang === 'ko') ? '' : `<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/playfair-normal-latin.woff2" as="font" type="font/woff2" crossorigin>`}
-<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="${STYLE_HREF}">
 <link rel="sitemap" type="application/xml" href="/sitemap.xml">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="shortcut icon" href="/favicon.svg">
@@ -1150,7 +1161,7 @@ ${LANGS.filter(l => l !== lang).map(l => `<meta property="og:locale:alternate" c
 <meta name="twitter:image" content="https://datecalc.app/og.png">
 ${(lang === 'ja' || lang === 'ko') ? '' : `<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/playfair-normal-latin.woff2" as="font" type="font/woff2" crossorigin>`}
-<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="${STYLE_HREF}">
 <link rel="sitemap" type="application/xml" href="/sitemap.xml">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="shortcut icon" href="/favicon.svg">
@@ -1409,7 +1420,7 @@ console.log(`Built ${navHubCount} nav-hub pages → dist/`);
 // ── AUTHOR PAGES (/authors/mike/ + 9 translations) ────────
 let authorCount = 0;
 for (const lang of LANGS) {
-  writePage(`${authors.MIKE_SLUGS[lang]}/index.html`, authors.renderAuthorHTML(lang));
+  writePage(`${authors.MIKE_SLUGS[lang]}/index.html`, authors.renderAuthorHTML(lang, STYLE_HREF));
   authorCount++;
 }
 console.log(`Built ${authorCount} author pages → dist/`);
@@ -1417,7 +1428,7 @@ console.log(`Built ${authorCount} author pages → dist/`);
 // ── MY-AGE shareable page (/my-age/?dob=YYYY-MM-DD) ───────
 let myAgeCount = 0;
 for (const lang of LANGS) {
-  writePage(`${myAge.SLUGS[lang]}/index.html`, myAge.renderMyAgeHTML(lang));
+  writePage(`${myAge.SLUGS[lang]}/index.html`, myAge.renderMyAgeHTML(lang, STYLE_HREF));
   myAgeCount++;
 }
 console.log(`Built ${myAgeCount} my-age pages → dist/`);
@@ -1445,7 +1456,7 @@ const notFoundHTML = `<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, follow">
 <title>Page not found - DateCalc.app</title>
-<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="${STYLE_HREF}">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="shortcut icon" href="/favicon.svg">
 </head>
@@ -1787,7 +1798,7 @@ for (const { lang, slug, canonical } of PRIVACY_PAGES) {
 ${hreflangPrivacy}
 ${(lang === 'ja' || lang === 'ko') ? '' : `<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/playfair-normal-latin.woff2" as="font" type="font/woff2" crossorigin>`}
-<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="${STYLE_HREF}">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 ${navHubs.NAV_CSS}
 </head>
@@ -1993,7 +2004,7 @@ for (const { lang, slug, canonical } of ABOUT_PAGES) {
 ${hreflangAbout}
 ${(lang === 'ja' || lang === 'ko') ? '' : `<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/playfair-normal-latin.woff2" as="font" type="font/woff2" crossorigin>`}
-<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="${STYLE_HREF}">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <script type="application/ld+json">
 ${JSON.stringify({

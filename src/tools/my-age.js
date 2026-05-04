@@ -350,7 +350,7 @@ function clientScript(lang) {
 })();`;
 }
 
-function renderMyAgeHTML(lang) {
+function renderMyAgeHTML(lang, styleHref = '/style.css') {
   const t = T[lang];
   const canonical = `https://datecalc.app/${SLUGS[lang]}/`;
   const latinPreload = (lang === 'ja' || lang === 'ko') ? '' : `<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -377,7 +377,7 @@ ${hreflangTags()}
 <meta name="twitter:description" content="${t.metaDesc}">
 <meta name="twitter:image" content="https://datecalc.app/og.png">
 ${latinPreload}
-<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="${styleHref}">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 </head>
 <body>

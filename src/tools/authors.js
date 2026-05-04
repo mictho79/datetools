@@ -147,7 +147,7 @@ function personJsonLd(lang) {
   }, null, 2);
 }
 
-function renderAuthorHTML(lang) {
+function renderAuthorHTML(lang, styleHref = '/style.css') {
   const t = BIO[lang] || BIO.en;
   const canonical = `https://datecalc.app/${MIKE_SLUGS[lang]}/`;
   const latinPreload = (lang === 'ja' || lang === 'ko') ? '' : `<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -163,7 +163,7 @@ function renderAuthorHTML(lang) {
 <link rel="canonical" href="${canonical}">
 ${hreflangTags()}
 ${latinPreload}
-<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="${styleHref}">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <script type="application/ld+json">
 ${personJsonLd(lang)}
