@@ -1,0 +1,73 @@
+{
+  "_doc": "Per-year enriched ES content for /es/nacido-en-YYYY/ pages. Only verifiable facts. Add new years here to extend Phase B. Leave 'personalities' empty if you don't want to fabricate — section won't render.",
+
+  "1980": {
+    "events": [
+      "El 8 de diciembre, John Lennon fue asesinado en Nueva York, marcando el fin simbólico de una era musical.",
+      "El 1 de junio nació la cadena CNN, primera televisión de noticias 24 horas, transformando para siempre el periodismo internacional.",
+      "Se estrenó <em>El Imperio Contraataca</em>, la segunda entrega de Star Wars, hito generacional del cine de ciencia ficción.",
+      "Pac-Man llegó a los salones recreativos en mayo, convirtiéndose en el videojuego más popular de su tiempo.",
+      "España vivía aún la Transición democrática bajo Adolfo Suárez (UCD); faltaban dos años para la victoria del PSOE de Felipe González."
+    ],
+    "lifeStage": "A los 46 años en 2026, perteneces de pleno a la <strong>Generación X tardía</strong> o cúspide millennial. Eres parte de la primera generación española que creció con la democracia ya instaurada y vivió de adolescente la entrada de España en la CEE (1986). Probablemente recuerdas la peseta, el primer Mundial visto en color, y el cambio al euro como un punto de inflexión vital.",
+    "decade": "Los años 80 en España fueron la <em>Movida</em>: ruptura cultural, libertad estética, despegue del pop y el rock en castellano. Económicamente, fue una década de modernización acelerada hacia los estándares europeos.",
+    "milestone": "26 de febrero de 2027 cumpleaños de los 47 (si naciste en febrero); ajusta según tu mes."
+  },
+
+  "1982": {
+    "events": [
+      "Del 13 de junio al 11 de julio, España fue sede de la Copa Mundial de Fútbol — Italia se proclamó campeona en el Santiago Bernabéu derrotando a Alemania 3-1.",
+      "La <strong>Guerra de las Malvinas</strong> entre Argentina y el Reino Unido (abril-junio) marcó profundamente a toda Latinoamérica.",
+      "El 28 de octubre, el PSOE de Felipe González ganó las elecciones generales españolas con mayoría absoluta — primer gobierno socialista de la democracia.",
+      "Michael Jackson lanzó <em>Thriller</em> el 30 de noviembre, álbum más vendido de la historia de la música.",
+      "Steven Spielberg estrenó <em>E.T., el extraterrestre</em>, mayor éxito de taquilla del año.",
+      "El disco compacto (CD) se comercializó por primera vez en agosto, iniciando la transición digital de la música."
+    ],
+    "lifeStage": "A los 44 años en 2026, eres <strong>millennial mayor</strong>. Creciste con la peseta, la entrada de España en la UE, los Juegos de Barcelona 92 vistos de niño, y la llegada de internet en plena adolescencia. Has vivido de adulto las crisis de 2008, la pandemia y los cambios laborales hacia el trabajo remoto.",
+    "decade": "Los 80 fueron la década del <em>despegue</em> español: ingreso en la OTAN (1982), referéndum europeo, reconversión industrial. La cultura popular se consolidó en Movida, comedia madrileña y radio musical FM.",
+    "milestone": "Si naciste en 1982 y pasaste el cumpleaños, sumas 44 años cumplidos."
+  },
+
+  "1997": {
+    "events": [
+      "El 31 de agosto, la <strong>princesa Diana</strong> falleció en un accidente automovilístico en París — uno de los eventos mediáticos más impactantes del siglo.",
+      "El 1 de julio, Hong Kong fue devuelto por el Reino Unido a China tras 156 años de soberanía británica.",
+      "James Cameron estrenó <em>Titanic</em> el 19 de diciembre — película más taquillera de la historia hasta entonces.",
+      "El 11 de mayo, la supercomputadora <em>Deep Blue</em> de IBM venció al campeón mundial de ajedrez Garri Kaspárov, hito en la historia de la inteligencia artificial.",
+      "El 4 de julio, la sonda <em>Mars Pathfinder</em> aterrizó en Marte y desplegó el primer rover marciano (Sojourner).",
+      "ETA secuestró y asesinó al concejal de Ermua Miguel Ángel Blanco (10-12 julio), provocando el mayor movimiento ciudadano contra la banda terrorista en España."
+    ],
+    "lifeStage": "A los 29 años en 2026, eres <strong>millennial joven</strong> en plena consolidación profesional y, posiblemente, vital. Naciste justo antes de la era de internet doméstico, viste el cambio del Nokia 3310 al iPhone, y creciste con la crisis económica de 2008 marcando tus primeros años laborales.",
+    "decade": "Los 90 fueron una década de transformación: globalización, llegada de internet, expansión cultural anglosajona, primeras alarmas climáticas. En España, los Juegos de Barcelona 92 y la Expo de Sevilla simbolizaron la entrada en la modernidad.",
+    "milestone": "29 años en 2026: edad mediana entre el inicio profesional y la treintena."
+  },
+
+  "2002": {
+    "events": [
+      "El <strong>1 de enero</strong>, el euro entró en circulación física en España, sustituyendo a la peseta tras 133 años de uso.",
+      "Del 31 de mayo al 30 de junio, se celebró la Copa Mundial de Fútbol en Corea del Sur y Japón — España fue eliminada en cuartos por la anfitriona Corea del Sur en una eliminatoria muy controvertida.",
+      "El <strong>13 de noviembre</strong>, el petrolero Prestige se hundió frente a las costas de Galicia, provocando una de las mayores catástrofes ecológicas de la historia europea.",
+      "El 12 de octubre, el atentado de Bali (Indonesia) causó 202 muertos.",
+      "Peter Jackson estrenó <em>El Señor de los Anillos: Las Dos Torres</em>, segunda parte de la trilogía.",
+      "Tobey Maguire protagonizó la primera película moderna de <em>Spider-Man</em> (3 de mayo)."
+    ],
+    "lifeStage": "A los 24 años en 2026, eres <strong>Generación Z</strong> de pleno derecho. Eres nativa o nativo digital — el primer iPhone llegó cuando tenías 5 años, las redes sociales son tu lengua materna. Empiezas la vida laboral en plena era post-pandemia, con el trabajo remoto y la IA generativa como nuevas normalidades.",
+    "decade": "Los 2000 fueron la década del salto digital: banda ancha, blogs, YouTube (2005), Facebook abriendo al público (2006). En España, fue una década de auge económico, burbuja inmobiliaria, y la entrada de la UE de los 25 (2004).",
+    "milestone": "24 años en 2026: edad de finalización típica de estudios universitarios y primeros pasos laborales."
+  },
+
+  "2012": {
+    "events": [
+      "Del 27 de julio al 12 de agosto, los <strong>Juegos Olímpicos de Londres 2012</strong> — España logró 17 medallas; Pau Gasol fue abanderado en la ceremonia inaugural.",
+      "Del 8 de junio al 1 de julio, la Eurocopa 2012 — España ganó su <strong>tercer título mayor consecutivo</strong> (Eurocopa 2008, Mundial 2010, Eurocopa 2012), gesta sin precedentes en el fútbol.",
+      "El <strong>4 de julio</strong>, el CERN anunció el descubrimiento del <em>bosón de Higgs</em>, partícula clave del Modelo Estándar de la física.",
+      "El 6 de agosto, el rover <em>Curiosity</em> de la NASA aterrizó en Marte para una misión de exploración aún en curso.",
+      "El 14 de octubre, Felix Baumgartner saltó desde la estratosfera (38 969 metros), batiendo el récord mundial de salto en caída libre.",
+      "El videoclip <em>Gangnam Style</em> de PSY se convirtió en el primer vídeo de YouTube en alcanzar mil millones de visualizaciones (diciembre).",
+      "España vivía el pico de la crisis económica: el rescate bancario fue aprobado el 9 de junio."
+    ],
+    "lifeStage": "A los 14 años en 2026, estás en plena <strong>Generación Alpha</strong> (nacidos a partir de 2010 según la mayoría de demógrafos, aunque hay quien considera 2012 como año cúspide entre Z y Alpha). Estás en 3º o 4º de la ESO en España, secundaria en México o Argentina. Has crecido con el smartphone como objeto cotidiano y la IA conversacional (ChatGPT, Claude, Gemini) ya formaba parte de tu paisaje desde tu primera adolescencia.",
+    "decade": "Los 2010 fueron la década del smartphone como dispositivo dominante, la consolidación de las redes sociales como espacio público, y el auge de los servicios de streaming (Netflix, Spotify). El cambio climático pasó de ser una preocupación abstracta a una realidad política central.",
+    "milestone": "14 años en 2026: paso a la educación secundaria postobligatoria en España (4º ESO o inicio de Bachillerato)."
+  }
+}

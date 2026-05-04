@@ -18,6 +18,14 @@ const YEAR_IMAGES = (() => {
   try { return require('../data/year-images.json'); } catch(e) { return {}; }
 })();
 
+// ES-specific per-year enrichment (Phase A HCU recovery — concentrate quality
+// signal on the Spanish nacido-en pages that still earn clicks). Each entry
+// adds verified events, life-stage context, and decade summary. Years not in
+// the file get the standard templated page.
+const ES_ENRICHMENT = (() => {
+  try { return require('../data/born-in-es-enrichment.json'); } catch(e) { return {}; }
+})();
+
 const BIRTH_YEARS = [];
 for (let y = 1930; y <= 2024; y++) BIRTH_YEARS.push(y);
 
@@ -677,11 +685,40 @@ module.exports = {
       `    <div class="faq-item"><h3>${f.q}</h3><p>${f.a}</p></div>`
     ).join('\n');
 
+    // ES enrichment: inject verified events + life-stage + decade summary
+    // for nacido-en-YYYY pages that have a curated entry. Adds ~300-400
+    // unique words per page on top of the templated base, addressing the
+    // "scaled content" signal flagged in the HCU audit.
+    let esEnrichedBlock = '';
+    if (lang === 'es' && ES_ENRICHMENT[String(year)]) {
+      const e = ES_ENRICHMENT[String(year)];
+      const eventsHtml = (e.events || []).map(ev => `<li>${ev}</li>`).join('\n      ');
+      const eventsSection = eventsHtml ? `
+    <div class="enrich-events">
+      <h2>Qué pasó en ${year}</h2>
+      <p>Lejos de ser solo una cifra, ${year} fue un año marcado por hechos que siguen siendo referencia hoy. Si naciste en ${year}, este es el contexto histórico, cultural y deportivo de tu año de nacimiento — verificado y centrado en el mundo hispanohablante:</p>
+      <ul class="enrich-events-list">
+      ${eventsHtml}
+      </ul>
+    </div>` : '';
+      const lifeStageSection = e.lifeStage ? `
+    <div class="enrich-lifestage">
+      <h2>Tu etapa de vida en 2026</h2>
+      <p>${e.lifeStage}</p>
+    </div>` : '';
+      const decadeSection = e.decade ? `
+    <div class="enrich-decade">
+      <h2>La década de los ${Math.floor(year / 10) * 10}</h2>
+      <p>${e.decade}</p>
+    </div>` : '';
+      esEnrichedBlock = `${eventsSection}${lifeStageSection}${decadeSection}`;
+    }
+
     const seoBlock = `  <div class="seo-block">
     <div><h2>${seoH2a}</h2><p>${seoP1}</p></div>
     <div><h2>${seoH2b}</h2><p>${seoP2}</p></div>
     ${seoP3 ? `<div><h2>${seoH2c}</h2><p>${seoP3}</p></div>` : ''}
-  </div>
+  </div>${esEnrichedBlock}
   <div class="faq-block">
     <h2>${t.faqTitle}</h2>
 ${faqHTML}

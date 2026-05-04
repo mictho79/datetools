@@ -669,6 +669,45 @@ select:focus { border-color: var(--accent); }
   line-height: 1.75;
 }
 
+/* Per-year ES enrichment blocks (HCU recovery: unique content on
+   /es/nacido-en-YYYY/ pages to differentiate from templated structure) */
+.enrich-events,
+.enrich-lifestage,
+.enrich-decade {
+  padding: 1.5rem 0;
+  border-top: 1px solid #eee;
+  margin-top: 1rem;
+}
+.enrich-events h2,
+.enrich-lifestage h2,
+.enrich-decade h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: .75rem;
+  color: #111;
+}
+.enrich-events p,
+.enrich-lifestage p,
+.enrich-decade p {
+  font-size: .9rem;
+  color: #333;
+  line-height: 1.75;
+  margin-bottom: .9rem;
+}
+.enrich-events-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+.enrich-events-list li {
+  font-size: .9rem;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: .6rem;
+}
+.enrich-events-list li strong { color: #111; }
+.enrich-events-list li em { font-style: italic; }
+
 /* FAQ */
 .faq-block {
   padding: 2rem 0;
