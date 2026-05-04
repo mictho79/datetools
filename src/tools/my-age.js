@@ -3,6 +3,8 @@
 // Renders in 10 languages with full hreflang + localized CTAs.
 
 const LANGS = ['en', 'fr', 'es', 'pt', 'de', 'it', 'pl', 'ja', 'ko', 'nl'];
+const NOINDEX_LANGS = new Set(['ja', 'ko', 'nl']);
+const INDEXABLE_LANGS = LANGS.filter(l => !NOINDEX_LANGS.has(l));
 
 const SLUGS = {
   en: 'my-age',
@@ -264,7 +266,7 @@ const T = {
 };
 
 function hreflangTags() {
-  const out = LANGS.map(l => `<link rel="alternate" hreflang="${l}" href="https://datecalc.app/${SLUGS[l]}/">`);
+  const out = INDEXABLE_LANGS.map(l => `<link rel="alternate" hreflang="${l}" href="https://datecalc.app/${SLUGS[l]}/">`);
   out.push(`<link rel="alternate" hreflang="x-default" href="https://datecalc.app/${SLUGS.en}/">`);
   return out.join('\n');
 }
@@ -358,7 +360,7 @@ function renderMyAgeHTML(lang) {
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="${NOINDEX_LANGS.has(lang) ? 'noindex, follow' : 'index, follow'}">
 <title>${t.title}</title>
 <meta name="description" content="${t.metaDesc}">
 <link rel="canonical" href="${canonical}">
@@ -447,7 +449,7 @@ ${latinPreload}
 }
 
 function sitemapGroup() {
-  return LANGS.map(l => ({ lang: l, path: `/${SLUGS[l]}/` }));
+  return INDEXABLE_LANGS.map(l => ({ lang: l, path: `/${SLUGS[l]}/` }));
 }
 
 module.exports = {
