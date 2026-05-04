@@ -48,6 +48,19 @@ const LANGS = ['en', 'fr', 'es', 'pt', 'de', 'it', 'pl', 'ja', 'ko', 'nl'];
 // are dropped from the sitemap, and removed from hreflang clusters.
 const NOINDEX_LANGS = new Set(['ja', 'ko', 'nl']);
 const INDEXABLE_LANGS = LANGS.filter(l => !NOINDEX_LANGS.has(l));
+
+// Page-level pruning for HCU recovery: noindex low-volume / templated patterns
+// across all langs. These pages still build (existing inbound links don't 404),
+// but they get noindex,follow + dropped from sitemap. Concentrates the
+// site-wide quality signal on pages that have a chance to rank.
+const PRUNE_BORNIN_BEFORE = 1960; // 1930-1959 born-in pages have negligible search volume
+function isPrunedPage(pageId) {
+  if (typeof pageId !== 'string') return false;
+  if (pageId.startsWith('what-happened-in-')) return true; // entire year-in-history pattern
+  const m = pageId.match(/^born-in-(\d{4})$/);
+  if (m && +m[1] < PRUNE_BORNIN_BEFORE) return true;
+  return false;
+}
 const DIST = path.join(__dirname, 'dist');
 
 // Hub pages (birth-years, year-in-history) — see src/tools/hubs.js
@@ -875,7 +888,7 @@ ${JSON.stringify({
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>${title}</title>
-<meta name="robots" content="${NOINDEX_LANGS.has(lang) ? 'noindex, follow' : 'index, follow'}">
+<meta name="robots" content="${(NOINDEX_LANGS.has(lang) || isPrunedPage(data.pageId)) ? 'noindex, follow' : 'index, follow'}">
 <meta name="description" content="${metaDesc}">
 <link rel="canonical" href="https://datecalc.app${canonical}">
 ${INDEXABLE_LANGS.map(l => `<link rel="alternate" hreflang="${l}" href="https://datecalc.app${hreflang[l]}">`).join('\n')}
@@ -1225,6 +1238,7 @@ for (const tool of tools) {
       if (page.isHomepage) {
         data.seoBlock = hubs.homepageBrowseSection(lang) + '\n' + (data.seoBlock || '');
       }
+      data.pageId = page.id;
       data.canonical = canonical;
       data.hreflang = {
         en: page.slugs.en === '' ? '/' : `/${page.slugs.en}/`,
@@ -2035,6 +2049,7 @@ const STATIC_LASTMOD    = '2026-01-01';
 for (const tool of tools) {
   const toolFile = tool.__file || null; // not set; fallback to today for lastmod
   for (const page of tool.pages) {
+    if (isPrunedPage(page.id)) continue; // pruned pages are noindex → not in sitemap
     const group = [];
     for (const lang of LANGS) {
       const s = page.slugs[lang];
