@@ -60,12 +60,12 @@ const INDEXABLE_LANGS = LANGS.filter(l => !NOINDEX_LANGS.has(l));
 // across all langs. These pages still build (existing inbound links don't 404),
 // but they get noindex,follow + dropped from sitemap. Concentrates the
 // site-wide quality signal on pages that have a chance to rank.
-const PRUNE_BORNIN_BEFORE = 1960; // 1930-1959 born-in pages have negligible search volume
+// Born-in 1930-1959 were originally pruned for low volume — restored 2026-05-18
+// once enriched ES content was added for those years (consistency across the
+// full /es/nacido-en-1930/ to /2024/ range).
 function isPrunedPage(pageId) {
   if (typeof pageId !== 'string') return false;
-  if (pageId.startsWith('what-happened-in-')) return true; // entire year-in-history pattern
-  const m = pageId.match(/^born-in-(\d{4})$/);
-  if (m && +m[1] < PRUNE_BORNIN_BEFORE) return true;
+  if (pageId.startsWith('what-happened-in-')) return true; // entire year-in-history pattern (still pruned: heavy templated)
   return false;
 }
 

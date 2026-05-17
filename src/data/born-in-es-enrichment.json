@@ -1,5 +1,368 @@
 {
-  "_doc": "Per-year enriched ES content for /es/nacido-en-YYYY/ pages. Only verifiable facts. Phase C (May 2026): extended to all 65 indexable years (1960-2024) as part of full-ES recovery strategy.",
+  "_doc": "Per-year enriched ES content for /es/nacido-en-YYYY/ pages. Only verifiable facts. Phase C+ (May 2026): extended to all 95 years (1930-2024) — including the 1930-1959 range that is currently noindex'd, so the data is ready if we re-open indexation later.",
+
+  "1930": {
+    "events": [
+      "Del <strong>13 al 30 de julio</strong>, se celebró el primer <em>Mundial de Fútbol</em> en Uruguay — la selección anfitriona venció a Argentina en la final.",
+      "El mundo entró en plena <strong>Gran Depresión</strong> tras el crac de Wall Street del 24 de octubre de 1929 — desempleo masivo y hundimiento del comercio internacional.",
+      "El <strong>28 de enero</strong>, dimitió el general Primo de Rivera en España; el general Berenguer fue nombrado para una 'dictablanda' transicional.",
+      "Mahatma Gandhi inició la <em>Marcha de la sal</em> (12 de marzo) — campaña de desobediencia civil contra el monopolio británico.",
+      "Brasil: la <em>Revolución de 1930</em> llevó al poder a Getúlio Vargas, figura central del Brasil moderno."
+    ],
+    "lifeStage": "A los 96 años en 2026, formas parte de la <strong>Generación Silenciosa</strong> y eres uno de los testigos más longevos del siglo XX. Has vivido la Segunda República, la Guerra Civil, el franquismo, la Transición, la entrada en Europa y la era digital.",
+    "decade": "Los años 30 españoles culminaron en la Guerra Civil (1936-1939). Mundialmente, fueron la década de la Gran Depresión, el ascenso de los totalitarismos y el preludio de la Segunda Guerra Mundial."
+  },
+
+  "1931": {
+    "events": [
+      "El <strong>14 de abril</strong>, se proclamó la <strong>Segunda República Española</strong>; el rey Alfonso XIII partió al exilio. Punto de inflexión histórico mayor.",
+      "El <strong>1 de mayo</strong>, se inauguró el <em>Empire State Building</em> en Nueva York — entonces edificio más alto del mundo.",
+      "El <strong>9 de diciembre</strong>, las Cortes Constituyentes aprobaron la <em>Constitución republicana</em> española de 1931, profundamente reformista.",
+      "El <strong>18 de septiembre</strong>, Japón invadió Manchuria — primer gran conflicto previo a la Segunda Guerra Mundial.",
+      "Niceto Alcalá-Zamora fue elegido primer presidente de la República (10 de diciembre)."
+    ],
+    "lifeStage": "A los 95 años en 2026, eres testigo directo de toda la historia contemporánea española. Naciste durante la Segunda República y has vivido cada gran transformación: Guerra Civil, posguerra, Transición, democracia, era digital.",
+    "decade": "Los años 30 españoles fueron los de la República, la Guerra Civil y el comienzo del franquismo. Una década de fractura nacional cuyas heridas marcarían generaciones."
+  },
+
+  "1932": {
+    "events": [
+      "El <strong>9 de septiembre</strong>, se aprobó el <em>Estatuto de Autonomía de Cataluña</em> — primer estatuto autonómico de la historia española.",
+      "El <strong>10 de agosto</strong>, fracasó la <em>Sanjurjada</em>: intento de golpe de Estado del general Sanjurjo contra la República.",
+      "Del <strong>30 de julio al 14 de agosto</strong>, los Juegos Olímpicos de Los Ángeles.",
+      "El <strong>8 de noviembre</strong>, <em>Franklin D. Roosevelt</em> ganó las elecciones presidenciales estadounidenses — inicio de la era del New Deal.",
+      "Comenzó la <strong>gran hambruna de Ucrania</strong> (Holodomor) bajo Stalin — millones de muertos."
+    ],
+    "lifeStage": "A los 94 años en 2026, eres miembro de la <strong>Generación Silenciosa</strong>. Naciste durante la Segunda República española y has acompañado todo el siglo XX y XXI hispano.",
+    "decade": "Los años 30 fueron una década de polarización política mundial: ascenso del nazismo, Guerra Civil española, Gran Depresión. En España, los años republicanos de reformas y reacción culminaron en la guerra."
+  },
+
+  "1933": {
+    "events": [
+      "El <strong>30 de enero</strong>, <em>Adolf Hitler</em> fue nombrado canciller de Alemania — inicio del Tercer Reich.",
+      "El <strong>19 de noviembre</strong>, las elecciones generales españolas dieron la victoria a la derecha (CEDA y Partido Radical de Lerroux) — fin del primer bienio republicano reformista.",
+      "El <strong>5 de diciembre</strong>, se levantó la <strong>Prohibición</strong> del alcohol en Estados Unidos tras 13 años (Enmienda XXI).",
+      "El 29 de octubre, José Antonio Primo de Rivera fundó <em>Falange Española</em>.",
+      "FDR lanzó el <em>New Deal</em> (marzo 1933) — paquete de medidas contra la Gran Depresión."
+    ],
+    "lifeStage": "A los 93 años en 2026, perteneces a la <strong>Generación Silenciosa</strong>. Naciste durante la República, viviste la Guerra Civil de niño y el franquismo de adolescente y adulto joven.",
+    "decade": "Los años 30 fueron la década del ascenso del nazismo y la Guerra Civil española. En el resto del mundo, las democracias respondían tarde a la amenaza totalitaria."
+  },
+
+  "1934": {
+    "events": [
+      "Del <strong>5 al 19 de octubre</strong>, la <em>Revolución de Asturias</em>: huelga revolucionaria minera duramente reprimida por el ejército dirigido por Franco — preludio de la Guerra Civil.",
+      "El <strong>2 de agosto</strong>, tras la muerte del presidente Hindenburg, <em>Hitler</em> asumió el título de Führer concentrando poderes presidenciales y de canciller.",
+      "Stalin inició la <em>Gran Purga</em> tras el asesinato de Sergéi Kírov (1 de diciembre) — eliminación masiva de opositores en la URSS.",
+      "Frank Capra estrenó <em>Sucedió una noche</em>, película que ganaría los cinco Oscars principales.",
+      "Bonnie y Clyde, los famosos forajidos estadounidenses, fueron abatidos por la policía (23 de mayo)."
+    ],
+    "lifeStage": "A los 92 años en 2026, eres miembro de la <strong>Generación Silenciosa</strong>. Has acompañado la historia española completa: República, Guerra, dictadura, Transición y democracia.",
+    "decade": "Los años 30 vieron el ascenso de los fascismos, las primeras grandes purgas estalinistas, y en España, la radicalización política que llevaría a la Guerra Civil."
+  },
+
+  "1935": {
+    "events": [
+      "El <strong>15 de septiembre</strong>, las <em>Leyes de Núremberg</em> institucionalizaron el antisemitismo en Alemania nazi — preludio del Holocausto.",
+      "El <strong>3 de octubre</strong>, Italia fascista invadió Etiopía bajo Mussolini — primera gran agresión imperialista de los años 30.",
+      "España: año de polarización política bajo el segundo bienio republicano (CEDA-Radical).",
+      "Joe DiMaggio comenzó su carrera con los Yankees; Babe Ruth se retiró (mayo 1935).",
+      "Penguin Books publicó sus primeros libros (julio 1935) — democratización del libro de bolsillo."
+    ],
+    "lifeStage": "A los 91 años en 2026, eres testigo de toda la historia contemporánea de España. Naciste antes de la Guerra Civil y has vivido cada gran transformación del país.",
+    "decade": "Los años 30 fueron la década más oscura del siglo XX: Gran Depresión, fascismos en ascenso, Guerra Civil española, preludio de la Segunda Guerra Mundial."
+  },
+
+  "1936": {
+    "events": [
+      "Del <strong>17 al 18 de julio</strong>, golpe militar de Franco y Mola contra el gobierno republicano — inicio de la <strong>Guerra Civil Española</strong>, que duraría hasta abril de 1939.",
+      "El <strong>16 de febrero</strong>, el <em>Frente Popular</em> ganó las elecciones generales españolas.",
+      "Del <strong>1 al 16 de agosto</strong>, los <strong>Juegos Olímpicos de Berlín</strong> — propaganda nazi, Jesse Owens ganó cuatro oros.",
+      "El <strong>10-11 de diciembre</strong>, Eduardo VIII abdicó al trono británico para casarse con Wallis Simpson; su hermano Jorge VI le sucedió.",
+      "Federico García Lorca fue asesinado por falangistas en Granada (18-19 de agosto), uno de los símbolos del horror de la Guerra Civil.",
+      "Charles Chaplin estrenó <em>Tiempos modernos</em> (5 de febrero)."
+    ],
+    "lifeStage": "A los 90 años en 2026, eres uno de los testigos directos más longevos de la Guerra Civil Española. Tu generación ha vivido cada capítulo de la historia contemporánea de España.",
+    "decade": "Los años 30 españoles fueron la República y la Guerra Civil — un trauma nacional que marcaría toda la segunda mitad del siglo XX bajo el franquismo."
+  },
+
+  "1937": {
+    "events": [
+      "El <strong>26 de abril</strong>, la <em>Legión Cóndor</em> alemana bombardeó <strong>Guernica</strong> en apoyo al bando franquista — primer bombardeo aéreo masivo contra civiles, inmortalizado por Picasso.",
+      "El <strong>6 de mayo</strong>, el dirigible alemán <em>Hindenburg</em> se incendió al aterrizar en Nueva Jersey — 36 muertos, fin de la era del transporte aéreo en dirigible.",
+      "El <strong>7 de julio</strong>, Japón inició la <em>Segunda Guerra Sino-Japonesa</em> con el incidente del puente Marco Polo.",
+      "Walt Disney estrenó <em>Blancanieves y los siete enanitos</em> (21 de diciembre) — primer largometraje animado de la historia.",
+      "España: continuaba la Guerra Civil; las Brigadas Internacionales luchaban junto al ejército republicano."
+    ],
+    "lifeStage": "A los 89 años en 2026, eres testigo directo de la Guerra Civil Española. Eres miembro de la <strong>Generación Silenciosa</strong> que reconstruyó España tras la guerra.",
+    "decade": "Los años 30 culminaron en la Segunda Guerra Mundial (septiembre de 1939). En España, la Guerra Civil consumió la década con un coste humano inmenso."
+  },
+
+  "1938": {
+    "events": [
+      "El <strong>12 de marzo</strong>, Alemania anexionó Austria (<em>Anschluss</em>) — primer paso de la expansión nazi.",
+      "Del <strong>29 al 30 de septiembre</strong>, los <em>Acuerdos de Múnich</em> entregaron a Hitler los Sudetes checoslovacos — apaciguamiento fallido de Chamberlain y Daladier.",
+      "Del <strong>9 al 10 de noviembre</strong>, la <strong>Noche de los Cristales Rotos</strong> — pogromo nazi masivo contra judíos en Alemania.",
+      "España: en la Guerra Civil, los republicanos perdieron la <em>Batalla del Ebro</em> (julio-noviembre 1938) — derrota decisiva.",
+      "Orson Welles emitió por radio <em>La guerra de los mundos</em> (30 de octubre), provocando pánico al simular invasión marciana."
+    ],
+    "lifeStage": "A los 88 años en 2026, eres testigo de la Guerra Civil desde la infancia. Tu generación reconstruyó España bajo el franquismo y vivió la Transición de adulto maduro.",
+    "decade": "Los años 30 fueron la década del crecimiento del nazismo, la Guerra Civil española y el comienzo de la Segunda Guerra Mundial."
+  },
+
+  "1939": {
+    "events": [
+      "El <strong>1 de abril</strong>, terminó la <strong>Guerra Civil Española</strong> con la victoria de Franco — inicio de 36 años de dictadura.",
+      "El <strong>1 de septiembre</strong>, Alemania invadió Polonia; el 3 de septiembre, Francia y el Reino Unido declararon la guerra — inicio de la <em>Segunda Guerra Mundial</em>.",
+      "El <strong>23 de agosto</strong>, Alemania y la URSS firmaron el <em>Pacto Mólotov-Ribbentrop</em> de no agresión, repartiéndose Polonia.",
+      "Victor Fleming estrenó <em>Lo que el viento se llevó</em> (15 de diciembre) — película icónica de la era dorada de Hollywood.",
+      "Albert Einstein advirtió a FDR del potencial de la bomba atómica (carta del 2 de agosto)."
+    ],
+    "lifeStage": "A los 87 años en 2026, eres testigo del fin de la Guerra Civil. Tu generación creció bajo el primer franquismo y vivió la apertura económica de los 60 y la Transición democrática.",
+    "decade": "Los años 30 cerraron con el inicio de la Segunda Guerra Mundial y la victoria de Franco en España. Una década traumática que reconfiguró el siglo XX."
+  },
+
+  "1940": {
+    "events": [
+      "Del <strong>10 de mayo al 22 de junio</strong>, Alemania invadió Bélgica, Países Bajos y Francia; <em>caída de Francia</em> con la firma del armisticio.",
+      "Del <strong>10 de julio al 31 de octubre</strong>, la <strong>Batalla de Inglaterra</strong> — la RAF derrotó a la Luftwaffe en los cielos británicos.",
+      "El <strong>23 de octubre</strong>, Franco y Hitler se reunieron en <em>Hendaya</em>; España permaneció oficialmente neutral pero alineada con el Eje.",
+      "El <strong>20 de agosto</strong>, <em>León Trotski</em> fue asesinado en Coyoacán, México, por un agente soviético.",
+      "Charles Chaplin estrenó <em>El gran dictador</em> (15 de octubre), sátira sobre Hitler.",
+      "Spain: años del hambre y la autarquía bajo el primer franquismo."
+    ],
+    "lifeStage": "A los 86 años en 2026, eres testigo directo de la posguerra española y la Segunda Guerra Mundial vista desde la infancia. Tu generación reconstruyó España en condiciones extremadamente difíciles.",
+    "decade": "Los años 40 españoles fueron los del primer franquismo: autarquía, hambre, cartillas de racionamiento, aislamiento internacional. Mundialmente, la Segunda Guerra Mundial y luego el inicio de la Guerra Fría."
+  },
+
+  "1941": {
+    "events": [
+      "El <strong>22 de junio</strong>, Alemania invadió la URSS — <em>Operación Barbarroja</em>, mayor invasión militar de la historia.",
+      "El <strong>7 de diciembre</strong>, Japón atacó <strong>Pearl Harbor</strong>; al día siguiente Estados Unidos entró en la Segunda Guerra Mundial.",
+      "Franco envió la <em>División Azul</em> a luchar junto a los nazis contra la URSS (julio 1941) — voluntarios falangistas en el frente del Este.",
+      "El <strong>11 de diciembre</strong>, Alemania declaró la guerra a Estados Unidos.",
+      "El cómic <em>Wonder Woman</em> debutó en diciembre de 1941."
+    ],
+    "lifeStage": "A los 85 años en 2026, eres testigo directo de los años más duros del franquismo desde la infancia — la posguerra y los años del hambre.",
+    "decade": "Los años 40 fueron la Segunda Guerra Mundial y la Guerra Fría inicial. En España, fueron los años de la autarquía, el aislamiento y la represión política intensa."
+  },
+
+  "1942": {
+    "events": [
+      "Del <strong>23 de agosto de 1942 al 2 de febrero de 1943</strong>, la <strong>Batalla de Stalingrado</strong> — punto de inflexión decisivo de la guerra en el frente del Este.",
+      "El <strong>20 de enero</strong>, la <em>Conferencia de Wannsee</em> planificó la 'Solución Final' del genocidio judío.",
+      "Del <strong>4 al 7 de junio</strong>, la <em>Batalla de Midway</em> dio a Estados Unidos la iniciativa en el Pacífico.",
+      "España: continuaron los <em>años del hambre</em>; ETT y otras instituciones franquistas se consolidaron.",
+      "Disney estrenó <em>Bambi</em>; la película 'Casablanca' se estrenó en noviembre."
+    ],
+    "lifeStage": "A los 84 años en 2026, eres testigo de la posguerra española y de toda la transformación del país. Naciste cuando el régimen de Franco se consolidaba en sus años más duros.",
+    "decade": "Los años 40 fueron la Segunda Guerra Mundial, el Holocausto y la posguerra. En España, fueron los años más duros del franquismo: autarquía, hambre y represión."
+  },
+
+  "1943": {
+    "events": [
+      "El <strong>2 de febrero</strong>, terminó la <strong>Batalla de Stalingrado</strong> con la rendición alemana — 91 000 soldados capturados.",
+      "El <strong>25 de julio</strong>, <em>Mussolini</em> fue destituido y arrestado en Italia; el nuevo gobierno italiano firmó armisticio con los Aliados en septiembre.",
+      "El <strong>1 de octubre</strong>, los Aliados liberaron Nápoles — la invasión de Italia continuaba.",
+      "España: Franco firmó la declaración de neutralidad estricta (octubre 1943) tras la derrota alemana en Stalingrado.",
+      "El proyecto <em>Manhattan</em> de la bomba atómica estadounidense estaba en pleno desarrollo."
+    ],
+    "lifeStage": "A los 83 años en 2026, eres testigo del último franquismo y de la Transición democrática desde la edad adulta. Tu generación reconstruyó España.",
+    "decade": "Los años 40 vieron el giro de la Segunda Guerra Mundial y, en España, el ajuste del régimen franquista al nuevo orden mundial post-1945."
+  },
+
+  "1944": {
+    "events": [
+      "El <strong>6 de junio</strong>, los <em>Desembarcos de Normandía</em> (Día D) abrieron el segundo frente en Europa occidental.",
+      "El <strong>25 de agosto</strong>, las fuerzas aliadas y la Resistencia francesa <em>liberaron París</em>.",
+      "El <strong>24 de octubre</strong>, los maquis comunistas españoles intentaron invadir el Valle de Arán desde Francia (operación fracasada).",
+      "La batalla de las Ardenas comenzó (16 de diciembre 1944) — última gran ofensiva alemana en el oeste.",
+      "Frank Capra estrenó <em>Arsénico por compasión</em>."
+    ],
+    "lifeStage": "A los 82 años en 2026, eres testigo del fin del franquismo, la Transición y toda la era democrática.",
+    "decade": "Los años 40 fueron la Segunda Guerra Mundial y la posguerra. En España, los años más duros del régimen franquista, con el aislamiento internacional como condición central."
+  },
+
+  "1945": {
+    "events": [
+      "El <strong>8 de mayo</strong>, <strong>VE Day</strong>: Alemania nazi se rindió oficialmente — fin de la Segunda Guerra Mundial en Europa.",
+      "Los <strong>6 y 9 de agosto</strong>, EE.UU. lanzó las bombas atómicas sobre <em>Hiroshima y Nagasaki</em> — más de 200 000 muertos directos e indirectos.",
+      "El <strong>2 de septiembre</strong>, <strong>VJ Day</strong>: Japón se rindió formalmente en el USS Missouri — fin oficial de la Segunda Guerra Mundial.",
+      "El <strong>24 de octubre</strong>, se fundó la <em>Organización de las Naciones Unidas</em> (ONU) con 51 países miembros.",
+      "España: la ONU votó en diciembre recomendar el retiro de embajadores; aislamiento internacional total del régimen de Franco.",
+      "El <strong>30 de abril</strong>, Hitler se suicidó en Berlín."
+    ],
+    "lifeStage": "A los 81 años en 2026, naciste el año del fin de la Segunda Guerra Mundial y del inicio de la era nuclear. Tu generación vivió el milagro económico español de los 60.",
+    "decade": "Los años 40 cerraron con el fin de la guerra mundial y el inicio de la Guerra Fría y la era nuclear. En España, el régimen franquista enfrentaba su mayor aislamiento internacional."
+  },
+
+  "1946": {
+    "events": [
+      "El <strong>5 de marzo</strong>, Winston Churchill pronunció su famoso discurso del <em>Telón de Acero</em> en Fulton, Missouri — formalizando la división de Europa.",
+      "Del <strong>20 de noviembre de 1945 al 1 de octubre de 1946</strong>, los <strong>Juicios de Núremberg</strong> condenaron a los principales criminales nazis.",
+      "El <strong>14 de febrero</strong>, se presentó <em>ENIAC</em>, primer ordenador electrónico de propósito general.",
+      "El <strong>2 de junio</strong>, Italia se convirtió en república por referéndum, fin de la monarquía de los Saboya.",
+      "España: la ONU recomendó la retirada de embajadores del régimen franquista (12 de diciembre)."
+    ],
+    "lifeStage": "A los 80 años en 2026, eres miembro de los primeros <strong>Baby Boomers</strong> mundiales. Naciste el año del Telón de Acero y has vivido todo el ciclo de la Guerra Fría hasta su disolución.",
+    "decade": "Los años 40 cerraron con la posguerra, la fundación de la ONU y el inicio de la Guerra Fría. En España, fueron los años más duros del aislamiento franquista."
+  },
+
+  "1947": {
+    "events": [
+      "El <strong>5 de junio</strong>, George Marshall anunció el <em>Plan Marshall</em> — ayuda económica masiva a Europa para su reconstrucción.",
+      "El <strong>15 de agosto</strong>, India y Pakistán obtuvieron la independencia del Imperio Británico — el mayor desplazamiento de población de la historia.",
+      "El <strong>12 de marzo</strong>, Truman anunció su <em>Doctrina</em> de contención del comunismo en Grecia y Turquía.",
+      "España: el <strong>6 de julio</strong>, los españoles aprobaron en referéndum la <em>Ley de Sucesión a la Jefatura del Estado</em> — Franco se autoproclamó regente vitalicio.",
+      "Tennessee Williams estrenó <em>Un tranvía llamado Deseo</em> en Broadway."
+    ],
+    "lifeStage": "A los 79 años en 2026, eres miembro de la primera generación <strong>Baby Boomer</strong>. Has vivido toda la transformación de España del franquismo hambriento a la democracia europea.",
+    "decade": "Los años 40 marcaron el fin de la guerra, el inicio de la Guerra Fría y la fundación de la posguerra. En España, fueron los años del aislamiento franquista y los inicios del 'milagro económico' tardío."
+  },
+
+  "1948": {
+    "events": [
+      "El <strong>14 de mayo</strong>, se proclamó el <em>Estado de Israel</em> tras el fin del Mandato Británico de Palestina — inicio del conflicto israelí-árabe.",
+      "El <strong>30 de enero</strong>, <em>Mahatma Gandhi</em> fue asesinado en Nueva Delhi por un extremista hindú.",
+      "Del <strong>26 de junio de 1948 al 12 de mayo de 1949</strong>, el <strong>bloqueo de Berlín</strong> por la URSS provocó el famoso puente aéreo aliado.",
+      "El <strong>10 de diciembre</strong>, la ONU adoptó la <em>Declaración Universal de los Derechos Humanos</em>.",
+      "La OEA (Organización de Estados Americanos) fue fundada en Bogotá (30 de abril 1948)."
+    ],
+    "lifeStage": "A los 78 años en 2026, eres Baby Boomer y has visto toda la transformación de la España contemporánea — del franquismo a la integración europea.",
+    "decade": "Los años 40 cerraron con la creación de Israel, el bloqueo de Berlín y la consolidación de la Guerra Fría. En España, el franquismo navegaba el aislamiento internacional."
+  },
+
+  "1949": {
+    "events": [
+      "El <strong>4 de abril</strong>, se fundó la <em>OTAN</em> en Washington — alianza militar occidental fundacional de la Guerra Fría.",
+      "El <strong>1 de octubre</strong>, Mao Zedong proclamó la <strong>República Popular China</strong> tras la victoria comunista en la guerra civil china.",
+      "El <strong>29 de agosto</strong>, la <em>URSS</em> probó su primera bomba atómica — fin del monopolio nuclear estadounidense.",
+      "Se fundaron oficialmente las dos Alemanias: la <em>RFA</em> (mayo) y la <em>RDA</em> (octubre).",
+      "George Orwell publicó <em>1984</em> (8 de junio), novela distópica fundacional del siglo XX."
+    ],
+    "lifeStage": "A los 77 años en 2026, eres Baby Boomer y testigo de toda la transformación española y europea de las últimas siete décadas.",
+    "decade": "Los años 40 cerraron con la división del mundo en dos bloques, la fundación de la OTAN y la victoria comunista en China. España permanecía aislada bajo Franco."
+  },
+
+  "1950": {
+    "events": [
+      "El <strong>25 de junio</strong>, comenzó la <strong>Guerra de Corea</strong> con la invasión de Corea del Sur por Corea del Norte — primer gran conflicto caliente de la Guerra Fría (duraría hasta 1953).",
+      "España comenzaba a salir del aislamiento internacional gracias al inicio de la Guerra Fría — Estados Unidos vio en Franco un aliado anticomunista.",
+      "Del <strong>24 de junio al 16 de julio</strong>, Brasil acogió el cuarto Mundial de Fútbol — Uruguay ganó la final del Maracanazo ante Brasil (1-0).",
+      "<em>Charles M. Schulz</em> publicó la primera tira de <em>Peanuts</em> (Charlie Brown) el 2 de octubre.",
+      "Joseph McCarthy lanzó su campaña de caza de comunistas en Estados Unidos (febrero 1950)."
+    ],
+    "lifeStage": "A los 76 años en 2026, eres <strong>Baby Boomer</strong> y has vivido toda la apertura de España al mundo — del aislamiento del franquismo a la integración europea.",
+    "decade": "Los años 50 fueron la consolidación de la Guerra Fría, el comienzo del 'milagro español' tardío y la apertura del régimen franquista a Estados Unidos."
+  },
+
+  "1951": {
+    "events": [
+      "El <strong>1 de septiembre</strong>, se firmó el <em>Tratado ANZUS</em> entre Australia, Nueva Zelanda y Estados Unidos.",
+      "España: en <strong>marzo</strong>, se produjo la <em>huelga de tranvías de Barcelona</em> — primera gran protesta organizada contra el franquismo en la posguerra.",
+      "El <strong>11 de abril</strong>, el presidente Truman destituyó al general <em>Douglas MacArthur</em> por insubordinación en Corea.",
+      "Se firmó el <em>Tratado de San Francisco</em> (8 de septiembre) entre Japón y las potencias occidentales — Japón recuperó su soberanía.",
+      "La televisión a color comenzó a comercializarse en Estados Unidos (junio 1951)."
+    ],
+    "lifeStage": "A los 75 años en 2026, eres Baby Boomer. Naciste cuando España comenzaba a salir del aislamiento internacional y has acompañado toda la modernización del país.",
+    "decade": "Los años 50 españoles fueron los del fin del aislamiento y el inicio de la apertura económica que culminaría en el desarrollismo de los 60."
+  },
+
+  "1952": {
+    "events": [
+      "El <strong>6 de febrero</strong>, falleció el rey <em>Jorge VI</em> del Reino Unido; su hija <em>Isabel II</em> ascendió al trono — comenzaron 70 años de reinado.",
+      "España: el <strong>31 de mayo</strong>, terminaron oficialmente las cartillas de racionamiento, fin simbólico de los años del hambre.",
+      "Del <strong>19 de julio al 3 de agosto</strong>, se celebraron los Juegos Olímpicos de Helsinki — España regresó a los JJOO tras ausencias forzadas.",
+      "El <strong>1 de noviembre</strong>, Estados Unidos probó su primera bomba de hidrógeno (Ivy Mike).",
+      "Se estrenó <em>Solo ante el peligro</em> (High Noon), western clásico de Fred Zinnemann."
+    ],
+    "lifeStage": "A los 74 años en 2026, perteneces a la <strong>Generación Baby Boomer</strong>. Has vivido toda la transformación de España desde el franquismo tardío.",
+    "decade": "Los años 50 fueron la salida del aislamiento español, los Pactos con Estados Unidos y el comienzo de la apertura económica que precedería al milagro de los 60."
+  },
+
+  "1953": {
+    "events": [
+      "El <strong>5 de marzo</strong>, falleció <em>Iósif Stalin</em> tras 30 años al frente de la URSS — inicio del 'deshielo' bajo Jrushchov.",
+      "El <strong>25 de abril</strong>, Watson y Crick publicaron la estructura del <strong>ADN</strong> en Nature — descubrimiento fundacional de la biología moderna.",
+      "El <strong>27 de julio</strong>, se firmó el armisticio que detuvo la <em>Guerra de Corea</em> tras tres años de conflicto.",
+      "El <strong>26 de septiembre</strong>, España y Estados Unidos firmaron los <strong>Pactos de Madrid</strong> sobre bases militares (Torrejón, Zaragoza, Morón, Rota) — fin del aislamiento del régimen franquista.",
+      "El <strong>27 de agosto</strong>, España firmó el <em>Concordato con el Vaticano</em> — reconocimiento internacional fundamental."
+    ],
+    "lifeStage": "A los 73 años en 2026, eres Baby Boomer. Naciste el año en que España salió del aislamiento internacional con los Pactos con EE.UU. y el Concordato.",
+    "decade": "Los años 50 vieron el fin del aislamiento del franquismo, los Pactos con EE.UU. y la entrada de España en la ONU (1955) — pilares del Régimen tardío."
+  },
+
+  "1954": {
+    "events": [
+      "El <strong>17 de mayo</strong>, la Corte Suprema de Estados Unidos declaró inconstitucional la segregación escolar en <em>Brown v. Board of Education</em>.",
+      "El <strong>7 de mayo</strong>, las tropas francesas fueron derrotadas en <em>Dien Bien Phu</em> — fin de la guerra de Indochina.",
+      "El <strong>1 de noviembre</strong>, comenzó la <strong>Guerra de Argelia</strong> con los atentados del FLN — duraría hasta 1962.",
+      "Bill Haley grabó <em>Rock Around the Clock</em> (12 de abril 1954) — uno de los temas fundadores del rock and roll.",
+      "Del <strong>16 de junio al 4 de julio</strong>, la Copa Mundial de Fútbol en Suiza — Alemania Occidental ganó por sorpresa a Hungría 3-2."
+    ],
+    "lifeStage": "A los 72 años en 2026, eres Baby Boomer. Has vivido todo el milagro económico español de los 60, la Transición democrática y la entrada en Europa.",
+    "decade": "Los años 50 fueron una década de consolidación de la Guerra Fría, descolonización iniciada y, en España, el inicio de la apertura económica."
+  },
+
+  "1955": {
+    "events": [
+      "El <strong>14 de mayo</strong>, se firmó el <em>Pacto de Varsovia</em> — alianza militar del bloque soviético, respuesta a la OTAN.",
+      "El <strong>14 de diciembre</strong>, <strong>España fue admitida en la ONU</strong> — final del aislamiento internacional del régimen franquista.",
+      "El <strong>17 de julio</strong>, Walt Disney inauguró <em>Disneyland</em> en Anaheim, California.",
+      "El <strong>1 de diciembre</strong>, <em>Rosa Parks</em> se negó a ceder su asiento en un autobús de Montgomery, Alabama — origen del movimiento por los derechos civiles.",
+      "El <strong>30 de septiembre</strong>, falleció <em>James Dean</em> a los 24 años, icono cultural de la rebelión juvenil."
+    ],
+    "lifeStage": "A los 71 años en 2026, eres Baby Boomer. Naciste el año en que España entró en la ONU, símbolo del fin del aislamiento internacional del franquismo.",
+    "decade": "Los años 50 cerraron con la entrada de España en la ONU, la consolidación de los pactos con EE.UU. y el inicio de los Planes de Estabilización."
+  },
+
+  "1956": {
+    "events": [
+      "Del <strong>23 de octubre al 10 de noviembre</strong>, la <em>Revolución Húngara</em> fue aplastada por la invasión soviética.",
+      "Del <strong>29 de octubre al 7 de noviembre</strong>, la <strong>crisis de Suez</strong>: Egipto nacionalizó el canal, Israel, Francia y Reino Unido intervinieron sin éxito.",
+      "Marruecos obtuvo independencia el <strong>2 de marzo</strong>; <em>Marruecos</em> español fue cedido a Marruecos el <strong>7 de abril</strong>.",
+      "Elvis Presley alcanzó la fama global con <em>Heartbreak Hotel</em> (enero 1956).",
+      "Del <strong>22 de noviembre al 8 de diciembre</strong>, los Juegos Olímpicos de Melbourne."
+    ],
+    "lifeStage": "A los 70 años en 2026, eres Baby Boomer. Has vivido toda la transformación española y europea de los últimos 70 años.",
+    "decade": "Los años 50 fueron una década de aperturas tímidas para España y de grandes crisis internacionales (Hungría, Suez)."
+  },
+
+  "1957": {
+    "events": [
+      "El <strong>4 de octubre</strong>, la URSS lanzó el <em>Sputnik 1</em>, primer satélite artificial — inicio de la Era Espacial.",
+      "El <strong>25 de marzo</strong>, se firmó el <strong>Tratado de Roma</strong>, fundando la Comunidad Económica Europea (CEE) — embrión de la UE.",
+      "España: gobierno de los <em>tecnócratas</em> del Opus Dei comenzó a tomar posiciones decisivas en el régimen.",
+      "Jack Kerouac publicó <em>En el camino</em>, manifiesto generacional Beat.",
+      "El <strong>3 de noviembre</strong>, la perra <em>Laika</em> fue lanzada al espacio en el Sputnik 2 — primer ser vivo en órbita (no sobrevivió)."
+    ],
+    "lifeStage": "A los 69 años en 2026, eres Baby Boomer. Has vivido toda la historia europea moderna desde los inicios de la CEE hasta hoy.",
+    "decade": "Los años 50 vieron el inicio de la Era Espacial, la fundación de la CEE y, en España, los primeros pasos del desarrollismo tecnocrático."
+  },
+
+  "1958": {
+    "events": [
+      "El <strong>1 de junio</strong>, <em>Charles de Gaulle</em> regresó al poder en Francia tras la crisis de Argelia — fundación inminente de la Quinta República.",
+      "El <strong>28 de octubre</strong>, fue elegido papa Juan XXIII (Angelo Roncalli) — futuro impulsor del Concilio Vaticano II.",
+      "El <strong>29 de julio</strong>, se fundó la <em>NASA</em> en Estados Unidos — respuesta al desafío espacial soviético.",
+      "España: los tecnócratas del Opus Dei tomaron las riendas económicas en el gobierno (Mariano Navarro Rubio, Alberto Ullastres).",
+      "Toyota lanzó su primer modelo exportable a Estados Unidos (Crown)."
+    ],
+    "lifeStage": "A los 68 años en 2026, eres Baby Boomer y has vivido toda la transformación económica y política de España.",
+    "decade": "Los años 50 cerraron con la llegada de De Gaulle a Francia, la fundación de la NASA y los primeros pasos del desarrollismo español."
+  },
+
+  "1959": {
+    "events": [
+      "El <strong>1 de enero</strong>, <em>Fidel Castro</em> entró victorioso en La Habana — fin del régimen de Batista, inicio de la Revolución Cubana.",
+      "España: el <strong>21 de julio</strong>, se aprobó el <strong>Plan de Estabilización</strong> — abertura económica fundacional que sentaría las bases del 'milagro español' de los 60.",
+      "El <strong>21 de agosto</strong>, Hawái se convirtió en el 50.º estado de Estados Unidos.",
+      "El <strong>3 de febrero</strong>, falleció en accidente aéreo <em>Buddy Holly</em>, Ritchie Valens y The Big Bopper — 'el día que murió la música'.",
+      "Billy Wilder estrenó <em>Con faldas y a lo loco</em> (Some Like It Hot)."
+    ],
+    "lifeStage": "A los 67 años en 2026, estás en la edad típica de jubilación. Eres Baby Boomer y has vivido todo el desarrollo de la España moderna.",
+    "decade": "Los años 50 cerraron con la Revolución Cubana, el Plan de Estabilización español y la fundación del desarrollismo tecnocrático que marcaría los 60."
+  },
 
   "1960": {
     "events": [
