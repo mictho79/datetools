@@ -590,7 +590,7 @@ module.exports = {
     const OPT_TITLE = {
       en: 'Born in {year}? You\'re {age1} in 2026 — Exact Age Calculator',
       fr: 'Né en {year} : quel âge en 2026 ? — {age1} ans | DateCalc',
-      es: '¿Cuántos años son de {year} a 2026? — {age1} años | DateCalc',
+      es: '¿Cuántos años son de {year} a 2026? — {age1} años · Gratis',
       pt: 'Nascido em {year}? Você tem {age1} anos em 2026 — Calculadora de Idade',
       de: 'Geboren {year}? Du bist {age1} Jahre alt 2026 — Altersrechner',
       it: 'Nato nel {year}? Hai {age1} anni nel 2026 — Calcolo Età',

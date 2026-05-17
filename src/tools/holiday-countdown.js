@@ -51,8 +51,8 @@ const HOLIDAYS = {
       months: ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'],
     },
     es: {
-      title: 'Días para Año Nuevo 2027 – Cuenta regresiva | DateCalc.app',
-      metaDesc: '¿Cuántos días faltan para Año Nuevo? Cuenta regresiva hasta el 1 de enero en días, horas, minutos y segundos.',
+      title: '¿Cuántos Días Faltan para Año Nuevo 2027? Cuenta Atrás ✓',
+      metaDesc: '¿Cuántos días faltan para Año Nuevo 2027? Cuenta regresiva oficial hasta el 1 de enero en días, horas, minutos y segundos. Útil para Nochevieja y fin de año.',
       kicker: 'Cuenta regresiva Año Nuevo',
       headline: 'Días para<br><em>Año Nuevo</em>',
       subhead: 'Cuenta regresiva hasta el 1 de enero — días, horas, minutos, segundos.',
@@ -559,8 +559,8 @@ const HOLIDAYS = {
       months: ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'],
     },
     es: {
-      title: 'Días para Pascua 2026 – Cuenta regresiva | DateCalc.app',
-      metaDesc: '¿Cuántos días faltan para Pascua? Cuenta regresiva hasta el Domingo de Pascua en días, horas, minutos y segundos.',
+      title: '¿Cuántos Días Faltan para Pascua 2026? Cuenta Atrás ✓',
+      metaDesc: '¿Cuántos días faltan para el Domingo de Pascua 2026? Cuenta regresiva oficial en días, horas y minutos. Fechas de Semana Santa y tradiciones por país hispanohablante.',
       kicker: 'Cuenta regresiva Pascua',
       headline: 'Días para<br><em>Pascua</em>',
       subhead: 'Cuenta regresiva hasta el Domingo de Pascua — la fecha se calcula automáticamente cada año.',

@@ -74,8 +74,8 @@ const T = {
     weekDays: ['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'],
   },
   es: {
-    title: 'Días entre fechas – Calcular la diferencia | DateCalc.app',
-    metaDesc: 'Calcula el número exacto de días entre dos fechas. También muestra semanas, meses y años. Calculadora de diferencia de fechas gratuita.',
+    title: 'Días Entre 2 Fechas 2026 ✓ Calculadora Exacta · Gratis',
+    metaDesc: '¿Cuántos días entre dos fechas? Calcula la diferencia exacta en días, semanas, meses y años. Útil para plazos legales, embarazos, contratos y vacaciones. Gratis y sin registro.',
     kicker: 'Días entre fechas',
     headline: 'Días <em>entre</em><br>dos fechas',
     subhead: 'Ingresa una fecha de inicio y una fecha de fin — obtén la diferencia exacta en días, semanas, meses y años.',

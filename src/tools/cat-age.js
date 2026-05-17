@@ -70,8 +70,8 @@ const T = {
     ],
   },
   es: {
-    title: 'Calculadora de edad del gato – Convertir años gato | DateCalc.app',
-    metaDesc: '¿Cuántos años tiene tu gato en años humanos? Ingresa la edad de tu gato para una conversión precisa basada en directrices veterinarias.',
+    title: 'Edad del Gato en Años Humanos 2026 ✓ Calculadora Gratis',
+    metaDesc: '¿Cuántos años tiene tu gato en años humanos? Conversión precisa según las directrices veterinarias AAHA/ISFM. Útil para gatos senior. Gratis, sin registro.',
     kicker: 'Calculadora de edad del gato',
     headline: '¿Cuántos años<br>tiene mi <em>gato</em>?',
     subhead: 'Convierte la edad de tu gato a años humanos con la fórmula veterinaria.',

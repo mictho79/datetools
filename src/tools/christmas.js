@@ -54,8 +54,8 @@ const T = {
     months: ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'],
   },
   es: {
-    title: 'Días para Navidad 2026 – Cuenta regresiva de Navidad | DateCalc.app',
-    metaDesc: '¿Cuántos días faltan para Navidad? Ve la cuenta regresiva hasta el 25 de diciembre en días, semanas y horas.',
+    title: '¿Cuántos Días Faltan para Navidad 2026? Cuenta Atrás ✓',
+    metaDesc: '¿Cuántos días faltan para Navidad 2026? Cuenta regresiva oficial hasta el 25 de diciembre en días, horas, minutos y segundos. Tradiciones de Noche Buena por país hispano.',
     kicker: 'Cuenta regresiva de Navidad',
     headline: 'Días para<br><em>Navidad</em>',
     subhead: 'Cuenta regresiva hasta el 25 de diciembre — en días, semanas y horas.',

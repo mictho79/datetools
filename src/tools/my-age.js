@@ -80,8 +80,8 @@ const T = {
     invalidDob: 'La date dans l\'URL n\'est pas valide. Essayez le calculateur ci-dessous.',
   },
   es: {
-    title: 'Mi edad — ¿Cuántos días he vivido? | DateCalc.app',
-    metaDesc: 'Tu edad en años, meses, días, horas y segundos — y comparte tu tarjeta. Pasa ?dob=AAAA-MM-DD para personalizar.',
+    title: '¿Cuántos Días He Vivido? Calculadora Online · Gratis 2026',
+    metaDesc: '¿Cuántos días, horas y segundos has vivido? Calcula tu edad exacta con tarjeta compartible. Pasa ?dob=AAAA-MM-DD para personalizar. Gratis, sin registro.',
     kicker: 'Tarjeta de edad',
     h1Default: '¿Cuántos días has vivido?',
     h1WithDob: d => `Nacido en ${d.year}`,

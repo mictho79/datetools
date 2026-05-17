@@ -84,8 +84,8 @@ const T = {
     ],
   },
   es: {
-    title: 'Calculadora de edad cronológica – Edad exacta en años, meses y días | DateCalc.app',
-    metaDesc: 'Calcula la edad cronológica desde la fecha de nacimiento hasta cualquier fecha de referencia. Usado en contextos médicos, educativos y de desarrollo.',
+    title: 'Calculadora de Edad Cronológica Exacta 2026 ✓ Gratis',
+    metaDesc: 'Calcula la edad cronológica exacta en años, meses y días desde la fecha de nacimiento hasta cualquier fecha de referencia. Usada en pediatría, RRHH y trabajo social. Gratis.',
     kicker: 'Edad cronológica',
     headline: 'Edad<br><em>cronológica</em>',
     subhead: 'Calcula la edad cronológica exacta entre dos fechas — años, meses, semanas y días.',

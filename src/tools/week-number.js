@@ -70,8 +70,8 @@ const T = {
     months: ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'],
   },
   es: {
-    title: 'Número de semana – ¿En qué semana estamos? | DateCalc.app',
-    metaDesc: 'Encuentra el número de semana ISO para hoy o cualquier fecha. Muestra el primer y último día de la semana, días restantes en el año y más.',
+    title: '¿En Qué Semana Estamos? Número de Semana ISO 2026 ✓',
+    metaDesc: '¿Qué número de semana ISO 8601 es hoy? Calculadora que muestra primer y último día de la semana, días restantes del año y comparación con sistema estadounidense. Gratis.',
     kicker: 'Número de semana',
     headline: '¿Qué <em>semana</em><br>es esta?',
     subhead: 'Encuentra el número de semana ISO para cualquier fecha — o ve el número de semana de hoy al instante.',

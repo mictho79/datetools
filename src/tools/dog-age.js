@@ -72,8 +72,8 @@ const T = {
     ],
   },
   es: {
-    title: 'Calculadora de edad del perro – Convertir años perro a años humanos | DateCalc.app',
-    metaDesc: '¿Cuántos años tiene tu perro en años humanos? Ingresa la edad de tu perro y su tamaño para una conversión precisa.',
+    title: 'Edad del Perro en Años Humanos 2026 ✓ Calculadora Gratis',
+    metaDesc: '¿Cuántos años tiene tu perro en años humanos? Calculadora científica que tiene en cuenta el tamaño y la raza — más precisa que el viejo "1 año = 7 años". Gratis, sin registro.',
     kicker: 'Calculadora de edad del perro',
     headline: '¿Cuántos años<br>tiene mi <em>perro</em>?',
     subhead: 'Convierte la edad de tu perro a años humanos según el tamaño de la raza.',

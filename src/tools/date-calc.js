@@ -74,8 +74,8 @@ const T = {
     weekDays: ['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'],
   },
   es: {
-    title: 'Calculadora de fechas – Sumar o restar días | DateCalc.app',
-    metaDesc: 'Suma o resta días, semanas, meses o años a cualquier fecha. Descubre qué fecha será en X días. Calculadora de fechas gratuita.',
+    title: 'Calculadora de Fechas 2026 ✓ Sumar y Restar Días Online',
+    metaDesc: '¿Qué fecha será dentro de X días? Suma o resta días, semanas, meses o años a cualquier fecha. Útil para vencimientos, plazos legales y planificación. Gratis, sin registro.',
     kicker: 'Calculadora de fechas',
     headline: '¿Qué <em>fecha</em><br>será?',
     subhead: 'Suma o resta días, semanas, meses o años a partir de cualquier fecha de inicio.',

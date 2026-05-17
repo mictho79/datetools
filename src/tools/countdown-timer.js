@@ -78,8 +78,8 @@ const T = {
     months: ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'],
   },
   es: {
-    title: 'Cuenta regresiva – Cuenta atrás hasta cualquier fecha | DateCalc.app',
-    metaDesc: 'Temporizador de cuenta regresiva gratuito. Ingresa cualquier fecha futura y obtén una cuenta atrás en vivo en días, horas, minutos y segundos.',
+    title: 'Cuenta Regresiva Online 2026 ✓ Cuenta Atrás Personalizada',
+    metaDesc: 'Temporizador de cuenta regresiva gratuito hasta cualquier fecha. Días, horas, minutos y segundos en vivo. Personaliza tu cuenta atrás para cumpleaños, vacaciones, eventos.',
     kicker: 'Cuenta Regresiva',
     headline: 'Cuenta<em>-regresiva</em><br>hasta cualquier fecha',
     subhead: 'Ingresa una fecha objetivo — mira la cuenta regresiva en tiempo real.',

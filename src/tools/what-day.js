@@ -70,8 +70,8 @@ const T = {
     months: ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'],
   },
   es: {
-    title: '¿Qué día es hoy? – Día de la semana para cualquier fecha | DateCalc.app',
-    metaDesc: 'Descubre qué día es hoy, o busca el día de la semana para cualquier fecha. Muestra número del día, semana y días restantes en el año.',
+    title: '¿Qué Día es Hoy? Fecha, Día de la Semana y Calendario 2026',
+    metaDesc: '¿Qué día de la semana es hoy? Descubre la fecha, número de día del año, número de semana ISO y días restantes hasta fin de año. Calendario para cualquier fecha.',
     kicker: '¿Qué día es hoy?',
     headline: '¿Qué <em>día</em><br>es hoy?',
     subhead: 'Ve el día de hoy al instante, o busca el día de la semana para cualquier fecha.',
