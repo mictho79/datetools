@@ -69,6 +69,38 @@ function isPrunedPage(pageId) {
   return false;
 }
 
+// Tool-page ES enrichment: editorial Gazette-style feature blocks injected
+// after the results section on key calculator pages. Keyed by tool pageId.
+// Same goal as born-in enrichment: differentiate flagship tools from any
+// other generic calculator out there, with unique factual content.
+const TOOLS_ES_ENRICHMENT = (() => {
+  try { return require('./src/data/tools-es-enrichment.json'); } catch (e) { return {}; }
+})();
+
+function renderToolsEsEnrichment(pageId) {
+  const e = TOOLS_ES_ENRICHMENT[pageId];
+  if (!e || !Array.isArray(e.sections) || !e.sections.length) return '';
+  const sectionsHtml = e.sections.map((s, i) => {
+    const isLead = i === 0;
+    return `
+    <article class="np-feature np-feature-tool">
+      <div class="np-feature-kicker">${s.kicker}</div>
+      <h2 class="np-feature-h2">${s.h2}</h2>
+      <div class="np-feature-rule"></div>
+      ${isLead ? s.body.replace(/(<p[^>]*>)([A-ZÁÉÍÓÚÑ])/, '$1<span class="np-dropcap">$2</span>') : s.body}
+    </article>`;
+  }).join('');
+  const banner = e.headline ? `
+    <div class="np-feature-banner">
+      <div class="np-rule-double"></div>
+      <div class="np-feature-banner-title">${e.headline}</div>
+      <div class="np-rule-double"></div>
+    </div>` : '';
+  return `
+  <div class="np-feature-wrap np-feature-wrap-tool">${banner}${sectionsHtml}
+  </div>`;
+}
+
 // Identify links that point to noindex'd pages — used to strip them from
 // nav + footer so we stop sending internal link equity to pruned content.
 const NOINDEX_HREF_PATTERNS = [
@@ -1281,6 +1313,13 @@ for (const tool of tools) {
       }
       data.pageId = page.id;
       data.canonical = canonical;
+
+      // Inject ES tool enrichment under the results section (Gazette feature).
+      // Only on ES, only when the JSON has data for this pageId. Born-in.js
+      // sets extraAfterResults itself so we don't overwrite that.
+      if (lang === 'es' && !data.extraAfterResults && TOOLS_ES_ENRICHMENT[page.id]) {
+        data.extraAfterResults = renderToolsEsEnrichment(page.id);
+      }
       data.hreflang = {
         en: page.slugs.en === '' ? '/' : `/${page.slugs.en}/`,
         fr: page.slugs.fr === '' ? '/' : `/${page.slugs.fr}/`,

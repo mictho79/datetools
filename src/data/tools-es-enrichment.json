@@ -1,0 +1,162 @@
+{
+  "_doc": "Per-tool enriched ES content. Keyed by pageId (same as the id in the tool module). Injected after the results section on ES pages only. Only verified, useful information — no fabricated data.",
+
+  "age-calculator": {
+    "title": "Edición práctica",
+    "headline": "Calcular la edad: precisión, contexto y casos límite",
+    "sections": [
+      {
+        "kicker": "Metodología",
+        "h2": "Cómo se calcula la edad exacta",
+        "body": "<p>El cálculo de la edad se hace en tres pasos sucesivos. Primero se toma la diferencia de años entre la fecha actual y la fecha de nacimiento. Luego se ajusta restando un año si todavía no ha llegado el cumpleaños del año actual. Finalmente se completa con los meses y días que han transcurrido desde el último aniversario.</p><p>Por ejemplo, si naciste el 15 de julio de 1990 y la fecha de hoy es el 10 de marzo de 2026, tu edad cronológica es de <strong>35 años</strong>, porque tu cumpleaños número 36 todavía no ha llegado. Tu edad exacta sería entonces <strong>35 años, 7 meses y 23 días</strong> aproximadamente.</p><p>Esta calculadora maneja automáticamente todos los casos especiales — incluidos los cumpleaños del 29 de febrero — y refresca el resultado cada segundo, mostrando incluso los días, horas, minutos y segundos vividos hasta ahora.</p>"
+      },
+      {
+        "kicker": "Casos especiales",
+        "h2": "Cumpleaños del 29 de febrero, husos horarios y precisión",
+        "body": "<p><strong>Nacidos el 29 de febrero (años bisiestos):</strong> en los años no bisiestos, la convención mayoritaria — usada también en España, México y la mayor parte de Latinoamérica — es celebrar el cumpleaños el 28 de febrero (mismo mes) o el 1 de marzo (mismo día). Esta calculadora aplica la convención del 1 de marzo en años no bisiestos.</p><p><strong>Husos horarios:</strong> la calculadora utiliza la hora local de tu navegador. Si naciste en un huso distinto al actual o estás de viaje, los segundos pueden variar ligeramente respecto a tu cálculo \"oficial\".</p><p><strong>Precisión:</strong> mostramos años, meses, días, horas, minutos y segundos. Los meses se calculan según la duración real de cada mes (28-31 días) y no como bloques de 30 días, lo que da un resultado más preciso que el cálculo en \"meses promedio\".</p>"
+      },
+      {
+        "kicker": "Mayoría de edad por país",
+        "h2": "Edad legal en países hispanohablantes",
+        "body": "<p>La mayoría de edad civil (cuándo se es legalmente adulto) varía según el país. En <strong>España</strong>, México, Argentina, Colombia, Chile, Perú, Venezuela, Uruguay, Ecuador, Costa Rica, Panamá, Paraguay y la República Dominicana, la mayoría se alcanza a los <strong>18 años</strong>. En <strong>Cuba</strong>, también es a los 18. La única excepción significativa entre los países hispanohablantes era Honduras, que la elevó a los 18 hace décadas.</p><p>La edad legal para conducir varía algo más: 17 años en Argentina (con habilitación), 18 en España y la mayoría de países, 16 en algunos estados de México (con consentimiento parental). La edad para votar es de 16 años en Argentina, Ecuador y Cuba; de 18 en el resto. La edad legal para el consumo de alcohol oscila entre los 18 (España, México, Argentina, Chile) y los 21 (algunos contextos en Estados Unidos para diáspora hispana).</p>"
+      },
+      {
+        "kicker": "Aplicaciones prácticas",
+        "h2": "¿Cuándo usar esta calculadora?",
+        "body": "<p>La calculadora resulta útil en multitud de situaciones cotidianas y profesionales: para conocer la <strong>edad exacta de un familiar</strong> en años, meses y días con vista a una celebración; para preparar trámites burocráticos donde se exige la edad en una fecha concreta; para calcular la <strong>diferencia de edad</strong> entre dos personas; para saber cuándo se cumple la mayoría de edad legal exacta de un menor; o simplemente para responder a preguntas como \"¿cuántos días he vivido?\" o \"¿en qué día de la semana nací?\".</p><p>Para profesionales sanitarios, RRHH y trabajo social, esta herramienta permite calcular sin error la edad cronológica de pacientes, candidatos o usuarios — un dato indispensable para muchos protocolos clínicos, administrativos y legales.</p>"
+      }
+    ]
+  },
+
+  "days-between-dates": {
+    "title": "Cálculo de días",
+    "headline": "Días entre dos fechas: métodos, casos prácticos y precisión",
+    "sections": [
+      {
+        "kicker": "Metodología",
+        "h2": "Cómo se cuentan los días entre dos fechas",
+        "body": "<p>La calculadora calcula la diferencia exacta entre dos fechas tomando en cuenta la duración real de cada mes (28, 29, 30 o 31 días según corresponda) y los años bisiestos. Por defecto, el resultado se da en días completos transcurridos: la fecha de inicio cuenta como día 0 y la fecha final como el último día del periodo.</p><p>Existen dos convenciones comunes: contar la <strong>diferencia</strong> entre dos fechas (intervalo abierto: la fecha inicial no cuenta), o contar el <strong>número de días incluyendo ambas fechas</strong> (intervalo cerrado, una unidad más). Esta calculadora utiliza la primera convención por defecto, que es la más usada en contextos administrativos, legales y financieros.</p>"
+      },
+      {
+        "kicker": "Casos de uso",
+        "h2": "Aniversarios, plazos legales y contratos",
+        "body": "<p>El cálculo de días entre fechas es indispensable en muchos contextos cotidianos y profesionales:</p><ul><li><strong>Aniversarios y celebraciones:</strong> saber cuántos días lleváis juntos en pareja, cuántos días desde un nacimiento o cuántos días lleva una persona viva.</li><li><strong>Plazos legales y administrativos:</strong> en España, el cómputo de plazos de la administración pública sigue normas precisas (Ley 39/2015): los plazos en días naturales incluyen festivos y fines de semana; los plazos en días hábiles los excluyen.</li><li><strong>Embarazos y fechas médicas:</strong> calcular la semana de embarazo a partir de la fecha de última regla (FUR), o el número de días entre dos análisis.</li><li><strong>Contratos y arrendamientos:</strong> determinar exactamente la duración de un contrato laboral o de alquiler entre fecha de inicio y fecha de finalización.</li><li><strong>Vacaciones y viajes:</strong> calcular días de vacaciones disponibles, duración real de un viaje, días de estancia en un país (importante para visados Schengen, por ejemplo).</li></ul>"
+      },
+      {
+        "kicker": "Días hábiles",
+        "h2": "Días hábiles vs. días naturales: una distinción clave",
+        "body": "<p>Los <strong>días naturales</strong> (o calendario) cuentan todos los días sin excepción: lunes a domingo, festivos incluidos. Los <strong>días hábiles</strong> (o laborables) cuentan únicamente los días en que la administración o las empresas operan habitualmente: de lunes a viernes, excluyendo festivos nacionales y, según el caso, autonómicos y locales.</p><p>En España, los días hábiles oficiales excluyen los sábados desde la entrada en vigor de la Ley 39/2015 — un cambio importante respecto a la legislación anterior. En México, el Código Federal de Procedimientos Civiles también define con precisión los días hábiles judiciales y administrativos. En general, para cualquier plazo legal o administrativo crítico, se recomienda consultar la normativa específica del país y nivel administrativo.</p>"
+      }
+    ]
+  },
+
+  "dog-age-calculator": {
+    "title": "Edición canina",
+    "headline": "La edad real de tu perro: más allá del mito de los 7 años",
+    "sections": [
+      {
+        "kicker": "El mito del 7×",
+        "h2": "Por qué \"un año perro = siete años humanos\" es falso",
+        "body": "<p>La regla popular de multiplicar la edad del perro por 7 para obtener su \"equivalente humano\" es una simplificación inventada hace décadas y desmentida científicamente. La realidad es que los perros maduran de forma <strong>no lineal</strong>: muy rápido en los dos primeros años (especialmente el primero), y luego mucho más lentamente.</p><p>Un cachorro de 1 año tiene una madurez equivalente a la de un adolescente humano de unos 15 años — no de un niño de 7. A los 2 años, equivale aproximadamente a un humano de 24 años. A partir de ahí, cada año perruno suma alrededor de 4-5 años humanos, dependiendo de la raza y el tamaño del animal.</p>"
+      },
+      {
+        "kicker": "Tabla por tamaño",
+        "h2": "Equivalencia según tamaño y raza",
+        "body": "<p>El tamaño y la raza del perro influyen significativamente en su esperanza de vida y, por tanto, en la equivalencia con la edad humana:</p><ul><li><strong>Razas pequeñas</strong> (chihuahua, yorkshire, caniche enano, hasta 10 kg): viven en media 12-16 años. Envejecen más lentamente que las razas grandes después de los 2 años.</li><li><strong>Razas medianas</strong> (border collie, beagle, cocker, 10-25 kg): esperanza de vida de 11-14 años.</li><li><strong>Razas grandes</strong> (labrador, pastor alemán, golden retriever, 25-45 kg): 10-12 años.</li><li><strong>Razas gigantes</strong> (gran danés, mastín español, terranova, +45 kg): apenas 7-10 años, envejecen mucho más rápido.</li></ul><p>Esta calculadora aplica una fórmula científicamente validada que tiene en cuenta la raza o el peso del perro para ofrecer una equivalencia mucho más realista que el viejo factor 7.</p>"
+      },
+      {
+        "kicker": "Etapas de vida",
+        "h2": "Las cinco etapas de la vida de un perro",
+        "body": "<p><strong>Cachorro</strong> (0-6 meses): periodo de socialización clave. <strong>Junior</strong> (6 meses - 2 años): adolescencia, hormonas, energía sin control. <strong>Adulto joven</strong> (2-5 años): plenitud física. <strong>Adulto maduro</strong> (5-9 años): primeros signos de envejecimiento (canas en el hocico, menos resistencia). <strong>Senior</strong> (+9 años para razas grandes, +12 para pequeñas): cuidados veterinarios reforzados, dieta adaptada, controles frecuentes recomendados.</p>"
+      }
+    ]
+  },
+
+  "cat-age-calculator": {
+    "title": "Edición felina",
+    "headline": "La edad real de tu gato: una equivalencia mucho más sutil",
+    "sections": [
+      {
+        "kicker": "La fórmula real",
+        "h2": "Cómo calcular la edad humana de un gato",
+        "body": "<p>Como los perros, los gatos envejecen de forma <strong>no lineal</strong>. Su primer año equivale a unos 15 años humanos, su segundo año a 9 más (24 humanos equivalentes a los 2 años de gato), y a partir de ahí cada año felino suma aproximadamente 4 años humanos. Un gato de 10 años, por tanto, equivale a un humano de unos 56 años, no a uno de 70 como diría el factor 7.</p><p>A diferencia de los perros, los gatos no se ven tan afectados por la raza o el tamaño: las diferencias de longevidad entre razas felinas son menores. Sin embargo, los gatos de interior viven significativamente más (en media 12-18 años) que los gatos de exterior (5-10 años) por la exposición a peligros y enfermedades.</p>"
+      },
+      {
+        "kicker": "Etapas",
+        "h2": "Las seis etapas de la vida de un gato según veterinarios",
+        "body": "<p>La American Animal Hospital Association (AAHA) y la Sociedad Internacional de Medicina Felina (ISFM) definen seis etapas de vida felina:</p><ul><li><strong>Gatito</strong> (0-6 meses): crecimiento explosivo.</li><li><strong>Junior</strong> (7 meses - 2 años): adolescencia, alcanza la madurez sexual.</li><li><strong>Joven adulto</strong> (3-6 años): plenitud física.</li><li><strong>Adulto maduro</strong> (7-10 años): primeros signos de envejecimiento.</li><li><strong>Senior</strong> (11-14 años): seguimiento veterinario reforzado recomendado.</li><li><strong>Geriátrico</strong> (+15 años): cuidados específicos, dieta adaptada, controles frecuentes.</li></ul>"
+      },
+      {
+        "kicker": "Salud",
+        "h2": "Por qué la edad biológica importa",
+        "body": "<p>Conocer la edad equivalente humana de tu gato no es solo curiosidad: ayuda a entender qué necesidades veterinarias específicas tiene en cada etapa. Un gato de 11 años (60 humanos) ya entra en categoría \"senior\" y necesita análisis sanguíneos anuales, vigilancia renal y, si procede, dieta específica para gatos mayores. Los problemas más comunes en gatos senior incluyen insuficiencia renal crónica, hipertiroidismo y artritis, todos detectables a tiempo con seguimiento veterinario regular.</p>"
+      }
+    ]
+  },
+
+  "baby-age-calculator": {
+    "title": "Edición pediátrica",
+    "headline": "Calcular la edad de un bebé: meses, semanas y desarrollo",
+    "sections": [
+      {
+        "kicker": "Métricas pediátricas",
+        "h2": "Por qué se mide la edad de un bebé en meses y semanas",
+        "body": "<p>Para los bebés, la edad <strong>en meses</strong> (durante los primeros 2-3 años) o incluso <strong>en semanas</strong> (durante el primer año) es mucho más informativa que la edad en años. Los hitos de desarrollo, las dosis de medicamentos, los calendarios de vacunación y las recomendaciones pediátricas están todos calibrados en estas unidades más finas.</p><p>Hasta los 24 meses, los pediatras hablan habitualmente en meses (\"mi hijo tiene 18 meses\"). A partir de los 2 años, se empieza a usar años con decimales o años y meses (\"2 años y 3 meses\"). La calculadora muestra automáticamente la edad en años, meses, semanas y días para que tengas todas las medidas relevantes.</p>"
+      },
+      {
+        "kicker": "Edad corregida",
+        "h2": "Edad cronológica vs. edad corregida en prematuros",
+        "body": "<p>Para bebés prematuros (nacidos antes de la semana 37 de gestación), se utiliza una métrica adicional: la <strong>edad corregida</strong>. Se calcula restando a la edad cronológica las semanas que faltaron para el término (40 semanas). Por ejemplo, un bebé nacido a las 32 semanas (8 semanas antes del término) y con 6 meses de edad cronológica tendrá una edad corregida de 4 meses.</p><p>La edad corregida se usa hasta los 2 años para evaluar el desarrollo, los hitos y el crecimiento del bebé prematuro. Después de los 2 años, en la mayoría de casos, los pediatras dejan de aplicar la corrección.</p>"
+      },
+      {
+        "kicker": "Hitos de desarrollo",
+        "h2": "Principales hitos según la edad",
+        "body": "<p><strong>2 meses:</strong> sonrisa social, sigue objetos con la mirada. <strong>4 meses:</strong> sostén cefálico, balbuceo. <strong>6 meses:</strong> sentado con apoyo, gira sobre sí mismo. <strong>9 meses:</strong> gateo, ansiedad ante extraños. <strong>12 meses:</strong> primeros pasos, primeras palabras. <strong>18 meses:</strong> camina con seguridad, vocabulario de 10-25 palabras. <strong>24 meses:</strong> corre, frases de dos palabras, control inicial de esfínteres.</p><p>Estos son <em>hitos medios</em>: el rango normal de variación es amplio. Si tienes dudas sobre el desarrollo de tu bebé, consulta siempre con el pediatra — esta calculadora es solo informativa.</p>"
+      }
+    ]
+  },
+
+  "what-generation": {
+    "title": "Edición sociológica",
+    "headline": "¿A qué generación pertenezco? El mapa generacional explicado",
+    "sections": [
+      {
+        "kicker": "Cohortes generacionales",
+        "h2": "Las generaciones según los demógrafos contemporáneos",
+        "body": "<p>La división generacional más utilizada en sociología y marketing es la propuesta por Strauss y Howe, ajustada por el Pew Research Center y otros institutos. Cada cohorte está marcada por los grandes eventos vividos durante su infancia y adolescencia — formación de sus referencias culturales y valores fundamentales.</p><ul><li><strong>Generación Silenciosa</strong> (1928-1945): infancia durante la Gran Depresión y la Segunda Guerra Mundial.</li><li><strong>Baby Boomers</strong> (1946-1964): hijos de la posguerra, prosperidad económica.</li><li><strong>Generación X</strong> (1965-1980): primera generación con familias mayoritariamente con doble ingreso laboral; testigos del fin de la Guerra Fría.</li><li><strong>Millennials</strong> o Generación Y (1981-1996): primera generación nativa de internet (a partir de la adolescencia), marcada por la crisis económica de 2008.</li><li><strong>Generación Z</strong> (1997-2012): nativos digitales totales, smartphones desde la infancia, ansiedad climática y pandemia adolescente.</li><li><strong>Generación Alpha</strong> (2013-2024): primera generación con IA conversacional desde la infancia.</li><li><strong>Generación Beta</strong> (2025-2039, propuesta): aún en debate demográfico, marcada por IA omnipresente y posible regulación climática.</li></ul>"
+      },
+      {
+        "kicker": "España y Latinoamérica",
+        "h2": "Particularidades en el mundo hispanohablante",
+        "body": "<p>Las generaciones globales se aplican al mundo hispanohablante con matices significativos. En <strong>España</strong>, la <em>Generación X</em> coincide con los nacidos durante la Transición democrática (1975-1982): una identidad propia marcada por crecer entre el fin del franquismo y la entrada en Europa. Los <em>millennials españoles</em> son la \"generación más preparada y peor pagada\" según diversos estudios — afectados duramente por la crisis de 2008 y la precariedad laboral.</p><p>En <strong>Latinoamérica</strong>, las generaciones se modulan según las realidades políticas locales: Argentina vivió las dictaduras militares (1976-1983) que marcaron a los baby boomers tardíos y a la Generación X; México conoció el cambio democrático del 2000 (fin del PRI hegemónico) como hito generacional para sus millennials; Chile, el postpinochetismo desde 1990. Estos contextos forjan identidades generacionales propias que se superponen al marco global.</p>"
+      },
+      {
+        "kicker": "Identidad y valores",
+        "h2": "¿Qué dice mi generación sobre quién soy?",
+        "body": "<p>La generación a la que perteneces es un marcador útil pero <em>no determinista</em>. Comparte ciertos referentes culturales (música, cine, tecnología, eventos históricos) con tus contemporáneos, pero tu personalidad, valores y trayectoria dependen también de tu entorno familiar, educación, contexto socioeconómico y experiencias individuales. Estas categorías son útiles para entender tendencias colectivas — y para encajar mejor con tus padres, hijos, colegas — pero no para encerrar a nadie en un molde único.</p>"
+      }
+    ]
+  },
+
+  "week-number": {
+    "title": "Edición ISO",
+    "headline": "El número de semana: ISO 8601 y otros sistemas",
+    "sections": [
+      {
+        "kicker": "Estándar ISO",
+        "h2": "Qué es la norma ISO 8601 y por qué importa",
+        "body": "<p>La <strong>norma ISO 8601</strong> es el estándar internacional para representar fechas, horas y duraciones. Define con precisión cómo numerar las semanas del año: la <strong>semana 1</strong> de un año es siempre aquella que contiene el primer jueves del año (o equivalentemente, la que contiene el 4 de enero). Las semanas empiezan el lunes y terminan el domingo.</p><p>Esta convención garantiza que una semana ISO siempre tenga 7 días completos en el mismo \"año semanal\". Es el estándar oficial en España, Francia, Alemania y la mayoría de países europeos. Bancos, ferrocarriles, sistemas industriales y software empresarial trabajan con semanas ISO.</p>"
+      },
+      {
+        "kicker": "Otros sistemas",
+        "h2": "El sistema estadounidense y otras variantes",
+        "body": "<p>En <strong>Estados Unidos</strong>, la convención dominante es distinta: la semana 1 es la que contiene el 1 de enero, y las semanas empiezan el domingo. Esto significa que la semana ISO 1 y la semana estadounidense 1 raramente coinciden — pueden diferir en una unidad según la posición del 1 de enero en el calendario.</p><p>En <strong>Japón</strong>, la convención varía según el contexto: ISO 8601 en industria y software internacional, pero sistema propio en muchas administraciones locales. En el <strong>mundo árabe</strong>, las semanas a menudo se cuentan empezando el sábado, no el lunes.</p><p>Esta herramienta utiliza ISO 8601 por defecto, que es la convención mayoritaria en el mundo hispanohablante.</p>"
+      },
+      {
+        "kicker": "Casos prácticos",
+        "h2": "¿Cuándo se usa el número de semana?",
+        "body": "<p>El número de semana ISO se usa habitualmente en:</p><ul><li><strong>Planificación empresarial:</strong> presupuestos, calendarios de producción, sprints en equipos ágiles.</li><li><strong>Educación:</strong> calendarios académicos universitarios (\"semana 12 del curso\").</li><li><strong>Logística y transporte:</strong> entregas, programación de rutas, horarios ferroviarios.</li><li><strong>Industria y manufactura:</strong> programación de turnos y mantenimientos.</li><li><strong>Software y desarrollo:</strong> control de versiones, cron jobs, logs.</li></ul><p><strong>Curiosidad:</strong> algunos años tienen 53 semanas ISO (en lugar de 52). Esto ocurre cuando el 1 de enero cae en jueves, o cuando es bisiesto y cae en miércoles. Los años con 53 semanas son aproximadamente uno cada 5-6 años (los próximos: 2026, 2032, 2037).</p>"
+      }
+    ]
+  }
+}
