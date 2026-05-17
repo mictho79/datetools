@@ -44,9 +44,16 @@ const articles = ARTICLE_CLUSTER_FILES.map(f => {
 
 const LANGS = ['en', 'fr', 'es', 'pt', 'de', 'it', 'pl', 'ja', 'ko', 'nl'];
 // Languages excluded from indexing after the April 2026 HCU-style demotion.
-// Pages still build (so existing links don't 404), but they get noindex,
-// are dropped from the sitemap, and removed from hreflang clusters.
-const NOINDEX_LANGS = new Set(['ja', 'ko', 'nl']);
+// Aggressive HCU recovery strategy (May 2026): only ES is indexable.
+// Other 9 languages still build (so existing links don't 404) but
+// carry noindex, are dropped from the sitemap, and removed from
+// hreflang clusters. Rationale: ES is the only language that ever
+// generated traffic; concentrating 100% of the domain quality signal
+// on ES pages maximises the chance of breaking the trust freeze.
+// Re-enable other languages by removing them from NOINDEX_LANGS once
+// ES has demonstrated recovery (target: >50 indexed pages + >100
+// clicks/day sustained for 2 weeks).
+const NOINDEX_LANGS = new Set(['en', 'fr', 'pt', 'de', 'it', 'pl', 'ja', 'ko', 'nl']);
 const INDEXABLE_LANGS = LANGS.filter(l => !NOINDEX_LANGS.has(l));
 
 // Page-level pruning for HCU recovery: noindex low-volume / templated patterns
