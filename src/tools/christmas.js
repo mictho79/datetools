@@ -66,15 +66,18 @@ const T = {
     todayBanner: '🎄 ¡Feliz Navidad! Que sea un día maravilloso.',
     tomorrowBanner: '🎄 ¡Navidad es mañana!',
     seoH2a: '¿Cuándo es la Navidad?',
-    seoP1: 'La Navidad siempre es el 25 de diciembre. En 2026, la Navidad cae en viernes. La cuenta regresiva anterior se actualiza automáticamente según la fecha de hoy.',
-    seoH2b: 'Tradiciones navideñas en todo el mundo',
-    seoP2: 'La Navidad se celebra el 25 de diciembre en la mayoría de los países. En algunas tradiciones cristianas ortodoxas, la Navidad se celebra el 7 de enero. La cuenta regresiva anterior apunta al 25 de diciembre del año actual o del siguiente.',
+    seoP1: 'La Navidad se celebra siempre el 25 de diciembre. En 2026 cae en viernes. La cuenta regresiva de arriba se actualiza en tiempo real y muestra los días, horas, minutos y segundos que faltan hasta la medianoche del 25 de diciembre; cuando la fecha ya ha pasado, apunta automáticamente a la Navidad del año siguiente.',
+    seoH2b: 'La Nochebuena en los países hispanos',
+    seoP2: 'En la cultura hispana, la celebración principal suele ser la Nochebuena, la noche del 24 de diciembre, con una gran cena familiar. En España se comparten el marisco, el cordero o el pavo, y el turrón y los polvorones de postre; en México son típicos los tamales, el bacalao y el ponche; y en Latinoamérica se preparan hallacas (Venezuela), pan de pascua (Chile) o buñuelos (Colombia). A medianoche, muchas familias asisten a la Misa del Gallo.',
+    seoH2c: 'Los Reyes Magos y el final de la Navidad',
+    seoP3: 'En España y en buena parte de Latinoamérica, la temporada navideña no termina el 25 de diciembre: continúa hasta el 6 de enero, día de la Epifanía o de los Reyes Magos, cuando muchos niños reciben sus regalos. La noche del 5 de enero se celebran las cabalgatas de Reyes, y el día 6 es tradicional el roscón de Reyes, un bollo con una figurita y un haba escondidas dentro.',
     faqTitle: 'Preguntas frecuentes',
     faqs: [
-      { q: '¿Cuántos días faltan para Navidad 2026?', a: 'La cuenta regresiva anterior muestra el número exacto de días restantes hasta el 25 de diciembre de 2026. Se actualiza automáticamente cada vez que abres la página.' },
-      { q: '¿Qué día es Navidad 2026?', a: 'El día de Navidad 2026 (25 de diciembre de 2026) es viernes.' },
-      { q: '¿Qué día es Navidad 2027?', a: 'El día de Navidad 2027 (25 de diciembre de 2027) es sábado.' },
-      { q: '¿Cuántas semanas faltan para Navidad?', a: 'El número de semanas hasta Navidad se muestra en los resultados anteriores.' },
+      { q: '¿Cuántos días faltan para Navidad 2026?', a: 'La cuenta regresiva de arriba muestra el número exacto de días restantes hasta el 25 de diciembre de 2026, actualizado al segundo.' },
+      { q: '¿Qué día de la semana es Navidad 2026?', a: 'El día de Navidad de 2026 (25 de diciembre) cae en viernes; en 2027 caerá en sábado.' },
+      { q: '¿Cuándo es la Nochebuena?', a: 'La Nochebuena es la noche del 24 de diciembre, víspera de Navidad. En muchos países hispanos es cuando se hace la cena familiar principal.' },
+      { q: '¿Cuándo llegan los Reyes Magos?', a: 'La noche del 5 al 6 de enero. El 6 de enero, día de la Epifanía, muchos niños reciben sus regalos de los Reyes Magos.' },
+      { q: '¿La Navidad es el mismo día en todo el mundo?', a: 'Se celebra el 25 de diciembre en la mayoría de los países, pero algunas iglesias ortodoxas la celebran el 7 de enero porque siguen el calendario juliano.' },
     ],
     weekDays: ['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'],
     months: ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'],
@@ -320,7 +323,7 @@ module.exports = {
     const seoBlock = `  <div class="seo-block">
     <div><h2>${t.seoH2a}</h2><p>${t.seoP1}</p></div>
     <div><h2>${t.seoH2b}</h2><p>${t.seoP2}</p></div>
-  </div>
+${t.seoH2c ? `    <div><h2>${t.seoH2c}</h2><p>${t.seoP3}</p></div>\n` : ''}  </div>
   <div class="faq-block">
     <h2>${t.faqTitle}</h2>
 ${faqHTML}

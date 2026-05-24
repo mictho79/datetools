@@ -2,139 +2,139 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://datecalc.app/es/</loc>
-    <lastmod>2026-05-17</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/calculadora-edad/</loc>
-    <lastmod>2026-05-17</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/calculadora-edad/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/age-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/calculadora-edad/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/dias-entre-fechas/</loc>
-    <lastmod>2026-05-17</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/dias-entre-fechas/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/days-between-dates/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/dias-entre-fechas/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/calculadora-fechas/</loc>
-    <lastmod>2026-05-17</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/calculadora-fechas/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/date-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/calculadora-fechas/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/numero-semana/</loc>
-    <lastmod>2026-05-17</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/numero-semana/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/week-number/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/numero-semana/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/que-dia-es-hoy/</loc>
-    <lastmod>2026-05-17</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/que-dia-es-hoy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/what-day-is-it-today/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/que-dia-es-hoy/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/dias-para-navidad/</loc>
-    <lastmod>2026-05-17</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/dias-para-navidad/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/days-until-christmas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/dias-para-navidad/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/dias-para-ano-nuevo/</loc>
-    <lastmod>2026-05-17</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/dias-para-ano-nuevo/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/days-until-new-year/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/dias-para-ano-nuevo/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/dias-para-halloween/</loc>
-    <lastmod>2026-05-17</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/dias-para-halloween/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/days-until-halloween/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/dias-para-halloween/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/dias-para-pascua/</loc>
-    <lastmod>2026-05-17</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/dias-para-pascua/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/days-until-easter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/dias-para-pascua/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/calculadora-edad-perro/</loc>
-    <lastmod>2026-05-17</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/calculadora-edad-perro/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/dog-age-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/calculadora-edad-perro/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/calculadora-edad-gato/</loc>
-    <lastmod>2026-05-17</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/calculadora-edad-gato/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/cat-age-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/calculadora-edad-gato/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/calculadora-edad-bebe/</loc>
-    <lastmod>2026-05-17</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/calculadora-edad-bebe/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/baby-age-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/calculadora-edad-bebe/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/edad-cronologica/</loc>
-    <lastmod>2026-05-17</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/edad-cronologica/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/chronological-age-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/edad-cronologica/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/cuenta-regresiva/</loc>
-    <lastmod>2026-05-17</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/cuenta-regresiva/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/countdown-timer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/cuenta-regresiva/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/calculadora-dias-habiles/</loc>
-    <lastmod>2026-05-17</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/calculadora-dias-habiles/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/business-days-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/calculadora-dias-habiles/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/conversor-zona-horaria/</loc>
-    <lastmod>2026-05-17</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/conversor-zona-horaria/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/time-zone-converter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/conversor-zona-horaria/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1930/</loc>
@@ -142,7 +142,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1930/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1930/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1930/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1931/</loc>
@@ -150,7 +150,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1931/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1931/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1931/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1932/</loc>
@@ -158,7 +158,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1932/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1932/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1932/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1933/</loc>
@@ -166,7 +166,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1933/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1933/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1933/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1934/</loc>
@@ -174,7 +174,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1934/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1934/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1934/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1935/</loc>
@@ -182,7 +182,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1935/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1935/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1935/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1936/</loc>
@@ -190,7 +190,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1936/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1936/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1936/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1937/</loc>
@@ -198,7 +198,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1937/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1937/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1937/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1938/</loc>
@@ -206,7 +206,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1938/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1938/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1938/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1939/</loc>
@@ -214,7 +214,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1939/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1939/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1939/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1940/</loc>
@@ -222,7 +222,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1940/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1940/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1940/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1941/</loc>
@@ -230,7 +230,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1941/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1941/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1941/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1942/</loc>
@@ -238,7 +238,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1942/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1942/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1942/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1943/</loc>
@@ -246,7 +246,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1943/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1943/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1943/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1944/</loc>
@@ -254,7 +254,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1944/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1944/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1944/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1945/</loc>
@@ -262,7 +262,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1945/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1945/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1945/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1946/</loc>
@@ -270,7 +270,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1946/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1946/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1946/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1947/</loc>
@@ -278,7 +278,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1947/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1947/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1947/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1948/</loc>
@@ -286,7 +286,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1948/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1948/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1948/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1949/</loc>
@@ -294,7 +294,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1949/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1949/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1949/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1950/</loc>
@@ -302,7 +302,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1950/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1950/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1950/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1951/</loc>
@@ -310,7 +310,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1951/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1951/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1951/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1952/</loc>
@@ -318,7 +318,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1952/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1952/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1952/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1953/</loc>
@@ -326,7 +326,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1953/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1953/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1953/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1954/</loc>
@@ -334,7 +334,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1954/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1954/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1954/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1955/</loc>
@@ -342,7 +342,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1955/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1955/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1955/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1956/</loc>
@@ -350,7 +350,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1956/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1956/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1956/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1957/</loc>
@@ -358,7 +358,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1957/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1957/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1957/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1958/</loc>
@@ -366,7 +366,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1958/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1958/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1958/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1959/</loc>
@@ -374,7 +374,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1959/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1959/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1959/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1960/</loc>
@@ -382,7 +382,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1960/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1960/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1960/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1961/</loc>
@@ -390,7 +390,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1961/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1961/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1961/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1962/</loc>
@@ -398,7 +398,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1962/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1962/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1962/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1963/</loc>
@@ -406,7 +406,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1963/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1963/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1963/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1964/</loc>
@@ -414,7 +414,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1964/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1964/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1964/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1965/</loc>
@@ -422,7 +422,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1965/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1965/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1965/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1966/</loc>
@@ -430,7 +430,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1966/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1966/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1966/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1967/</loc>
@@ -438,7 +438,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1967/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1967/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1967/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1968/</loc>
@@ -446,7 +446,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1968/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1968/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1968/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1969/</loc>
@@ -454,7 +454,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1969/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1969/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1969/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1970/</loc>
@@ -462,7 +462,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1970/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1970/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1970/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1971/</loc>
@@ -470,7 +470,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1971/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1971/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1971/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1972/</loc>
@@ -478,7 +478,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1972/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1972/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1972/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1973/</loc>
@@ -486,7 +486,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1973/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1973/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1973/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1974/</loc>
@@ -494,7 +494,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1974/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1974/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1974/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1975/</loc>
@@ -502,7 +502,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1975/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1975/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1975/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1976/</loc>
@@ -510,7 +510,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1976/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1976/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1976/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1977/</loc>
@@ -518,7 +518,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1977/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1977/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1977/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1978/</loc>
@@ -526,7 +526,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1978/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1978/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1978/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1979/</loc>
@@ -534,7 +534,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1979/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1979/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1979/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1980/</loc>
@@ -542,7 +542,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1980/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1980/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1980/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1981/</loc>
@@ -550,7 +550,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1981/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1981/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1981/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1982/</loc>
@@ -558,7 +558,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1982/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1982/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1982/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1983/</loc>
@@ -566,7 +566,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1983/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1983/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1983/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1984/</loc>
@@ -574,7 +574,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1984/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1984/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1984/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1985/</loc>
@@ -582,7 +582,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1985/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1985/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1985/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1986/</loc>
@@ -590,7 +590,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1986/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1986/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1986/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1987/</loc>
@@ -598,7 +598,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1987/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1987/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1987/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1988/</loc>
@@ -606,7 +606,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1988/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1988/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1988/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1989/</loc>
@@ -614,7 +614,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1989/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1989/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1989/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1990/</loc>
@@ -622,7 +622,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1990/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1990/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1990/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1991/</loc>
@@ -630,7 +630,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1991/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1991/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1991/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1992/</loc>
@@ -638,7 +638,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1992/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1992/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1992/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1993/</loc>
@@ -646,7 +646,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1993/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1993/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1993/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1994/</loc>
@@ -654,7 +654,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1994/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1994/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1994/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1995/</loc>
@@ -662,7 +662,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1995/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1995/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1995/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1996/</loc>
@@ -670,7 +670,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1996/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1996/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1996/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1997/</loc>
@@ -678,7 +678,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1997/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1997/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1997/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1998/</loc>
@@ -686,7 +686,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1998/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1998/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1998/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-1999/</loc>
@@ -694,7 +694,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-1999/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-1999/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-1999/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-2000/</loc>
@@ -702,7 +702,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-2000/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-2000/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-2000/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-2001/</loc>
@@ -710,7 +710,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-2001/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-2001/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-2001/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-2002/</loc>
@@ -718,7 +718,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-2002/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-2002/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-2002/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-2003/</loc>
@@ -726,7 +726,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-2003/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-2003/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-2003/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-2004/</loc>
@@ -734,7 +734,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-2004/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-2004/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-2004/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-2005/</loc>
@@ -742,7 +742,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-2005/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-2005/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-2005/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-2006/</loc>
@@ -750,7 +750,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-2006/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-2006/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-2006/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-2007/</loc>
@@ -758,7 +758,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-2007/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-2007/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-2007/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-2008/</loc>
@@ -766,7 +766,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-2008/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-2008/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-2008/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-2009/</loc>
@@ -774,7 +774,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-2009/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-2009/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-2009/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-2010/</loc>
@@ -782,7 +782,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-2010/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-2010/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-2010/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-2011/</loc>
@@ -790,7 +790,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-2011/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-2011/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-2011/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-2012/</loc>
@@ -798,7 +798,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-2012/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-2012/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-2012/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-2013/</loc>
@@ -806,7 +806,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-2013/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-2013/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-2013/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-2014/</loc>
@@ -814,7 +814,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-2014/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-2014/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-2014/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-2015/</loc>
@@ -822,7 +822,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-2015/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-2015/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-2015/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-2016/</loc>
@@ -830,7 +830,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-2016/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-2016/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-2016/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-2017/</loc>
@@ -838,7 +838,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-2017/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-2017/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-2017/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-2018/</loc>
@@ -846,7 +846,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-2018/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-2018/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-2018/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-2019/</loc>
@@ -854,7 +854,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-2019/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-2019/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-2019/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-2020/</loc>
@@ -862,7 +862,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-2020/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-2020/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-2020/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-2021/</loc>
@@ -870,7 +870,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-2021/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-2021/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-2021/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-2022/</loc>
@@ -878,7 +878,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-2022/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-2022/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-2022/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-2023/</loc>
@@ -886,7 +886,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-2023/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-2023/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-2023/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/nacido-en-2024/</loc>
@@ -894,55 +894,55 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/nacido-en-2024/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/born-in-2024/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/nacido-en-2024/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/numero-semana/2023/</loc>
-    <lastmod>2026-05-17</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/numero-semana/2023/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/week-number/2023/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/numero-semana/2023/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/numero-semana/2024/</loc>
-    <lastmod>2026-05-17</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/numero-semana/2024/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/week-number/2024/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/numero-semana/2024/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/numero-semana/2025/</loc>
-    <lastmod>2026-05-17</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/numero-semana/2025/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/week-number/2025/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/numero-semana/2025/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/numero-semana/2026/</loc>
-    <lastmod>2026-05-17</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/numero-semana/2026/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/week-number/2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/numero-semana/2026/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/numero-semana/2027/</loc>
-    <lastmod>2026-05-17</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/numero-semana/2027/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/week-number/2027/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/numero-semana/2027/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/numero-semana/2028/</loc>
-    <lastmod>2026-05-17</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/numero-semana/2028/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/week-number/2028/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/numero-semana/2028/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/que-generacion-soy/</loc>
@@ -950,7 +950,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/que-generacion-soy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/what-generation-am-i/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/que-generacion-soy/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/calcular-edad-en-meses/</loc>
@@ -958,7 +958,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/calcular-edad-en-meses/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/how-to-calculate-age-in-months/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/calcular-edad-en-meses/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/edad-legal-alcohol-por-pais/</loc>
@@ -966,7 +966,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/edad-legal-alcohol-por-pais/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/legal-drinking-age-by-country/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/edad-legal-alcohol-por-pais/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/lista-anos-bisiestos/</loc>
@@ -974,7 +974,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/lista-anos-bisiestos/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/leap-years-list/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/lista-anos-bisiestos/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/meses-de-cumpleanos-mas-populares/</loc>
@@ -982,7 +982,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/meses-de-cumpleanos-mas-populares/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/most-popular-birthday-months/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/meses-de-cumpleanos-mas-populares/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/cuantos-dias-tiene-cada-mes/</loc>
@@ -990,7 +990,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/cuantos-dias-tiene-cada-mes/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/how-many-days-in-each-month/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/cuantos-dias-tiene-cada-mes/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/dias-habiles-vs-dias-calendario/</loc>
@@ -998,7 +998,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/dias-habiles-vs-dias-calendario/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/business-days-vs-calendar-days/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/dias-habiles-vs-dias-calendario/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/cuantas-semanas-tiene-un-ano/</loc>
@@ -1006,7 +1006,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/cuantas-semanas-tiene-un-ano/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/how-many-weeks-in-a-year/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/cuantas-semanas-tiene-un-ano/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/adopcion-calendario-gregoriano-por-pais/</loc>
@@ -1014,7 +1014,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/adopcion-calendario-gregoriano-por-pais/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/gregorian-calendar-adoption-by-country/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/adopcion-calendario-gregoriano-por-pais/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/sistemas-de-calendario-del-mundo/</loc>
@@ -1022,7 +1022,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/sistemas-de-calendario-del-mundo/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/world-calendar-systems/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/sistemas-de-calendario-del-mundo/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/lista-completa-zonas-horarias/</loc>
@@ -1030,7 +1030,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/lista-completa-zonas-horarias/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/time-zones-complete-list/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/lista-completa-zonas-horarias/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/como-calcular-dias-entre-dos-fechas/</loc>
@@ -1038,7 +1038,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/como-calcular-dias-entre-dos-fechas/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/how-to-calculate-days-between-dates/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/como-calcular-dias-entre-dos-fechas/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/como-calcular-edad-exacta/</loc>
@@ -1046,7 +1046,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/como-calcular-edad-exacta/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/how-to-calculate-exact-age/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/como-calcular-edad-exacta/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/preguntas-frecuentes-fecha-hora/</loc>
@@ -1054,7 +1054,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/preguntas-frecuentes-fecha-hora/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/date-time-faq/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/preguntas-frecuentes-fecha-hora/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/explicacion-numero-semana-iso/</loc>
@@ -1062,7 +1062,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/explicacion-numero-semana-iso/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/iso-week-number-explained/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/explicacion-numero-semana-iso/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/calendario-numeros-semana-2025/</loc>
@@ -1070,7 +1070,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/calendario-numeros-semana-2025/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/week-numbers-2025-calendar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/calendario-numeros-semana-2025/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/que-numero-de-semana-es/</loc>
@@ -1078,7 +1078,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/que-numero-de-semana-es/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/what-week-number-is-it/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/que-numero-de-semana-es/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/que-dia-de-la-semana-naci/</loc>
@@ -1086,7 +1086,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/que-dia-de-la-semana-naci/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/what-day-of-the-week-was-i-born/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/que-dia-de-la-semana-naci/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/origen-nombres-dias-semana/</loc>
@@ -1094,7 +1094,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/origen-nombres-dias-semana/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/days-of-the-week-names-origin/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/origen-nombres-dias-semana/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/empieza-la-semana-el-domingo-o-el-lunes/</loc>
@@ -1102,7 +1102,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/empieza-la-semana-el-domingo-o-el-lunes/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/does-the-week-start-on-sunday-or-monday/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/empieza-la-semana-el-domingo-o-el-lunes/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/cuantos-dias-faltan-para-el-ano-nuevo/</loc>
@@ -1110,7 +1110,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/cuantos-dias-faltan-para-el-ano-nuevo/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/how-many-days-until-new-year/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/cuantos-dias-faltan-para-el-ano-nuevo/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/cuando-es-navidad-2025/</loc>
@@ -1118,7 +1118,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/cuando-es-navidad-2025/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/when-is-christmas-2025/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/cuando-es-navidad-2025/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/fechas-navidad-en-el-mundo/</loc>
@@ -1126,7 +1126,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/fechas-navidad-en-el-mundo/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/christmas-dates-around-the-world/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/fechas-navidad-en-el-mundo/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/acerca-de/</loc>
@@ -1134,7 +1134,7 @@
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/acerca-de/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/acerca-de/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/privacidad/</loc>
@@ -1142,39 +1142,39 @@
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/privacidad/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/privacidad/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/anos-de-nacimiento/</loc>
-    <lastmod>2026-05-17</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/anos-de-nacimiento/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/birth-years/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/anos-de-nacimiento/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/acontecimientos-por-ano/</loc>
-    <lastmod>2026-05-17</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/acontecimientos-por-ano/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/year-in-history/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/acontecimientos-por-ano/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/herramientas/</loc>
-    <lastmod>2026-05-17</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/herramientas/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/tools/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/herramientas/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/articulos/</loc>
-    <lastmod>2026-05-17</lastmod>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/articulos/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/articles/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/articulos/"/>
   </url>
   <url>
     <loc>https://datecalc.app/es/autores/mike/</loc>
@@ -1182,14 +1182,6 @@
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/autores/mike/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/authors/mike/"/>
-  </url>
-  <url>
-    <loc>https://datecalc.app/es/mi-edad/</loc>
-    <lastmod>2026-05-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://datecalc.app/es/mi-edad/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/my-age/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app/es/autores/mike/"/>
   </url>
 </urlset>

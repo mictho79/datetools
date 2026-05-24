@@ -65,7 +65,7 @@ const NAV_LABELS = {
 const TOOLS_CONTENT = {
   en: { title: 'All Tools — DateCalc.app', h1: 'All Calculators', kicker: 'Tools index', intro: 'Every calculator on DateCalc.app, grouped by category. Around 265 individual tools across age, date math, countdowns, week numbers, business days, and time-zone conversion.', sectionTitle: 'By category' },
   fr: { title: 'Tous les outils — DateCalc.app', h1: 'Tous les calculateurs', kicker: 'Index des outils', intro: 'Tous les calculateurs de DateCalc.app, regroupés par catégorie. Environ 265 outils couvrant l\'âge, les calculs de dates, les comptes à rebours, les numéros de semaine, les jours ouvrés et la conversion de fuseau horaire.', sectionTitle: 'Par catégorie' },
-  es: { title: 'Todas las herramientas — DateCalc.app', h1: 'Todas las calculadoras', kicker: 'Índice de herramientas', intro: 'Todas las calculadoras de DateCalc.app agrupadas por categoría. Alrededor de 265 herramientas que cubren edad, matemáticas de fechas, cuentas regresivas, números de semana, días hábiles y conversión de zona horaria.', sectionTitle: 'Por categoría' },
+  es: { title: 'Todas las herramientas — DateCalc.app', h1: 'Todas las calculadoras', kicker: 'Índice de herramientas', intro: 'Todas las calculadoras de DateCalc.app agrupadas por categoría: edad, matemáticas de fechas, cuentas regresivas, números de semana ISO, días hábiles y conversión de zonas horarias. Todas son gratuitas, funcionan al instante en el navegador y no necesitan registro ni instalación. Elige una categoría para encontrar la herramienta que buscas.', sectionTitle: 'Por categoría' },
   pt: { title: 'Todas as ferramentas — DateCalc.app', h1: 'Todas as calculadoras', kicker: 'Índice de ferramentas', intro: 'Todas as calculadoras do DateCalc.app agrupadas por categoria. Cerca de 265 ferramentas cobrindo idade, matemática de datas, contagens regressivas, números de semana, dias úteis e conversão de fuso horário.', sectionTitle: 'Por categoria' },
   de: { title: 'Alle Tools — DateCalc.app', h1: 'Alle Rechner', kicker: 'Tool-Index', intro: 'Alle Rechner auf DateCalc.app, nach Kategorie gruppiert. Rund 265 Einzeltools für Alter, Datumsarithmetik, Countdowns, Wochennummern, Werktage und Zeitzonenkonvertierung.', sectionTitle: 'Nach Kategorie' },
   it: { title: 'Tutti gli strumenti — DateCalc.app', h1: 'Tutti i calcolatori', kicker: 'Indice degli strumenti', intro: 'Tutti i calcolatori di DateCalc.app raggruppati per categoria. Circa 265 strumenti che coprono età, aritmetica delle date, conto alla rovescia, numeri di settimana, giorni lavorativi e conversione fuso orario.', sectionTitle: 'Per categoria' },
@@ -78,7 +78,7 @@ const TOOLS_CONTENT = {
 const ARTICLES_CONTENT = {
   en: { title: 'All Articles — DateCalc.app', h1: 'All Articles', kicker: 'Articles index', intro: 'Long-form articles and guides across age, calendar systems, week numbers, historical years, AI visibility, and more. Every piece is written by the DateCalc team and kept up to date across 10 languages.', sectionTitle: 'Browse by topic' },
   fr: { title: 'Tous les articles — DateCalc.app', h1: 'Tous les articles', kicker: 'Index des articles', intro: 'Articles de fond et guides sur l\'âge, les systèmes de calendrier, les numéros de semaine, les années historiques, la visibilité IA, et plus encore. Chaque article est rédigé par l\'équipe DateCalc et maintenu à jour dans 10 langues.', sectionTitle: 'Parcourir par thème' },
-  es: { title: 'Todos los artículos — DateCalc.app', h1: 'Todos los artículos', kicker: 'Índice de artículos', intro: 'Artículos y guías de fondo sobre edad, sistemas de calendario, números de semana, años históricos, visibilidad en IA y más. Cada pieza está escrita por el equipo de DateCalc y mantenida al día en 10 idiomas.', sectionTitle: 'Por tema' },
+  es: { title: 'Todos los artículos — DateCalc.app', h1: 'Todos los artículos', kicker: 'Índice de artículos', intro: 'Artículos y guías de fondo sobre edad, sistemas de calendario, números de semana ISO, años históricos, visibilidad en buscadores e IA y mucho más. Cada artículo está redactado por el equipo de DateCalc con datos verificados y se revisa de forma periódica para mantener las fechas al día. Explora los temas para profundizar en cada cálculo.', sectionTitle: 'Por tema' },
   pt: { title: 'Todos os artigos — DateCalc.app', h1: 'Todos os artigos', kicker: 'Índice de artigos', intro: 'Artigos e guias aprofundados sobre idade, sistemas de calendário, números de semana, anos históricos, visibilidade em IA e muito mais. Cada peça é escrita pela equipe DateCalc e mantida atualizada em 10 idiomas.', sectionTitle: 'Por tema' },
   de: { title: 'Alle Artikel — DateCalc.app', h1: 'Alle Artikel', kicker: 'Artikel-Index', intro: 'Ausführliche Artikel und Leitfäden zu Alter, Kalendersystemen, Wochennummern, historischen Jahren, KI-Sichtbarkeit und mehr. Jedes Stück wird vom DateCalc-Team verfasst und in 10 Sprachen aktuell gehalten.', sectionTitle: 'Nach Thema' },
   it: { title: 'Tutti gli articoli — DateCalc.app', h1: 'Tutti gli articoli', kicker: 'Indice degli articoli', intro: 'Articoli approfonditi e guide su età, sistemi di calendario, numeri di settimana, anni storici, visibilità AI e altro ancora. Ogni pezzo è scritto dal team DateCalc e mantenuto aggiornato in 10 lingue.', sectionTitle: 'Per argomento' },
@@ -211,7 +211,12 @@ function buildToolsHub(lang, nav) {
     h1: t.h1,
     intro: `<p>${t.intro}</p>`,
     sections: [{ h2: t.sectionTitle, body: sectionsBody }],
-    faqs: null, pillar: null, related: null,
+    faqs: lang === 'es' ? [
+      { q: '¿Las calculadoras de DateCalc.app son gratuitas?', a: 'Sí. Todas las herramientas son gratuitas, funcionan directamente en el navegador y no requieren registro ni instalación.' },
+      { q: '¿Funcionan en el móvil?', a: 'Sí. Todas las calculadoras están adaptadas para móvil, tablet y ordenador.' },
+      { q: '¿Cuáles son las herramientas más usadas?', a: 'La calculadora de edad y la calculadora de días entre fechas son las más populares, junto con la cuenta regresiva de Navidad.' },
+    ] : null,
+    pillar: null, related: null,
   };
 }
 
@@ -266,7 +271,11 @@ function buildArticlesHub(lang, articles, bornInSlugFn, eventSlugFn) {
     h1: t.h1,
     intro: `<p>${t.intro}</p>`,
     sections: [{ h2: t.sectionTitle, body: byCluster }],
-    faqs: null, pillar: null, related: null,
+    faqs: lang === 'es' ? [
+      { q: '¿Quién escribe los artículos?', a: 'El equipo editorial de DateCalc, que revisa y actualiza el contenido de forma periódica.' },
+      { q: '¿Con qué frecuencia se actualizan?', a: 'Los artículos se revisan periódicamente para mantener las fechas y los datos al día.' },
+    ] : null,
+    pillar: null, related: null,
   };
 }
 

@@ -56,6 +56,59 @@ const LANGS = ['en', 'fr', 'es', 'pt', 'de', 'it', 'pl', 'ja', 'ko', 'nl'];
 const NOINDEX_LANGS = new Set(['en', 'fr', 'pt', 'de', 'it', 'pl', 'ja', 'ko', 'nl']);
 const INDEXABLE_LANGS = LANGS.filter(l => !NOINDEX_LANGS.has(l));
 
+// Languages actually EMITTED to dist. During HCU recovery we ship an ES-only
+// site: non-built languages are no longer generated at all, so their old URLs
+// now return 404 (via the catch-all in _redirects) instead of lingering as
+// noindex pages. This concentrates Google's crawl budget + the site-wide
+// quality signal entirely on ES. To re-enable a language later: add it here
+// AND remove it from NOINDEX_LANGS, then rebuild.
+const BUILD_LANGS = ['es'];
+const isBuilt = (l) => BUILD_LANGS.includes(l);
+
+// Internal-link correction map for the ES-only site. Legacy content carried two
+// kinds of bad internal links: (1) wrong ES slugs (typos that never matched a
+// real page), and (2) un-localised EN links pasted into ES content. Both now
+// point at removed/nonexistent pages. This map rewrites href="<bad>" → the
+// correct ES URL. Applied to dist/es/**/*.html only (see fixEsInternalLinks),
+// so re-enabling EN later won't clobber legitimate EN links. Every target below
+// is verified to exist as a built ES page.
+const ES_LINK_FIXES = {
+  // (1) wrong ES slugs
+  '/es/calcular-edad/': '/es/calculadora-edad/',
+  '/es/numero-de-semana/': '/es/numero-semana/',
+  '/es/calculadora-de-fechas/': '/es/calculadora-fechas/',
+  '/es/calculadora-fecha/': '/es/calculadora-fechas/',
+  '/es/calculadora-dias-entre-fechas/': '/es/dias-entre-fechas/',
+  '/es/edad-en-meses/': '/es/calcular-edad-en-meses/',
+  '/es/dias-en-cada-mes/': '/es/cuantos-dias-tiene-cada-mes/',
+  '/es/semanas-en-un-ano/': '/es/cuantas-semanas-tiene-un-ano/',
+  '/es/numero-semana-iso-explicado/': '/es/explicacion-numero-semana-iso/',
+  '/es/temporizador-cuenta-regresiva/': '/es/cuenta-regresiva/',
+  '/es/conversor-de-zona-horaria/': '/es/conversor-zona-horaria/',
+  '/es/sistemas-calendarios-mundo/': '/es/sistemas-de-calendario-del-mundo/',
+  '/es/sistemas-calendarios-del-mundo/': '/es/sistemas-de-calendario-del-mundo/',
+  '/es/de-que-generacion-soy/': '/es/que-generacion-soy/',
+  '/es/nacido-en-1918/': '/es/anos-de-nacimiento/',
+  // (2) un-localised EN links found inside ES pages
+  '/how-many-weeks-in-a-year/': '/es/cuantas-semanas-tiene-un-ano/',
+  '/week-number/': '/es/numero-semana/',
+  '/days-until-christmas/': '/es/dias-para-navidad/',
+  '/what-day-is-it-today/': '/es/que-dia-es-hoy/',
+  '/born-in-2000/': '/es/nacido-en-2000/',
+  '/born-in-1990/': '/es/nacido-en-1990/',
+  '/born-in-1996/': '/es/nacido-en-1996/',
+  '/iso-week-number-explained/': '/es/explicacion-numero-semana-iso/',
+  '/christmas-dates-around-the-world/': '/es/fechas-navidad-en-el-mundo/',
+  '/how-many-days-until-new-year/': '/es/cuantos-dias-faltan-para-el-ano-nuevo/',
+  '/when-is-christmas-2025/': '/es/cuando-es-navidad-2025/',
+  '/week-numbers-2025-calendar/': '/es/calendario-numeros-semana-2025/',
+  '/what-week-number-is-it/': '/es/que-numero-de-semana-es/',
+  '/how-many-days-in-each-month/': '/es/cuantos-dias-tiene-cada-mes/',
+  '/gregorian-calendar-adoption-by-country/': '/es/adopcion-calendario-gregoriano-por-pais/',
+  '/business-days-vs-calendar-days/': '/es/dias-habiles-vs-dias-calendario/',
+  '/world-calendar-systems/': '/es/sistemas-de-calendario-del-mundo/',
+};
+
 // Page-level pruning for HCU recovery: noindex low-volume / templated patterns
 // across all langs. These pages still build (existing inbound links don't 404),
 // but they get noindex,follow + dropped from sitemap. Concentrates the
@@ -919,7 +972,8 @@ ${JSON.stringify({
 {"@context":"https://schema.org","@type":"Organization","name":"DateCalc.app","url":"https://datecalc.app","logo":"https://datecalc.app/og.png","contactPoint":{"@type":"ContactPoint","email":"hello@datecalc.app","contactType":"customer support"}}
 </script>`;
 
-  const langBtns = LANGS.map(l => {
+  const switchLangs = LANGS.filter(isBuilt);
+  const langBtns = switchLangs.length <= 1 ? '' : switchLangs.map(l => {
     const href = hreflang[l];
     const active = l === lang ? ' active' : '';
     return `  <a href="${href}" class="lang-btn${active}">${l.toUpperCase()}</a>`;
@@ -959,7 +1013,7 @@ ${JSON.stringify({
 <meta name="description" content="${metaDesc}">
 <link rel="canonical" href="https://datecalc.app${canonical}">
 ${INDEXABLE_LANGS.map(l => `<link rel="alternate" hreflang="${l}" href="https://datecalc.app${hreflang[l]}">`).join('\n')}
-<link rel="alternate" hreflang="x-default" href="https://datecalc.app${hreflang.en}">
+<link rel="alternate" hreflang="x-default" href="https://datecalc.app${hreflang[BUILD_LANGS[0]]}">
 <meta property="og:type" content="website">
 <meta property="og:title" content="${title}">
 <meta property="og:description" content="${metaDesc}">
@@ -1140,7 +1194,8 @@ ${JSON.stringify({
 {"@context":"https://schema.org","@type":"Organization","name":"DateCalc.app","url":"https://datecalc.app","logo":"https://datecalc.app/og.png","contactPoint":{"@type":"ContactPoint","email":"hello@datecalc.app","contactType":"customer support"}}
 </script>`;
 
-  const langBtns = LANGS.map(l => {
+  const switchLangs = LANGS.filter(isBuilt);
+  const langBtns = switchLangs.length <= 1 ? '' : switchLangs.map(l => {
     const href = hreflang[l];
     const active = l === lang ? ' active' : '';
     return `  <a href="${href}" class="lang-btn${active}">${l.toUpperCase()}</a>`;
@@ -1185,7 +1240,7 @@ ${JSON.stringify({
 <meta name="description" content="${metaDesc}">
 <link rel="canonical" href="https://datecalc.app${canonical}">
 ${INDEXABLE_LANGS.map(l => `<link rel="alternate" hreflang="${l}" href="https://datecalc.app${hreflang[l]}">`).join('\n')}
-<link rel="alternate" hreflang="x-default" href="https://datecalc.app${hreflang.en}">
+<link rel="alternate" hreflang="x-default" href="https://datecalc.app${hreflang[BUILD_LANGS[0]]}">
 <meta property="og:type" content="article">
 <meta property="og:title" content="${title}">
 <meta property="og:description" content="${metaDesc}">
@@ -1304,6 +1359,7 @@ let count = 0;
 for (const tool of tools) {
   for (const page of tool.pages) {
     for (const lang of LANGS) {
+      if (!isBuilt(lang)) continue;            // ES-only build (HCU recovery)
       const slug = page.slugs[lang];           // e.g. "fr/calculateur-age"
       const canonical = slug === '' ? '/' : `/${slug}/`;
 
@@ -1375,6 +1431,7 @@ const ARTICLE_LANGS = ['en', 'fr', 'es', 'pt', 'de', 'it', 'pl', 'ja', 'ko', 'nl
 for (const cluster of articles) {
   for (const page of cluster.pages) {
     for (const lang of ARTICLE_LANGS) {
+      if (!isBuilt(lang)) continue;            // ES-only build (HCU recovery)
       const slug = page.slugs[lang];
       const canonical = `/${slug}/`;
       const data = cluster.render(page.id, lang);
@@ -1423,6 +1480,7 @@ const HUB_CSS = `
 
 for (const hubType of ['birth', 'event']) {
   for (const lang of LANGS) {
+    if (!isBuilt(lang)) continue;              // ES-only build (HCU recovery)
     const h = hubs.renderHub(hubType, lang);
     const data = {
       title: h.title,
@@ -1451,6 +1509,7 @@ console.log(`Built ${hubCount} hub pages → dist/`);
 // ── NAV HUBS (/tools/ and /articles/) ─────────────────────
 let navHubCount = 0;
 for (const lang of LANGS) {
+  if (!isBuilt(lang)) continue;                // ES-only build (HCU recovery)
   const toolsData = navHubs.buildToolsHub(lang, NAV);
   toolsData.extraHead = navHubs.NAV_CSS;
   const tHtml = renderArticleLayout(toolsData, lang);
@@ -1468,6 +1527,7 @@ console.log(`Built ${navHubCount} nav-hub pages → dist/`);
 // ── AUTHOR PAGES (/authors/mike/ + 9 translations) ────────
 let authorCount = 0;
 for (const lang of LANGS) {
+  if (!isBuilt(lang)) continue;                // ES-only build (HCU recovery)
   writePage(`${authors.MIKE_SLUGS[lang]}/index.html`, authors.renderAuthorHTML(lang, STYLE_HREF));
   authorCount++;
 }
@@ -1476,6 +1536,7 @@ console.log(`Built ${authorCount} author pages → dist/`);
 // ── MY-AGE shareable page (/my-age/?dob=YYYY-MM-DD) ───────
 let myAgeCount = 0;
 for (const lang of LANGS) {
+  if (!isBuilt(lang)) continue;                // ES-only build (HCU recovery)
   writePage(`${myAge.SLUGS[lang]}/index.html`, myAge.renderMyAgeHTML(lang, STYLE_HREF));
   myAgeCount++;
 }
@@ -1483,8 +1544,11 @@ console.log(`Built ${myAgeCount} my-age pages → dist/`);
 
 // ── REDIRECTS ─────────────────────────────────────────────
 const REDIRECTS = [
-  { from: '/how-old-am-i/*',      to: '/age-calculator/' },
-  { from: '/fr/quel-age-ai-je/*', to: '/fr/calculateur-age/' },
+  // ES-only site (HCU recovery): root funnels to the ES homepage so / never 404s.
+  // Removed non-ES URLs intentionally fall through to the catch-all 404 below
+  // (honest removal — we do NOT cross-redirect them to ES, which Google treats
+  // as a soft-404). Re-add language redirects here when languages come back.
+  { from: '/',                    to: '/es/' },
   { from: '/es/que-edad-tengo/*', to: '/es/calculadora-edad/' },
 ];
 
@@ -1825,10 +1889,11 @@ const PRIVACY_HREFLANG_HREF = {
 };
 const hreflangPrivacy = [
   ...INDEXABLE_LANGS.map(l => `<link rel="alternate" hreflang="${l}" href="${PRIVACY_HREFLANG_HREF[l]}">`),
-  `<link rel="alternate" hreflang="x-default" href="${PRIVACY_HREFLANG_HREF.en}">`,
+  `<link rel="alternate" hreflang="x-default" href="${PRIVACY_HREFLANG_HREF[BUILD_LANGS[0]]}">`,
 ].join('\n');
 
 for (const { lang, slug, canonical } of PRIVACY_PAGES) {
+  if (!isBuilt(lang)) continue;                // ES-only build (HCU recovery)
   const p = PRIVACY_CONTENT[lang];
   const outDir = path.join(DIST, slug);
   fs.mkdirSync(outDir, { recursive: true });
@@ -2031,10 +2096,11 @@ const ABOUT_HREFLANG_HREF = {
 };
 const hreflangAbout = [
   ...INDEXABLE_LANGS.map(l => `<link rel="alternate" hreflang="${l}" href="${ABOUT_HREFLANG_HREF[l]}">`),
-  `<link rel="alternate" hreflang="x-default" href="${ABOUT_HREFLANG_HREF.en}">`,
+  `<link rel="alternate" hreflang="x-default" href="${ABOUT_HREFLANG_HREF[BUILD_LANGS[0]]}">`,
 ].join('\n');
 
 for (const { lang, slug, canonical } of ABOUT_PAGES) {
+  if (!isBuilt(lang)) continue;                // ES-only build (HCU recovery)
   const p = ABOUT_CONTENT[lang];
   const outDir = path.join(DIST, slug);
   fs.mkdirSync(outDir, { recursive: true });
@@ -2208,9 +2274,9 @@ function renderSitemapUrl(url, group) {
     .map(u =>
       `    <xhtml:link rel="alternate" hreflang="${u.lang}" href="https://datecalc.app${u.path}"/>`
     ).join('\n');
-  const enUrl = group.find(u => u.lang === 'en');
-  const xDefault = enUrl
-    ? `\n    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app${enUrl.path}"/>`
+  const xUrl = group.find(u => u.lang === BUILD_LANGS[0]) || group.find(u => !NOINDEX_LANGS.has(u.lang));
+  const xDefault = xUrl
+    ? `\n    <xhtml:link rel="alternate" hreflang="x-default" href="https://datecalc.app${xUrl.path}"/>`
     : '';
   const m = group.meta || { lastmod: sitemapToday, changefreq: 'monthly', priority: '0.8' };
   return `  <url>
@@ -2271,6 +2337,37 @@ ${indexEntries}
 </sitemapindex>`;
 fs.writeFileSync(path.join(DIST, 'sitemap.xml'), sitemapIndex, 'utf8');
 console.log(`  ✓ /sitemap.xml (index → ${LANGS.filter(l => perLangUrls[l].length > 0).length} sub-sitemaps, ${totalUrlEntries} URLs total)`);
+
+// ── ES INTERNAL-LINK CORRECTION ───────────────────────────
+// Rewrite known-bad internal links (wrong ES slugs + un-localised EN links)
+// across every ES page so the ES-only site never links outside its own set.
+(function fixEsInternalLinks() {
+  const esDir = path.join(DIST, 'es');
+  if (!fs.existsSync(esDir)) return;
+  const entries = Object.entries(ES_LINK_FIXES);
+  let filesTouched = 0, replacements = 0;
+  const walk = (dir) => {
+    for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+      const p = path.join(dir, e.name);
+      if (e.isDirectory()) { walk(p); continue; }
+      if (!e.name.endsWith('.html')) continue;
+      let html = fs.readFileSync(p, 'utf8');
+      let changed = false;
+      for (const [bad, good] of entries) {
+        const needle = `href="${bad}"`;
+        const hits = html.split(needle).length - 1;
+        if (hits > 0) {
+          html = html.split(needle).join(`href="${good}"`);
+          replacements += hits;
+          changed = true;
+        }
+      }
+      if (changed) { fs.writeFileSync(p, html, 'utf8'); filesTouched++; }
+    }
+  };
+  walk(esDir);
+  console.log(`  ✓ ES internal-link fixes: ${replacements} link(s) corrected across ${filesTouched} file(s)`);
+})();
 
 // ── HREFLANG VALIDATION ───────────────────────────────────
 require('./scripts/validate-hreflang');

@@ -2,7 +2,8 @@
 // signature and the footer tagline used site-wide for E-E-A-T / HCU resilience.
 
 const LANGS = ['en', 'fr', 'es', 'pt', 'de', 'it', 'pl', 'ja', 'ko', 'nl'];
-const NOINDEX_LANGS = new Set(['ja', 'ko', 'nl']);
+// ES-only during HCU recovery — keep in sync with build.js BUILD_LANGS.
+const NOINDEX_LANGS = new Set(['en', 'fr', 'pt', 'de', 'it', 'pl', 'ja', 'ko', 'nl']);
 const INDEXABLE_LANGS = LANGS.filter(l => !NOINDEX_LANGS.has(l));
 
 const MIKE_SLUGS = {
@@ -131,7 +132,7 @@ function articleSignature(lang) {
 
 function hreflangTags() {
   const out = INDEXABLE_LANGS.map(l => `<link rel="alternate" hreflang="${l}" href="https://datecalc.app/${MIKE_SLUGS[l]}/">`);
-  out.push(`<link rel="alternate" hreflang="x-default" href="https://datecalc.app/${MIKE_SLUGS.en}/">`);
+  out.push(`<link rel="alternate" hreflang="x-default" href="https://datecalc.app/${MIKE_SLUGS[INDEXABLE_LANGS[0]]}/">`);
   return out.join('\n');
 }
 
