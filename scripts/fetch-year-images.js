@@ -12,7 +12,7 @@ if (!fs.existsSync(PHOTOS_DIR)) fs.mkdirSync(PHOTOS_DIR, { recursive: true });
 
 function get(url) {
   return new Promise((resolve, reject) => {
-    const options = { headers: { 'User-Agent': 'DateCalc.app/1.0 (hello@datecalc.app)' } };
+    const options = { headers: { 'User-Agent': 'DateCalc.app/1.0 (contact@datecalc.app)' } };
     https.get(url, options, res => {
       // Follow redirects
       if (res.statusCode === 301 || res.statusCode === 302) {
@@ -30,7 +30,7 @@ function get(url) {
 
 function downloadImage(url, destPath) {
   return new Promise((resolve, reject) => {
-    const options = { headers: { 'User-Agent': 'DateCalc.app/1.0 (hello@datecalc.app)' } };
+    const options = { headers: { 'User-Agent': 'DateCalc.app/1.0 (contact@datecalc.app)' } };
     const file = fs.createWriteStream(destPath);
     https.get(url, options, res => {
       if (res.statusCode === 301 || res.statusCode === 302) {
