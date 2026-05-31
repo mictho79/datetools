@@ -86,7 +86,7 @@
   "description": "Cronología completa del cambio al calendario gregoriano, de 1582 a 2016. Incluye los 11 días \"perdidos\" en Gran Bretaña y el cambio ruso de 1918.",
   "url": "https://datecalc.app/es/adopcion-calendario-gregoriano-por-pais/",
   "datePublished": "2026-04-01",
-  "dateModified": "2026-05-26",
+  "dateModified": "2026-05-31",
   "author": {
     "@type": "Person",
     "name": "Mike",
@@ -112,12 +112,16 @@
 {"@context":"https://schema.org","@type":"Organization","name":"DateCalc.app","url":"https://datecalc.app","logo":"https://datecalc.app/og.png","contactPoint":{"@type":"ContactPoint","email":"contact@datecalc.app","contactType":"customer support"}}
 </script>
 <style>
-.main-nav{border-top:1px solid #ddd;border-bottom:1px solid #ddd;background:#fcfcfc}
-.main-nav-inner{max-width:900px;margin:0 auto;padding:.55rem 1.5rem;display:flex;gap:1.4rem;flex-wrap:wrap;justify-content:center;font-family:'Space Mono',monospace;font-size:.86rem}
-.main-nav a{color:#111;text-decoration:none;padding:.1rem 0;border-bottom:1px solid transparent;transition:border-color .12s,color .12s}
-.main-nav a:hover{border-bottom-color:var(--accent);color:var(--accent)}
-.main-nav a[aria-current="page"]{color:var(--accent);border-bottom-color:var(--accent);font-style:italic}
-@media(max-width:600px){.main-nav-inner{gap:.9rem;font-size:.78rem;padding:.45rem .8rem}}
+.main-nav{border-top:1px solid #d4cabb;border-bottom:1px solid #d4cabb;background:transparent;position:relative}
+.main-nav::before,.main-nav::after{content:'';position:absolute;left:0;right:0;height:1px;background:#d4cabb;opacity:.55}
+.main-nav::before{top:3px}
+.main-nav::after{bottom:3px}
+.main-nav-inner{max-width:900px;margin:0 auto;padding:.75rem 1.5rem;display:flex;align-items:center;flex-wrap:wrap;justify-content:center;font-family:'Space Mono',monospace;font-size:.74rem;letter-spacing:.18em;text-transform:uppercase}
+.main-nav a{position:relative;color:#3a3026;text-decoration:none;padding:.2rem 1.15rem;transition:color .15s ease}
+.main-nav a:not(:last-child)::after{content:'';position:absolute;right:-2px;top:50%;width:3px;height:3px;border-radius:50%;background:#bdb29d;transform:translateY(-50%)}
+.main-nav a:hover{color:var(--accent)}
+.main-nav a[aria-current="page"]{color:var(--accent);font-family:'Playfair Display',serif;font-style:italic;font-size:1.02rem;text-transform:none;letter-spacing:.01em;padding:.02rem 1.15rem}
+@media(max-width:600px){.main-nav-inner{font-size:.66rem;padding:.55rem .8rem;letter-spacing:.12em}.main-nav a{padding:.15rem .7rem}.main-nav a[aria-current="page"]{font-size:.9rem}}
 .hub-list{list-style:none;padding:0;margin:.5rem 0 1.2rem;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:.3rem .8rem}
 .hub-list li{border-bottom:1px dotted #e5e5e5;padding:.25rem 0}
 .hub-list a{color:#111;text-decoration:none}
